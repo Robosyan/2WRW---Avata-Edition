@@ -200,8 +200,8 @@ music = {
 }
 
 music = {
-	name ="TNO_SE_OKTAN_WAR"
-	file = "tno_se_samara_oktan_war_declaration.ogg"
+	name ="TNO_SE_ARTSEZO_WAR"
+	file = "tno_se_samara_artezo_war_declaration.ogg"
 }
 
 music = {
