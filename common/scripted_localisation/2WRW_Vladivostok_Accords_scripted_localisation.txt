@@ -1,0 +1,56 @@
+defined_text = {
+	name = GetRUSLoteWinner
+	text = {
+		trigger = {
+			check_variable = { RUS_lote_leverage < JAP.RUS_lote_leverage }
+		}
+		localization_key = "RUS_lote_japan_negotiation_winner"
+	}
+	text = {
+		trigger = {
+			check_variable = { RUS_lote_leverage > JAP.RUS_lote_leverage }
+		}
+		localization_key = "RUS_lote_russia_negotiation_winner"
+	}
+}
+
+defined_text = {
+	name = GetRUSLoteScaleImage
+	text = {
+		trigger = {
+			check_variable = { RUS_compare_leverage < JAP.RUS_lote_leverage }
+		}
+		localization_key = "GFX_lote_scales_left"
+	}
+	text = {
+		trigger = {
+			check_variable = { RUS_lote_leverage > JAP.RUS_compare_leverage }
+		}
+		localization_key = "GFX_lote_scales_right"
+	}
+	text = {
+		localization_key = "GFX_lote_scales_middle"
+	}
+}
+
+defined_text = {
+	name = GetRUSLoteCurrentIssue
+	text = {
+		trigger = {
+			has_country_flag = RUS_issue_of_birobidzhan
+		}
+		localization_key = "Current Issue: Birobidzhan"
+	}
+	text = {
+		trigger = {
+			has_country_flag = RUS_issue_of_primorsky
+		}
+		localization_key = "Current Issue: Primorsky Krai"
+	}
+	text = {
+		trigger = {
+			has_country_flag = RUS_issue_of_vladivostok
+		}
+		localization_key = "Current Issue: Vladivostok"
+	}
+}

@@ -1,0 +1,20 @@
+﻿l_english:
+ # Political parties
+
+ OST_RUS_conservatism_party: "UBDP (C)"
+ OST_RUS_conservatism_party_long: "United Baltic Democratic Party - Center"
+ OST_RUS_liberalism_party: "UBDP (L)"
+ OST_RUS_liberalism_party_long: "United Baltic Democratic Party - Liberals"
+ OST_RUS_progressivism_party: "BPF"
+ OST_RUS_progressivism_party_long: "Baltic Popular Front"
+ OST_RUS_paternalism_party: "BNUP"
+ OST_RUS_paternalism_party_long: "Baltic National Unity Party"
+ OST_RUS_despotism_party: "DVG (M)"
+ OST_RUS_despotism_party_long: "Deutsche Volksgemeinschaft - Moderates"
+ OST_RUS_national_socialism_party: "DVG (H)"
+ OST_RUS_national_socialism_party_long: "Deutsche Volksgemeinschaft - Hardliners"
+
+ # National Spirits
+
+ OST_the_baltic_confederation: "The Baltic Federation"
+ OST_the_baltic_confederation_desc: "The Baltic Federation is in fact, not an actual federation; it is more akin to a confederation, where the constituent countries have almost complete self-governance and where only a few laws are truly enforced on a national level, such as currency and customs laws.\n\nEach of the constituent countries has its own parliament and government, and is free to host their own elections on their own terms.\n\nThis system makes for a relatively stable state which has only one flaw; it effectively can't govern itself properly in the sense that the central government cannot override the parliaments of the constituent countries."

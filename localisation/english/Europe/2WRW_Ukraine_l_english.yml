@@ -1,0 +1,45 @@
+﻿l_english:
+ # Characters
+ UKR_Leonid_Kravchuk: "Leonid Kravchuk"
+
+ # Character descs
+
+ POLITICS_LEONID_KRAVCHUK_DESC: "Leonid Kravchuk has always been a man of flexible loyalties. Born in 1934 in Velykiy Zhytyn, Eastern Poland to a peasant family, he found himself part of a different country after the Soviet invasion of Poland in 1939. After the dust of the Second World War had settled, he found himself entangled in the Ukrainian partisan movement in an attempt to fight for his homeland.\n\nUnlike the more nationalist elements within Ukrainian politics however, Kravchuk's nationalism is easily surpassed by his pragmatism; and that is exactly what landed him his win in the election.\n\nDuring his time helping the transitional government establish a stable regime, his cooperation and loyalty earned him the title of head of the Verkhovna Rada, the Ukrainian parliament. A few under the table deals and bribes later, and his party was able to surpass the more popular URP in votes. While this fact is of course well hidden from the public, one can only shudder to imagine what would happen if one of his own trusted party officials were to blow the whistle on him."
+
+ # Political parties
+
+ UKR_RUS_paternalism_party: "KUN"
+ UKR_RUS_paternalism_party_long: "Konhres Ukrayinskykh Natsionalistiv"
+ UKR_RUS_progressivism_party: "SDPU (O)"
+ UKR_RUS_progressivism_party_long: "Sotsial-Demokratichka Partija Ukrayiny (Ob'ednana)"
+ UKR_RUS_conservatism_party: "URP"
+ UKR_RUS_conservatism_party_long: "Ukrajinska Respublikanska Partija"
+ UKR_RUS_liberalism_party: "HP"
+ UKR_RUS_liberalism_party_long: "Hromadyanska Pozytsiya"
+ UKR_RUS_communist_party: "KPU"
+ UKR_RUS_communist_party_long: "Komunistychna Partiya Ukrainy"
+ UKR_RUS_socialist_party: "SPU"
+ UKR_RUS_socialist_party_long: "Sotsialistychna Partiya Ukrainy"
+ UKR_RUS_national_socialism_party: "KP"
+ UKR_RUS_national_socialism_party_long: "Klityny-Perevertni"
+ 
+
+ # Cosmetic tags
+
+ UKR_RUS_socdem: "Republic of Ukraine"
+ UKR_RUS_socdem_ADJ: "Ukrainian"
+ UKR_RUS_socdem_DEF: "the Republic of Ukraine"
+
+ # National spirits
+ 
+ UKR_memories_of_generalplan_ost: "Memories of Generalplan Ost"
+ UKR_memories_of_generalplan_ost_desc: "What was once the greatest grain baskets of Europe has become nothing more than a beaten, tired, dried-out cow. Even the Germans who settled had their own wealth reduced to a minutia of what they had back in Germany. The elite that pillaged the land are gone, but the people and land remain. While Ukraine isn’t new to hardship, it is debatable if there was any other quite like the Nazi rule. The one thing the people of Ukraine do have is the recently thawed hope for a brighter future brought by the Victory of the Second West Russian War."
+
+ UKR_legacy_of_the_occupation: "Legacy of the Occupation"
+ UKR_legacy_of_the_occupation_desc: "While Ukraine stands today as a free nation, three decades of National Socialist rule has left its everlasting scar on our country.\n\nThe deportation of millions of native Ukrainians to slave plantations, death factories and labor camps along with the influx of German settlers has crippled our national pride and left many Ukrainians outside of our own borders, while also creating ethnic tensions between the new Ukrainian government and militant German settlers unwilling to abandon their ill-gotten lands without a price.\n\nWhile our people stand triumphant over the fascist menace now, Ukraine bears the scars of National Socialism with pain and shame."
+
+ UKR_breadbasket_of_europe: "Breadbasket of Europe"
+ UKR_breadbasket_of_europe_desc: "Now that most of the ordinance buried in the soil has been removed, Ukraine's vast golden fields continue to feed the hungry mouths of Europe.The parasitic relation with the Reich has been replaced with a rather lucrative one with Europe as a whole. With Western economies shifting away from agriculture, towards manufacturing and the rising service industry; Ukraine finds itself not lacking in trading partners.\n\nOf course, when farming is your primary industry you better become the best at it, and as such the government now aptly funds research into new agricultural methods."
+
+ UKR_nezalezhnist: "Nezalezhnist?"
+ UKR_nezalezhnist_desc: "The Post-War period after the Second World War saw the rise in Ukrainian partisan activity, and through this constant struggle against the Reich's administration - the rise of a united Ukrainian national identity. Now that we have gained our independence, in a sense, many people; from former partisans to the common man, are starting to question Ukraine's relation with Russia.\n\nMany feel like this independence is only a farce as the [RUS.GetAdj] government still meddles in our politics, with many believing that only through this foreign interference Leonid Kravchuk was able to secure his victory."

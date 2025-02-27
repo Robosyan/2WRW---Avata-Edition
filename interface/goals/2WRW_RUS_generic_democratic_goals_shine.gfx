@@ -1,0 +1,296 @@
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_Lets_Go_shine"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Lets_Go.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Lets_Go.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Lets_Go.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_A_War_of_Liberation_shine"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_A_War_of_Liberation.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_A_War_of_Liberation.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_A_War_of_Liberation.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Establish_a_Wartime_Economy_shine"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Establish_a_Wartime_Economy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Establish_a_Wartime_Economy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Establish_a_Wartime_Economy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Lead_Ahead_Valiant_Sons_shine"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Lead_Ahead_Valiant_Sons.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Lead_Ahead_Valiant_Sons.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Lead_Ahead_Valiant_Sons.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_The_Wehrmacht_Rots_shine"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_The_Wehrmacht_Rots.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_The_Wehrmacht_Rots.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_The_Wehrmacht_Rots.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_On_the_Cusp_of_Liberty_shine"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_On_the_Cusp_of_Liberty.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_On_the_Cusp_of_Liberty.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_On_the_Cusp_of_Liberty.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Eastern_Europe_Breathes_shine"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Eastern_Europe_Breathes.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Eastern_Europe_Breathes.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Eastern_Europe_Breathes.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+}

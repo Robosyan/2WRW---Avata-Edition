@@ -1,0 +1,87 @@
+﻿l_english:
+
+ #Russian
+ VICTORY_POINTS_155_rus: "Segezha"
+ VICTORY_POINTS_289_rus: "Krychev"
+ VICTORY_POINTS_670_rus: "Nazran"
+ VICTORY_POINTS_683_rus: "Kizlyar"
+ VICTORY_POINTS_685_rus: "Nalchik"
+ VICTORY_POINTS_735_rus: "Armavir"
+ VICTORY_POINTS_754_rus: "Rybnitsa"
+
+ VICTORY_POINTS_1467_rus: "Stepanakert"
+
+ VICTORY_POINTS_3309_rus: "Volkovysk"
+ VICTORY_POINTS_3529_tsa: "Tsaritsyn"
+ VICTORY_POINTS_3529_sta: "Stalingrad"
+ VICTORY_POINTS_3529_wer: "Werbellgrad"
+ VICTORY_POINTS_3658_rus: "Kutaisi"
+ VICTORY_POINTS_3668_rus: "Makhachkala"
+ VICTORY_POINTS_3672_rus: "Grozny"
+
+ VICTORY_POINTS_4534_rus: "Rustavi"
+
+ VICTORY_POINTS_6153_rus: "Suoyarvi"
+ VICTORY_POINTS_6175_rus: "Kostomuksha"
+ VICTORY_POINTS_6315_rus: "Novomoskovsk"
+ VICTORY_POINTS_6718_rus: "Pyatigorsk"
+ VICTORY_POINTS_6783_rus: "Yeysk"
+
+ VICTORY_POINTS_9105_rus: "Priozersk"
+ VICTORY_POINTS_9206_rus: "Vyborg"
+ VICTORY_POINTS_9628_rus: "Vladikavkaz"
+ VICTORY_POINTS_9663_rus: "Sochi"
+ VICTORY_POINTS_9698_rus: "Berezivka"
+
+ VICTORY_POINTS_11322_rus: "Borisov"
+ VICTORY_POINTS_11418_rus: "Novocherkassk"
+ VICTORY_POINTS_11643_rus: "Bikin"
+ VICTORY_POINTS_11645_rus: "Sheki"
+ VICTORY_POINTS_11668_rus: "Novorossiysk"
+ VICTORY_POINTS_11674_rus: "Gyandzha"
+ VICTORY_POINTS_11690_rus: "Neftekumsk"
+
+ VICTORY_POINTS_12263_rus: "Komsomolsk-na-Amure"
+
+ VICTORY_POINTS_14561_rus: "Lida"
+
+ VICTORY_POINTS_15133_rus: "Tskhinvali"
+ VICTORY_POINTS_15690_rus: "Cherkessk"
+
+ #Ukrainian
+ VICTORY_POINTS_6429_ukr: "Mohyliv"
+
+ #Estonian
+ VICTORY_POINTS_185_est: "Kuressaare"
+ VICTORY_POINTS_3512_est: "Tallinn"
+ VICTORY_POINTS_9221_est: "Tartu"
+ VICTORY_POINTS_9485_est: "Antsia"
+ VICTORY_POINTS_11127_est: "Rakvere"
+ VICTORY_POINTS_14602_est: "Viljandi"
+
+ #Latvian
+ VICTORY_POINTS_310_lat: "Daugavpils"
+ VICTORY_POINTS_3296_lat: "Ventspils"
+ VICTORY_POINTS_3333_lat: "Ludza"
+ VICTORY_POINTS_9262_lat: "Liepāja"
+ VICTORY_POINTS_10493_lat: "Valmiera"
+ VICTORY_POINTS_14591_lat: "Jēkabpils"
+
+ #Lithuanian
+ VICTORY_POINTS_3320_lit: "Vilnius"
+ VICTORY_POINTS_6296_lit: "Kaunas"
+ VICTORY_POINTS_9483_lit: "Šiauliai"
+ VICTORY_POINTS_11312_lit: "Marijampolė"
+ VICTORY_POINTS_14585_lit: "Panevėžys"
+
+ #Belarus
+ VICTORY_POINTS_406_blr: "Viliejka"
+ VICTORY_POINTS_3309_blr: "Vawkavysk"
+ VICTORY_POINTS_3350_blr: "Babruysk"
+ VICTORY_POINTS_3356_blr: "Luninets"
+ VICTORY_POINTS_9289_blr: "Mogilev"
+ VICTORY_POINTS_11216_blr: "Koydanava"
+ VICTORY_POINTS_11241_blr: "Vitebsk"
+ VICTORY_POINTS_11322_blr: "Barysaw"
+ VICTORY_POINTS_14552_blr: "Slutsk"
+ VICTORY_POINTS_14561_blr: "Voranava"

@@ -1,0 +1,479 @@
+shared_focus = {
+	id = GER_Der_Letzte_Krieg
+	icon = GFX_GER_Der_Letzte_Krieg
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = { factor = 1 }
+	x = 10
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Der_Letzte_Krieg"
+		add_ideas = GER_Verteidige_das_Vaterland
+		hidden_effect = {
+			SWRW_add_army_size_modifier = yes #normal hoi4 army sizes
+			GER = { country_event = { id = swrw_misc.2 } } #skilled staffer modifier
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_Die_Grenzwacht_Hielt_Im_Osten
+	icon = GFX_GER_Die_Grenzwacht_hielt_im_Osten
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_Der_Letzte_Krieg
+	}
+	relative_position_id = GER_Der_Letzte_Krieg
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Die_Grenzwacht_Hielt_Im_Osten"
+		custom_effect_tooltip = GER_OKW_hissy_fit
+		if= {
+			limit = {
+				is_ai = yes
+			}
+			hidden_effect = {
+				SWRW_GER_Die_Grenzwacht_Hielt_Im_Osten_effect = yes	
+			}
+		}
+		else = {
+			SWRW_GER_Die_Grenzwacht_Hielt_Im_Osten_effect = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_Invigorate_The_Reich
+	icon = GFX_GER_Invigorate_the_Reich
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_Die_Grenzwacht_Hielt_Im_Osten
+	}
+	relative_position_id = GER_Die_Grenzwacht_Hielt_Im_Osten
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Invigorate_The_Reich"
+		add_manpower = 100000
+		add_war_support = 0.05
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = GER_Every_Last_Contract
+	icon = GFX_GER_Every_Last_Contract
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_Die_Grenzwacht_Hielt_Im_Osten
+	}
+	relative_position_id = GER_Die_Grenzwacht_Hielt_Im_Osten
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Every_Last_Contract"
+		add_ideas = GER_The_Means_of_War_1
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 500
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 200
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_Mobilize_The_Veterans
+	icon = GFX_GER_Mobilize_The_Veterans
+	cost = 3
+	available_if_capitulated = no
+	available = {
+		has_completed_focus = GER_Die_Wahrheit_ist_der_Feind
+	}
+	prerequisite = {
+		focus = GER_Die_Grenzwacht_Hielt_Im_Osten
+	}
+	relative_position_id = GER_Die_Grenzwacht_Hielt_Im_Osten
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Mobilize_The_Veterans"
+		swap_ideas = {
+			remove_idea = GER_The_Final_Line_1
+			add_idea = GER_The_Final_Line_2
+		}
+		add_stability = -0.05
+		add_manpower = 250000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_0
+			amount = 1000
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_Die_Ostlegion
+	icon = GFX_GER_Die_Ostlegion
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_Mobilize_The_Veterans
+	}
+	relative_position_id = GER_Mobilize_The_Veterans
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Die_Ostlegion"
+		add_stability = -0.05
+		add_manpower = 12000
+		custom_effect_tooltip = GER_kylo_ren
+		hidden_effect = {
+			load_oob = "SWRW_GER_Ostlegion"
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_Pressure_The_Corporations
+	icon = GFX_GER_Pressure_the_Corporations
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_Every_Last_Contract
+	}
+	relative_position_id = GER_Every_Last_Contract
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Pressure_The_Corporations"
+		swap_ideas = {
+			remove_idea = GER_The_Means_of_War_1
+			add_idea = GER_The_Means_of_War_2
+		}
+		set_temp_variable = {
+			pus_temp = 2
+		}
+		econ_pus_change = yes
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3500
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 1500
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 3500
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = MBT_equipment
+			amount = 500
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment
+			amount = 200
+		}
+		add_equipment_to_stockpile = {
+			type = CAS_equipment
+			amount = 200
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_Die_Wahrheit_ist_der_Feind
+	icon = GFX_GER_Die_Wahrheit_ist_der_Feind
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_Invigorate_The_Reich
+	}
+	relative_position_id = GER_Invigorate_The_Reich
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = 1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Die_Wahrheit_ist_der_Feind"
+		add_ideas = GER_The_Final_Line_1
+		add_war_support = 0.20
+		add_stability = -0.1
+	}
+}
+
+shared_focus = {
+	id = GER_Ein_Totaler_Krieg
+	icon = GFX_GER_Ein_Totaler_Krieg
+	cost = 3
+	available = {
+		MCW = { has_capitulated = yes }
+	}
+	prerequisite = {
+		focus = GER_Die_Ostlegion
+	}
+	prerequisite = {
+		focus = GER_Die_Wahrheit_ist_der_Feind
+	}
+	prerequisite = {
+		focus = GER_Pressure_The_Corporations
+	}
+	relative_position_id = GER_Pressure_The_Corporations
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = 0
+	y = 2
+	completion_reward = {
+		custom_effect_tooltip = GER_funny_moment
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			hidden_effect = {
+				GER_Ein_Totaler_Krieg_effect = yes	
+			}
+		}
+		else = {
+			GER_Ein_Totaler_Krieg_effect = yes	
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_Unleash_The_Wolves
+	icon = GFX_GER_Unleash_the_Wolves
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_Ein_Totaler_Krieg
+	}
+	relative_position_id = GER_Ein_Totaler_Krieg
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Unleash_The_Wolves"
+		add_ideas = GER_Wolves_of_the_Fatherland
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -500
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_More_Hands_In_The_Factories
+	icon = GFX_GER_More_Hands_in_the_Factories
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_Unleash_The_Wolves
+	}
+	relative_position_id = GER_Unleash_The_Wolves
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_More_Hands_In_The_Factories"
+		swap_ideas = {
+			remove_idea = GER_The_Means_of_War_2
+			add_idea = GER_The_Means_of_War_3
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_End_The_Tiresome_Partisan
+	icon = GFX_GER_End_the_Tiresome_Partisan
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_Unleash_The_Wolves
+	}
+	relative_position_id = GER_Unleash_The_Wolves
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_End_The_Tiresome_Partisan"
+		GER = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+				producer = GER
+			}
+		}
+		if = {
+			limit = {
+				country_exists = UKR
+			}
+			UKR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = GER
+				}
+				add_stability = -0.1
+			}
+		}
+		if = {
+			limit = {
+				country_exists = BLR
+			}
+			BLR = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = GER
+				}
+				add_stability = -0.1
+			}
+		}
+		if = {
+			limit = {
+				country_exists = OST
+			}
+			OST = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 500
+					producer = GER
+				}
+				add_stability = -0.1
+			}
+		}
+		RUS = {
+			add_manpower = -50000
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_Declaw_The_Bear
+	icon = GFX_GER_Declaw_the_Bear
+	cost = 3
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_More_Hands_In_The_Factories
+	}
+	prerequisite = {
+		focus = GER_End_The_Tiresome_Partisan
+	}
+	relative_position_id = GER_Unleash_The_Wolves
+	ai_will_do = { factor = 1 }
+	bypass = {
+		GER = {
+			has_war = no
+		}
+	}
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Declaw_The_Bear"
+		custom_effect_tooltip = GER_its_so_joever
+		swap_ideas = {
+			remove_idea = GER_The_Final_Line_2
+			add_idea = GER_The_Final_Line_3
+		}
+	}
+}
+
+shared_focus = {
+	id = GER_Uber_Alles
+	icon = GFX_GER_Uber_Alles
+	cost = 3
+	available = {
+		has_country_flag = GER_SWRW_Victory
+	}
+	available_if_capitulated = no
+	prerequisite = {
+		focus = GER_Declaw_The_Bear
+	}
+	relative_position_id = GER_Declaw_The_Bear
+	ai_will_do = { factor = 1 }
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: GER_Uber_Alles"
+		custom_effect_tooltip = GER_russia_is_now_fucked
+		add_ideas = SWRW_GER_Endsieg
+		TNO_Country_Closing_Screen_show = yes
+	}
+}

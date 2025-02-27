@@ -1,0 +1,115 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tension_bar_frame"
+		texturefile = "gfx/interface/war_overview_gui/tension_bar_frame.dds"
+		noOfFrames = 5
+		transparencecheck = yes
+	}
+	progressbartype = {
+		name = "GFX_WRW_Tension_bar"
+		texturefile1 = "gfx/interface/war_overview_gui/tension_bar_full.dds"
+		texturefile2 = "gfx/interface/war_overview_gui/tension_bar_empty.dds"
+		size = {
+			x = 354
+			y = 34
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	
+	spriteType = {
+		name = "GFX_exhaustion_bar_frame"
+		texturefile = "gfx/interface/war_overview_gui/exhaustion_bar_frame.dds"
+	}
+	progressbartype = {
+		name = "GFX_GER_WRW_Exhaustion_bar"
+		texturefile1 = "gfx/interface/war_overview_gui/exhaustion_bar_full_germany.dds"
+		texturefile2 = "gfx/interface/war_overview_gui/exhaustion_bar_empty.dds"
+		size = {
+			x = 214
+			y = 34
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	
+	progressbartype = {
+		name = "GFX_RUS_WRW_Exhaustion_bar"
+		texturefile2 = "gfx/interface/war_overview_gui/exhaustion_bar_empty.dds"
+		texturefile1 = "gfx/interface/war_overview_gui/exhaustion_bar_full_russia.dds"
+		size = {
+			x = 214
+			y = 34
+		}
+		effectFile = "gfx/FX/progress_reverse.lua"
+		horizontal = yes
+	}
+
+	spriteType = {
+		name = "GFX_war_exhaustion_icon"
+		texturefile = "gfx/interface/war_overview_gui/warexhaustion_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_nuke_open_window_button"
+		texturefile = "gfx/interface/war_overview_gui/nuke_open_window_button.dds"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_nuke_open_window_button_available"
+		texturefile = "gfx/interface/war_overview_gui/nuke_open_window_button_available.dds"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		play_on_show = yes
+		looping = no
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	
+	spriteType = {
+		name = "GFX_diplomacy_button"
+		texturefile = "gfx/interface/war_overview_gui/diplomacy_button.dds"
+	}
+	spriteType = {
+		name = "GFX_frontlines_button"
+		texturefile = "gfx/interface/war_overview_gui/frontlines_button.dds"
+	}
+	spriteType = {
+		name = "GFX_homefront_button"
+		texturefile = "gfx/interface/war_overview_gui/homefront_button.dds"
+	}
+	
+	## NUKE WINDOW
+	
+	spriteType = {
+		name = "GFX_nuclear_button"
+		texturefile = "gfx/interface/war_overview_gui/nuclear_button.dds"
+	}
+	spriteType = {
+		name = "GFX_nuclear_console"
+		texturefile = "gfx/interface/war_overview_gui/nuclear_console.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_select_fire_buttons"
+		texturefile = "gfx/interface/war_overview_gui/select_fire_buttons.dds"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_key_insert"
+		texturefile = "gfx/interface/war_overview_gui/key_insert.dds"
+	}
+	spriteType = {
+		name = "GFX_key_inserted"
+		texturefile = "gfx/interface/war_overview_gui/key_inserted.dds"
+	}
+	spriteType = {
+		name = "GFX_nuclear_console_picture"
+		texturefile = "gfx/interface/war_overview_gui/nuclear_console_picture.dds"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_key_turn"
+		texturefile = "gfx/interface/war_overview_gui/key_turn.dds"
+		noOfFrames = 4
+		animation_rate_fps = 12
+		play_on_show = yes
+		looping = no
+	}
+}

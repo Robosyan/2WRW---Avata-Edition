@@ -1,0 +1,136 @@
+spriteTypes = {
+	# Category Icons
+	spriteType = {
+		name = "GFX_iran_civil_war_icon_rus_shahdom"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/iran_civil_war_icon_rus_shahdom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_iran_civil_war_icon_rus_commie"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/iran_civil_war_icon_rus_commie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_krakow_uprising_icon_rus"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/krakow_uprising_icon_rus.dds"
+	}
+	spriteType = {
+		name = "GFX_krakow_uprising_icon_ger"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/krakow_uprising_icon_ger.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_west_georgia_icon_rus"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/west_georgia_icon_rus.dds"
+	}
+	spriteType = {
+		name = "GFX_west_georgia_icon_ger"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/west_georgia_icon_ger.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_west_china_war_icon_rus"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/west_china_war_icon_rus.dds"
+	}
+	spriteType = {
+		name = "GFX_west_china_war_icon_jap"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/west_china_war_icon_jap.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mongolia_uprising_icon_rus"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/mongolia_uprising_icon_rus.dds"
+	}
+	spriteType = {
+		name = "GFX_mongolia_uprising_icon_jap"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/mongolia_uprising_icon_jap.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_hungarian_civil_war_icon_rus_commie"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/hungarian_civil_war_icon_rus_commie.dds"
+	}
+	spriteType = {
+		name = "GFX_hungarian_civil_war_icon_rus_dem"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/hungarian_civil_war_icon_rus_dem.dds"
+	}
+	spriteType = {
+		name = "GFX_hungarian_civil_war_icon_ger"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/hungarian_civil_war_icon_ger.dds"
+	}
+	spriteType = {
+		name = "GFX_hungarian_civil_war_icon_rus_transylvania_commie"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/hungarian_civil_war_icon_rus_transylvania_commie.dds"
+	}
+	spriteType = {
+		name = "GFX_hungarian_civil_war_icon_rus_transylvania_dem"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/hungarian_civil_war_icon_rus_transylvania_dem.dds"
+	}
+	spriteType = {
+		name = "GFX_hungarian_civil_war_icon_transylvania_ger"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/hungarian_civil_war_icon_transylvania_ger.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_german_civil_war_icon_rus_commie_pre_truce_break"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/german_civil_war_icon_rus_commie_pre_truce_break.dds"
+	}
+	spriteType = {
+		name = "GFX_german_civil_war_icon_rus_commie_post_truce_break"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/german_civil_war_icon_rus_commie_post_truce_break.dds"
+	}
+	spriteType = {
+		name = "GFX_german_civil_war_icon_rus_dem_pre_truce_break"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/german_civil_war_icon_rus_dem_pre_truce_break.dds"
+	}
+	spriteType = {
+		name = "GFX_german_civil_war_icon_rus_dem_post_truce_break"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_icons/german_civil_war_icon_rus_dem_post_truce_break.dds"
+	}
+	
+	# Category Pictures
+	spriteType = {
+		name = "GFX_west_china_war_picture_rus"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_pics/west_china_war_picture_rus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_krakow_uprising_picture_rus"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_pics/krakow_uprising_picture_rus.dds"
+	}
+	spriteType = {
+		name = "GFX_krakow_uprising_picture_ger"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_pics/krakow_uprising_picture_ger.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mountain_war_picture_rus"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_pics/mountain_war_picture_rus.dds"
+	}
+	spriteType = {
+		name = "GFX_mountain_war_picture_ger"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_pics/mountain_war_picture_ger.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mongolian_uprising_picture_rus"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_pics/mongolian_uprising_picture_rus.dds"
+	}
+	spriteType = {
+		name = "GFX_mongolian_uprising_picture_jap"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_pics/mongolian_uprising_picture_jap.dds"
+	}
+	spriteType = {
+		name = "GFX_hungarian_civil_war_picture"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_pics/hungarian_civil_war_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_second_german_civil_war_picture"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/category_pics/second_german_civil_war_picture.dds"
+	}
+	# Misc
+	spriteType = {
+		name = "GFX_seal_of_the_russian_federation"
+		textureFile = "gfx/interface/proxy_wars/fopo_gui/seal_of_the_russian_federation.dds"
+	}
+}

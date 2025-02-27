@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_POL_vistula_german_conflict"
+		texturefile = "gfx/interface/ideas/national_spirits/POL/GFX_idea_POL_vistula_german_conflict.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_armia_krajowa"
+		texturefile = "gfx/interface/ideas/national_spirits/POL/idea_POL_armia_krajowa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_nowa_polska_volunteers"
+		texturefile = "gfx/interface/ideas/national_spirits/POL/idea_POL_nowa_polska_volunteers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_armia_krajowa"
+		texturefile = "gfx/interface/ideas/POL/idea_POL_armia_krajowa.dds"
+	}
+}

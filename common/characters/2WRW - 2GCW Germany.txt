@@ -1,0 +1,425 @@
+characters = {
+	GER_reichstag_emergency_council_2 = {
+		name = GER_reichstag_emergency_council
+		portraits = { civilian = { large = "gfx/leaders/GER/Portrait_GER_Reichstag_Emergency_Council.png" } }
+		country_leader = {
+			desc = "REICHSTAG_EMERGENCY_COUNCIL_DESC"
+			ideology = national_socialism_subtype
+			traits = { }
+			expire = 1999.1.1.1
+			id = -1
+		}
+	}
+
+	REG_Hans_Dietrich_Genscher = {
+		name = REG_Hans_Dietrich_Genscher
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/REG_Hans_Dietrich_Genscher.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_transitioning_democracy_subtype
+			desc = "POLITICS_REG_Hans_Dietrich_Genscher_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	SIL_Fritz_Teufel = {
+		name = SIL_Fritz_Teufel
+		portraits = {
+			civilian = { large = "gfx/leaders/GER/SIL_Fritz_Teufel.dds" }
+			army = { large = "gfx/leaders/GER/SIL_Fritz_Teufel.dds" }
+		}
+		country_leader = {
+			ideology = socialist_syndicalism_subtype
+			desc = "POLITICS_SIL_Fritz_Teufel_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		corps_commander = {
+			skill = 1
+			traits = {
+				partisan_commander anti_fascist
+			}
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	RPR_Heinz_Hoffmann = {
+		name = RPR_Heinz_Hoffmann
+		portraits = {
+			civilian = { large = "gfx/leaders/GER/RPR_Heinz_Hoffmann.dds" }
+			army = { large = "gfx/leaders/GER/RPR_Heinz_Hoffmann.dds" }
+		}
+		country_leader = {
+			ideology = communist_bolshevism_subtype
+			desc = "POLITICS_RPR_Heinz_Hoffmann_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				trickster guerrilla_veteran organizer
+			}
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	RPR_Erich_Mielke = {
+		name = RPR_Erich_Mielke
+		portraits = {
+			army = {
+				large = "gfx/leaders/GER/RPR_Erich_Mielke.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			traits = {
+				trickster commando
+			}
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	RPR_Heinz_Kessler = {
+		name = RPR_Heinz_Kessler
+		portraits = {
+			army = {
+				large = "gfx/leaders/GER/RPR_Heinz_Kessler.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			traits = {
+				harsh_leader
+			}
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	SRH_Rudi_Dutschke = {
+		name = SRH_Rudi_Dutschke
+		portraits = {
+			civilian = { large = "gfx/leaders/GER/SRH_Rudi_Dutschke.dds" }
+			army = { large = "gfx/leaders/GER/SRH_Rudi_Dutschke_Army.dds" }
+		}
+		country_leader = {
+			ideology = socialist_revolutionary_frontism_subtype
+			desc = "POLITICS_SRH_Rudi_Dutschke_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		field_marshal = {
+			traits = {
+				inspirational_leader commando partisan_commander
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	HRC_Ernst_Aust = {
+		name = HRC_Ernst_Aust
+		portraits = {
+			civilian = { large = "gfx/leaders/GER/HRC_Ernst_Aust.dds" }
+			army = { large = "gfx/leaders/GER/HRC_Ernst_Aust.dds" }
+		}
+		country_leader = {
+			ideology = communist_national_communism_subtype
+			desc = "POLITICS_HRC_Ernst_Aust_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		field_marshal = {
+			skill = 1
+			traits = {
+				panzer_expert
+			}
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	GMA_Ernst_Ferber = {
+		name = GMA_Ernst_Ferber
+		portraits = {
+			civilian = { large = "gfx/leaders/GER/GMA_Ernst_Ferber.dds" }
+			army = { large = "gfx/leaders/GER/GMA_Ernst_Ferber.dds" }
+		}
+		country_leader = {
+			ideology = despotism_military_junta_subtype
+			desc = "POLITICS_GMA_Ernst_Ferber_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		field_marshal = {
+			skill = 4
+			traits = {
+				war_hero organizer panzer_leader combined_arms_expert skilled_staffer
+			}
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+
+	GMA_Richard_Von_Shirach = {
+		name = GMA_Richard_Von_Shirach
+		portraits = {
+			civilian = { large = "gfx/leaders/GER/GMA_Richard_Von_Shirach.dds" }
+		}
+		country_leader = {
+			ideology = national_socialism_subtype
+			desc = "POLITICS_GMA_Richard_Von_Shirach_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	GMA_Walter_Jens = {
+		name = GMA_Walter_Jens
+		portraits = {
+			civilian = { large = "gfx/leaders/GER/GMA_Walter_Jens.dds" }
+		}
+		country_leader = {
+			ideology = national_socialism_subtype
+			desc = "POLITICS_GMA_Walter_Jens_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	SFK_Heinz_Georg_Lemm = {
+		name = SFK_Heinz_Georg_Lemm
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/SFK_Heinz_Georg_Lemm.dds"
+			}
+			army = {
+				large = "gfx/leaders/GER/SFK_Heinz_Georg_Lemm.dds"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism_stratocracy_subtype
+			desc = "POLITICS_SFK_Heinz_Georg_Lemm_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		corps_commander = {
+			traits = { trickster panzer_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	SFK_Ernst_Kaltenbrunner = {
+		name = SFK_Ernst_Kaltenbrunner
+		portraits = {
+			civilian = { large = "gfx/leaders/GER/SFK_Ernst_Kaltenbrunner.dds" }
+			army = { large = "gfx/leaders/GER/SFK_Ernst_Kaltenbrunner.dds" }
+		}
+		country_leader = {
+			ideology = national_socialism_spartanism_subtype
+			desc = "POLITICS_SFK_Ernst_Kaltenbrunner_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		field_marshal = {
+			traits = { war_hero fast_planner career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	SFK_Herbert_Backe = {
+		name = SFK_Herbert_Backe
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/SFK_Herbert_Backe.dds"
+			}
+			army = {
+				large = "gfx/leaders/GER/SFK_Herbert_Backe.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_socialism_1_subtype
+			desc = "POLITICS_SFK_Herbert_Backe_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	OZW_Juergen_Bennecke = {
+		name = OZW_Juergen_Bennecke
+		portraits = {
+			civilian = { large = "gfx/leaders/GER/OZW_Jurgen_Bennecke.dds" }
+			army = { large = "gfx/leaders/GER/OZW_Jurgen_Bennecke.dds" }
+		}
+		country_leader = {
+			ideology = despotism_military_junta_subtype
+			desc = "POLITICS_OZW_Juergen_Bennecke_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		corps_commander = {
+			traits = { infantry_leader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	OZW_Bernhard_Baatz = {
+		name = OZW_Bernhard_Baatz
+		portraits = {
+			civilian = { large = "gfx/leaders/GER/OZW_Bernhard_Baatz.dds" }
+			army = { large = "gfx/leaders/GER/OZW_Bernhard_Baatz.dds" }
+		}
+		country_leader = {
+			ideology = national_socialism_subtype
+			desc = "POLITICS_OZW_Bernhard_Baatz_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		field_marshal = {
+			traits = {
+				politically_connected harsh_leader
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	GER_kurt_waldheim = {
+		name = GER_kurt_waldheim
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_Kurt_Waldheim.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_KURT_WALDHEIM_DESC"
+			ideology = national_socialism_reformed_national_socialism_subtype
+			traits = { }
+			expire = 1999.1.1.1
+			id = -1
+		}
+	}
+	REG_Walter_Scheel = {
+		name = REG_Walter_Scheel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/REG_Walter_Scheel.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_REG_Walter_Scheel"
+			ideology = conservatism_progressive_conservatism_subtype
+			traits = { }
+			expire = 1999.1.1.1
+			id = -1
+		}
+	}
+
+	REG_Manfred_Gerlach = {
+		name = REG_Manfred_Gerlach
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/REG_Manfred_Gerlach.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_REG_Manfred_Gerlach"
+			ideology = liberalism_subtype
+			traits = { }
+			expire = 1999.1.1.1
+			id = -1
+		}
+	}
+
+	GER_Willi_Brandner = {
+		name = GER_Willi_Brandner
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_Willi_Brandner.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_GER_Willi_Brandner"
+			ideology = national_socialism_1_subtype
+			traits = { }
+			expire = 1999.1.1.1
+			id = -1
+		}
+	}
+
+	REG_reichsbanner = {
+		name = REG_reichsbanner
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/reichbanner.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_REG_reichsbanner_DESC"
+			ideology = paternalism_transitioning_democracy_subtype
+			traits = { }
+			expire = 1999.1.1.1
+			id = -1
+		}
+	}
+	
+	GER_turkish_people = {
+		name = GER_turkish_people
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/debug/turkish_people.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			ideology = paternalism_subtype
+			traits = { }
+			expire = 1999.1.1.1
+			id = -1
+		}
+	}
+}

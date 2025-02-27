@@ -1,0 +1,451 @@
+ideas = {
+	country = {
+	
+		# Second West Russian War
+		
+		NOV_the_national_reformation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_the_national_reformation"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.075
+				political_power_factor = 0.1
+			}
+		}
+		
+		NOV_the_russian_dream = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_the_russian_dream"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_russian_dream
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.1
+				political_power_factor = 0.2
+				monthly_population = 0.25
+			}
+		}
+		
+		NOV_send_in_the_sluzhba_bezopasnosti_lr = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_send_in_the_sluzhba_bezopasnosti_lr"}
+			allowed = { always = no }
+			cancel = { 
+				OR = {
+					has_country_flag = RUS_cancel_all_ideas
+					has_global_flag = RUS_SWRW_End
+				}
+			 }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_spy
+			modifier = {
+				intel_network_gain = 1
+			}
+		}
+		NOV_send_in_the_sluzhba_bezopasnosti = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_send_in_the_sluzhba_bezopasnosti_lr"}
+			allowed = { always = no }
+			cancel = { 
+				OR = {
+					has_country_flag = RUS_cancel_all_ideas
+					has_global_flag = RUS_SWRW_End
+				}
+			 }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_spy
+			modifier = {
+				decryption_factor = 0.1
+				encryption_factor = 0.1
+			}
+		}
+		
+		NOV_send_in_the_sluzhba_bezopasnosti_one_lr = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_send_in_the_sluzhba_bezopasnosti_one_lr"}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+				has_global_flag = RUS_SWRW_End
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_spy
+			modifier = {
+				intel_network_gain = 1
+				decryption_power_factor = 0.25
+				crypto_strength = 1
+			}
+		}
+		NOV_send_in_the_sluzhba_bezopasnosti_one = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_send_in_the_sluzhba_bezopasnosti_one_lr"}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+				has_global_flag = RUS_SWRW_End
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_spy
+			modifier = {
+				decryption_factor = 0.25
+				encryption_factor = 0.25
+			}
+		}
+		
+		NOV_army_all_russian_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NOV_army_all_russian_army" }
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_all_russian_army
+			modifier  = {
+				army_org_factor = 0.05
+				conscription_factor = -0.05
+			}
+		}
+		
+		NOV_army_ready_for_anything = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_army_ready_for_anything"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_all_russian_army
+			modifier  = {
+				army_attack_factor = 0.05
+				army_org_factor = 0.2
+				attrition = -0.15
+				conscription_factor = -0.05
+			}
+		}
+		
+		NOV_russia_rules_the_skies = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_russia_rules_the_skies"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = TOB_air_land_battles
+			modifier  = {
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+				air_ace_generation_chance_factor = 0.25
+
+			}
+		}
+		
+		NOV_economic_renaissance = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_economic_renaissance"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = heavy_industrial_zone
+			modifier  = {
+				consumer_goods_use_modifier = -0.025
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.025
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.025
+				production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		
+		NOV_legacy_of_nep = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_legacy_of_nep"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = heavy_industrial_zone
+			modifier  = {
+				consumer_goods_use_modifier = -0.03
+				production_speed_buildings_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.075
+				local_resources_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		
+		NOV_west_russian_plan = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_west_russian_plan"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_the_west_russian_plan
+			modifier  = {
+				consumer_goods_use_modifier = -0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		NOV_blitzkreig_of_our_own = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_blitzkreig_of_our_own"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_blitzkreig_of_our_own
+			modifier  = {
+				army_attack_factor = 0.2
+				breakthrough_factor = 0.2
+				army_defence_factor = 0.2
+				army_speed_factor = 0.2
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				air_superiority_bonus_in_combat = 0.25
+			}
+		}
+		
+		NOV_they_are_broken_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_they_are_broken_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GER_broken_moskowien
+			modifier  = {
+				army_core_attack_factor = -0.05
+				army_core_defence_factor = -0.025
+				army_morale_factor = -0.2
+				army_org_factor = -0.2
+				attrition = 0.1
+				war_support_factor = -0.05
+			}
+		}
+		
+		NOV_lessons_of_barbarossa_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_lessons_of_barbarossa_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_lessons_barbarossa_pic
+			modifier  = {
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+				attrition = -0.1
+				war_support_factor = 0.05
+			}
+		}
+		
+		# SWRW War Ideas #
+		
+		NOV_Operation_Bagration_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_Operation_Bagration_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_soldiers_marching
+			modifier  = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.025
+				army_org_factor = 0.1
+				attrition = -0.1
+			}
+		}
+		NOV_Moscow_Offensive_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_Moscow_Offensive_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_Moscow_Offensive
+			modifier  = {
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.1
+			}
+		}
+		NOV_Partisan_Militas_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_Partisan_Militas_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_partisan_alliance
+			modifier  = {
+				weekly_manpower = 12000
+				coordination_bonus = 0.1
+				recon_factor = 0.1
+			}
+		}
+		NOV_Defenders_of_Moscow_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_Defenders_of_Moscow_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = RUS_Defenders_of_Moscow_pic
+			modifier  = {
+				army_defence_factor = 0.1
+				army_org_regain = 0.05
+				dig_in_speed = 2
+			}
+		}
+		NOV_for_the_liberation_of_all_russians_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_for_the_liberation_of_all_russians_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_soldiers_marching
+			modifier  = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+		NOV_eurasias_power_plant_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_eurasias_power_plant_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+
+			allowed_civil_war = { always = yes }
+
+			removal_cost = -1
+			picture = MGN_Constructive_Science
+
+			modifier = {
+				production_oil_factor = 0.10
+				local_resources_factor = 0.05
+				annual_gdp_growth_factor = 0.15
+			}
+		}
+	}
+	hidden_ideas = {
+		NOV_Pontoon_Bridges_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_Pontoon_Bridges_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_RUS_Defenders_of_Moscow_pic
+			modifier  = {
+				river_crossing_factor = -0.25
+			}
+		}
+		NOV_Wartime_Conscription_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_Wartime_Conscription_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_soldiers_marching
+			modifier  = {
+				mobilization_speed = 0.5
+				land_reinforce_rate = 0.25
+				conscription_factor = 0.05
+			}
+		}
+		NOV_Feniks_Production_Boost_idea = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_Feniks_Production_Boost_idea"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = idea_generic_weapons_production
+			modifier  = {
+				production_factory_efficiency_gain_factor = 0.5
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_start_efficiency_factor = 0.25
+				production_lack_of_resource_penalty_factor = 0.1
+			}
+		}
+		NOV_federal_scholarship_program = {
+			allowed = { original_tag = NOV }
+			allowed_civil_war = { always = yes }
+			on_add = { log = "[GetDateText]: [Root.GetName]: added idea NOV_federal_scholarship_program" }
+			removal_cost = -1
+			picture = QIN_the_little_farmland_we_have
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		NOV_enforced_socialist_education = {
+			allowed = { original_tag = NOV }
+			allowed_civil_war = { always = no }
+			on_add = { log = "[GetDateText]: [Root.GetName]: added idea NOV_enforced_socialist_education" }
+			removal_cost = -1
+			picture = QIN_the_little_farmland_we_have
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+		NOV_enforced_unionisation = {
+			allowed = { original_tag = NOV }
+			allowed_civil_war = { always = no }
+			on_add = { log = "[GetDateText]: [Root.GetName]: added idea NOV_enforced_unionisation" }
+			removal_cost = -1
+			picture = QIN_the_little_farmland_we_have
+			modifier = {
+				industrial_capacity_factory	= -0.1
+				political_power_factor = 0.05
+			}
+		}
+		NOV_industrial_independence = {
+			allowed = { original_tag = NOV }
+			allowed_civil_war = { always = no }
+			on_add = { log = "[GetDateText]: [Root.GetName]: added idea NOV_industrial_independence" }
+			removal_cost = -1
+			picture = QIN_the_little_farmland_we_have
+			modifier = {
+				industrial_capacity_factory	= -0.025
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_lack_of_resource_penalty_factor = 0.15
+			}
+		}
+		NOV_federal_anti_corruption_bureau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_federal_anti_corruption_bureau" }
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			#picture = idea_SVR_sverdlovsk_design_bureau_idea
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = -0.05
+				research_speed_factor = -0.02
+			}
+		}
+		SWRW_NOV_central_design_bureau = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea SWRW_NOV_central_design_bureau "}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_NOV_Central_Design_Bureau
+			modifier = {
+				consumer_goods_use_modifier = 0.02
+				research_speed_factor = 0.1
+				civilian_annual_cost = 0.5
+			}
+		}
+		NOV_electoral_committee = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_electoral_committee" }
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = GFX_idea_NOV_electoral_committee
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.01
+			}
+		}
+	}
+}

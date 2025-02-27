@@ -1,0 +1,16 @@
+defined_text = {
+	name = Statelore_Get_Perm_name
+	text = {
+		trigger = {
+			753 = {
+				owner = {
+					original_tag = PRM
+				}
+			}
+		}
+		localization_key = state_lore_desc.1004_PRM
+	}
+	text = {
+		localization_key = state_lore_desc.1004_RUS
+	}
+}

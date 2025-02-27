@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_Slava"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Slava.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Toppling_The_Menace"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Toppling_The_Menace.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Honor_in_Labor"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Honor_in_Labor.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Praise_The_Soldiery"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Praise_the_Soldiery.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_A_Westward_Wall"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Westward_Wall.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Extinguishing_The_Prussian_Spirit"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Extinguishing_the_Prussian_Spirit.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_A_Resurgent_Eagle"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Resurgent_Eagle.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_A_Russian_Century"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Russian_Century.dds"
+	}
+}

@@ -1,0 +1,571 @@
+### USEFUL TAGS ###
+# START WAR
+# ARMY SIZE MODIFIERS
+# TENSION EFFECTS
+# RUSSIAN EXHAUSTION EFFECTS
+# GERMAN EXHAUSTION EFFECTS
+
+##############################################
+##################ZA RODINU!##################
+##############################################
+
+
+## START WAR ##
+
+SWRW_initiate = {
+	set_global_flag = RUS_SWRW_ongoing_global
+	set_country_flag = RUS_SWRW_ongoing
+	set_country_flag = {
+		flag = RUS_SWRW_peace_blocker
+		days = 60
+		value = 1
+	}
+
+	RUS_save_pre_war_conscription = yes
+
+	if = {
+		limit = {
+			GER = { is_ai = no }
+		}
+		RUS = {
+			load_oob = "SWRW_RUS_AI_BUFF"
+		}
+	}
+	
+	GER = {
+		load_focus_tree = GER_Germany_War_Tree
+		set_country_flag = RUS_SWRW_ongoing
+		set_country_flag = {
+			flag = RUS_SWRW_peace_blocker
+			days = 60
+			value = 1
+		}
+	}
+	
+	## REMOVE EINHEITSPAKT MEMBERS ##
+	every_country = {
+		limit = {
+			tag = NOR
+			is_in_faction_with = GER 
+			NOT = { has_government = national_socialism }
+		}
+		GER = { 
+			remove_from_faction = NOR
+			set_autonomy = {
+				target = NOR
+				autonomy_state = autonomy_free
+			}
+		}
+		RUS = { country_event = { id = crisisSWRW.51 days = 30 random_days = 15 } }
+	}
+	
+	every_country = {
+		limit = {
+			tag = HUN
+			is_in_faction_with = GER
+			NOT = {  has_government = national_socialism }
+		}
+		GER = { 
+			remove_from_faction = HUN
+			set_autonomy = {
+				target = HUN
+				autonomy_state = autonomy_free
+			}
+		}
+		RUS = { country_event = { id = crisisSWRW.52 days = 75 random_days = 15 } }
+	}
+	
+	every_country = {
+		limit = {
+			tag = ROM
+			is_in_faction_with = GER
+		}
+		GER = { 
+			remove_from_faction = ROM
+			set_autonomy = {
+				target = NOR
+				autonomy_state = autonomy_free
+			}
+		}
+		RUS = { country_event = { id = crisisSWRW.53 days = 110 random_days = 15 } }
+	}
+	
+	every_country = {
+		limit = {
+			tag = ENG
+			is_in_faction_with = GER
+			NOT = {
+				has_government = national_socialism
+				has_government = fascism
+			}
+		}
+		GER = { 
+			remove_from_faction = ENG
+			country_event = { id = crisisSWRW.54 days = 150 random_days = 15 }
+		}
+	}
+
+	every_country = {
+		limit = {
+			tag = FIN
+			is_in_faction_with = GER 
+		}
+		GER = { 
+			remove_from_faction = FIN
+			set_autonomy = {
+				target = FIN
+				autonomy_state = autonomy_free
+			}
+		}
+	}
+	
+	## set up events ##
+	
+	USA = { country_event = { id = decSWRW.31 days = 40 random_days = 40 } } # Red cross event
+	
+	## war declarations
+	
+	declare_war_on = {
+		target = GER
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = MCW
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = UKR
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = OST
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = CAU
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = GGN
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = BLR
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = POL
+		type = annex_everything
+	}
+	
+	## setting up variables and modifiers
+	
+	add_to_array = { WRW_majors = RUS }
+	add_to_array = { WRW_majors = GER }
+
+	set_variable = { RUS_tension_bar_frame = 1 }
+	set_variable = { nuclear_console_frame = 1 }
+	set_variable = { select_fire_buttons_frame = 1 }
+	set_variable = { RUS_casualty_tracker = 50 }
+	
+	GER = {
+		set_variable = { RUS_tension_bar_frame = 1 }
+		set_variable = { nuclear_console_frame = 1 }
+		set_variable = { select_fire_buttons_frame = 1 }
+		set_variable = { GER_casualty_tracker = 50 }
+	}
+	
+	RUS = {
+		add_dynamic_modifier = { modifier = RUS_war_exhaustion	} 
+		add_dynamic_modifier = { modifier = WRW_tension	} 
+	}
+	GER = {
+		add_dynamic_modifier = { modifier = GER_war_exhaustion } 
+		add_dynamic_modifier = { modifier = WRW_tension	} 
+	}
+
+	# setting up daily war exhaustion casualties check here because the daily on actions is being a little fucky wucky
+
+	RUS = { country_event = { id = swrw_misc.3 } }
+	GER = { country_event = { id = swrw_misc.3 } }
+
+	 ## Cold War GUI setup
+
+	for_each_scope_loop = {
+		array = WRW_majors
+		set_temp_variable = {
+			Victory_ID = 97
+		}
+		Cold_War_GUI_AddVictory = yes
+	}
+	
+	OST = {	add_ideas = WRW_integrated_administration }
+	BLR = {	add_ideas = WRW_integrated_administration }
+	UKR = {	add_ideas = WRW_integrated_administration }
+	MCW = {	add_ideas = WRW_integrated_administration }
+	CAU = {	add_ideas = WRW_integrated_administration }
+	
+	
+	KZK = {	add_ideas = RUS_not_our_war }
+	IRN = {	add_ideas = RUS_not_our_war }
+
+	RUS = { country_event = { id = swrw_misc.2 } } #skilled staffer modifier
+	
+	if = {
+		limit = {
+			FIN = {
+				is_in_faction_with = GER
+			}
+		}
+		set_global_flag = FINLAND_SWRW
+	}
+}
+
+## ARMY SIZE MODIFIERS ##
+
+SWRW_add_army_size_modifier = {
+	ROOT = {
+		every_unit_leader = {
+			add_trait = { trait = SWRW_army_size_modifier }
+		}
+	}
+}
+
+SWRW_remove_army_size_modifier = {
+	ROOT = {
+		every_unit_leader = {
+			limit = {
+				has_trait = SWRW_army_size_modifier
+			}
+			remove_trait = { trait = SWRW_army_size_modifier }
+		}
+	}
+}
+
+SWRW_add_skilled_staffer_modifier = {
+	ROOT = {
+		every_unit_leader = {
+			limit = {
+			 	has_trait = skilled_staffer
+			 	NOT = { has_trait = SWRW_skilled_staffer_modifier }
+			}
+			add_trait = { trait = SWRW_skilled_staffer_modifier }
+		}
+	}
+}
+
+SWRW_remove_skilled_staffer_modifier = {
+	ROOT = {
+		every_unit_leader = {
+			limit = {
+				has_trait = SWRW_skilled_staffer_modifier
+			}
+			remove_trait = { trait = SWRW_skilled_staffer_modifier }
+		}
+	}
+}
+
+### Tension and Exhaustion clamps ###
+
+SWRW_exhaustion_clamp = {
+	clamp_variable = {
+		var = WRW_war_exhaustion_100
+		min = -1
+		max = 0
+	}
+	clamp_variable = {
+		var = WRW_war_exhaustion_50
+		min = -0.5
+		max = 0
+	}
+	clamp_variable = {
+		var = WRW_war_exhaustion_25
+		min = -0.25
+		max = 0
+	}
+	clamp_variable = {
+		var = WRW_war_exhaustion
+		min = 0
+		max = 100
+	}
+	force_update_dynamic_modifier = yes
+}
+
+SWRW_tension_clamp = {
+
+	clamp_variable = {
+		var = WRW_tension_var
+		min = 0
+		max = 100
+	}
+	
+	clamp_variable = {
+		var = WRW_tension_20
+		min = 0
+		max = 0.2
+	}
+	
+	clamp_variable = { # this one's supposed to be negative
+		var = WRW_tension_25
+		min = -0.25
+		max = 0
+	}
+	
+	clamp_variable = {
+		var = WRW_tension_40
+		min = 0
+		max = 0.4
+	}
+
+	force_update_dynamic_modifier = yes
+	
+	## setting the tension bar's color ##
+	
+	if = {
+		limit = {
+			check_variable = { WRW_tension_var > 20 }
+			check_variable = { WRW_tension_var < 40 }
+		}
+		set_variable = { RUS_tension_bar_frame = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { WRW_tension_var > 40 }
+			check_variable = { WRW_tension_var < 60 }
+		}
+		set_variable = { RUS_tension_bar_frame = 3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { WRW_tension_var > 60 }
+			check_variable = { WRW_tension_var < 80 }
+		}
+		set_variable = { RUS_tension_bar_frame = 4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { WRW_tension_var > 80 }
+		}
+		set_variable = { RUS_tension_bar_frame = 5 }
+	}
+	if = {
+		limit = {
+			check_variable = { WRW_tension_var > 99 }
+		}
+		set_variable = { nuclear_console_frame = 2 }
+	}
+}
+
+### Tension effects ###
+
+WRW_add_tension = { # adds/removes tension
+
+	## applying any modifiers 
+	
+	for_each_scope_loop = { # to synch tension for both majors
+		array = WRW_majors
+		break = break
+	
+		## setting up variables
+
+		set_temp_variable = { temp_20 = temp_tension } # modifier that will be at 20% at 100 tension
+		set_temp_variable = { temp_25 = temp_tension } # modifier that will be at 25% at 100 tension
+		set_temp_variable = { temp_40 = temp_tension } # modifier that will be at 40% at 100 tension
+		
+		divide_temp_variable = { temp_20 = 500 } # dividing variables to achieve their proper final forms
+		divide_temp_variable = { temp_25 = 400 }
+		divide_temp_variable = { temp_40 = 250 }
+		
+		add_to_variable = { WRW_tension_20 = temp_20 } 
+		subtract_from_variable = { WRW_tension_25 = temp_25 } # this one is a negative value
+		add_to_variable = { WRW_tension_40 = temp_40 }
+		add_to_variable = { WRW_tension_var = temp_tension } # setting tension for display purposes
+		SWRW_tension_clamp = yes # clamps variables
+		
+		force_update_dynamic_modifier = yes
+		
+		if = { # makes sure we don't have infinite tension increases
+			limit = {
+				check_variable = { i > 0 }
+			}
+			set_temp_variable = { break = 1 }
+		}
+	}
+	
+	# auto generated tooltips
+	
+	if = { # checks for positive tension
+		limit = {
+			check_variable = { temp_tension > 0 }
+		}
+		custom_effect_tooltip = WRW_tension_increase_tt
+	}
+	else = { # checks for negative tension
+		multiply_temp_variable = { temp_tension = -1 }
+		custom_effect_tooltip = WRW_tension_decrease_tt
+	}
+}
+
+WRW_add_war_exhaustion = { # adds/removes war exhaustion
+
+	#applies modifier
+	
+	set_temp_variable = { temp_100 = temp_exhaustion } # modifier that will be 100% at 100 war exhaustion
+	set_temp_variable = { temp_50 = temp_exhaustion } # modifier that will be 50% at 100 war exhaustion
+	set_temp_variable = { temp_25 = temp_exhaustion } # modifier that will be 25% at 100 war exhaustion
+	
+	divide_temp_variable = { temp_100 = 100 } # divides modifiers so they work properly
+	divide_temp_variable = { temp_50 = 200 }
+	divide_temp_variable = { temp_25 = 400 }
+	
+	subtract_from_variable = { WRW_war_exhaustion_100 = temp_100 } # adds properly modified numbers for the dynamic modifier
+	subtract_from_variable = { WRW_war_exhaustion_50 = temp_50 }
+	subtract_from_variable = { WRW_war_exhaustion_25 = temp_25 }
+	
+	add_to_variable = { WRW_war_exhaustion = temp_exhaustion }
+
+	if = {
+		limit = {
+			check_variable = { RUS.WRW_war_exhaustion > 50 }
+		}
+		GER = { set_country_flag = RUS_war_exhaustion_limit_reached }
+	}
+	
+	if = {
+		limit = {
+			check_variable = { temp_exhaustion > 0 }
+		}
+		custom_effect_tooltip = WRW_war_exhaustion_increase_tt
+	}
+	else = {
+		custom_effect_tooltip = WRW_war_exhaustion_decrease_tt
+	}
+
+	RUS = { SWRW_exhaustion_clamp = yes } # clamps variables
+	GER = { SWRW_exhaustion_clamp = yes } # clamps variables
+}
+
+SWRW_daily_casualties_check = {
+	if = {
+		limit = {
+			is_russian_unifier = yes
+			has_country_flag = RUS_SWRW_ongoing
+			check_variable = {
+				var = casualties_k
+				value = RUS_casualty_tracker
+				compare = greater_than_or_equals
+			}
+		}
+		RUS = {
+			set_temp_variable = { temp_exhaustion = 0.75 }
+			WRW_add_war_exhaustion = yes
+		}
+		add_to_variable = { RUS_casualty_tracker = 50 }
+	}
+	if = {
+		limit = {
+			tag = GER
+			has_country_flag = RUS_SWRW_ongoing
+			check_variable = {
+				var = casualties_k
+				value = GER_casualty_tracker
+				compare = greater_than_or_equals
+			}
+		}
+		GER = {
+			set_temp_variable = { temp_exhaustion = 0.55 }
+			WRW_add_war_exhaustion = yes
+		}
+		add_to_variable = { GER_casualty_tracker = 50 }
+	}
+}
+
+## Peace pulse
+
+WRW_update_peace_acceptance = {
+	for_each_scope_loop = { # to update for both nations
+		array = WRW_majors
+		break = break
+		
+		set_temp_variable = { base_peace_acceptance = WRW_war_exhaustion }
+		set_temp_variable = { base_peace_reluctance = WRW_tension_var }
+		if = {
+			limit = {
+				check_variable = { WRW_peace_acceptance_modifier > 1 }
+			}
+			divide_temp_variable = { base_peace_reluctance = peace_acceptance_modifier }
+		}
+		else = {
+			divide_temp_variable = { base_peace_reluctance = 1.5 }
+		}
+		subtract_from_temp_variable = { base_peace_acceptance = base_peace_reluctance }
+		add_to_temp_variable = { base_peace_acceptance = WRW_peace_acceptance_modifier }
+		set_variable = { WRW_peace_accceptance = base_peace_acceptance }
+		
+		if = {
+			limit = {
+				check_variable = { i > 0 }
+			}
+			set_temp_variable = { break = 1 }
+		}
+	}
+}
+
+
+SWRW_GER_Die_Grenzwacht_Hielt_Im_Osten_effect = {
+	GER = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2000
+			producer = GER
+		}
+	}
+	MCW = {
+		add_stability = -0.1
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = GER
+		}
+	}
+	hidden_effect = {
+		MCW = {
+			every_controlled_state = {
+				add_province_modifier = {
+					static_modifiers = {
+						SWRW_MCW_extra_defense
+					}
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+		}
+		GER = {
+			country_event = {
+				id = reich.2023
+				days = 30
+			}
+		}		#this is so stupid
+	}
+}
+GER_Ein_Totaler_Krieg_effect = {
+	add_timed_idea = {
+		idea = GER_Into_the_Ostfront
+		days = 100
+	}
+	log = "[GetDateText]: [Root.GetName]: GER_Ein_Totaler_Krieg"
+	custom_effect_tooltip = GER_kylo_ren
+	hidden_effect = {
+		load_oob = "SWRW_GER_Ein_Totaler_Krieg"
+	}
+}
+
+## DEFCON
+WRW_Defcon_shit = {
+	set_temp_variable = { tension_WT = -25 }
+	set_temp_variable = { tension_superpower_1 = RUS }
+	set_temp_variable = { tension_superpower_2 = GER }
+	set_temp_variable = { tension_id = 28 }
+	TNO_change_tension = yes
+}

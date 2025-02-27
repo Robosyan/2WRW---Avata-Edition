@@ -1,0 +1,75 @@
+characters = {
+	LAT_Valdis_Birkavs = {
+		name = LAT_Valdis_Birkavs
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/LAT/Portrait_Valdis_Birkavs.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism_subtype
+			desc = "POLITICS_VALDIS_BIRKAVS_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	LAT_Baltic_Council = {
+		name = LAT_Baltic_Council
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/LAT/Portrait_Baltic_Council.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism_subtype
+			# desc = "POLITICS_BALTIC_COUNCIL_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	EST_Vajno_Valjas = {
+		name = EST_Vajno_Valjas
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/EST/Portrait_Vajno_Valjas.dds"
+			}
+		}
+		country_leader = {
+			ideology = progressivism_reformist_socialism_subtype
+			desc = "POLITICS_VAJNO_VALJAS_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	LIT_Vytautas_Landsbergis = {
+		name = LIT_Vytautas_Landsbergis
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/LIT/Portrait_Vytautas_Landsbergis.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberalism_national_liberal_subtype
+			desc = "POLITICS_VYTAUTAS_LANDSBERGIS_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	BLR_Pyotr_Masherov = {
+		name = BLR_Pyotr_Masherov
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/BLR/Portrait_Pyotr_Masherov.dds"
+			}
+		}
+		country_leader = {
+			ideology = progressivism_reformist_socialism_subtype
+			desc = "POLITICS_PYOTR_MASHEROV_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+}

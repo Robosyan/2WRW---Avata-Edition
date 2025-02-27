@@ -1,0 +1,1572 @@
+scripted_gui = {
+	NOV_Federation_Duma_GUI_Opener = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "NOV_Federation_Duma_GUI_Opener"
+		
+		visible = {
+			original_tag = NOV
+			has_global_flag = NOV_DUMA_EMPOWERED
+			#has_global_flag = RUS_national_unification
+			NOT = {
+				has_country_flag = AFTER_MIDNIGHT_COMMENCED
+			}
+		}
+		
+		effects = {
+			NOV_Federation_Duma_GUI_Open_Button_click = {
+				if = {
+					limit = { 
+						has_country_flag = NOV_Federation_Duma_GUI_visible_flag
+					}
+					clr_country_flag = NOV_Federation_Duma_GUI_visible_flag
+				}
+				else = {
+					set_country_flag = NOV_Federation_Duma_GUI_visible_flag
+				}
+			}
+		}
+		
+		triggers = {
+			gui_alert_visible = {
+				has_country_flag = gui_alert_visible
+			}
+		}
+	}
+
+	NOV_RAPP_GUI_Opener = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "NOV_RAPP_GUI_Opener"
+		
+		visible = {
+			original_tag = NOV
+			NOT = {
+				has_country_flag = AFTER_MIDNIGHT_COMMENCED
+			}
+			has_country_flag = NOV_RAPP_GUI
+		}
+		
+		effects = {
+			NOV_RAPP_Open_Button_click = {
+				if = {
+					limit = { 
+						has_country_flag = nov_RAPP_Space_Project
+					}
+					clr_country_flag = nov_RAPP_Space_Project
+				}
+				else = {
+					set_country_flag = nov_RAPP_Space_Project
+				}
+				if = {
+					limit = { 
+						has_country_flag = rapp_gui_alert_visible
+					}
+					clr_country_flag = rapp_gui_alert_visible
+				}
+			}
+		}
+		
+		triggers = {
+			gui_alert_visible = {
+				has_country_flag = rapp_gui_alert_visible
+			}
+		}
+	}
+	
+	NOV_federation_duma_GUI = {
+		context_type = player_context
+		window_name = "NOV_federation_duma_GUI"
+		parent_window_token = "NOV_federation_duma_GUI"
+		
+		visible = {
+			has_country_flag = NOV_Federation_Duma_GUI_visible_flag
+		}
+		
+		effects = {
+			close_duma_button_click = {
+				if = {
+					limit = { has_country_flag = NOV_Federation_Duma_GUI_visible_flag }
+					clr_country_flag = NOV_Federation_Duma_GUI_visible_flag
+				}
+				else = { set_country_flag = NOV_Federation_Duma_GUI_visible_flag }
+			}
+			tab_0_click = {
+				clear_array = NOV_duma_selected_tab
+				add_to_array = { NOV_duma_selected_tab = 1 }
+				clear_array = NOV_duma_tab_frames
+				add_to_array = { NOV_duma_tab_frames = 2 }
+				add_to_array = { NOV_duma_tab_frames = 1 }
+			}
+			tab_1_click = {
+				clear_array = NOV_duma_selected_tab
+				add_to_array = { NOV_duma_selected_tab = 2 }
+				clear_array = NOV_duma_tab_frames
+				add_to_array = { NOV_duma_tab_frames = 1 }
+				add_to_array = { NOV_duma_tab_frames = 2 }
+			}
+		}
+		
+		dynamic_lists = {
+			current_tab = {
+				array = NOV_duma_selected_tab
+				change_scope = no
+				entry_container = "[NOVgetCurrentTab]"
+			}
+		}
+		
+		properties = {
+			NOV_president_picture = {
+				frame = NOV_presidency
+			}
+			NOV_vice_president_picture = {
+				frame = NOV_presidency
+			}
+			tab_1 = {
+				frame = NOV_duma_tab_frames^1
+			}
+			tab_1 = {
+				frame = NOV_duma_tab_frames^1
+			}
+		}
+
+		### FEDERAL ASSEMBLY ###
+
+		dynamic_lists = {
+			NOV_duma_diagram_container = {
+				array = NOV_duma_x_pos
+				change_scope = no
+				entry_container = NOV_duma_seat_container
+				index = seat_idx
+			}
+			NOV_council_container = {
+				array = NOV_council_x_pos
+				change_scope = no
+				entry_container = NOV_council_seat_container
+				index = seat_idx
+			}
+		}
+
+		properties = {
+			NOV_duma_seat = {
+				x = NOV_duma_x_pos^seat_idx
+				y = NOV_duma_y_pos^seat_idx
+				frame = NOV_duma_frame_array^seat_idx
+			}
+			NOV_council_seat = {
+				x = NOV_council_x_pos^seat_idx
+				y = NOV_council_y_pos^seat_idx
+				frame = NOV_council_frame_array^seat_idx
+			}
+
+			NOV_duma_toggle = {
+				frame = NOV_parliament_gui_type_frames^0
+			}
+			NOV_council_toggle = {
+				frame = NOV_parliament_gui_type_frames^1
+			}
+		}
+
+		effects = {
+			NOV_duma_toggle_click = {
+				set_variable = { NOV_parliament_gui_type_frames^0 = 2 }
+				set_variable = { NOV_parliament_gui_type_frames^1 = 1 }
+			}
+			NOV_council_toggle_click = {
+				set_variable = { NOV_parliament_gui_type_frames^0 = 1 }
+				set_variable = { NOV_parliament_gui_type_frames^1 = 2 }
+			}
+		}
+
+		triggers = {
+			NOV_duma_seat_visible = {
+				check_variable = { NOV_parliament_gui_type_frames^0 = 2 }
+			}
+			NOV_council_seat_visible = {
+				check_variable = { NOV_parliament_gui_type_frames^1 = 2 }
+			}
+		}
+
+		dynamic_lists = {
+			NOV_bills_parties_list = {
+				array = NOV_party_list
+				change_scope = no
+				entry_container = NOV_bills_party_container
+				index = parties_idx
+			}
+		}
+
+		properties = {
+			NOV_bills_progress_bar = {
+				frame = NOV_bill_timer
+			}
+		}
+
+		triggers = {
+			NOV_bills_progress_bar_visible = {
+				AND = {
+					check_variable = { NOV_bill_timer > 0 }
+					has_country_flag = NOV_active_bill
+				}
+			}
+			NOV_timer_blocker_visible = {
+				NOT = {
+					check_variable = { NOV_bill_timer > 0 }
+					has_country_flag = NOV_active_bill
+				}
+			}
+			NOV_bills_parties_interaction_click_enabled = {
+				OR = {
+					NOT = {
+						is_in_array = { NOV_coalition = NOV_party_list^parties_idx }
+						has_country_flag = NOV_bills_action_taken
+					}
+				}
+			}
+		}
+
+		effects = {
+			NOV_bills_parties_interaction_click = {
+				set_temp_variable = { NOV_bills_target_party = NOV_party_list^parties_idx }
+				NOV_bills_button_effect = yes
+				set_country_flag = {
+					flag = NOV_bills_action_taken
+					days = 15
+					value = 1
+				}
+			}
+		}
+
+		dynamic_lists = {
+			NOV_coalition_parties = {
+				array = NOV_coalition
+				change_scope = no
+				entry_container = NOV_coalition_party_container
+				index = parties_idx
+			}
+		}
+
+		properties = {
+			NOV_coalition_party_icon = {
+				image = [NOVgetCoalitionPartyIcon]
+			}
+			NOV_coalition_unity_bar = {
+				frame = NOV_coalition_unity
+			}
+		}
+
+		dynamic_lists = {
+			NOV_parties_list = {
+				array = NOV_party_list
+				change_scope = no
+				entry_container = NOV_party_window_container
+				index = parties_idx
+			}
+		}
+
+		properties = {
+			NOV_party_icon = {
+				image = [NOVgetPartyIcon]
+			}
+		}
+
+		triggers = {
+			NOV_parties_interaction_click_enabled = {
+				OR = {
+					AND = {
+						has_government = conservatism
+						NOT = { check_variable = { NOV_party_list^parties_idx = 0 } }
+					}
+					AND = {
+						has_government = paternalism
+						NOT = { check_variable = { NOV_party_list^parties_idx = 1 } }
+					}
+					AND = {
+						has_government = progressivism
+						NOT = { check_variable = { NOV_party_list^parties_idx = 2 } }
+					}
+					AND = {
+						has_government = liberalism
+						NOT = { check_variable = { NOV_party_list^parties_idx = 3 } }
+					}
+				}
+			}
+		}
+
+		effects = {
+			NOV_parties_interaction_click = {
+				set_variable = { NOV_parties_target_party = NOV_party_list^parties_idx }
+				if = {
+					limit = {
+						NOT = { has_country_flag = NOV_parties_interaction_visible }
+					}
+					set_country_flag = NOV_parties_interaction_visible
+				}
+				else = { clr_country_flag = NOV_parties_interaction_visible }
+			}
+		}
+
+		### PRESIDENTIAL ELECTIONS ###
+		
+		# Election Map Buttons #
+		
+		#########################
+		#		REGION IDs		#
+		#########################
+		#
+		#	1 Far East
+		#	2 Siberia
+		#	3 Urals
+		#	4 Volga
+		#	5 North
+		#	6 Kuban
+		#	7 Muscovy (state used for array: 1442 (MOSKVA))
+		#
+		#	100 occupied birobidzhan
+		#	101 occupied khabarovsk
+		#	102 occupied vladivostok
+		#	103 occupied karelia
+		#	104 occupied vyborg
+		#	105 occupied petrograd
+		#	106 occupied moscow
+		#	107 occupied caucasia
+		#	108 occupied kuba
+		#	109 occupied crimea
+
+		effects = {
+			NOV_Far_East_Voting_District_button_click = {
+				set_variable = { NOV_elections_selected_region = 1 }
+				NOV_election_update_display = yes
+			}
+			NOV_Siberian_Voting_District_button_click = {
+				set_variable = { NOV_elections_selected_region = 2 }
+				NOV_election_update_display = yes
+			}
+			NOV_Ural_Voting_District_button_click = {
+				set_variable = { NOV_elections_selected_region = 3 }
+				NOV_election_update_display = yes
+			}
+			NOV_Volga_Voting_District_button_click = {
+				set_variable = { NOV_elections_selected_region = 4 }
+				NOV_election_update_display = yes
+			}
+			NOV_Northern_Voting_District_button_click = {
+				set_variable = { NOV_elections_selected_region = 5 }
+				NOV_election_update_display = yes
+			}
+			NOV_Kuban_voting_district_button_click = {
+				set_variable = { NOV_elections_selected_region = 6 }
+				NOV_election_update_display = yes
+			}
+			NOV_Muscovy_Voting_District_button_click = {
+				set_variable = { NOV_elections_selected_region = 7 }
+				NOV_election_update_display = yes
+			}
+
+			# occupied territories start with 100
+
+			NOV_occupied_far_eastern_district_button_click = {
+				set_variable = { NOV_elections_selected_region = 100 }
+			}
+			NOV_occupied_khbarovsk_far_eastern_district_click = {
+				set_variable = { NOV_elections_selected_region = 101 }
+			}
+			NOV_occupied_vladivostok_far_eastern_district_click = {
+				set_variable = { NOV_elections_selected_region = 102 }
+			}
+			NOV_occupied_karelia_district_button_click = {
+				set_variable = { NOV_elections_selected_region = 103 }
+			}
+			NOV_occupied_vyborg_district_button_click = {
+				set_variable = { NOV_elections_selected_region = 104 }
+			}
+			NOV_occupied_petrograd_district_button_click = {
+				set_variable = { NOV_elections_selected_region = 105 }
+			}
+			NOV_occupied_moscow_district_button_click = {
+				set_variable = { NOV_elections_selected_region = 106 }
+			}
+			NOV_occupied_caucasia_district_button_click = {
+				set_variable = { NOV_elections_selected_region = 107 }
+			}
+			NOV_occupied_kuban_district_click = {
+				set_variable = { NOV_elections_selected_region = 107 }
+			}
+			NOV_occupied_crimea_district_click = {
+				set_variable = { NOV_elections_selected_region = 109 }
+			}
+		}
+		
+		triggers = {
+			NOV_occupied_far_eastern_district_button_visible = {
+				NOT = {
+					owns_state = 657
+					657 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			
+			NOV_occupied_khbarovsk_far_eastern_district_visible = {
+				OR = {
+					owns_state = 657
+					657 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 409
+					409 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			
+			NOV_occupied_vladivostok_far_eastern_district_visible = {
+				OR = {
+					owns_state = 657
+					657 = { owner = { is_subject_of = NOV } }
+				}
+				OR = {
+					owns_state = 409
+					409 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 809
+					809 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			
+			NOV_birobidzhan_liberated_borders_visible = {
+				OR = {
+					owns_state = 657
+					657 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 409
+					409 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			
+			NOV_khbarovsk_liberated_borders_visible = {
+				OR = {
+					owns_state = 657
+					657 = { owner = { is_subject_of = NOV } }
+				}
+				OR = {
+					owns_state = 409
+					409 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 809
+					809 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			
+			NOV_vladivostok_liberated_borders_visible = {
+				OR = {
+					owns_state = 809
+					809 = { owner = { is_subject_of = NOV } }
+				}
+			}
+		
+			# Karelia Stuff
+			
+			NOV_occupied_vyborg_district_button_visible = {
+				OR = {
+					owns_state = 1359
+					1359 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 146
+					146 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_Karelia_liberated_borders_visible = {
+				OR = {
+					owns_state = 1359
+					1359 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 146
+					146 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_vyborg_occupied_borders_visible = {
+				OR = {
+					owns_state = 1359
+					1359 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 146
+					146 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_occupied_karelia_district_button_visible = {
+				NOT = {
+					owns_state = 1359
+					1359 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_petrograd_liberated_borders_visible = {
+				OR = {
+					owns_state = 195
+					195 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 146
+					146 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_noKarelia_liberated_borders_visible = {
+				OR = {
+					owns_state = 195
+					195 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 1359
+					1359 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_northern_voting_liberated_district_button_visible = {
+				OR = {
+					owns_state = 146
+					146 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_petrograd_vyborg_liberated_borders_visible = {
+				OR = {
+					owns_state = 146
+					146 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_occupied_petrograd_district_button_visible = {
+				NOT = {
+					owns_state = 195
+					195 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			
+			# Muscovy
+			
+			NOV_Muscovy_Voting_District_button_visible = {
+				OR = {
+					owns_state = 1442
+					1442 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_moscow_liberated_borders_visible = {
+				OR = {
+					owns_state = 1442
+					1442 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_occupied_moscow_district_button_visible = {
+				NOT = {
+					owns_state = 1442
+					1442 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			
+			# Caucasia
+			
+			NOV_Kuban_voting_district_button_visible = {
+				OR = {
+					owns_state = 243
+					243 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_kuban_liberated_borders_visible = {
+				OR = {
+					owns_state = 243
+					243 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 234
+					234 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_occupied_kuban_district_visible = {
+				OR = {
+					owns_state = 243
+					243 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 234
+					234 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			NOV_caucusus_liberated_borders_visible = {
+				owns_state = 243
+				owns_state = 234
+				NOT = { owns_state = 1532 }
+			}
+			
+			NOV_occupied_crimea_district_visible = {
+				OR = {
+					owns_state = 243
+					243 = { owner = { is_subject_of = NOV } }
+				}
+				OR = {
+					owns_state = 234
+					234 = { owner = { is_subject_of = NOV } }
+				}
+				NOT = {
+					owns_state = 1532
+					1532 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			
+			NOV_occupied_caucasia_district_button_visible = {
+				NOT = {
+					owns_state = 243
+					243 = { owner = { is_subject_of = NOV } }
+				}
+			}
+
+			NOV_crimea_liberated_borders_visible = {
+				OR = {
+					owns_state = 243
+					243 = { owner = { is_subject_of = NOV } }
+				}
+				OR = {
+					owns_state = 234
+					234 = { owner = { is_subject_of = NOV } }
+				}
+				OR = {
+					owns_state = 1532
+					1532 = { owner = { is_subject_of = NOV } }
+				}
+			}
+
+			NOV_campaign_overlay_far_east_visible = {
+				562 = {
+					OR = {
+						has_state_flag = NOV_RAPP_campaign
+						has_state_flag = NOV_VRPP_campaign
+						has_state_flag = NOV_DSPR_campaign
+						has_state_flag = NOV_RSLP_campaign
+						has_state_flag = NOV_independents_campaign
+					}
+				}
+			}
+			NOV_campaign_overlay_central_siberia_visible = {
+				570 = {
+					OR = {
+						has_state_flag = NOV_RAPP_campaign
+						has_state_flag = NOV_VRPP_campaign
+						has_state_flag = NOV_DSPR_campaign
+						has_state_flag = NOV_RSLP_campaign
+						has_state_flag = NOV_independents_campaign
+					}
+				}
+			}
+			NOV_campaign_overlay_urals_visible = {
+				754 = {
+					OR = {
+						has_state_flag = NOV_RAPP_campaign
+						has_state_flag = NOV_VRPP_campaign
+						has_state_flag = NOV_DSPR_campaign
+						has_state_flag = NOV_RSLP_campaign
+						has_state_flag = NOV_independents_campaign
+					}
+				}
+			}
+			NOV_campaign_overlay_north_visible = {
+				857 = {
+					OR = {
+						has_state_flag = NOV_RAPP_campaign
+						has_state_flag = NOV_VRPP_campaign
+						has_state_flag = NOV_DSPR_campaign
+						has_state_flag = NOV_RSLP_campaign
+						has_state_flag = NOV_independents_campaign
+					}
+				}
+			}
+			NOV_campaign_overlay_volga_visible = {
+				850 = {
+					OR = {
+						has_state_flag = NOV_RAPP_campaign
+						has_state_flag = NOV_VRPP_campaign
+						has_state_flag = NOV_DSPR_campaign
+						has_state_flag = NOV_RSLP_campaign
+						has_state_flag = NOV_independents_campaign
+					}
+				}
+			}
+			NOV_campaign_overlay_kuban_visible = {
+				243 = {
+					OR = {
+						has_state_flag = NOV_RAPP_campaign
+						has_state_flag = NOV_VRPP_campaign
+						has_state_flag = NOV_DSPR_campaign
+						has_state_flag = NOV_RSLP_campaign
+						has_state_flag = NOV_independents_campaign
+					}
+				}
+			}
+			NOV_campaign_overlay_moscow_visible = {
+				1442 = {
+					OR = {
+						has_state_flag = NOV_RAPP_campaign
+						has_state_flag = NOV_VRPP_campaign
+						has_state_flag = NOV_DSPR_campaign
+						has_state_flag = NOV_RSLP_campaign
+						has_state_flag = NOV_independents_campaign
+					}
+				}
+			}
+			NOV_Far_East_Voting_District_highlight_visible = {
+				check_variable = { NOV_elections_selected_region = 1 }
+			}
+			GFX_NOV_Siberia_District_Highlight_visible = {
+				check_variable = { NOV_elections_selected_region = 2 }
+			}
+			NOV_Ural_Voting_District_highlight_visible = {
+				check_variable = { NOV_elections_selected_region = 3 }
+			}
+			NOV_Volga_Voting_District_highlight_visible = {
+				check_variable = { NOV_elections_selected_region = 4 }
+			}
+			NOV_Northern_Voting_District_highlight_visible = {
+				check_variable = { NOV_elections_selected_region = 5 }
+			}
+			NOV_kuban_voting_district_highlight_visible = {
+				check_variable = { NOV_elections_selected_region = 6 }
+			}
+			NOV_Muscovy_Voting_District_highlight_visible = {
+				check_variable = { NOV_elections_selected_region = 7 }
+			}
+		}
+		properties = {
+			NOV_district_select_picture_icon = {
+				image = "[GetNOVRegionPicture]"
+			}
+			NOV_region_information_gui = {
+				image = "[GetNOVRegionGUI]"
+			}
+
+			# region frame colors #
+
+			NOV_Northern_Voting_District_overlay = {
+				frame = 857.NOV_election_region_frame
+			}
+			NOV_Volga_Voting_District_overlay = {
+				frame = 850.NOV_election_region_frame
+			}
+			NOV_Ural_Voting_District_overlay = {
+				frame = 754.NOV_election_region_frame
+			}
+			NOV_Siberian_Voting_District_overlay = {
+				frame = 570.NOV_election_region_frame
+			}
+			NOV_Far_East_Voting_District_overlay = {
+				frame = 562.NOV_election_region_frame
+			}
+			NOV_Kuban_voting_district_overlay = {
+				frame = 243.NOV_election_region_frame
+			}
+			NOV_Muscovy_Voting_District_overlay = {
+				frame = 1442.NOV_election_region_frame
+			}
+
+			# region overlays #
+
+			NOV_kuban_voting_district_highlight = {
+				image = "[NOVgetCaucasusHighlight]"
+			}
+			NOV_Far_East_Voting_District_highlight = {
+				image = "[NOVgetFarEastHighlight]"
+			}
+			NOV_Northern_Voting_District_highlight = {
+				image = "[NOVgetNorthHighlight]"
+			}
+
+			# campaign overlays #
+
+			NOV_campaign_overlay_far_east = {
+				image = "[562.NOVgetCampaignIcon]"
+			}
+			NOV_campaign_overlay_central_siberia = {
+				image = "[570.NOVgetCampaignIcon]"
+			}
+			NOV_campaign_overlay_urals = {
+				image = "[754.NOVgetCampaignIcon]"
+			}
+			NOV_campaign_overlay_north = {
+				image = "[857.NOVgetCampaignIcon]"
+			}
+			NOV_campaign_overlay_volga = {
+				image = "[850.NOVgetCampaignIcon]"
+			}
+			NOV_campaign_overlay_kuban = {
+				image = "[243.NOVgetCampaignIcon]"
+			}
+			NOV_campaign_overlay_moscow = {
+				image = "[1442.NOVgetCampaignIcon]"
+			}
+		}
+		
+		# Support Bars #
+		
+		triggers = {
+
+			NOV_region_statistics_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_region_population_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_region_interactions_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+
+			NOV_RAPP_popularity_bar_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_VRPP_popularity_bar_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_DSPR_popularity_bar_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_RSLP_popularity_bar_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_independents_popularity_bar_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+
+			NOV_RAPP_momentum_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_VRPP_momentum_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_DSPR_momentum_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_RSLP_momentum_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_independents_momentum_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+
+			NOV_interaction_rally_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_interaction_discredit_opposition_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_interaction_campaign_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+			NOV_interaction_slander_visible = {
+				check_variable = { NOV_elections_selected_region < 100 }
+			}
+
+			NOV_interaction_rally_click_enabled = {
+				NOT = { has_country_flag = NOV_elections_has_campaigned }
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_interaction_discredit_opposition_click_enabled = {
+				NOT = { has_country_flag = NOV_elections_has_campaigned }
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_interaction_campaign_click_enabled = {
+				NOT = { has_country_flag = NOV_elections_has_campaigned }
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_interaction_slander_click_enabled = {
+				NOT = { has_country_flag = NOV_elections_has_campaigned }
+				has_country_flag = NOV_elections_ongoing
+			}
+		}
+		triggers = {
+			NOV_election_progress_bar_space_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_Election_Time_Bar_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_lead_candidate_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_lead_candidate_name_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_lead_candidate_header_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_graph_header_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_russia_not_in_election_gui_visible = {
+				NOT = { has_country_flag = NOV_elections_ongoing }
+			}
+			NOV_elections_graph_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_RAPP_presidential_progress_bar_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_VRPP_presidential_progress_bar_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_DSPR_presidential_progress_bar_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_RSLP_presidential_progress_bar_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+			NOV_independents_presidential_progress_bar_visible = {
+				has_country_flag = NOV_elections_ongoing
+			}
+		}
+		properties = {
+			NOV_Election_Time_Bar = {
+				frame = NOV_Election_Time_Left
+			}
+			NOV_RAPP_popularity_bar = {
+				frame = NOV_RAPP_support_display
+			}
+			NOV_VRPP_popularity_bar = {
+				frame = NOV_VRPP_support_display
+			}
+			NOV_DSPR_popularity_bar = {
+				frame = NOV_DSPR_support_display
+			}
+			NOV_RSLP_popularity_bar = {
+				frame = NOV_RSLP_support_display
+			}
+				NOV_independents_popularity_bar = {
+				frame = NOV_independents_support_display
+			}
+
+			NOV_RAPP_momentum = {
+				image = "[NOVgetRAPPMomentum]"
+			}
+			NOV_VRPP_momentum = {
+				image = "[NOVgetVRPPMomentum]"
+			}
+			NOV_DSPR_momentum = {
+				image = "[NOVgetDSPRMomentum]"
+			}
+			NOV_RSLP_momentum = {
+				image = "[NOVgetRSLPMomentum]"
+			}
+			NOV_independents_momentum = {
+				image = "[NOVgetIndependentsMomentum]"
+			}
+		}
+
+		effects = {
+			NOV_interaction_rally_click = {
+				random_owned_state = { # selects state that corresponds to the selected region
+					limit = {
+						check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+					}
+					NOV_election_get_campaigning_party = yes
+					NOV_election_hold_rally = yes
+				}
+				NOV_election_update_display = yes
+				set_country_flag = NOV_elections_has_campaigned
+			}
+			NOV_interaction_discredit_opposition_click = {
+				random_owned_state = { # selects state that corresponds to the selected region
+					limit = {
+						check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+					}
+					NOV_election_get_campaigning_party = yes
+					NOV_election_discredit_opposition = yes
+				}
+				NOV_election_update_display = yes
+				set_country_flag = NOV_elections_has_campaigned
+			}
+			NOV_interaction_campaign_click = {
+				random_owned_state = { # selects state that corresponds to the selected region
+					limit = {
+						check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+					}
+					NOV_election_get_campaigning_party = yes
+					NOV_election_campaign = yes
+				}
+				NOV_election_update_display = yes
+				set_country_flag = NOV_elections_has_campaigned
+			}
+			NOV_interaction_slander_click = {
+				random_owned_state = { # selects state that corresponds to the selected region
+					limit = {
+						check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+					}
+					NOV_election_get_campaigning_party = yes
+					NOV_election_slander = yes
+				}
+				NOV_election_update_display = yes
+				set_country_flag = NOV_elections_has_campaigned
+			}
+		}
+
+		properties = {
+			NOV_RAPP_presidential_progress_bar = {
+				frame = ROOT.NOV_election_presidential_support_RAPP_display
+			}
+			NOV_VRPP_presidential_progress_bar = {
+				frame = ROOT.NOV_election_presidential_support_VRPP_display
+			}
+			NOV_DSPR_presidential_progress_bar = {
+				frame = ROOT.NOV_election_presidential_support_DSPR_display
+			}
+			NOV_RSLP_presidential_progress_bar = {
+				frame = ROOT.NOV_election_presidential_support_RSLP_display
+			}
+			NOV_independents_presidential_progress_bar = {
+				frame = ROOT.NOV_election_presidential_support_independents_display
+			}
+			NOV_lead_candidate = {
+				frame = NOV_elections_lead
+			}
+		}
+	}
+
+	NOV_parties_interaction_menu = {
+		context_type = player_context
+		window_name = "NOV_parties_interaction_menu"
+
+		visible = { has_country_flag = NOV_parties_interaction_visible }
+
+		properties = {
+			NOV_party_interaction_icon = {
+				image = [NOVgetPartyInteractionsIcon]
+			}
+		}
+
+		triggers = {
+			NOV_party_interaction_bribe_officials_click_enabled = {
+				NOT = { has_country_flag = NOV_political_interaction_taken }
+			}
+			NOV_party_interaction_token_concessions_click_enabled = {
+				NOT = { has_country_flag = NOV_political_interaction_taken }
+			}
+			NOV_party_interaction_sit_down_click_enabled = {
+				NOT = { has_country_flag = NOV_political_interaction_taken }
+			}
+			NOV_party_interaction_accuse_click_enabled = {
+				NOT = { has_country_flag = NOV_political_interaction_taken }
+			}
+		}
+
+		effects = {
+			close_menu_button_click = {
+				clr_country_flag = NOV_parties_interaction_visible
+			}
+			NOV_party_interaction_bribe_officials_click = {
+				set_country_flag = {
+					flag = NOV_political_interaction_taken
+					days = 60
+					value = 1
+				}
+				set_temp_variable = { temp_econ_spending_amount = 0.007 }
+				econ_spend_money_once_effect_raw_money = yes
+				TNO_worsen_admin_efficiency_low = yes
+				TNO_improve_admin_efficiency_really_low = yes
+				TNO_improve_admin_efficiency_really_low = yes
+				add_to_variable = { NOV_party_opinions^var:NOV_parties_target_party = 5 }
+				NOV_bills_generate_party_votes = yes
+			}
+			
+			NOV_party_interaction_token_concessions_click = {
+				set_country_flag = {
+					flag = NOV_political_interaction_taken
+					days = 60
+					value = 1
+				}
+				add_political_power = -50
+				if = {
+					limit = {
+						check_variable = { NOV_coalition^var:NOV_parties_target_party = NOV_parties_target_party }
+					}
+					add_to_variable = { NOV_party_opinions^var:NOV_parties_target_party = 15 }
+					clamp_variable = {
+						var = NOV_party_opinions^var:NOV_parties_target_party
+						min = -100
+						max = 100
+					}
+				}
+				else = {
+					add_to_variable = { NOV_party_opinions^var:NOV_parties_target_party = 10 }
+					clamp_variable = {
+						var = NOV_party_opinions^var:NOV_parties_target_party
+						min = -100
+						max = 100
+					}
+				}
+				for_each_loop = {
+					array = NOV_coalition
+					index = i
+					if = {
+						limit = {
+							is_in_array = { NOV_coalition = NOV_party_list^i }
+							NOT = { check_variable = { NOV_coalition^i = NOV_parties_target_party } }
+							NOT = { check_variable = { NOV_party_opinions^i > 99.99 } }
+						}
+						subtract_from_variable = { NOV_party_opinions^i = 5 }
+						clamp_variable = {
+							var = NOV_party_opinions^i
+							min = -100
+							max = 100
+						}
+					}
+				}
+				NOV_bills_generate_party_votes = yes
+			}
+			NOV_party_interaction_sit_down_click = {
+				set_country_flag = {
+					flag = NOV_political_interaction_taken
+					days = 60
+					value = 1
+				}
+				add_political_power = -75
+				add_to_variable = { NOV_party_opinions^var:NOV_parties_target_party = 7.5 }
+				clamp_variable = {
+					var = NOV_party_opinions^var:NOV_parties_target_party
+					min = -100
+					max = 100
+				}
+				NOV_bills_generate_party_votes = yes
+
+			}
+			NOV_party_interaction_accuse_click = {
+				set_country_flag = {
+					flag = NOV_political_interaction_taken
+					days = 60
+					value = 1
+				}
+				add_political_power = -25
+				if = {
+					limit = {
+						check_variable = { NOV_coalition^var:NOV_parties_target_party = NOV_parties_target_party }
+					}
+					subtract_from_variable = { NOV_party_opinions^var:NOV_parties_target_party = 10 }
+				}
+				else = {
+					subtract_from_variable = { NOV_party_opinions^var:NOV_parties_target_party = 10 }
+				}
+				clamp_variable = {
+					var = NOV_party_opinions^var:NOV_parties_target_party
+					min = -100
+					max = 100
+				}
+				for_each_loop = {
+					array = NOV_coalition
+					index = i
+
+					if = {
+						limit = {
+							is_in_array = { NOV_coalition = NOV_party_list^i }
+							NOT = { check_variable = { NOV_party_opinions^i > 94.99 } }
+						}
+						add_to_variable = { NOV_party_opinions^i = 5 }
+						clamp_variable = {
+							var = NOV_party_opinions^i
+							min = -100
+							max = 100
+						}
+					}
+				}
+				NOV_bills_generate_party_votes = yes
+			}
+		}
+	}
+}
+
+########################################################################################################################################################################################################################
+
+scripted_gui = {
+	NOV_VRPP_megacorp_influence_deccat = {
+		context_type = decision_category
+		parent_window_token = decisions_category
+		window_name = "NOV_VRPP_megacorp_influence_deccat"
+			
+		visible = {
+			always = yes
+		}
+		properties = {
+			NOV_megacorp_logo = {
+				image = "[NOVgetMegacorpLogo]"
+			}
+			NOV_megacorp_loyalty_bar = {
+				image = "[NOVgetLoyaltyBar]"
+				frame = NOV_megacorp_loyalties^megacorps_idx
+			}
+			NOV_megacorp_influence_bar = {
+				image = "[NOVgetInfluenceBar]"
+				frame = NOV_megacorp_influence^megacorps_idx
+			}
+
+			NOV_megacorp_control_bar_gov = {
+				frame = NOV_VRPP_econ_influence_gov_frame
+			}
+			NOV_megacorp_control_bar_ppl = {
+				frame = NOV_VRPP_econ_influence_ppl_frame
+			}
+			NOV_megacorp_control_bar_fen = {
+				frame = NOV_VRPP_econ_influence_fen_frame
+			}
+			NOV_megacorp_control_bar_sib = {
+				frame = NOV_VRPP_econ_influence_sib_frame
+			}
+			NOV_megacorp_control_bar_tit = {
+				frame = NOV_VRPP_econ_influence_tit_frame
+			}
+		}
+		triggers = {
+			NOV_megacorp_control_bar_frame_visible = {
+				NOT = { has_country_flag = NOV_DSPR_Switch }
+			}
+			NOV_megacorp_control_header_visible = {
+				NOT = { has_country_flag = NOV_DSPR_Switch }
+			}
+			NOV_megacorp_control_bar_gov_visible = {
+				NOT = { has_country_flag = NOV_DSPR_Switch }
+			}
+			NOV_megacorp_control_bar_ppl_visible = {
+				NOT = { has_country_flag = NOV_DSPR_Switch }
+			}
+			NOV_megacorp_control_bar_fen_visible = {
+				NOT = { has_country_flag = NOV_DSPR_Switch }
+			}
+			NOV_megacorp_control_bar_sib_visible = {
+				NOT = { has_country_flag = NOV_DSPR_Switch }
+			}
+			NOV_megacorp_control_bar_tit_visible = {
+				NOT = { has_country_flag = NOV_DSPR_Switch }
+			}
+			NOV_megacorp_window_2_1_visible = {
+				has_country_flag = NOV_DSPR_Feniks_Dismantled
+			}
+			NOV_megacorp_window_2_2_visible = {
+				has_country_flag = NOV_DSPR_Sibir_Dismantled
+			}
+			NOV_megacorp_window_2_3_visible = {
+				has_country_flag = NOV_DSPR_Titan_Dismantled
+			}
+		}
+		dynamic_lists = {
+			NOV_megacorp_dynamic_list = {
+				array = NOV_megacorps
+				change_scope = no
+				entry_container = NOV_VRPP_megacorp_list
+				index = megacorps_idx
+			}
+		}
+	}
+}
+
+scripted_gui = {
+	NOV_VRPP_megacorp_media = {
+		context_type = decision_category
+		parent_window_token = decisions_category
+		window_name = "NOV_VRPP_megacorp_media"
+			
+		visible = {
+			always = yes
+		}
+		properties = {
+			NOV_Media_Share_Progressbar = {
+				frame = NOV_Media_Market_Share
+			}
+			NOV_Legal_Strength_Progressbar = {
+				frame = NOV_Media_Legal_Strength^NOV_selected_id
+			}
+		}
+		triggers = {
+			NOV_propaganda_buy_button_visible = {
+				AND = {
+					NOT = { 
+						check_variable = { NOV_selected_id = 0 } 
+						check_variable = { Nov_Media_Budget < NOV_True_Worth^NOV_selected_id }
+						check_variable = { NOV_Bought^NOV_selected_id = 1 }
+					}
+				}
+			}
+			NOV_propaganda_buy_button_2_visible = {
+				OR = {
+					AND = {
+						NOT = { 
+							check_variable = { NOV_selected_id = 0 } 
+							check_variable = { Nov_Media_Budget > NOV_True_Worth^NOV_selected_id }
+						}
+					}
+					check_variable = { NOV_Bought^NOV_selected_id = 1 }
+				}
+
+			}
+			NOV_propaganda_blackmail_button_visible = {
+				NOT = { 
+					check_variable = { NOV_selected_id = 0 } 
+					has_country_flag = NOV_Recently_Blackmailed
+				}
+			}
+			NOV_propaganda_blackmail_button_2_visible = {
+				NOT = { check_variable = { NOV_selected_id = 0 } }
+			}
+			NOV_Legal_Strength_Progressbar_visible = {
+				NOT = { check_variable = { NOV_selected_id = 0 } }
+			}
+			NOV_propaganda_placeholder_bg_visible = {
+				check_variable = { NOV_selected_id = 0 }
+			}
+			NOV_Media_Net_Worth_visible = {
+				NOT = { check_variable = { NOV_selected_id = 0 } }
+			}
+			NOV_Media_Legal_Strength_visible = {
+				NOT = { check_variable = { NOV_selected_id = 0 } }
+			}
+			NOV_propaganda_channel_one_visible = {
+				NOT = { 
+					check_variable = { NOV_selected_id = 1 } 
+					check_variable = { NOV_Bought^1 = 1 }
+				}
+			}
+			NOV_propaganda_channel_moskva_visible = {
+				NOT = { 
+					check_variable = { NOV_selected_id = 2 } 
+					check_variable = { NOV_Bought^2 = 1 }
+				}
+			}
+			NOV_propaganda_channel_nature_visible = {
+				NOT = { 
+					check_variable = { NOV_selected_id = 3 } 
+					check_variable = { NOV_Bought^3 = 1 }
+				}
+			}
+			NOV_propaganda_channel_history_visible = {
+				NOT = { 
+					check_variable = { NOV_selected_id = 4 } 
+					check_variable = { NOV_Bought^4 = 1 }
+				}
+			}
+			NOV_propaganda_channel_vremya_visible = {
+				NOT = { 
+					check_variable = { NOV_selected_id = 5 } 
+					check_variable = { NOV_Bought^5 = 1 }
+				}
+			}
+			NOV_propaganda_channel_sport_visible = {
+				NOT = { 
+					check_variable = { NOV_selected_id = 6 } 
+					check_variable = { NOV_Bought^6 = 1 }
+				}
+			}
+			NOV_propaganda_channel_one_2_visible = {
+				OR = {
+					check_variable = { NOV_selected_id = 1 }
+					check_variable = { NOV_Bought^1 = 1 }
+				}
+			}
+			NOV_propaganda_channel_moskva_2_visible = {
+				OR = {
+					check_variable = { NOV_selected_id = 2 }
+					check_variable = { NOV_Bought^2 = 1 }
+				}
+			}
+			NOV_propaganda_channel_nature_2_visible = {
+				OR = {
+					check_variable = { NOV_selected_id = 3}
+					check_variable = { NOV_Bought^3 = 1 }
+				}
+			}
+			NOV_propaganda_channel_history_2_visible = {
+				OR = {
+					check_variable = { NOV_selected_id = 4 }
+					check_variable = { NOV_Bought^4 = 1 }
+				}
+			}
+			NOV_propaganda_channel_vremya_2_visible = {
+				OR = {
+					check_variable = { NOV_selected_id = 5 }
+					check_variable = { NOV_Bought^5 = 1 }
+				}
+			}
+			NOV_propaganda_channel_sport_2_visible = {
+				OR = {
+					check_variable = { NOV_selected_id = 6 }
+					check_variable = { NOV_Bought^6 = 1 }
+				}
+			}
+		}
+
+		effects = {
+			NOV_propaganda_blackmail_button_click = {
+				set_temp_variable = { temp_target = NOV_selected_id }
+				set_temp_variable = { temp_legal_strength = -10 }
+				NOV_VRPP_Legal_Strength_Change = yes
+				set_country_flag = NOV_Recently_Blackmailed
+			}
+			NOV_propaganda_buy_button_click = {
+				set_variable = { NOV_Bought^NOV_selected_id = 1 }
+				NOV_VRPP_Buy_Channel = yes
+			}
+			NOV_propaganda_channel_one_click = {
+				set_temp_variable = { temp_id = 1 }
+				NOV_Select_Media = yes
+			}
+			NOV_propaganda_channel_moskva_click = {
+				set_temp_variable = { temp_id = 2 }
+				NOV_Select_Media = yes
+			}
+			NOV_propaganda_channel_nature_click = {
+				set_temp_variable = { temp_id = 3 }
+				NOV_Select_Media = yes
+			}
+			NOV_propaganda_channel_history_click = {
+				set_temp_variable = { temp_id = 4 }
+				NOV_Select_Media = yes
+			}
+			NOV_propaganda_channel_vremya_click = {
+				set_temp_variable = { temp_id = 5 }
+				NOV_Select_Media = yes
+			}
+			NOV_propaganda_channel_sport_click = {
+				set_temp_variable = { temp_id = 6 }
+				NOV_Select_Media = yes
+			}
+			NOV_propaganda_channel_one_2_click = {
+				set_variable = { NOV_selected_id = 0 }
+			}
+			NOV_propaganda_channel_moskva_2_click = {
+				set_variable = { NOV_selected_id = 0 }
+			}
+			NOV_propaganda_channel_nature_2_click = {
+				set_variable = { NOV_selected_id = 0 }
+			}
+			NOV_propaganda_channel_history_2_click = {
+				set_variable = { NOV_selected_id = 0 }
+			}
+			NOV_propaganda_channel_vremya_2_click = {
+				set_variable = { NOV_selected_id = 0 }
+			}
+			NOV_propaganda_channel_sport_2_click = {
+				set_variable = { NOV_selected_id = 0 }
+			}
+		}
+		dynamic_lists = {
+		}
+	}
+}
+
+scripted_gui = {
+	NOV_RSLP_ofn_relations = {
+		context_type = decision_category
+		parent_window_token = decisions_category
+		window_name = "NOV_RSLP_ofn_relations"
+			
+		visible = {
+			always = yes
+		}
+		properties = {
+			NOV_RSLP_OFN_Progressbar_OFN = {
+				frame = NOV_rslp_ofn_relation
+			}
+			NOV_RSLP_OFN_Progressbar_VRPP = {
+				frame = NOV_rslp_vrpp_ofn_opinion
+			}
+			NOV_RSLP_OFN_Progressbar_DSPR = {
+				frame = NOV_rslp_dspr_ofn_opinion
+			}
+		}
+		triggers = {
+		}
+
+		effects = {
+		}
+		dynamic_lists = {
+		}
+	}
+}
+
+scripted_gui = {
+	NOV_RAPP_GUI = {
+		context_type = player_context
+		parent_window_token = "NOV_RAPP_GUI"
+		window_name = "NOV_RAPP_GUI"
+			
+		visible = {
+			has_country_flag = nov_RAPP_Space_Project
+			NOT = {
+				has_country_flag = AFTER_MIDNIGHT_COMMENCED
+			}
+			original_tag = NOV
+		}
+		properties = {
+			Launch_Progressbar = {
+				frame = RAPP_Progress
+			}
+		}
+		triggers = {
+			Soyuz_Frames_visible = {
+				has_country_flag = NOV_RAPP_Stage_3
+				has_country_flag = NOV_Soyuz_Sprite
+			}
+			Proton_Frames_visible = {
+				has_country_flag = NOV_RAPP_Stage_3
+				has_country_flag = NOV_Proton_Sprite
+			}
+			Flight_Trajectory_Frames_visible = {
+				has_country_flag = NOV_RAPP_Stage_3
+			}
+			Flight_Trajectory_Frame_visible = {
+				OR = {
+					has_country_flag = NOV_RAPP_Stage_2
+					has_country_flag = NOV_RAPP_Stage_3
+				}
+			}
+			Launch_Pad_Frames_visible = {
+				has_country_flag = NOV_RAPP_Stage_3
+			}
+			GFX_NOV_RAPP_Stage_2_visible = {
+				OR = {
+					has_country_flag = NOV_RAPP_Stage_2
+					has_country_flag = NOV_RAPP_Stage_3
+				}
+			}
+			NOV_RAPP_Baikonur_visible = {
+				NOT = { 
+					has_country_flag = NOV_RAPP_Stage_2
+					has_country_flag = NOV_RAPP_Stage_3 
+				}
+			}
+			GFX_NOV_RAPP_Stage_1_visible = {
+				NOT = { 
+					has_country_flag = NOV_RAPP_Stage_2
+					has_country_flag = NOV_RAPP_Stage_3 
+				}
+			}
+			NOV_RAPP_Baikonur_visible = {
+				AND = {
+					NOT = { 
+						has_country_flag = NOV_RAPP_Stage_2
+						has_country_flag = NOV_RAPP_Stage_3 
+					}
+					check_variable = { RAPP_Progress = 100 }
+				}
+			}
+			NOV_RAPP_Baikonur_2_visible = {
+				AND = {
+					NOT = { 
+						has_country_flag = NOV_RAPP_Stage_2
+						has_country_flag = NOV_RAPP_Stage_3 
+					}
+					NOT = { check_variable = { RAPP_Progress = 100 } }
+				}
+			}
+		}
+		effects = {
+			close_button_click = {
+				clr_country_flag = nov_RAPP_Space_Project
+			}
+			NOV_RAPP_Baikonur_click = {
+				set_country_flag = NOV_RAPP_Stage_2
+				set_variable = { RAPP_Progress = 0 }
+			}
+		}
+		dynamic_lists = {
+		}
+	}
+}

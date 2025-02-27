@@ -1,0 +1,68 @@
+on_actions = {
+	on_daily_NOV = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = NOV_elections_ongoing
+						NOT = { check_variable = { NOV_Election_Time_Left = 0 } }
+					}
+				}
+				subtract_from_variable = { NOV_Election_Time_Left = 1 }
+			}
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = NOV_elections_ongoing
+						check_variable = { NOV_Election_Time_Left = 0 }
+					}
+				}
+				clr_country_flag = NOV_elections_ongoing
+				NOV = {
+					country_event = {
+						id = NOV_federalassembly.101
+						hours = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						NOT = { check_variable = { NOV_bill_timer = 0 } }
+						has_country_flag = NOV_active_bill
+					}
+				}
+				subtract_from_variable = { NOV_bill_timer = 1 }
+			}
+			else_if = {
+				limit = {
+					AND = {
+						check_variable = { NOV_bill_timer = 0 }
+						has_country_flag = NOV_active_bill
+					}
+				}
+				clr_country_flag = NOV_active_bill
+				NOV_bills_conclusion = yes				
+			}
+		}
+	}
+	on_weekly_NOV = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						has_country_flag = NOV_elections_ongoing
+						has_country_flag = NOV_elections_has_campaigned
+					}
+				}
+				NOV_election_tick = yes
+				every_state = {
+					clr_state_flag = NOV_RAPP_campaign
+					clr_state_flag = NOV_VRPP_campaign
+					clr_state_flag = NOV_DSPR_campaign
+					clr_state_flag = NOV_RSLP_campaign
+				}
+			}
+		}
+	}
+}

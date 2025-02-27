@@ -1,0 +1,830 @@
+add_namespace = pakt_collapse
+
+news_event = { #Dissidents in the Reich
+	id = pakt_collapse.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.1"}
+	title = pakt_collapse.1.t
+	desc = pakt_collapse.1.desc
+	picture = GFX_news_collapse_MCW
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.1.a
+		trigger = {
+			tag = RUS
+		}	
+	}
+	option = {
+		name = pakt_collapse.1.b
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = pakt_collapse.1.c
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+}
+
+country_event = { #Japan seizes madagascar
+	id = pakt_collapse.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.2"}
+	title = pakt_collapse.2.t
+	desc = pakt_collapse.2.desc
+	picture = GFX_collapse_madagaskar_seizure
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.2.a
+		custom_effect_tooltip = JAP_Colonial_Restructuring_tt # Swapped the two tt's arround so they would display in the correct order (see events)
+		JAP_MDG_Rename = yes
+		JAP_Colonial_Restructuring = yes
+		if = {
+			limit = {
+				NOT = {
+					GER = {
+						has_country_flag = mar_nukes
+					}
+				}
+			}
+			JAP_MAR_Seizure = yes
+		}
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.4 days = 4 } }
+			JAP = {
+				country_event = { id = pakt_collapse.21 days = 3 }
+			}
+		}
+	}
+}
+
+country_event = { #Japan seizes Mauritius and Reunion
+	id = pakt_collapse.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.3"}
+	title = pakt_collapse.3.t
+	desc = pakt_collapse.3.desc
+	picture = GFX_collapse_madagaskar_seizure
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.3.a
+		custom_effect_tooltip = JAP_MAR_Seizure_tt2
+		JAP_MAR_Seizure = yes
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.5 days = 4 } }
+			JAP = {
+				country_event = { id = pakt_collapse.24 days = 3 }
+			}
+		}
+	}
+}
+
+news_event = { #Japan Seizes Madagascar WORLD
+	id = pakt_collapse.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.4"}
+	title = pakt_collapse.4.t
+	desc = pakt_collapse.4.desc
+	picture = GFX_news_collapse_madagaskar_seizure
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.4.a
+		trigger = {
+			tag = JAP
+		}	
+	}
+	option = {
+		name = pakt_collapse.4.b
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = pakt_collapse.4.c
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { #Japan Seizes M&R WORLD
+	id = pakt_collapse.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.5"}
+	title = pakt_collapse.5.t
+	desc = pakt_collapse.5.desc
+	picture = GFX_news_collapse_madagaskar_seizure
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.5.a
+		trigger = {
+			tag = JAP
+		}	
+	}
+	option = {
+		name = pakt_collapse.5.b
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = pakt_collapse.5.c
+		trigger = {
+			NOT = {
+				tag = JAP
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { #Food Shortages in the Reich
+	id = pakt_collapse.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.6"}
+	title = pakt_collapse.6.t
+	desc = pakt_collapse.6.desc
+	picture = GFX_news_collapse_UKR
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.6.a
+		trigger = {
+			OR = {
+				tag = RUS
+				is_in_faction_with = USA
+			}
+		}	
+	}
+	option = {
+		name = pakt_collapse.6.b
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = pakt_collapse.6.c
+		trigger = {
+			NOT = {
+				tag = RUS
+				is_in_faction_with = USA
+				tag = GER
+			}
+		}
+	}
+}
+
+country_event = { #Norge er fri!
+	id = pakt_collapse.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.7"}
+	title = pakt_collapse.7.t
+	desc = pakt_collapse.7.desc
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = pakt_collapse.7.a
+		trigger = {
+			NOT = {
+				has_global_flag = NOR_freedom
+				has_global_flag = german_civil_war_speervic
+			}
+		}
+		NOR = {
+			NOR_Milorg_Coup = yes
+			econ_leave_sphere = yes
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.8 } }
+		USA = { country_event = { id = pakt_collapse.9 days = 14 } }
+	}
+	option = {
+		name = pakt_collapse.7.b
+		trigger = {
+			NOT = { has_global_flag = NOR_freedom }
+			has_global_flag = german_civil_war_speervic
+		}
+		NOR_Milorg_Coup = yes
+		leave_zollverein = yes
+		every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.8 } }
+		USA = { country_event = { id = pakt_collapse.9 days = 14 } }
+	}
+	option = {
+		name = pakt_collapse.7.c
+		trigger = {
+			has_global_flag = NOR_freedom
+			has_global_flag = german_civil_war_speervic
+		}
+		if = {
+			limit = { NOR = { has_government = national_socialism } }
+			NOR_Milorg_Coup = yes
+		}
+		leave_faction = yes
+		remove_faction_status = yes
+		leave_zollverein = yes
+		every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.11 } }
+		USA = { country_event = { id = pakt_collapse.12 days = 14 } }
+		GER = {
+			set_temp_variable = { SeaZone_ID = 4 } # 4; North Sea
+			Cold_War_GUI_PowerProjection_RemoveSeaZone = yes
+		}
+	}
+	option = {
+		name = pakt_collapse.7.d
+		trigger = {
+			has_global_flag = NOR_freedom
+			NOT = { has_global_flag = german_civil_war_speervic }
+		}
+		if = {
+			limit = { NOR = { has_government = national_socialism } }
+			NOR_Milorg_Coup = yes
+		}
+		leave_faction = yes
+		remove_faction_status = yes
+		econ_leave_sphere = yes
+		every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.11 } }
+		USA = { country_event = { id = pakt_collapse.12 days = 14 } }
+		GER = {
+			set_temp_variable = { SeaZone_ID = 4 } # 4; North Sea
+			Cold_War_GUI_PowerProjection_RemoveSeaZone = yes
+		}
+	}
+}
+
+news_event = { #Milorg Coup SWRW WORLD
+	id = pakt_collapse.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.8"}
+	title = pakt_collapse.8.t
+	desc = pakt_collapse.8.desc
+	picture = GFX_news_event_NOR_milorg_coup
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.8.a
+		trigger = {
+			tag = USA
+		}	
+	}
+	option = {
+		name = pakt_collapse.8.b
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = pakt_collapse.8.c
+		trigger = {
+			NOT = {
+				tag = USA
+				tag = GER
+			}
+		}
+	}
+}
+
+country_event = { #Norway requests to join OFN
+	id = pakt_collapse.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.9"}
+	title = pakt_collapse.9.t
+	desc = pakt_collapse.9.desc
+	picture = GFX_collapse_OFN
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.9.a
+		USA = {
+			add_to_faction = NOR
+			set_temp_variable = { SeaZone_ID = 4 } # 4; North Sea
+			Cold_War_GUI_PowerProjection_AddSeaZone = yes
+		}
+		NOR = {
+			remove_faction_status = yes
+			add_ideas = OFN_Independent_Member
+			set_temp_variable = { target = USA }
+			econ_join_sphere_target = yes
+		}
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.10 days = 1 } }
+		}
+	}
+}
+
+news_event = { #Norway Joins OFN WORLD
+	id = pakt_collapse.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.10"}
+	title = pakt_collapse.10.t
+	desc = pakt_collapse.10.desc
+	picture = GFX_news_collapse_NOR_OFN
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.10.a
+		trigger = {
+			is_in_faction_with = USA
+		}	
+	}
+	option = {
+		name = pakt_collapse.10.b
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = pakt_collapse.10.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = USA
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { #Norway leaves the Pakt
+	id = pakt_collapse.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.11"}
+	title = pakt_collapse.11.t
+	desc = pakt_collapse.11.desc
+	picture = GFX_news_norway_leaves_pakt
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.11.a
+		trigger = {
+			is_in_faction_with = USA
+		}	
+	}
+	option = {
+		name = pakt_collapse.11.b
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = pakt_collapse.11.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = USA
+				tag = GER
+			}
+		}
+	}
+}
+
+country_event = { #Norway Joins OFN if it was a Bundnispartner
+	id = pakt_collapse.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.12"}
+	title = pakt_collapse.12.t
+	desc = pakt_collapse.12.desc
+	picture = GFX_collapse_OFN
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.12.a
+		USA = {
+			add_to_faction = NOR
+			set_temp_variable = { SeaZone_ID = 4 } # 4; North Sea
+			Cold_War_GUI_PowerProjection_AddSeaZone = yes
+		}
+		NOR = {
+			remove_faction_status = yes
+			add_ideas = OFN_Independent_Member
+			set_temp_variable = { target = USA }
+			econ_join_sphere_target = yes
+		}
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.10 days = 1 } }
+		}
+	}
+}
+
+country_event = { #Dismantles Pakt if no-ones in it
+	id = pakt_collapse.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.13"}
+	title = pakt_collapse.13.t
+	desc = pakt_collapse.13.desc
+	picture = GFX_event_adolf_von_thadden
+	
+	is_triggered_only = yes
+	option = {
+		name = pakt_collapse.13.a
+		custom_effect_tooltip = pakt_collapse_13_tt
+		if = {
+			limit = {
+				check_variable = { GER.pakt_members^num < 3 }
+			}
+			every_country = {
+				limit = { has_idea = Pakt_Observer }
+				remove_ideas = Pakt_Observer
+				leave_GER_sphere = yes
+			}
+			every_country = {
+				limit = { has_idea = Pakt_Bundnispartner }
+				remove_ideas = Pakt_Bundnispartner
+				leave_GER_sphere = yes
+			}
+			every_country = {
+				limit = { has_idea = Pakt_Mitstreiter }
+				remove_ideas = Pakt_Mitstreiter
+				leave_GER_sphere = yes
+			}
+			every_country = {
+				limit = { has_idea = Pakt_Marionettenstaat }
+				remove_ideas = Pakt_Marionettenstaat
+				leave_GER_sphere = yes
+			}
+			dismantle_faction = yes
+			clear_array = GER.pakt_members
+			set_temp_variable = { Victory_ID = 99 }
+			Cold_War_GUI_AddVictory = yes
+			set_temp_variable = { Victory_ID = 99 }
+			set_temp_variable = { Victory_Outcome = 6 }
+			set_temp_variable = { Victory_Points = -300 }
+			Cold_War_GUI_ManipulateVictory = yes
+			hidden_effect = {
+				every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.16 days = 1 } }
+				every_country = {
+					limit = {
+						is_ai = no
+						NOT = { tag = GER }
+					}
+					country_event = pakt_collapse.22
+				}
+			}
+		}
+	}	
+}
+
+country_event = { #Ireland sods off
+	id = pakt_collapse.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.14"}
+	title = pakt_collapse.14.t
+	desc = pakt_collapse.14.desc
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = pakt_collapse.14.a
+		if = {
+			limit = {
+				OR = {
+					has_idea = Pakt_Observer
+					has_idea = Pakt_Bundnispartner
+					has_idea = Pakt_Mitstreiter
+					has_idea = Pakt_Marionettenstaat
+				}
+			}
+			if = {
+				limit = { has_idea = Pakt_Observer }
+				remove_ideas = Pakt_Observer
+			}
+			if = {
+				limit = { has_idea = Pakt_Bundnispartner }
+				remove_ideas = Pakt_Bundnispartner
+			}
+			if = {
+				limit = { has_idea = Pakt_Mitstreiter }
+				remove_ideas = Pakt_Mitstreiter
+			}
+			if = {
+				limit = { has_idea = Pakt_Marionettenstaat }
+				remove_ideas = Pakt_Marionettenstaat
+			}
+			leave_GER_sphere = yes
+			if = {
+				limit = { has_country_flag = IRE_lemass_rising_tide }
+				add_ideas = OFN_Observer
+				econ_join_sphere_USA = yes
+			}
+			IRE = { set_country_flag = ireland_fucks_off }
+		}
+	}
+}
+
+country_event = { #UK (and potentially Northern Ireland apparently) leaves
+	id = pakt_collapse.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.15"}
+	title = pakt_collapse.15.t
+	desc = pakt_collapse.15.desc
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = pakt_collapse.15.a
+		if = {
+			limit = { is_in_faction_with = GER }
+			remove_from_array = {
+				array = GER.pakt_members
+				value = THIS.id
+			}
+			if = {
+				limit = { has_idea = Pakt_Bundnispartner }
+				remove_ideas = Pakt_Bundnispartner
+			}
+			if = {
+				limit = { has_idea = Pakt_Mitstreiter }
+				remove_ideas = Pakt_Mitstreiter
+			}
+			if = {
+				limit = { has_idea = Pakt_Marionettenstaat }
+				remove_ideas = Pakt_Marionettenstaat
+			}
+			leave_faction = yes
+			leave_GER_sphere = yes
+			if = {
+				limit = { tag = ENG }
+				ENG = { set_country_flag = england_fucks_off }
+			}
+		}
+	}
+}
+
+news_event = { #End of the Pakt WORLD
+	id = pakt_collapse.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.16"}
+	title = pakt_collapse.16.t
+	desc = pakt_collapse.16.desc
+	picture = GFX_news_end_of_the_pakt
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.16.a
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				is_in_faction_with = RUS
+			}
+		}	
+	}
+	option = {
+		name = pakt_collapse.16.b
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = pakt_collapse.16.c
+		trigger = {
+			NOT = {
+				is_in_faction_with = USA
+				tag = GER
+			}
+		}
+	}
+}
+
+country_event = { #Sets up pakt withdrawl world events
+	id = pakt_collapse.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.17"}
+	title = pakt_collapse.17.t
+	desc = pakt_collapse.17.desc
+
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = pakt_collapse.17.a
+		if = {
+			limit = {
+				IRE = { has_country_flag = ireland_fucks_off }
+				ENG = { has_country_flag = england_fucks_off }
+			}
+			every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.18 } }
+		}
+		else_if = {
+			limit = {
+				ENG = { has_country_flag = england_fucks_off }
+				IRE = {
+					OR = {
+						has_idea = Pakt_Observer
+						has_idea = Pakt_Bundnispartner
+						has_idea = Pakt_Mitstreiter
+						has_idea = Pakt_Marionettenstaat
+					}
+				}
+			}	
+			every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.23 } }
+		}
+		else_if = {
+			limit = {
+				IRE = { has_country_flag = ireland_fucks_off }
+				ENG = { is_in_faction_with = GER }
+			}
+			every_country = { limit = { is_ai = no } news_event = { id = pakt_collapse.19 } }
+		}
+	}
+}
+
+news_event = { #The Isles leaves the Pakt WORLD
+	id = pakt_collapse.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.18"}
+	title = pakt_collapse.18.t
+	desc = pakt_collapse.18.desc
+	picture = GFX_news_britain_leaves_pakt
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.18.a
+		trigger = {
+			OR = {
+				is_in_faction_with = USA
+				is_in_faction_with = RUS
+			}
+		}	
+	}
+	option = {
+		name = pakt_collapse.18.b
+		trigger = {
+			OR = {
+				tag = IRE
+				tag = ULS
+			}	
+		}
+	}
+	option = {
+		name = pakt_collapse.18.c
+		trigger = {
+			tag = GER
+		}	
+	}
+	option = {
+		name = pakt_collapse.18.d
+		trigger = {
+			tag = ENG
+		}	
+	}
+	option = {
+		name = pakt_collapse.18.e
+		trigger = {
+			NOT = {
+				is_in_faction_with = USA
+				is_in_faction_with = RUS
+				tag = GER
+				tag = IRE
+				tag = ULS
+				tag = ENG
+			}
+		}
+	}
+}
+
+news_event = { #Ireland leaves the Pakt WORLD
+	id = pakt_collapse.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.19"}
+	title = pakt_collapse.19.t
+	desc = pakt_collapse.19.desc
+	picture = GFX_news_ireland_leaves_pakt
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.19.a
+		trigger = {
+			is_in_faction_with = USA
+		}	
+	}
+	option = {
+		name = pakt_collapse.19.b
+		trigger = {
+			OR = {
+				tag = IRE
+				tag = ULS
+			}	
+		}
+	}
+	option = {
+		name = pakt_collapse.19.c
+		trigger = {
+			tag = GER
+		}	
+	}
+	option = {
+		name = pakt_collapse.19.d
+		trigger = {
+			NOT = {
+				is_in_faction_with = USA
+				tag = GER
+				tag = IRE
+				tag = ULS
+				tag = ENG
+			}
+		}
+	}
+}
+
+country_event = { #The Madagaskar Seizure is a success
+	id = pakt_collapse.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.21"}
+	title = pakt_collapse.21.t
+	desc = pakt_collapse.21.desc
+	picture = GFX_report_event_MAD_colonial_madagascar
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pakt_collapse.21.a
+		custom_effect_tooltip = pakt_collapse_21_tt
+	}
+}
+
+country_event = { #End of the Pakt baby
+	id = pakt_collapse.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.22"}
+	title = pakt_collapse.22.t
+	desc = pakt_collapse.22.desc
+	picture = GFX_report_event_USA_cia_eng_anti_german_propaganda
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pakt_collapse.22.a
+	}
+}
+
+news_event = { #UK leaves the Pakt WORLD
+	id = pakt_collapse.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.23"}
+	title = pakt_collapse.23.t
+	desc = pakt_collapse.23.desc
+	picture = GFX_news_britain_leaves_pakt
+
+	is_triggered_only = yes
+
+	option = {
+		name = pakt_collapse.23.a
+		trigger = {
+			is_in_faction_with = USA
+		}	
+	}
+	option = {
+		name = pakt_collapse.23.b
+		trigger = {
+			tag = GER
+		}	
+	}
+	option = {
+		name = pakt_collapse.23.c
+		trigger = {
+			tag = ENG
+		}	
+	}
+	option = {
+		name = pakt_collapse.23.d
+		trigger = {
+			NOT = {
+				is_in_faction_with = USA
+				tag = GER
+				tag = IRE
+				tag = ULS
+				tag = ENG
+			}
+		}
+	}
+}
+
+country_event = { #The M&R Seizure is a success
+	id = pakt_collapse.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event pakt_collapse.24"}
+	title = pakt_collapse.24.t
+	desc = pakt_collapse.24.desc
+	picture = GFX_event_port_louis
+
+	is_triggered_only = yes
+	
+	option = {
+		name = pakt_collapse.24.a
+		custom_effect_tooltip = pakt_collapse_24_tt
+	}
+}
+
+
+
+
+
+
+
+
+
+

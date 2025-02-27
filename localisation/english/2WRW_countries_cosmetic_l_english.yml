@@ -1,0 +1,538 @@
+﻿l_english:
+ 
+ # Second West Russian War
+ 
+ OST_RUS:0 "Baltic Confederation"
+ OST_RUS_DEF:0 "the Baltic Confederation"
+ OST_RUS_ADJ:0 "Baltic"
+ 
+ UKR_RUS:0 "Republic of Ukraine"
+ UKR_RUS_DEF:0 "the Republic of Ukraine"
+ UKR_RUS_ADJ:0 "Ukrainian"
+ 
+ ERS_FED:0 "Federation of Tomsk"
+ ERS_FED_DEF:0 "the Federation of Tomsk"
+ ERS_FED_ADJ:0 "Russian"
+ 
+ SAH_NEU:0 "Krasnoyarsk Neutral Zone"
+ SAH_NEU_DEF:0 "the Krasnoyarsk Neutral Zone"
+ SAH_NEW_ADJ:0 "Russian"
+ 
+ TOB_uralrepublic:0 "West Siberian Republic"
+ TOB_uralrepublic_DEF:0 "the West Siberian Federative Republic"
+ TOB_uralrepublic_ADF:0 "Russian"
+ 
+ ARC_FED:0 "All-Russian Army Revolt"
+ ARC_FED_DEF:0 "the All-Russian Provisional Military Government"
+ ARC_FED_ADJ:0 "Russian"
+ 
+ VTY_REP:0 "West Russian Republic"
+ VTY_REP_DEF:0 "the West Russian Republic"
+ VTY_REP_ADJ:0 "Russian"
+ 
+ IRK_SAB:0 "East Siberian Soviet Republic"
+ IRK_SAB_DEF:0 "the East Siberian Soviet Republic"
+ IRK_SAB_ADJ:0 "Soviet"
+
+ IRK_die:0 "Irkutsk Oblast"
+ IRK_die_DEF:0 "the Irkutsk Oblast"
+ IRK_die_ADJ:0 "Buryat"
+
+ TOM_die:0 "New Tomsk Republic"
+ TOM_die_DEF:0 "the New Tomsk Republic"
+ TOM_die_ADJ:0 "Russian"
+
+ NOV_dead:0 "Siberian Corporate District"
+ NOV_dead_DEF:0 "the Siberian Corporate District"
+ NOV_dead_ADJ:0 "Russian"
+
+ ALT_die:0 "Altai State"
+ ALT_die_DEF:0 "the Altai State"
+ ALT_die_ADJ:0 "Altai"
+
+ SVR_dead:0 "Ural Military Government"
+ SVR_dead_DEF:0 "the Ural Military Government"
+ SVR_dead_ADJ:0 "Russian"
+
+ FAV_dead:0 "Yamalo-Nenets Federation"
+ FAV_dead_DEF:0 "the Yamalo-Nenets Federation"
+ FAV_dead_ADJ:0 "Nenet"
+
+ URL_die:0 "Idel-Ural Confederation"
+ URL_die_DEF:0 "the Idel-Ural Confederation"
+ URL_die_ADJ:0 "Tatar"
+
+ YGR_dead:0 "Diarchy of Khantia-Mansia"
+ YGR_dead_DEF:0 "the Diarchy of Khantia-Mansia"
+ YGR_dead_ADJ:0 "Ob-Ugric"
+
+ KRS_dead:0 "Commonwealth of Khakassia"
+ KRS_dead_DEF:0 "the Commonwealth of Khakassia"
+ KRS_dead_ADJ:0 "Khakas"
+
+ AMR_die:0 "Free State of Chukotka"
+ AMR_die_DEF:0 "the Free State of Chukotka"
+ AMR_die_ADJ:0 "Chukchi"
+
+ KMC_die:0 "Koryak National Republic"
+ KMC_die_DEF:0 "the Koryak National Republic"
+ KMC_die_ADJ:0 "Koryak"
+
+ BRY_die:0 "Union of Buryatia"
+ BRY_die_DEF:0 "the Union of Buryatia"
+ BRY_die_ADJ:0 "Buryat"
+
+ MAG_die:0 "Transbaikal National Syndicates"
+ MAG_die_DEF:0 "the Transbaikal National Syndicates"
+ MAG_die_ADJ:0 "Transbaikalian"
+ 
+ YAK_die:0 "Sakha Corporate State"
+ YAK_die_DEF:0 "the Sakha Corporate State"
+ YAK_die_ADJ:0 "Sakhan"
+
+ PRC_die:0 "Republic of Tuva"
+ PRC_die_DEF:0 "the Republic of Tuva"
+ PRC_die_ADJ:0 "Tuvan"
+
+ CHT_die:0 "State of Evenkia"
+ CHT_die_DEF:0 "the State of Evenkia"
+ CHT_die_ADJ:0 "Evenk"
+ 
+ SBA_die:0 "Dolgan State of Taymyria"
+ SBA_die_DEF:0 "the Dolgan State of Taymyria"
+ SBA_die_ADJ:0 "Dolgan"
+ 
+ KYR_AFG:0 "Kyrgyz Authority"
+ KYR_AFG_DEF:0 "the Provisional Afghan Administration of Kyrgyzstan"
+ TAJ_AFG:0 "Tajik Authority"
+ TAJ_AFG_DEF:0 "the Provisional Afghan Administration of Tajikistan"
+ UZB_AFG:0 "Uzbek Authority"
+ UZB_AFG_DEF:0 "the Provisional Afghan Administration of Uzbekistan"
+ TRK_AFG:0 "Turkmen Authority"
+ TRK_AFG_DEF:0 "the Provisional Afghan Administration of Turkmenistan"
+
+
+ # Peace Deals - Novosibirsk
+ 
+ MOS_Novosibirsk:0 "Central Russian Reconstruction Zone"
+ MOS_Novosibirsk_DEF:0 "the Central Russian Reconstruction Zone"
+ MOS_Novosibirsk_ADJ:0 "Central Russian"
+ 
+ VLG_Novosibirsk:0 "Volga Reconstruction Administration"
+ VLG_Novosibirsk_DEF:0 "the Volga Reconstruction Administration"
+ VLG_Novosibirsk_ADJ:0 "Volga German"
+ 
+ PET_Novosibirsk:0 "Petrograd Reconstruction Administration"
+ PET_Novosibirsk_DEF:0 "the Petrograd Reconstruction Administration"
+ PET_Novosibirsk_ADJ:0 "Baltic German"
+ 
+ BLR_free:0 "Republic of Belarus"
+ BLR_free_DEF:0 "the Republic of Belarus"
+ BLR_free_ADJ:0 "Belarusian"
+ 
+ KOL_VLD:0 "Far East Reintegration Zone"
+ KOL_VLD_DEF:0 "the Far Eastern Reintegration Zone"
+ KOL_VLD_ADJ:0 "Far Eastern"
+
+ CAU_NOVcollaboarator:0 "Caucasian Federation"
+ CAU_NOVcollaboarator_DEF:0 "the Caucasian Federation"
+ CAU_NOVcollaboarator_ADJ:0 "Caucasian"
+ 
+ # Willy Brandt Returns
+ 
+ GER_BrandtFreiheit:0 "Deutsche Republik"
+ GER_BrandtFreiheit_DEF:0 "die Deutsche Republik"
+ GER_BrandtFreiheit_ADJ:0 "German"
+ 
+ CZE_Frehiet:0 "Czech Republic"
+ CZE_Frehiet_DEF:0 "Česká Republika"
+ CZE_Frehiet_ADJ:0 "Czech"
+ 
+ # Kazakhstan Collapse
+ 
+ KAZ_collapse:0 "Kazakh Soviet"
+ KAZ_collapse_DEF:0 "the Kazakh Soviet Socialist Republic"
+ KAZ_collapse_ADJ:0 "Kazakh"
+ 
+ # Poland
+
+ POL_Uprising:0 "Polish Home Army"
+ POL_Uprising_DEF:0 "the Polish Home Army"
+ POL_Uprising_ADJ:0 "Polish"
+ 
+ POL_Republic:0 "Republic of Poland"
+ POL_Republic_DEF:0 "the Third Polish Republic"
+ POL_Republic_ADJ:0 "Polish"
+ 
+ POL_Brandt:0 "Polish Reconstruction Committee"
+ POL_Brandt_DEF:0 "the Polish Reconstruction Committee"
+ POL_Brandt_ADJ:0 "Polish"
+
+ ### GER ###
+ GER_Waldheim:0 "Großgermanisches Reich"
+ GER_Waldheim_DEF:0 "das Großgermanische Reich der Deutschen Nation"
+ GER_Waldheim_ADJ:0 "Deutsche"
+
+ GER_GO4:0 "Deutsches Reich"
+ GER_GO4_DEF:0 "das Deutsches Reich"
+ GER_GO4_ADJ:0 "Deutsche"
+
+ MCW_bormann:0 "Reichskommissariat Rußland"
+ MCW_bormann_DEF:0 "Reichskommissariat Rußland"
+
+ MCW_speer:0 "Russischer Autorität"
+ MCW_speer_DEF:0 "der Deutsch Behörde in Russland"
+ 
+ ROM_REPUBLIC:0 "Republic of Romania"
+ ROM_REPUBLIC_DEF:0 "the Republic of Romania"
+ ROM_REPUBLIC_ADJ:0 "Romanian"
+ 
+ HUN_ARROW:0 "Hungarian State"
+ HUN_ARROW_DEF:0 "the Hungarian State"
+
+ HUN_SFK:0 "Hungarian State"
+ HUN_SFK_DEF:0 "the Hungarian State"
+
+ QIN_GER_Funny:0 "Gunther-Fehlinger Reich"
+ QIN_GER_Funny_DEF:0 "das Fehlinger Reich"
+
+ USA_you_really_fucked_up_again:0 "National State Of The Enclave"
+ USA_you_really_fucked_up_again_DEF:0 "the National State Of The Enclave"
+
+ RPR_Transtional_commie:0 "Vereinigte Rotfront"
+ RPR_Transtional_commie_DEF:0 "das Vereinigte Rotfront"
+ RPR_Transtional_commie_ADJ:0 "Sozialistische-Deutsch"
+
+ RPR_Rudi_ending:0 "Deutsche Sozialistische Republik"
+ RPR_Rudi_ending_DEF:0 "die Deutsche Sozialistische Republik"
+ RPR_Rudi_ending_ADJ:0 "Deutsch"
+
+ RPR_Hoffman_ending:0 "Deutsche Arbeiter Republik"
+ RPR_Hoffman_ending_DEF:0 "die Deutsche Arbeiter Republik"
+ RPR_Hoffman_ending_ADJ:0 "Deutsche"
+
+ RPR_Ernst_ending:0 "Volksrepublik Deutschland"
+ RPR_Ernst_ending_DEF:0 "die Volksrepublik Deutschland"
+ RPR_Ernst_ending_ADJ:0 "Deutsche"
+
+ SFK_Unify:0 "Deutsches Freikorps"
+ SFK_Unify_DEF:0 "der Deutsches Freikorps"
+ SFK_Unify_ADJ:0 "Deutsche"
+
+ ### DEN ###
+ DEN_2GCW_dem:0 "Kingdom Of Denmark"
+ DEN_2GCW_dem_DEF:0 "the Kingdom Of Denmark"
+
+ DEN_2GCW_commie:0 "People's Republic of Denmark"
+ DEN_2GCW_commie_DEF:0 "the People's Republic of Denmark"
+
+ ### HOL ###
+ HOL_commie:0 "Netherlands"
+ HOL_commie_DEF:0 "the People's Republic of the Netherlands"
+
+ HOL_Republic:0 "Netherlands"
+ HOL_Republic_DEF:0 "the Republic of the Netherlands"
+ 
+ HOL_Kingdom_real:0 "Netherlands"
+ HOL_Kingdom_real_DEF:0 "the Kingdom of the Netherlands"
+
+ HOL_State_natsoc:0 "Dutch State"
+ HOL_State_natsoc_DEF:0 "the Dutch State"
+
+ ### GLC ###
+
+ GLC_commie:0 "French People's Republic"
+ GLC_commie_DEF:0 "the French People's Republic"
+
+ GLC_dem:0 "French Republic"
+ GLC_dem_DEF:0 "the French Republic"
+
+ ### Reconstruction Generics ### made by me the fabulous Danish Gamer* :temer:
+ ### * And Hek, Voyteck, Emmy, Kappy and Leoj
+
+ ### Communists ###
+ OKB_generic_commie:0 "Leningrad Oblast"
+ UPO_generic_commie:0 "Baltic SFSR"
+ CAU_generic_commie:0 "Transcaucasian SFSR"
+ CRI_generic_commie:0 "Crimean ASSR"
+ UKR_generic_commie:0 "Ukrainian SSR"
+ BLR_generic_commie:0 "Byelorussian SSR"
+
+ OKB_generic_commie_DEF:0 "the Leningrad Oblast"
+ UPO_generic_commie_DEF:0 "the Baltic Soviet Federative Socialist Republic"
+ CAU_generic_commie_DEF:0 "the Transcaucasian Federative Soviet Socialist Republic"
+ CRI_generic_commie_DEF:0 "the Crimean Autonomous Soviet Socialist Republic"
+ UKR_generic_commie_DEF:0 "the Ukrainian Soviet Socialist Republic"
+ BLR_generic_commie_DEF:0 "the Byelorussian Soviet Socialist Republic"
+
+ OKB_generic_commie_ADJ:0 "Russian"
+ UPO_generic_commie_ADJ:0 "Baltic"
+ CAU_generic_commie_ADJ:0 "Transcaucasian"
+ CRI_generic_commie_ADJ:0 "Crimean"
+ UKR_generic_commie_ADJ:0 "Ukrainian"
+ BLR_generic_commie_ADJ:0 "Byelorussian"
+
+ ### Democrats ###
+ OKB_generic_democratic:0 "Petrograd Oblast"
+ UPO_generic_democratic:0 "Baltic Federal Republic"
+ CAU_generic_democratic:0 "Transcaucasian Federation"
+ CRI_generic_democratic:0 "Republic of Crimea"
+ UKR_generic_democratic:0 "Republic of Ukraine"
+ BLR_generic_democratic:0 "Republic of Belarus"
+
+ OKB_generic_democratic_DEF:0 "the Petrograd Oblast"
+ UPO_generic_democratic_DEF:0 "the Baltic Federal Republic"
+ CAU_generic_democratic_DEF:0 "the Transcaucasian Federation"
+ CRI_generic_democratic_DEF:0 "the Republic of Crimea"
+ UKR_generic_democratic_DEF:0 "the Republic of Ukraine"
+ BLR_generic_democratic_DEF:0 "the Republic of Belarus"
+
+ OKB_generic_democratic_ADJ:0 "Russian"
+ UPO_generic_democratic_ADJ:0 "Baltic"
+ CAU_generic_democratic_ADJ:0 "Transcaucasian"
+ CRI_generic_democratic_ADJ:0 "Crimean"
+ UKR_generic_democratic_ADJ:0 "Ukrainian"
+ BLR_generic_democratic_ADJ:0 "Belarusian"
+
+ ### authoritarian ### 
+ OKB_generic_auth:0 "Provisional State of Petrograd"
+ UPO_generic_auth:0 "Baltic Provisional State"
+ CAU_generic_auth:0 "Provisional State of the Caucasus"
+ CRI_generic_auth:0 "Provisional State of Crimea"
+ UKR_generic_auth:0 "Provisional State of Ukraine"
+ BLR_generic_auth:0 "Provisional State of Belarus"
+
+ OKB_generic_auth_DEF:0 "the Provisional State of Petrograd"
+ UPO_generic_auth_DEF:0 "the Provisional State of the Baltic"
+ CAU_generic_auth_DEF:0 "the Provisional State of the Caucasus"
+ CRI_generic_auth_DEF:0 "the Provisional State of Crimea"
+ UKR_generic_auth_DEF:0 "the Provisional State of Ukraine"
+ BLR_generic_auth_DEF:0 "the Provisional State of Belarus"
+
+ OKB_generic_auth_ADJ:0 "Russian"
+ UPO_generic_auth_ADJ:0 "Baltic"
+ CAU_generic_auth_ADJ:0 "Caucasian"
+ CRI_generic_auth_ADJ:0 "Crimean"
+ UKR_generic_auth_ADJ:0 "Ukrainian"
+ BLR_generic_auth_ADJ:0 "Belarusian"
+
+ ### fascist ###
+ OKB_generic_fascism:0 "Petrograd Governate"
+ UPO_generic_fascism:0 "Baltic Governate"
+ CAU_generic_fascism:0 "Caucasian Governate"
+ CRI_generic_fascism:0 "Crimean Governate"
+ UKR_generic_fascism:0 "Ukrainian Governate"
+ BLR_generic_fascism:0 "Belarusian Governate"
+
+ OKB_generic_fascism_DEF:0 "the All-Russian Governate of Petrograd"
+ UPO_generic_fascism_DEF:0 "the All-Russian Governate of the Baltic"
+ CAU_generic_fascism_DEF:0 "the All-Russian Governate of the Caucasus"
+ CRI_generic_fascism_DEF:0 "the All-Russian Governate of Crimea"
+ UKR_generic_fascism_DEF:0 "the All-Russian Governate of Ukraine"
+ BLR_generic_fascism_DEF:0 "the All-Russian Governate of Belarus"
+
+ OKB_generic_fascism_ADJ:0 "Russian"
+ UPO_generic_fascism_ADJ:0 "Baltic"
+ CAU_generic_fascism_ADJ:0 "Caucasian"
+ CRI_generic_fascism_ADJ:0 "Crimean"
+ UKR_generic_fascism_ADJ:0 "Ukrainian"
+ BLR_generic_fascism_ADJ:0 "Belarusian"
+
+ ### Aryan Brotherhood ###
+ OKB_aryan:0 "Militayrsbesirk St. Peytersberg"
+ UPO_aryan:0 "Reykhskommissariat Baltish"
+ CAU_aryan:0 "Reykhsprotectorat Kaukasus"
+ CRI_aryan:0 "Reykhskommissariat Krim"
+ UKR_aryan:0 "Reykhskommissariat Yukrain"
+ BLR_aryan:0 "Reykhskommissariat Veisrussland"
+
+ OKB_aryan_DEF:0 "das Militayrsbesirk Saynt Peytersberg"
+ UPO_aryan_DEF:0 "das Reykhskommissariat Baltish"
+ CAU_aryan_DEF:0 "das Reykhsprotectorat Kaukasus"
+ CRI_aryan_DEF:0 "das Reykhskommissariat Krim"
+ UKR_aryan_DEF:0 "das Reykhskommissariat Yukrain"
+ BLR_aryan_DEF:0 "das Reykhskommissariat Veisrussland"
+ 
+ OKB_aryan_ADJ:0 "Russkiy"
+ UPO_aryan_ADJ:0 "Baltish"
+ CAU_aryan_ADJ:0 "Kaukasus"
+ CRI_aryan_ADJ:0 "Krim"
+ UKR_aryan_ADJ:0 "Yukrainisch"
+ BLR_aryan_ADJ:0 "Veisrusskiy"
+ 
+ ### hyperborea ### 
+ OKB_hyperborean:0 "Perun's Authority"
+ UPO_hyperborean:0 "Perkūnas' Authority"
+ CAU_hyperborean:0 "Khors' Authority"
+ CRI_hyperborean:0 "Svarozhits' Authority"
+ UKR_hyperborean:0 "Mat Zemlya's Authority"
+ BLR_hyperborean:0 "Dazhbog's Authority"
+
+ OKB_hyperborean_DEF:0 "Perun's Authority over Petrograd"
+ UPO_hyperborean_DEF:0 "Perkūnas' Authority over the Baltic"
+ CAU_hyperborean_DEF:0 "Khors' Authority over the Caucasus"
+ CRI_hyperborean_DEF:0 "Svarozhits' Authority over Crimea"
+ UKR_hyperborean_DEF:0 "Mat Zemlya's Authority over Ukraine"
+ BLR_hyperborean_DEF:0 "Dazhbog's Authority over Belarus"
+
+ OKB_hyperborean_ADJ:0 "Russian"
+ UPO_hyperborean_ADJ:0 "Baltic"
+ CAU_hyperborean_ADJ:0 "Caucasian"
+ CRI_hyperborean_ADJ:0 "Crimean"
+ UKR_hyperborean_ADJ:0 "Ukrainian"
+ BLR_hyperborean_ADJ:0 "Belarusian"
+
+ ### Monarchist ###
+ OKB_generic_monarchist:0 "St. Petersburg Reintegration Duchy"
+ UPO_generic_monarchist:0 "Grand Baltic Duchy"
+ CAU_generic_monarchist:0 "Reintegration Principality of Caucasia"
+ CRI_generic_monarchist:0 "Reclamation Barony of Crimea"
+ UKR_generic_monarchist:0 "Reclaimed Duchies of Ukraine"
+ BLR_generic_monarchist:0 "Principality of White Russia"
+
+ OKB_generic_monarchist_DEF:0 "the Reintegration Duchy of St. Petersburg"
+ UPO_generic_monarchist_DEF:0 "the Grand Baltic Duchy"
+ CAU_generic_monarchist_DEF:0 "the Reintegration Principality of Caucasia"
+ CRI_generic_monarchist_DEF:0 "the Reclamation Barony of Crimea"
+ UKR_generic_monarchist_DEF:0 "the Reclaimed Duchies of Ukraine"
+ BLR_generic_monarchist_DEF:0 "the Principality of White Russia"
+
+ OKB_generic_monarchist_ADJ:0 "Russian"
+ UPO_generic_monarchist_ADJ:0 "Baltic"
+ CAU_generic_monarchist_ADJ:0 "Caucasian"
+ CRI_generic_monarchist_ADJ:0 "Crimean"
+ UKR_generic_monarchist_ADJ:0 "Ukrainian"
+ BLR_generic_monarchist_ADJ:0 "White Russian"
+ 
+ ### Kemerovo ###
+ OKB_kemerovo:0 "Crown Land of Rurik"
+ UPO_kemerovo:0 "Crown Territories of the Baltics"
+ CAU_kemerovo:0 "United Baronies of Caucasia"
+ CRI_kemerovo:0 "Barony of Crimea"
+ UKR_kemerovo:0 "Grand Principality of Kiev"
+ BLR_kemerovo:0 "Kingdom of White Ruthenia"
+
+ OKB_kemerovo_DEF:0 "the Crown Land of Rurik"
+ UPO_kemerovo_DEF:0 "the Crown Territories of the Baltics"
+ CAU_kemerovo_DEF:0 "the United Baronies of Caucasia"
+ CRI_kemerovo_DEF:0 "the Barony of Crimea"
+ UKR_kemerovo_DEF:0 "the Grand Principality of Kiev"
+ BLR_kemerovo_DEF:0 "the Kingdom of White Ruthenia"
+
+ OKB_kemerovo_ADJ:0 "Russian"
+ UPO_kemerovo_ADJ:0 "Baltic"
+ CAU_kemerovo_ADJ:0 "Caucasian"
+ CRI_kemerovo_ADJ:0 "Crimean"
+ UKR_kemerovo_ADJ:0 "Ukrainian"
+ BLR_kemerovo_ADJ:0 "Ruthenian"
+
+ ### Serov Komi ###
+ OKB_ordosocialist:0 "Ordosocialist Republic of Serograd"
+ UPO_ordosocialist:0 "Baltic Ordosocialist Republic"
+ CAU_ordosocialist:0 "Ordosocialist Republic of Transcaucasia"
+ CRI_ordosocialist:0 "Ordosocialist Republic of Crimea"
+ UKR_ordosocialist:0 "Ordosocialist Republic of Ukraine"
+ BLR_ordosocialist:0 "Ordosocialist Republic of Belarus"
+ 
+ OKB_ordosocialist_DEF:0 "the Ordosocialist Republic of Serograd"
+ UPO_ordosocialist_DEF:0 "the Baltic Ordosocialist Republic"
+ CAU_ordosocialist_DEF:0 "the Ordosocialist Republic of Transcaucasia"
+ CRI_ordosocialist_DEF:0 "the Ordosocialist Republic of Crimea"
+ UKR_ordosocialist_DEF:0 "the Ordosocialist Republic of Ukraine"
+ BLR_ordosocialist_DEF:0 "the Ordosocialist Republic of Belarus"
+
+ OKB_ordosocialist_ADJ:0 "Russian"
+ UPO_ordosocialist_ADJ:0 "Baltic"
+ CAU_ordosocialist_ADJ:0 "Transcaucasian"
+ CRI_ordosocialist_ADJ:0 "Crimean"
+ UKR_ordosocialist_ADJ:0 "Ukrainian"
+ BLR_ordosocialist_ADJ:0 "Belarusian"
+
+ ### Eurasia ###
+ OKB_eurasian:0 "Petrograd Integration Committee"
+ UPO_eurasian:0 "Baltic Integration Committee"
+ CAU_eurasian:0 "Transcaucasian Integration Committee"
+ CRI_eurasian:0 "Crimean Integration Committee"
+ UKR_eurasian:0 "Ukrainian Integration Committee"
+ BLR_eurasian:0 "Byelorussian Integration Committee"
+ 
+ OKB_eurasian_DEF:0 "the Petrograd Integration Committee"
+ UPO_eurasian_DEF:0 "the Baltic Integration Committee"
+ CAU_eurasian_DEF:0 "the Transcaucasian Integration Committee"
+ CRI_eurasian_DEF:0 "the Crimean Integration Committee"
+ UKR_eurasian_DEF:0 "the Ukrainian Integration Committee"
+ BLR_eurasian_DEF:0 "the Byelorussian Integration Committee"
+
+ OKB_eurasian_ADJ:0 "Russian"
+ UPO_eurasian_ADJ:0 "Baltic"
+ CAU_eurasian_ADJ:0 "Transcaucasian"
+ CRI_eurasian_ADJ:0 "Crimean"
+ UKR_eurasian_ADJ:0 "Ukrainian"
+ BLR_eurasian_ADJ:0 "Byelorussian"
+ 
+ ### SBA Despotism ###
+ OKB_anarcho_despotism:0 "Petrograd Liberation Committee"
+ UPO_anarcho_despotism:0 "Baltic Liberation Committee"
+ CAU_anarcho_despotism:0 "Transcaucasian Liberation Committee"
+ CRI_anarcho_despotism:0 "Crimean Liberation Committee"
+ UKR_anarcho_despotism:0 "Ukrainian Liberation Committee"
+ BLR_anarcho_despotism:0 "Byelorussian Liberation Committee"
+
+ OKB_anarcho_despotism_DEF:0 "the Petrograd Liberation Committee"
+ UPO_anarcho_despotism_DEF:0 "the Baltic Liberation Committee"
+ CAU_anarcho_despotism_DEF:0 "the Transcaucasian Liberation Committee"
+ CRI_anarcho_despotism_DEF:0 "the Crimean Liberation Committee"
+ UKR_anarcho_despotism_DEF:0 "the Ukrainian Liberation Committee"
+ BLR_anarcho_despotism_DEF:0 "the Byelorussian Liberation Committee"
+
+ OKB_anarcho_despotism_ADJ:0 "Russian"
+ UPO_anarcho_despotism_ADJ:0 "Baltic"
+ CAU_anarcho_despotism_ADJ:0 "Transcaucasian"
+ CRI_anarcho_despotism_ADJ:0 "Crimean"
+ UKR_anarcho_despotism_ADJ:0 "Ukrainian"
+ BLR_anarcho_despotism_ADJ:0 "Byelorussian"
+
+ ### SBA Socialism ###
+ OKB_anarcho_socialism:0 "Liberated Territory of Petrograd"
+ UPO_anarcho_socialism:0 "Liberated Territory of the Baltic"
+ CAU_anarcho_socialism:0 "Liberated Territory of the Caucasus"
+ CRI_anarcho_socialism:0 "Liberated Territory of Crimea"
+ UKR_anarcho_socialism:0 "Liberated Territory of Ukraine"
+ BLR_anarcho_socialism:0 "Liberated Territory of Belarus"
+
+ OKB_anarcho_socialism_DEF:0 "the Liberated Territory of Petrograd"
+ UPO_anarcho_socialism_DEF:0 "the Liberated Territory of the Baltic"
+ CAU_anarcho_socialism_DEF:0 "the Liberated Territory of the Caucasus"
+ CRI_anarcho_socialism_DEF:0 "the Liberated Territory of Crimea"
+ UKR_anarcho_socialism_DEF:0 "the Liberated Territory of Ukraine"
+ BLR_anarcho_socialism_DEF:0 "the Liberated Territory of Belarus"
+
+ OKB_anarcho_socialism_ADJ:0 "Russian"
+ UPO_anarcho_socialism_ADJ:0 "Baltic"
+ CAU_anarcho_socialism_ADJ:0 "Caucasian"
+ CRI_anarcho_socialism_ADJ:0 "Crimean"
+ UKR_anarcho_socialism_ADJ:0 "Ukrainian"
+ BLR_anarcho_socialism_ADJ:0 "Belarusian"
+
+ # WERBALLS #
+
+ OKB_werbell:0 "St. Petersburg Military Governance"
+ UPO_werbell:0 "Baltic Military Authority"
+ CAU_werbell:0 "Caucasian Military Authority"
+ CRI_werbell:0 "Crimean Marine Authority"
+ UKR_werbell:0 "Ukrainian Military Authority"
+ BLR_werbell:0 "Belarusian Military Authority"
+
+ OKB_werbell_DEF:0 "the Military Governance of Saint Petersburg"
+ UPO_werbell_DEF:0 "the Baltic Military Authority"
+ CAU_werbell_DEF:0 "the Caucasian Military Authority"
+ CRI_werbell_DEF:0 "the Crimean Marine Authority"
+ UKR_werbell_DEF:0 "the Ukrainian Military Authority"
+ BLR_werbell_DEF:0 "the Belarusian Military Authority"
+
+ OKB_werbell_ADJ:0 "Russian"
+ UPO_werbell_ADJ:0 "Baltic"
+ CAU_werbell_ADJ:0 "Caucasian"
+ CRI_werbell_ADJ:0 "Crimean"
+ UKR_werbell_ADJ:0 "Ukrainian"
+ BLR_werbell_ADJ:0 "Belarusian"

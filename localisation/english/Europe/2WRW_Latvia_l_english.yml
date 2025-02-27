@@ -1,0 +1,31 @@
+﻿l_english:
+ # Characters
+
+ LAT_Valdis_Birkavs: "Valdis Birkavs"
+ LAT_Baltic_Council: "Baltic Council"
+
+ # Character descs
+
+ POLITICS_VALDIS_BIRKAVS_DESC: "While Valdis Birkavs was born during the war, he was not spared from witnessing countless horrors and atrocities as he saw his country be colonized by Germans during his lifetime. As he lived in Riga for his entire life, he witnessed his neighbors slowly be replaced by Germans. This only spurred him on harder to study so that one day, he might lead the country and give Latvia back to the Latvians.\n\nWhile the foolish dreams of his youth have been tempered by the harsh reality he faced growing up in Ostland, as well as the harsh reality of the current situation of the country - his dream of fixing the mess it is in has not. And while Ostland is now thankfully becoming an ever-distant memory, something that to many Latvians now feels like a nightmare they had last week, the legacy the Germans left behind is an ever-present reality.\n\nAnd it would be his goal to ensure that this reality too, would eventually feel like a distant memory."
+
+ # Political parties
+
+ LAT_RUS_conservatism_party: "Latvijas Celš"
+ LAT_RUS_conservatism_party_long: "Latvijas Celš"
+ LAT_RUS_liberalism_party: "TSP"
+ LAT_RUS_liberalism_party_long: "Tautas Saskanas Partija"
+ LAT_RUS_progressivism_party: "LTF"
+ LAT_RUS_progressivism_party_long: "Latvijas Tautas Fronte"
+ LAT_RUS_paternalism_party: "LNNK"
+ LAT_RUS_paternalism_party_long: "Latvijas Nacionālās Neatkarības Kustība"
+
+ # National spirits
+
+ LAT_picking_up_the_pieces: "Picking up the Pieces"
+ LAT_picking_up_the_pieces_desc: "The Baltics have been throughly ruined in the last 30 years. From the Soviet invasions in the 1930's to the German menace gripping the coast and lording over all until the total collapse of Ostland in the early 1960's, only to be a hotbed of intense warfare during the SWRW, the once beautiful area has been turned into a land of broken homes and pothole-filled streets. It will be ages until the area returns to it's glory, despite efforts to rebuild."
+
+ LAT_lettendeutschen: "Lettendeutschen"
+ LAT_lettendeutschen_desc: "Despite the reconstruction authority's efforts to discourage German settlers from remaining in the Reich's former Eastern conquests, it appears that their refusal to directly deport them has lead to a situation where a good portion of our population is German, creating ethnic tensions. Moreover, many native Latvians do not trust these Settlers because of the events that took place in the past 30 years, while there is good reason to their distrust, it is yet another scar that would hopefully heal in time... If it ever does."
+
+ LAT_pearl_of_the_baltic: "Pearl of the Baltic"
+ LAT_pearl_of_the_baltic_desc: "Riga has always been the most important city on the Baltic coast as a major trade center in the region. Even the Germans knew this and as such, did not completely decimate the city during the Second World War. Such an advantage is sure to be a boom for our economy."

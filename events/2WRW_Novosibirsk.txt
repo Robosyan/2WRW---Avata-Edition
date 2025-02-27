@@ -1,0 +1,4638 @@
+#D R E A M S   O F   F E D E R A T I O N
+
+add_namespace = NOV_reunification
+add_namespace = NOV_flavor
+add_namespace = NOV_bill
+
+country_event = {
+	id = NOV_reunification.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.1"}
+	title = NOV_reunification.1.t
+	desc = NOV_reunification.1.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.1.a
+		ai_chance = { factor = 50 }
+		add_popularity = { ideology = conservatism popularity = 0.05 }
+		hidden_effect = {
+			add_popularity = { ideology = socialist popularity = -0.25 }
+		}
+	}
+}
+
+country_event = {
+	id = NOV_reunification.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.5"}
+	title = NOV_reunification.5.t
+	desc = NOV_reunification.5.desc
+	picture = GFX_report_event_shuk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.5.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.6"}
+	title = NOV_reunification.6.t
+	desc = NOV_reunification.6.desc
+	picture = GFX_report_event_big_shuk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.6.a
+		swap_ideas = { 
+			remove_idea = NOV_the_national_reformation
+			add_idea = NOV_the_russian_dream
+		}
+	}
+}
+
+country_event = {
+	id = NOV_reunification.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.10"}
+	title = NOV_reunification.10.t
+	desc = NOV_reunification.10.desc
+	picture = GFX_report_event_RUS_royal_guard
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.10.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.14"}
+	title = NOV_reunification.14.t
+	desc = NOV_reunification.14.desc
+	picture = GFX_report_event_nikolai
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.14.a
+		hidden_effect = {
+			country_event = { id = NOV_reunification.18 days = 10 }
+		}
+	}
+}
+
+country_event = {
+	id = NOV_reunification.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.17"}
+	title = NOV_reunification.17.t
+	desc = NOV_reunification.17.desc
+	picture = GFX_report_event_IBR_home_office_desk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.17.a
+		RUS = {
+			country_event = { id = NOV_failure.6 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = NOV_reunification.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.18"}
+	title = NOV_reunification.18.t
+	desc = NOV_reunification.18.desc
+	picture = GFX_report_event_IBR_home_office_desk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.18.a
+		custom_effect_tooltip = NOV_reunification.18.a_tt
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = WORLD.40012 }
+		}
+	}
+	option = {
+		name = NOV_reunification.18.b
+		custom_effect_tooltip = NOV_reunification.18.b_tt
+		hidden_effect = {
+			country_event = { id = NOV_reunification.27 days = 7 }
+		}
+	}
+}
+
+country_event = {
+	id = NOV_reunification.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.24"}
+	title = NOV_reunification.24.t
+	desc = NOV_reunification.24.desc
+	picture = GFX_report_event_RUS_soviet_officers_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.24.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.25"}
+	title = NOV_reunification.25.t
+	desc = NOV_reunification.25.desc
+	picture = GFX_report_event_RUS_soviet_officers_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.25.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.26"}
+	title = NOV_reunification.26.t
+	desc = NOV_reunification.26.desc
+	picture = GFX_report_event_RUS_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.26.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.27"}
+	title = NOV_reunification.27.t
+	desc = NOV_reunification.27.desc
+	picture = GFX_report_event_KOM_bukharina_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.27.a
+		add_political_power = -50
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	id = NOV_reunification.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.32"}
+	title = NOV_reunification.32.t
+	desc = NOV_reunification.32.desc
+	picture = GFX_report_event_happyshuk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.32.a
+		set_country_flag = NOV_shukshin_political_done
+		mark_focus_tree_layout_dirty = yes
+		custom_effect_tooltip = KOM_new_focus_tree
+	}
+}
+
+country_event = {
+	id = NOV_reunification.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.33"}
+	title = NOV_reunification.33.t
+	desc = NOV_reunification.33.desc
+	picture = GFX_report_event_barber
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.33.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.34"}
+	title = NOV_reunification.34.t
+	desc = NOV_reunification.34.desc
+	picture = GFX_report_event_generic_vodka
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.34.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.36"}
+	title = NOV_reunification.36.t
+	desc = NOV_reunification.36.desc
+	picture = GFX_report_event_primakov
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.36.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.37"}
+	title = NOV_reunification.37.t
+	desc = NOV_reunification.37.desc
+	picture = GFX_report_event_generic_Flatcap_Worker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.37.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.38"}
+	title = NOV_reunification.38.t
+	desc = NOV_reunification.38.desc
+	picture = GFX_report_event_katun_river
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.38.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.39"}
+	title = NOV_reunification.39.t
+	desc = NOV_reunification.39.desc
+	picture = GFX_report_event_manchuria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.39.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.40"}
+	title = NOV_reunification.40.t
+	desc = NOV_reunification.40.desc
+	picture = GFX_report_event_RUS_letter
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.40.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.41"}
+	title = NOV_reunification.41.t
+	desc = NOV_reunification.41.desc
+	picture = GFX_report_event_RUS_jets
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.41.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.42"}
+	title = NOV_reunification.42.t
+	desc = NOV_reunification.42.desc
+	picture = GFX_report_event_RUS_marines
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.42.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.43"}
+	title = NOV_reunification.43.t
+	desc = NOV_reunification.43.desc
+	picture = GFX_event_pic_russian_students
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.43.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.44"}
+	title = NOV_reunification.44.t
+	desc = NOV_reunification.44.desc
+	picture = GFX_report_event_KOM_house
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.44.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.45"}
+	title = NOV_reunification.45.t
+	desc = NOV_reunification.45.desc
+	picture = GFX_report_event_shuk3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.45.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.46"}
+	title = NOV_reunification.46.t
+	desc = NOV_reunification.46.desc
+	picture = GFX_report_event_KOM_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.46.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.48"}
+	title = NOV_reunification.48.t
+	desc = NOV_reunification.48.desc
+	picture = GFX_report_event_MCW_dmz
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.48.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.49"}
+	title = NOV_reunification.49.t
+	desc = NOV_reunification.49.desc
+	picture = GFX_report_event_generic_m_50_jet_bomber
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.49.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.50"}
+	title = NOV_reunification.50.t
+	desc = NOV_reunification.50.desc
+	picture = GFX_report_event_RUS_soviet_tanks_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.50.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.52"}
+	title = NOV_reunification.52.t
+	desc = NOV_reunification.52.desc
+	picture = GFX_report_event_RUS_war_planning
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.52.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.53"}
+	title = NOV_reunification.53.t
+	desc = NOV_reunification.53.desc
+	picture = GFX_report_event_KOM_soviet_russian_computer_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.53.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.54"}
+	title = NOV_reunification.54.t
+	desc = NOV_reunification.54.desc
+	picture = GFX_event_pic_russian_sea_town
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.54.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.55
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.55"}
+	title = NOV_reunification.55.t
+	desc = NOV_reunification.55.desc
+	picture = GFX_report_event_RUS_military
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.55.a
+	}
+}
+
+country_event = {
+	id = NOV_reunification.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_reunification.56"}
+	title = NOV_reunification.56.t
+	desc = NOV_reunification.56.desc
+	picture = GFX_report_event_GER_bunker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_reunification.56.a
+	}
+}
+
+# War
+
+add_namespace = NOV_war
+
+country_event = {
+	id = NOV_war.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_war.1"}
+	title = NOV_war.1.t
+	desc = NOV_war.1.desc
+	picture = GFX_report_event_war_crime_russia
+	
+	fire_only_once = yes
+	
+	trigger = {
+		401 = { is_controlled_by = RUS }
+		RUS = { has_war_with = GER }
+		NOT = { has_global_flag = horrors_of_war }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_global_flag = horrors_of_war
+	}
+	
+	option = {
+		name = NOV_war.1.a
+	}
+}
+
+country_event = {
+	id = NOV_war.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_war.2"}
+	title = NOV_war.2.t
+	desc = NOV_war.2.desc
+	picture = GFX_report_event_RUS_soviet_soldiers_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_war.2.a
+	}
+}
+
+# Post War
+
+add_namespace = NOV_postwar
+
+country_event = {
+	id = NOV_postwar.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.1"}
+	title = NOV_postwar.1.t
+	desc = NOV_postwar.1.desc
+	picture = GFX_report_event_RUS_democracy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.1.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_CAU_FATE
+						option = RUS_CAU_FATE_TRANSCAUCASIA
+					}
+					has_game_rule = {
+						rule = RUS_CAU_FATE
+						option = RUS_CAU_FATE_FEDERATION
+					}
+				}
+			}
+		}
+		annex_country = { target = ADY transfer_troops = no }
+	}
+	option = {
+		name = NOV_postwar.1.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_CAU_FATE
+						option = RUS_CAU_FATE_INTEGRATION
+					}
+					has_game_rule = {
+						rule = RUS_CAU_FATE
+						option = RUS_CAU_FATE_FEDERATION
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			annex_country = { target = ADY transfer_troops = no }
+			XXX = {
+				GEO_Zviad_Gamsakhurdia = { set_nationality = GEO }
+				AZR_heydar_aliyev = { set_nationality = AZR }
+			}
+			GEO = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}	
+			RUS = {
+				set_autonomy = {
+					target = GEO
+					autonomy_state = autonomy_client_state
+				}	
+			}
+			GEO = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+			AZR = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}	
+			RUS = {
+				set_autonomy = {
+					target = AZR
+					autonomy_state = autonomy_client_state
+				}	
+			}
+			AZR = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+			GEO = {
+				inherit_technology = TUR
+				remove_all_ministers = yes
+				transfer_state = 231
+				transfer_state = 1556
+				transfer_state = 1558
+				
+				transfer_state = 1561
+				transfer_state = 1293
+				
+				add_state_core = 1561
+				add_state_core = 1293
+				add_state_core = 231
+				add_state_core = 1556
+				add_state_core = 1558
+			
+				TNO_startup_nation = yes
+				
+				promote_character = GEO_Zviad_Gamsakhurdia
+				add_ideas = {
+					GEO_the_whispering_mountains
+					GEO_the_smell_of_blood
+					GEO_tavisupali_sakartvelo
+
+					### Political ###
+					tno_political_parties_controlled_opposition
+					tno_religious_rights_secularism
+					tno_trade_unions_state_controlled
+					tno_immigration_encouraged_immigration
+					tno_slavery_outlawed
+					tno_public_meetings_regulated
+					tno_press_rights_censored_press
+					tno_vote_franchise_universal
+					tno_refugees_open
+
+					### Military ###
+					tno_conscription_limited_conscription
+					tno_women_noncombat_only
+					tno_military_supervision_rules_of_engagement
+					tno_training_basic_training
+					tno_racial_integration_integrated_military
+					tno_draft_exemptions_none
+
+					### Economic ###
+					tno_trade_laws_export_focus
+					tno_income_taxation_flat_taxes
+					tno_minimum_wage_trinket_minimum_wage
+					tno_max_workhours_12_hour_work_day
+					tno_child_labor_illegal
+					tno_pensions_low_pensions
+					tno_unemployment_low_subsidies
+
+					### Social ###
+					tno_safety_minimal_regulations
+					tno_health_care_low_income_protections
+					tno_pollution_few_regulations
+					tno_education_public_education
+					tno_penal_system_incarceration
+					tno_lgbt_rights_lgbt_outlawed
+					tno_gender_rights_women_in_the_workplace
+					tno_minorities_equal_rights
+					tno_security_regulated_police
+				}
+				if = {
+					limit = { is_in_faction_with = NOV }
+					add_ideas = CSTO_Member
+				}
+				
+				set_politics = {
+					ruling_party = paternalism
+				}
+				set_popularities = {
+					communist = 6
+					despotism = 0
+					socialist = 9
+					progressivism = 18
+					liberalism = 12
+					conservatism = 20
+					paternalism = 34
+					national_socialism = 1
+				}
+				set_party_name = {
+					ideology = paternalism
+					name = GEO_RUS_paternalism_party
+					long_name = GEO_RUS_paternalism_party_long
+				}
+				set_party_name = {
+					ideology = conservatism
+					name = GEO_RUS_conservatism_party
+					long_name = GEO_RUS_conservatism_party_long
+				}
+				set_party_name = {
+					ideology = liberalism
+					name = GEO_RUS_liberalism_party
+					long_name = GEO_RUS_liberalism_party_long
+				}
+				set_party_name = {
+					ideology = progressivism
+					name = GEO_RUS_progressivism_party
+					long_name = GEO_RUS_progressivism_party_long
+				}
+				set_party_name = {
+					ideology = communist
+					name = GEO_RUS_communist_party
+					long_name = GEO_RUS_communist_party_long
+				}
+				set_party_name = {
+					ideology = socialist
+					name = GEO_RUS_socialist_party
+					long_name = GEO_RUS_socialist_party_long
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				econ_join_sphere_RUS = yes
+			}
+			AZR = {
+				remove_all_ministers = yes
+				transfer_state = 229
+				transfer_state = 1552
+				transfer_state = 1554
+				
+				transfer_state = 244
+				transfer_state = 2131
+				
+				add_state_core = 229
+				add_state_core = 1552
+				add_state_core = 1554
+			
+				TNO_startup_nation = yes
+				
+				promote_character = AZR_heydar_aliyev
+				add_ideas = {
+					AZR_black_gold
+					AZR_nagorno_karabakh_issue
+					AZR_heydarism
+
+					### Political ###
+					tno_political_parties_controlled_opposition
+					tno_religious_rights_secularism
+					tno_trade_unions_state_controlled
+					tno_immigration_encouraged_immigration
+					tno_slavery_outlawed
+					tno_public_meetings_regulated
+					tno_press_rights_censored_press
+					tno_vote_franchise_universal
+					tno_refugees_open
+
+					### Military ###
+					tno_conscription_limited_conscription
+					tno_women_noncombat_only
+					tno_military_supervision_rules_of_engagement
+					tno_training_basic_training
+					tno_racial_integration_integrated_military
+					tno_draft_exemptions_none
+
+					### Economic ###
+					tno_trade_laws_export_focus
+					tno_income_taxation_flat_taxes
+					tno_minimum_wage_trinket_minimum_wage
+					tno_max_workhours_12_hour_work_day
+					tno_child_labor_illegal
+					tno_pensions_low_pensions
+					tno_unemployment_low_subsidies
+
+					### Social ###
+					tno_safety_minimal_regulations
+					tno_health_care_low_income_protections
+					tno_pollution_few_regulations
+					tno_education_public_education
+					tno_penal_system_incarceration
+					tno_lgbt_rights_lgbt_outlawed
+					tno_gender_rights_women_in_the_workplace
+					tno_minorities_equal_rights
+					tno_security_regulated_police
+				}
+				if = {
+					limit = { is_in_faction_with = NOV }
+					add_ideas = CSTO_Member
+				}
+				
+				set_politics = {
+					ruling_party = paternalism
+				}
+				set_popularities = {
+					communist = 1
+					socialist = 2
+					progressivism = 17
+					conservatism = 0
+					paternalism = 79
+					national_socialism = 1
+				}
+				set_party_name = {
+					ideology = paternalism
+					name = AZR_RUS_paternalism_party
+					long_name = AZR_RUS_paternalism_party_long
+				}
+				set_party_name = {
+					ideology = progressivism
+					name = AZR_RUS_progressivism_party
+					long_name = AZR_RUS_progressivism_party_long
+				}
+				set_party_name = {
+					ideology = communist
+					name = AZR_RUS_communist_party
+					long_name = AZR_RUS_communist_party_long
+				}
+				set_party_name = {
+					ideology = socialist
+					name = AZR_RUS_socialist_party
+					long_name = AZR_RUS_socialist_party_long
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				econ_join_sphere_RUS = yes
+			}
+		}
+	}
+	option = {
+		name = NOV_postwar.1.d
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_CAU_FATE
+						option = RUS_CAU_FATE_INTEGRATION
+					}
+					has_game_rule = {
+						rule = RUS_CAU_FATE
+						option = RUS_CAU_FATE_TRANSCAUCASIA
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			ADY = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}	
+			RUS = {
+				set_autonomy = {
+					target = ADY
+					autonomy_state = autonomy_client_state
+				}
+				transfer_state = 234
+				transfer_state = 235
+				transfer_state = 237
+				add_state_core = 235
+				add_state_core = 234
+                add_state_core = 237				
+			}
+			ADY = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+			XXX = {
+				CAU_Caucasian_Council = { set_nationality = ADY }
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_federation
+				add_ideas = {
+					CAU_the_caucasian_experiment
+					CAU_administrative_unknowns
+					CAU_ethnic_tensions
+					CSTO_Member
+
+					### Political ###
+					tno_political_parties_multiparty_system
+					tno_religious_rights_secularism
+					tno_trade_unions_illegal
+					tno_immigration_encouraged_immigration
+					tno_slavery_outlawed
+					tno_public_meetings_regulated
+					tno_press_rights_censored_press
+					tno_vote_franchise_universal
+					tno_refugees_open
+
+					### Military ###
+					tno_conscription_limited_conscription
+					tno_women_noncombat_only
+					tno_military_supervision_rules_of_engagement
+					tno_training_basic_training
+					tno_racial_integration_integrated_military
+					tno_draft_exemptions_none
+
+					### Economic ###
+					tno_trade_laws_export_focus
+					tno_income_taxation_flat_taxes
+					tno_minimum_wage_trinket_minimum_wage
+					tno_max_workhours_12_hour_work_day
+					tno_child_labor_illegal
+					tno_pensions_low_pensions
+					tno_unemployment_low_subsidies
+
+					### Social ###
+					tno_safety_minimal_regulations
+					tno_health_care_low_income_protections
+					tno_pollution_few_regulations
+					tno_education_public_education
+					tno_penal_system_incarceration
+					tno_lgbt_rights_lgbt_outlawed
+					tno_gender_rights_women_in_the_workplace
+					tno_minorities_equal_rights
+					tno_security_regulated_police
+				}
+				set_politics = {
+					ruling_party = conservatism
+				}
+				set_party_name = {
+					ideology = conservatism
+					name = CAU_RUS_conservatism_party
+					long_name = CAU_RUS_conservatism_party_long
+				}
+				set_party_name = {
+					ideology = paternalism
+					name = CAU_RUS_paternalism_party
+					long_name = CAU_RUS_paternalism_party_long
+				}
+				set_party_name = {
+					ideology = socialist
+					name = CAU_RUS_socialist_party
+					long_name = CAU_RUS_socialist_party_long
+				}
+				set_popularities = {
+					conservatism = 38
+					paternalism = 37
+					socialist = 25
+				}
+				CAU_Caucasian_Council = { promote_character = conservatism }
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				econ_join_sphere_RUS = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.2 # Baltic States
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.2"}
+	title = NOV_postwar.2.t
+	desc = NOV_postwar.2.desc
+	picture = GFX_report_event_baltic_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.2.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_OST_FATE
+						option = RUS_OST_FATE_UNION
+					}
+					has_game_rule = {
+						rule = RUS_OST_FATE
+						option = RUS_OST_FATE_BALTIC_STATES
+					}
+				}
+			}
+		}
+		annex_country = { target = UPO transfer_troops = no }
+		hidden_effect = {
+			UPO = {
+				every_core_state = { remove_core_of = UPO }
+			}	
+		}
+	}
+	option = {
+		name = NOV_postwar.2.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_OST_FATE
+						option = RUS_OST_FATE_BALTIC_STATES
+					}
+					has_game_rule = {
+						rule = RUS_OST_FATE
+						option = RUS_OST_FATE_INTEGRATION
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			XXX = {
+				LAT_Baltic_Council = { set_nationality = UPO }
+			}
+			UPO = {
+				drop_cosmetic_tag = yes
+				set_politics = {	
+					ruling_party = liberal_conservatism
+				}
+				set_popularities = {
+					liberal_conservatism = 33
+					liberalism = 11
+					progressivism = 22
+					despotism = 8
+					paternalism = 20
+					national_socialism = 6
+				}
+				set_party_name = {
+					ideology = liberal_conservatism
+					name = OST_RUS_conservatism_party
+					long_name = OST_RUS_conservatism_party_long
+				}
+				set_party_name = {
+					ideology = liberalism
+					name = OST_RUS_liberalism_party
+					long_name = OST_RUS_liberalism_party_long
+				}
+				set_party_name = {
+					ideology = progressivism
+					name = OST_RUS_progressivism_party
+					long_name = OST_RUS_progressivism_party_long
+				}
+				set_party_name = {
+					ideology = despotism
+					name = OST_RUS_despotism_party
+					long_name = OST_RUS_despotism_party_long
+				}
+				set_party_name = {
+					ideology = paternalism
+					name = OST_RUS_paternalism_party
+					long_name = OST_RUS_paternalism_party_long
+				}
+				set_party_name = {
+					ideology = national_socialism
+					name = OST_RUS_national_socialism_party
+					long_name = OST_RUS_national_socialism_party_long
+				}
+
+				RUS_Idea_Removal_Helper = yes
+
+				add_ideas = {
+					LAT_pearl_of_the_baltic
+					LIT_cultural_resurgence
+					LAT_cultural_rebirth
+					OST_the_baltic_confederation
+					CSTO_Member
+
+					### Political ###
+					tno_political_parties_multiparty_system
+					tno_religious_rights_secularism
+					tno_trade_unions_nonsocialist_allowed
+					tno_immigration_encouraged_immigration
+					tno_slavery_outlawed
+					tno_public_meetings_regulated
+					tno_press_rights_censored_press
+					tno_vote_franchise_universal
+					tno_refugees_open
+
+					### Military ###
+					tno_conscription_limited_conscription
+					tno_women_noncombat_only
+					tno_military_supervision_rules_of_engagement
+					tno_training_basic_training
+					tno_racial_integration_integrated_military
+					tno_draft_exemptions_educational_deferment
+
+					### Economic ###
+					tno_trade_laws_export_focus
+					tno_income_taxation_flat_taxes
+					tno_minimum_wage_trinket_minimum_wage
+					tno_max_workhours_12_hour_work_day
+					tno_child_labor_illegal
+					tno_pensions_low_pensions
+					tno_unemployment_low_subsidies
+
+					### Social ###
+					tno_safety_minimal_regulations
+					tno_health_care_low_income_protections
+					tno_pollution_few_regulations
+					tno_education_public_education
+					tno_penal_system_incarceration
+					tno_lgbt_rights_lgbt_outlawed
+					tno_gender_rights_women_in_the_workplace
+					tno_minorities_equal_rights
+					tno_security_regulated_police
+				}
+
+				add_timed_idea = { idea = LIT_colonial_past days = 1200 }
+				set_cosmetic_tag = OST_RUS
+				
+				load_focus_tree = ZZZ_blank_focus
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				 
+				promote_character = LAT_Baltic_Council
+				
+				econ_join_sphere_RUS = yes
+				UPO = {
+					get_current_government_type = yes
+					save_party_popularities = yes
+				}	
+				RUS = {
+					set_autonomy = {
+						target = UPO
+						autonomy_state = autonomy_client_state
+					}	
+				}
+				UPO = {
+					restore_previous_government_type = yes
+					apply_party_popularities = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = NOV_postwar.2.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_OST_FATE
+						option = RUS_OST_FATE_UNION
+					}
+					has_game_rule = {
+						rule = RUS_OST_FATE
+						option = RUS_OST_FATE_INTEGRATION
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			UPO = {
+				every_core_state = { remove_core_of = UPO }
+			}	
+			LAT = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}	
+		
+			RUS = {
+				set_autonomy = {
+					target = LAT
+					autonomy_state = autonomy_client_state
+				}	
+			}
+			LAT = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}	
+			EST = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}	
+		
+			RUS = {
+				set_autonomy = {
+					target = EST
+					autonomy_state = autonomy_client_state
+				}	
+			}
+			EST = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+			LIT = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}	
+		
+			RUS = {
+				set_autonomy = {
+					target = LIT
+					autonomy_state = autonomy_client_state
+				}	
+			}
+			LIT = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		
+			XXX = {
+				EST_Vajno_Valjas = { set_nationality = EST }
+				LAT_Valdis_Birkavs = { set_nationality = LAT }
+				LIT_Vytautas_Landsbergis = { set_nationality = LIT }
+			}
+			EST = {
+				remove_all_ministers = yes
+				promote_character = EST_Vajno_Valjas
+				add_state_core = 1440
+				add_state_core = 13
+				add_state_core = 191
+				add_state_core = 1395
+				add_state_core = 1396
+				add_state_core = 2450
+				transfer_state = 1440
+				transfer_state = 13
+				transfer_state = 191
+				transfer_state = 1395
+				transfer_state = 1396
+				transfer_state = 2450
+			
+				TNO_startup_nation = yes
+				
+				add_ideas = {
+					EST_oil_shale_industry
+					CSTO_Member
+
+					### Political ###
+					tno_political_parties_multiparty_system
+					tno_religious_rights_secularism
+					tno_trade_unions_illegal
+					tno_immigration_encouraged_immigration
+					tno_slavery_outlawed
+					tno_public_meetings_regulated
+					tno_press_rights_censored_press
+					tno_vote_franchise_universal
+					tno_refugees_open
+
+					### Military ###
+					tno_conscription_limited_conscription
+					tno_women_noncombat_only
+					tno_military_supervision_rules_of_engagement
+					tno_training_basic_training
+					tno_racial_integration_integrated_military
+					tno_draft_exemptions_educational_deferment
+
+					### Economic ###
+					tno_trade_laws_export_focus
+					tno_income_taxation_flat_taxes
+					tno_minimum_wage_trinket_minimum_wage
+					tno_max_workhours_12_hour_work_day
+					tno_child_labor_illegal
+					tno_pensions_low_pensions
+					tno_unemployment_low_subsidies
+
+					### Social ###
+					tno_safety_minimal_regulations
+					tno_health_care_low_income_protections
+					tno_pollution_few_regulations
+					tno_education_public_education
+					tno_penal_system_incarceration
+					tno_lgbt_rights_lgbt_outlawed
+					tno_gender_rights_women_in_the_workplace
+					tno_minorities_equal_rights
+					tno_security_regulated_police
+				}
+				set_politics = {
+					ruling_party = progressivism
+				}
+				set_party_name = {
+					ideology = liberalism
+					name = EST_RUS_liberalism_party
+					long_name = EST_RUS_liberalism_party_long
+				}
+				set_party_name = {
+					ideology = paternalism
+					name = EST_RUS_paternalism_party
+					long_name = EST_RUS_paternalism_party_long
+				}
+				set_party_name = {
+					ideology = progressivism
+					name = EST_RUS_progressivism_party
+					long_name = EST_RUS_progressivism_party_long
+				}
+				set_party_name = {
+					ideology = socialist
+					name = EST_RUS_socialist_party
+					long_name = EST_RUS_socialist_party_long
+				}
+				set_party_name = {
+					ideology = communist
+					name = EST_RUS_communist_party
+					long_name = EST_RUS_communist_party
+				}
+				set_popularities = {
+					socialist = 7
+					progressivism = 42
+					paternalism = 25
+					liberalism = 26
+				}
+				TNO_startup_nation = yes
+				econ_join_sphere_RUS = yes
+				set_cosmetic_tag = EST_RUS # avoiding loc key collisions
+			}
+			LAT = {
+				remove_all_ministers = yes
+				promote_character = LAT_Valdis_Birkavs
+				add_state_core = 190
+				add_state_core = 1399
+				add_state_core = 1397
+				add_state_core = 1398
+				add_state_core = 943
+				add_state_core = 12
+				transfer_state = 190
+				transfer_state = 1399
+				transfer_state = 1397
+				transfer_state = 1398
+				transfer_state = 943
+				transfer_state = 12
+			
+				TNO_startup_nation = yes
+				
+			
+				TNO_startup_nation = yes
+				
+				set_capital = { state = 1397 }
+				add_ideas = {
+					LAT_pearl_of_the_baltic
+					LAT_lettendeutschen
+					CSTO_Member
+
+					### Political ###
+					tno_political_parties_multiparty_system
+					tno_religious_rights_secularism
+					tno_trade_unions_illegal
+					tno_immigration_encouraged_immigration
+					tno_slavery_outlawed
+					tno_public_meetings_regulated
+					tno_press_rights_censored_press
+					tno_vote_franchise_universal
+					tno_refugees_open
+
+					### Military ###
+					tno_conscription_limited_conscription
+					tno_women_noncombat_only
+					tno_military_supervision_rules_of_engagement
+					tno_training_basic_training
+					tno_racial_integration_integrated_military
+					tno_draft_exemptions_educational_deferment
+
+					### Economic ###
+					tno_trade_laws_export_focus
+					tno_income_taxation_flat_taxes
+					tno_minimum_wage_trinket_minimum_wage
+					tno_max_workhours_12_hour_work_day
+					tno_child_labor_illegal
+					tno_pensions_low_pensions
+					tno_unemployment_low_subsidies
+
+					### Social ###
+					tno_safety_minimal_regulations
+					tno_health_care_low_income_protections
+					tno_pollution_few_regulations
+					tno_education_public_education
+					tno_penal_system_incarceration
+					tno_lgbt_rights_lgbt_outlawed
+					tno_gender_rights_women_in_the_workplace
+					tno_minorities_equal_rights
+					tno_security_regulated_police
+				}
+				set_politics = {
+					ruling_party = liberal_conservatism
+				}
+				set_party_name = {
+					ideology = liberal_conservatism
+					name = LAT_RUS_conservatism_party
+					long_name = LAT_RUS_conservatism_party_long
+				}
+				set_party_name = {
+					ideology = liberalism
+					name = LAT_RUS_liberalism_party
+					long_name = LAT_RUS_liberalism_party_long
+				}
+				set_party_name = {
+					ideology = progressivism
+					name = LAT_RUS_progressivism_party
+					long_name = LAT_RUS_progressivism_party_long
+				}
+
+				set_party_name = {
+					ideology = paternalism
+					name = LAT_RUS_paternalism_party
+					long_name = LAT_RUS_paternalism_party_long
+				}
+
+				set_popularities = {
+					paternalism = 19
+					progressivism = 19
+					liberal_conservatism = 36
+					liberalism = 22
+					national_socialism = 4
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				econ_join_sphere_RUS = yes
+			}
+			LIT = {
+				remove_all_ministers = yes
+				promote_character = LIT_Vytautas_Landsbergis
+				add_state_core = 1400
+				add_state_core = 1401
+				add_state_core = 11
+				add_state_core = 189
+				add_state_core = 96
+				add_state_core = 2451
+				add_state_core = 79
+				transfer_state = 1400
+				transfer_state = 1401
+				transfer_state = 11
+				transfer_state = 189
+				transfer_state = 96
+				transfer_state = 2451
+				transfer_state = 79
+			
+				TNO_startup_nation = yes
+				
+				set_capital = { state = 79 remember_old_capital = no}
+				add_ideas = {
+					LIT_cultural_resurgence
+					CSTO_Member
+
+					### Political ###
+					tno_political_parties_multiparty_system
+					tno_religious_rights_secularism
+					tno_trade_unions_nonsocialist_allowed
+					tno_immigration_encouraged_immigration
+					tno_slavery_outlawed
+					tno_public_meetings_regulated
+					tno_press_rights_free_press
+					tno_vote_franchise_universal
+					tno_refugees_open
+
+					### Military ###
+					tno_conscription_limited_conscription
+					tno_women_noncombat_only
+					tno_military_supervision_rules_of_engagement
+					tno_training_basic_training
+					tno_racial_integration_integrated_military
+					tno_draft_exemptions_educational_deferment
+
+					### Economic ###
+					tno_trade_laws_export_focus
+					tno_income_taxation_flat_taxes
+					tno_minimum_wage_trinket_minimum_wage
+					tno_max_workhours_12_hour_work_day
+					tno_child_labor_illegal
+					tno_pensions_low_pensions
+					tno_unemployment_low_subsidies
+
+					### Social ###
+					tno_safety_minimal_regulations
+					tno_health_care_low_income_protections
+					tno_pollution_few_regulations
+					tno_education_public_education
+					tno_penal_system_incarceration
+					tno_lgbt_rights_lgbt_outlawed
+					tno_gender_rights_women_in_the_workplace
+					tno_minorities_equal_rights
+					tno_security_regulated_police
+				}
+				set_politics = {
+					ruling_party = liberalism
+				}
+				set_party_name = {
+					ideology = liberalism
+					name = LIT_RUS_liberalism_party
+					long_name = LIT_RUS_liberalism_party_long
+				}
+				set_party_name = {
+					ideology = progressivism
+					name = LIT_RUS_progressivism_party
+					long_name = LIT_RUS_progressivism_party_long
+				}
+				set_party_name = {
+					ideology = conservatism
+					name = LIT_RUS_conservatism_party
+					long_name = LIT_RUS_conservatism_party_long
+				}
+				set_party_name = {
+					ideology = socialist
+					name = LIT_RUS_socialist_party
+					long_name = LIT_RUS_socialist_party_long
+				}
+				set_party_name = {
+					ideology = communist
+					name = LIT_RUS_communist_party
+					long_name = LIT_RUS_communist_party_long
+				}
+				set_popularities = {
+					communist = 3
+					socialist = 4
+					progressivism = 21
+					conservatism = 19
+					liberalism = 52
+					national_socialism = 1
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				econ_join_sphere_RUS = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.3 # Belarus
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.3"}
+	title = NOV_postwar.3.t
+	desc = NOV_postwar.3.desc
+	picture = GFX_report_event_belarus_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.3.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = { rule = RUS_BLR_FATE option = RUS_BLR_FATE_PUPPET }
+			}
+		}
+		annex_country = { target = BLR transfer_troops = no }
+	}
+	option = {
+		name = NOV_postwar.3.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = { rule = RUS_BLR_FATE option = RUS_BLR_FATE_INTEGRATION }
+			}
+		}
+		hidden_effect = {
+			XXX = {
+				BLR_Pyotr_Masherov = { set_nationality = BLR }
+			}
+			BLR = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}	
+			RUS = {
+				set_autonomy = {
+					target = BLR
+					autonomy_state = autonomy_client_state
+				}	
+			}
+			BLR = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_RUS
+				remove_all_ministers = yes
+				BLR_Pyotr_Masherov = { promote_character = progressivism }
+				add_ideas = {
+					BLR_a_simple_life
+					BLR_industrial_reforms
+					BLR_educational_reforms
+					CSTO_Member
+
+					### Political ###
+					tno_political_parties_multiparty_system
+					tno_religious_rights_secularism
+					tno_trade_unions_all_allowed
+					tno_immigration_encouraged_immigration
+					tno_slavery_outlawed
+					tno_public_meetings_regulated
+					tno_press_rights_censored_press
+					tno_vote_franchise_universal
+					tno_refugees_open
+
+					### Military ###
+					tno_conscription_volunteer_only
+					tno_women_noncombat_only
+					tno_military_supervision_rules_of_engagement
+					tno_training_basic_training
+					tno_racial_integration_integrated_military
+					tno_draft_exemptions_educational_deferment
+
+					### Economic ###
+					tno_trade_laws_export_focus
+					tno_income_taxation_flat_taxes
+					tno_minimum_wage_trinket_minimum_wage
+					tno_max_workhours_12_hour_work_day
+					tno_child_labor_illegal
+					tno_pensions_low_pensions
+					tno_unemployment_low_subsidies
+
+					### Social ###
+					tno_safety_minimal_regulations
+					tno_health_care_low_income_protections
+					tno_pollution_few_regulations
+					tno_education_public_education
+					tno_penal_system_incarceration
+					tno_lgbt_rights_lgbt_outlawed
+					tno_gender_rights_women_in_the_workplace
+					tno_minorities_equal_rights
+					tno_security_regulated_police
+				}
+				transfer_state = 207
+				transfer_state = 206
+				transfer_state = 204
+				transfer_state = 1407
+				transfer_state = 95
+				transfer_state = 194
+				transfer_state = 1404
+				transfer_state = 1406
+				transfer_state = 1403
+				transfer_state = 1405
+				set_politics = {
+					ruling_party = progressivism
+				}
+				set_party_name = {
+					ideology = progressivism
+					name = BLR_RUS_progressivism_party
+					long_name = BLR_RUS_progressivism_party_long
+				}
+				set_party_name = {
+					ideology = conservatism
+					name = BLR_RUS_conservatism_party
+					long_name = BLR_RUS_conservatism_party_long
+				}
+				set_party_name = {
+					ideology = socialist
+					name = BLR_RUS_socialist_party
+					long_name = BLR_RUS_socialist_party_long
+				}
+				set_party_name = {
+					ideology = communist
+					name = BLR_RUS_communist_party
+					long_name = BLR_RUS_communist_party_long
+				}
+				set_popularities = {
+					communist = 4
+					socialist = 10
+					progressivism = 63
+					conservatism = 21
+					national_socialism = 2
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				econ_join_sphere_RUS = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.4"}
+	title = NOV_postwar.4.t
+	desc = NOV_postwar.4.desc
+	picture = GFX_report_event_crying_german
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.4.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.5 # Ukraine
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.5"}
+	title = NOV_postwar.5.t
+	desc = NOV_postwar.5.desc
+	picture = GFX_report_event_ukraine_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.5.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = { rule = RUS_UKR_FATE option = RUS_UKR_FATE_PUPPET }
+			}
+		}
+		annex_country = { target = UKS transfer_troops = no }
+	}
+	option = {
+		name = NOV_postwar.5.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = { rule = RUS_UKR_FATE option = RUS_UKR_FATE_INTEGRATION }
+			}
+		}
+		hidden_effect = {
+			RUS = {
+				set_autonomy = {
+					target = UKS
+					autonomy_state = autonomy_client_state
+				}	
+			}
+			XXX = {
+				UKR_Leonid_Kravchuk = { set_nationality = UKS }
+			}
+			RUS = {
+				transfer_state = 218
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_RUS_socdem
+				remove_all_ministers = yes
+				promote_character = UKR_Leonid_Kravchuk
+				remove_ideas = {
+					UKR_breadbasket_of_the_reich
+					UKR_land_of_contrasts
+					Pakt_Autonomous_Reichskommissariat
+				}
+				add_ideas = {
+					UKR_breadbasket_of_europe
+					UKR_nezalezhnist
+					CSTO_Member
+
+					### Political ###
+					tno_political_parties_controlled_opposition
+					tno_religious_rights_secularism
+					tno_trade_unions_all_allowed
+					tno_immigration_encouraged_immigration
+					tno_slavery_outlawed
+					tno_public_meetings_regulated
+					tno_press_rights_censored_press
+					tno_vote_franchise_elite_voting
+					tno_refugees_open
+
+					### Military ###
+					tno_conscription_limited_conscription
+					tno_women_noncombat_only
+					tno_military_supervision_rules_of_engagement
+					tno_training_basic_training
+					tno_racial_integration_integrated_military
+					tno_draft_exemptions_none
+
+					### Economic ###
+					tno_trade_laws_export_focus
+					tno_income_taxation_flat_taxes
+					tno_minimum_wage_trinket_minimum_wage
+					tno_max_workhours_12_hour_work_day
+					tno_child_labor_illegal
+					tno_pensions_low_pensions
+					tno_unemployment_low_subsidies
+
+					### Social ###
+					# tno_safety_minimal_regulations
+					# tno_health_care_low_income_protections
+					# tno_pollution_few_regulations
+					# tno_education_public_education
+					# tno_penal_system_incarceration
+					# tno_lgbt_rights_lgbt_outlawed
+					# tno_gender_rights_women_in_the_workplace
+					# tno_minorities_equal_rights
+					# tno_security_regulated_police
+				}
+				set_politics = {
+					ruling_party = progressivism
+				}
+				set_popularities = {
+					communist = 4
+					socialist = 0
+					progressivism = 40
+					liberalism = 7
+					conservatism = 31
+					paternalism = 16
+					national_socialism = 2
+				}
+				set_party_name = {
+					ideology = progressivism
+					name = UKR_RUS_progressivism_party
+					long_name = UKR_RUS_progressivism_party_long
+				}
+				set_party_name = {
+					ideology = paternalism
+					name = UKR_RUS_paternalism_party
+					long_name = UKR_RUS_paternalism_party_long
+				}
+				set_party_name = {
+					ideology = conservatism
+					name = UKR_RUS_conservatism_party
+					long_name = UKR_RUS_conservatism_party_long
+				}
+				set_party_name = {
+					ideology = communist
+					name = UKR_RUS_communist_party
+					long_name = UKR_RUS_communist_party_long
+				}
+				set_party_name = {
+					ideology = liberalism
+					name = UKR_RUS_liberalism_party
+					long_name = UKR_RUS_liberalism_party_long
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				econ_join_sphere_RUS = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.6"}
+	title = NOV_postwar.6.t
+	desc = NOV_postwar.6.desc
+	picture = GFX_report_event_generic_ruins
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.6.a
+		country_event = NOV_postwar.7
+	}
+}
+
+country_event = {
+	id = NOV_postwar.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.7"}
+	title = NOV_postwar.7.t
+	desc = NOV_postwar.7.desc
+	picture = GFX_report_event_generic_ruins
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.7.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.8"}
+	title = NOV_postwar.8.t
+	desc = NOV_postwar.8.desc
+	picture = GFX_report_event_generic_ruins
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.8.a
+		set_capital = { state = 1442 }
+	}
+}
+
+country_event = {
+	id = NOV_postwar.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.9"}
+	title = NOV_postwar.9.t
+	desc = NOV_postwar.9.desc
+	picture = GFX_report_event_CAU_execution
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.9.a
+		ADY = {
+			add_stability = 0.05
+			add_popularity = { ideology = conservatism popularity = 0.25 }
+			add_popularity = { ideology = national_socialism popularity = -0.25 }
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.10"}
+	title = NOV_postwar.10.t
+	desc = NOV_postwar.10.desc
+	picture = GFX_event_pic_minin_and_pozharsky
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.10.a
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = NOV_postwar.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.11"}
+	title = NOV_postwar.11.t
+	desc = NOV_postwar.11.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.11.a
+		195 = {
+			add_dynamic_modifier = { modifier = NOV_german_autonomous_zone }
+		}
+		annex_country = { target = OKB transfer_troops = no }
+	}
+	
+	option = {
+		name = NOV_postwar.11.b
+		set_country_flag = petrograd_germans_deported
+		
+		RUS = {
+			country_event = { id = NOV_postwar.4 days = 2 }
+		}
+		annex_country = { target = OKB transfer_troops = no }
+	}
+}
+
+country_event = {
+	id = NOV_postwar.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.13"}
+	title = NOV_postwar.13.t
+	desc = NOV_postwar.13.desc
+	picture = GFX_report_event_IBR_home_office_desk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.13.a
+		ROM = {
+			country_event = { id = NOV_postwar.14 days = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.14"}
+	title = NOV_postwar.14.t
+	desc = NOV_postwar.14.desc
+	picture = GFX_report_event_RUS_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.14.a
+		ai_chance = {
+			factor = 1
+		}
+		RUS = {
+			country_event = { id = NOV_postwar.15 days = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.15"}
+	title = NOV_postwar.15.t
+	desc = NOV_postwar.15.desc
+	picture = GFX_report_event_RUS_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.15.a
+		if = {
+			limit = {
+				country_exists = UKS
+				UKS = {
+					is_subject_of = RUS
+				}
+			}
+			every_state = {
+				limit = {
+					is_owned_by = TNS
+				}
+				TNS = { remove_state_core = PREV }
+				UKS = {
+					add_state_core = PREV
+					transfer_state = PREV
+				}
+			}
+		}
+		else = {
+			every_state = {
+				limit = {
+					is_owned_by = TNS
+				}
+				TNS = { remove_state_core = PREV }
+				RUS = {
+					add_state_core = PREV
+					transfer_state = PREV
+				}
+			}
+		}
+		
+		diplomatic_relation = {
+			country = ROM
+			relation = non_aggression_pact
+			active = yes
+		}
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40035 days = 1 } }	
+		}
+	}
+	option = {
+		name = NOV_postwar.15.b
+		ROM = { country_event = { id = NOV_postwar.104 days = 2 } }
+	}
+	option = {
+		name = NOV_postwar.15.c
+		trigger = {
+			ROM = {
+				owns_state = 192
+			}
+		}
+		ROM = { country_event = { id = NOV_postwar.105 days = 2 } }
+	}
+}
+
+country_event = {
+	id = NOV_postwar.104
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.104"}
+	title = NOV_postwar.104.t
+	desc = NOV_postwar.104.desc
+	picture = GFX_report_event_RUS_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.104.a
+		RUS = { country_event = { id = NOV_postwar.16 days = 2 } }
+	}
+}
+
+country_event = {
+	id = NOV_postwar.105
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.104"}
+	title = NOV_postwar.105.t
+	desc = NOV_postwar.105.desc
+	picture = GFX_report_event_RUS_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.105.a
+		RUS = { country_event = { id = NOV_postwar.16 days = 2 } }
+	}
+}
+
+country_event = {
+	id = NOV_postwar.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.16"}
+	title = NOV_postwar.16.t
+	desc = NOV_postwar.16.desc
+	picture = GFX_report_event_RUS_soviet_tanks_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.16.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_ROM_ODESA
+					option = RUS_ROM_ODESA_RUSSIA_WAR
+				}
+			}
+		}
+		if = {
+			limit = {
+				country_exists = UKS
+				UKS = {
+					is_subject_of = RUS
+				}
+			}
+			every_state = {
+				limit = {
+					is_owned_by = TNS
+				}
+				TNS = { remove_state_core = PREV }
+				UKS = {
+					add_state_core = PREV
+					transfer_state = PREV
+				}
+			}
+		}
+		else = {
+			every_state = {
+				limit = {
+					is_owned_by = TNS
+				}
+				TNS = { remove_state_core = PREV }
+				RUS = {
+					add_state_core = PREV
+					transfer_state = PREV
+				}
+			}
+		}
+		
+		diplomatic_relation = {
+			country = ROM
+			relation = non_aggression_pact
+			active = yes
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = WORLD.40035 days = 1 } }
+	}
+	option = {
+		name = NOV_postwar.16.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_ROM_ODESA
+					option = RUS_ROM_ODESA_RUSSIA_PEACE
+				}
+			}
+		}
+		
+		set_variable = { RUS_surrender_limit = 0.0 }
+		
+		hidden_effect = {
+			ROM = {
+				leave_faction = yes
+				leave_GER_sphere = yes
+				remove_ideas = {
+					Pakt_Bundnispartner
+					Pakt_Mitstreiter
+				}
+				
+			}
+			if = {
+				limit = {
+					country_exists = UKS
+				}
+				UKS = {
+					add_state_claim = 192
+					add_state_claim = 198
+					add_state_claim = 1282
+				}
+				RUS = {
+					declare_war_on = { type = annex_everything	target = ROM }
+					declare_war_on = { type = annex_everything	target = TNS }
+				}
+				set_global_flag = RUSSO_ROMANIAN_WAR
+				every_country = { limit = { is_ai = no } news_event = { id = WORLD.40030 days = 1 } }
+			}
+			
+			else = {
+				
+				set_variable = { RUS_surrender_limit = 0.0 }
+			
+				RUS = {
+					add_state_claim = 192
+					add_state_claim = 198
+					add_state_claim = 1282
+				}
+				RUS = {
+					declare_war_on = { type = annex_everything	target = ROM }
+					declare_war_on = { type = annex_everything	target = TNS }
+				}
+				set_global_flag = RUSSO_ROMANIAN_WAR
+				every_country = { news_event = { id = WORLD.40030 days = 1 } }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.17"}
+	title = NOV_postwar.17.t
+	desc = NOV_postwar.17.desc
+	picture = GFX_report_event_RUS_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.17.a
+		RUS = {
+			country_event = { id = NOV_postwar.18 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.18"}
+	title = NOV_postwar.18.t
+	desc = NOV_postwar.18.desc
+	picture = GFX_report_event_RUS_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.18.a
+		white_peace = ROM
+		every_country = {
+			limit = {
+				OR = {
+					tag = ITA
+					is_in_faction_with = ITA
+				}
+				has_war_with = RUS
+			}
+			white_peace = RUS
+			if = {
+				limit = {
+					country_exists = UKS
+					UKS = {
+						is_subject_of = RUS
+					}
+				}
+				UKS = {
+					add_state_core = 192
+					add_state_core = 198
+					add_state_core = 1282
+					add_state_core = 1965
+					add_state_core = 1966
+					transfer_state = 192
+					transfer_state = 198
+					transfer_state = 1282
+					transfer_state = 1965
+					transfer_state = 1966
+				}
+			}
+			else = {
+				add_state_core = 192
+				add_state_core = 198
+				add_state_core = 1282
+				add_state_core = 1965
+				add_state_core = 1966
+				transfer_state = 192
+				transfer_state = 198
+				transfer_state = 1282
+				transfer_state = 1965
+				transfer_state = 1966
+			}
+
+			ROM = {
+				save_global_event_target_as = losing_country
+			}
+			RUS = {
+				save_global_event_target_as = winning_country
+			}
+			set_global_flag = war_won
+			set_global_flag = show_peace_popup_alert
+			add_to_variable = { global.peace_popup_dirty = 1 }
+			clr_global_flag = RUSSO_ROMANIAN_WAR
+
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40031 days = 1 } }
+		}
+	}
+	option = {
+		name = NOV_postwar.18.b
+	}
+}
+
+country_event = {
+	id = NOV_postwar.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.19"}
+	title = NOV_postwar.19.t
+	desc = NOV_postwar.19.desc
+	picture = GFX_report_event_RUS_soldiers_bombed_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.19.a
+		remove_ideas = RUS_nazi_werewolves_two
+		clr_country_flag = NOV_nazi_partisans_decisions
+		set_country_flag = NOV_final_strike_decisions
+	}
+}
+
+country_event = {
+	id = NOV_postwar.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.20"}
+	title = NOV_postwar.20.t
+	desc = NOV_postwar.20.desc
+	picture = GFX_report_event_RUS_soldiers_bombed_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.20.a
+		add_manpower = -50
+	}
+}
+
+country_event = {
+	id = NOV_postwar.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.21"}
+	title = NOV_postwar.21.t
+	desc = NOV_postwar.21.desc
+	picture = GFX_report_event_RUS_soldiers_bombed_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.21.a
+		add_manpower = -2500
+	}
+}
+
+country_event = {
+	id = NOV_postwar.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.22"}
+	title = NOV_postwar.22.t
+	desc = NOV_postwar.22.desc
+	picture = GFX_report_event_RUS_soldiers_bombed_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.22.a
+
+		random_army_leader = {
+			limit = {
+				NOT = {
+					#Reconstruction Leaders
+					is_character = NOV_Alexander_Novikov
+					is_character = NOV_Mikhail_Baganov
+					is_character = NOV_Dmitry_Glinka
+					is_character = NOV_Matvei_Batrakov
+					is_character = NOV_Nikolay_Skomorokhov
+					is_character = NOV_Boris_Fulik
+					is_character = NOV_Nestor_Kozin
+					is_character = NOV_Mikhail_Evseev
+					is_character = NOV_Ivan_Tarasov
+				}
+			}
+			retire = yes
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.23"}
+	title = NOV_postwar.23.t
+	desc = NOV_postwar.23.desc
+	picture = GFX_report_event_generic_river
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.23.a
+		239 = {
+			add_dynamic_modifier = { modifier = NOV_volga_german_autonomous_zone }
+		}
+	}
+	
+	option = {
+		name = NOV_postwar.23.b
+		set_country_flag = volga_germans_deported
+		country_event = { id = NOV_postwar.55 days = 1 }
+	}
+}
+
+country_event = {
+	id = NOV_postwar.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.24"}
+	title = NOV_postwar.24.t
+	desc = NOV_postwar.24.desc
+	picture = GFX_report_event_generic_river
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.24.a
+		if = {
+			limit = {
+				country_exists = UKS
+			}
+			UKS = {
+				transfer_state = 196
+			}
+		}
+		annex_country = { target = UKS transfer_troops = no }
+		196 = {
+			add_dynamic_modifier = { modifier = NOV_german_autonomous_zone }
+		}
+	}
+	
+	option = {
+		name = NOV_postwar.24.b
+		set_country_flag = gotish_germans_deported
+		if = {
+			limit = {
+				country_exists = UKS
+			}
+			UKS = {
+				add_state_core = 196
+				transfer_state = 196
+			}
+		}
+		annex_country = { target = UKS transfer_troops = no }
+	}
+}
+
+country_event = {
+	id = NOV_postwar.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.25"}
+	title = NOV_postwar.25.t
+	desc = NOV_postwar.25.desc
+	picture = GFX_report_event_generic_river
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.25.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_CRIMEA_ISSUE
+						option = RUS_CRIMEA_ISSUE_UKR
+					}
+					has_game_rule = {
+						rule = RUS_CRIMEA_ISSUE
+						option = RUS_CRIMEA_ISSUE_RUS
+					}
+				}
+			}	
+		}
+		137 = {
+			add_dynamic_modifier = { modifier = NOV_german_autonomous_zone }
+		}
+		1532 = {
+			add_dynamic_modifier = { modifier = NOV_german_autonomous_zone }
+		}
+	}
+	
+	option = {
+		name = NOV_postwar.25.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_CRIMEA_ISSUE
+					option = RUS_CRIMEA_ISSUE_UKR
+				}
+			}	
+		}
+		trigger = {
+			RUS = {
+				owns_state = 218
+			}
+		}
+		set_country_flag = crimean_germans_deported
+		RUS = {
+			add_state_core = 137
+			transfer_state = 137
+			add_state_core = 1532
+			transfer_state = 1532
+		}
+	}
+	option = {
+		name = NOV_postwar.25.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_CRIMEA_ISSUE
+					option = RUS_CRIMEA_ISSUE_RUS
+				}
+			}	
+		}
+		trigger = {
+			UKS = {
+				owns_state = 196
+				owns_state = 200
+			}
+		}
+		set_country_flag = crimean_germans_deported
+		UKS = {
+			add_state_core = 137
+			transfer_state = 137
+			add_state_core = 1532
+			transfer_state = 1532
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.26"}
+	title = NOV_postwar.26.t
+	desc = NOV_postwar.26.desc
+	picture = GFX_report_event_IBR_road_work_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.26.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.27"}
+	title = NOV_postwar.27.t
+	desc = NOV_postwar.27.desc
+	picture = GFX_report_event_IBR_madrid_construction_crane
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.27.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.28"}
+	title = NOV_postwar.28.t
+	desc = NOV_postwar.28.desc
+	picture = GFX_report_event_RUS_crowd
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.28.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.29"}
+	title = NOV_postwar.29.t
+	desc = NOV_postwar.29.desc
+	picture = GFX_report_event_WAL_school
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.29.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.30"}
+	title = NOV_postwar.30.t
+	desc = NOV_postwar.30.desc
+	picture = GFX_report_event_KOM_soviet_russian_computer_classroom
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.30.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.31"}
+	title = NOV_postwar.31.t
+	desc = NOV_postwar.31.desc
+	picture = GFX_event_pic_russia_victory_day_parade
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			sound_effect = tno_se_victory_day
+		}		# victory
+	}
+	option = {
+		name = NOV_postwar.31.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.32"}
+	title = NOV_postwar.32.t
+	desc = NOV_postwar.32.desc
+	picture = GFX_report_event_RUS_newspaper_stand
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.32.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.33"}
+	title = NOV_postwar.33.t
+	desc = NOV_postwar.33.desc
+	picture = GFX_report_event_RUS_newspaper_stand
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.33.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.34"}
+	title = NOV_postwar.34.t
+	desc = NOV_postwar.34.desc
+	picture = GFX_report_event_RUS_newspaper_stand
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.34.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.35"}
+	title = NOV_postwar.35.t
+	desc = NOV_postwar.35.desc
+	picture = GFX_report_event_KOM_soviet_russian_computer_classroom
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.35.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.36"}
+	title = NOV_postwar.36.t
+	desc = NOV_postwar.36.desc
+	picture = GFX_RUS_event_riga
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.36.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.37"}
+	title = NOV_postwar.37.t
+	desc = NOV_postwar.37.desc
+	picture = GFX_report_event_KOM_railway
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.37.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.38"}
+	title = NOV_postwar.38.t
+	desc = NOV_postwar.38.desc
+	picture = GFX_event_pic_latvian_cultural_festival
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.38.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.39"}
+	title = NOV_postwar.39.t
+	desc = NOV_postwar.39.desc
+	picture = GFX_report_event_RUS_orthodox_bible
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.39.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.40"}
+	title = NOV_postwar.40.t
+	desc = NOV_postwar.40.desc
+	picture = GFX_report_event_GER_bunker
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.40.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.41"}
+	title = NOV_postwar.41.t
+	desc = NOV_postwar.41.desc
+	picture = GFX_report_event_GRO_fliegerfaust_rocket
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.41.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.42"}
+	title = NOV_postwar.42.t
+	desc = NOV_postwar.42.desc
+	picture = GFX_report_event_RUS_soviet_train
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.42.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.43"}
+	title = NOV_postwar.43.t
+	desc = NOV_postwar.43.desc
+	picture = GFX_report_event_RUS_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.43.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.44"}
+	title = NOV_postwar.44.t
+	desc = NOV_postwar.44.desc
+	picture = GFX_report_event_RUS_city
+
+	is_triggered_only = yes
+
+	option = {
+		name = NOV_postwar.44.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.49"}
+	title = NOV_postwar.49.t
+	desc = NOV_postwar.49.desc
+	picture = GFX_event_pic_moscow_destroyed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.49.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.50"}
+	title = NOV_postwar.50.t
+	desc = NOV_postwar.50.desc
+	picture = GFX_event_pic_russian_teacher_woman
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.50.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.52"}
+	title = NOV_postwar.52.t
+	desc = NOV_postwar.52.desc
+	picture = GFX_event_pic_russia_rocket
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.52.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.53"}
+	title = NOV_postwar.53.t
+	desc = NOV_postwar.53.desc
+	picture = GFX_report_event_RUS_farm
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.53.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.54"}
+	title = NOV_postwar.54.t
+	desc = NOV_postwar.54.desc
+	picture = GFX_event_pic_russian_garden
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.54.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.55
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.55"}
+	title = NOV_postwar.55.t
+	desc = NOV_postwar.55.desc
+	picture = GFX_report_event_KOM_car
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.55.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.56"}
+	title = NOV_postwar.56.t
+	desc = NOV_postwar.56.desc
+	picture = GFX_report_event_DRL_camp
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.56.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.57
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.57"}
+	title = NOV_postwar.57.t
+	desc = NOV_postwar.57.desc
+	picture = GFX_event_pic_moscow_restored
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.57.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.63
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.63"}
+	title = NOV_postwar.63.t
+	desc = NOV_postwar.63.desc
+	picture = GFX_report_event_USA_election_generic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.63.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.65
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.65"}
+	title = NOV_postwar.65.t
+	desc = NOV_postwar.65.desc
+	picture = GFX_event_pic_russian_store
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.65.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.66
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.66"}
+	title = NOV_postwar.66.t
+	desc = NOV_postwar.66.desc
+	picture = GFX_event_pic_volgograd
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.66.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.67
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.67"}
+	title = NOV_postwar.67.t
+	desc = NOV_postwar.67.desc
+	picture = GFX_event_pic_russia_celebration
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.67.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.68
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.68"}
+	title = NOV_postwar.68.t
+	desc = NOV_postwar.68.desc
+	picture = GFX_report_event_KOM_soviet_russian_computer_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.68.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.69
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.69"}
+	title = NOV_postwar.69.t
+	desc = NOV_postwar.69.desc
+	picture = GFX_event_pic_russian_graveyard
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.69.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.70
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.70"}
+	title = NOV_postwar.70.t
+	desc = NOV_postwar.70.desc
+	picture = GFX_report_event_generic_m_50_jet_bomber
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.70.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.71
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.71"}
+	title = NOV_postwar.71.t
+	desc = NOV_postwar.71.desc
+	picture = GFX_report_event_generic_radio_mic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.71.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.73
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.73"}
+	title = NOV_postwar.73.t
+	desc = NOV_postwar.73.desc
+	picture = GFX_report_event_generic_truck
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.73.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.74
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.74"}
+	title = NOV_postwar.74.t
+	desc = NOV_postwar.74.desc
+	picture = GFX_report_event_generic_protest
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.74.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.75
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.75"}
+	title = NOV_postwar.75.t
+	desc = NOV_postwar.75.desc
+	picture = GFX_report_event_generic_lone_rider
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.75.a
+		country_event = { id = NOV_postwar.76 days = 1 }
+	}
+}
+
+country_event = {
+	id = NOV_postwar.76
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.76"}
+	title = NOV_postwar.76.t
+	desc = NOV_postwar.76.desc
+	picture = GFX_report_event_generic_lone_rider
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.76.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.77
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.77"}
+	title = NOV_postwar.77.t
+	desc = NOV_postwar.77.desc
+	picture = GFX_report_event_RUS_newspaper_stand
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.77.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.78
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.78"}
+	title = NOV_postwar.78.t
+	desc = NOV_postwar.78.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.78.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.79
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.79"}
+	title = NOV_postwar.79.t
+	desc = NOV_postwar.79.desc
+	picture = GFX_report_event_IBR_lisbon_working_class_neighborhood
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.79.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.80
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.80"}
+	title = NOV_postwar.80.t
+	desc = NOV_postwar.80.desc
+	picture = GFX_event_pic_azerbaijan_oilfield
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.80.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.81
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.81"}
+	title = NOV_postwar.81.t
+	desc = NOV_postwar.81.desc
+	picture = GFX_report_event_RUS_soviet_sniper
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.81.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.82
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.82"}
+	title = NOV_postwar.82.t
+	desc = NOV_postwar.82.desc
+	picture = GFX_event_pic_polish_flag_bloodied
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.82.a
+		if = {
+			limit = {
+				has_global_flag = german_civil_war_bormannvic
+			}
+			RUS = { SWRW_fopo_add_PLU_tab = yes }
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.83
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.83"}
+	title = NOV_postwar.83.t
+	desc = NOV_postwar.83.desc
+	picture = GFX_event_pic_polish_flag_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.83.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.84
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.84"}
+	title = NOV_postwar.84.t
+	desc = NOV_postwar.84.desc
+	picture = GFX_event_pic_polish_protestors
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.84.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.87
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.87"}
+	title = NOV_postwar.87.t
+	desc = NOV_postwar.87.desc
+	picture = GFX_event_pic_spetznaz_house_raid
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.87.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.88
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.88"}
+	title = NOV_postwar.88.t
+	desc = NOV_postwar.88.desc
+	picture = GFX_report_event_RUS_poster
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.88.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.89
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.89"}
+	title = NOV_postwar.89.t
+	desc = NOV_postwar.89.desc
+	picture = GFX_event_pic_minsk_market
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.89.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.91
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.91"}
+	title = NOV_postwar.91.t
+	desc = NOV_postwar.91.desc
+	picture = GFX_report_event_CHI_Industry_Made_In_China
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.91.a
+		hidden_effect = {
+			country_event = { id = NOV_postwar.92 days = 7 }
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.92
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.92"}
+	title = NOV_postwar.92.t
+	desc = NOV_postwar.92.desc
+	picture = GFX_event_pic_chinese_meeting
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.92.a
+		country_event = { id = NOV_postwar.93 days = 1 }
+	}
+}
+
+country_event = {
+	id = NOV_postwar.93
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.93"}
+	title = NOV_postwar.93.t
+	desc = NOV_postwar.93.desc
+	picture = GFX_report_event_generic_mountain
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.93.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.94
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.94"}
+	title = NOV_postwar.94.t
+	desc = NOV_postwar.94.desc
+	picture = GFX_event_pic_azerbaijan_mountain_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.94.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.96
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.96"}
+	title = NOV_postwar.96.t
+	desc = NOV_postwar.96.desc
+	picture = GFX_report_event_generic_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.96.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.97
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.97"}
+	title = NOV_postwar.97.t
+	desc = NOV_postwar.97.desc
+	picture = GFX_event_pic_bloodied_armenian_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.97.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.99
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.99"}
+	title = NOV_postwar.99.t
+	desc = NOV_postwar.99.desc
+	picture = GFX_report_event_IBR_home_office_desk
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event NOV_postwar.99"
+		POL = {
+			declare_war_on = {
+				target = GGN
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = NOV_postwar.99.a
+	}
+}
+
+country_event = {
+	id = NOV_postwar.100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.100"}
+	title = NOV_postwar.100.t
+	desc = NOV_postwar.100.desc
+	picture = GFX_report_event_IBR_home_office_desk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.100.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_ARM_FATE
+					option = RUS_ARM_FATE_ARMENIA_IS_ARMENIA
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_ARM_FATE
+					option = RUS_ARM_FATE_ARMENIA_IS_RUSSIA
+				}
+			}
+			
+		}
+		trigger = {
+			country_exists = ADY
+		}
+		ADY = {
+			annex_country = { target = ARM transfer_troops = no }
+			add_state_core = 230
+			add_state_core = 1567
+			add_state_core = 1568
+		}
+	}
+	
+	option = {
+		name = NOV_postwar.100.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_ARM_FATE
+					option = RUS_ARM_FATE_ARMENIA_IS_ARMENIA
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_ARM_FATE
+					option = RUS_ARM_FATE_ARMENIA_IS_CAUCASUS
+				}
+			}
+			
+		}
+		RUS = {
+			annex_country = { target = ARM transfer_troops = no }
+		}
+	}
+	
+	option = {
+		name = NOV_postwar.100.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_ARM_FATE
+					option = RUS_ARM_FATE_ARMENIA_IS_RUSSIA
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_ARM_FATE
+					option = RUS_ARM_FATE_ARMENIA_IS_CAUCASUS
+				}
+			}
+			
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.101"}
+	title = NOV_postwar.101.t
+	desc = NOV_postwar.101.desc
+	picture = GFX_report_event_iberia_home_office_desk
+	is_triggered_only = yes
+	option = {
+		name = NOV_postwar.101.a
+		#HUD
+		45 = {
+		set_demilitarized_zone = yes
+		}
+		155 = {
+			set_demilitarized_zone = yes
+		}
+		1292 = {
+			set_demilitarized_zone = yes
+		}
+		#HUS
+		1289 = {
+			set_demilitarized_zone = yes
+		}
+		1288 = {
+			set_demilitarized_zone = yes
+		}
+		76 = {
+			set_demilitarized_zone = yes
+		}
+		771 = {
+			set_demilitarized_zone = yes
+		}
+		154 = {
+			set_demilitarized_zone = yes
+		}
+		73 = {
+			set_demilitarized_zone = yes
+		}
+		if = {
+			limit = {
+				OR = {
+					HUN = { has_government = paternalism }
+					HUN = { has_government = conservatism }
+					HUN = { has_government = liberalism }
+				}
+			}
+			HUN = { set_country_flag = HUN_dems_in_charge }
+		}
+		HUN = {
+			set_politics = {
+				ruling_party = national_socialism
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					HUN = {
+						has_country_leader = {
+							character = HUN_Ferenc_Szalasi
+							ruling_only = yes
+						}
+					}
+				}
+			}
+			HUN_Ferenc_Szalasi = {
+				remove_country_leader_role = { ideology = national_socialism_1_subtype }
+				add_country_leader_role = {
+					country_leader = {
+						desc = "POLITICS_Ferenc_Szalasi_70s_DESC"
+						expire = "1982.01.01"
+						ideology = national_socialism_subtype
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+			HUN = {
+				set_country_leader_portrait = { portrait = "gfx/leaders/HUN/Portrait_Ferenc_Szalasi_70s.dds" }
+				country_event = { id = NOV_postwar.102 days = 3 }
+				set_party_name = {
+					ideology = national_socialism
+					name = HUN_national_socialism_1_party
+					long_name = HUN_national_socialism_1_party_long
+				}
+				set_party_name = {
+					ideology = national_socialism_1
+					name = HUN_national_socialism_party
+					long_name = HUN_national_socialism_party_long
+				}
+			}
+			HUN_Andor_Jaross = {
+				remove_country_leader_role = { ideology = national_socialism_subtype }
+				add_country_leader_role = {
+					country_leader = {
+						desc = "POLITICS_ANDOR_JAROSS_DESC"
+						expire = "1982.01.01"
+						ideology = national_socialism_1_subtype
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		else = {
+			HUN_Ferenc_Szalasi = {
+				remove_country_leader_role = { ideology = national_socialism_subtype }
+				add_country_leader_role = {
+					country_leader = {
+						expire = "1982.01.01"
+						ideology = national_socialism_1_subtype
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+			HUN = {
+				country_event = { id = NOV_postwar.102 days = 3 }
+				set_party_name = {
+					ideology = national_socialism
+					name = HUN_national_socialism_party
+					long_name = HUN_national_socialism_party_long
+				}
+				set_party_name = {
+					ideology = national_socialism_1
+					name = HUN_national_socialism_1_party
+					long_name = HUN_national_socialism_1_party_long
+				}
+			}
+			HUN_Andor_Jaross = {
+				remove_country_leader_role = { ideology = national_socialism_1_subtype }
+				add_country_leader_role = {
+					country_leader = {
+						desc = "POLITICS_ANDOR_JAROSS_70s_DESC"
+						expire = "1982.01.01"
+						ideology = national_socialism_subtype
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_postwar.102
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.102"}
+	title = NOV_postwar.102.t
+	desc = NOV_postwar.102.desc
+	picture = GFX_report_event_iberia_home_office_desk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.102.a
+		TNO_start_hungary_uprising = yes
+	}
+}
+
+country_event = {
+	id = NOV_postwar.103
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_postwar.103"}
+	title = NOV_postwar.103.t
+	desc = NOV_postwar.103.desc
+	picture = GFX_report_event_iberia_home_office_desk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_postwar.103.a
+		#set_country_flag = NOV_Hungary_Intervention
+		SWRW_fopo_add_HCW_tab = yes
+	}
+}
+
+add_namespace = NOV_failure
+
+country_event = {
+	id = NOV_failure.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.3"}
+	title = NOV_failure.3.t
+	desc = NOV_failure.3.desc
+	picture = GFX_report_event_RUS_soviet_propaganda
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.3.a
+	}
+}
+
+country_event = {
+	id = NOV_failure.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.4"}
+	title = NOV_failure.4.t
+	desc = NOV_failure.4.desc
+	picture = GFX_report_event_SVR_yeltsin
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.4.a
+	}
+}
+
+country_event = {
+	id = NOV_failure.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.5"}
+	title = NOV_failure.5.t
+	desc = NOV_failure.5.desc
+	picture = GFX_event_pic_russia_kirpichnikov
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.5.a
+		country_event = { id = NOV_failure.4 days = 7 }
+	}
+}
+
+country_event = {
+	id = NOV_failure.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.6"}
+	title = NOV_failure.6.t
+	desc = NOV_failure.6.desc
+	picture = GFX_report_event_IBR_intensive_care_hospital
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.6.a
+		effect_tooltip = {
+			kill_country_leader = yes
+		}
+		hidden_effect = {
+			retire_country_leader = yes
+		}
+		set_politics = {
+			ruling_party = paternalism
+		}
+		NOV_Alexander_Pokryshkin = {
+			promote_character = {
+				ideology = paternalism_oligarchy_subtype
+			}
+		}
+		hidden_effect = {
+			RUS = {
+				country_event = { id = NOV_failure.8 days = 7 }
+			}
+			set_global_flag = NOV_Shukshin_Death
+			load_focus_tree = NOV_novosibirsk_failure_shukshin
+		}
+		RUS_lost_war = yes
+		set_global_flag = RUS_SWRW_Fail
+	}
+}
+
+country_event = {
+	id = NOV_failure.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.7"}
+	title = NOV_failure.7.t
+	desc = NOV_failure.7.desc
+	picture = GFX_report_event_generic_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.7.a
+	}
+}
+
+country_event = {
+	id = NOV_failure.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.8"}
+	title = NOV_failure.8.t
+	desc = NOV_failure.8.desc
+	picture = GFX_report_event_RUS_refugees
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.8.a
+	}
+}
+
+country_event = {
+	id = NOV_failure.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.9"}
+	title = NOV_failure.9.t
+	desc = NOV_failure.9.desc
+	picture = GFX_report_event_RUS_kazakh_crowd
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.9.a
+		hidden_effect = {
+			if = {
+				limit = {
+					KAZ = {
+						has_country_leader = {
+							character = KAZ_Sagadat_Nurmagambetov
+							ruling_only = yes
+						}
+					}
+				}
+				NOV = { set_autonomy = { target = KAZ autonomy_state = autonomy_free } }
+				KAZ = {
+					promote_character = KAZ_Zhumabek_Tashenev
+					remove_ideas = CSTO_Member
+					econ_leave_sphere = yes
+					leave_faction = yes
+				}
+			}
+			KAZ = {
+				set_politics = {
+					ruling_party = communist
+				}
+				set_cosmetic_tag = KAZ_Tashenev
+				set_popularities = {
+					communist = 70
+					communist_1 = 3
+					ultranationalism = 0
+					socialist = 0
+					progressivism = 0
+					liberalism = 5
+					conservatism = 0
+					paternalism = 22
+					despotism = 0
+					fascism = 0
+					national_socialism = 0
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = KAZ_communist_party_tashenev_long
+					name = KAZ_communist_party_tashenev
+				}
+				set_party_name = {
+					ideology = communist_1
+					long_name = KAZ_communist_party_1_long
+					name = KAZ_communist_party_1
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = KAZ_paternalism_party_tashenev_long
+					name = KAZ_paternalism_party_tashenev
+				}
+				transfer_state = 589
+				transfer_state = 588
+				transfer_state = 590
+				transfer_state = 583
+				transfer_state = 404
+				transfer_state = 402
+				transfer_state = 587
+				transfer_state = 1802
+				transfer_state = 1803
+				transfer_state = 1803
+				transfer_state = 1805
+				transfer_state = 1806
+				transfer_state = 1807
+				
+				add_state_core = 589
+				add_state_core = 588
+				add_state_core = 590
+				add_state_core = 583
+				add_state_core = 404
+				add_state_core = 402
+				add_state_core = 587
+				add_state_core = 1802
+				add_state_core = 1803
+				add_state_core = 1803
+				add_state_core = 1805
+				add_state_core = 1806
+				add_state_core = 1807
+			
+				TNO_startup_nation = yes
+				
+				set_capital = {
+					state = 589
+					remember_old_capital = no
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						any_allied_country = {
+							has_full_control_of_state = 405
+						}
+						has_full_control_of_state = 405
+					}
+				}
+				country_event = { id = NOV_failure.10 days = 2 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_failure.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.10"}
+	title = NOV_failure.10.t
+	desc = NOV_failure.10.desc
+	picture = GFX_report_event_KAZ_kazakh_riders
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.10.a
+		hidden_effect = {
+			XXX = {
+				UZB_AFG_Puppet = { set_nationality = UZB }
+				KYR_AFG_Puppet = { set_nationality = KYR }
+				TAJ_AFG_Puppet = { set_nationality = TAJ }
+				TRK_AFG_Puppet = { set_nationality = TRK }
+			}
+			UZB = {
+				transfer_state = 405
+				transfer_state = 585
+				transfer_state = 750
+				transfer_state = 750
+				transfer_state = 1466
+				transfer_state = 1467
+				transfer_state = 1468
+				add_state_core = 405
+				add_state_core = 585
+				add_state_core = 750
+				add_state_core = 1467
+				add_state_core = 1468
+				add_state_core = 1466
+			
+				TNO_startup_nation = yes
+				
+				set_capital = { state = 405 }
+				if = {
+					limit = {
+						UZB = {
+							is_in_faction_with = RUS
+						}
+					}
+					NOV = { set_autonomy = { target = UZB autonomy_state = autonomy_free } }
+					econ_leave_sphere = yes
+					leave_faction = yes
+				}
+				AFG = { puppet = UZB }
+				promote_character = UZB_AFG_Puppet
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 100
+				}
+				set_party_name = {
+					ideology = despotism
+					name = AFG_Central_Asia_Party
+					long_name = AFG_Central_Asia_Party_long
+				}
+				set_cosmetic_tag = UZB_AFG
+			}
+			KYR = {
+				transfer_state = 586
+				transfer_state = 732
+				add_state_core = 586
+				add_state_core = 732
+			
+				TNO_startup_nation = yes
+				
+				if = {
+					limit = {
+						KYR = {
+							is_in_faction_with = RUS
+						}
+					}
+					NOV = { set_autonomy = { target = KYR autonomy_state = autonomy_free } }
+					econ_leave_sphere = yes
+					leave_faction = yes
+				}
+				AFG = { puppet = KYR }
+				promote_character = KYR_AFG_Puppet
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 100
+				}
+				set_party_name = {
+					ideology = despotism
+					name = AFG_Central_Asia_Party
+					long_name = AFG_Central_Asia_Party_long
+				}
+				set_cosmetic_tag = KYR_AFG
+			}
+			TAJ = {
+				transfer_state = 742
+				add_state_core = 742
+			
+				TNO_startup_nation = yes
+				
+				if = {
+					limit = {
+						TAJ = {
+							is_in_faction_with = RUS
+						}
+					}
+					NOV = { set_autonomy = { target = TAJ autonomy_state = autonomy_free } }
+					econ_leave_sphere = yes
+					leave_faction = yes
+				}
+				AFG = { puppet = TAJ }
+				promote_character = TAJ_AFG_Puppet
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 100
+				}
+				set_party_name = {
+					ideology = despotism
+					name = AFG_Central_Asia_Party
+					long_name = AFG_Central_Asia_Party_long
+				}
+				set_cosmetic_tag = TAJ_AFG
+			}
+			TRK = {
+				transfer_state = 584
+				add_state_core = 584
+			
+				TNO_startup_nation = yes
+				
+				if = {
+					limit = {
+						TRK = {
+							is_in_faction_with = RUS
+						}
+					}
+					NOV = { set_autonomy = { target = TRK autonomy_state = autonomy_free } }
+					econ_leave_sphere = yes
+					leave_faction = yes
+				}
+				AFG = { puppet = TRK }
+				promote_character = TRK_AFG_Puppet
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_party_name = {
+					ideology = despotism
+					name = AFG_Central_Asia_Party
+					long_name = AFG_Central_Asia_Party_long
+				}
+				set_popularities = {
+					despotism = 100
+				}
+				set_cosmetic_tag = TRK_AFG
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_failure.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.11"}
+	title = NOV_failure.11.t
+	desc = NOV_failure.11.desc
+	picture = GFX_report_event_NOV_alexander_pokryshkin_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.11.a
+		hidden_effect = {
+			TNO_Country_Closing_Screen_Show = yes
+		}
+	}
+}
+
+country_event = {
+	id = NOV_failure.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.12"}
+	title = NOV_failure.12.t
+	desc = NOV_failure.12.desc
+	picture = GFX_report_event_IBR_poor_people_in_line
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.12.a
+		
+		TNO_worsen_poverty_high = yes
+	}
+}
+
+country_event = {
+	id = NOV_failure.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.14"}
+	title = NOV_failure.14.t
+	desc = NOV_failure.14.desc
+	picture = GFX_report_event_NOV_alexander_pokryshkin_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.14.a
+		hidden_effect = {
+			TNO_Country_Closing_Screen_Show = yes
+		}
+	}
+}
+
+country_event = {
+	id = NOV_failure.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.15"}
+	title = NOV_failure.15.t
+	desc = NOV_failure.15.desc
+	picture = GFX_report_event_generic_vodka
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.15.a
+	}
+}
+
+country_event = {
+	id = NOV_failure.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_failure.17"}
+	title = NOV_failure.17.t
+	desc = NOV_failure.17.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_failure.17.a
+	}
+}
+
+country_event = {
+	id = NOV_flavor.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.1"}
+	title = NOV_flavor.1.t
+	desc = NOV_flavor.1.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.1.a
+		hidden_effect = {
+			country_event = {
+				id = NOV_flavor.2
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_flavor.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.2"}
+	title = NOV_flavor.2.t
+	desc = NOV_flavor.2.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.2.a
+		hidden_effect = {
+			country_event = {
+				id = NOV_flavor.3
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_flavor.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.3"}
+	title = NOV_flavor.3.t
+	desc = NOV_flavor.3.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.3.a
+		hidden_effect = {
+			country_event = {
+				id = NOV_flavor.4
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_flavor.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.4"}
+	title = NOV_flavor.4.t
+	desc = NOV_flavor.4.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.4.a
+	}
+}
+
+country_event = {
+	id = NOV_flavor.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.5"}
+	title = NOV_flavor.5.t
+	desc = NOV_flavor.5.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.5.a
+		hidden_effect = {
+			country_event = {
+				id = NOV_flavor.6
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_flavor.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.6"}
+	title = NOV_flavor.6.t
+	desc = NOV_flavor.6.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.6.a
+		hidden_effect = {
+			country_event = {
+				id = NOV_flavor.7
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_flavor.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.7"}
+	title = NOV_flavor.7.t
+	desc = NOV_flavor.7.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.7.a
+		hidden_effect = {
+			country_event = {
+				id = NOV_flavor.8
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_flavor.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.8"}
+	title = NOV_flavor.8.t
+	desc = NOV_flavor.8.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.8.a
+	}
+}
+
+country_event = {
+	id = NOV_flavor.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.9"}
+	title = NOV_flavor.9.t
+	desc = NOV_flavor.9.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.9.a
+		country_event = {
+			id = NOV_flavor.10
+			days = 7
+		}
+	}
+	option = {
+		name = NOV_flavor.9.b
+		country_event = {
+			id = NOV_flavor.11
+			days = 3
+		}
+	}
+}
+
+country_event = {
+	id = NOV_flavor.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.10"}
+	title = NOV_flavor.10.t
+	desc = NOV_flavor.10.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.10.a
+		random_owned_state = {
+			limit = { state = 573 }
+			add_building_construction = {
+				type = thermoelectric_plant
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_flavor.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.11"}
+	title = NOV_flavor.11.t
+	desc = NOV_flavor.11.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.11.a
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = NOV_flavor.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.12"}
+	title = NOV_flavor.12.t
+	desc = NOV_flavor.12.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.12.a
+		hidden_effect = {
+			country_event = {
+				id = NOV_flavor.13
+				days = 365
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_flavor.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.13"}
+	title = NOV_flavor.13.t
+	desc = NOV_flavor.13.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.13.a
+		hidden_effect = {
+			country_event = {
+				id = NOV_flavor.14
+				days = 365
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NOV_flavor.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_flavor.14"}
+	title = NOV_flavor.14.t
+	desc = NOV_flavor.14.desc
+	#picture =
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = NOV_flavor.14.a
+	}
+}
+
+#Duma Bills Events https://www.youtube.com/shorts/R69_wpyh4_4
+country_event = {#Representation Act
+	id = NOV_bill.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.1" }
+
+	title = NOV_bill.1.t
+	desc = NOV_bill.1.desc
+	picture = GFX_report_event_duma_session
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NOV_bill.1.a
+		add_political_power = 100
+		add_stability = 0.05
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.075
+		}
+		# set_temp_variable = { v = 9 }
+		# RUS_add_uncategorised_law = yes
+	}
+}
+
+country_event = {#Voting Rights Act
+	id = NOV_bill.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.2" }
+
+	title = NOV_bill.2.t
+	desc = NOV_bill.2.desc
+	picture = GFX_report_event_duma_session
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NOV_bill.2.a
+		TNO_improve_political_parties_policy_effectiveness_high = yes
+		TNO_improve_admin_efficiency_med = yes
+		add_stability = 0.025
+		tno_vote_franchise_improve = yes
+		add_political_power = 25
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.035
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.02
+		}
+		add_stability = -0.05
+		custom_effect_tooltip = NOV_bill_2_tt
+	}
+}
+
+country_event = {#Women Rights Act
+	id = NOV_bill.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.3" }
+
+	title = NOV_bill.3.t
+	desc = NOV_bill.3.desc
+	picture = GFX_report_event_duma_session
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NOV_bill.3.a
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.025
+		}
+		add_stability = -0.05
+		add_political_power = 25
+		TNO_improve_vote_franchise_policy_effectiveness_high = yes
+		tno_gender_rights_improve = yes
+	}
+}
+
+country_event = {#EPA
+	id = NOV_bill.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.4" }
+	title = NOV_bill.4.t
+	desc = NOV_bill.4.desc
+	picture = GFX_report_event_duma_session
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NOV_bill.4.a
+		tno_regulations_improve = yes
+		TNO_improve_regulations_policy_effectiveness_med = yes
+		add_stability = 0.05
+		set_temp_variable = { gdp_growth_temp = -0.2 }
+		econ_gdp_growth_change = yes
+	}
+}
+
+country_event = {#EPA Repeal
+	id = NOV_bill.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.5" }
+	title = NOV_bill.5.t
+	desc = NOV_bill.5.desc
+	picture = GFX_report_event_duma_session
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = NOV_bill.5.a
+		tno_regulations_worsen = yes
+		TNO_worsen_regulations_policy_effectiveness_med = yes
+		add_stability = -0.05
+		set_temp_variable = { gdp_growth_temp = 0.2 }
+		econ_gdp_growth_change = yes
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.025
+		}
+		add_stability = -0.1
+		custom_effect_tooltip = NOV_bill_5_tt
+	}
+}
+
+country_event = {#Corporation Limitation Act
+	id = NOV_bill.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.6" }
+	title = NOV_bill.6.t
+	desc = NOV_bill.6.desc
+	picture = GFX_report_event_duma_session
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NOV_bill.6.a
+		set_temp_variable = { gdp_growth_temp = 1.2 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { temp_econ_GDP_boost_flat = -0.5 }
+		econ_GDP_boost_once_flat = yes
+		add_stability = -0.05
+		add_political_power = -50
+		set_temp_variable = { money_reserves_temp = 1.85 }
+		econ_money_reserves_change_raw_money = yes
+		set_temp_variable = { business_tax_temp = 0.05 }
+		econ_business_tax_rate_change = yes
+		set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+		econ_type_change = yes
+		set_variable = {economic_centralization = 55}
+	}
+}
+
+country_event = {#Workers Protection Act
+	id = NOV_bill.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.7" }
+	title = NOV_bill.7.t
+	desc = NOV_bill.7.desc
+	picture = GFX_report_event_duma_session
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NOV_bill.7.a
+		tno_trade_unions_improve = yes
+		TNO_improve_trade_unions_policy_effectiveness_med = yes
+		tno_minimum_wage_improve = yes
+		TNO_improve_minimum_wage_policy_effectiveness_med = yes
+		tno_max_workhours_improve = yes
+		TNO_improve_max_workhours_policy_effectiveness_med = yes
+		tno_improve_industrial_expertise_high = yes
+		TNO_improve_poverty_med = yes
+	}
+}
+
+country_event = {#VRPP Healthcare Act
+	id = NOV_bill.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.8" }
+	title = NOV_bill.8.t
+	desc = NOV_bill.8.desc
+	picture = GFX_report_event_duma_session
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NOV_bill.8.a
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.025
+		}
+		add_political_power = 25
+		set_temp_variable = { money_reserves_temp = 0.5 }
+		econ_money_reserves_change_raw_money = yes
+		set_temp_variable = { gdp_growth_temp = 0.5 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { inflation_temp = 0.3 } 
+		econ_inflation_change = yes
+		TNO_improve_health_care_policy_effectiveness_med = yes
+	}
+}
+
+country_event = {#DSPR Healthcare Act
+	id = NOV_bill.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.9" }
+	title = NOV_bill.9.t
+	desc = NOV_bill.9.desc
+	picture = GFX_report_event_duma_session
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NOV_bill.9.a
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.025
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.025
+		}
+		tno_health_care_improve = yes
+		add_political_power = -35
+		TNO_improve_health_care_policy_effectiveness_high = yes
+		set_temp_variable = { inflation_temp = 0.6 } 
+		econ_inflation_change = yes	
+	}
+}
+
+country_event = {#Federal Insurance Act
+	id = NOV_bill.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.10" }
+	title = NOV_bill.10.t
+	desc = NOV_bill.10.desc
+	picture = GFX_report_event_duma_session
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NOV_bill.10.a
+		TNO_improve_health_care_policy_effectiveness_high = yes
+		add_political_power = -50
+		social_funding_minimal_increase_high = yes
+		social_funding_maximal_increase_high = yes	
+		set_temp_variable = { gdp_growth_temp = 0.1 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { temp_econ_spending_amount = 5 }
+		econ_spend_money_once_effect_raw_money = yes
+	}
+}
+
+country_event = { #Bill Fails Shukshin
+	id = NOV_bill.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.10" }
+	title = NOV_bill.11.t
+	desc = NOV_bill.11.desc
+	picture = GFX_report_event_duma_session
+	is_triggered_only = yes
+	option = {
+		name = NOV_bill.11.a
+		add_political_power = -75
+		add_stability = -0.05
+		TNO_worsen_political_parties_policy_effectiveness_low = yes
+	}
+}
+
+country_event = { #Bill Fail Primakov
+	id = NOV_bill.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_bill.10" }
+	title = NOV_bill.12.t
+	desc = NOV_bill.12.desc
+	picture = GFX_report_event_duma_session
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = NOV_bill.12.a
+		add_political_power = -75
+		add_stability = -0.05
+		TNO_worsen_political_parties_policy_effectiveness_low = yes
+		add_popularity = {
+			ideology = paternalism
+			popularity = -0.055
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.035
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.015
+		}
+		add_stability = -0.1
+		custom_effect_tooltip = NOV_bill_12_tt
+	}
+}

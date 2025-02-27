@@ -1,0 +1,350 @@
+﻿l_english:
+ # New Localisation
+ 
+ ### Presidential Map ###
+ 
+ # Parties
+ 
+ NOV_RAPP_Title_tt:0 "§BRussian Agrarian-Industrial Party§!\n§BRossiyskaya Agarno-Promyshlennaya Paritya§!"
+ NOV_VRPP_Title_tt:0 "§gAll-Russian Patriotic Party§!\n§gVserossiskaya Patrioticheskaya Partiya§!"
+ NOV_DSPR_Title_tt:0 "§PDemocratic Socialist Party of Russia§!\n§PDemokraticheskaya Sotsialistcheskaya Partiya Rossii§!"
+ NOV_RSLP_Title_tt:0 "§MRussian Social Liberal Party§!\n§MRossiyskaya Sotsial-liberal'naya Partiya§!"
+ 
+ # Candidates
+ 
+ NOV_shukshin_in_lead: "§BVASILY SHUKSHIN"
+ NOV_primakov_in_lead: "§gYEVGENY PRIMAKOV"
+ NOV_kantorovich_in_lead: "§PLEONID KANTOROVICH"
+ NOV_koryagin_in_lead: "§MANATOLY KORYAGIN"
+ 
+ # Election Localisation
+ 
+ NOV_1976_election: "[?global.year] ELECTIONS"
+ NOV_regional_population: "§YPOTENTIAL VOTES: [?NOV_election_population_display|2][NOVgetPopulationThousandOrMillion]§!"
+ NOV_election_statistics: "STATISTICS"
+ NOV_election_interactions: "INTERACTIONS"
+ 
+ # Federal Districts #
+
+ NOV_Northern_voting_district_tt: "§YNorthern District§!"
+ NOV_Northern_voting_district_delayed_tt: "Potential Votes: §Y[?857.NOV_election_population_display|2]M§!\n\n£NOV_RAPP_Icon §BRAPP§! Popularity: §Y[?857.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon §gVRPP§! Popularity: §Y[?857.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon §PDSPR§! Popularity: §Y[?857.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon §MRSLP§! Popularity: §Y[?857.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon §xMinor parties§! Popularity: §Y[?857.NOV_election_support_independents|2]%§!"
+ NOV_Volga_voting_district_tt: "§YVolga District§!"
+ NOV_Volga_voting_district_delayed_tt: "Potential Votes: §Y[?850.NOV_election_population_display|2]M§!\n\n£NOV_RAPP_Icon §BRAPP§! Popularity: §Y[?850.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon §gVRPP§! Popularity: §Y[?850.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon §PDSPR§! Popularity: §Y[?850.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon §MRSLP§! Popularity: §Y[?850.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon §xMinor parties§! Popularity: §Y[?850.NOV_election_support_independents|2]%§!"
+ NOV_Ural_voting_district_tt: "§YUral District§!"
+ NOV_Ural_voting_district_delayed_tt: "Potential Votes: §Y[?754.NOV_election_population_display|2]M§!\n\n£NOV_RAPP_Icon §BRAPP§! Popularity: §Y[?754.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon §gVRPP§! Popularity: §Y[?754.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon §PDSPR§! Popularity: §Y[?754.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon §MRSLP§! Popularity: §Y[?754.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon §xMinor parties§! Popularity: §Y[?754.NOV_election_support_independents|2]%§!"
+ NOV_Siberian_voting_district_tt: "§YSiberian District§!"
+ NOV_Siberian_voting_district_delayed_tt: "Potential Votes: §Y[?570.NOV_election_population_display|2]M§!\n\n£NOV_RAPP_Icon §BRAPP§! Popularity: §Y[?570.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon §gVRPP§! Popularity: §Y[?570.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon §PDSPR§! Popularity: §Y[?570.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon §MRSLP§! Popularity: §Y[?570.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon §xMinor parties§! Popularity: §Y[?570.NOV_election_support_independents|2]%§!"
+ NOV_Far_East_voting_district_tt: "§YFar Eastern District§!"
+ NOV_Far_East_voting_district_delayed_tt: "Potential Votes: §Y[?562.NOV_election_population_display|2]M§!\n\n£NOV_RAPP_Icon §BRAPP§! Popularity: §Y[?562.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon §gVRPP§! Popularity: §Y[?562.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon §PDSPR§! Popularity: §Y[?562.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon §MRSLP§! Popularity: §Y[?562.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon §xMinor parties§! Popularity: §Y[?562.NOV_election_support_independents|2]%§!"
+ NOV_Moscow_voting_district_tt: "§YMuscovy District§!"
+ NOV_Moscow_voting_district_delayed_tt: "Potential Votes: §Y[?1442.NOV_election_population_display|2]M§!\n\n£NOV_RAPP_Icon §BRAPP§! Popularity: §Y[?1442.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon §gVRPP§! Popularity: §Y[?1442.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon §PDSPR§! Popularity: §Y[?1442.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon §MRSLP§! Popularity: §Y[?1442.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon §xMinor parties§! Popularity: §Y[?1442.NOV_election_support_independents|2]%§!"
+ NOV_Kuban_voting_district_tt: "§YKuban District§!"
+ NOV_Kuban_voting_district_delayed_tt: "Potential Votes: §Y[?243.NOV_election_population_display|2]M§!\n\n£NOV_RAPP_Icon §BRAPP§! Popularity: §Y[?243.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon §gVRPP§! Popularity: §Y[?243.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon §PDSPR§! Popularity: §Y[?243.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon §MRSLP§! Popularity: §Y[?243.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon §xMinor parties§! Popularity: §Y[?243.NOV_election_support_independents|2]%§!"
+ NOV_Caucasia_voting_district_tt: "§YCaucasus District§!"
+ NOV_Caucasia_voting_district_delayed_tt: "Potential Votes: §Y[?243.NOV_election_population_display|2]M§!\n\n£NOV_RAPP_Icon §BRAPP§! Popularity: §Y[?243.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon §gVRPP§! Popularity: §Y[?243.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon §PDSPR§! Popularity: §Y[?243.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon §MRSLP§! Popularity: §Y[?243.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon §xMinor parties§! Popularity: §Y[?243.NOV_election_support_independents|2]%§!"
+ 
+ # Occupied Districts #
+ 
+ NOV_Far_East_Occupation_Status_Occupied_tt:0 "§VERROR!\n\nREGION CONTROLLED BY: THE JAPANESE EMPIRE\n\nUNABLE TO ACCESS DATA!§!"
+ NOV_Karelia_Occupation_Status_Occupied_tt:0 "§VERROR!\n\nREGION CONTROLLED BY: FINLAND\n\nUNABLE TO ACCESS DATA!§!"
+ NOV_German_Occupation_Status_Occupied_tt:0 "§VERROR!\n\nREGION CONTROLLED BY: THE GERMAN REICH\n\nUNABLE TO ACCESS DATA!§!"
+ 
+ # Scripted Localisation #
+ 
+ NOV_PE_select_a_state_tt:0 "SELECT A REGION"
+ NOV_PE_occupied_region_tt:0 "ACCESS RESTRICTED"
+ NOV_PE_far_east_district_title_tt:0 "FAR EASTERN DISTRICT"
+ NOV_PE_siberian_district_title_tt:0 "SIBERIAN DISTRICT"
+ NOV_PE_ural_district_title_tt:0 "URAL DISTRICT"
+ NOV_PE_volga_district_title_tt:0 "VOLGA DISTRICT"
+ NOV_PE_northern_district_title_tt:0 "NORTHERN DISTRICT"
+ NOV_PE_muscovy_district_title_tt:0 "MUSCOVY DISTRICT"
+ NOV_PE_kuban_district_title_tt:0 "KUBAN DISTRICT"
+ NOV_PE_caucasia_district_title_tt:0 "CAUCASUS DISTRICT"
+
+ # tooltips #
+ NOV_RAPP_tt: "£GFX_NOV_RAPP_Icon §BRAPP§!"
+ NOV_VRPP_tt: "£GFX_NOV_VRPP_Icon §gVRPP§!"
+ NOV_DSPR_tt: "£GFX_NOV_DSPR_Icon §PDSPR§!"
+ NOV_RSLP_tt: "£GFX_NOV_RSLP_Icon §MRSLP§!"
+ NOV_independents_tt: "£NOV_Independents_Icon §xminor parties§!"
+
+ NOV_far_east_campaign_tt: "The [562.NOVcampaignGetPartyName] is currently campaigning in this region."
+ NOV_cen_sib_campaign_tt: "The [570.NOVcampaignGetPartyName] is currently campaigning in this region."
+ NOV_ural_campaign_tt: "The [754.NOVcampaignGetPartyName] is currently campaigning in this region."
+ NOV_volga_campaign_tt: "The [850.NOVcampaignGetPartyName] is currently campaigning in this region."
+ NOV_north_campaign_tt: "The [857.NOVcampaignGetPartyName] is currently campaigning in this region."
+ NOV_moscow_campaign_tt: "The [1442.NOVcampaignGetPartyName] is currently campaigning in this region."
+ NOV_kuban_campaign_tt: "The [243.NOVcampaignGetPartyName] is currently campaigning in this region."
+
+ NOV_presidential_RAPP_support_tt: "According to the polls, the £NOV_RAPP_Icon §BRAPP§! is estimated to receive §Y[?NOV_election_support_RAPP_pop|2]M§! votes in the upcoming election, which is §Y[?NOV_election_presidential_support_RAPP_display|2]%§! of the total potential votes."
+ NOV_presidential_VRPP_support_tt: "According to the polls, the £NOV_VRPP_Icon §gVRPP§! is estimated to receive §Y[?NOV_election_support_VRPP_pop|2]M§! votes in the upcoming election, which is §Y[?NOV_election_presidential_support_VRPP_display|2]%§! of the total potential votes."
+ NOV_presidential_DSPR_support_tt: "According to the polls, the £GFX_NOV_DSPR_Icon §PDSPR§! is estimated to receive §Y[?NOV_election_support_DSPR_pop|2]M§! votes in the upcoming election, which is §Y[?NOV_election_presidential_support_DSPR_display|2]%§! of the total potential votes."
+ NOV_presidential_RSLP_support_tt: "According to the polls, the £NOV_RSLP_Icon §MRSLP§! is estimated to receive §Y[?NOV_election_support_RSLP_pop|2]M§! votes in the upcoming election, which is §Y[?NOV_election_presidential_support_RSLP_display|2]%§! of the total potential votes."
+ NOV_presidential_independents_support_tt: "According to the polls, £NOV_Independents_Icon §xminor parties§! are estimated to receive §Y[?NOV_election_support_independents_pop|2]M§! votes in the upcoming election, which is §Y[?NOV_election_presidential_support_independents_display|2]%§! of the total potential votes."
+
+ NOV_regional_RAPP_support_tt: "According to local polls, §Y[?NOV_RAPP_support_pop_display|2]M§! people in this region intend to vote for the £NOV_RAPP_Icon §BRAPP§! in the upcoming election, which is §Y[?NOV_RAPP_support_display|2]%§! of the total potential votes."
+ NOV_regional_VRPP_support_tt: "According to local polls, §Y[?NOV_VRPP_support_pop_display|2]M§! people in this region intend to vote for the £GFX_NOV_VRPP_Icon §gVRPP§! in the upcoming election, which is §Y[?NOV_VRPP_support_display|2]%§! of the total potential votes."
+ NOV_regional_DSPR_support_tt: "According to local polls, §Y[?NOV_DSPR_support_pop_display|2]M§! people in this region intend to vote for the £GFX_NOV_DSPR_Icon §PDSPR§! in the upcoming election, which is §Y[?NOV_DSPR_support_display|2]%§! of the total potential votes."
+ NOV_regional_RSLP_support_tt: "According to local polls, §Y[?NOV_RSLP_support_pop_display|2]M§! people in this region intend to vote for the £NOV_RSLP_Icon §MRSLP§! in the upcoming election, which is §Y[?NOV_RSLP_support_display|2]%§! of the total potential votes."
+ NOV_regional_independents_support_tt: "According to local polls, §Y[?NOV_support_independents_pop_display|2]M§! people in this region intend to vote for £NOV_Independents_Icon §xminor parties§! in the upcoming election, which is §Y[?NOV_independents_support_display|2]%§! of the total potential votes."
+
+ NOV_hold_rally_tt: "This will §Gincrease§! the §Ypopularity§! of the [ROOT.NOVelectionsGetPlayerPartyName] by §G6%§!"
+ NOV_discredit_opposition_tt: "This will §Rdecrease§! the §Ypopularity§! of the most influential party in this region by §R6%§!"
+ NOV_campaign_tt: "This will §Gincrease§! the §Ymomentum§! of the [ROOT.NOVelectionsGetPlayerPartyName] by §G1.5%§!"
+ NOV_slander_tt: "This will §Rdecrease§! the §Ymomentum§! of all opposition parties by §R1%§!"
+
+ ## FEDERAL ASSEMBLY ##
+
+ NOV_assembly_info_tt: "The Federal Assembly\n\n\nThe Federal Assembly of the Russian Federation is a bicameral system, with the Federation Council having authority over which laws should be created, after which the torch is carried over to the State Duma, where deputies debate on whether or not said law should be brought into effect."
+ NOV_parties_info_tt:0 "Since we loosened restrictions on party formation, a significant number of political factions have emerged, drawing away some of £NOV_RAPP_Icon §BRAPP§! and £GFX_NOV_VRPP_Icon §gSilovki§!'s support base. However, out of these new organizations, only few have any significant impact or the potential to come to power."
+ NOV_government_info_tt:0 "For the most part, a government consists of multiple parties. While this reinforces the overall stability and trust in the nation, with it also comes the inevitable need of sharing power. Though the elections are mostly open, transparent, and peaceful, all parties would not include others in their government unless necessary.\n\nCoalition affects the opinions of those within the coalition towards the government."
+ NOV_bills_info_tt:0 "Major legislation is passed and discussed here in the Duma."
+ NOV_parties_interaction_tt:0 "Click to interact with the [NOVgetPartyName]"
+ NOV_party_interaction_bribe_officials_tt:0 "Though disdained, sometimes progress we desire is simply unachievable by conventional means. To win the impossible battle, we must be adaptive.\n\n§GGains 5 opinion§! at the §Rcost§! of §Y7 Million USD§! for some lavish bribes."
+ NOV_party_interaction_token_concessions_tt:0 "Though there may be discrepancies in each party's platform on social, economic, and political issues, there are some underlying principles shared between parties, especially certain factions who may be more sympathetic towards our cause. Let us embrace their best ideas to show our willingness for continued cooperation.\n\nPolitical Power: §R-50§!.\n\n§GGains 15 opinion§!.\n\n§GThis move is more effective against members of your coalition§!.\n\n§ROther members of the coalition would rather have us stick to what we believe then have a false sense of unity§!."
+ NOV_party_interaction_sit_down_tt:0 "Sometimes a direct meeting between the parties, whether formal or informal is critical to maintaining our allies and finding new ones. We seek to unify our people, not divide them!\n\nPolitical Power: §R-75§!.\n\n§GGains 7.5 opinion§!."
+ NOV_party_interaction_accuse_tt:0 "Though we endorse social movements, in recent years some politicians have been increasingly branding themselves as 'vanguards of the people'. Some have been making rousing speeches across the country, making ridiculous claims about some sort of state conspiracy against the people that they are fighting against. Due to our subpar political education and literacy, many citizens are falling for these cheap tricks. We must catch them before rowdy populism hurts our country!\n\n§RLoses 10 opinion§!.\n\n§GOur coalition will like this move§!."
+
+ NOV_bill_voting: "VOTING"
+
+ NOV_gov_header: "GOVERNMENT"
+
+ NOV_gov_shukshin: "§BVasily Shukshin§!"
+ NOV_gov_kantorovich:0 "§PLeonid Kantorovich§!"
+ NOV_gov_koryagin:0 "§MAnatoly Koryagin§!"
+ NOV_gov_primakov:0 "§gYevgeny Primakov§!"
+ NOV_gov_shukshin_vice:0 "§BAlexander Pokryshkin§!"
+ NOV_gov_kantorovich_vice:0 "§PLeonid Plyushch§!"
+ NOV_gov_koryagin_vice:0 "§MFelix Serebrov§!"
+ NOV_gov_primakov_vice:0 "§gIvan Silayev§!"
+
+ NOV_bills_time_1: "Time Remaining: §W[?NOV_bill_timer] days§!"
+ NOV_bills_time_2:0 "§WNo major bills are available§!."
+
+ NOV_bills_total_votes_good: "[?NOV_bill_total_votes|G0]/450 VOTES"
+ NOV_bills_total_votes_bad: "[?NOV_bill_total_votes|R0]/450 VOTES"
+
+ NOV_bills_RAPP_contribution_good: "[?NOV_rapp_bill_votes|G0]/[?NOV_rapp_duma_seats] Deputies"
+ NOV_bills_RAPP_contribution_middle: "[?NOV_rapp_bill_votes|Y0]/[?NOV_rapp_duma_seats] Deputies"
+ NOV_bills_RAPP_contribution_bad: "[?NOV_rapp_bill_votes|R0]/[?NOV_rapp_duma_seats] Deputies"
+
+ NOV_bills_VRPP_contribution_good: "[?NOV_vrpp_bill_votes|G0]/[?NOV_vrpp_duma_seats] Deputies"
+ NOV_bills_VRPP_contribution_middle: "[?NOV_vrpp_bill_votes|Y0]/[?NOV_vrpp_duma_seats] Deputies"
+ NOV_bills_VRPP_contribution_bad: "[?NOV_vrpp_bill_votes|R0]/[?NOV_vrpp_duma_seats] Deputies"
+
+ NOV_bills_DSPR_contribution_good: "[?NOV_dspr_bill_votes|G0]/[?NOV_dspr_duma_seats] Deputies"
+ NOV_bills_DSPR_contribution_middle: "[?NOV_dspr_bill_votes|Y0]/[?NOV_dspr_duma_seats] Deputies"
+ NOV_bills_DSPR_contribution_bad: "[?NOV_dspr_bill_votes|R0]/[?NOV_dspr_duma_seats] Deputies"
+
+ NOV_bills_RSLP_contribution_good: "[?NOV_rslp_bill_votes|G0]/[?NOV_rslp_duma_seats] Deputies"
+ NOV_bills_RSLP_contribution_middle: "[?NOV_rslp_bill_votes|Y0]/[?NOV_rslp_duma_seats] Deputies"
+ NOV_bills_RSLP_contribution_bad: "[?NOV_rslp_bill_votes|R0]/[?NOV_rslp_duma_seats] Deputies"
+
+ NOV_bills_NFM_contribution_good: "[?NOV_nfm_bill_votes|G0]/[?NOV_nfm_duma_seats] Deputies"
+ NOV_bills_NFM_contribution_middle: "[?NOV_nfm_bill_votes|Y0]/[?NOV_nfm_duma_seats] Deputies"
+ NOV_bills_NFM_contribution_bad: "[?NOV_nfm_bill_votes|R0]/[?NOV_nfm_duma_seats] Deputies"
+
+ NOV_bills_RIRM_contribution_good: "[?NOV_rirm_bill_votes|G0]/[?NOV_rirm_duma_seats] Deputies"
+ NOV_bills_RIRM_contribution_middle: "[?NOV_rirm_bill_votes|Y0]/[?NOV_rirm_duma_seats] Deputies"
+ NOV_bills_RIRM_contribution_bad: "[?NOV_rirm_bill_votes|R0]/[?NOV_rirm_duma_seats] Deputies"
+
+ NOV_bills_CPRF_contribution_good: "[?NOV_cprf_bill_votes|G0]/[?NOV_cprf_duma_seats] Deputies"
+ NOV_bills_CPRF_contribution_middle: "[?NOV_cprf_bill_votes|Y0]/[?NOV_cprf_duma_seats] Deputies"
+ NOV_bills_CPRF_contribution_bad: "[?NOV_cprf_bill_votes|R0]/[?NOV_cprf_duma_seats] Deputies"
+
+ NOV_bills_SRP_contribution_good: "[?NOV_srp_bill_votes|G0]/[?NOV_srp_duma_seats] Deputies"
+ NOV_bills_SRP_contribution_middle: "[?NOV_srp_bill_votes|Y0]/[?NOV_srp_duma_seats] Deputies"
+ NOV_bills_SRP_contribution_bad: "[?NOV_srp_bill_votes|R0]/[?NOV_srp_duma_seats] Deputies"
+
+ NOV_coalition_duma_seats: "[?NOV_coalition_seats_duma] Deputies"
+ NOV_coalition_council_seats: "[?NOV_coalition_seats_council] Senators"
+
+ #Bills
+
+ RUS_add_uncategorised_law_tt: "§F[GetAssortedLawsRUS] will be added to our assorted laws.§!"
+ RUS_remove_uncategorised_law_tt: "§F[GetAssortedLawsRUS] will be removed from our assorted laws.§!"
+ RUS_get_law_tooltip: "[GetAssortedLawsDescRUS]"
+
+ NOV_bill_representation_act: "§BThe Representation Act§!"
+ NOV_bill_representation_act_desc: "At the inception of the Central Siberian Federation, the Constitution explicitly stated that the seats of the Federation Council are to be appointed by the government, and not elected by the people. This law was brought into life predominantly at the behest of the Siloviki, and their influence in our politics.\n\nAfter extensive lobbying and the attempt on President Shukshin's life, it is time that we cripple the Siloviki and their influence by ensuring that, should they come to power, their dominance over the Federation Council will not be absolute."
+ NOV_bill_voting_rights_act:0 "§QThe Voting Rights Act§!"
+ NOV_bill_voting_rights_act_desc:0 "Although our Federation is a beacon of Russian democracy on paper, the right of our people to cast their ballot isn't truly enshrined in law. Once a stopgap measure introduced by Pokryshkin in order to appease those calling for greater democracy, we now must fully incorporate it into our fundamental institutions of governance.\n\nWithin this act are measures to curtail external influences in elections, as well as refining the process for collecting and tallying our peoples' votes."
+ NOV_bill_women_rights_act: "§BAmendment to Russian Civil Code§!"
+ NOV_bill_women_rights_act_desc: "Now that we have ensured that the core components of our democracy are in place, we can turn our attention to the great injustice that has long been inflicted upon our nation. The women of Russia have long been denied the right to politically influence the future of their own country. Now, we can finally open that door to them.\n\nSoon, equality under the banner of the Federation will become a reality, as we move closer and closer to the Russian Dream..."
+ NOV_bill_environmental_protection_act: "§BEnvironmental Protection Act§!"
+ NOV_bill_environmental_protection_act_desc: "The endless territories of our Motherland hold some of the most breathtaking landscapes on the planet, from the forests of the Siberian taiga to the vast steppes with indigenous wildlife roaming freely across it. But the rot of the corporations has infested our beautiful Motherland.\n\nEntire forests have been cut down for lumber, great mines tear deep into our once scenic mountains and oil derricks turn once fertile plains into barren wasteland. If we wish to protect our land, we must restrain the insidious tentacles of Siloviki greed before it is too late."
+ NOV_bill_environmental_protection_act_repeal: "§gRepeal Environmental Protection Act§!"
+ NOV_bill_environmental_protection_act_repeal_desc: "While it is most regrettable that the sons of our Motherland are destroying the land that for hundreds of years nurtured our nation and people, it is all but necessary to continue our current motion. With too many restrictions, our state may not be able to catch up to Western and Eastern competitors alike!\n\n The old world will burn in the fires of industry, and only through then Russia may enrich herself!"
+ NOV_bill_corporation_limitation_act: "§BCorporation Limitation Act§!"
+ NOV_bill_corporation_limitation_act_desc: "The £GFX_NOV_VRPP_Icon §gSilovki§! - the iron-fisted corporate securocrats who have long strangled ordinary people under the crushing force of their greed and ambition, are now weaker than ever after our recent reforms aimed at establishing a truly equitable society. Now, we will finally take the metaphorical sledgehammer to the weakened conglomerates, and force them to take a backseat in almost all aspects of President Shukshin's vision.\n\nOur Dream will finally be secured from perfidy, and our people may finally know the prosperity that has eluded them for so long."
+ NOV_bill_workers_protection_act: "§BWorkers Protection Act§!"
+ NOV_bill_workers_protection_act_desc: "For as long as any of us can remember, the working man has toiled at great expense to himself while corporate leaders turn a blind eye to their suffering in dangerous factories for starvation pay.\n\nNo longer.\n\nUnder our administration, workers will be treated fairly, paid a reasonable wage and will work in safe conditions. While we aren't §xsocialists§!, we are sympathetic to the flight of the working man, and will ensure they are given a fair deal."
+ NOV_bill_healthcare_act_vrpp: "§gArticle 41 of the Constitution§!"
+ NOV_bill_healthcare_act_vrpp_desc: "While it is undeniable that the people of the Federation should receive proper healthcare, it would not do for us to strain the budget and go into an unsustainable deficit. The rebuilding of Russia which will be a massive and necessary drain on our resources.\n\nAs such, for the sake of fiscal stability, we have come to a compromise with the £GFX_NOV_VRPP_Icon §gVRPP§! to reduce the original amount that the state would spend on healthcare and maintain the private insurance system to allow corporations to take a share of the pie in exchange for £GFX_NOV_VRPP_Icon §gVRPP§! support and increased market efficiency."
+ NOV_bill_healthcare_act_dspr: "§PArticle 41 of the Constitution§!"
+ NOV_bill_healthcare_act_dspr_desc: "We are a Federation of people, not of corporations. While our state was once heavily-reliant on corporate support, it is no longer the case. Now, the people rule in Russia, not the Siloviki, like in Novosibirsk.\n\nAs such, we intend to nationalize our healthcare system to provide equitable access to quality healthcare for all under the Federation. While undoubtedly an expensive endeavor, the Federation seeks to improve the lives of its peoples, for what is a country but her people?"
+ NOV_bill_none: "§YNo major bills are being discussed§!"
+ NOV_bill_none_desc: "The Duma is not necessarily idle, and generally, all Russians and foreigners trust the development of Russian democracy in the Federation. However, sometimes incremental changes are not enough. Through certain decisions, significant changes to our codified law may define the 20th century and beyond."
+ NOV_bill_federal_insurance_act:0 "§BNational Insurance Act of [?global.year]§!"
+ NOV_bill_federal_insurance_act_desc:0 "As of now, despite previous efforts, universal high-quality healthcare is still lacking in Russia. Russians are either terrified of getting sick in any form or are totally unaware of basic modern hygiene. Optometry and dental are still not covered by our insurance, and there aren't enough doctors in rural areas. President Shukshin understands that expanding healthcare reform will allow for more procedures to be covered to more people, including those who haven't seen a doctor in years." 
+ NOV_start_bill_voting_tt:0 "§YThe State Duma will vote on the§! [NOVgetBillNamett]."
+ NOV_bills_progress_bar_tt:0 "Effects of [NOVgetBillName] are the following:\n[NOVgetBillEffects]"
+ NOV_bill_effect_fail_bozo:0 "Political Power: §R-75§!.\nGain Base Stability: §R-5.00%§!.\n§RSlightly decreases§! §Ypolitical parties§! policy effectiveness.\n\n§RThis is due to you not having a majority in the Duma§!."
+ NOV_bill_representation_act_effect:0 "Political Power: §G+100§!.\nGain Base Stability: §G+5.00%§!.\nChange in popularity of Paternalism: §R-7.50%§!."
+ NOV_bill_voting_rights_act_effect:0 "§GHighly increases§! §Ypolitical parties§! policy effectiveness.\nOur §YAdministrative Efficiency§! Societal Development will begin to §Gimprove§!.\nGain Base Stability: §G+2.50%§!.\n§GImproves voting policies§!\nPolitical Power: §G+25§!."
+ NOV_bill_women_rights_act_effect:0 "Political Power: §G+50§!.\nGain Base Stability: §R-5.00%§!.\n§GHighly increases§! §Yvote franchise§! policy effectiveness.\n§GImproves gender rights policies§!."
+ NOV_bill_environmental_protection_act_effect:0 "Gain Base Stability: §G+5.00%§!\n§GImproves regulation policies§!\nOur §KGDP growth§! will §Rdecrease§! by §Y0.20%§!."
+ NOV_bill_environmental_protection_act_repeal_effect:0 "Gain Base Stability: §R-5.00%§!.\n§RWorsens regulation policies§!\nOur §KGDP growth§! will §Gincrease§! by §Y0.20%§!."
+ NOV_bill_corporation_limitation_act_effect:0 "Political Power: §R-50§!.\nGain Base Stability: §R-5.00%§!.\nOur §KGDP growth§! will §Gincrease§! by §Y1.20%§!.\n§RDecreases§! our §fGDP§! by §Y$0.500 B§!.\nThis will §Gincrease§! our §MLiquid Reserves§! by §Y$1.85 B§!.\nOur §KBusiness Taxes§! will §Gincrease§! by §Y5.00%§!."
+ NOV_bill_workers_protection_act_effect:0 "§GImproves trade union policies§!.\n§GIncreases§! §Ytrade unions§! policy effectiveness.\n§GImproves minimum wage policies§!.\n§GIncreases§! §Yminimum wage§! policy effectiveness.\n§GImproves workday policies§!.\nOur §YIndustrial Expertise§! Societal Development will begin to §Grapidly improve§!.\nOur §spoverty rate§! will begin to §Gimprove§!."
+ NOV_bill_healthcare_act_vrpp_effect:0 "Political Power: §G+25§!.\nThis will §Gincrease§! our §MLiquid Reserves§! by §Y$0.5 B§!.\nOur §KGDP growth§! will §Gincrease§! by §Y0.50%§!.\nOur §VInflation§! will §Rincrease§! by §Y0.30%§!.\n§GIncreases§! §Yhealthcare§! policy effectiveness."
+ NOV_bill_healthcare_act_dspr_effect:0 "Political Power: §R-35§!.\n§GImproves healthcare policies§!\n§GHighly increases§! §Yhealthcare§! policy effectiveness.\nOur §VInflation§! will §Rincrease§! by §Y0.60%§!."
+ NOV_bill_federal_insurance_act_effect:0 "Political Power: §R-50§!.\n§GHighly increases§! §Yhealthcare§! policy effectiveness.\n§GGreatly increases§! §Yminimal investment§! in §Ysocial funding§!.\n§GGreatly increases§! §Ymaximum investment§! in §Ysocial funding§!.\nOur §KGDP growth§! will §Gincrease§! by §Y0.10%§!.\nWe will spend §Y$5.000 B§!."
+  
+ NOV_RAPP_name: "§BRAPP§!"
+ NOV_VRPP_name: "§gVRPP§!"
+ NOV_DSPR_name: "§PDSPR§!"
+ NOV_RSLP_name: "§MRSLP§!"
+ NOV_NFM_name: "§KNFD§!"
+ NOV_RIRM_name: "§wDVRI§!"
+ NOV_CPRF_name: "§eKPRF§!"
+ NOV_SRP_name: "§xPSR§!"
+
+ NOV_party_tt: "[NOVgetPartyTooltips]"
+
+ NOV_RAPP_party_tt: "£NOV_RAPP_Icon §BRussian Agrarian-Industrial Party§!\n§BRossiyskaya Agarno-Promyshlennaya Partiya§!\n\n                        §YChairman§!\n\n\n\n\n\n\n             £NOV_vasily_shukshin\n\n\n\n\n\n\n\n                  §YVasily Shukshin§!"
+ NOV_VRPP_party_tt: "£NOV_VRPP_Icon §gAll-Russian Patriotic Party§!\n§gVserossiskaya Patrioticheskaya Partiya§!\n\n                  §YChairman§!\n\n\n\n\n\n\n       £NOV_yevgeny_primakov\n\n\n\n\n\n\n\n          §YYevgeny Primakov§!"
+ NOV_DSPR_party_tt: "£NOV_DSPR_Icon §PDemocratic Socialist Party of Russia§!\n§PDemokraticheskaya Sotsialistcheskaya Partiya Rossii§!\n\n                         §YChairman§!\n\n\n\n\n\n\n              £NOV_leonid_kantorovich\n\n\n\n\n\n\n\n                 §YLeonid Kantorovich§!"
+ NOV_RSLP_party_tt: "£NOV_RSLP_Icon §MRussian Social Liberal Party§!\n§MRossiyskaya Sotsial-liberal'naya Partiya§!\n\n                  §YChairman§!\n\n\n\n\n\n\n       £NOV_anatoly_koryagin\n\n\n\n\n\n\n\n             §YAnatoly Koryagin§!"
+ NOV_NFM_party_tt: "£NOV_NFM_Icon §KNational Farmers Movement§!\n§KNatsionalnoye Fermerskoye Dvizheniye§!\n\n                  §YChairman§!\n\n\n\n\n\n\n       £NOV_mikhail_lapshin\n\n\n\n\n\n\n\n             §YMikhail Lapshin§!"
+ NOV_RIRM_party_tt: "£NOV_RIRM_Icon §wRussian Imperial Restoration Movement§!\n§wDvizheniye za Vosstanovleniye Rossiyskoy Imperii§!\n\n                             §YChairman§!\n\n\n\n\n\n\n                 £NOV_vladimir_osipov\n\n\n\n\n\n\n\n                       §YVladimir Osipov§!"
+ NOV_CPRF_party_tt: "£NOV_CPRF_Icon §eCommunist Party of the Russian Federation§!\n§eKommunisticheskaya Partiya Rossiyskoy Federatsii§!\n\n                                §YChairman§!\n\n\n\n\n\n\n                     £NOV_yegor_ligachov\n\n\n\n\n\n\n\n                           §YYegor Ligachov§!"
+ NOV_SRP_party_tt: "£NOV_SRP_Icon §xParty of Socialist-Revolutionaries§!\n§xParitya Sotsialistov-Revolyusionerov§!\n\n               §YChairman§!\n\n\n\n\n\n\n     £NOV_yuri_galanskov\n\n\n\n\n\n\n\n            §YYuri Galanskov§!"
+
+ NOV_RAPP_duma_seats: "[?NOV_rapp_duma_seats] Deputies"
+ NOV_VRPP_duma_seats: "[?NOV_vrpp_duma_seats] Deputies"
+ NOV_DSPR_duma_seats: "[?NOV_dspr_duma_seats] Deputies"
+ NOV_RSLP_duma_seats: "[?NOV_rslp_duma_seats] Deputies"
+ NOV_NFM_duma_seats: "[?NOV_nfm_duma_seats] Deputies"
+ NOV_RIRM_duma_seats: "[?NOV_rirm_duma_seats] Deputies"
+ NOV_CPRF_duma_seats: "[?NOV_cprf_duma_seats] Deputies"
+ NOV_SRP_duma_seats: "[?NOV_srp_duma_seats] Deputies"
+
+ NOV_RAPP_council_seats: "[?NOV_rapp_council_seats] Senators"
+ NOV_VRPP_council_seats: "[?NOV_vrpp_council_seats] Senators"
+ NOV_DSPR_council_seats: "[?NOV_dspr_council_seats] Senators"
+ NOV_RSLP_council_seats: "[?NOV_rslp_council_seats] Senators"
+ NOV_NFM_council_seats: "[?NOV_nfm_council_seats] Senators"
+ NOV_RIRM_council_seats: "[?NOV_rirm_council_seats] Senators"
+ NOV_CPRF_council_seats: "[?NOV_cprf_council_seats] Senators"
+ NOV_SRP_council_seats: "[?NOV_srp_council_seats] Senators"
+
+ NOV_opinion_RAPP_good: "[?NOV_party_opinions^0|G0] §G(FRIENDLY)§!"
+ NOV_opinion_RAPP_middle: "[?NOV_party_opinions^0|Y0] §Y(NEUTRAL)§!"
+ NOV_opinion_RAPP_bad: "[?NOV_party_opinions^0|R0] §R(OPPOSITION)§!"
+
+ NOV_opinion_VRPP_good: "[?NOV_party_opinions^1|G0] §G(FRIENDLY)§!"
+ NOV_opinion_VRPP_middle: "[?NOV_party_opinions^1|Y0] §Y(NEUTRAL)§!"
+ NOV_opinion_VRPP_bad: "[?NOV_party_opinions^1|R0] §R(OPPOSITION)§!"
+
+ NOV_opinion_DSPR_good: "[?NOV_party_opinions^2|G0] §G(FRIENDLY)§!"
+ NOV_opinion_DSPR_middle: "[?NOV_party_opinions^2|Y0] §Y(NEUTRAL)§!"
+ NOV_opinion_DSPR_bad: "[?NOV_party_opinions^2|R0] §R(OPPOSITION)§!"
+
+ NOV_opinion_RSLP_good: "[?NOV_party_opinions^3|G0] §G(FRIENDLY)§!"
+ NOV_opinion_RSLP_middle: "[?NOV_party_opinions^3|Y0] §Y(NEUTRAL)§!"
+ NOV_opinion_RSLP_bad: "[?NOV_party_opinions^3|R0] §R(OPPOSITION)§!"
+
+ NOV_opinion_NFM_good: "[?NOV_party_opinions^4|G0] §G(FRIENDLY)§!"
+ NOV_opinion_NFM_middle: "[?NOV_party_opinions^4|Y0] §Y(NEUTRAL)§!"
+ NOV_opinion_NFM_bad: "[?NOV_party_opinions^4|R0] §R(OPPOSITION)§!"
+
+ NOV_opinion_RIRM_good: "[?NOV_party_opinions^5|G0] §G(FRIENDLY)§!"
+ NOV_opinion_RIRM_middle: "[?NOV_party_opinions^5|Y0] §Y(NEUTRAL)§!"
+ NOV_opinion_RIRM_bad: "[?NOV_party_opinions^5|R0] §R(OPPOSITION)§!"
+
+ NOV_opinion_CPRF_good: "[?NOV_party_opinions^6|G0] §G(FRIENDLY)§!"
+ NOV_opinion_CPRF_middle: "[?NOV_party_opinions^6|Y0] §Y(NEUTRAL)§!"
+ NOV_opinion_CPRF_bad: "[?NOV_party_opinions^6|R0] §R(OPPOSITION)§!"
+
+ NOV_opinion_SRP_good: "[?NOV_party_opinions^7|G0] §G(FRIENDLY)§!"
+ NOV_opinion_SRP_middle: "[?NOV_party_opinions^7|Y0] §Y(NEUTRAL)§!"
+ NOV_opinion_SRP_bad: "[?NOV_party_opinions^7|R0] §R(OPPOSITION)§!"
+
+ NOV_parties_interaction_header: "[NOVgetInteractionsMenuPartyName] INTERACTIONS"
+
+ NOV_Election_support_somewhat_improves_tt:0 "[getNOVElectoralTarget] support in [Root.NOV_District_Select_lockey] §Gimproves§! §Ysomewhat§!"
+ NOV_Election_support_improves_tt:0 "[getNOVElectoralTarget] support in [Root.NOV_District_Select_lockey] §Gimproves§!"
+ NOV_Election_support_significantly_improves_tt:0 "[getNOVElectoralTarget] support in [Root.NOV_District_Select_lockey] §Gsignificantly improves§!"
+ NOV_Election_support_somewhat_worsens_tt:0 "[getNOVElectoralTarget] support in [Root.NOV_District_Select_lockey] §Rworsens§! §Ysomewhat§!"
+ NOV_Election_support_worsens_tt:0 "[getNOVElectoralTarget] support in [Root.NOV_District_Select_lockey] §Rworsens§!"
+ NOV_Election_support_significantly_worsens_tt:0 "[getNOVElectoralTarget] support in [Root.NOV_District_Select_lockey] §Rsignificantly decreases§!"
+
+ #Presidential Events
+
+ NOV_federalassembly.100.t:0 "Presidential Election of [?global.year]"
+ NOV_federalassembly.100.desc:0 "Ivan Kuratov was once a scarred man. The long-hours of backbreaking labor, the beyond brutal conditions, and the icey cold in the Vorkuta Labor camp did that to everyone, prisoner or guard, who was foolish enough to inhabit it. To this day, he carried the scars, and hardened palms of those days. He once thought that life under that continuous cycle of petty fiefdoms would never end. Even after the NKVD fell, he'd just come under another government who cared not for his well-being. But now, times were changing.\n\nWhen Kuratov had migrated to the city of Barnaul, and saw President Shukshin for the first time, his heart had beat with something he had not experienced since childhood. Jubilation. Hope. A genuine dash of idealism. An infectious dream of eternal optimism, and true unbridled happiness for the future. The sun seemed to shine brighter on his face, now plastered with a dumb wide-grin.\n\nNow that the wars were over, the reforms were done, and his life truly transformed, he thought that he'd seen the end of wonder. He was wrong. That morning, he'd woken up to a stunning announcement. Elections. President Shukshin had given way to democracy, and was scheduling elections. Now, his life was flooded with banners, posters, slogans, political campaigns, and the debates and news on his newly bought television set. He'd truly seen another Russian miracle. One greater than the miracle on the Volga, or on the Don. One greater than the miracle of the 2nd West Russian War.\n\nOn his way back home, he was intercepted by the Novaya Gazeta for a poll. With a wide smile, and groceries in hand, he said confidently:"
+ NOV_federalassembly.100.a:0 "President Shukshin has my vote."
+ NOV_federalassembly.100.b:0 "Yevgeney Primakov shall make Russia strong."
+ NOV_federalassembly.100.c:0 "Leonid Kantorovich is fighting for you and me."
+ NOV_federalassembly.100.d:0 "Anatoly Koryagin shall bring Russia prosperity."
+ NOV_federalassembly.100.a_tt:0 "§YWe shall campaign as the§! £GFX_NOV_RAPP_Icon §BRussian Agrarian-Industrial Party§!"
+ NOV_federalassembly.100.b_tt:0 "§YWe shall campaign as the§! £GFX_NOV_VRPP_Icon §gAll-Russian Patriotic Party§!"
+ NOV_federalassembly.100.c_tt:0 "§YWe shall campaign as the§! £GFX_NOV_DSPR_Icon §PDemocratic Socialist Party of Russia§!"
+ NOV_federalassembly.100.d_tt:0 "§YWe shall campaign as the§! £GFX_NOV_RSLP_Icon §MRussian Social Liberal Party§!"
+
+ NOV_federalassembly.101.t:0 "Election Day"
+ NOV_federalassembly.101.desc:0 "Crowds around Russia gather around radios and televisions wherever they could be found. Some stare at the screen intently in the comfort of their own homes. Others crowd around an old dusty radio set in public parlors or bars. Nevertheless, their attention is all glued for a single broadcast. News stations around Russia go live. The words on their lips, "Citizens of the Russian Federation. At this hour, on the [?global.date.GetDateStringNoHourLong], we are ready to project the winner of this year's Presidential elections. Your next President of the Russian Federation is none other than...""
+ NOV_federalassembly.101.a:0 "President Vasily Shukshin, leader of the RAPP!"
+ NOV_federalassembly.101.b:0 "Yevgeny Primakov, leader of the VRPP!"
+ NOV_federalassembly.101.c:0 "Leonid Kantorovich, leader of the DSPR!"
+ NOV_federalassembly.101.d:0 "Anatoly Koryagin, leader of the RSLP!"
+
+ NOV_federalassembly.102.t:0 "Forming a Government"
+ NOV_federalassembly.102.desc:0 "Currently, our government holds less than half of the total seats in the Duma. While it is possible to run a minority government, some are calling for us to invite in other parties such that we won't be placed into awkward situations by our rivals. Should we proceed?"
+ NOV_federalassembly.102.a:0 "We don't need them anyway."
+ NOV_federalassembly.102.a_tt:0 "§RWe will make a potentially unstable minority government!§!"
+ NOV_federalassembly.102.b:0 "Maybe Mr. Shukshin would like to have a voice...?"
+ NOV_federalassembly.102.b_tt:0 "We will attempt to form a coalition government with the conservative £GFX_NOV_RAPP_Icon §BRAPP§!"
+ NOV_federalassembly.102.c:0 "Getting the Silovki onboard could be critical."
+ NOV_federalassembly.102.c_tt:0 "We will attempt to form a coalition government with the corporatist £GFX_NOV_VRPP_Icon §gVRPP§!"
+ NOV_federalassembly.102.d:0 "Placating the workers always works."
+ NOV_federalassembly.102.d_tt:0 "We will attempt to form a coalition government with the democratic socialist £GFX_NOV_DSPR_Icon §PDSPR§!"
+ NOV_federalassembly.102.e:0 "The Doctrine of Peace may yet be useful"
+ NOV_federalassembly.102.e_tt:0 "We will attempt to from a coalition government with the liberal £GFX_NOV_RSLP_Icon §MRSLP§!"
+ NOV_federalassembly.102.f:0 "The farmers too will speak before the Duma!"
+ NOV_federalassembly.102.f_tt:0 "We will attempt to form a coalition government with the moderate £NOV_NFM_Icon §KNFD§!"
+ NOV_federalassembly.102.g:0 "Maybe we should allow some Monarchists to return..."
+ NOV_federalassembly.102.g_tt:0 "We will attempt to form a coalition government with the despotist £NOV_RIRM_Icon §wDVRI§!"
+ NOV_federalassembly.102.h:0 "KPRF's participation may prevent further radicalization."
+ NOV_federalassembly.102.h_tt:0 "We will attempt to form a coalition government with the communist £NOV_CPRF_Icon §eKPRF§!"
+ NOV_federalassembly.102.i:0 "SRs can only be controlled if they have stakes in the system."
+ NOV_federalassembly.102.i_tt:0 "We will attempt to form a coalition government with the syndicalist £NOV_SRP_Icon §xSRs§!"
+ NOV_federalassembly.102.j:0 "We need to find other solutions!"
+ NOV_federalassembly.102.j_tt:0 "We will look for other solutions at the cost of political expediency. This will reload the event with new options."
+ 
+ NOV_Election_Time_Bar_tt:0 "§Y[?NOV_Election_Time_Left] days left till the outcome of this election may be decided§!."
+ NOV_coalition_unity_bar_tt:0 "Coalition unity is the average of how supportive parties are in the coalition. When voting, those in the coalition will not use their opinion, but rather coalition unity plus another bonus.\n\nCoalition unity is §Y[?NOV_coalition_unity]§!%"
+ duma_not_voting_tt:0 "The Duma is not voting on anything important right now."
+
+ NOV_Yegor_Ligachyov:0 "Yegor Ligachyov"
+ NOV_Yuri_Galanskov:0 "Yuri Galanskov"
+ NOV_Mikhail_Lapshin:0 "Mikhail Lapshin"
+ NOV_Vladimir_Osipov:0 "Vladimir Osipov"
+
+ ################################################################################
+
+
+ #### VRPP GUIS ####
+
+
+
+
+ #### DSPR GUIS ####
+
+
+
+
+ #### RAPP GUIS ####
+

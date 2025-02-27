@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_OST_colonial_past"
+		texturefile = "gfx/interface/ideas/national_spirits/OST/idea_OST_colonial_past.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_OST_the_baltic_confederation"
+		texturefile = "gfx/interface/ideas/national_spirits/OST/idea_OST_the_baltic_confederation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_OST_colonial_past"
+		texturefile = "gfx/interface/ideas/OST/idea_OST_colonial_past.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_OST_the_baltic_confederation"
+		texturefile = "gfx/interface/ideas/OST/idea_OST_the_baltic_confederation.dds"
+	}
+}

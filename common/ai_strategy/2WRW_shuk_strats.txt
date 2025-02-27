@@ -1,0 +1,452 @@
+NOV_central_asia_plan = {
+	allowed = {
+		original_tag = NOV
+	}
+	enable = {
+		has_global_flag = RUS_shukshin_unification
+		has_completed_focus = NOV_shukshin_looking_beyond
+		NOT = {
+			KZK = {
+				is_subject_of = NOV
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = KZR
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = KAZ
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = KZR
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = KAZ
+		value = 100
+	}
+}
+NOV_finland_plan = {
+	allowed = {
+		original_tag = NOV
+	}
+	enable = {
+		has_global_flag = RUS_shukshin_unification
+		has_completed_focus = NOV_shukshin_looking_beyond
+		NOT = {
+			FIN = {
+				is_in_faction_with = GER 
+			}	
+		}
+		NOT = {
+			NOV = {
+				owns_state = 215
+			}
+		}	
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = FIN
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = RFI
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = FIN
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = RFI
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_invasion_focus
+		value = 100
+	}
+}
+QIN_war_plan = {
+	allowed = {
+		original_tag = QIN
+	}
+	enable = {
+		has_global_flag = RUS_shukshin_unification
+		NOV = {
+			has_completed_focus = NOV_establish_the_west_chinese_republic
+		}	
+		has_war = yes 	
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = XIN
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = XIK
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = TIB
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = GAN
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GAN
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = TIB
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = XIN
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = XIK
+		value = 100
+	}
+}
+NOV_germany_plan = {
+	allowed = {
+		original_tag = NOV
+		is_in_faction_with = NOV 
+	}
+	enable = {
+		has_global_flag = RUS_shukshin_unification
+		has_completed_focus = NOV_meet_with_pokryshkin
+		NOT = {
+			has_global_flag = RUS_SWRW_End
+		}	
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = GER
+		value = 250
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = MCW
+		value = 250
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = CAU
+		value = 250
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = PER
+		value = 250
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UTL
+		value = 250
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = NOR
+		value = 50
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = UKR
+		value = 250
+	}
+	ai_strategy = {
+		type = front_control
+		state = 195
+		ratio = 0.1
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		manual_attack = no
+	}
+	ai_strategy = {
+		type = front_unit_request
+		state  = 195
+		value = 250
+	}	
+	ai_strategy = {
+		type = prepare_for_war
+		id = BLR
+		value = 250
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = POL
+		value = 250
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = OST
+		value = 250
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = MCW
+		value = 250
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = NOR
+		value = 50
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CAU
+		value = 250
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = POL
+		value = 250
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = UKR
+		value = 250
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = BLR
+		value = 250
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = OST
+		value = 250
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GER
+		value = -1000
+	}
+	
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = KAZ
+		value = 250
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 200
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 214
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 862
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 262
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 10
+		id = 195
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 863
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 1724
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 722
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 1359
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 213
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 1887
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 859
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 5
+		id = 215
+	}
+}
+GER_against_shuk_russia_plan = {
+	allowed = {
+		original_tag = GER
+		is_in_faction_with = GER 
+	}
+	enable = {
+		has_global_flag = RUS_shukshin_unification
+		NOV = {
+			has_completed_focus = NOV_meet_with_pokryshkin		
+		}	
+		NOT = {
+			has_global_flag = RUS_SWRW_End
+		}	
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = RUS
+		value = 250
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 250
+	}
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			is_russian_nation = yes
+		}
+		value = 250
+	}
+}
+### Send Volunteers to Pro-Russian Forces ###
+NOV_mongolia_volunteers = {
+	allowed = {
+		original_tag = NOV 
+	}
+	enable = {
+		MON = {
+			has_war_with = MEN 
+		}	
+		has_global_flag = RUS_shukshin_unification
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = MON
+		value = 250
+	}
+}
+JAP_mongolia_volunteers = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		MON = {
+			has_war_with = MEN 
+		}	
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = MEN
+		value = 250
+	}
+}
+NOV_poland_volunteers = {
+	allowed = {
+		original_tag = NOV 
+	}
+	enable = {
+		POL = {
+			has_war_with = GGN 
+		}	
+		has_global_flag = RUS_shukshin_unification
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = POL
+		value = 250
+	}
+}
+NOV_armenia_volunteers = {
+	allowed = {
+		original_tag = NOV 
+	}
+	enable = {
+		ARM = {
+			has_war_with = TUR 
+		}	
+		has_global_flag = RUS_shukshin_unification
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = ARM
+		value = 250
+	}
+}
+NOV_west_china_volunteers = {
+	allowed = {
+		original_tag = NOV 
+	}
+	enable = {
+		QIN = {
+			has_war = yes 
+		}	
+		has_global_flag = RUS_shukshin_unification
+		has_completed_focus = NOV_establish_the_west_chinese_republic
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = QIN
+		value = 250
+	}
+}

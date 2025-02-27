@@ -1,0 +1,27 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_novosibirsk_radio_station_cover"
+		textureFile = "gfx/radio/novosibirsk_radio_station_cover.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_red_germany_station_cover"
+		textureFile = "gfx/radio/gcw_radio_cover.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_dem_germany_station_cover"
+		textureFile = "gfx/radio/berlin_cover.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_klopfer_station_cover"
+		textureFile = "gfx/radio/wein_cover.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_radio_kamchatka_album_art"
+		texturefile = "gfx/radio/GFX_radio_kamchatka_album_art.dds"
+		noOfFrames = 2
+	}
+}

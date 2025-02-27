@@ -1,0 +1,155 @@
+characters = {
+	POL_Karol_Wojtyla = {
+		name = POL_Karol_Wojtyla
+		portraits = { 
+			civilian = { large = "gfx/leaders/POL/Portrait_POL_Karol_Wojtyla.dds" }
+			army = { large = "gfx/leaders/POL/Portrait_POL_Karol_Wojtyla.dds" }
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = "POLITICS_KAROL_WOJTYLA_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		corps_commander = {
+			traits = { infantry_leader }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+
+	POL_home_army = {
+		name = POL_home_army
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/POL/POL_home_army.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism_partisan_movement_subtype
+			desc = "POLITICS_POL_HOME_ARMY_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	POL_Alfred_Urbanski = {
+		name = POL_Alfred_Urbanski
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/POL/Portrait_POL_Alfred_Urbanski.dds"
+			}
+		}
+		country_leader = {
+			ideology = progressivism_reformist_socialism_subtype
+			desc = "ALFRED_URBANSKI_POLAND_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	POL_Kazimierz_Puczynski = {
+		name = POL_Kazimierz_Puczynski
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/POL/POL_Kazimierz_Puczynski.dds"
+			}
+		}
+		country_leader = {
+			ideology = socialist_syndicalism_subtype
+			desc = "POLITICS_POL_Kazimierz_Puczynski_DESC"
+			expire = "1999.1.1"
+			id = -1
+		}
+	}
+	
+	# Ministers #
+	
+	POL_Edward_Gierek = {
+		name = "POL_Edward_Gierek"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POL_minister_Edward_Gierek"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = POL_Edward_Gierek_hog
+			allowed = { original_tag = POL }
+			traits = {
+				head_of_government
+				hog_respected_war_hero
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	POL_Edward_Raczynski = {
+		name = "POL_Edward_Raczynski"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POL_minister_Edward_Raczyński"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = POL_Edward_Raczynski_for
+			allowed = { original_tag = POL }
+			traits = {
+				foreign_minister
+				for_seasoned_ambassador
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	POL_Kazimierz_Sabbat = {
+		name = "POL_Kazimierz_Sabbat"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POL_minister_Kazimierz_Sabbat"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = POL_Kazimierz_Sabbat_eco
+			allowed = { original_tag = POL }
+			traits = {
+				economy_minister
+				eco_reformer
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+	POL_Swiatlo_Jozef = {
+		name = "POL_Swiatlo_Jozef"
+		portraits = {
+			civilian = {
+				small = "GFX_idea_POL_minister_Swiatlo_Jozef"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = POL_Swiatlo_Jozef_sec
+			allowed = { original_tag = POL }
+			traits = {
+				security_minister
+				sec_crime_fighter
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

@@ -1,0 +1,116 @@
+RUS_start_vladivostok_conference = {
+	set_variable = { JAP_lote_leverage = 20 }
+	set_variable = { JAP_compare_leverage = 30 }
+	set_variable = { RUS_lote_leverage = 30 }
+	set_variable = { RUS_compare_leverage = 40 }
+	set_country_flag = RUS_lord_of_the_east_flag
+	set_variable = { RUS_manchurian_partisan_effectiveness = 10 }
+	if = {
+		limit = {
+			RUS = {
+				owns_state = 1364
+				owns_state = 1646
+				owns_state = 1647
+			}
+		}
+		activate_mission = RUS_issue_of_primorsky
+		set_country_flag = RUS_issue_of_primorsky
+		set_country_flag = RUS_lote_round_1_won
+		custom_effect_tooltip = RUS_lote_won_birobidzhan_tt
+	}
+	else = {
+		activate_mission = RUS_issue_of_birobidzhan
+		set_country_flag = RUS_issue_of_birobidzhan
+	}
+}
+
+RUS_end_vladivostok_conference = {
+	clear_variable = JAP_lote_leverage
+	clear_variable = JAP_compare_leverage
+	clear_variable = RUS_lote_leverage 
+	clear_variable = RUS_compare_leverage 
+	clr_country_flag = RUS_issue_of_birobidzhan
+	clr_country_flag = RUS_issue_of_primorsky
+	clr_country_flag = RUS_issue_of_vladivostok
+	clr_country_flag = RUS_lord_of_the_east_flag
+	clr_country_flag = RUS_met_with_JAP
+	clr_country_flag = RUS_met_with_USA
+	clear_variable = RUS_manchurian_partisan_effectiveness
+	custom_effect_tooltip = RUS_lote_conference_end_tt
+}
+
+RUS_lote_increase_leverage = {
+	if = {
+		limit = {
+			check_variable = { temp_leverage < 0 }
+		}
+		multiply_temp_variable = { temp_leverage = -1 }
+		subtract_from_variable = { RUS_lote_leverage = temp_leverage }
+		custom_effect_tooltip = RUS_lote_leverage_decrease_tt
+	}
+	else = {
+		add_to_variable = { RUS_lote_leverage = temp_leverage }
+		custom_effect_tooltip = RUS_lote_leverage_increase_tt
+	}
+	set_variable = { RUS_compare_leverage = RUS_lote_leverage }
+	add_to_variable = { RUS_compare_leverage = 10 }
+	
+	JAP = {
+		set_variable = { RUS_compare_leverage = RUS_lote_leverage }
+		add_to_variable = { RUS_compare_leverage = 10 }
+	}
+}
+
+JAP_lote_increase_leverage = {
+	if = {
+		limit = {
+			check_variable = { temp_leverage < 0 }
+		}
+		multiply_temp_variable = { temp_leverage = -1 }
+		subtract_from_variable = { JAP_lote_leverage = temp_leverage }
+		custom_effect_tooltip = JAP_lote_leverage_decrease_tt
+	}
+	else = {
+		add_to_variable = { JAP_lote_leverage = temp_leverage }
+		custom_effect_tooltip = JAP_lote_leverage_increase_tt
+	}
+	set_variable = { RUS_compare_leverage = RUS_lote_leverage }
+	add_to_variable = { RUS_compare_leverage = 10 }
+	
+	JAP = {
+		set_variable = { JAP_compare_leverage = JAP_lote_leverage }
+		add_to_variable = { JAP_compare_leverage = 10 }
+	}
+}
+
+RUS_lote_japan_actions = {
+	hidden_effect = {
+		random_list = {
+			25 = {
+				activate_mission = RUS_lote_japan_is_exercising
+				modifier = {
+					factor = 2
+					JAP = {
+						divisions_in_state = {
+							size > 10
+							state = 657
+						}
+					}
+				}
+			}
+			25 = {
+				activate_mission = RUS_lote_japan_is_bribing
+			}
+			25 = {
+				activate_mission = RUS_lote_japan_is_hunting_partisans
+				add_to_variable = { rus_lote_jap_suspicion = 40 }
+				modifier = {
+					add = rus_lote_jap_suspicion
+				}
+			}
+			25 = {
+				activate_mission = RUS_lote_japan_is_enticing_corps
+			}
+		}
+	}
+}

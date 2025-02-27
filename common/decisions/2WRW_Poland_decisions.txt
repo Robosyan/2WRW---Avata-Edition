@@ -1,0 +1,95 @@
+SWRW_Poland_category = {
+	
+	POL_demand_german_surrender = {
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		allowed = {
+			original_tag = POL
+		}
+			
+		visible = {
+			country_exists = POL
+			has_global_flag = RUS_krakow_uprising
+		}
+		
+		available = {
+			OR = {
+				GGN = { has_capitulated = yes }
+				NOT = {
+					country_exists = GGN
+					country_exists = OZW
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		#cost = 35
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: POL_demand_german_surrender "
+			
+			hidden_effect = {
+				annex_country = {
+					target = GGN
+					transfer_troops = no
+				}
+				
+				set_capital = { state = 10 }
+			
+				clr_global_flag = RUS_krakow_uprising
+				
+				RUS = { clr_country_flag = RUS_PROXY_WAR }
+				
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.6 days = 1 } }
+				set_country_flag = POL_p2
+			}
+		}
+	}
+	
+	POL_invite_the_exiles = {
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		allowed = {
+			original_tag = POL
+		}
+			
+		visible = {
+			NOT = { has_global_flag = RUS_krakow_uprising }
+			has_country_flag = POL_p2
+			OR = {
+				has_global_flag = SWRW_2GCW_REG_winner
+				POL = { is_in_faction_with = RUS }
+			}
+		}
+
+		fire_only_once = yes
+		#days_re_enable = 75
+		#cost = 50
+		days_remove = 31
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: POL_invite_the_exiles "
+			every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.8 days = 1 } }
+			RUS_shukshin_return_of_the_exiles = yes
+			if = {
+				limit = { NOT = { has_global_flag = SWRW_2GCW_happened } }
+				econ_join_sphere_RUS = yes
+				RUS = { add_to_faction  = POL }
+				POL = {
+					if = {
+					limit = { POL = { is_in_faction_with = USA } }	
+						add_ideas = OFN_Independent_Member
+					}
+					else = { add_ideas = CSTO_Member }
+				}
+			}	
+		}
+	}
+}

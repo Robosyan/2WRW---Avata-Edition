@@ -1,0 +1,144 @@
+# Notes:
+# SL_has_northern_winter and SL_has_southern_winter, state flags for nations that have winter GFX.
+
+on_actions = {
+	on_startup = {
+		effect = {	
+            # Kamchatka
+            637 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 801 }
+            }
+            # Omolon
+            644 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 802 }
+            }
+            # Magadan
+            562 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 803 }
+            }
+            # Amur
+            561 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 804 }
+            }
+            # Chita
+            563 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 805 }
+            }
+            # Ulan-Ude
+            564 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 806 }
+            }
+            # Irkutsk
+            566 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 807 }
+            }
+            # Kansk
+            568 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 808 }
+            }
+            # Kemerovo
+            569 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 809 }
+            }
+            # Krasnoyarsk
+            757 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 810 }
+            }
+            # Tomsk
+            578 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 811 }
+            }
+            # Novosibirsk
+            570 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 812 }
+            }
+            # Vorkuta
+            863 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 813 }
+            }
+            # Sverdlovsk
+            653 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 814 }
+            }
+            # Tyumen
+            403 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 815 }
+            }
+            # Zlatoust
+            573 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 816 }
+            }
+            # Chelyabinsk
+            754 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 817 }
+            }
+            # Omsk
+            571 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 818 }
+            }
+            # Orenburg
+            652 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 819 }
+            }
+            # Magnitogorsk
+            582 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 820 }
+            }
+            # Samara
+            850 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 821 }
+            }
+            # Permhaym
+            753 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 822 }
+            }
+            # Kazan
+            249 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 823 }
+            }
+            # Gorky
+            252 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 824 }
+            }
+            # Vyatka
+            400 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 825 }
+            }
+            # Syktyvkar
+            397 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 826 }
+            }
+            # Arkhangelsk
+            214 = {
+                add_to_array = { global.state_with_lore = THIS.id }
+                add_to_array = { lore_entries = 827 }
+            }
+		}
+	}
+}

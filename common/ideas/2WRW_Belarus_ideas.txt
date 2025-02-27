@@ -1,0 +1,28 @@
+ideas = {
+	country = {
+		BLR_a_simple_life = { #
+			picture = BLR_a_simple_life
+			modifier = {
+				monthly_population = 0.15
+				stability_factor = 0.10
+				annual_gdp_growth_factor = -0.15
+				consumer_goods_use_modifier = -0.05
+			}
+		}
+		BLR_industrial_reforms = { #
+			picture = BLR_industrial_reforms
+			modifier = {
+				civilian_annual_cost = 0.05
+				gdp_growth_modifier = 1.5
+				industrial_equipment_monthly_rate = 1.50
+			}
+		}
+		BLR_educational_reforms = { #
+			picture = BLR_educational_reforms
+			modifier = {
+				academic_base_monthly_rate = 2.25
+				research_speed_factor = 0.05
+			}
+		}
+	}
+}

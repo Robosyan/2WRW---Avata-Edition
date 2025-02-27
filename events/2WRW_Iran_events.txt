@@ -1,0 +1,30 @@
+# Shahdom of Iran #
+
+add_namespace = IRC_russia
+
+country_event = { # The Shahdom aligns with the Russian Federation - Shukshin
+	id = IRC_russia.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event IRC_russia.1"}
+	title = IRC_russia.1.t
+	desc = IRC_russia.1.desc
+	picture = GFX_report_event_RUS_russians
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = IRC_russia.1.a
+		hidden_effect = {
+			if = {
+				limit = { RUS = { is_in_faction = yes } }
+				RUS = { add_to_faction = IRC }
+				IRC = { 
+					add_ideas = CSTO_Member
+					econ_join_sphere_RUS = yes
+				}
+			}
+			else = {
+				set_global_flag = shukshin_victory_iran
+			}
+		}
+	}
+}

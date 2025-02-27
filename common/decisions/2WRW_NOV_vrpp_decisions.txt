@@ -1,0 +1,1922 @@
+NOV_VRPP_megacorp_influence_deccat = {
+	NOV_Megacorp_Crisis = {
+		icon = GFX_decision_clock
+		allowed = { tag = NOV }
+		visible = { 
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+			vrpp_megacorp_crisis = yes
+			has_country_flag = NOV_VRPP_GUI_1_VRPP
+		}
+		cancel_trigger = {
+			NOT = { vrpp_megacorp_crisis = yes }
+		}
+		available = { always = no }
+		activation = { 
+			vrpp_megacorp_crisis = yes 
+			has_country_flag = NOV_VRPP_GUI_1_VRPP
+		}
+		is_good = no
+		fire_only_once = no
+		days_mission_timeout = 60
+		timeout_effect = {
+			custom_effect_tooltip = SWRW_NOV_Megacorp_Crisis_tt
+			hidden_effect = {
+				country_event = { id = VRPP.10 days = 4 }
+			}
+			set_temp_variable = { temp_loyalty = 10 }
+			NOV_VRPP_increase_megacorp_loyalty = yes
+			set_temp_variable = { temp_influence = 5 }		
+			NOV_VRPP_increase_megacorp_influence = yes
+		}
+	}
+	NOV_Megacorp_Demands = {
+		icon = GFX_decision_document_target
+		allowed = { tag = NOV }
+		visible = { 
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+			has_country_flag = NOV_Megacorp_Demanding 
+			has_country_flag = NOV_VRPP_GUI_1_VRPP
+		}
+		available = { vrpp_megacorp_gone = yes }
+		activation = { 
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+			has_country_flag = NOV_Megacorp_Demanding 
+			has_country_flag = NOV_VRPP_GUI_1_VRPP
+		}
+		is_good = no
+		fire_only_once = no
+		days_mission_timeout = 120
+		cancel_if_not_visible = yes
+		timeout_effect = {
+			custom_effect_tooltip = SWRW_NOV_VRPP_Megacorp_Demands_tt
+			hidden_effect = {
+				activate_mission = NOV_Megacorp_Demands
+				if = {
+					limit = {
+						check_variable = { mike < GDP }
+					}
+					set_variable_to_random = {
+						var = temp_loyalty
+						min = 6
+						max = 10
+						integer = yes
+					}
+					NOV_VRPP_increase_megacorp_loyalty = yes
+				}
+				else_if = {
+					limit = {
+						check_variable = { mike > GDP }
+					}
+					set_variable_to_random = {
+						var = temp_loyalty
+						min = -12
+						max = -8
+						integer = yes
+					}
+					NOV_VRPP_increase_megacorp_loyalty = yes
+				}
+			}
+		}
+		complete_effect = { }
+	}
+	NOV_VRPP_grant_favourable_loans = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+		}
+		available = { NOT = { has_country_flag = NOV_DSPR_Switch } }
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 90
+		days_re_enable = 30
+		cost = 10
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_grant_favourable_loans"
+			set_temp_variable = { inflation_temp = 0.2 }
+			econ_inflation_change = yes
+		}
+		modifier = {
+			gdp_growth_modifier = 0.5
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_grant_favourable_loans"
+			set_temp_variable = { inflation_temp = -0.1 }
+			econ_inflation_change = yes	
+			set_temp_variable = { temp_influence = 5 }		
+			NOV_VRPP_increase_megacorp_influence = yes
+		}
+	}
+	NOV_VRPP_temporary_tax_breaks = {
+		icon = GFX_decision_generic_economy_graph
+		visible = { 
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+		}
+		available = { NOT = { has_country_flag = NOV_DSPR_Switch } }
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 100
+		days_re_enable = 50
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_temporary_tax_breaks"
+		}
+		modifier = {
+			business_tax_rate_modifier = -0.1
+			gdp_growth_modifier = 0.4
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_temporary_tax_breaks"	
+			set_temp_variable = { temp_influence = 10 }		
+			NOV_VRPP_increase_megacorp_influence = yes	
+		}
+	}
+	NOV_VRPP_divert_state_funds = {
+		icon = GFX_decision_generic_money
+		visible = { 
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+		}
+		available = { NOT = { has_country_flag = NOV_DSPR_Switch } }
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 60
+		days_re_enable = 60
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_divert_state_funds"
+			set_temp_variable = { temp_econ_spending_amount = 0.02 }
+			econ_spend_money_once_effect_raw_money = yes
+		}
+		modifier = {
+			gdp_growth_modifier = 0.3
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_divert_state_funds"
+			set_temp_variable = { temp_influence = 8 }		
+			NOV_VRPP_increase_megacorp_influence = yes
+		}
+	}
+	NOV_VRPP_lease_state_owned_resource_companies = {
+		icon = GFX_decision_oil_icon
+		visible = { 
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+		}
+		available = { NOT = { has_country_flag = NOV_DSPR_Switch } }
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 120
+		days_re_enable = 60
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_lease_state_owned_resource_companies"
+			set_temp_variable = { money_reserves_temp = 0.04 }
+			econ_money_reserves_change_raw_money = yes
+		}
+		modifier = {
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_lease_state_owned_resource_companies"
+			set_temp_variable = { temp_influence = 5 }
+			set_temp_variable = { target = 1 }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+			set_temp_variable = { temp_loyalty = 5 }
+			set_temp_variable = { target = 1 }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes			
+		}
+	}
+	NOV_VRPP_provide_lucrative_arms_contracts = {
+		icon = GFX_decision_generic_prepare_civil_war
+		visible = { 
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+		}
+		available = { NOT = { has_country_flag = NOV_DSPR_Switch } }
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 90
+		days_re_enable = 45
+		cost = 35
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_provide_lucrative_arms_contracts"
+			set_temp_variable = { temp_econ_spending_amount = 0.025 }
+			econ_spend_money_once_effect_raw_money = yes
+		}
+		modifier = {
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_provide_lucrative_arms_contracts"	
+			set_temp_variable = { temp_influence = 5 }
+			set_temp_variable = { target = 0 }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+			set_temp_variable = { temp_loyalty = 10 }
+			set_temp_variable = { target = 0 }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes	
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "No Step Back"
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = MBT_equipment_2
+					amount = 100
+					producer = NOV
+				}
+				add_equipment_to_stockpile = {
+					type = APC_equipment_2
+					amount = 250
+					producer = NOV
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				add_equipment_to_stockpile = {
+					type = MBT_chassis
+					amount = 100
+					producer = NOV
+				}
+				add_equipment_to_stockpile = {
+					type = APC_chassis
+					amount = 250
+					producer = NOV
+				}
+			}
+		}
+	}
+	NOV_VRPP_titan_scholarship_program = {
+		icon = GFX_decision_category_generic_education
+		visible = { 
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+		}
+		available = { NOT = { has_country_flag = NOV_DSPR_Switch } }
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 130
+		days_re_enable = 120
+		cost = 40
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_provide_lucrative_arms_contracts"
+			set_temp_variable = { temp_econ_spending_amount = 0.01 }
+			econ_spend_money_once_effect_raw_money = yes
+		}
+		modifier = {
+			academic_base_monthly_rate = 1.5
+			research_facilities_monthly_rate = 0.5
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_provide_lucrative_arms_contracts"		
+			set_temp_variable = { temp_influence = 10 }
+			set_temp_variable = { target = 2 }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+			set_temp_variable = { temp_loyalty = 5 }
+			set_temp_variable = { target = 2 }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes
+		}
+	}
+	NOV_Megacorp_Resisting = {
+		icon = GFX_decision_document_target
+		allowed = { tag = NOV }
+		visible = { 
+			has_country_flag = NOV_DSPR_Switch
+			has_country_flag = NOV_VRPP_GUI_1
+		}
+		available = { 
+			dspr_feniks_ded = yes
+			dspr_sibir_ded = yes
+			dspr_titan_ded = yes
+		}
+		activation = { 
+			has_country_flag = NOV_DSPR_Switch
+			has_country_flag = NOV_VRPP_GUI_1
+		}
+		is_good = no
+		fire_only_once = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			custom_effect_tooltip = NOV_Megacorp_Resisting_tt
+			hidden_effect = {
+				activate_mission = NOV_Megacorp_Resisting
+				if = {
+					limit = {
+						NOT = { has_country_flag = NOV_DSPR_Feniks_Dismantled }
+					}
+					set_temp_variable = { temp_influence = 10 }
+					set_temp_variable = { target = 0 }
+					NOV_VRPP_increase_specific_megacorp_influence = yes
+					set_temp_variable = { temp_loyalty = 10 }
+					set_temp_variable = { target = 0 }
+					NOV_VRPP_increase_specific_megacorp_loyalty = yes
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = NOV_DSPR_Sibir_Dismantled }
+					}
+					set_temp_variable = { temp_influence = 10 }
+					set_temp_variable = { target = 1 }
+					NOV_VRPP_increase_specific_megacorp_influence = yes
+					set_temp_variable = { temp_loyalty = 10 }
+					set_temp_variable = { target = 1 }
+					NOV_VRPP_increase_specific_megacorp_loyalty = yes
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = NOV_DSPR_Titan_Dismantled }
+					}
+					set_temp_variable = { temp_influence = 10 }
+					set_temp_variable = { target = 2 }
+					NOV_VRPP_increase_specific_megacorp_influence = yes
+					set_temp_variable = { temp_loyalty = 10 }
+					set_temp_variable = { target = 2 }
+					NOV_VRPP_increase_specific_megacorp_loyalty = yes
+				}
+			}
+
+		}
+		complete_effect = { }
+	}
+	NOV_DSPR_generic_folder = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { dspr_dismantling = yes }
+		ai_will_do = {
+			factor = 30
+		}
+		days_re_enable = 1
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOV_DSPR_Generic
+				}
+				clr_country_flag = NOV_DSPR_Generic
+			}
+			else = {
+				set_country_flag = NOV_DSPR_Generic
+			}
+		}
+		remove_effect = {
+		}
+	}
+	NOV_DSPR_generic = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			has_country_flag = NOV_DSPR_Generic
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { always = no }
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 90
+		days_re_enable = 30
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	NOV_DSPR_generic_target_feniks = {
+		visible = { 
+			has_country_flag = NOV_DSPR_Generic
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { dspr_dismantling = yes }
+		days_re_enable = 1
+		complete_effect = {
+			if = {
+				limit = { NOT = { has_country_flag = DSPR_Selected } }
+				set_country_flag = DSPR_Selected
+			}
+			set_variable = { dspr_decision_target = 0 }
+		}
+	}
+	NOV_DSPR_generic_target_sibir = {
+		visible = { 
+			has_country_flag = NOV_DSPR_Generic
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { dspr_dismantling = yes }
+		days_re_enable = 1
+		complete_effect = {
+			if = {
+				limit = { NOT = { has_country_flag = DSPR_Selected } }
+				set_country_flag = DSPR_Selected
+			}
+			set_variable = { dspr_decision_target = 1 }
+		}
+	}
+	NOV_DSPR_generic_target_titan = {
+		visible = { 
+			has_country_flag = NOV_DSPR_Generic
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { dspr_dismantling = yes }
+		days_re_enable = 1
+		complete_effect = {
+			if = {
+				limit = { NOT = { has_country_flag = DSPR_Selected } }
+				set_country_flag = DSPR_Selected
+			}
+			set_variable = { dspr_decision_target = 2 }
+		}
+	}
+	NOV_DSPR_sway_public_opinion = {
+		icon = GFX_decision_category_generic_propaganda
+		visible = { 
+			has_country_flag = NOV_DSPR_Generic
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = {
+			dspr_dismantling = yes
+			dspr_selected = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_re_enable = 15
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_sway_public_opinion"
+			set_temp_variable = { temp_loyalty = -7.5 }
+			set_temp_variable = { target = dspr_decision_target }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes
+		}
+	}
+	NOV_DSPR_root_out_political_corruption = {
+		icon = GFX_decision_generic_investigate
+		visible = { 
+			has_country_flag = NOV_DSPR_Generic
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = {
+			dspr_dismantling = yes
+			dspr_selected = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_re_enable = 15
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_root_out_political_corruption"
+			set_temp_variable = { temp_influence = -7.5 }
+			set_temp_variable = { target = dspr_decision_target }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+			add_stability = -0.025
+		}
+	}
+	NOV_DSPR_expose_corporate_scandals = {
+		icon = GFX_decision_generic_political_discourse
+		visible = { 
+			has_country_flag = NOV_DSPR_Generic
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = {
+			dspr_dismantling = yes
+			dspr_selected = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_re_enable = 35
+		cost = 125
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_expose_corporate_scandals"
+			set_temp_variable = { temp_loyalty = -12.5 }
+			set_temp_variable = { target = dspr_decision_target }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes
+			add_stability = -0.05
+			TNO_worsen_admin_efficiency_low = yes
+		}
+	}
+	NOV_DSPR_slash_federal_funding = {
+		icon = GFX_decision_document_cancel
+		visible = { 
+			has_country_flag = NOV_DSPR_Generic
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = {
+			dspr_dismantling = yes
+			dspr_selected = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_re_enable = 42
+		cost = 150
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_slash_federal_funding"
+			set_temp_variable = { temp_influence = -12.5 }
+			set_temp_variable = { target = dspr_decision_target }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+			add_stability = -0.05
+			TNO_worsen_poverty_low = yes
+		}
+	}
+	NOV_DSPR_sibir_folder = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { dspr_dismantling = yes }
+		ai_will_do = {
+			factor = 30
+		}
+		days_re_enable = 1
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOV_DSPR_Sibir
+				}
+				clr_country_flag = NOV_DSPR_Sibir
+			}
+			else = {
+				set_country_flag = NOV_DSPR_Sibir
+			}
+		}
+		remove_effect = {
+		}
+	}
+	NOV_DSPR_sibir = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			has_country_flag = NOV_DSPR_Sibir
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { always = no }
+		ai_will_do = {
+			factor = 30
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	NOV_DSPR_sponsor_the_patriot_pantry = {
+		icon = GFX_decision_category_supply
+		visible = { 
+			has_country_flag = NOV_DSPR_Sibir
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { 
+			dspr_dismantling = yes 
+			dspr_sibir_1 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_sponsor_the_patriot_pantry"
+			set_temp_variable = { temp_loyalty = -20 }
+			set_temp_variable = { target = 1 }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes
+			set_temp_variable = { temp_influence = -15 }
+			set_temp_variable = { target = 1 }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+			TNO_improve_poverty_low = yes
+		}
+	}
+	NOV_DSPR_investigate_executive_treason = {
+		icon = GFX_decision_arrest
+		visible = { 
+			has_country_flag = NOV_DSPR_Sibir
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { 
+			dspr_dismantling = yes 
+			dspr_sibir_2 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_investigate_executive_treason"
+			set_temp_variable = { temp_loyalty = -35 }
+			set_temp_variable = { target = 1 }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes
+			set_temp_variable = { temp_influence = -25 }
+			set_temp_variable = { target = 1 }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+			add_stability = -0.075
+		}
+	}
+	NOV_DSPR_prosecute_the_implicated = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			has_country_flag = NOV_DSPR_Sibir
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { 
+			dspr_dismantling = yes 
+			dspr_sibir_3 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 25
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_prosecute_the_implicated"
+			add_stability = 0.1
+			set_country_flag = DSPR_Sibir_Dismantle
+			custom_effect_tooltip = DSPR_Dismantlement_tt_1
+		}
+	}
+	NOV_DSPR_titan_folder = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { dspr_dismantling = yes }
+		ai_will_do = {
+			factor = 30
+		}
+		days_re_enable = 1
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOV_DSPR_Titan
+				}
+				clr_country_flag = NOV_DSPR_Titan
+			}
+			else = {
+				set_country_flag = NOV_DSPR_Titan
+			}
+		}
+		remove_effect = {
+		}
+	}
+	NOV_DSPR_titan = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			has_country_flag = NOV_DSPR_Titan
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { always = no }
+		ai_will_do = {
+			factor = 30
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	NOV_DSPR_infiltrate_the_academia = {
+		icon = GFX_decision_generic_education
+		visible = { 
+			has_country_flag = NOV_DSPR_Titan
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { 
+			dspr_dismantling = yes 
+			dspr_titan_1 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 20
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_infiltrate_the_academia"
+			set_temp_variable = { temp_loyalty = -20 }
+			set_temp_variable = { target = 2 }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes
+			set_temp_variable = { temp_influence = -15 }
+			set_temp_variable = { target = 2 }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+			TNO_worsen_research_facilities_low = yes
+		}
+	}
+	NOV_DSPR_reveal_exorbitant_spending = {
+		icon = GFX_decision_document_target
+		visible = { 
+			has_country_flag = NOV_DSPR_Titan
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { 
+			dspr_dismantling = yes 
+			dspr_titan_2 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_reveal_exorbitant_spending"
+			set_temp_variable = { temp_loyalty = -35 }
+			set_temp_variable = { target = 2 }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes
+			set_temp_variable = { temp_influence = -15 }
+			set_temp_variable = { target = 2 }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+		}
+	}
+	NOV_DSPR_nationalise_the_think_tanks = {
+		icon = GFX_decision_category_generic_education
+		visible = { 
+			has_country_flag = NOV_DSPR_Titan
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { 
+			dspr_dismantling = yes 
+			dspr_titan_3 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 90
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_nationalise_the_think_tanks"
+			add_stability = 0.075
+			add_political_power = 100
+			set_country_flag = DSPR_Titan_Dismantle
+			custom_effect_tooltip = DSPR_Dismantlement_tt_2
+		}
+	}
+	NOV_DSPR_feniks_folder = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { dspr_dismantling = yes }
+		ai_will_do = {
+			factor = 30
+		}
+		days_re_enable = 1
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = NOV_DSPR_Feniks
+				}
+				clr_country_flag = NOV_DSPR_Feniks
+			}
+			else = {
+				set_country_flag = NOV_DSPR_Feniks
+			}
+		}
+		remove_effect = {
+		}
+	}
+	NOV_DSPR_feniks = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			has_country_flag = NOV_DSPR_Feniks
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { always = no }
+		ai_will_do = {
+			factor = 30
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	NOV_DSPR_look_into_their_closet = {
+		icon = GFX_decision_OMS_assassinate_batov
+		visible = { 
+			has_country_flag = NOV_DSPR_Feniks
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { 
+			dspr_dismantling = yes 
+			dspr_feniks_1 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_look_into_their_closet"
+			set_temp_variable = { temp_loyalty = -20 }
+			set_temp_variable = { target = 0 }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes
+			set_temp_variable = { temp_influence = -15 }
+			set_temp_variable = { target = 0 }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+			TNO_worsen_admin_efficiency_low = yes
+		}
+	}
+	NOV_DSPR_expose_the_manchurian_operation = {
+		icon = GFX_decision_category_corruption_generic
+		visible = { 
+			has_country_flag = NOV_DSPR_Feniks
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { 
+			dspr_dismantling = yes 
+			dspr_feniks_2 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_expose_the_manchurian_operation"
+			set_temp_variable = { temp_loyalty = -35 }
+			set_temp_variable = { target = 0 }
+			NOV_VRPP_increase_specific_megacorp_loyalty = yes
+			set_temp_variable = { temp_influence = -25 }
+			set_temp_variable = { target = 0 }
+			NOV_VRPP_increase_specific_megacorp_influence = yes
+			add_stability = -0.15
+		}
+	}
+	NOV_DSPR_break_the_trusts = {
+		icon = GFX_decision_generic_use_force
+		visible = { 
+			has_country_flag = NOV_DSPR_Feniks
+			has_country_flag = NOV_DSPR_Switch
+		}
+		available = { 
+			dspr_dismantling = yes 
+			dspr_feniks_3 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 25
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_DSPR_break_the_trusts"
+			add_stability = 0.2
+			add_political_power = 150
+			set_country_flag = DSPR_Feniks_Dismantle
+			custom_effect_tooltip = DSPR_Dismantlement_tt_3
+		}
+	}
+}
+
+NOV_VRPP_media_category = {
+	NOV_VRPP_Media_Fortnightly_Gain = {
+		icon = GFX_decision_document_target
+		allowed = { tag = NOV }
+		visible = { 
+			has_country_flag = NOV_VRPP_GUI_2
+		}
+		available = { always = no }
+		activation = { 
+			has_country_flag = NOV_VRPP_GUI_2
+		}
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 14
+		timeout_effect = {
+			custom_effect_tooltip = NOV_VRPP_Media_Fortnightly_Gain_tt
+			activate_mission = NOV_VRPP_Media_Fortnightly_Gain
+			set_temp_variable = { temp_legal_strength = 2.5 }
+			NOV_VRPP_Legal_Strength_Change_all = yes
+			set_temp_variable = { temp_market_share = -0.5 }
+			NOV_VRPP_Market_Share_Change = yes
+			hidden_effect = {
+				add_to_variable = { Nov_Media_Budget = NOV_Fortnightly_Profit }
+				clr_country_flag = NOV_Recently_Blackmailed
+			}
+		}
+		complete_effect = { }
+	}
+	NOV_VRPP_grab_money_from_the_nmg = {
+		icon = GFX_decision_category_corruption_generic
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 30
+		days_re_enable = 15
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_grab_money_from_the_nmg"
+			add_stability = -0.01
+		}
+		modifier = {
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_invest_into_the_nmg"
+			set_temp_variable = { Siphon_Amount = Nov_Media_Budget }
+			divide_temp_variable = { Siphon_Amount = 5 }
+			set_temp_variable = { Siphon_Helper = 0 }
+			subtract_from_temp_variable = { Siphon_Helper = Siphon_Amount }
+			set_temp_variable = { temp_budget = Siphon_Helper }
+			NOV_VRPP_Budget_Change = yes
+			divide_temp_variable = { Siphon_Amount = 1000 }
+			set_temp_variable = { money_reserves_temp = Siphon_Amount }
+			econ_money_reserves_change_raw_money = yes
+		}
+	}
+	NOV_VRPP_invest_into_the_nmg = {
+		icon = GFX_decision_category_corruption_generic
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 28
+		days_re_enable = 60
+		cost = 35
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_invest_into_the_nmg"
+			set_temp_variable = { temp_debt = national_debt }
+			divide_temp_variable = { temp_debt = 200 }
+			set_temp_variable = { temp_econ_spending_amount = temp_debt }
+			econ_spend_money_once_effect_raw_money = yes
+			set_temp_variable = { temp_storer = temp_debt }
+			multiply_temp_variable = { temp_storer = 1000 }
+			set_temp_variable = { temp_budget = temp_storer }
+			NOV_VRPP_Budget_Change = yes
+		}
+		modifier = {
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_invest_into_the_nmg"
+			set_temp_variable = { temp_total = NOV_Fortnightly_Profit }
+			divide_temp_variable = { temp_total = 20 }
+			set_temp_variable = { temp_fortnightly_budget = temp_total }
+			NOV_VRPP_Fortnightly_Budget_Change = yes
+		}
+	}
+	NOV_VRPP_conduct_customer_survey = {
+		icon = GFX_decision_category_generic_document
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 21
+		days_re_enable = 60
+		cost = 20
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_conduct_customer_survey"
+		}
+		modifier = {
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_conduct_customer_survey"
+			set_temp_variable = { temp_total = NOV_Fortnightly_Profit }
+			divide_temp_variable = { temp_total = 50 }
+			set_temp_variable = { temp_fortnightly_budget = temp_total }
+			NOV_VRPP_Fortnightly_Budget_Change = yes
+		}
+	}
+	NOV_VRPP_copy_american_game_shows = {
+		icon = GFX_decision_generic_USA_aid
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 21
+		days_re_enable = 90
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_copy_american_game_shows"
+			set_temp_variable = { temp_total = Nov_Media_Budget }
+			divide_temp_variable = { temp_total = 20 }
+			set_temp_variable = { temp_storer = 0 }
+			subtract_from_temp_variable = { temp_storer = temp_total }
+			set_temp_variable = { temp_budget = temp_storer }
+			NOV_VRPP_Budget_Change = yes
+		}
+		modifier = {
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_copy_american_game_shows"
+			set_temp_variable = { temp_total = NOV_Fortnightly_Profit }
+			divide_temp_variable = { temp_total = 10 }
+			set_temp_variable = { temp_fortnightly_budget = temp_total }
+			NOV_VRPP_Fortnightly_Budget_Change = yes
+			set_temp_variable = { temp_legal_strength = 5 }
+			NOV_VRPP_Legal_Strength_Change_all = yes
+		}
+	}
+	NOV_VRPP_copy_american_cartoons = {
+		icon = GFX_decision_generic_USA_aid
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 21
+		days_re_enable = 90
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_copy_american_cartoons"
+			set_temp_variable = { temp_total = Nov_Media_Budget }
+			divide_temp_variable = { temp_total = 10 }
+			set_temp_variable = { temp_storer = 0 }
+			subtract_from_temp_variable = { temp_storer = temp_total }
+			set_temp_variable = { temp_budget = temp_storer }
+			NOV_VRPP_Budget_Change = yes
+		}
+		modifier = {
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_copy_american_cartoons"
+			set_temp_variable = { temp_total = NOV_Fortnightly_Profit }
+			divide_temp_variable = { temp_total = 8 }
+			set_temp_variable = { temp_fortnightly_budget = temp_total }
+			NOV_VRPP_Fortnightly_Budget_Change = yes
+			set_temp_variable = { temp_legal_strength = 5 }
+			NOV_VRPP_Legal_Strength_Change_all = yes
+		}
+	}
+	NOV_VRPP_copy_japanese_game_shows = {
+		icon = GFX_decision_generic_JAP_aid
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 21
+		days_re_enable = 90
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_copy_japanese_game_shows"
+			set_temp_variable = { temp_total = Nov_Media_Budget }
+			divide_temp_variable = { temp_total = 20 }
+			set_temp_variable = { temp_storer = 0 }
+			subtract_from_temp_variable = { temp_storer = temp_total }
+			set_temp_variable = { temp_budget = temp_storer }
+			NOV_VRPP_Budget_Change = yes
+		}
+		modifier = {
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_copy_japanese_game_shows"
+			set_temp_variable = { temp_total = NOV_Fortnightly_Profit }
+			divide_temp_variable = { temp_total = 25 }
+			set_temp_variable = { temp_fortnightly_budget = temp_total }
+			NOV_VRPP_Fortnightly_Budget_Change = yes
+			set_temp_variable = { temp_legal_strength = -5 }
+			NOV_VRPP_Legal_Strength_Change_all = yes
+		}
+	}
+	NOV_VRPP_copy_japanese_cartoons = {
+		icon = GFX_decision_generic_JAP_aid
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 21
+		days_re_enable = 90
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_copy_japanese_cartoons"
+			set_temp_variable = { temp_total = Nov_Media_Budget }
+			divide_temp_variable = { temp_total = 10 }
+			set_temp_variable = { temp_storer = 0 }
+			subtract_from_temp_variable = { temp_storer = temp_total }
+			set_temp_variable = { temp_budget = temp_storer }
+			NOV_VRPP_Budget_Change = yes
+		}
+		modifier = {
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_copy_japanese_cartoons"
+			set_temp_variable = { temp_total = NOV_Fortnightly_Profit }
+			divide_temp_variable = { temp_total = 20 }
+			set_temp_variable = { temp_fortnightly_budget = temp_total }
+			NOV_VRPP_Fortnightly_Budget_Change = yes
+			set_temp_variable = { temp_legal_strength = -5 }
+			NOV_VRPP_Legal_Strength_Change_all = yes
+		}
+	}
+	NOV_VRPP_produce_a_war_movie = {
+		icon = GFX_decision_category_usa_intervention_mandate
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 180
+		fire_only_once = yes
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_VRPP_produce_a_war_movie"
+			set_temp_variable = { temp_total = Nov_Media_Budget }
+			divide_temp_variable = { temp_total = 5 }
+			set_temp_variable = { temp_storer = 0 }
+			subtract_from_temp_variable = { temp_storer = temp_total }
+			set_temp_variable = { temp_budget = temp_storer }
+			NOV_VRPP_Budget_Change = yes
+		}
+		modifier = {
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove NOV_VRPP_produce_a_war_movie"
+			set_temp_variable = { temp_total = Nov_Media_Budget }
+			divide_temp_variable = { temp_total = 4 }
+			set_temp_variable = { temp_budget = temp_total }
+			NOV_VRPP_Budget_Change = yes
+			set_temp_variable = { temp_total = NOV_Fortnightly_Profit }
+			divide_temp_variable = { temp_total = 4 }
+			set_temp_variable = { temp_fortnightly_budget = temp_total }
+			NOV_VRPP_Fortnightly_Budget_Change = yes
+			set_temp_variable = { temp_market_share = 5 }
+			NOV_VRPP_Market_Share_Change = yes
+			set_temp_variable = { temp_legal_strength = -10 }
+			NOV_VRPP_Legal_Strength_Change_all = yes
+		}
+	}
+}
+
+NOV_RAPP_space_category = {
+	NOV_RAPP_take_off = {
+		icon = GFX_decision_rockets
+		visible = { 
+			OR = {
+				has_completed_focus = NOV_the_photon_rocket
+				has_completed_focus = NOV_borrow_american_designs
+			}
+		}
+		available = {
+			rapp_rocket = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 3
+		fire_only_once = yes
+		cost = 1
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RAPP_take_off"
+		}
+		remove_effect = {
+			clr_country_flag = NOV_RAPP_Stage_2
+			set_country_flag = NOV_RAPP_Stage_3
+			set_country_flag = NOV_RAPP_Palse_Spending_Pulse
+			hidden_effect = {
+				every_country = { limit = { is_ai = no } news_event = { id = Shukshin_News.1 days = 1 } }
+			}
+		}
+	}
+	NOV_RAPP_build_additional_infrastructure = {
+		icon = GFX_decision_generic_infrastructure
+		visible = { 
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 90
+		days_re_enable = 90
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RAPP_build_additional_infrastructure"
+			set_temp_variable = { temp_spend = 400 }
+			NOV_RAPP_Space_Total_Cost_Change = yes
+			set_temp_variable = { temp_monthly = 2 }
+			NOV_RAPP_Monthly_Change = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_monthly_progress = 1 }
+			NOV_RAPP_Monthly_Progress_Change = yes
+			404 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	NOV_RAPP_ensure_stream_of_supplies = {
+		icon = GFX_decision_generic_consumer_goods
+		visible = { 
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		modifier = {
+			political_power_gain = -0.15
+			consumer_goods_production_factor = 0.05
+		}
+		days_remove = 30
+		days_re_enable = 15
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RAPP_ensure_stream_of_supplies"
+			set_temp_variable = { temp_monthly = 3 }
+			NOV_RAPP_Monthly_Change = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_monthly_progress = 0.5 }
+			NOV_RAPP_Monthly_Progress_Change = yes
+			404 = {
+				set_temp_variable = { state_value_multiplier_temp = 1.03 }
+				econ_state_value_change_multiply_specified_state = yes
+			}
+		}
+	}
+	NOV_RAPP_invite_american_experts = {
+		icon = GFX_decision_generic_USA_aid
+		visible = { 
+		}
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 30
+		days_re_enable = 45
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RAPP_invite_american_experts"
+			set_temp_variable = { temp_monthly = 1 }
+			NOV_RAPP_Monthly_Change = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_progress = 1 }
+			NOV_RAPP_Progress_Change = yes
+		}
+	}
+	NOV_RAPP_develop_site_procedures = {
+		icon = GFX_decision_generic_industry
+		visible = { 
+		}
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		modifier = {
+			political_power_gain = -0.15
+		}
+		days_remove = 60
+		days_re_enable = 30
+		cost = 25
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RAPP_develop_site_procedures"
+			set_temp_variable = { temp_monthly = 1 }
+			NOV_RAPP_Monthly_Change = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_monthly_progress = 0.25 }
+			NOV_RAPP_Monthly_Progress_Change = yes
+			add_political_power = 30
+			add_stability = 0.005
+		}
+	}
+	NOV_RAPP_conscript_military_personnel = {
+		icon = GFX_decision_generic_military_parade
+		visible = { 
+		}
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 75
+		days_re_enable = 30
+		cost = 15
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RAPP_conscript_military_personnel"
+			add_command_power = -20
+			add_manpower = -2000
+		}
+		remove_effect = {
+			set_temp_variable = { temp_monthly_progress = 0.5 }
+			NOV_RAPP_Monthly_Progress_Change = yes
+			add_manpower = 2000
+		}
+	}
+	NOV_RAPP_develop_local_manufactories = {
+		icon = GFX_decision_generic_heavy_industry
+		visible = { 
+		}
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 90
+		days_re_enable = 21
+		cost = 50
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RAPP_develop_local_manufactories"
+			404 = {
+				set_temp_variable = { state_value_multiplier_temp = 1.02 }
+				econ_state_value_change_multiply_specified_state = yes
+			}
+			set_temp_variable = { temp_monthly = 3 }
+			NOV_RAPP_Monthly_Change = yes
+		}
+		remove_effect = {
+			set_temp_variable = { temp_monthly_progress = 1 }
+			NOV_RAPP_Monthly_Progress_Change = yes
+			404 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	NOV_RAPP_Space_Monthly = {
+		icon = GFX_decision_rockets
+		allowed = { tag = NOV }
+		cancel_trigger = { 
+			rapp_rocket_palse = yes
+		}
+		available = {  
+			always = no
+		}
+		activation = { 
+			has_country_flag = NOV_RAPP_GUI
+			NOT = {
+				has_country_flag = NOV_RAPP_Palse_Spending_Pulse
+			}
+		}
+		is_good = yes
+		fire_only_once = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			activate_mission = NOV_RAPP_Space_Monthly
+			set_temp_variable = { temp_progress = RAPP_Space_Monthly }
+			NOV_RAPP_Progress_Change = yes
+			set_temp_variable = { RAPP_Space_Monthly_Cost = temp_spend }
+			NOV_RAPP_Space_Total_Cost_Change = yes
+		}
+		complete_effect = {
+		}
+	}
+	NOV_RAPP_fuck_you_castamir = {
+		icon = GFX_decision_generic_investigate_no
+		visible = { 
+		}
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 150
+		fire_only_once = yes
+		cost = 5
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RAPP_fuck_you_castamir"
+		}
+		remove_effect = {
+			404 = {
+				add_victory_points = {
+					province = 7243
+					value = -10
+				}
+			}
+
+		}
+	}
+}
+
+NOV_RSLP_russia_ofn = {
+	NOV_RSLP_fopo = {
+		icon = GFX_decision_US_congress
+		visible = { 
+		}
+		available = { always = no }
+		ai_will_do = {
+			factor = 30
+		}
+	}
+	NOV_RSLP_showcase_russian_culture = {
+		icon = GFX_decision_generic_russia
+		visible = { 
+		}
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 1
+		days_re_enable = 30
+		cost = 25
+		complete_effect = {
+			add_political_power = 50
+			add_stability = 0.02
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_increase
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = NOV
+					modifier = small_increase
+				}
+			}
+			set_temp_variable = { RSLP_Opinion_Target = 1 }
+			set_temp_variable = { Temp_Opinion = 2.5 }
+			NOV_RSLP_Opinion_Change = yes
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_showcase_russian_culture"
+		}
+	}
+	NOV_RSLP_visit_ofn_military_bases = {
+		icon = GFX_decision_generic_building_army_base
+		visible = { 
+		}
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 1
+		days_re_enable = 30
+		cost = 50
+		complete_effect = {
+			army_experience = 20
+			tno_improve_army_professionalism_low = yes
+			add_opinion_modifier = {
+				target = USA
+				modifier = small_increase
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = NOV
+					modifier = small_increase
+				}
+			}
+			add_opinion_modifier = {
+				target = AST
+				modifier = small_increase
+			}
+			AST = {
+				add_opinion_modifier = {
+					target = NOV
+					modifier = small_increase
+				}
+			}
+			add_opinion_modifier = {
+				target = NZL
+				modifier = small_increase
+			}
+			NZL = {
+				add_opinion_modifier = {
+					target = NOV
+					modifier = small_increase
+				}
+			}
+			set_temp_variable = { RSLP_Opinion_Target = 1 }
+			set_temp_variable = { Temp_Opinion = 5 }
+			NOV_RSLP_Opinion_Change = yes
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_visit_ofn_military_bases"
+		}
+	}
+	NOV_RSLP_tour_free_world = {
+		icon = GFX_decision_generic_military_parade
+		visible = { 
+		}
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		fire_only_once = yes
+		cost = 75
+		complete_effect = {
+			add_political_power = 100
+			add_opinion_modifier = {
+				target = USA
+				modifier = large_increase
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = NOV
+					modifier = large_increase
+				}
+			}
+			add_opinion_modifier = {
+				target = QIN
+				modifier = large_increase
+			}
+			QIN = {
+				add_opinion_modifier = {
+					target = NOV
+					modifier = large_increase
+				}
+			}
+			add_opinion_modifier = {
+				target = IND
+				modifier = large_increase
+			}
+			IND = {
+				add_opinion_modifier = {
+					target = NOV
+					modifier = large_increase
+				}
+			}
+			set_temp_variable = { RSLP_Opinion_Target = 1 }
+			set_temp_variable = { Temp_Opinion = 7.5 }
+			NOV_RSLP_Opinion_Change = yes
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_tour_free_world"
+			hidden_effect = {
+				set_country_flag = NOV_RSLP_Tour
+			}
+		}
+	}
+	NOV_RSLP_expand_trade_links = {
+		icon = GFX_decision_SAF_attract_OFN_business
+		visible = { 
+		}
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 30
+		days_re_enable = 60
+		cost = 100
+		complete_effect = {
+		set_temp_variable = { gdp_growth_temp = 2 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { money_reserves_temp = 0.01 }
+		econ_money_reserves_change_raw_money = yes
+		add_stability = -0.02
+			set_temp_variable = { RSLP_Opinion_Target = 1 }
+			set_temp_variable = { Temp_Opinion = 10 }
+			NOV_RSLP_Opinion_Change = yes
+		log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_expand_trade_links"
+		}
+	}
+	NOV_RSLP_apply_for_ofn = {
+		icon = GFX_decision_generic_USA_aid
+		visible = { 
+		}
+		available = {
+
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		fire_only_once = yes
+		cost = 150
+		complete_effect = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = huge_increase
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = NOV
+					modifier = huge_increase
+				}
+			}
+			add_stability = -0.15
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_apply_for_ofn"
+			hidden_effect = {
+				set_country_flag = NOV_RSLP_OFN
+			}
+		}
+	}
+	NOV_RSLP_vrpp = {
+		icon = GFX_decision_chess_knight_rook_bishop_pawn
+		visible = { 
+			NOT = { rslp_shukshin = yes }
+		}
+		available = { always = no }
+		ai_will_do = {
+			factor = 30
+		}
+	}
+	NOV_RSLP_vrpp_campaign = {
+		icon = GFX_decision_document_target
+		allowed = { tag = NOV }
+		cancel_trigger = { 
+			rslp_shukshin = yes
+		}
+		available = {  
+			always = no
+		}
+		activation = { 
+			has_country_flag = NOV_RSLP_GUI
+			NOT = { rslp_shukshin = yes }
+		}
+		is_good = no
+		fire_only_once = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			activate_mission = NOV_RSLP_dspr_campaign
+			set_temp_variable = { RSLP_Opinion_Target = 2 }
+			set_temp_variable = { Temp_Opinion = -10 }
+			NOV_RSLP_Opinion_Change = yes
+			set_temp_variable = { RSLP_Opinion_Target = 1 }
+			set_temp_variable = { Temp_Opinion = -2.5 }
+			NOV_RSLP_Opinion_Change = yes
+		}
+		complete_effect = { }
+	}
+	NOV_RSLP_meet_with_veterans = {
+		icon = GFX_decision_generic_military_hat
+		visible = { 
+			NOT = { rslp_shukshin = yes }
+		}
+		available = {
+			NOT = { rslp_shukshin = yes }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 1
+		days_re_enable = 30
+		cost = 25
+		complete_effect = {
+			add_political_power = 50
+			add_stability = 0.02
+			set_temp_variable = { RSLP_Opinion_Target = 2 }
+			set_temp_variable = { Temp_Opinion = 2.5 }
+			NOV_RSLP_Opinion_Change = yes
+
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_meet_with_veterans"
+		}
+	}
+	NOV_RSLP_reassure_moderates = {
+		icon = GFX_decision_generic_nationalism
+		visible = { 
+			NOT = { rslp_shukshin = yes }
+		}
+		available = {
+			NOT = { rslp_shukshin = yes }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 1
+		days_re_enable = 30
+		cost = 50
+		complete_effect = {
+			add_stability = 0.04
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.03
+			}
+			set_temp_variable = { RSLP_Opinion_Target = 2 }
+			set_temp_variable = { Temp_Opinion = 5 }
+			NOV_RSLP_Opinion_Change = yes
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_reassure_moderates"
+		}
+	}
+	NOV_RSLP_endorse_pro_ofn_propaganda = {
+		icon = GFX_decision_generic_propaganda
+		visible = { 
+			NOT = { rslp_shukshin = yes }
+		}
+		available = {
+			NOT = { rslp_shukshin = yes }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		days_re_enable = 20
+		cost = 75
+		complete_effect = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.015
+			}		
+			set_temp_variable = { RSLP_Opinion_Target = 2 }
+			set_temp_variable = { Temp_Opinion = 10 }
+			NOV_RSLP_Opinion_Change = yes	
+			set_temp_variable = { RSLP_Opinion_Target = 3 }
+			set_temp_variable = { Temp_Opinion = -2.5 }
+			NOV_RSLP_Opinion_Change = yes	
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_endorse_pro_ofn_propaganda"
+		}
+	}
+	NOV_RSLP_appease_corporate_executives = {
+		icon = GFX_decision_generic_political_action
+		visible = { 
+			NOT = { rslp_shukshin = yes }
+		}
+		available = {
+			NOT = { rslp_shukshin = yes }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		days_re_enable = 20
+		cost = 100
+		complete_effect = {
+			add_stability = -0.07
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.02
+			}		
+			set_temp_variable = { RSLP_Opinion_Target = 2 }
+			set_temp_variable = { Temp_Opinion = 15 }
+			NOV_RSLP_Opinion_Change = yes	
+			set_temp_variable = { RSLP_Opinion_Target = 3 }
+			set_temp_variable = { Temp_Opinion = -5 }
+			NOV_RSLP_Opinion_Change = yes
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_appease_corporate_executives"
+		}
+	}
+	NOV_RSLP_talk_with_shukshin = {
+		icon = GFX_decision_generic_political_discourse
+		visible = { 
+			NOT = { rslp_shukshin = yes }
+		}
+		available = {
+			NOT = { rslp_shukshin = yes }
+			rslp_conservative_100 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		fire_only_once = yes
+		cost = 150
+		complete_effect = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.1
+			}	
+			add_stability = 0.05
+			set_country_flag = NOV_RSLP_SHUKSHIN_TALK
+			set_country_flag = NOV_RSLP_SHUKSHIN
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_talk_with_shukshin"
+		}
+	}
+	NOV_RSLP_dspr = {
+		icon = GFX_decision_generic_workers
+		visible = { 
+			NOT = { rslp_kantorovich = yes }
+		}
+		available = { always = no }
+		ai_will_do = {
+			factor = 30
+		}
+	}
+	NOV_RSLP_dspr_campaign = {
+		icon = GFX_decision_document_target
+		allowed = { tag = NOV }
+		cancel_trigger = { 
+			rslp_kantorovich = yes
+		}
+		available = {  
+			always = no
+		}
+		activation = { 
+			has_country_flag = NOV_RSLP_GUI
+			NOT = { rslp_kantorovich = yes }
+		}
+		is_good = no
+		fire_only_once = no
+		days_mission_timeout = 40
+		timeout_effect = {
+			activate_mission = NOV_RSLP_dspr_campaign
+			set_temp_variable = { RSLP_Opinion_Target = 3 }
+			set_temp_variable = { Temp_Opinion = -10 }
+			NOV_RSLP_Opinion_Change = yes
+			set_temp_variable = { RSLP_Opinion_Target = 1 }
+			set_temp_variable = { Temp_Opinion = -2.5 }
+			NOV_RSLP_Opinion_Change = yes
+		}
+		complete_effect = { }
+	}
+	NOV_RSLP_promise_worker_concessions = {
+		icon = GFX_decision_generic_civil_support
+		visible = { 
+			NOT = { rslp_kantorovich = yes }
+		}
+		available = {
+			NOT = { rslp_kantorovich = yes }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 1
+		days_re_enable = 30
+		cost = 25
+		complete_effect = {
+			add_political_power = 50
+			add_stability = 0.02
+			set_temp_variable = { RSLP_Opinion_Target = 3 }
+			set_temp_variable = { Temp_Opinion = 2.5 }
+			NOV_RSLP_Opinion_Change = yes
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_promise_worker_concessions"
+		}
+	}
+	NOV_RSLP_reach_out_to_the_disenfranchised = {
+		icon = GFX_decision_generic_voting
+		visible = { 
+			NOT = { rslp_kantorovich = yes }
+		}
+		available = {
+			NOT = { rslp_kantorovich = yes }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 1
+		days_re_enable = 30
+		cost = 50
+		complete_effect = {
+			add_popularity = {
+				ideology = progressivism
+				popularity = 0.03
+			}
+			add_stability = 0.04
+			set_temp_variable = { RSLP_Opinion_Target = 3 }
+			set_temp_variable = { Temp_Opinion = 5 }
+			NOV_RSLP_Opinion_Change = yes
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_reach_out_to_the_disenfranchised"
+		}
+	}
+	NOV_RSLP_discredit_radical_communists = {
+		icon = GFX_decision_generic_use_force
+		visible = { 
+			NOT = { rslp_kantorovich = yes }
+		}
+		available = {
+			NOT = { rslp_kantorovich = yes }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		days_re_enable = 20
+		cost = 75
+		complete_effect = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.015
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = -0.025
+			}
+			add_stability = -0.05
+			set_temp_variable = { RSLP_Opinion_Target = 2 }
+			set_temp_variable = { Temp_Opinion = -2.5 }
+			NOV_RSLP_Opinion_Change = yes
+			set_temp_variable = { RSLP_Opinion_Target = 3 }
+			set_temp_variable = { Temp_Opinion = 7.5 }
+			NOV_RSLP_Opinion_Change = yes
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_discredit_radical_communists"
+		}
+	}
+	NOV_RSLP_acknowledge_past_mistakes = {
+		icon = GFX_decision_document_cancel
+		visible = { 
+			NOT = { rslp_kantorovich = yes }
+		}
+		available = {
+			NOT = { rslp_kantorovich = yes }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		days_re_enable = 20
+		cost = 100
+		complete_effect = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = -0.02
+			}
+			add_stability = -0.05
+			set_temp_variable = { RSLP_Opinion_Target = 2 }
+			set_temp_variable = { Temp_Opinion = -5 }
+			NOV_RSLP_Opinion_Change = yes
+			set_temp_variable = { RSLP_Opinion_Target = 3 }
+			set_temp_variable = { Temp_Opinion = 15 }
+			NOV_RSLP_Opinion_Change = yes
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_acknowledge_past_mistakes"
+		}
+	}
+	NOV_RSLP_talk_with_kantorovich = {
+		icon = GFX_decision_generic_political_discourse
+		visible = { 
+			NOT = { rslp_kantorovich = yes }
+		}
+		available = {
+			NOT = { rslp_kantorovich = yes }
+			rslp_socialist_100 = yes
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 15
+		fire_only_once = yes
+		cost = 150
+		complete_effect = {
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.1
+			}	
+			add_stability = 0.05
+			set_country_flag = NOV_RSLP_KANTOROVICH_TALK
+			set_country_flag = NOV_RSLP_KANTOROVICH
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_RSLP_talk_with_kantorovich"
+		}
+	}
+}

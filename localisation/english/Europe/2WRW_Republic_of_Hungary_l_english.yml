@@ -1,0 +1,68 @@
+﻿l_english:
+
+ POLITICS_Ferenc_Nagy_70s_DESC:0 "Born to peasants, Ferenc Nagy began work as a self-taught writer for news articles. He quickly became involved in politics, closely aligned with local peasant societies and advocating for peasant rights. He entered the parliament in 1939, and during his time in office he helped to aid the Hungarian underground in its efforts to curb the Hungarian war effort. Yet, all his work was for naught. The Germans managed to win the war, and the Hungarian state cemented its power in the nation.\n\nContinuing to work in the government, he worked as a leader of the controlled opposition, all the while trying to maintain and protect his networks in the Hungarian underground. Watched by the secret police at every turn, he was forced to live under constant surveillance and scrutiny; one misstep would have led to his arrest or execution.\n\nThen, the Second West Russian War happened. Germany was defeated, and Hungary was thrown into chaos. This was his chance to bring the light of liberty to Hungary after so long. Splitting off with the rest of the opposition members, democratic supporters have sprung up across the countryside to rally around Ferenc Nagy as the final fight for Hungarian freedom begins."
+
+
+ HUD_progressivism:0 "Kingdom of Hungary"
+ HUD_progressivism_DEF:0 "the Kingdom of Hungary"
+ HUD_progressivism_ADJ:0 "Hungarian"
+ HUD_fascism:0 "Kingdom of Hungary"
+ HUD_fascism_DEF:0 "the Kingdom of Hungary"
+ HUD_liberalism:0 "Hungarian Republic"
+ HUD_liberalism_DEF:0 "the Second Hungarian Republic"
+ HUD_conservatism:0 "Hungarian Republic"
+ HUD_conservatism_DEF:0 "the Second Hungarian Republic"
+ HUD_paternalism:0 "Kingdom of Hungary"
+ HUD_paternalism_DEF:0 "the Kingdom of Hungary"
+ HUD_despotism:0 "Kingdom of Hungary"
+ HUD_despotism_DEF:0 "the Kingdom of Hungary"
+ HUD_communist:0 "Hungarian People's Republic"
+ HUD_communist_DEF:0 "the Hungarian People's Republic"
+ HUD_socialist:0 "Hungarian People's Republic"
+ HUD_socialist_DEF:0 "the Hungarian People's Republic"
+ HUD_national_socialism:0 "Hungary"
+ HUD_national_socialism_DEF:0 "Hungary"
+ HUD_ultranationalism:0 "Hungary"
+ HUD_ultranationalism_DEF:0 "Hungary"
+ HUD_fascism_ADJ:0 "Hungarian"
+ HUD_liberalism_ADJ:0 "Hungarian"
+ HUD_conservatism_ADJ:0 "Hungarian"
+ HUD_paternalism_ADJ:0 "Hungarian"
+ HUD_communist_ADJ:0 "Hungarian"
+ HUD_despotism_ADJ:0 "Hungarian"
+ HUD_socialist_ADJ:0 "Hungarian"
+ HUD_ultranationalism_ADJ:0 "Hungarian"
+ HUD_national_socialism_ADJ:0 "Hungarian"
+
+ HUD_communist_party:0 "KMP"
+ HUD_communist_party_long:0 "Kommunisták Magyarországi Pártja"
+
+ HUD_socialist_party:0 "MSZMP"
+ HUD_socialist_party_long:0 "Magyarországi Szocialista Munkáspárt"
+
+ HUD_progressivism_party:0 "MSZDP"
+ HUD_progressivism_party_long:0 "Magyarországi Szociáldemokrata Párt"
+
+ HUD_liberalism_party:0 "PDP"
+ HUD_liberalism_party_long:0 "Polgári Demokrata Párt"
+
+ HUD_conservatism_party:0 "FKgP"
+ HUD_conservatism_party_long:0 "Független Kisgazda-, Földmunkás- és Polgári Párt"
+
+ HUD_paternalism_party:0 "MÉP - Horthy Wing"
+ HUD_paternalism_party_long:0 "Magyar Élet Pártja - Horthy Wing"
+
+ HUD_despotism_party:0 "MKH"
+ HUD_despotism_party_long:0 "Magyar Királyi Honvédség"
+
+ HUD_fascism_party:0 "MÉP - Imrédy Wing"
+ HUD_fascism_party_long:0 "Magyar Élet Pártja - Imrédy Wing"
+
+ HUD_national_socialism_party:0 "Volksbund"
+ HUD_national_socialism_party_long:0 "Volksbund der Deutschen in Ungarn"
+
+ HUD_ultranationalism_party:0 "NYKP"
+ HUD_ultranationalism_party_long:0 "Nyilaskeresztes Párt - Hungarista Mozgalom"
+
+ HUD_arrow_cross_party:0 "NYKP"
+ HUD_arrow_cross_party_long:0 "Nyilaskeresztes Párt"

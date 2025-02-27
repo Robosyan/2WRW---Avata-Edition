@@ -1,0 +1,58 @@
+ability = {
+	RUS_chemical_arsenal = {
+		name = ABILITY_CHEMICAL_ARSENAL
+		desc = ABILITY_CHEMICAL_ARSENAL_DESC
+		icon = GFX_ability_chemical_arsenal
+		
+		sound_effect = command_power_ability_defensive
+		
+		type = army_leader
+		
+		allowed = {
+			is_leading_army_group = no
+			is_border_war = no
+			OWNER = {
+				OR = {
+					original_tag = OMS
+					AND = {
+						original_tag = WRS
+						has_country_leader = { character = WRS_Mikhail_Tukhachevsky ruling_only = yes }
+					}
+				}
+				NOT = { has_country_flag = RUS_unrestricted_chemical_arsenal }
+				has_capitulated = no
+			}
+		}
+		
+		cost = 0.35
+		duration = 168
+		
+		one_time_effect = {
+			add_temporary_buff_to_units = {
+				str_damage_multiplier = 0.15
+				org_damage_multiplier = 0.10
+				days = 7
+				tooltip = ABILITY_CHEMICAL_ARSENAL_TOOLTIP
+			}
+		}
+		
+		unit_modifiers = {
+			army_infantry_attack_factor = 0.175
+			defence = 0.25
+		}
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				
+				check_variable = { num_units_defensive_combats > 2 }
+				
+				set_temp_variable = { temp = avg_defensive_combat_status }
+				check_variable = { temp < 0.45 }
+				check_variable = { ai_random > temp }
+				
+				add = 2
+			}
+		}
+	}
+}

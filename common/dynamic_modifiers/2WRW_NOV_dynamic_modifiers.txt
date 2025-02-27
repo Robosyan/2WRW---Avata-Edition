@@ -1,0 +1,45 @@
+
+NOV_german_autonomous_zone = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	icon = "GFX_RUS_ost_german_autonomy"
+
+	local_manpower = -0.75
+	local_resources_factor = -0.50
+	local_building_slots_factor = -0.6
+}
+
+NOV_volga_german_autonomous_zone = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	icon = "GFX_RUS_volga_autonomy"
+
+	local_manpower = -0.75
+	local_resources_factor = -0.50
+	local_building_slots_factor = -0.6
+}
+
+NOV_RSLP_autonomous_republics = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	icon = "GFX_RUS_autonomous_republics"
+
+	compliance_growth = 0.5
+	local_resources = -0.1
+	recruitable_population_factor = -0.1
+	local_building_slots = 2
+	local_factory_sabotage = -0.15
+	local_intel_to_enemies = -0.15
+}
+
+WRW_Sparse_Population = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	icon = "GFX_Sparse_Population"
+
+	local_manpower = -0.1
+	local_supplies_for_controller = -0.15
+	industry_air_damage_factor = -0.45
+	static_anti_air_damage_factor = 0.05
+	static_anti_air_hit_chance_factor = 0.05
+}

@@ -1,0 +1,1095 @@
+RUS_intervention_category = {
+	# Generic Decisions #
+	RUS_invade_kazakhstan = {
+	
+		icon = GFX_decision_generic_kazakhstan
+		
+		allowed = {
+			is_russian_unifier = yes
+		}
+		visible = {
+			NOT = { has_global_flag = RUS_shukshin_unification }
+			NOT = { has_country_flag = RUS_Fate_of_Kazakhstan }
+			NOT = { KAZ_has_same_government = yes }
+		}
+		
+		
+		cost = 150
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_invade_kazakhstan"
+			
+			set_country_flag = RUS_Fate_of_Kazakhstan
+			create_faction = very_generic_russian_faction
+			SWRW_Add_RUS_To_Cold_War_GUI = yes
+			if = {
+				limit = {
+					country_exists = KAZ
+				}
+				declare_war_on = {
+					target = KAZ
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					country_exists = KZR
+				}
+				declare_war_on = {
+					target = KZR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					country_exists = KAZ
+					country_exists = KZR
+				}
+				set_country_flag = SWRW_RUS_invading_both_kazakhstans
+			}
+		}
+	}
+	
+	RUS_integrate_kazakhstan = {
+	
+		icon = GFX_decision_generic_kazakhstan
+		
+		allowed = { is_russian_unifier = yes }
+			
+		visible = {
+			is_in_faction_with = KZR
+			KZR = { has_war = no }
+		}
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		highlight_states = {
+ 			highlight_state_targets = { state = 404 }
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+		
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+			gdp_growth_modifier = -2.5
+		}
+		
+		cost = 150
+		days_remove = RUS_integration_cost_days?0
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_country_flag = RUS_Kazakhstan_mutually_exclusive
+		}
+		
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_integrate_kazakhstan"
+			
+			add_state_core = 406
+			add_state_core = 407
+			add_state_core = 587
+			add_state_core = 402
+			add_state_core = 583
+			add_state_core = 590
+			add_state_core = 588
+			add_state_core = 589
+			add_state_core = 404
+			add_state_core = 1802
+			add_state_core = 1803
+			add_state_core = 1804
+			add_state_core = 1805
+			add_state_core = 1806
+			add_state_core = 1807
+			add_state_core = 1808
+
+			annex_country = {
+				target = KZR
+				transfer_troops = no
+			}
+			
+			add_stability = 0.05
+			set_temp_variable = { gdp_growth_temp = 0.05 }
+			econ_gdp_growth_change = yes
+			TNO_improve_admin_efficiency_low = yes
+		}
+	}
+	
+	RUS_ally_kazakhstan = {
+	
+		icon = GFX_decision_generic_shake_hands
+		
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			NOT = { has_global_flag = RUS_shukshin_unification }
+			NOT = { has_country_flag = RUS_Fate_of_Kazakhstan }
+			KAZ_has_same_government = yes
+		}
+		
+		available = {
+		}
+
+		cost = 25
+		
+		highlight_states = {
+ 			highlight_state_targets = { state = 404 }
+ 			highlight_color_before_active = 3
+			highlight_color_while_active = 2
+		}
+		
+		ai_will_do = {
+			factor = 20
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_ally_kazakhstan"
+			
+			set_country_flag = RUS_Fate_of_Kazakhstan
+			create_faction = very_generic_russian_faction
+			SWRW_Add_RUS_To_Cold_War_GUI = yes
+			if = {
+				limit = { has_country_flag = RUS_generic_communist_unifier }
+				if = {
+					limit = {
+						country_exists = KAZ
+						country_exists = KZR
+						KAZ = { has_government = communist }
+						KZR = { has_government = communist }
+					}
+					if = {
+						limit = { has_government = socialist }
+						add_to_faction = KAZ
+						declare_war_on = {
+							target = KZR
+							type = annex_everything
+						}
+					}
+					else = {
+						add_to_faction = KZR
+						declare_war_on = {
+							target = KAZ
+							type = annex_everything
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							country_exists = KAZ
+							KAZ = { has_government = communist }
+						}
+						add_to_faction = KAZ
+						if = {
+							limit = { country_exists = KZR }
+							declare_war_on = {
+								target = KZR
+								type = annex_everything
+							}
+						}
+						KAZ = {	
+							get_current_government_type = yes
+							save_party_popularities = yes
+						}
+						FROM = {
+							set_autonomy = {
+								target = KAZ
+								autonomy_state = autonomy_assr
+							}
+						}
+						KAZ = {
+							restore_previous_government_type = yes
+							apply_party_popularities = yes
+						}
+					}
+					else_if = {
+						limit = {
+							country_exists = KZR
+							KZR = { has_government = communist }
+						}
+						add_to_faction = KZR
+						if = {
+							limit = { country_exists = KAZ }
+							declare_war_on = {
+								target = KAZ
+								type = annex_everything
+							}
+						}
+						KZR = {	
+							get_current_government_type = yes
+							save_party_popularities = yes
+						}
+						FROM = {
+							set_autonomy = {
+								target = KZR
+								autonomy_state = autonomy_assr
+							}
+						}
+						KZR = {
+							restore_previous_government_type = yes
+							apply_party_popularities = yes
+						}
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = {
+						country_exists = KAZ
+						NOT = { KAZ = { has_government = communist } }
+					}
+					add_to_faction = KAZ
+					if = {
+						limit = { country_exists = KZR }
+						declare_war_on = {
+							target = KZR
+							type = annex_everything
+						}
+					}
+				}
+				else = {
+					add_to_faction = KZR
+					if = {
+						limit = { country_exists = KAZ }
+						declare_war_on = {
+							target = KAZ
+							type = annex_everything
+						}
+					}
+					KZR = {	
+						get_current_government_type = yes
+						save_party_popularities = yes
+					}
+					FROM = {
+						set_autonomy = {
+							target = KZR
+							autonomy_state = autonomy_client_state
+						}
+					}
+					KZR = {
+						restore_previous_government_type = yes
+						apply_party_popularities = yes
+					}
+				}
+			}
+		}
+	}
+	
+	RUS_intervention_in_central_asia = {
+	
+		icon = GFX_decision_generic_document
+		
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			OR = {
+				country_exists = UZB
+				country_exists = TAJ
+				country_exists = KYR
+				country_exists = TRK
+			}
+			OR = {
+				NOT = {
+					country_exists = KAZ
+					country_exists = KZR
+				}
+				OR = {
+					ROOT = {
+						OR = {
+							is_in_faction_with = KAZ
+							is_in_faction_with = KZR
+						}
+					}
+				}
+			}
+			NOT = { has_global_flag = RUS_shukshin_unification }
+			NOT = { has_country_flag = RUS_Invade_Central_Asia }
+		}
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = TNO_TURKES_KENES_OVER_OVER_tt
+				has_global_flag = TNO_TURKES_KENES_OVER_OVER
+			}
+		}
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_intervention_in_central_asia"
+			set_country_flag = RUS_Invade_Central_Asia
+			if = {
+				limit = {
+					KYR = {
+						is_subject_of = AFG
+					}
+					TAJ = {
+						is_subject_of = AFG
+					}
+					UTL = {
+						is_subject_of = AFG
+					}
+				}
+				AFG = { end_puppet = KYR }
+				AFG = { end_puppet = TAJ }
+				AFG = { end_puppet = UTL }
+			}
+			if = {
+				limit = {
+					has_global_flag = TNO_rip_turkmenistan
+				}
+				KRK = {
+					leave_faction = yes
+				}
+				KYR = {
+					leave_faction = yes
+				}
+				TAJ = {
+					leave_faction = yes
+				}
+				TRK = {
+					leave_faction = yes
+				}
+				UTL = {
+					leave_faction = yes
+				}
+				UZB = {
+					leave_faction = yes
+				}
+				declare_war_on = {
+					target = KRK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = KYR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = TAJ
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = TRK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = UTL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = UZB
+					type = annex_everything
+				}
+			}
+			else = {
+				KRK = {
+					leave_faction = yes
+				}
+				KYR = {
+					leave_faction = yes
+				}
+				TAJ = {
+					leave_faction = yes
+				}
+				TRK = {
+					leave_faction = yes
+				}
+				UTL = {
+					leave_faction = yes
+				}
+				UZB = {
+					leave_faction = yes
+				}
+				declare_war_on = {
+					target = KRK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = KYR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = TAJ
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = TRK
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = UTL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = UZB
+					type = annex_everything
+				}
+			}
+			KRK = {
+				econ_leave_sphere = yes
+			}
+			KYR = {
+				econ_leave_sphere = yes
+			}
+			TAJ = {
+				econ_leave_sphere = yes
+			}
+			TRK = {
+				econ_leave_sphere = yes
+			}
+			UTL = {
+				econ_leave_sphere = yes
+			}
+			UZB = {
+				econ_leave_sphere = yes
+			}
+		}
+	}
+
+	RUS_reorganise_turkmenistan = {
+		icon = GFX_decision_generic_document
+
+		allowed = {
+			is_russian_unifier = yes
+		}
+
+		visible = {
+			584 = {
+				is_owned_by = RUS
+				NOT = { is_core_of = RUS }
+			}
+			RUS = {
+				AND = {
+					OR = {
+						has_government = paternalism
+						has_government = conservatism
+						has_government = liberalism
+						has_government = progressivism
+					}
+					NOT = {
+						OR = {
+							original_tag = VYT
+							original_tag = CHT
+							has_global_flag = RUS_shukshin_unification
+						}
+					}
+				}
+			}
+		}
+		
+
+		available = {
+			has_war = no
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_CENTRAL_ASIA_FATE
+					option = RUS_CENTRAL_ASIA_FATE_ANNEX
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_reorganise_turkmenistan"
+			clr_global_flag = TNO_rip_turkmenistan
+			hidden_effect = {
+				TRK = {
+					remove_ideas = ZZZ_anarchy
+				}
+			}
+			RUS_Central_Asia_Turkmenistan_Occupation = yes
+			hidden_effect = {
+				TRK = { remove_ideas = CA_Turkes_Kenes_Apathy }
+			}
+		}
+	}
+
+	RUS_reorganise_karakalpakstan = {
+		icon = GFX_decision_generic_document
+
+		allowed = {
+			is_russian_unifier = yes
+		}
+
+		visible = {
+			750 = {
+				is_owned_by = RUS
+				NOT = { is_core_of = RUS }
+			}
+			RUS = {
+				AND = {
+					OR = {
+						has_government = paternalism
+						has_government = conservatism
+						has_government = liberalism
+						has_government = progressivism
+					}
+					NOT = {
+						OR = {
+							original_tag = VYT
+							original_tag = CHT
+							has_global_flag = RUS_shukshin_unification
+						}
+					}
+				}
+			}
+		}
+
+		available = {
+			has_war = no
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_CENTRAL_ASIA_FATE
+					option = RUS_CENTRAL_ASIA_FATE_ANNEX
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_reorganise_karakalpakstan"
+			RUS_Central_Asia_Karakalpakstan_Occupation = yes
+			hidden_effect = {
+				KRK = { remove_ideas = CA_Turkes_Kenes_Apathy }
+			}
+		}
+	}
+
+	RUS_reorganise_uzbekistan = {
+		icon = GFX_decision_generic_document
+
+		allowed = {
+			is_russian_unifier = yes
+		}
+
+		visible = {
+			AND = {
+				585 = {
+					is_owned_by = RUS
+					NOT = { is_core_of = RUS }
+				}
+				405 = {
+					is_owned_by = RUS
+					NOT = { is_core_of = RUS }
+				}
+				RUS = {
+					AND = {
+						OR = {
+							has_government = paternalism
+							has_government = conservatism
+							has_government = liberalism
+							has_government = progressivism
+						}
+						NOT = {
+							OR = {
+								original_tag = VYT
+								original_tag = CHT
+								has_global_flag = RUS_shukshin_unification
+							}
+						}
+					}
+				}
+			}
+		}
+
+		available = {
+			has_war = no
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_CENTRAL_ASIA_FATE
+					option = RUS_CENTRAL_ASIA_FATE_ANNEX
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_reorganise_uzbekistan"
+			hidden_effect = {
+				TRK = {
+					remove_ideas = ZZZ_anarchy
+				}
+			}
+			clr_global_flag = TNO_rip_turkmenistan
+			RUS_Central_Asia_Uzbekistan_Occupation = yes
+			hidden_effect = {
+				UZB = { remove_ideas = CA_Turkes_Kenes_Apathy }
+			}
+		}
+	}
+
+	RUS_reorganise_tajikistan = {
+		icon = GFX_decision_generic_document
+
+		allowed = {
+			is_russian_unifier = yes
+		}
+
+		visible = {
+			742 = {
+				is_owned_by = RUS
+				NOT = { is_core_of = RUS }
+			}
+			RUS = {
+				AND = {
+					OR = {
+						has_government = paternalism
+						has_government = conservatism
+						has_government = liberalism
+						has_government = progressivism
+					}
+					NOT = {
+						OR = {
+							original_tag = VYT
+							original_tag = CHT
+							has_global_flag = RUS_shukshin_unification
+						}
+					}
+				}
+			}
+		}
+
+		available = {
+			has_war = no
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_CENTRAL_ASIA_FATE
+					option = RUS_CENTRAL_ASIA_FATE_ANNEX
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_reorganise_tajikistan"
+			RUS_Central_Asia_Tajikistan_Occupation = yes
+			hidden_effect = {
+				TAJ = { remove_ideas = CA_Turkes_Kenes_Apathy }
+			}
+		}
+	}
+
+	RUS_reorganise_kyrgyzstan = {
+		icon = GFX_decision_generic_document
+
+		allowed = {
+			is_russian_unifier = yes
+		}
+
+		visible = {
+			AND = {
+				586 = {
+					is_owned_by = RUS
+					NOT = { is_core_of = RUS }
+				}
+				732 = {
+					is_owned_by = RUS
+					NOT = { is_core_of = RUS }
+				}
+				RUS = {
+					AND = {
+						OR = {
+							has_government = paternalism
+							has_government = conservatism
+							has_government = liberalism
+							has_government = progressivism
+						}
+						NOT = {
+							OR = {
+								original_tag = VYT
+								original_tag = CHT
+								has_global_flag = RUS_shukshin_unification
+							}
+						}
+					}
+				}
+			}
+		}
+
+		available = {
+			has_war = no
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_CENTRAL_ASIA_FATE
+					option = RUS_CENTRAL_ASIA_FATE_ANNEX
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_reorganise_kyrgyzstan"
+			RUS_Central_Asia_Kyrgyzstan_Occupation = yes
+			hidden_effect = {
+				KYR = { remove_ideas = CA_Turkes_Kenes_Apathy }
+			}
+		}
+	}
+
+	RUS_invade_finland = {
+	
+		icon = GFX_decision_generic_ignite_civil_war
+	
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			OR = {
+				country_exists = FIN
+				country_exists = RFI
+			}
+			OR = {
+				215 = {
+					is_controlled_by = FIN 
+				}
+				215 = {
+					is_controlled_by = RFI 
+				}
+			}
+			
+			NOT = {
+				has_global_flag = RUS_shukshin_unification
+			}
+
+			NOT = {
+				FIN = {
+					is_in_faction = yes
+				}
+			}
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: The Third Winter War"
+			set_variable = { RUS_surrender_limit = 0.0 }
+			declare_war_on = {
+				target = FIN
+				type = annex_everything
+			}
+		}
+	}
+
+	RUS_intervention_in_iranian_civil_war = {
+	
+		icon = GFX_decision_generic_prepare_civil_war
+	
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			country_exists = PER
+			country_exists = IRA
+			country_exists = IRL
+			country_exists = IRC
+			country_exists = IRB
+			country_exists = IRI
+			has_global_flag = Iranian_Civil_War
+		}
+		
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Russia Intervenes in Iran"
+			
+			set_country_flag = RUS_entered_war
+			
+			if = {
+				limit = {
+					OR = {
+						has_government = paternalism
+						has_government = conservatism
+						has_government = liberal_conservatism
+						has_global_flag = RUS_shukshin_unification 
+					}
+				}
+				IRC = { add_ideas = PER_russian_military_advisers }
+				set_country_flag = RUS_iranian_intervention_shadom
+				set_temp_variable = { target = IRC }
+				TNO_increase_volunteer_cap_2 = yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_government = progressivism
+						has_government = liberalism
+					}
+				}
+				IRL = { add_ideas = PER_russian_military_advisers }
+				set_country_flag = RUS_iranian_intervention_liberals
+				set_temp_variable = { target = IRL }
+				TNO_increase_volunteer_cap_2 = yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_government = communist
+						has_government = socialist
+					}
+				}
+				IRA = { add_ideas = PER_russian_military_advisers }
+				set_country_flag = RUS_iranian_intervention_communist
+				set_temp_variable = { target = IRA }
+				TNO_increase_volunteer_cap_2 = yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_government = fascism
+						has_government = national_socialism
+						has_government = despotism
+						has_government = ultranationalism
+					}
+				}
+				IRI = { add_ideas = PER_russian_military_advisers }
+				set_country_flag = RUS_iranian_intervention_islam
+				set_temp_variable = { target = IRI }
+				TNO_increase_volunteer_cap_2 = yes
+			}
+			TNO_fopo_add_iran_civil_war_tab = yes
+			hidden_effect = {
+				every_country = {
+					news_event = WORLD.40017
+				}
+				set_country_flag = RUS_IRCW_volunteers_sent
+			}
+		}
+	}
+	
+	RUS_negotiate_for_vladivostok = {
+	
+		icon = decision_generic_political_action
+	
+		allowed = {
+			is_russian_unifier = yes
+		}
+		visible = {
+			country_exists = MAN
+			NOT = { has_global_flag = RUS_shukshin_unification }
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cost = 100
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Vladivostok Negotiations"
+			country_event = RUS_Vladivostok.4
+		}
+	}
+	
+	RUS_fate_of_vyborg = {
+	
+		icon = GFX_decision_category_generic_foreign_policy
+	
+		allowed = {
+			is_russian_unifier = yes
+		}
+		visible = {
+			OR = { 
+				country_exists = FIN
+				country_exists = RFI
+			}
+
+			216 = {
+				OR = {
+					is_controlled_by = FIN 
+					is_controlled_by = RFI
+				}
+			}
+			ROOT = {
+				owns_state = 216
+			}
+		}
+		
+		available = {
+			has_war = no
+		}
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_fate_of_vyborg"
+			country_event = vyborg_border_conflict.1
+		}
+	}
+	
+	RUS_invade_armenia = {
+	
+		icon = GFX_decision_generic_document
+		
+		allowed = {
+			is_russian_unifier = yes
+		}
+		visible = {
+			country_exists = ARM
+			NOT = { has_global_flag = RUS_shukshin_unification }
+		}
+		
+		available = {
+			has_war = no
+			OR = {
+				ADY = {
+					is_neighbor_of = ARM
+				}
+				RUS = {
+					is_neighbor_of = ARM
+				}
+			}
+
+		}
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_invade_armenia"
+			if = {
+				limit = {
+					ARM = {
+						is_subject_of = TUR
+					}
+				}
+				TUR = { end_puppet = ARM }
+			}
+			
+			hidden_effect = {
+				declare_war_on = {
+					target = ARM
+					type = annex_everything
+				}
+			}
+		}
+	}
+	
+	RUS_demand_romanian_peace = { # Generic
+		
+		icon = decision_generic_political_action
+		
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			has_global_flag = RUSSO_ROMANIAN_WAR
+		}
+		
+		available = {
+			if = {
+				limit = {
+					country_exists = UKS
+				}
+				199 = { is_controlled_by = UKS }
+				192 = { is_controlled_by = UKS }
+			}
+			 else = {
+				199 = { is_controlled_by = RUS }
+				192 = { is_controlled_by = RUS }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_demand_romanian_peace"
+			
+			ROM = {
+				country_event = NOV_postwar.17
+			}
+		}
+	}
+}

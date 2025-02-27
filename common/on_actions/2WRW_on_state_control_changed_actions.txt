@@ -1,0 +1,676 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			###MUSCOVITE AWAKENING###
+			
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							#has_idea = MSK_dissolution_start
+							original_tag = GER
+							is_subject_of = GER
+							original_tag = OKB
+							original_tag = TUR
+							original_tag = FIN
+							original_tag = ROM
+							original_tag = UKR
+							original_tag = CRI
+							original_tag = CAU
+							
+							is_moskowien_splits = yes
+						}
+					}
+					ROOT = {
+						OR = {
+							original_tag = MOS
+							original_tag = EST
+							original_tag = LAT
+							original_tag = LIT
+							original_tag = BLR
+							
+							AND = {
+								original_tag = UKR
+								NOT = {
+									is_subject_of = GER 
+								}
+							}
+							
+							AND = {
+								original_tag = CAU
+								NOT = {
+									is_subject_of = GER 
+								}
+							}
+
+							AND = {
+								original_tag = OST
+								NOT = {
+									is_subject_of = GER 
+								}
+							}
+
+							AND = {
+								original_tag = OKB
+								NOT = {
+									is_subject_of = GER 
+								}
+							}
+
+							AND = {
+								original_tag = FUK
+								NOT = {
+									is_subject_of = GER 
+								}
+							}
+
+							AND = {
+								original_tag = UKS
+								NOT = {
+									is_subject_of = GER 
+								}
+							}
+
+							is_russian_nation = yes
+							
+						}
+						NOT = {
+							AND = { 
+								tag = PRM
+								has_government = national_socialism
+							}
+						}
+					}
+				}
+				# North to South #
+				if = {
+					limit = {
+						FROM.FROM = {state = 195}
+					}
+					if = {
+						limit = { 
+							has_global_flag = RUS_SWRW_ongoing_global 
+							NOT = { has_global_flag = RUS_SWRW_End } 
+						}
+						ROOT = { country_event = { id = ceSWRW.7 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.7 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 1442 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						news_event = { id = WORLD.40004 hours = 6 }
+						RUS = {
+							set_temp_variable = { temp_exhaustion = -5 }
+							WRW_add_war_exhaustion = yes
+						}
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 242 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.3 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.3 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = {
+						FROM.FROM = {state = 243}
+					}
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.4 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.4 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 244 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.11 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.11 hours = 6 } }
+					}
+				}
+				# Caucasia
+				else_if = {
+					limit = { FROM.FROM = { state = 232 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.12 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.12 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 231 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.8 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.8 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 1552 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.6 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.6 hours = 6 } }
+					}
+				}
+				# Ukraine
+				else_if = {
+					limit = { FROM.FROM = { state = 1397 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.2 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.2 hours = 6 } }
+					}
+				}
+			}
+			else = {
+				if = {
+					limit = { FROM.FROM = { state = 195 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.32 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.32 hours = 6 } }
+					}
+				}
+				if = {
+					limit = { FROM.FROM = { state = 242 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.33 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.33 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 243 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.33 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.33 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 244 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.36 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.36 hours = 6 } }
+					}
+				}
+				# Caucasia
+				else_if = {
+					limit = { FROM.FROM = { state = 232 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.37 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.37 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 231 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.38 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.38 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 1552 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.39 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.39 hours = 6 } }
+					}
+				}
+				# Ukraine
+				else_if = {
+					limit = { FROM.FROM = { state = 1532 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.30 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.30 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 1428 } }
+					1428 = { reset_state_name = yes }
+					reset_province_name = 525
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.34 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.34 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 1397 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.31 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.31 hours = 6 } }
+					}
+				}
+			}
+			
+			if = {
+				limit = { ROOT = { is_russian_aligned = yes } }
+				
+				## RUSSIAN STATES ##
+				
+				if = {
+					limit = { FROM.FROM = { state = 214 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.9 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.9 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 397 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.10 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.10 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 400 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.13 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.13 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 571 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.14 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.14 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 403 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.15 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.15 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 570 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.16 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.16 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 754 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.17 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.17 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 578 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.18 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.18 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 249 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.19 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.19 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 653 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.20 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.20 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 863 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.21 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.21 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 850 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.22 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.22 hours = 6 } }
+					}
+				}
+				
+				## GERMANY ##
+				
+				if = {
+					limit = { FROM.FROM = { state = 64 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.23 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.23 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 85 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.24 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.24 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 62 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.25 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.25 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 66 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.26 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.26 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 775 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.29 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.29 hours = 6 } }
+					}
+				}
+				
+				## POLAND ##
+				
+				else_if = {
+					limit = { FROM.FROM = { state = 10 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.27 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.27 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 88 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.28 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.28 hours = 6 } }
+					}
+				}
+			}
+			
+			else = {
+				
+				## RUSSIAN STATES ##
+				
+				if = {
+					limit = { FROM.FROM = { state = 214 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.40 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.40 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 397 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.42 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.42 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 400 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.41 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.41 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 571 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.43 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.43 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 403 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.44 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.44 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 570 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.45 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.45 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 754 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.46 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.46 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 578 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.47 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.47 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 249 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.48 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.48 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 653 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.49 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.49 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 863 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.50 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.50 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 850 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.51 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.51 hours = 6 } }
+					}
+				}
+				
+				## GERMANY ##
+				
+				if = {
+					limit = { FROM.FROM = { state = 64 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.52 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.52 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 85 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.53 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.53 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 62 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.54 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.54 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 66 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.55 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.55 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 775 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.58 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.58 hours = 6 } }
+					}
+				}
+				
+				## POLAND ##
+				
+				else_if = {
+					limit = { FROM.FROM = { state = 10 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.56 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.56 hours = 6 } }
+					}
+				}
+				else_if = {
+					limit = { FROM.FROM = { state = 88 } }
+					if = {
+						limit = { GER = { has_war_with = RUS } }
+						ROOT = { country_event = { id = ceSWRW.57 hours = 6 } }
+						FROM = { country_event = { id = ceSWRW.57 hours = 6 } }
+					}
+				}
+			}
+		}
+	}
+	
+	### TENSION ###
+	
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = { 
+					has_global_flag = RUS_SWRW_ongoing_global 
+					NOT = { has_global_flag = RUS_SWRW_End } 
+					}
+
+				if = { # increases tension for every conquered state
+					limit = {
+						FROM.FROM = {
+							OR = {
+								is_core_of = PAU
+								is_core_of = MCW
+								is_core_of = OKB
+							}
+						}
+					}
+					set_temp_variable = { temp_tension = 0.5 }
+					WRW_add_tension = yes
+				}
+				else_if = { 
+					limit = {
+						FROM.FROM = {
+							is_core_of = UKR
+						}
+					}
+					set_temp_variable = { temp_tension = 1 }
+					WRW_add_tension = yes
+				}
+				else_if = { 
+					limit = {
+						FROM.FROM = {
+							is_core_of = CAU
+						}
+					}
+					set_temp_variable = { temp_tension = 1 }
+					WRW_add_tension = yes
+				}
+				else_if = { 
+					limit = {
+						FROM.FROM = {
+							OR = {
+								is_core_of = OST
+								is_core_of = BLR
+								is_core_of = LIT
+								is_core_of = LAT
+								is_core_of = EST
+								is_core_of = FIN
+								is_core_of = NOR
+								is_core_of = PER
+							}
+						}
+					}
+					set_temp_variable = { temp_tension = 1.5 }
+					WRW_add_tension = yes
+				}
+				else_if = { 
+					limit = {
+						FROM.FROM = {
+							OR = {
+								is_core_of = POL
+								is_core_of = GGN
+								is_core_of = ENG
+								is_core_of = ROM
+								is_core_of = HUN
+								is_core_of = SLO
+							}
+						}
+					}
+					set_temp_variable = { temp_tension = 3 }
+					WRW_add_tension = yes
+				}
+				else_if = { 
+					limit = {
+						FROM.FROM = {
+							is_core_of = GER
+						}
+					}
+					set_temp_variable = { temp_tension = 5 }
+					WRW_add_tension = yes
+				}
+			}
+		}
+	}
+}

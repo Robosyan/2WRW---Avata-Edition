@@ -1,0 +1,1399 @@
+##Nazi Parisans##
+
+NOV_decrease_nazi_strength = {
+	custom_effect_tooltip = NOV_decrease_nazi_strength_tt
+	add_to_variable = { NOV_nazi_partisan_strength = -10 }
+	clamp_variable = { var = NOV_nazi_partisan_strength min = 0 max = 100 }
+}
+
+NOV_assassinate_nazi_strength = {
+	custom_effect_tooltip = NOV_assassinate_nazi_strength_tt
+	add_to_variable = { NOV_nazi_partisan_strength = -15 }
+	clamp_variable = { var = NOV_nazi_partisan_strength min = 0 max = 100 }
+}
+
+NOV_load_shukshin_failstate = {
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = RUS_national_unification
+				}
+			}
+			every_other_country = {
+				limit = {
+					is_russian_nation = yes
+					NOT = {
+						is_kazakh_nation = yes
+					}
+				}
+				PREV = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = RUS_SWRW_Fail
+				}
+			}
+			MCW = {
+				transfer_state = 214
+				transfer_state = 859
+				transfer_state = 858
+				transfer_state = 861
+				transfer_state = 860
+				transfer_state = 857
+				transfer_state = 351
+				transfer_state = 856
+				transfer_state = 252
+				transfer_state = 855
+				transfer_state = 256
+				transfer_state = 862
+				transfer_state = 262
+				transfer_state = 863
+				transfer_state = 870
+				transfer_state = 869
+				transfer_state = 868
+				transfer_state = 397
+				transfer_state = 866
+				transfer_state = 398
+				transfer_state = 867
+				transfer_state = 400
+				transfer_state = 752
+				transfer_state = 865
+				transfer_state = 399
+				transfer_state = 854
+				transfer_state = 249
+				transfer_state = 753
+				transfer_state = 864
+				transfer_state = 651
+				transfer_state = 853
+				transfer_state = 250
+				transfer_state = 851
+				transfer_state = 850
+				transfer_state = 251
+				transfer_state = 755
+				transfer_state = 852
+				transfer_state = 849
+				transfer_state = 652
+				transfer_state = 1887
+				every_state = {
+					limit = { is_owned_by = MCW } 
+					add_core_of = MCW
+				}
+				854 = {
+					set_state_name = "Joschkar-Ola"
+				}
+				857 = {
+					set_state_name = "Wologda"
+				}
+				351 = {
+					set_state_name = "Manturowo"
+				}
+				867 = {
+					set_state_name = "Scharja"
+				}
+				855 = {
+					set_state_name = "Semjonow"
+				}
+				252 = {
+					set_state_name = "Nischni Nowgorod"
+				}
+				256 = {
+					set_state_name = "Tscheboksary"
+				}
+				250 = {
+					set_state_name = "Sysran"
+				}
+				249 = {
+					set_state_name = "Kasan"
+				}
+				400 = {
+					set_state_name = "Wjatka"
+				}
+				651 = {
+					set_state_name = "Nabereschnyje Tschelny"
+				}
+				397 = {
+					set_state_name = "Syktywkar"
+				}
+				214 = {
+					set_state_name = "Archangelsk"
+				}
+				858 = {
+					set_state_name = "Wytegra"
+				}
+				755 = {
+					set_state_name = "Balakowo"
+				}
+				860 = {
+					set_state_name = "Weliki Ustjug"
+				}
+				861 = {
+					set_state_name = "Plessezk"
+				}
+				862 = {
+					set_state_name = "Nesen"
+				}
+				863 = {
+					set_state_name = "Workuta"
+				}
+				869 = {
+					set_state_name = "Uchta"
+				}
+				398 = {
+					set_state_name = "Uchta"
+				}
+				262 = {
+					set_state_name = "Narjan-Mar"
+				}
+				852 = {
+					set_state_name = "Alexejewka"
+				}
+				853 = {
+					set_state_name = "Ufa"
+				}
+				864 = {
+					set_state_name = "Saigatka"
+				}
+				865 = {
+					set_state_name = "Yurlinsky"
+				}
+				set_province_name = { id = 9402 name = "Joschkar-Ola" }
+				set_province_name = { id = 6338 name = "Kasan" }
+				set_province_name = { id = 9259 name = "Nowotscheboksarsk" }
+				set_province_name = { id = 9131 name = "Wologda" }		
+				set_province_name = { id = 6124 name = "Wjatka" }		
+				set_province_name = { id = 9385 name = "Nabereschnyje Tschelny" }		
+				set_province_name = { id = 11375 name = "Nischni Nowgorod" }		
+				set_province_name = { id = 6327 name = "Kstowo" }		
+				set_province_name = { id = 3282 name = "Tscheboksary" }	
+				set_province_name = { id = 6121 name = "Syktywkar" }
+				set_province_name = { id = 6502 name = "Balakowo" }
+				set_province_name = { id = 6226 name = "Sysran" }
+				set_province_name = { id = 12527 name = "Beresniki" }
+				set_province_name = { id = 270 name = "Semjonow" }
+				set_province_name = { id = 6077 name = "Galitsch" }
+				set_province_name = { id = 3315 name = "Wolschsk" }
+				set_province_name = { id = 11075 name = "Manturowo" }
+				set_province_name = { id = 9159 name = "Kineschma" }
+				set_province_name = { id = 73 name = "Scharja" }
+				set_province_name = { id = 11107 name = "Grjasowez" }
+				set_province_name = { id = 11189 name = "Scheksna" }
+				set_province_name = { id = 166 name = "Wytegra" }
+				set_province_name = { id = 3338 name = "Archangelsk" }
+				set_province_name = { id = 9124 name = "Weliki Ustjug" }
+				set_province_name = { id = 9349 name = "Naryschewo" }
+				set_province_name = { id = 112 name = "Schachunja" }
+				set_province_name = { id = 9146 name = "Slobodskoi" }
+				set_province_name = { id = 13344 name = "Wytschegodski" }
+				set_province_name = { id = 11074 name = "Welsk" }
+				set_province_name = { id = 72 name = "Njandoma" }
+				set_province_name = { id = 9130 name = "Plessezk " }
+				set_province_name = { id = 9293 name = "Glasow" }
+				set_province_name = { id = 1295 name = "Uchta" }
+				set_province_name = { id = 3168 name = "Sewerodwinsk" }
+				set_province_name = { id = 6192 name = "Mesen" }
+				set_province_name = { id = 105 name = "Narjan-Mar" }
+				set_province_name = { id = 10723 name = "Petschora" }
+				set_province_name = { id = 9205 name = "Ussinsk" }
+				set_province_name = { id = 13357 name = "Workuta" }
+				set_province_name = { id = 12130 name = "Ascha" }
+				set_province_name = { id = 6278 name = "Ischewsk" }
+				set_province_name = { id = 6323 name = "Jelabuga" }
+				set_province_name = { id = 9299 name = "Stawropol-Wolschskij" }
+				set_province_name = { id = 312 name = "Nowodwinsk" }
+				set_province_name = { id = 464 name = "Gurjew" }
+				set_province_name = { id = 9420 name = "Alexejewka" } 
+				set_province_name = { id = 9391 name = "Iwaschtschenkowo" }
+				set_province_name = { id = 7403 name = "Tschaikowski" }
+				set_province_name = { id = 11228 name = "Lyswa" }
+				set_province_name = { id = 11228 name = "Lyswa" }
+				set_province_name = { id = 9243 name = "Nowosamarowsk" }
+				set_province_name = { id = 6275 name = "Schiguljowsk" }
+				if = {
+					limit = {
+						has_global_flag = german_civil_war_bormannvic
+					}
+					set_cosmetic_tag = MCW_bormann
+					set_popularities = {
+						paternalism = 15
+						fascism = 30
+						national_socialism = 55
+					}
+				}
+				else_if = {
+					limit = {
+						has_global_flag = german_civil_war_speervic
+					}
+					set_cosmetic_tag = MCW_speer
+					set_popularities = {
+						paternalism = 15
+						fascism = 30
+						national_socialism = 55
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					NOV = { owns_state = 589 }
+					589 = { owner = { is_subject_of = NOV } }
+					589 = { owner = { is_in_faction_with = NOV } }
+				}
+			}
+			KZK = {
+				transfer_state = 589
+				transfer_state = 588
+				transfer_state = 590
+				transfer_state = 583
+				transfer_state = 404
+				transfer_state = 402
+				transfer_state = 587
+				transfer_state = 1802
+				transfer_state = 1803
+				transfer_state = 1804
+				transfer_state = 1805
+				transfer_state = 1806
+				transfer_state = 1807
+				transfer_state = 1808
+				add_state_core = 589
+				add_state_core = 588
+				add_state_core = 590
+				add_state_core = 583
+				add_state_core = 404
+				add_state_core = 402
+				add_state_core = 587
+				add_state_core = 1802
+				add_state_core = 1803
+				add_state_core = 1804
+				add_state_core = 1805
+				add_state_core = 1806
+				add_state_core = 1807
+				add_state_core = 1808
+			
+				TNO_startup_nation = yes
+				
+				econ_leave_sphere = yes
+				leave_faction = yes
+				if = {
+					limit = {
+						KZK = {
+							is_in_faction_with = NOV
+						}
+					}
+					econ_leave_sphere = yes
+					leave_faction = yes
+					if = {
+						limit = {
+							KZK = {
+								is_subject_of = NOV
+							}
+						}
+						NOV = { set_autonomy = { target = KZK autonomy_state = autonomy_free } }
+					}
+					econ_leave_sphere = yes
+					leave_faction = yes
+				}
+				set_cosmetic_tag = PAV_regional_unifier
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					NOV = { owns_state = 405 }
+					405 = { owner = { is_subject_of = NOV } }
+				}
+			}
+			XXX = {
+				UZB_AFG_Puppet = { set_nationality = UZB }
+				KYR_AFG_Puppet = { set_nationality = KYR }
+				TAJ_AFG_Puppet = { set_nationality = TAJ }
+				TRK_AFG_Puppet = { set_nationality = TRK }
+			}
+			UZB = {
+				transfer_state = 405
+				transfer_state = 585
+				transfer_state = 750
+				add_state_core = 405
+				add_state_core = 585
+				add_state_core = 750
+				transfer_state = 405
+				transfer_state = 585
+				transfer_state = 750
+				transfer_state = 750
+				transfer_state = 1466
+				transfer_state = 1467
+				transfer_state = 1468
+				add_state_core = 405
+				add_state_core = 585
+				add_state_core = 750
+				add_state_core = 1467
+				add_state_core = 1468
+				add_state_core = 1466
+			
+				TNO_startup_nation = yes
+				
+				set_capital = { state = 405 }
+				if = {
+					limit = {
+						UZB = {
+							is_in_faction_with = NOV
+						}
+					}
+					NOV = { set_autonomy = { target = UZB autonomy_state = autonomy_free } }
+					econ_leave_sphere = yes
+					leave_faction = yes
+				}
+				AFG = { puppet = UZB }
+				promote_character = UZB_AFG_Puppet
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 100
+				}
+				set_party_name = {
+					ideology = despotism
+					name = AFG_Central_Asia_Party
+					long_name = AFG_Central_Asia_Party_long
+				}
+				set_cosmetic_tag = UZB_AFG
+			}
+			KYR = {
+				transfer_state = 586
+				transfer_state = 732
+				add_state_core = 586
+				add_state_core = 732
+			
+				TNO_startup_nation = yes
+				
+				if = {
+					limit = {
+						KYR = {
+							is_in_faction_with = NOV
+						}
+					}
+					NOV = { set_autonomy = { target = KYR autonomy_state = autonomy_free } }
+					econ_leave_sphere = yes
+					leave_faction = yes
+				}
+				AFG = { puppet = KYR }
+				promote_character = KYR_AFG_Puppet
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 100
+				}
+				set_party_name = {
+					ideology = despotism
+					name = AFG_Central_Asia_Party
+					long_name = AFG_Central_Asia_Party_long
+				}
+				set_cosmetic_tag = KYR_AFG
+			}
+			TAJ = {
+				transfer_state = 742
+				add_state_core = 742
+			
+				TNO_startup_nation = yes
+				
+				if = {
+					limit = {
+						TAJ = {
+							is_in_faction_with = NOV
+						}
+					}
+					NOV = { set_autonomy = { target = TAJ autonomy_state = autonomy_free } }
+					econ_leave_sphere = yes
+					leave_faction = yes
+				}
+				AFG = { puppet = TAJ }
+				promote_character = TAJ_AFG_Puppet
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 100
+				}
+				set_party_name = {
+					ideology = despotism
+					name = AFG_Central_Asia_Party
+					long_name = AFG_Central_Asia_Party_long
+				}
+				set_cosmetic_tag = TAJ_AFG
+			}
+			TRK = {
+				transfer_state = 584
+				add_state_core = 584
+			
+				TNO_startup_nation = yes
+				
+				if = {
+					limit = {
+						TRK = {
+							is_in_faction_with = NOV
+						}
+					}
+					NOV = { set_autonomy = { target = TRK autonomy_state = autonomy_free } }
+					econ_leave_sphere = yes
+					leave_faction = yes
+				}
+				AFG = { puppet = TRK }
+				promote_character = TRK_AFG_Puppet
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_party_name = {
+					ideology = despotism
+					name = AFG_Central_Asia_Party
+					long_name = AFG_Central_Asia_Party_long
+				}
+				set_popularities = {
+					despotism = 100
+				}
+				set_cosmetic_tag = TRK_AFG
+			}
+		}
+	}
+	JAP = {
+		add_to_faction = MAG
+		add_to_faction = PRC
+		add_to_faction = ALT
+		set_autonomy = {
+			target = MAG
+			autonomy_state = autonomy_puppet
+		}
+		transfer_state = 809
+	}
+	MAN = {
+		transfer_state = 408
+		transfer_state = 409
+		transfer_state = 657
+		transfer_state = 1644
+		transfer_state = 1646
+		transfer_state = 1364
+	}
+	#408 = {
+	#	add_core_of = MAN
+	#}
+	#409 = {
+	#	add_core_of = MAN
+	#}
+	#809 = {
+	#	add_core_of = MAN
+	# #}
+	# set_variable = { 1644.nationality = 1101 }
+	# set_variable = { 1645.nationality = 1101 }
+	# set_variable = { 657.nationality = 1102 }
+	# set_variable = { 1647.nationality = 1102 }
+	# set_variable = { 1646.nationality = 1102 }
+	hidden_effect = {
+		XXX = {
+			NOV_Koyanto = { set_nationality = KMC }
+			NOV_Rytgev_Rytkheu = { set_nationality = AMR }
+			NOV_Matvey_Innokentevich_Amagaev = { set_nationality = BRY }
+			NOV_Ogdo_Aksyonova = { set_nationality = SBA }
+			NOV_Alitet_Nemtushkin = { set_nationality = CHT }
+			NOV_Valery_Chaptynov = { set_nationality = ALT }
+			NOV_Megacorporation_Troika = { set_nationality = NOV }
+			NOV_Leonid_Vasilievich_Laptsui = { set_nationality = FAV }
+			NOV_Alexander_Vasilyevich_Filipenko = { set_nationality = YGR }
+			NOV_Anatoly_Ivanovich_Saltykov = { set_nationality = URL }
+			NOV_Mongush_Kenin_Lopsan = { set_nationality = PRC }
+			NOV_Viktor_Orlov = { set_nationality = KRS }
+		}
+		NOV = {
+			NOV_Amet_khan_Sultan = { set_nationality = IRK }
+			NOV_Alexander_Novikov = { set_nationality = SVR }
+			NOV_Anatoly_Marchenko = { set_nationality = TOM }
+			load_focus_tree = ZZZ_blank_focus
+		}
+	}
+	AMR = {
+		transfer_state = 891
+		
+		TNO_startup_nation = yes
+		
+		set_variable = { base_inflation_rate = 0 }
+		set_variable = { GDP_growth = 1 }
+		set_variable = { GDP = 0.1}
+
+		remove_ideas = {
+			RUS_heirs_of_harbin
+			AMR_rusfascist_stronghold
+			AMR_paranoid_vozhd_1
+			RUS_AMR_repop_program_1
+		}
+		remove_all_ministers = yes
+		fill_empty_minister = yes
+		set_capital = {
+			state = 891
+		}
+		every_state = {
+			limit = {
+				is_owned_by = AMR
+			}
+			add_core_of = AMR
+		}
+		promote_character = NOV_Rytgev_Rytkheu
+		set_politics = {
+			ruling_party = paternalism
+		}
+		set_party_name = { 
+			ideology = paternalism
+			long_name = "Chukchi National Movement" 
+			name = "Chukchi National Movement" 
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = 1
+		}
+		set_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+		econ_type_change = yes
+		econ_join_sphere_JAP = yes
+		
+		set_cosmetic_tag = AMR_die
+		load_focus_tree = ZZZ_blank_focus
+		set_province_name = {
+			id = 13063
+			name = "Kagyrgyn"
+		}
+	}
+	KMC = {
+		transfer_state = 637
+		
+		TNO_startup_nation = yes
+		
+		every_state = {
+			limit = {
+				is_owned_by = KMC
+			}
+			add_core_of = KMC
+		}
+		remove_all_ministers = yes
+		fill_empty_minister = yes
+		remove_ideas = {
+			KMC_sailor_state
+		}
+		load_focus_tree = ZZZ_blank_focus
+		promote_character = NOV_Koyanto
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_party_name = { 
+			ideology = fascism
+			long_name = "Koryak Grand Council" 
+			name = "Koryak Grand Council" 
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = 1
+		}
+		set_variable = { TNO_economy_type_temp = token:Econ_Type_Corporatism }
+		econ_type_change = yes
+		econ_join_sphere_JAP = yes
+		set_cosmetic_tag = KMC_die
+	}
+	BRY = {
+		transfer_state = 564
+		transfer_state = 565
+		
+		TNO_startup_nation = yes
+		
+		every_state = {
+			limit = {
+				is_owned_by = BRY
+			}
+			add_core_of = BRY
+		}
+		remove_ideas = {
+			BRY_uncertain_revolutionaries
+			BRY_ghost_of_bukharinism
+		}
+		remove_all_ministers = yes
+		fill_empty_minister = yes
+		promote_character = NOV_Matvey_Innokentevich_Amagaev
+		set_politics = {
+			ruling_party = paternalism
+		}
+		set_party_name = { 
+			ideology = paternalism
+			long_name = "People's Khural of the Union of Buryatia"
+			name = "People's Khural" 
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = 1
+		}
+		set_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+		econ_type_change = yes
+		econ_join_sphere_JAP = yes
+		set_cosmetic_tag = BRY_die
+		give_resource_rights = { receiver = JAP state = 564 }
+		load_focus_tree = ZZZ_blank_focus
+		set_province_name = {
+			id = 4705
+			name = "Khyoolgo"
+		}
+		set_province_name = {
+			id = 7835
+			name = "Ulaan-Üde"
+		}
+		set_province_name = {
+			id = 14458
+			name = "Galuuta Nuur"
+		}
+	}
+	MAG = {
+		transfer_state = 561
+		transfer_state = 562
+		transfer_state = 563
+		transfer_state = 886
+		
+		TNO_startup_nation = yes
+		
+		every_state = {
+			limit = {
+				is_owned_by = MAG
+			}
+			add_core_of = MAG
+		}
+		add_ideas = Sphere_Fully_Dependent
+		remove_all_ministers = yes
+		fill_empty_minister = yes
+		remove_ideas = {
+			MAG_fascist_splitters
+			RUS_heirs_of_harbin
+			MAG_gateway_into_russia
+			RUS_port_of_magadan
+			RUS_cheryomushki
+		}
+		add_country_leader_role = { #don't question why this one is different ok idk why it works now either
+			character = MAG_Vladimir_Kibardin
+			promote_leader = yes
+			country_leader = {
+				desc = "POLITICS_NOV_Vladimir_Kibardin_DESC"
+				expire = "1999.1.1"
+				ideology = fascism_statist_corporatocracy_subtype
+				id = -1
+			}
+		}
+		set_country_leader_portrait = { portrait = "gfx/leaders/NOV_fail/NOV_Vladimir_Kibardin.dds" }
+		set_politics = {
+			ruling_party = fascism
+		}
+		set_party_name = { 
+			ideology = fascism 
+			long_name = "Zabaykalsky Natsionalnaya Trudovaya Partiya - Staraya Gvardiya "
+			name = "ZNTP - SG" 
+		}
+		set_party_name = { 
+			ideology = national_socialism 
+			long_name = "Zabaykalsky Natsionalnaya Trudovaya Partiya - Amurskaya Klika"
+			name = "ZNTP - AK" 
+		}
+		set_party_name = { 
+			ideology = ultranationalism
+			long_name = "Zabaykalsky Natsionalnaya Trudovaya Partiya - Vosstanoviteli"
+			name = "ZNTP - V" 
+		}
+		set_party_name = { 
+			ideology = despotism
+			long_name = "Zabaykalsky Natsionalnaya Trudovaya Partiya - Federalisty"
+			name = "ZNTP - F" 
+		}
+		set_popularities = {
+			fascism = 55
+			national_socialism = 15
+			ultranationalism = 15
+			despotism = 15
+		}
+		econ_join_sphere_JAP = yes
+		set_cosmetic_tag = MAG_die
+		give_resource_rights = { receiver = JAP state = 564 }
+		load_focus_tree = ZZZ_blank_focus
+	}
+	YAK = {
+		transfer_state = 761
+		transfer_state = 890
+		transfer_state = 760
+		transfer_state = 574
+		transfer_state = 889
+		transfer_state = 759
+		transfer_state = 644
+		
+		TNO_startup_nation = yes
+		
+		every_state = {
+			limit = {
+				is_owned_by = YAK
+			}
+			add_core_of = YAK
+		}
+		add_country_leader_role = { #don't question why this one is different ok idk why it works now either
+			character = YAK_Georgy_Basharin
+			promote_leader = yes
+			country_leader = {
+				desc = "POLITICS_NOV_Georgiy_Basharin_DESC"
+				expire = "1999.1.1"
+				ideology = paternalism_corporate_paternalism_subtype
+				id = -1
+			}
+		}
+		set_country_leader_portrait = { portrait = "gfx/leaders/NOV_fail/NOV_Georgiy_Basharin.dds" }
+		set_politics = {
+			ruling_party = paternalism
+		}
+		set_party_name = { 
+			ideology = paternalism
+			long_name = "Korporativnay Monopoliya"
+			name = "Korporativnay Monopoliya" 
+		}
+		set_popularities = {
+			paternalism = 75
+			liberalism = 25
+		}
+		set_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Corporate_Oligopoly }
+		econ_subtype_change = yes
+		set_cosmetic_tag = YAK_die
+		set_province_name = {
+			id = 10641
+			name = "Djokuuskay"
+		}
+		set_province_name = {
+			id = 7765
+			name = "Ölüökhüme"
+		}
+		set_province_name = {
+			id = 13059
+			name = "Bülüü"
+		}
+		set_province_name = {
+			id = 13350
+			name = "Uus Nyara"
+		}
+	}
+	PRC = {
+		transfer_state = 329
+		
+		TNO_startup_nation = yes
+		
+		every_state = {
+			limit = {
+				is_owned_by = PRC
+			}
+			add_core_of = PRC
+		}
+		remove_ideas = {
+			PRC_factionalism
+			PRC_democratic_military
+			RUS_savy_army
+		}
+		add_ideas = Sphere_Fully_Dependent
+		remove_dynamic_modifier = {
+			modifier = PRC_red_army_dynamic_modifier
+		}
+		remove_dynamic_modifier = {
+			modifier = RUS_legacy_of_the_siberian_plan
+		}
+		remove_all_ministers = yes
+		fill_empty_minister = yes
+		promote_character = NOV_Mongush_Kenin_Lopsan
+		set_politics = {
+			ruling_party = paternalism
+		}
+		set_party_name = { 
+			ideology = paternalism
+			long_name = "Great Khural of the Republic of Tuva"
+			name = "Great Khural" 
+		}
+		set_party_name = { 
+			ideology = fascism
+			long_name = "Farmer's Union - Right"
+			name = "Farmer's Union - Right" 
+		}
+		set_party_name = { 
+			ideology = conservatism
+			long_name = "Farmer's Union - Left"
+			name = "Farmer's Union - Left" 
+		}
+		set_popularities = {
+			paternalism = 50
+			fascism = 25
+			conservatism = 25
+		}
+		set_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+		econ_type_change = yes
+		econ_join_sphere_JAP = yes
+		set_cosmetic_tag = PRC_die
+		give_resource_rights = { receiver = JAP state = 329 }
+		set_province_name = {
+			id = 10627
+			name = "Kizil"
+		}
+	}
+	ALT = {
+		transfer_state = 654
+		
+		TNO_startup_nation = yes
+		
+		every_state = {
+			limit = {
+				is_owned_by = ALT
+			}
+			add_core_of = ALT
+		}
+		remove_ideas = {
+			ALT_religious_divide
+			ALT_christian_socialism
+			ALT_agrarian_economy
+		}
+		remove_dynamic_modifier = {
+			modifier = RUS_legacy_of_the_siberian_plan
+		}
+		remove_all_ministers = yes
+		fill_empty_minister = yes
+		promote_character = NOV_Valery_Chaptynov
+		set_politics = {
+			ruling_party = paternalism
+		}
+		add_ideas = Sphere_Fully_Dependent
+		set_party_name = { 
+			ideology = socialist
+			long_name = "El Kurultai - Agrarian Socialists"
+			name = "El Kurultai - AS" 
+		}
+		set_party_name = { 
+			ideology = progressivism
+			long_name = "El Kurultai - Left-Wing Agrarians"
+			name = "El Kurultai - LWA" 
+		}
+		set_party_name = { 
+			ideology = liberalism 
+			long_name = "El Kurultai - Liberal Agrarians"
+			name = "El Kurultai - LA"
+		}
+		set_popularities = {
+			paternalism = 60
+			national_socialism = 20
+			despotism = 20
+		}
+		set_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+		econ_type_change = yes
+		set_cosmetic_tag = ALT_die
+		set_province_name = {
+			id = 4800
+			name = "Ulalu"
+		}
+	}
+	CHT = {
+		set_capital = { state = 575 }
+		
+		TNO_startup_nation = yes
+		
+		transfer_state = 575
+		every_state = {
+			limit = {
+				is_owned_by = CHT
+			}
+			add_core_of = CHT
+		}
+		load_focus_tree = ZZZ_blank_focus
+		remove_ideas = {
+			RUS_heirs_of_harbin
+			CHT_uneasy_figurhead
+			CHT_sunset_of_white_chivalry
+			RUS_cheryomushki
+		}
+		remove_all_ministers = yes
+		fill_empty_minister = yes
+		promote_character = NOV_Alitet_Nemtushkin
+		set_politics = {
+			ruling_party = conservatism
+		}
+		set_party_name = { 
+			ideology = conservatism
+			long_name = "Soyuz Fermerov Evenkii"
+			name = "SFE" 
+		}
+		set_popularities = {
+			conservatism = 100
+		}
+		set_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+		econ_type_change = yes
+		set_cosmetic_tag = CHT_die
+		set_province_name = {
+			id = 4812
+			name = "Turu"
+		}
+	}
+	SBA = {
+		set_capital = { state = 516 }
+		
+		TNO_startup_nation = yes
+		
+		transfer_state = 516
+		every_state = {
+			limit = {
+				is_owned_by = SBA
+			}
+			add_core_of = SBA
+		}
+		remove_ideas = {
+			SBA_anarchist_refuge
+			SBA_militarized_society
+			SBA_black_army_administration_2
+		}
+		remove_dynamic_modifier = {
+			modifier = RUS_legacy_of_the_siberian_plan
+		}
+		remove_all_ministers = yes
+		fill_empty_minister = yes
+		#create_country_leader = {
+		#	name = "Norilsk City Council"
+		#	desc = "POLITICS_NORILSK_CITY_COUNCIL_DESC"
+		#	picture = "Portrait_Norilsk_City_Council_Authority.dds"
+		#	expire = "1999.1.1"
+		#	ideology = paternalism_subtype
+		#	traits = {
+		#	}
+		#}
+		promote_character = NOV_Ogdo_Aksyonova
+		set_politics = {
+			ruling_party = paternalism
+		}
+		#set_party_name = { 
+		#	ideology = paternalism
+		#	long_name = "Norilsk City Council"
+		#	name = "Norilsk City Council" 
+		#} # remember to change me Danish
+		set_popularities = {
+			paternalism = 100
+		}
+		set_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+		econ_type_change = yes
+		set_cosmetic_tag = SBA_die
+		load_focus_tree = ZZZ_blank_focus
+	}
+	IRK = {
+		transfer_state = 566
+		transfer_state = 567
+		transfer_state = 568
+		transfer_state = 758
+		
+		TNO_startup_nation = yes
+		
+		set_cosmetic_tag = IRK_die
+		load_focus_tree = ZZZ_blank_focus
+		NOV_Amet_khan_Sultan = {
+			set_portraits = {
+				civilian = { large = "gfx/leaders/NOV_fail/NOV_Amet_khan_Sultan.dds" }
+				army = { large = "gfx/leaders/NOV_fail/NOV_Amet_khan_Sultan.dds" }
+			}
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_NOV_Amet_khan_Sultan_DESC"
+					expire = "1999.1.1"
+					ideology = paternalism_provisional_government_subtype
+					id = -1
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = paternalism
+		}
+		set_popularities = {
+			paternalism = 65
+			communist_1 = 25
+			communist = 10
+		}
+		set_party_name = {
+			ideology = paternalism
+			long_name = "Vremennoye Pravitel'stvo Irkutskoy Oblasti"
+			name = "VPIO"
+		}
+		set_party_name = {
+			ideology = communist_1
+			long_name = IRK_socialist_party_long
+			name = IRK_socialist_party
+		}
+		remove_ideas = {
+			IRK_bitter_remnant
+			IRK_yagodas_paranoia
+			RUS_irkutsk_hydro_station
+			RUS_IRK_repop_program_1
+		}
+		every_state = {
+			limit = {
+				is_owned_by = IRK
+			}
+			add_core_of = IRK
+		}
+	}
+	TOM = {
+		transfer_state = 576
+		transfer_state = 577
+		transfer_state = 578
+		transfer_state = 887
+		transfer_state = 888
+		
+		TNO_startup_nation = yes
+		
+		set_cosmetic_tag = TOM_die
+		load_focus_tree = ZZZ_blank_focus
+		set_popularities = {
+			progressivism = 50
+			conservatism = 10
+			liberalism = 25
+			communist = 8
+			socialist = 7
+		} 
+		promote_character = NOV_Anatoly_Marchenko
+		set_politics = {
+			ruling_party = progressivism
+		}
+		remove_ideas = {
+			TOM_formation_of_the_salons
+			TOM_warlord_of_the_city
+			TOM_provisional_government
+		}
+		remove_dynamic_modifier = {
+			modifier = RUS_legacy_of_the_siberian_plan
+		}
+		every_state = {
+			limit = {
+				is_owned_by = TOM
+			}
+			add_core_of = TOM
+		}
+		SWRW_NOV_new_party_names = yes
+	}
+	NOV = {
+		set_cosmetic_tag = NOV_dead
+		transfer_state = 569
+		promote_character = NOV_Megacorporation_Troika
+		set_party_name = {
+			ideology = despotism
+			long_name = "Troyka Megakorporatsii"
+			name = "Troyka"
+		}
+		set_politics = {
+			ruling_party = despotism
+		}
+		add_popularity = {
+			ideology = despotism
+			popularity = 1
+		}
+		remove_ideas = {
+			NOV_Disproportionate_Population
+			NOV_The_All_Siberian_Army
+			RUS_novosibirsk_aircraft_plant
+		}
+		remove_dynamic_modifier = {
+			modifier = RUS_legacy_of_the_siberian_plan
+		}
+		every_state = {
+			limit = {
+				is_owned_by = NOV
+			}
+			add_core_of = NOV
+		}
+	}
+	SVR = {
+		set_cosmetic_tag = SVR_dead
+		transfer_state = 571
+		transfer_state = 403
+		transfer_state = 754
+		transfer_state = 573
+		transfer_state = 653
+		transfer_state = 581
+		transfer_state = 572
+		transfer_state = 871
+		
+		TNO_startup_nation = yes
+		
+		every_state = {
+			limit = {
+				is_owned_by = SVR
+			}
+			add_core_of = SVR
+		}
+		load_focus_tree = ZZZ_blank_focus
+		NOV_Alexander_Novikov = {
+			set_portraits = {
+				civilian = { large = "gfx/leaders/NOV_fail/NOV_Alexander_Novikov.dds" }
+				army = { large = "gfx/leaders/NOV_fail/NOV_Alexander_Novikov.dds" }
+			}
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_NOV_Alexander_Novikov_DESC"
+					expire = "1999.1.1"
+					ideology = paternalism_anocracy_subtype
+					id = -1
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = paternalism
+		}
+		remove_ideas = {
+			SVR_notso_redarmy
+			SVR_black_league_influence_tier_1
+			SVR_revisionist_influence_tier_2
+			RUS_warlord_manpower
+		}
+	}
+	FAV = {
+		transfer_state = 579
+		transfer_state = 756
+		transfer_state = 844
+		transfer_state = 581
+		
+		TNO_startup_nation = yes
+		
+		promote_character = NOV_Leonid_Vasilievich_Laptsui
+		set_politics = {
+			ruling_party = liberalism
+		}
+		set_popularities = {
+			liberalism = 60
+			conservatism = 40
+		}
+		every_state = {
+			limit = {
+				is_owned_by = FAV
+			}
+			add_core_of = FAV
+		}
+		set_cosmetic_tag = FAV_dead
+		set_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+		econ_type_change = yes
+		# set_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Agrarian_Spartanism }
+		# econ_subtype_change = yes
+		remove_ideas = {
+			FAV_night_witches
+			FAV_aerial_society
+			FAV_collective_improvisation
+		}
+	}
+	URL = {
+		transfer_state = 846
+		transfer_state = 847
+		transfer_state = 848
+		transfer_state = 582
+		
+		TNO_startup_nation = yes
+		
+		set_cosmetic_tag = URL_die
+		load_focus_tree = ZZZ_blank_focus
+		every_state = {
+			limit = {
+				is_owned_by = URL
+			}
+			add_core_of = URL
+		}
+		promote_character = NOV_Anatoly_Ivanovich_Saltykov
+		set_politics = {
+			ruling_party = liberalism
+		}
+		set_party_name = {
+			ideology = liberalism
+			long_name = "Udmurtskoye Natsional'noye Sobraniye"
+			name = "UNS"
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.6
+		} 
+		remove_ideas = {
+			URL_children_of_vorkuta
+			URL_refugee_crisis
+		}
+	}
+	YGR = {
+		transfer_state = 580
+		transfer_state = 845
+		
+		TNO_startup_nation = yes
+		
+		set_cosmetic_tag = YGR_dead
+		every_state = {
+			limit = {
+				is_owned_by = YGR
+			}
+			add_core_of = YGR
+		}
+		promote_character = NOV_Alexander_Vasilyevich_Filipenko
+		set_politics = {
+			ruling_party = paternalism
+		}
+		remove_ideas = {
+			YGR_selfmade_men
+		}
+	}
+	KRS = {
+		transfer_state = 757
+		
+		TNO_startup_nation = yes
+		
+		set_cosmetic_tag = KRS_dead
+		promote_character = NOV_Viktor_Orlov
+		set_politics = {
+			ruling_party = progressivism
+		}
+		every_state = {
+			limit = {
+				is_owned_by = KRS
+			}
+			add_core_of = KRS
+		}
+		set_popularities = {
+			progressivism = 60
+			liberalism = 10
+			socialist = 20
+			communist = 10
+		}
+		set_party_name = {
+			ideology = progressivism
+			long_name = "Agrarnaya Partiya Khakassia"
+			name = "APK"
+		}
+		set_party_name = {
+			ideology = communist
+			long_name = IRK_communist_party_long
+			name = IRK_communist_party
+		}
+		set_party_name = {
+			ideology = socialist
+			long_name = KRS_paternalism_party_long
+			name = KRS_paternalism_party
+		}
+		set_party_name = {
+			ideology = liberalism
+			long_name = "Liberal'noye Obnovlencheskoye Dvizheniye"
+			name = "LOD"
+		}
+		remove_ideas = {
+			KRS_wild_promises
+			KRS_military_guided_democracy
+			KRS_treasonous_traditions
+			RUS_krasnoyarsk_railway_junction
+		}
+		remove_dynamic_modifier = {
+			modifier = RUS_legacy_of_the_siberian_plan
+		}
+	}
+	#state names
+	set_province_name = { id = 13348 name = "Nyouh" }
+	set_province_name = { id = 10677 name = "Saranpavyl" }
+	set_province_name = { id = 1684 name = "Saljaꜧ harad" }
+	set_province_name = { id = 13293 name = "Serhanł" }	
+	set_province_name = { id = 1812 name = "Jomvoćś" }
+	set_province_name = { id = 10627 name = "Hem-Beldir" }
+	set_province_name = { id = 14458 name = "Galuuta Nuur" }
+	set_province_name = { id = 10557 name = "Chernyshevskaya" }
+	set_province_name = { id = 1722 name = "Ecigeen" }
+	set_province_name = { id = 13350 name = "Uus Ñara" }
+	set_province_name = { id = 4455 name = "Oloy" }
+	set_province_name = { id = 10641 name = "Jokuuskay" }
+	set_province_name = { id = 4265 name = "Beloret" }
+	set_province_name = { id = 10649 name = "Ağban" }
+	every_country = { limit = { is_ai = no } news_event = WORLD.40034 }
+}
+SWRW_NOV_new_party_names = {
+	set_party_name = {
+		ideology = paternalism
+		long_name = NOV_shukshin_VRPP_long
+		name = NOV_shukshin_VRPP_short
+	}
+	set_party_name = {
+		ideology = liberalism
+		long_name = NOV_shukshin_RSLP_long
+		name = NOV_shukshin_RSLP_short
+	}
+	set_party_name = {
+		ideology = progressivism
+		long_name = NOV_shukshin_DSPR_long
+		name = NOV_shukshin_DSPR_short
+	}
+	set_party_name = {
+		ideology = despotism
+		long_name = NOV_shukshin_RIRM_long
+		name = NOV_shukshin_RIRM_short
+	}
+	set_party_name = {
+		ideology = conservatism
+		long_name = NOV_shukshin_RAPP_Libcon_long
+		name = NOV_shukshin_RAPP_Libcon_short
+	}
+	set_party_name = {
+		ideology = communist
+		long_name = NOV_shukshin_CPRF_long
+		name = NOV_shukshin_CPRF_short
+	}
+	set_party_name = {
+		ideology = socialist
+		long_name = NOV_shukshin_SRP_long
+		name = NOV_shukshin_SRP_short
+	}
+	set_party_name = {
+		ideology = conservatism_1
+		long_name = NOV_shukshin_NFM_long
+		name = NOV_shukshin_NFM_short
+	}
+}
+SWRW_pakt_universal_renamings = {#Either i do this for now or i have to copy an insane ammount of state files :suffering:
+	every_state = {
+		limit = {
+			OR = {
+				is_owned_by = CAU
+				is_owned_by = OST
+			}
+			NOT = {
+				has_state_flag = universal_renamings
+				state = 95 #Empty, already not in german
+				state = 1397 #Empty, already not in german
+				state = 1552 #Empty, already not in german
+			}
+		}
+		set_state_flag = universal_renamings
+	}
+	1712  = { set_state_flag = universal_renamings }
+	146  = { set_state_flag = universal_renamings }
+	64  = { set_state_flag = universal_renamings }
+}
+
+SWRW_NOV_core_muscovy = {
+	add_political_power = 475
+	# activate_decision = RUS_coring_integrate_petrograd
+	activate_decision = RUS_coring_integrate_moscow
+	activate_decision = RUS_coring_integrate_klin
+	activate_decision = RUS_coring_integrate_vladimir
+	activate_decision = RUS_coring_integrate_volkhov
+	activate_decision = RUS_coring_integrate_yaroslavl
+	activate_decision = RUS_coring_integrate_tver
+	activate_decision = RUS_coring_integrate_novgorod
+	activate_decision = RUS_coring_integrate_smolensk
+	activate_decision = RUS_coring_integrate_gomel
+	activate_decision = RUS_coring_integrate_oryol
+	activate_decision = RUS_coring_integrate_kursk
+	activate_decision = RUS_coring_integrate_voronezh
+	activate_decision = RUS_coring_integrate_ryazan
+	activate_decision = RUS_coring_integrate_tambov
+	activate_decision = RUS_coring_integrate_penza
+	activate_decision = RUS_coring_integrate_saratov
+	activate_decision = RUS_coring_integrate_volgograd
+	activate_decision = RUS_coring_integrate_astrakhan
+	activate_decision = RUS_coring_integrate_elista
+	activate_decision = RUS_coring_integrate_pskov
+}

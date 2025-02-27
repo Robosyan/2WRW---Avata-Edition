@@ -1,0 +1,15 @@
+RUS_lord_of_the_east_category = {
+
+	icon = GFX_decision_category_far_east_negotiations
+	picture = GFX_RUS_decision_political_situation
+	priority = 900
+
+	allowed = {
+		is_russian_nation = yes
+	}
+	visible = {
+		has_country_flag = RUS_lord_of_the_east_flag
+	}
+	scripted_gui = RUS_Far_East_Negotiations_GUI
+	visible_when_empty = no
+}

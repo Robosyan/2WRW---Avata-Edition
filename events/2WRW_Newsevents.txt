@@ -1,0 +1,3504 @@
+# The Second West Russian War #
+
+# War Declaration
+
+add_namespace = War_Declaration
+
+news_event = { # WRRF - Marshal Zhukov
+	id = War_Declaration.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.1"}
+	title = War_Declaration.1.t
+	desc = War_Declaration.1.desc
+	picture = GFX_news_event_wrrf_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.1.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_ZHUKOV_DECLARATION }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.1.b
+		trigger = { tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_ZHUKOV_DECLARATION }
+			TNO_fire_super_event = yes
+		}
+	}
+	
+	option = {
+		name = War_Declaration.1.c
+		trigger = { tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_ZHUKOV_DECLARATION }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { # WRRF - Marshal Tukhachevsky
+	id = War_Declaration.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.2"}
+	title = War_Declaration.2.t
+	desc = War_Declaration.2.desc
+	picture = GFX_news_event_wrrf_tukh_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.2.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TUKH_DECLARATION }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.2.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TUKH_DECLARATION }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.2.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TUKH_DECLARATION }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Komi - Yakolev
+	id = War_Declaration.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.3"}
+	title = War_Declaration.3.t
+	desc = War_Declaration.3.desc
+	picture = GFX_news_event_komi_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.3.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOMI_SOCDEM_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.3.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOMI_SOCDEM_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.3.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOMI_SOCDEM_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Komi - Katushev
+	id = War_Declaration.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.4"}
+	title = War_Declaration.4.t
+	desc = War_Declaration.4.desc
+	picture = GFX_news_event_komi_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.4.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOMI_LIBDEM_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.4.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOMI_LIBDEM_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.4.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_KOMI_LIBDEM_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Komi - Stalina (Despot)
+	id = War_Declaration.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.5"}
+	title = War_Declaration.5.t
+	desc = War_Declaration.5.desc
+	picture = GFX_news_event_stalina_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.5.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_STALINA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.5.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_STALINA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.5.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_STALINA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Komi - Stalina (LibCon)
+	id = War_Declaration.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.6"}
+	title = War_Declaration.6.t
+	desc = War_Declaration.6.desc
+	picture = GFX_news_event_stalina_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.6.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_STALINA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.6.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_STALINA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.6.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_STALINA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Komi - Zhdanov
+	id = War_Declaration.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.7"}
+	title = War_Declaration.7.t
+	desc = War_Declaration.7.desc
+	picture = GFX_news_event_zhadanov_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.7.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_ZHDANOV_DECLARATION }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.7.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_ZHDANOV_DECLARATION }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.7.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_ZHDANOV_DECLARATION }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Komi - Bukharina
+	id = War_Declaration.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.8"}
+	title = War_Declaration.8.t
+	desc = War_Declaration.8.desc
+	picture = GFX_news_event_bukharina_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.8.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BUKHARINA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.8.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BUKHARINA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.8.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BUKHARINA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Komi - Suslov
+	id = War_Declaration.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.9"}
+	title = War_Declaration.9.t
+	desc = War_Declaration.9.desc
+	picture = GFX_news_event_suslov_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.9.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SUSLOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.9.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SUSLOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.9.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SUSLOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Komi - Gumilyov
+	id = War_Declaration.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.10"}
+	title = War_Declaration.10.t
+	desc = War_Declaration.10.desc
+	picture = GFX_news_event_gasmask_soldier
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.10.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_EURASIA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.10.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_EURASIA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.10.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_EURASIA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Komi - Shafarevich
+	id = War_Declaration.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.11"}
+	title = War_Declaration.11.t
+	desc = War_Declaration.11.desc
+	picture = GFX_news_event_shafarevich_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.11.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHAFAREVICH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.11.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHAFAREVICH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.11.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHAFAREVICH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Komi - Serov
+	id = War_Declaration.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.12"}
+	title = War_Declaration.12.t
+	desc = War_Declaration.12.desc
+	picture = GFX_news_event_serov_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.12.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SEROV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.12.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SEROV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.12.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SEROV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Vyatka - Liberal
+	id = War_Declaration.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.13"}
+	title = War_Declaration.13.t
+	desc = War_Declaration.13.desc
+	picture = GFX_news_event_vyatka_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.13.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VYATKA_LIB_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.13.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VYATKA_LIB_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.13.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VYATKA_LIB_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Vyatka - Conservative
+	id = War_Declaration.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.14"}
+	title = War_Declaration.14.t
+	desc = War_Declaration.14.desc
+	picture = GFX_news_event_vyatka_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.14.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VYATKA_CON_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.14.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VYATKA_CON_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.14.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VYATKA_CON_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Vyatka - AuthDem
+	id = War_Declaration.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.15"}
+	title = War_Declaration.15.t
+	desc = War_Declaration.15.desc
+	picture = GFX_news_event_vyatka_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.15.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VYATKA_AUTH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.15.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VYATKA_AUTH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.15.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VYATKA_AUTH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Perm - Vagner
+	id = War_Declaration.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.16"}
+	title = War_Declaration.16.t
+	desc = War_Declaration.16.desc
+	picture = GFX_news_event_vagner_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.16.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VAGNER_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.16.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VAGNER_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.16.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VAGNER_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Perm - Velimir
+	id = War_Declaration.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.17"}
+	title = War_Declaration.17.t
+	desc = War_Declaration.17.desc
+	picture = GFX_news_event_hyperborea_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.17.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VELMIR_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.17.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VELMIR_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.17.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_VELMIR_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Samara - Zykov
+	id = War_Declaration.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.18"}
+	title = War_Declaration.18.t
+	desc = War_Declaration.18.desc
+	picture = GFX_news_event_samara_zykov_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.18.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_ZYKOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.18.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_ZYKOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.18.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_ZYKOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Samara - Bunyachenko
+	id = War_Declaration.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.19"}
+	title = War_Declaration.19.t
+	desc = War_Declaration.19.desc
+	picture = GFX_news_event_samara_bunyachenko_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.19.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BUNYACHENKO_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.19.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BUNYACHENKO_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.19.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BUNYACHENKO_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Samara - Artsezo
+	id = War_Declaration.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.20"}
+	title = War_Declaration.20.t
+	desc = War_Declaration.20.desc
+	picture = GFX_news_event_samara_oktan_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.20.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:TNO_SE_ARTEZO_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.20.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:TNO_SE_ARTEZO_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.20.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:TNO_SE_ARTEZO_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Sverdlovsk - Batov
+	id = War_Declaration.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.21"}
+	title = War_Declaration.21.t
+	desc = War_Declaration.21.desc
+	picture = GFX_news_event_batov_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.21.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BATOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.21.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BATOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.21.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BATOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Sverdlovsk - Yeltsin
+	id = War_Declaration.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.22"}
+	title = War_Declaration.22.t
+	desc = War_Declaration.22.desc
+	picture = GFX_news_event_yeltsin_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.22.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_YELTSIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.22.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_YELTSIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.22.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_YELTSIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Tyumen - Kaganovich
+	id = War_Declaration.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.23"}
+	title = War_Declaration.23.t
+	desc = War_Declaration.23.desc
+	picture = GFX_news_event_kaganovich_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.23.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_KAGANOVICH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.23.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_KAGANOVICH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.23.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_KAGANOVICH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+
+news_event = { # Tyumen - Khruschev
+	id = War_Declaration.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.24"}
+	title = War_Declaration.24.t
+	desc = War_Declaration.24.desc
+	picture = GFX_news_event_khrushchev_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.24.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_CORNMAN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.24.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_CORNMAN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.24.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_CORNMAN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Omsk - Yazov
+	id = War_Declaration.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.25"}
+	title = War_Declaration.25.t
+	desc = War_Declaration.25.desc
+	picture = GFX_news_event_omsk_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.25.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_OMSK_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.25.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_OMSK_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.25.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_OMSK_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Novosibirsk - Shukshin
+	id = War_Declaration.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.26"}
+	title = War_Declaration.26.t
+	desc = War_Declaration.26.desc
+	picture = GFX_news_event_russia_novosibirsk_invasion
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.26.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHUKSHIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.26.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHUKSHIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.26.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHUKSHIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Novosibirsk - Pokryshkin
+	id = War_Declaration.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.27"}
+	title = War_Declaration.27.t
+	desc = War_Declaration.27.desc
+	picture = GFX_news_event_russia_novosibirsk_invasion
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.27.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_POKRYSHKIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.27.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_POKRYSHKIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.27.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_POKRYSHKIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Kemerovo - Yuri
+	id = War_Declaration.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.28"}
+	title = War_Declaration.28.t
+	desc = War_Declaration.28.desc
+	picture = GFX_news_event_kemerovo_yuri_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.28.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_YURIY_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.28.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_YURIY_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.28.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_YURIY_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Kemerovo - Rogneda
+	id = War_Declaration.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.29"}
+	title = War_Declaration.29.t
+	desc = War_Declaration.29.desc
+	picture = GFX_news_event_kemerovo_rogneda_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.29.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_LYDIA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.29.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_LYDIA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.29.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_LYDIA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Kansk - Siberian Black Army
+	id = War_Declaration.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.30"}
+	title = War_Declaration.30.t
+	desc = War_Declaration.30.desc
+	picture = GFX_news_event_sba_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.30.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SBA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.30.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SBA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.30.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SBA_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # PRC - OPEN FOR OTHER EVENTS
+	id = War_Declaration.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.31"}
+	title = War_Declaration.31.t
+	desc = War_Declaration.31.desc
+	picture = GFX_news_event_prc_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.31.a
+		set_country_flag = big_event_prc_war_declaration
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.31.b
+		set_country_flag = big_event_prc_war_declaration
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.31.c
+		set_country_flag = big_event_prc_war_declaration
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Tomsk - Modernist
+	id = War_Declaration.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.32"}
+	title = War_Declaration.32.t
+	desc = War_Declaration.32.desc
+	picture = GFX_news_event_modernist_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.32.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_MODERNIST_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.32.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_MODERNIST_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.32.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_MODERNIST_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Tomsk - Decemberist
+	id = War_Declaration.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.33"}
+	title = War_Declaration.33.t
+	desc = War_Declaration.33.desc
+	picture = GFX_news_event_decemberist_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.33.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_DECEMBERIST_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.33.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_DECEMBERIST_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.33.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_DECEMBERIST_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Tomsk - Humanist
+	id = War_Declaration.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.34"}
+	title = War_Declaration.34.t
+	desc = War_Declaration.34.desc
+	picture = GFX_news_event_humanist_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.34.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_HUMANIST_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.34.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_HUMANIST_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.34.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_HUMANIST_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+
+news_event = { # Tomsk - Bastillard
+	id = War_Declaration.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.35"}
+	title = War_Declaration.35.t
+	desc = War_Declaration.35.desc
+	picture = GFX_news_event_bastillard_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.35.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BASTILLARD_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.35.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BASTILLARD_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.35.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_BASTILLARD_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Irkutsk
+	id = War_Declaration.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.36"}
+	title = War_Declaration.36.t
+	desc = War_Declaration.36.desc
+	picture = GFX_news_event_irkutsk_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.36.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_IRKUTSK_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.36.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_IRKUTSK_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.36.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_IRKUTSK_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Buryatia - Authsoc
+	id = War_Declaration.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.37"}
+	title = War_Declaration.37.t
+	desc = War_Declaration.37.desc
+	picture = GFX_news_event_sablin_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.37.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SABLIN_AUTH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.37.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SABLIN_AUTH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.37.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SABLIN_AUTH_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Buryatia - Libsoc
+	id = War_Declaration.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.38"}
+	title = War_Declaration.38.t
+	desc = War_Declaration.38.desc
+	picture = GFX_news_event_sablin_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.38.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SABLIN_LIB_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.38.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SABLIN_LIB_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.38.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SABLIN_LIB_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Chita - Mikhail
+	id = War_Declaration.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.39"}
+	title = War_Declaration.39.t
+	desc = War_Declaration.39.desc
+	picture = GFX_news_event_white_army_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.39.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_MIKHAIL_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.39.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_MIKHAIL_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.39.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_MIKHAIL_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Amur
+	id = War_Declaration.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.40"}
+	title = War_Declaration.40.t
+	desc = War_Declaration.40.desc
+	picture = GFX_news_event_amur_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.40.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_AMUR_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.40.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_AMUR_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.40.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_AMUR_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Magadan - Matkovsky
+	id = War_Declaration.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.41"}
+	title = War_Declaration.41.t
+	desc = War_Declaration.41.desc
+	picture = GFX_news_event_magadan_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.41.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_MATKOVSKY_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.41.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_MATKOVSKY_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.41.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_MATKOVSKY_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Magadan - Petlin
+	id = War_Declaration.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.42"}
+	title = War_Declaration.42.t
+	desc = War_Declaration.42.desc
+	picture = GFX_news_event_petlin_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.42.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_PETLIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+				tag = USA
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.42.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_PETLIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.42.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_PETLIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+
+	option = {
+		name = War_Declaration.42.d
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_PETLIN_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = USA }
+	}
+}
+
+news_event = { # Magadan - Werbell
+	id = War_Declaration.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.43"}
+	title = War_Declaration.43.t
+	desc = War_Declaration.43.desc
+	picture = GFX_news_event_russia_magadan_regional
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.43.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_WERBELL_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.43.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_WERBELL_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.43.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_WERBELL_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Olomon
+	id = War_Declaration.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.44"}
+	title = War_Declaration.44.t
+	desc = War_Declaration.44.desc
+	picture = GFX_news_event_olomon_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.44.a
+		set_country_flag = big_event_divine_mandate_war_declaration
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.44.b
+		set_country_flag = big_event_divine_mandate_war_declaration
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.44.c
+		set_country_flag = big_event_divine_mandate_war_declaration
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Irkutsk - Bessonov
+	id = War_Declaration.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.45"}
+	title = War_Declaration.45.t
+	desc = War_Declaration.45.desc
+	picture = GFX_news_event_irkutsk_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.45.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_IRKUTSK_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.45.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_IRKUTSK_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.45.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_IRKUTSK_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Chita - Shepunov (WHAT THE ACTUAL FUCK)
+	id = War_Declaration.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event War_Declaration.46"}
+	title = War_Declaration.46.t
+	desc = War_Declaration.46.desc
+	picture = GFX_news_event_white_army_war_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = War_Declaration.46.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHEPUNOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = War_Declaration.46.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHEPUNOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = War_Declaration.46.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHEPUNOV_WAR }
+			TNO_fire_super_event = yes
+		}
+		trigger = { tag = GER }
+	}
+}
+
+# Victories
+
+add_namespace = Russian_Victory
+
+news_event = { # Tukhachevsky
+	id = Russian_Victory.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Russian_Victory.2"}
+	title = Russian_Victory.2.t
+	desc = Russian_Victory.2.desc
+	picture = GFX_news_event_red_napoleon_victory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = Russian_Victory.2.a
+		set_country_flag = big_event_red_napoleon_victory
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = Russian_Victory.2.b
+		set_country_flag = big_event_red_napoleon_victory
+		trigger = { tag = RUS }
+	}
+	
+	option = {
+		name = Russian_Victory.2.c
+		set_country_flag = big_event_red_napoleon_victory
+		trigger = { tag = GER }
+	}
+}
+
+news_event = { # Dem Werbell
+	id = Russian_Victory.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Russian_Victory.2"}
+	title = Russian_Victory.3.t
+	desc = Russian_Victory.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+
+	option = {
+		name = Russian_Victory.3.a
+		trigger = {}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_WERBELL_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+# Defeats
+
+# Global Conflicts
+
+add_namespace = Global_Conflicts
+
+news_event = { # Krakow Uprising
+	id = Global_Conflicts.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.5"}
+	title = Global_Conflicts.5.t
+	desc = Global_Conflicts.5.desc
+	picture = GFX_news_event_krakow_uprising
+	
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.5.a
+		trigger = {
+			tag = GER
+		}
+	}
+
+	option = {
+		name = Global_Conflicts.5.b
+		trigger = {
+			NOT = {
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { # Polish Victory
+	id = Global_Conflicts.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.6"}
+	title = Global_Conflicts.6.t
+	desc = Global_Conflicts.6.desc
+	picture = GFX_news_event_polish_victory
+	
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.6.a
+		trigger = {
+			OR ={
+				tag = POL
+				tag = NOV
+				tag = USA
+			}
+		}
+	}
+
+	option = {
+		name = Global_Conflicts.6.b
+		trigger = {
+			tag = JAP
+		}
+	}
+	option = {
+		name = Global_Conflicts.6.c
+		trigger = {
+			tag = GER
+		}
+	}
+
+	option = {
+		name = Global_Conflicts.6.d
+		trigger = {
+			NOT = {
+				tag = GER
+				tag = JAP
+				tag = POL
+				tag = USA
+				tag = NOV
+			}
+		}
+	}
+}
+
+news_event = { # General Gouvernment Victory
+	id = Global_Conflicts.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.7"}
+	title = Global_Conflicts.7.t
+	desc = Global_Conflicts.7.desc
+	picture = GFX_news_event_polish_defeat
+	
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.7.a
+		trigger = {
+			tag = GER
+		}
+	}
+
+	option = {
+		name = Global_Conflicts.7.b
+		trigger = {
+			NOT = {
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { # Polish Exiles Return
+	id = Global_Conflicts.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.8"}
+	title = Global_Conflicts.8.t
+	desc = Global_Conflicts.8.desc
+	picture = GFX_news_event_poland_exiles_return
+	
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.8.a
+		trigger = {
+			tag = GER
+		}
+	}
+
+	option = {
+		name = Global_Conflicts.8.b
+		trigger = {
+			NOT = {
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { #arrow cross big W
+	id = Global_Conflicts.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.9"}
+	title = Global_Conflicts.9.t
+	desc = Global_Conflicts.9.desc
+	picture = GFX_news_event_HUN_Victory
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.9.a
+		trigger = {
+			TAG = RUS
+			NOT = { has_government = national_socialism has_government = fascism }
+		}
+	}
+	option = {
+		name = Global_Conflicts.9.b
+		trigger = {
+			OR = {
+				NOT = {
+					tag = RUS
+				}
+				has_government = national_socialism
+				has_government = fascism
+			}
+		}
+	}
+}
+
+news_event = { #landholders big W
+	id = Global_Conflicts.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.10"}
+	title = Global_Conflicts.10.t
+	desc = Global_Conflicts.10.desc
+	picture = GFX_news_event_HUD_Victory
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.10.a
+		trigger = {
+			TAG = RUS
+		}
+	}
+	option = {
+		name = Global_Conflicts.10.b
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+}
+
+news_event = { #commie big W
+	id = Global_Conflicts.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.11"}
+	title = Global_Conflicts.11.t
+	desc = Global_Conflicts.11.desc
+	picture = GFX_news_event_HUS_Victory
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.11.a
+		trigger = {
+			TAG = RUS
+		}
+	}
+	option = {
+		name = Global_Conflicts.11.b
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+}
+
+news_event = { #germany does a commie hungarian invasion
+	id = Global_Conflicts.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.12"}
+	title = Global_Conflicts.12.t
+	desc = Global_Conflicts.12.desc
+	picture = GFX_news_event_Hungary_GER_Invasion
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.12.a
+		trigger = {
+			TAG = RUS
+		}
+	}
+	option = {
+		name = Global_Conflicts.12.b
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+}
+
+news_event = { #germany does a dem hungarian invasion
+	id = Global_Conflicts.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.13"}
+	title = Global_Conflicts.13.t
+	desc = Global_Conflicts.13.desc
+	picture = GFX_news_event_Hungary_GER_Invasion
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.13.a
+		trigger = {
+			TAG = RUS
+		}
+	}
+	option = {
+		name = Global_Conflicts.13.b
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+}
+
+news_event = { #germany does a natsoc hungarian invasion
+	id = Global_Conflicts.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.14"}
+	title = Global_Conflicts.14.t
+	desc = Global_Conflicts.14.desc
+	picture = GFX_news_event_Hungary_GER_Invasion
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.14.a
+		trigger = {
+			TAG = RUS
+		}
+	}
+	option = {
+		name = Global_Conflicts.14.b
+		trigger = {
+			NOT = {
+				tag = RUS
+			}
+		}
+	}
+}
+
+news_event = { #hungary explodes
+	id = Global_Conflicts.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.15"}
+	title = Global_Conflicts.15.t
+	desc = Global_Conflicts.15.desc
+	picture = GFX_news_event_hungary_crisis_averted
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.15.a
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						tag = RUS
+						RUS = {
+							OR = {
+								has_country_flag = RUS_generic_communist_unifier
+								has_country_flag = RUS_generic_democratic_unifier
+							}
+						}
+					}
+					AND = {
+						tag = GER
+						NOT = { has_global_flag = german_civil_war_bormannvic }
+					}
+				}
+			}
+			SWRW_fopo_add_HCW_tab = yes
+		}
+	}
+}
+
+news_event = { #france invades paktkomission
+	id = Global_Conflicts.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.16"}
+	title = Global_Conflicts.16.t
+	desc = Global_Conflicts.16.desc
+	picture = GFX_news_event_FRA_vs_GLC
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.16.a
+	}
+}
+
+news_event = { #france wins (boring)
+	id = Global_Conflicts.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.17"} 
+	title = Global_Conflicts.17.t
+	desc = Global_Conflicts.17.desc
+	picture = GFX_news_event_FRA_beats_GLC
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.17.a
+	}
+}
+
+news_event = { #paktkomission wins (based)
+	id = Global_Conflicts.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.18"}
+	title = Global_Conflicts.18.t
+	desc = Global_Conflicts.18.desc
+	picture = GFX_news_event_GLC_beats_FRA
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.18.a
+	}
+}
+
+news_event = { #dem germans win
+	id = Global_Conflicts.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.19"}
+	title = Global_Conflicts.19.t
+	desc = Global_Conflicts.19.desc
+	picture = GFX_news_democracy_tards_win
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.19.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_DEM_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { #commie germans win
+	id = Global_Conflicts.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.20"}
+	title = Global_Conflicts.20.t
+	desc = Global_Conflicts.20.desc
+	picture = GFX_news_event_commies_win
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.20.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_HARDLINER_COMMIE_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { #military germans win
+	id = Global_Conflicts.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.21"}
+	title = Global_Conflicts.21.t
+	desc = Global_Conflicts.21.desc
+	picture = GFX_news_event_ferber_wins
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.21.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_MILITARY_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { #Freikorps germans win
+	id = Global_Conflicts.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.22"}
+	title = Global_Conflicts.22.t
+	desc = Global_Conflicts.22.desc
+	picture = GFX_news_event_freikorps_wins
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.22.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_FREIKORPS_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { #german germans win
+	id = Global_Conflicts.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.23"}
+	title = Global_Conflicts.23.t
+	desc = Global_Conflicts.23.desc
+	picture = GFX_news_event_klopfer_wins
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.23.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_KLOPFER_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { #Commie congress begins
+	id = Global_Conflicts.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.24"}
+	title = Global_Conflicts.24.t
+	desc = Global_Conflicts.24.desc
+	picture = GFX_news_event_commie_congress
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.24.a
+		hidden_effect = {
+			RPR = {
+				country_event = { id = Global_GCW.3 days = 20}
+			}
+		}
+	}
+}
+
+news_event = { #Democratic elections begin
+	id = Global_Conflicts.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.25"}
+	title = Global_Conflicts.25.t
+	desc = Global_Conflicts.25.desc
+	picture = GFX_news_event_dem_elections
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.25.a
+		hidden_effect = {
+			REG = {
+				country_event = { id = Global_GCW.4 days = 20 }
+			}
+		}
+	}
+}
+
+news_event = { #FDP win the elections
+	id = Global_Conflicts.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.26"}
+	title = Global_Conflicts.26.t
+	desc = Global_Conflicts.26.desc
+	picture = GFX_news_event_fdp_wins
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.26.a
+	}
+}
+
+news_event = { #KDPD win the elections
+	id = Global_Conflicts.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.27"}
+	title = Global_Conflicts.27.t
+	desc = Global_Conflicts.27.desc
+	picture = GFX_news_event_kdpd_tards
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.27.a
+	}
+}
+
+news_event = { #Gerlach Takes the Chancellorship
+	id = Global_Conflicts.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.28"}
+	title = Global_Conflicts.28.t
+	desc = Global_Conflicts.28.desc
+	picture = GFX_news_event_ldp_tards
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.28.a
+	}
+}
+
+news_event = { #Hoffman Tards WIN
+	id = Global_Conflicts.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.29"}
+	title = Global_Conflicts.29.t
+	desc = Global_Conflicts.29.desc
+	picture = GFX_news_event_hoffman_tards
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.29.a
+	}
+}
+
+news_event = { #Aust Tards WIN
+	id = Global_Conflicts.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.30"} 
+	title = Global_Conflicts.30.t
+	desc = Global_Conflicts.30.desc
+	picture = GFX_news_event_aust_tards
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.30.a
+	}
+}
+
+news_event = { #Dutschke Tards WIN
+	id = Global_Conflicts.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.31"} 
+	title = Global_Conflicts.31.t
+	desc = Global_Conflicts.31.desc
+	picture = GFX_news_event_student_tards
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.31.a
+	}
+}
+
+news_event = { #Nazi Power struggle tards
+	id = Global_Conflicts.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.32"} 
+	title = Global_Conflicts.32.t
+	desc = Global_Conflicts.32.desc
+	picture = GFX_news_event_power_struggle_tards
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.32.a
+		hidden_effect = {
+			GER = {country_event = { id = Global_GCW.5 days = 20 }}
+		}
+	}
+}
+
+news_event = { #Klopfer bros win
+	id = Global_Conflicts.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.33"} 
+	title = Global_Conflicts.33.t
+	desc = Global_Conflicts.33.desc
+	picture = GFX_news_event_kloker_victory
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.33.a
+	}
+}
+
+news_event = { #Brandner bros win
+	id = Global_Conflicts.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.34"} 
+	title = Global_Conflicts.34.t
+	desc = Global_Conflicts.34.desc
+	picture = GFX_news_event_brander_victory
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.34.a
+	}
+}
+
+news_event = { #Freikorps chads start to beat the shit out of each other
+	id = Global_Conflicts.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.35"} 
+	title = Global_Conflicts.35.t
+	desc = Global_Conflicts.35.desc
+	picture = GFX_news_event_froker_war
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.35.a
+		hidden_effect = {
+			SFK = {
+				country_event = { id = Global_GCW.6 days = 20 }
+			}
+		}
+	}
+}
+
+news_event = { #Lemm claps some cheeks
+	id = Global_Conflicts.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.36"} 
+	title = Global_Conflicts.36.t
+	desc = Global_Conflicts.36.desc
+	picture = GFX_news_event_lemm_wins
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.36.a
+	}
+}
+
+news_event = { #Lemm eats shit and Kaltenbrunner takes the number one victory royale
+	id = Global_Conflicts.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.37"} 
+	title = Global_Conflicts.37.t
+	desc = Global_Conflicts.37.desc
+	picture = GFX_news_event_kaltenbrunner_wins
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.37.a
+	}
+}
+
+news_event = { #Lemm eats shit and Backe drags his cock across Germany
+	id = Global_Conflicts.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.38"} 
+	title = Global_Conflicts.38.t
+	desc = Global_Conflicts.38.desc
+	picture = GFX_news_event_backe_wins
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.38.a
+	}
+}
+
+news_event = { #Frenchies and Germans kiss and hug it out
+	id = Global_Conflicts.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.39"} 
+	title = Global_Conflicts.39.t
+	desc = Global_Conflicts.39.desc
+	picture = GFX_news_event_franco_german_thing
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.39.a
+	}
+}
+
+news_event = { #refugees or some shit idk why the fuck are there so many world flavour events
+	id = Global_Conflicts.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.40"} 
+	title = Global_Conflicts.40.t
+	desc = Global_Conflicts.40.desc
+	picture = GFX_news_event_refugee_crisis
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.40.a
+	}
+}
+
+news_event = { #fuggin nazis dunk on the dutch
+	id = Global_Conflicts.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.41"} 
+	title = Global_Conflicts.41.t
+	desc = Global_Conflicts.41.desc
+	picture = GFX_news_event_nazis_dunk_on_the_dutch
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.41.a
+	}
+}
+
+news_event = { #fuggin nazis dunk on the polish...again
+	id = Global_Conflicts.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.42"} 
+	title = Global_Conflicts.42.t
+	desc = Global_Conflicts.42.desc
+	picture = GFX_news_event_nazis_dunk_on_the_polish
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.42.a
+	}
+}
+
+news_event = { #commies invade fasc denmark because all my homies hate danish people :trolle:
+	id = Global_Conflicts.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.43"} 
+	title = Global_Conflicts.43.t
+	desc = Global_Conflicts.43.desc
+	picture = GFX_news_event_commies_beat_danes
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.43.a
+	}
+}
+
+news_event = { #Dems shit on the fasc danes because all my homies hate danish people :trolle:
+	id = Global_Conflicts.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.44"} 
+	title = Global_Conflicts.44.t
+	desc = Global_Conflicts.44.desc
+	picture = GFX_news_event_dem_germans_beat_danish_people
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.44.a
+	}
+}
+
+news_event = { #Nazis beat the danish up because of le epic gamer, tno klopfer (that bounces on a trampoline moment)...i want to die
+	id = Global_Conflicts.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.45"} 
+	title = Global_Conflicts.45.t
+	desc = Global_Conflicts.45.desc
+	picture = GFX_news_event_nazis_invade_denmark
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.45.a
+	}
+}
+
+news_event = { #Commies beat the dutch
+	id = Global_Conflicts.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.46"} 
+	title = Global_Conflicts.46.t
+	desc = Global_Conflicts.46.desc
+	picture = GFX_news_event_commies_fight_the_dutch
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.46.a
+	}
+}
+
+news_event = { #dems beat the dutch
+	id = Global_Conflicts.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.47"} 
+	title = Global_Conflicts.47.t
+	desc = Global_Conflicts.47.desc
+	picture = GFX_news_event_bundeswehr_beats_dutch
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.47.a
+	}
+}
+
+news_event = { #dems beat german poland
+	id = Global_Conflicts.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.48"} 
+	title = Global_Conflicts.48.t
+	desc = Global_Conflicts.48.desc
+	picture = GFX_news_event_dems_beat_OZW
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.48.a
+	}
+}
+
+news_event = { #commies invade poland
+	id = Global_Conflicts.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.49"} 
+	title = Global_Conflicts.49.t
+	desc = Global_Conflicts.49.desc
+	picture = GFX_news_event_commies_in_poland
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.49.a
+	}
+}
+
+news_event = { #commies invade german poland
+	id = Global_Conflicts.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.50"} 
+	title = Global_Conflicts.50.t
+	desc = Global_Conflicts.50.desc
+	picture = GFX_news_event_commies_invade_german_poland
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.50.a
+	}
+}
+
+news_event = { #denmark commies
+	id = Global_Conflicts.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.51"} 
+	title = Global_Conflicts.51.t
+	desc = Global_Conflicts.51.desc
+	picture = GFX_news_event_danish_commies_go_wild
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.51.a
+	}
+}
+
+news_event = { #denmark dems
+	id = Global_Conflicts.52
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.52"} 
+	title = Global_Conflicts.52.t
+	desc = Global_Conflicts.52.desc
+	picture = GFX_news_event_danish_dems_announce
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.52.a
+	}
+}
+
+news_event = { #denmark germans
+	id = Global_Conflicts.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.53"} 
+	title = Global_Conflicts.53.t
+	desc = Global_Conflicts.53.desc
+	picture = GFX_news_event_danish_wehrmacht
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.53.a
+	}
+}
+
+news_event = { #denmark gamers
+	id = Global_Conflicts.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.54"} 
+	title = Global_Conflicts.54.t
+	desc = Global_Conflicts.54.desc
+	picture = GFX_news_event_soeren_takeover
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.54.a
+	}
+}
+
+news_event = { #bi
+	id = Global_Conflicts.55
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.55"} 
+	title = Global_Conflicts.55.t
+	desc = Global_Conflicts.55.desc
+	picture = GFX_news_event_commies_invade_german_poland
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.55.a
+	}
+}
+
+news_event = { #hungarian civil war dem edition
+	id = Global_Conflicts.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.56"} 
+	title = Global_Conflicts.56.t
+	desc = Global_Conflicts.56.desc
+	picture = GFX_news_event_hungary_crisis_averted
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.56.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+	}
+	option = {
+		name = Global_Conflicts.56.b
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = {
+				tag = RUS
+				RUS = {
+					OR = {
+						has_country_flag = RUS_generic_communist_unifier
+						has_country_flag = RUS_generic_democratic_unifier
+					}
+				}
+			}
+			SWRW_fopo_add_HCW_tab = yes
+		}
+	}
+	option = {
+		name = Global_Conflicts.56.c
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = {
+				has_global_flag = german_civil_war_speervic
+			}
+			SWRW_fopo_add_HCW_tab = yes
+		}
+	}
+}
+
+news_event = { #Walter Jens Ascends to the Führership
+	id = Global_Conflicts.57
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.57"} 
+	title = Global_Conflicts.57.t
+	desc = Global_Conflicts.57.desc
+	picture = GFX_news_event_walter_jens_wins
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.57.a
+	}
+}
+
+news_event = { #Richard Von Shirach Installed as Next Fuhrer
+	id = Global_Conflicts.58
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_Conflicts.58"} 
+	title = Global_Conflicts.58.t
+	desc = Global_Conflicts.58.desc
+	picture = GFX_news_event_richard_shirach_wins
+	is_triggered_only = yes
+
+	option = {
+		name = Global_Conflicts.58.a
+	}
+}
+# Vladivostok
+
+#USA Skeleton
+
+add_namespace = SWRW_USA_skeleton
+
+news_event = { #The 1972 NPPNC Catastrophe
+	id = SWRW_USA_skeleton.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.1" }
+	title = SWRW_USA_skeleton.1.t
+	desc = SWRW_USA_skeleton.1.desc
+	picture = GFX_news_event_nppnc_riots
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.1.a
+	}
+}
+
+news_event = { #Democratic Party merges with the NPP-P
+	id = SWRW_USA_skeleton.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.2" }
+	title = SWRW_USA_skeleton.2.t
+	desc = SWRW_USA_skeleton.2.desc
+	picture = GFX_news_event_npp_p_gone
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.2.a
+	}
+}
+
+news_event = { #Republican Party merges with the NPP-N
+	id = SWRW_USA_skeleton.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.3" }
+	title = SWRW_USA_skeleton.3.t
+	desc = SWRW_USA_skeleton.3.desc
+	picture = GFX_news_event_npp_n_gone
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.3.a
+	}
+}
+
+news_event = { #Democratic Party breaks the RDC
+	id = SWRW_USA_skeleton.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.4" }
+	title = SWRW_USA_skeleton.4.t
+	desc = SWRW_USA_skeleton.4.desc
+	picture = GFX_news_event_democrats_break_rdc
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.4.a
+	}
+}
+
+news_event = { #Republican Party breaks the RDC
+	id = SWRW_USA_skeleton.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.5" }
+	title = SWRW_USA_skeleton.5.t
+	desc = SWRW_USA_skeleton.5.desc
+	picture = GFX_news_event_republicans_break_rdc
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.5.a
+	}
+}
+
+news_event = { #Hall Budget Crisis
+	id = SWRW_USA_skeleton.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.6" }
+	title = SWRW_USA_skeleton.6.t
+	desc = SWRW_USA_skeleton.6.desc
+	picture = GFX_news_event_hall_crisis
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.6.a
+	}
+}
+
+news_event = { #Hall Impeached
+	id = SWRW_USA_skeleton.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.7" }
+	title = SWRW_USA_skeleton.7.t
+	desc = SWRW_USA_skeleton.7.desc
+	picture = GFX_news_event_hall_impeached
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.7.a
+	}
+}
+
+news_event = { #Yockey Reinstates EO 9066
+	id = SWRW_USA_skeleton.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.8" }
+	title = SWRW_USA_skeleton.8.t
+	desc = SWRW_USA_skeleton.8.desc
+	picture = GFX_news_event_yockey_crisis
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.8.a
+	}
+}
+
+news_event = { #Yockey Impeached
+	id = SWRW_USA_skeleton.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.9" }
+	title = SWRW_USA_skeleton.9.t
+	desc = SWRW_USA_skeleton.9.desc
+	picture = GFX_news_event_yockey_impeached
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.9.a
+	}
+}
+
+news_event = { #Romney Second Inauguration
+	id = SWRW_USA_skeleton.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.10" }
+	title = SWRW_USA_skeleton.10.t
+	desc = SWRW_USA_skeleton.10.desc
+	picture = GFX_news_event_romney_second_inaug
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.10.a
+	}
+}
+
+news_event = { #Kirkpatrick Second Inauguration
+	id = SWRW_USA_skeleton.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.11" }
+	title = SWRW_USA_skeleton.11.t
+	desc = SWRW_USA_skeleton.11.desc
+	picture = GFX_news_event_kirk_second_inaug
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.11.a
+	}
+}
+
+news_event = { #Reagan Inauguration
+	id = SWRW_USA_skeleton.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.12" }
+	title = SWRW_USA_skeleton.12.t
+	desc = SWRW_USA_skeleton.12.desc
+	picture = GFX_news_event_reagan_inaug
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.12.a
+	}
+}
+
+news_event = { #Baker Inauguration
+	id = SWRW_USA_skeleton.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.13" }
+	title = SWRW_USA_skeleton.13.t
+	desc = SWRW_USA_skeleton.13.desc
+	picture = GFX_news_event_baker_inaug
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.13.a
+	}
+}
+
+news_event = { #Percy Inauguration
+	id = SWRW_USA_skeleton.14
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.14" }
+	title = SWRW_USA_skeleton.14.t
+	desc = SWRW_USA_skeleton.14.desc
+	picture = GFX_news_event_percy_inaug
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.14.a
+	}
+}
+
+news_event = { #Carter Inauguration
+	id = SWRW_USA_skeleton.15
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.15" }
+	title = SWRW_USA_skeleton.15.t
+	desc = SWRW_USA_skeleton.15.desc
+	picture = GFX_news_event_carter_inaug
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.15.a
+	}
+}
+
+news_event = { #Bayh Inauguration
+	id = SWRW_USA_skeleton.16
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.16" }
+	title = SWRW_USA_skeleton.16.t
+	desc = SWRW_USA_skeleton.16.desc
+	picture = GFX_news_event_bayh_inaug
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.16.a
+	}
+}
+
+news_event = { #Kennedy Inauguration
+	id = SWRW_USA_skeleton.17
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.17" }
+	title = SWRW_USA_skeleton.17.t
+	desc = SWRW_USA_skeleton.17.desc
+	picture = GFX_news_event_ted_kennedy_inaug
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.17.a
+	}
+}
+
+news_event = { #Bayh Abolishes the Electoral College
+	id = SWRW_USA_skeleton.18
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.18" }
+	title = SWRW_USA_skeleton.18.t
+	desc = SWRW_USA_skeleton.18.desc
+	picture = GFX_news_event_electoral_college_abolished
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.18.a
+	}
+}
+
+news_event = { #The Electoral College Stands
+	id = SWRW_USA_skeleton.19
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.19" }
+	title = SWRW_USA_skeleton.19.t
+	desc = SWRW_USA_skeleton.19.desc
+	picture = GFX_news_event_electoral_college_stands
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.19.a
+	}
+}
+
+news_event = { #The Equal Rights Amendment Disaster
+	id = SWRW_USA_skeleton.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.20" }
+	title = SWRW_USA_skeleton.20.t
+	desc = SWRW_USA_skeleton.20.desc
+	picture = GFX_news_event_era_disaster
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.20.a
+	}
+}
+
+news_event = { #Title IX Strengthened; Schlafly Humiliated
+	id = SWRW_USA_skeleton.21
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SWRW_USA_skeleton.21" }
+	title = SWRW_USA_skeleton.21.t
+	desc = SWRW_USA_skeleton.21.desc
+	picture = GFX_news_event_title_ix_strengthened
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_USA_skeleton.21.a
+	}
+}
+
+# Misc
+
+add_namespace = SWRW_Chinanews
+
+news_event = { # North West Victorious!
+	id = SWRW_Chinanews.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SWRW_Chinanews.1"}
+	title = SWRW_Chinanews.1.t
+	desc = SWRW_Chinanews.1.desc
+	picture = GFX_news_event_north_west_victorious
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_Chinanews.1.a
+		trigger = {
+			tag = JAP
+		}
+	}
+	
+	option = {
+		name = SWRW_Chinanews.1.b
+		trigger = {
+			OR = {
+				tag = NOV
+				tag = QIN
+			}
+		}
+	}
+	
+	option = {
+		name = SWRW_Chinanews.1.c
+		trigger = {
+			NOT = {
+				tag = NOV 
+				tag = QIN
+				tag = JAP
+			}
+		}
+	}
+}
+
+news_event = { # Sun Tse-Ping Wins
+	id = SWRW_Chinanews.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SWRW_Chinanews.2"}
+	title = SWRW_Chinanews.2.t
+	desc = SWRW_Chinanews.2.desc
+	picture = GFX_news_event_west_china_sun_tse_ping
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_Chinanews.2.a
+		trigger = {
+			tag = JAP
+		}
+	}
+	
+	option = {
+		name = SWRW_Chinanews.2.b
+		trigger = {
+			OR = {
+				tag = QIN
+				tag = USA
+				tag = NOV
+			}
+		}
+	}
+	
+	option = {
+		name = SWRW_Chinanews.2.c
+		trigger = {
+			NOT = {
+				tag = QIN
+				tag = USA
+				tag = NOV
+			}
+		}
+	}
+}
+
+news_event = { # Chiang Chingkuo Wins
+	id = SWRW_Chinanews.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SWRW_Chinanews.3"}
+	title = SWRW_Chinanews.3.t
+	desc = SWRW_Chinanews.3.desc
+	picture = GFX_news_event_west_china_chiang_chingkuo
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_Chinanews.3.a
+		trigger = {
+			OR = {
+				original_tag = QIN
+				original_tag = NOV
+				original_tag = USA
+			}
+		}
+	}
+	option = {
+		name = SWRW_Chinanews.3.b
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = SWRW_Chinanews.3.c
+		trigger = {
+			NOT = {
+				original_tag = JAP
+				original_tag = QIN
+				original_tag = NOV
+				original_tag = USA
+			}
+		}
+	}
+}
+
+news_event = { # Communist Coup
+	id = SWRW_Chinanews.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event SWRW_Chinanews.4"}
+	title = SWRW_Chinanews.4.t
+	desc = SWRW_Chinanews.4.desc
+	picture = GFX_news_event_west_china_communist_coup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = SWRW_Chinanews.4.a
+	}
+}

@@ -1,0 +1,46 @@
+### WAR EXHAUSTION ###
+
+RUS_war_exhaustion = {
+	enable = { always = yes }
+	remove_trigger = { always = no	}
+	icon = "GFX_RUS_war_exhaustion"
+	
+	army_attack_factor = WRW_war_exhaustion_50
+	army_speed_factor = WRW_war_exhaustion_25
+	army_morale_factor = WRW_war_exhaustion_25
+	planning_speed = WRW_war_exhaustion_50
+	war_support_factor = WRW_war_exhaustion_100
+	stability_factor = WRW_war_exhaustion_100
+	industrial_capacity_factory = WRW_war_exhaustion_50
+	production_speed_buildings_factor = WRW_war_exhaustion_50
+	annual_gdp_growth_factor = WRW_war_exhaustion_50
+}
+
+GER_war_exhaustion = {
+	enable = { always = yes }
+	remove_trigger = { always = no	}
+	icon = "GFX_GER_war_exhaustion"
+	
+	army_attack_factor = WRW_war_exhaustion_50
+	army_speed_factor = WRW_war_exhaustion_25
+	army_morale_factor = WRW_war_exhaustion_25
+	planning_speed = WRW_war_exhaustion_50
+	war_support_factor = WRW_war_exhaustion_100
+	stability_factor = WRW_war_exhaustion_100
+	industrial_capacity_factory = WRW_war_exhaustion_50
+	production_speed_buildings_factor = WRW_war_exhaustion_50
+	annual_gdp_growth_factor = WRW_war_exhaustion_50
+}
+
+### TENSION ###
+
+WRW_tension = {
+	enable = { always = yes }
+	remove_trigger = { always = no }
+	icon = "GFX_SWRW_tension"
+	
+	military_expenditures_factor = WRW_tension_25
+	consumer_goods_use_modifier = WRW_tension_25
+	war_support_factor = WRW_tension_40
+	conscription_factor = WRW_tension_20
+}

@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_HOL_fractured_national_identity"
+		texturefile = "gfx/interface/ideas/HOL/Fractured_National_Identity.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HOL_without_a_master"
+		texturefile = "gfx/interface/ideas/HOL/Without_a_Master.dds"
+	}
+}

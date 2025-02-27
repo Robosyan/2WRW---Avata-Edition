@@ -1,0 +1,193 @@
+guiTypes = {
+	containerWindowType = {
+		name = "NOV_VRPP_megacorp_media"
+		size = { width = 400 height = 675 }
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "NOV_propaganda_BG"
+			spriteType = "GFX_NOV_propaganda_BG"
+			position = { x = 11 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "NOV_Media_Share_Progressbar"
+			spriteType = "GFX_Market_share_Progressbar"
+			position = { x = 173 y = 220 }
+		}
+		iconType = {
+			name = "NOV_Legal_Strength_Progressbar"
+			spriteType = "GFX_Legal_strength_Progressbar"
+			position = { x = 440 y = 463 }
+		}
+		instantTextboxType = {
+			name = "NOV_Media_Budget_Title"
+			position = { x = 0 y = 80 }
+			font = "aldrich_36_outline"
+			text = "NOV_Media_Budget_Title"
+			maxWidth = 501
+			maxHeight = 36
+			format = center
+		}
+		instantTextboxType = {
+			name = "NOV_Media_Budget_Title_2"
+			position = { x = 0 y = 140 }
+			font = "aldrich_36_outline"
+			text = "NOV_Media_Budget_Title_2"
+			maxWidth = 501
+			maxHeight = 36
+			format = center
+		}
+		instantTextboxType = {
+			name = "NOV_Media_Market_Share_Title"
+			position = { x = 0 y = 385 }
+			font = "aldrich_36_outline"
+			text = "NOV_Media_Market_Share_Title"
+			maxWidth = 501
+			maxHeight = 36
+			format = center
+		}
+		instantTextboxType = {
+			name = "NOV_Media_Market_Share_Title_2"
+			position = { x = 0 y = 250 }
+			font = "aldrich_36_outline"
+			text = "NOV_Media_Market_Share_Title_2"
+			maxWidth = 501
+			maxHeight = 36
+			format = center
+		}
+		instantTextboxType = {
+			name = "NOV_Media_Selected_Title"
+			position = { x = 0 y = 435 }
+			font = "aldrich_20_outline"
+			text = "NOV_Media_Selected_Title"
+			maxWidth = 501
+			maxHeight = 36
+			format = center
+		}
+		buttonType = { 
+			name = "NOV_propaganda_channel_one"
+			quadTextureSprite = "GFX_NOV_propaganda_channel_one"
+			position = { x = 17 y = 601 }
+			clicksound = click_ok
+		}
+		buttonType = { 
+			name = "NOV_propaganda_channel_moskva"
+			quadTextureSprite = "GFX_NOV_propaganda_channel_moskva"
+			position = { x = 96 y = 601 }
+			clicksound = click_ok
+		}
+		buttonType = { 
+			name = "NOV_propaganda_channel_nature"
+			quadTextureSprite = "GFX_NOV_propaganda_channel_nature"
+			position = { x = 175 y = 601 }
+			clicksound = click_ok
+		}
+		buttonType = { 
+			name = "NOV_propaganda_channel_history"
+			quadTextureSprite = "GFX_NOV_propaganda_channel_history"
+			position = { x = 254 y = 601 }
+			clicksound = click_ok
+		}
+		buttonType = { 
+			name = "NOV_propaganda_channel_vremya"
+			quadTextureSprite = "GFX_NOV_propaganda_channel_vremya"
+			position = { x = 333 y = 601 }
+			clicksound = click_ok
+		}
+		buttonType = { 
+			name = "NOV_propaganda_channel_sport"
+			quadTextureSprite = "GFX_NOV_propaganda_channel_sport"
+			position = { x = 412 y = 601 }
+			clicksound = click_ok
+		}
+		buttonType = {
+			name = "NOV_propaganda_channel_one_2" 
+			spriteType = "GFX_NOV_propaganda_channel_one_2"
+			position = { x = 17 y = 601 }
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "NOV_propaganda_channel_moskva_2"
+			spriteType = "GFX_NOV_propaganda_channel_moskva_2"
+			position = { x = 96 y = 601 }
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "NOV_propaganda_channel_nature_2"
+			spriteType = "GFX_NOV_propaganda_channel_nature_2"
+			position = { x = 175 y = 601 }
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "NOV_propaganda_channel_history_2"
+			spriteType = "GFX_NOV_propaganda_channel_history_2"
+			position = { x = 254 y = 601 }
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "NOV_propaganda_channel_vremya_2"
+			spriteType = "GFX_NOV_propaganda_channel_vremya_2"
+			position = { x = 333 y = 601 }
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "NOV_propaganda_channel_sport_2"
+			spriteType = "GFX_NOV_propaganda_channel_sport_2"
+			position = { x = 412 y = 601 }
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "NOV_propaganda_placeholder_bg"
+			spriteType = "GFX_NOV_propaganda_placeholder_bg"
+			position = { x = 18 y = 462 }
+			clicksound = click_ok
+		}
+		buttonType = {
+			name = "NOV_propaganda_buy_button_2"
+			spriteType = "GFX_NOV_propaganda_buy_button_2"
+			position = { x = 23 y = 535 }
+			pdx_tooltip = "NOV_propaganda_buy_button_2_tt"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "NOV_propaganda_buy_button"
+			spriteType = "GFX_NOV_propaganda_buy_button"
+			position = { x = 23 y = 535 }
+			pdx_tooltip = "NOV_propaganda_buy_button_tt"
+			clicksound = click_ok
+		}
+		buttonType = {
+			name = "NOV_propaganda_blackmail_button_2"
+			spriteType = "GFX_NOV_propaganda_blackmail_button_2"
+			position = { x = 168 y = 535 }
+			pdx_tooltip = "NOV_propaganda_blackmail_button_2_tt"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "NOV_propaganda_blackmail_button"
+			spriteType = "GFX_NOV_propaganda_blackmail_button"
+			position = { x = 168 y = 535 }
+			pdx_tooltip = "NOV_propaganda_blackmail_button_tt"
+			clicksound = click_ok
+		}
+		instantTextboxType = {
+			name = "NOV_Media_Net_Worth"
+			position = { x = 25 y = 470 }
+			font = "aldrich_24_outline"
+			text = "NOV_Media_Net_Worth_Title"
+			maxWidth = 400
+			maxHeight = 36
+			format = left
+		}
+		instantTextboxType = {
+			name = "NOV_Media_Legal_Strength"
+			position = { x = 25 y = 500 }
+			font = "aldrich_24_outline"
+			text = "NOV_Media_Legal_Strength_Title"
+			maxWidth = 400
+			maxHeight = 36
+			format = left
+		}
+	}
+}

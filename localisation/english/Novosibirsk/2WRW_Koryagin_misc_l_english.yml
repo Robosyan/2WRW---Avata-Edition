@@ -1,0 +1,132 @@
+﻿l_english:
+
+ ## Misc ##
+ 
+ # Leader Descriptions #
+ 
+ NOV_Anatoly_Koryagin:0 "Anatoly Koryagin"
+ POLITICS_ANATOLY_KORYAGIN_DESC:0 "Born in 1938, Anatoly Koryagin could only watch from a young age as Russia collapsed into civil war and chaos. As wars raged across Siberia, Anatoly saw the mental and psychological damage that scarred civilians and veterans alike. Shell shock, anxiety, suicidal depression, all caused by the horrors of warfare.\n\nUnder the brief flowering of SBA, Anatoly began a career as a celebrated psychiatrist, overcoming the horrendous conditions of warlord Russia to play a part in helping the wounded people of Central Siberia recover from endless warfare.\n\nThroughout the Unification Wars, Koryagin's work only piled up as he encountered more people who were suffering from the pain of war. He came to the swift conclusion that the only way to put an end to the madness and bring about peace was through the highest office of the Russian Federation. Cooperating with remnant Modernists, Komi SMR and like-minded individuals in the army, Koryagin founded the Russian Social Liberal Party.\n\nWith the Second West Russian War now behind the Russian people and the RSLP triumphant in the elections, the time has come to finally bring about something Russia hasn't known for decades.\n\n§MPeace.§!"
+ 
+ ### Focus Tooltips ###
+ 
+ NOV_koryagin_a_chance_for_all_of_us_tt:0 "§YThe Reykjavik Conference will commence.§!"
+
+ ### GUI Stuff ###
+
+ NOV_RSLP_russia_ofn:0 "Our Place in the Free World"
+ NOV_RSLP_russia_ofn_title_1:0 "§WRu§!§Bss§!§Ria§!'s relation with the §BOFN§! is: [getNOVOFNRelation]"
+ NOV_RSLP_russia_ofn_title_2:0 "The §gReactionaries§! are: [getNOVOFNOpinionVRPP]"
+ NOV_RSLP_russia_ofn_title_3:0 "The §PSocialists§! are: [getNOVOFNOpinionDSPR]"
+
+ NOV_RSLP_russia_ofn_coop_1:0 "§Ralienating§!"
+ NOV_RSLP_russia_ofn_coop_2:0 "§Osubpar§!"
+ NOV_RSLP_russia_ofn_coop_3:0 "§Yacceptable§!"
+ NOV_RSLP_russia_ofn_coop_4:0 "§Gcordial§!"
+ NOV_RSLP_russia_ofn_coop_5:0 "§Mexcellent§!"
+
+ NOV_RSLP_russia_ofn_opinion_1:0 "§Rstrongly against the OFN§!"
+ NOV_RSLP_russia_ofn_opinion_2:0 "§Odisapproving§!"
+ NOV_RSLP_russia_ofn_opinion_3:0 "§Yapathetic§!"
+ NOV_RSLP_russia_ofn_opinion_4:0 "§Gin favour of the OFN§!"
+ NOV_RSLP_russia_ofn_opinion_5:0 "§Mendorsing the OFN§!"
+ 
+ NOV_OFN_tt:0 "§BOFN§!"
+
+ NOV_RSLP_fopo:0 "§W-§!§B-§!§R-§! §BComrades Across the Sea§! §B-§!§R-§!§B-§!"
+ NOV_RSLP_vrpp:0 "§W-§!§B-§!§R-§! §sSwaying £NOV_VRPP_Icon Reactionaries§! §R-§!§B-§!§W-§!"
+ NOV_RSLP_dspr:0 "§W-§!§B-§!§R-§! §PSwaying £NOV_DSPR_Icon Socialists§! §R-§!§B-§!§W-§!"
+
+ NOV_RSLP_Opinion_Change_Positive_tt:0 "[getNOVRSLPTarget]'s opinion will be §Gincreased§! by [?Temp_Opinion]"
+ NOV_RSLP_Opinion_Change_Negative_tt:0 "[getNOVRSLPTarget]'s opinion will be §Rdecreased§! by [?RSLP_Displayer]"
+
+ NOV_RSLP_showcase_russian_culture:0 "Showcase Russian Culture"
+ NOV_RSLP_showcase_russian_culture_desc:0 "The OFN is up to this point almost or entirely made of countries traditionally considered part of the West. Due to decades of chaos within the former Soviet Union, America and her allies have paid little attention to Russia up until very recently. Therefore, a biased cosmopolitanism exists amongst the peoples of the Free World, whose stereotypes hinder our efforts to join them. We must break through this underlying, subconscious Orientalism if we are to join the Americans as peers."
+ 
+ NOV_RSLP_visit_ofn_military_bases:0 "Visit OFN Military Bases"
+ NOV_RSLP_visit_ofn_military_bases_desc:0 "OFN has been most reclusive to foreign powers, and they have a very good reason for doing so. However, President Koryagin's reputation as a peacemaker precedes him and his followers. Though we love peace, the £NOV_RSLP_Icon §MRSLP§! still understands the necessity to defend freedom from the horde of fascism. Visiting OFN military installations will signal that the Russians are ready to learn and engage in further cooperation with OFN militarily."
+ 
+ NOV_RSLP_tour_free_world:0 "Tour the Free World"
+ NOV_RSLP_tour_free_world_desc:0 "Throughout history, very few Russian rulers chose to venture beyond the borders of our motherland. Indeed, there are too many works at hand, but let us not forget that before Shukshin, another great leader of the Russian people embraced his western allies and together with them vanquished their shared foes. Koryagin will follow the footsteps of Peter the Great towards the bastions of freedom in the West!"
+ 
+ NOV_RSLP_expand_trade_links:0 "Expand Trade Links"
+ NOV_RSLP_expand_trade_links_desc:0 "Prior to the Second West Russian War, the main hub of Russo-American trade was Magadan. Though a grand port as a result of multiple expansions, the vast distance between it and major population centers rendered it ineffective. However, now that our rule has been cemented in Western Russia, more seaward trading routes are becoming available, such as Murmansk and St. Petersburg. With a little nudge on our tariffs and policies, a never-ending stream of Russian freighters and sailors will speak louder than any of our diplomats."
+ 
+ NOV_RSLP_apply_for_ofn:0 "Apply for OFN Membership"
+ NOV_RSLP_apply_for_ofn_desc:0 "Russia was thought to be the manifestation of the East: a wild, rabid steppe that mothers the eternal enemy of Western civilization. It was thought that Russian Federation would become an enemy as potent as the German Reich once was to the United States and its allies. President Koryagin has smashed those stereotypes harbored by cynical international political analysts. Instead of rivalry, Russians have only grown closer to the Western world as a friend of democracy.\n\n§YWith our joining of the§! §BOFN,§! §Yfascism will be sniffed out§!."
+ 
+ NOV_RSLP_meet_with_veterans:0 "Meet with Veterans"
+ NOV_RSLP_meet_with_veterans_desc:0 "Many veterans of the Smuta and the subsequent Second West Russian War choose to oppose the efforts of £NOV_RSLP_Icon §MRSLP§! to join the §BOFN§! mainly due to their concerns over Russian sovereignty after our incorporation into the alliance. They, and the general public, must understand that Russia can and will stand on equal footing to the United States."
+ 
+ NOV_RSLP_reassure_moderates:0 "Reassure Moderates"
+ NOV_RSLP_reassure_moderates_desc:0 "Some moderate members of the £NOV_VRPP_Icon §gAll-Russian Patriotic Party§! are concerned about the potential damage to the Russian economy. They understand that Russia will certainly choose to integrate into the global, Western market, but fear the potential loss of jobs as a result of globalization. We will make it abundantly clear that while we respect our friends, not even the Americans may hurt our national growth!"
+ 
+ NOV_RSLP_endorse_pro_ofn_propaganda:0 "Endorse Pro-OFN Propaganda"
+ NOV_RSLP_endorse_pro_ofn_propaganda_desc:0 "We shall make use of political propaganda within and without the country to pressure our opposition. While the £NOV_VRPP_Icon §gVRPP§! may attack our party for "selling out the nation", we must stress how much the Americans have aided us throughout our struggle. Producing films and documentaries highlighting the brotherly bond between our countries will sway some of the less engaged nationalists."
+ 
+ NOV_RSLP_appease_corporate_executives:0 "Appease Corporate Executives"
+ NOV_RSLP_appease_corporate_executives_desc:0 "Many businessmen won their place in Russia simply because they copied American models, and therefore fear what will happen once their American competitors start to pour resources into the Russian market. While undesirable, we must reach compromises with these leading companies, especially on protecting Russian businesses, so they won't become mouthpieces of the £NOV_VRPP_Icon §gVRPP§!!"
+ 
+ NOV_RSLP_talk_with_shukshin:0 "Talk with Shukshin"
+ NOV_RSLP_talk_with_shukshin_desc:0 "Though Vasily Shukshin is a friend of democracy and freedom, he considers Russian sovereignty just as crucial. A long advocate for the establishment of a Russia-led Eurasian coalition, his status as a liberator of the nation greatly affects the £NOV_RAPP_Icon §BRAPP§!'s opinion on the §BOFN§!. Let us remind him of the benefits of international cooperation, and the prospect of £NOV_VRPP_Icon §gVRPP§! taking advantage of our potential failure if he does not work with us. Surely Shukshin will favour liberals any day over greedy oligarchs."
+ 
+ NOV_RSLP_promise_worker_concessions:0 "Promise Worker Concessions"
+ NOV_RSLP_promise_worker_concessions_desc:0 "Appeasing workers and the nascent trade unions of indigenous Russian businesses is critical. While we support globalized trade that will, in the long term, bring prosperity to all, we cannot pretend that globalization will not hurt working people who supported us. We can promise some protections, but we must emphasize that we cannot rock the boat when we are so close to joining the biggest trade bloc in the world!"
+ 
+ NOV_RSLP_reach_out_to_the_disenfranchised:0 "Reach Out to the Disenfranchised"
+ NOV_RSLP_reach_out_to_the_disenfranchised_desc:0 "The United States, despite all its political discourse, has been a model democracy, one that Russia is still learning from. A significant chunk of the £NOV_DSPR_Icon §PDSPR§!'s supporters either belong to national minorities or those who feel the government has not done enough to extend freedom and autonomy. To deprive the §PDemocratic Socailists§! of support, we will use our governmental and party media to hint at the £NOV_RSLP_Icon §MRSLP§!'s willingness to adopt Western federal models and other democratic institutions."
+ 
+ NOV_RSLP_discredit_radical_communists:0 "Discredit Radical Communists"
+ NOV_RSLP_discredit_radical_communists_desc:0 "The §RKPRF§!, §eSRs§!, and some less-than-savory authoritarian factions of the £NOV_DSPR_Icon §PDSPR§! have been attacking the £NOV_RSLP_Icon §MRSLP§! regime for its preparation to "import capitalist misery and chaos from America into the Russian Federation". However, one will be quick to see Koryagin's plans include nothing of the exploitative sort, and has been working on international fraternity more than the Communists have ever done so. Let's make it clear to the people."
+ 
+ NOV_RSLP_acknowledge_past_mistakes:0 "Acknowledge Past Mistakes"
+ NOV_RSLP_acknowledge_past_mistakes_desc:0 "In the past, the £NOV_VRPP_Icon §gSilovki§! persecuted the predecessor of the £NOV_DSPR_Icon §PDSPR§!. The §xNarodniks§! were heavily oppressed by the past regime, which led to many avoidable tragedies. Now that a new, more humane party is in charge, we should try to work to rehabilitate and apologize to the victims on the £NOV_VRPP_Icon §gSilovki§!'s behalf. Though the £NOV_DSPR_Icon §PDSPR§!, §xSRs§!, and §eKPRF§! will appreciate this gesture, the £NOV_VRPP_Icon §gVRPP§! will dislike us for pardoning "§xterrorist syndicalists§!"."
+ 
+ NOV_RSLP_talk_with_kantorovich:0 "Talk with Kantorovich"
+ NOV_RSLP_talk_with_kantorovich_desc:0 "Leonid Kantorovich is the embodiment of the mainstream Russian Left, which still harbors concerns over our support of globalization via joining the §BOFN§!. Compared to §gPrimakov§!, we should be able to extract more support from him, if we can provide some meaningful promises on protecting workers from over-the-top trade agreements. A lunch or two with President Koryagin should clear him of all concerns if we cooperate with the £NOV_DSPR_Icon §PDSPR§! and amend our goals to take the voice of Russian workers into account."
+ 
+ NOV_RSLP_vrpp_campaign:0 "The £NOV_VRPP_Icon §gVRPP§! is campaigning against the §BOFN§!!"
+ NOV_RSLP_dspr_campaign:0 "The £NOV_DSPR_Icon §PDSPR§! is campaigning against the §BOFN§!!"
+
+ rslp_fopo_tt:0 "President Koryagin has planned out his tour of the free world."
+ 
+ rslp_ofn_tt:0 "We are ready."
+ 
+ rslp_shukshin_talk_tt:0 "We have accumulated enough support amongst Shukshin's followers to allow us to have a chat with the man himself."
+ 
+ rslp_shukshin_tt:0 "£NOV_RAPP_Icon §BRAPP§! and £NOV_VRPP_Icon §gVRPP§! are still actively working against us."
+ 
+ rslp_conservative_100_tt:0 "We have near-universal support from the £NOV_RAPP_Icon §BRAPP§! and a good part of £NOV_VRPP_Icon §gVRPP§!."
+ 
+ rslp_kantorovich_talk_tt:0 "It's time for Koryagin to personally talk to Kantorovich about this..."
+ 
+ rslp_kantorovich_tt:0 "£NOV_DSPR_Icon §PDSPR§! is still trying to block Russia from joining the §BOFN§!."
+ 
+ rslp_socialist_100_tt:0 "We have near-universal support from the £NOV_DSPR_Icon §PDSPR§!."
+ 
+ # Focus tooltips
+
+ NOV_koryagin_prepare_our_diplomats_tt:0 "The £NOV_RSLP_Icon §MRSLP§! will push for its ultimate agenda: joining the §BOrganization of Free Nations§!."
+ 
+ NOV_kantorovichs_mind_tt:0 "§PWe will export solidarity, not just of politicians, but that of the working people as well!§!"
+ 
+ NOV_shukshins_heart_tt:0 "§BLet's hope he will listen.§!"
+
+ NOV_RSLP_autonomous_republics:0 "Autonomous Republics of the Federation"
+
+ # Characters
+
+ NOV_Felix_Serebrov:0 "Felix Serebrov"
+ 
+ NOV_Sergei_Kovalev:0 "Sergei Kovalev"
+ 
+ NOV_Naum_Meiman:0 "Naum Meiman"
+ 
+ NOV_Vyacheslav_Bakhmin:0 "Vyacheslav Bakhmin"
+ 
+ NOV_Felix_Serebrov_hog_desc:0 "§YVice President of the Russian Federation§!\n£NOV_RSLP_Icon §MRussian Social Liberal Party§!\n--------------\nFelix Arkadyevich Serebrov was born in 1930. His father became a victim of Soviet repression, giving Felix an instinctive disdain for authoritarianism early in life. After serving time in Soviet incarceration, he was able to return to engineering school, but his time there was cut short by a stomach ulcer.\n\nIt was during his convalescence that Serebrov joined an underground anti-Siloviki dissident movement as one of its founding members, among others such as Anatoly Koryagin. They had become disgusted and sick of corporate repression in the Federation and worked to see it end, but through peaceful means.\n\nAfter years of struggle, Serebrov finally attained the position of vice president under his longtime friend, Koryagin, and both are determined to bring a new age of peace to Eurasia."
+ 
+ NOV_Sergei_Kovalev_for_desc:0 "§YMinister of Foreign Affairs§!\n£NOV_RSLP_Icon §MRussian Social Liberal Party§!\n--------------\nFor the past several decades, Russia has not been a kind place to live, which does not produce kind attitudes. Sergei Kovalev is a rare exception - an academic, once affiliated with the Salons of Tomsk, who went on to study the art of diplomacy. Joining the §MRSLP§! as an activist, he was eventually chosen as the new voice of Russia to the world.\n\nAuthoring nearly 60 works of biophysics, Kovalev understands that - regardless of what the Nazis and other similar regimes may say - none on Earth are truly superior or inferior to another. Kovalev hopes to bring this philosophy abroad, promoting peace, kindness, and understanding amongst nations."
+ 
+ NOV_Naum_Meiman_eco_desc:0 "§YMinister of Economic Affairs§!\n£NOV_RSLP_Icon §MRussian Social Liberal Party§!\n--------------\nFor the majority of its history since the onset of the Smuta, the Federation's economy was run largely by cronies, thugs, and stooges. Heartless, illogical capitalists who put personal profit above all and violent sabotage called for by uncompromising socialists would see spending push the economy past its limit. Naum Meiman represents a change in this trend - he is a scientist and a mathematician.\n\nSeeking shelter in Tomsk from the rampant antisemitism that followed him as a Russian Jew, Meiman only truly began to engage in politics upon the formation of the £NOV_RSLP_Icon §MRSLP§!. Now as minister of the economy, Meiman seeks to bring order to what was a sea of heartless, self-motivated chaos for a gentle but prosperous capitalism."
+ 
+ NOV_Vyacheslav_Bakhmin_sec_desc:0 "§MHead of Russian Human Rights Council§!\n£NOV_RSLP_Icon §MRussian Social Liberal Party§!\n--------------\nHumanity has produced so many wonders and so much joy, but it has conversely produced equally innumerable horrors in its quest towards futile self-destruction. Whereas other states may aimlessly build up their militaries for conflicts that may come to pass, this is not a pointless doctrine which the RSLP will pursue. Nor, as matter a fact, will Vyacheslav Bakhmin.\n\nA serial rabble-rouser, Bakhmin was tangentially connected to the Narodniks through a series of mutual acquaintances. As an avowed pacifist, he aims to instead uplift the people of Russia into a golden age of human rights - one they have been deprived of for far too long."

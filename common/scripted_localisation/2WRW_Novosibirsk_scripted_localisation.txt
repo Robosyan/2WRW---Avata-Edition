@@ -1,0 +1,2209 @@
+defined_text = {
+	name = NOVgetCurrentTab
+	text = {
+		trigger = { check_variable = { ROOT.NOV_duma_selected_tab^0 = 1 } }
+		localization_key = "NOV_federal_assembly_GUI"
+	}
+	text = {
+		trigger = { check_variable = { ROOT.NOV_duma_selected_tab^0 = 2 } }
+		localization_key = "NOV_presidential_election_GUI"
+	}
+}
+
+defined_text = {
+	name = NOVgetAssemblyType
+	text = {
+		trigger = { check_variable = { NOV_parliament_gui_type_frames^0 = 2 } }
+		localization_key = "STATE DUMA"
+	}
+	text = {
+		trigger = { check_variable = { NOV_parliament_gui_type_frames^1 = 2 } }
+		localization_key = "FEDERATION COUNCIL"
+	}
+}
+
+defined_text = {
+	name = NOVgetPartyIcon
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 0 } }
+		localization_key = GFX_NOV_RAPP
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 1 } }
+		localization_key = GFX_NOV_VRPP
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 2 } }
+		localization_key = GFX_NOV_DSPR
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 3 } }
+		localization_key = GFX_NOV_RSLP
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 4 } }
+		localization_key = GFX_NOV_NFM
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 5 } }
+		localization_key = GFX_NOV_RIRM
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 6 } }
+		localization_key = GFX_NOV_CPRF
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 7 } }
+		localization_key = GFX_NOV_SRP
+	}
+}
+
+defined_text = {
+	name = NOVgetBillName
+	text = {
+		trigger = {
+			NOT = { has_country_flag = NOV_active_bill } 
+		}
+		localization_key = NOV_bill_none
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 1 }
+		}
+		localization_key = NOV_bill_representation_act
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 2 }
+		}
+		localization_key = NOV_bill_voting_rights_act
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 3 }
+		}
+		localization_key = NOV_bill_women_rights_act
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 4 }
+		}
+		localization_key = NOV_bill_environmental_protection_act
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 5 }
+		}
+		localization_key = NOV_bill_environmental_protection_act_repeal
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 6 }
+		}
+		localization_key = NOV_bill_corporation_limitation_act
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 7 }
+		}
+		localization_key = NOV_bill_workers_protection_act
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 8 }
+		}
+		localization_key = NOV_bill_healthcare_act_vrpp
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 9 }
+		}
+		localization_key = NOV_bill_healthcare_act_dspr
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 10 }
+		}
+		localization_key = NOV_bill_federal_insurance_act
+	}
+}
+
+defined_text = {
+	name = NOVgetBillNamett
+	text = {
+		trigger = {
+			check_variable = { bill_id = 1 }
+		}
+		localization_key = NOV_bill_representation_act
+	}
+	text = {
+		trigger = {
+			check_variable = { bill_id = 2 }
+		}
+		localization_key = NOV_bill_voting_rights_act
+	}
+	text = {
+		trigger = {
+			check_variable = { bill_id = 3 }
+		}
+		localization_key = NOV_bill_women_rights_act
+	}
+	text = {
+		trigger = {
+			check_variable = { bill_id = 4 }
+		}
+		localization_key = NOV_bill_environmental_protection_act
+	}
+	text = {
+		trigger = {
+			check_variable = { bill_id = 5 }
+		}
+		localization_key = NOV_bill_environmental_protection_act_repeal
+	}
+	text = {
+		trigger = {
+			check_variable = { bill_id = 6 }
+		}
+		localization_key = NOV_bill_corporation_limitation_act
+	}
+	text = {
+		trigger = {
+			check_variable = { bill_id = 7 }
+		}
+		localization_key = NOV_bill_workers_protection_act
+	}
+	text = {
+		trigger = {
+			check_variable = { bill_id = 8 }
+		}
+		localization_key = NOV_bill_healthcare_act_vrpp
+	}
+	text = {
+		trigger = {
+			check_variable = { bill_id = 9 }
+		}
+		localization_key = NOV_bill_healthcare_act_dspr
+	}
+	text = {
+		trigger = {
+			check_variable = { bill_id = 10 }
+		}
+		localization_key = NOV_bill_federal_insurance_act
+	}
+}
+
+defined_text = {
+	name = NOVgetBillDesc
+	text = {
+		trigger = {
+			NOT = { has_country_flag = NOV_active_bill } 
+		}
+		localization_key = NOV_bill_none_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 1 }
+		}
+		localization_key = NOV_bill_representation_act_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 2 }
+		}
+		localization_key = NOV_bill_voting_rights_act_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 3 }
+		}
+		localization_key = NOV_bill_women_rights_act_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 4 }
+		}
+		localization_key = NOV_bill_environmental_protection_act_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 5 }
+		}
+		localization_key = NOV_bill_environmental_protection_act_repeal_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 6 }
+		}
+		localization_key = NOV_bill_corporation_limitation_act_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 7 }
+		}
+		localization_key = NOV_bill_workers_protection_act_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 8 }
+		}
+		localization_key = NOV_bill_healthcare_act_vrpp_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 9 }
+		}
+		localization_key = NOV_bill_healthcare_act_dspr_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_active_bill = 10 }
+		}
+		localization_key = NOV_bill_federal_insurance_act_desc
+	}
+}
+
+defined_text = {
+	name = NOVgetBillEffects
+	text = {
+		trigger = {
+			check_variable = { NOV_bill_total_votes < 226 } 
+		}
+		localization_key = NOV_bill_effect_fail_bozo
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_bill_total_votes > 225 }
+				check_variable = { NOV_active_bill = 1 }
+			}
+		}
+		localization_key = NOV_bill_representation_act_effect
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_bill_total_votes > 225 }
+				check_variable = { NOV_active_bill = 2 }
+			}
+		}
+		localization_key = NOV_bill_voting_rights_act_effect
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_bill_total_votes > 225 }
+				check_variable = { NOV_active_bill = 3 }
+			}
+		}
+		localization_key = NOV_bill_women_rights_act_effect
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_bill_total_votes > 225 }
+				check_variable = { NOV_active_bill = 4 }
+			}
+		}
+		localization_key = NOV_bill_environmental_protection_act_effect
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_bill_total_votes > 225 }
+				check_variable = { NOV_active_bill = 5 }
+			}
+		}
+		localization_key = NOV_bill_environmental_protection_act_repeal_effect
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_bill_total_votes > 225 }
+				check_variable = { NOV_active_bill = 6 }
+			}
+		}
+		localization_key = NOV_bill_corporation_limitation_act_effect
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_bill_total_votes > 225 }
+				check_variable = { NOV_active_bill = 7 }
+			}
+		}
+		localization_key = NOV_bill_workers_protection_act_effect
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_bill_total_votes > 225 }
+				check_variable = { NOV_active_bill = 8 }
+			}
+		}
+		localization_key = NOV_bill_healthcare_act_vrpp_effect
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_bill_total_votes > 225 }
+				check_variable = { NOV_active_bill = 9 }
+			}
+		}
+		localization_key = NOV_bill_healthcare_act_dspr_effect
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_bill_total_votes > 225 }
+				check_variable = { NOV_active_bill = 10 }
+			}
+		}
+		localization_key = NOV_bill_federal_insurance_act_effect
+	}
+}
+
+defined_text = {
+	name = NOVgetBillPartyVotes
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 0 }
+			check_variable = { NOV_rapp_bill_votes = NOV_rapp_duma_seats }
+		}
+		localization_key = NOV_bills_RAPP_contribution_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 0 }
+			check_variable = { NOV_rapp_bill_votes = 0 }
+		}
+		localization_key = NOV_bills_RAPP_contribution_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 0 }
+		}
+		localization_key = NOV_bills_RAPP_contribution_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 1 }
+			check_variable = { NOV_vrpp_bill_votes = NOV_vrpp_duma_seats }
+		}
+		localization_key = NOV_bills_VRPP_contribution_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 1 }
+			check_variable = { NOV_vrpp_bill_votes = 0 }
+		}
+		localization_key = NOV_bills_VRPP_contribution_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 1 }
+		}
+		localization_key = NOV_bills_VRPP_contribution_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 2 }
+			check_variable = { NOV_dspr_bill_votes = NOV_dspr_duma_seats }
+		}
+		localization_key = NOV_bills_DSPR_contribution_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 2 }
+			check_variable = { NOV_dspr_bill_votes = 0 }
+		}
+		localization_key = NOV_bills_DSPR_contribution_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 2 }
+		}
+		localization_key = NOV_bills_DSPR_contribution_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 3 }
+			check_variable = { NOV_rslp_bill_votes = NOV_rslp_duma_seats }
+		}
+		localization_key = NOV_bills_RSLP_contribution_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 3 }
+			check_variable = { NOV_rslp_bill_votes = 0 }
+		}
+		localization_key = NOV_bills_RSLP_contribution_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 3 }
+		}
+		localization_key = NOV_bills_RSLP_contribution_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 4 }
+			check_variable = { NOV_nfm_bill_votes = NOV_nfm_duma_seats }
+		}
+		localization_key = NOV_bills_NFM_contribution_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 4 }
+			check_variable = { NOV_nfm_bill_votes = 0 }
+		}
+		localization_key = NOV_bills_NFM_contribution_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 4 }
+		}
+		localization_key = NOV_bills_NFM_contribution_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 5 }
+			check_variable = { NOV_rirm_bill_votes = NOV_rirm_duma_seats }
+		}
+		localization_key = NOV_bills_RIRM_contribution_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 5 }
+			check_variable = { NOV_rirm_bill_votes = 0 }
+		}
+		localization_key = NOV_bills_RIRM_contribution_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 5 }
+		}
+		localization_key = NOV_bills_RIRM_contribution_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 6 }
+			check_variable = { NOV_cprf_bill_votes = NOV_cprf_duma_seats }
+		}
+		localization_key = NOV_bills_CPRF_contribution_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 6 }
+			check_variable = { NOV_cprf_bill_votes = 0 }
+		}
+		localization_key = NOV_bills_CPRF_contribution_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 6 }
+		}
+		localization_key = NOV_bills_CPRF_contribution_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 7 }
+			check_variable = { NOV_srp_bill_votes = NOV_srp_duma_seats }
+		}
+		localization_key = NOV_bills_SRP_contribution_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 7 }
+			check_variable = { NOV_srp_bill_votes = 0 }
+		}
+		localization_key = NOV_bills_SRP_contribution_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 7 }
+		}
+		localization_key = NOV_bills_SRP_contribution_middle
+	}
+	
+}
+
+defined_text = {
+	name = NOVgetBillTotalVotes
+	text = {
+		trigger = { check_variable = { NOV_bill_total_votes > 225 } }
+		localization_key = NOV_bills_total_votes_good
+	}
+	text = {
+		localization_key = NOV_bills_total_votes_bad
+	}
+}
+
+defined_text = {
+	name = NOVgetVotingStatus
+	text = {
+		trigger = {
+			has_country_flag = NOV_active_bill
+		}
+		localization_key = NOV_bills_time_1
+	}
+	text = {
+		trigger = {
+			NOT = { has_country_flag = NOV_active_bill }
+		}
+		localization_key = NOV_bills_time_2
+	}
+}
+
+defined_text = {
+	name = NOVgetCoalitionPartyIcon
+	text = {
+		trigger = { check_variable = { NOV_coalition^parties_idx = 0 } }
+		localization_key = GFX_NOV_RAPP
+	}
+	text = {
+		trigger = { check_variable = { NOV_coalition^parties_idx = 1 } }
+		localization_key = GFX_NOV_VRPP
+	}
+	text = {
+		trigger = { check_variable = { NOV_coalition^parties_idx = 2 } }
+		localization_key = GFX_NOV_DSPR
+	}
+	text = {
+		trigger = { check_variable = { NOV_coalition^parties_idx = 3 } }
+		localization_key = GFX_NOV_RSLP
+	}
+	text = {
+		trigger = { check_variable = { NOV_coalition^parties_idx = 4 } }
+		localization_key = GFX_NOV_NFM
+	}
+	text = {
+		trigger = { check_variable = { NOV_coalition^parties_idx = 5 } }
+		localization_key = GFX_NOV_RIRM
+	}
+	text = {
+		trigger = { check_variable = { NOV_coalition^parties_idx = 6 } }
+		localization_key = GFX_NOV_CPRF
+	}
+	text = {
+		trigger = { check_variable = { NOV_coalition^parties_idx = 7 } }
+		localization_key = GFX_NOV_SRP
+	}
+}
+
+defined_text = {
+	name = NOVgetPartyName
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 0 } }
+		localization_key = NOV_RAPP_name
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 1 } }
+		localization_key = NOV_VRPP_name
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 2 } }
+		localization_key = NOV_DSPR_name
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 3 } }
+		localization_key = NOV_RSLP_name
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 4 } }
+		localization_key = NOV_NFM_name
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 5 } }
+		localization_key = NOV_RIRM_name
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 6 } }
+		localization_key = NOV_CPRF_name
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 7 } }
+		localization_key = NOV_SRP_name
+	}
+}
+
+defined_text = {
+	name = NOVgetPartyTooltips
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 0 } }
+		localization_key = NOV_RAPP_party_tt
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 1 } }
+		localization_key = NOV_VRPP_party_tt
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 2 } }
+		localization_key = NOV_DSPR_party_tt
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 3 } }
+		localization_key = NOV_RSLP_party_tt
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 4 } }
+		localization_key = NOV_NFM_party_tt
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 5 } }
+		localization_key = NOV_RIRM_party_tt
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 6 } }
+		localization_key = NOV_CPRF_party_tt
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 7 } }
+		localization_key = NOV_SRP_party_tt
+	}
+}
+
+defined_text = {
+	name = NOVgetPartyDumaSeats
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 0 } }
+		localization_key = NOV_RAPP_duma_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 1 } }
+		localization_key = NOV_VRPP_duma_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 2 } }
+		localization_key = NOV_DSPR_duma_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 3 } }
+		localization_key = NOV_RSLP_duma_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 4 } }
+		localization_key = NOV_NFM_duma_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 5 } }
+		localization_key = NOV_RIRM_duma_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 6 } }
+		localization_key = NOV_CPRF_duma_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 7 } }
+		localization_key = NOV_SRP_duma_seats
+	}
+}
+
+defined_text = {
+	name = NOVgetPartyCouncilSeats
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 0 } }
+		localization_key = NOV_RAPP_council_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 1 } }
+		localization_key = NOV_VRPP_council_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 2 } }
+		localization_key = NOV_DSPR_council_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 3 } }
+		localization_key = NOV_RSLP_council_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 4 } }
+		localization_key = NOV_NFM_council_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 5 } }
+		localization_key = NOV_RIRM_council_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 6 } }
+		localization_key = NOV_CPRF_council_seats
+	}
+	text = {
+		trigger = { check_variable = { NOV_party_list^parties_idx = 7 } }
+		localization_key = NOV_SRP_council_seats
+	}
+}
+defined_text = {
+	name = NOVgetAssemblySeats
+	text = {
+		trigger = { check_variable = { NOV_parliament_gui_type_frames^0 = 2 } }
+		localization_key = "450"
+	}
+	text = {
+		trigger = { check_variable = { NOV_parliament_gui_type_frames^1 = 2 } }
+		localization_key = "170"
+	}
+}
+defined_text = {
+	name = NOVgetPartyOpinion
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx > 10 }
+			check_variable = { NOV_party_list^parties_idx = 0 }
+		}
+		localization_key = NOV_opinion_RAPP_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx < -10 }
+			check_variable = { NOV_party_list^parties_idx = 0 }
+		}
+		localization_key = NOV_opinion_RAPP_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 0 }
+		}
+		localization_key = NOV_opinion_RAPP_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx > 10 }
+			check_variable = { NOV_party_list^parties_idx = 1 }
+		}
+		localization_key = NOV_opinion_VRPP_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx < -10 }
+			check_variable = { NOV_party_list^parties_idx = 1 }
+		}
+		localization_key = NOV_opinion_VRPP_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 1 }
+		}
+		localization_key = NOV_opinion_VRPP_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx > 10 }
+			check_variable = { NOV_party_list^parties_idx = 2 }
+		}
+		localization_key = NOV_opinion_DSPR_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx < -10 }
+			check_variable = { NOV_party_list^parties_idx = 2 }
+		}
+		localization_key = NOV_opinion_DSPR_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 2 }
+		}
+		localization_key = NOV_opinion_DSPR_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx > 10 }
+			check_variable = { NOV_party_list^parties_idx = 3 }
+		}
+		localization_key = NOV_opinion_RSLP_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx < -10 }
+			check_variable = { NOV_party_list^parties_idx = 3 }
+		}
+		localization_key = NOV_opinion_RSLP_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 3 }
+		}
+		localization_key = NOV_opinion_RSLP_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx > 10 }
+			check_variable = { NOV_party_list^parties_idx = 4 }
+		}
+		localization_key = NOV_opinion_NFM_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx < -10 }
+			check_variable = { NOV_party_list^parties_idx = 4 }
+		}
+		localization_key = NOV_opinion_NFM_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 4 }
+		}
+		localization_key = NOV_opinion_NFM_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx > 10 }
+			check_variable = { NOV_party_list^parties_idx = 5 }
+		}
+		localization_key = NOV_opinion_RIRM_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx < -10 }
+			check_variable = { NOV_party_list^parties_idx = 5 }
+		}
+		localization_key = NOV_opinion_RIRM_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 5 }
+		}
+		localization_key = NOV_opinion_RIRM_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx > 10 }
+			check_variable = { NOV_party_list^parties_idx = 6 }
+		}
+		localization_key = NOV_opinion_CPRF_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx < -10 }
+			check_variable = { NOV_party_list^parties_idx = 6 }
+		}
+		localization_key = NOV_opinion_CPRF_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 6 }
+		}
+		localization_key = NOV_opinion_CPRF_middle
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx > 10 }
+			check_variable = { NOV_party_list^parties_idx = 7 }
+		}
+		localization_key = NOV_opinion_SRP_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_opinions^parties_idx < -10 }
+			check_variable = { NOV_party_list^parties_idx = 7 }
+		}
+		localization_key = NOV_opinion_SRP_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_party_list^parties_idx = 7 }
+		}
+		localization_key = NOV_opinion_SRP_middle
+	}
+}
+
+defined_text = {
+	name = NOVgetInteractionsMenuPartyName
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 0 }
+		}
+		localization_key = NOV_RAPP_name
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 1 }
+		}
+		localization_key = NOV_VRPP_name
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 2 }
+		}
+		localization_key = NOV_DSPR_name
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 3 }
+		}
+		localization_key = NOV_RSLP_name
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 4 }
+		}
+		localization_key = NOV_NFM_name
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 5 }
+		}
+		localization_key = NOV_RIRM_name
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 6 }
+		}
+		localization_key = NOV_CPRF_name
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 7 }
+		}
+		localization_key = NOV_SRP_name
+	}
+}
+
+defined_text = {
+	name = NOVgetPartyInteractionsIcon
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 0 }
+		}
+		localization_key = GFX_NOV_RAPP
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 1 }
+		}
+		localization_key = GFX_NOV_VRPP
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 2 }
+		}
+		localization_key = GFX_NOV_DSPR
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 3 }
+		}
+		localization_key = GFX_NOV_RSLP
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 4 }
+		}
+		localization_key = GFX_NOV_NFM
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 5 }
+		}
+		localization_key = GFX_NOV_RIRM
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 6 }
+		}
+		localization_key = GFX_NOV_CPRF
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_parties_target_party = 7 }
+		}
+		localization_key = GFX_NOV_SRP
+	}
+}
+
+defined_text = {
+	name = NOV_District_Select_lockey
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_selected_region > 99 }
+		}
+		localization_key = NOV_PE_occupied_region_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_selected_region = 1 }
+		}
+		localization_key = NOV_PE_far_east_district_title_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_selected_region = 2 }
+		}
+		localization_key = NOV_PE_siberian_district_title_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_selected_region = 3 }
+		}
+		localization_key = NOV_PE_ural_district_title_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_selected_region = 4 }
+		}
+		localization_key = NOV_PE_volga_district_title_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_selected_region = 5 }
+		}
+		localization_key = NOV_PE_northern_district_title_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_selected_region = 7 }
+		}
+		localization_key = NOV_PE_muscovy_district_title_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_selected_region = 6 }
+			NOT = { owns_state = 234 }
+		}
+		localization_key = NOV_PE_kuban_district_title_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_selected_region = 6 }
+			owns_state = 234
+		}
+		localization_key = NOV_PE_caucasia_district_title_tt
+	}
+	text = {
+		trigger = { }
+		localization_key = NOV_PE_select_a_state_tt
+	}
+}
+
+defined_text = {
+	name = GetNOVRegionPicture
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { NOV_elections_selected_region = 100 }
+				check_variable = { NOV_elections_selected_region = 101 }
+				check_variable = { NOV_elections_selected_region = 102 }
+			}
+		}
+		localization_key = "GFX_NOV_vladivostok_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 103 }
+			NOT = { owns_state = 1359 }
+		}
+		localization_key = "GFX_NOV_murmansk_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 104 }
+			owns_state = 1359
+		}
+		localization_key = "GFX_NOV_vyborg_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 105 }
+		}
+		localization_key = "GFX_NOV_petrograd_occupied_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 106 }
+		}
+		localization_key = "GFX_NOV_moscow_occupied_picture_icon"
+	}
+	text = {
+		trigger = { 
+			AND = {
+				check_variable = { NOV_elections_selected_region = 107 }	
+				NOT = {	owns_state = 243 }
+			}
+		}
+		localization_key = "GFX_NOV_volgograd_occupied_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 107 }
+		}
+		localization_key = "GFX_NOV_kuban_occupied_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 109 }
+		}
+		localization_key = "GFX_NOV_kuban_occupied_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 1 }
+		}
+		localization_key = "GFX_NOV_far_east_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 2 }
+		}
+		localization_key = "GFX_NOV_siberia_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 3 }
+		}
+		localization_key = "GFX_NOV_urals_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 4 }
+		}
+		localization_key = "GFX_NOV_volga_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 5 }
+		}
+		localization_key = "GFX_NOV_northern_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 6 }
+		}
+		localization_key = "GFX_NOV_volgograd_picture_icon"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 7 }
+		}
+		localization_key = "GFX_NOV_moscow_picture_icon"
+	}
+	text = {
+		trigger = {  }
+		localization_key = "GFX_NOV_select_region_picture_icon"
+	}
+}
+
+defined_text = {
+	name = GetNOVRegionGUI
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { NOV_elections_selected_region = 100 }
+				check_variable = { NOV_elections_selected_region = 101 }
+				check_variable = { NOV_elections_selected_region = 102 }
+			}
+		}
+		localization_key = "GFX_NOV_japanese_occupation_gui"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region = 103 }
+		}
+		localization_key = "GFX_NOV_finland_occupation_gui"
+	}
+	text = {
+		trigger = { 
+			OR = {
+				check_variable = { NOV_elections_selected_region = 105 }
+				check_variable = { NOV_elections_selected_region = 106 }
+				check_variable = { NOV_elections_selected_region = 107 }
+				check_variable = { NOV_elections_selected_region = 109 }
+			}
+		}
+		localization_key = "GFX_NOV_german_occupation_gui"
+	}
+	text = {
+		trigger = { 
+			check_variable = { NOV_elections_selected_region < 100 }
+		}
+		localization_key = "GFX_NOV_region_interaction_gui"
+	}
+	text = {
+		localization_key = "GFX_NOV_select_region_animation"
+	}
+}
+
+defined_text = {
+	name = NOVgetFarEastHighlight
+	text = {
+		trigger = {
+			owns_state = 809
+		}
+		localization_key = "GFX_NOV_Far_Eastern_District_Vladivostok_Highlight"
+	}
+	text = {
+		trigger = {
+			owns_state = 657
+			owns_state = 409
+			NOT = {	owns_state = 809 }
+		}
+		localization_key = "GFX_NOV_Far_Eastern_District_Khabarovsk_Highlight"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				owns_state = 409
+				owns_state = 809
+			}
+			owns_state = 657
+		}
+		localization_key = "GFX_NOV_Far_Eastern_District_Birobidzhan_Highlight"
+	}
+	text = {
+		trigger = {
+			NOT = {	owns_state = 657 }
+		}
+		localization_key = "GFX_NOV_Far_Eastern_District_Minimum_Highlight"
+	}
+}
+
+defined_text = {
+	name = NOVgetNorthHighlight
+	text = {
+		trigger = {
+			owns_state = 146
+			owns_state = 1359
+			owns_state = 195
+		}
+		localization_key = "GFX_NOV_Northern_District_Maximum_Highlight"
+	}
+	text = {
+		trigger = {
+			owns_state = 1359
+			owns_state = 195
+			NOT = { owns_state = 146 }
+		}
+		localization_key = "GFX_NOV_Northern_District_No_Vyborg_Highlight"
+	}
+	text = {
+		trigger = {
+			owns_state = 1359
+			NOT = { owns_state = 195 }
+		}
+		localization_key = "GFX_NOV_Northern_District_Karelia_Highlight"
+	}
+	text = {
+		trigger = {
+			owns_state = 195
+			NOT = { owns_state = 1359 }
+		}
+		localization_key = "GFX_NOV_Northern_District_No_Karelia_Highlight"
+	}
+	text = {
+		trigger = {
+			NOT = {
+				owns_state = 195
+				owns_state = 1359
+			}
+		}
+		localization_key = "GFX_NOV_Northern_District_Minimum_Highlight"
+	}
+}
+
+defined_text = {
+	name = NOVgetCaucasusHighlight
+	text = {
+		trigger = {
+			owns_state = 243
+				owns_state = 234
+				owns_state = 1532
+		}
+		localization_key = "GFX_NOV_Crimea_Caucasia_District_Highlight"
+	}
+	text = {
+		trigger = {
+			owns_state = 243
+			owns_state = 234
+			NOT = { owns_state = 1532 }
+		}
+		localization_key = "GFX_NOV_Caucasia_District_Highlight"
+	}
+	text = {
+		trigger = {
+			owns_state = 243
+			NOT = { owns_state = 234 }
+		}
+		localization_key = "GFX_NOV_Kuban_District_Highlight"
+	}
+}
+
+defined_text = {
+	name = NOV_Leading_Candidate
+	text = {
+		localization_key = NOV_vasily_shukshin_in_lead_tt
+	}
+}
+
+defined_text = {
+	name = NOV_Next_Election_Loc
+	text = {
+		localization_key = NOV_1976_election
+	}
+}
+
+defined_text = {
+	name = NOVgetCampaignIcon
+	text = {
+		trigger = {
+			has_state_flag = NOV_RAPP_campaign
+		}
+		localization_key = GFX_NOV_RAPP_campaign
+	}
+	text = {
+		trigger = {
+			has_state_flag = NOV_VRPP_campaign
+		}
+		localization_key = GFX_NOV_VRPP_campaign
+	}
+	text = {
+		trigger = {
+			has_state_flag = NOV_DSPR_campaign
+		}
+		localization_key = GFX_NOV_DSPR_campaign
+	}
+	text = {
+		trigger = {
+			has_state_flag = NOV_RSLP_campaign
+		}
+		localization_key = GFX_NOV_RSLP_campaign
+	}
+	text = {
+		trigger = {
+			has_state_flag = NOV_independents_campaign
+		}
+		localization_key = GFX_NOV_IND_campaign
+	}
+}
+
+defined_text = {
+	name = NOVgetPopulationThousandOrMillion
+	text = {
+		trigger = {
+			has_country_flag = NOV_pop_million
+		}
+		localization_key = "M"
+	}
+	text = {
+		localization_key = "K"
+	}
+}
+
+defined_text = {
+	name = NOVgetRAPPMomentum
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RAPP_tick < 0.5 }
+				check_variable = { THIS.NOV_election_support_RAPP_tick > -0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_empty"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RAPP_tick > 0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_1"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RAPP_tick > 2 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_2"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RAPP_tick > 3 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_3"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RAPP_tick < -0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_1"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RAPP_tick < -2 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_2"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RAPP_tick < -3 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_3"
+	}
+}
+
+defined_text = {
+	name = NOVgetVRPPMomentum
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_VRPP_tick < 0.5 }
+				check_variable = { THIS.NOV_election_support_VRPP_tick > -0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_empty"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_VRPP_tick > 0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_1"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_VRPP_tick > 2 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_2"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_VRPP_tick > 3 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_3"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_VRPP_tick < -0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_1"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_VRPP_tick < -2 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_2"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_VRPP_tick < -3 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_3"
+	}
+}
+
+defined_text = {
+	name = NOVgetDSPRMomentum
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_DSPR_tick < 0.5 }
+				check_variable = { THIS.NOV_election_support_DSPR_tick > -0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_empty"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_DSPR_tick > 0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_1"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_DSPR_tick > 2 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_2"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_DSPR_tick > 3 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_3"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_DSPR_tick < -0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_1"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_DSPR_tick < -2 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_2"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_DSPR_tick < -3 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_3"
+	}
+}
+
+defined_text = {
+	name = NOVgetRSLPMomentum
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RSLP_tick < 0.5 }
+				check_variable = { THIS.NOV_election_support_RSLP_tick > -0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_empty"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RSLP_tick > 0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_1"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RSLP_tick > 2 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_2"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RSLP_tick > 3 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_3"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RSLP_tick < -0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_1"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RSLP_tick < -2 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_2"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_RSLP_tick < -3 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_3"
+	}
+}
+
+defined_text = {
+	name = NOVgetIndependentsMomentum
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_independents_tick < 0.5 }
+				check_variable = { THIS.NOV_election_support_independents_tick > -0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_empty"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_independents_tick > 0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_1"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_independents_tick > 2 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_2"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_independents_tick > 3 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_right_3"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_independents_tick < -0.5 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_1"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_independents_tick < -2 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_2"
+	}
+	text = {
+		trigger = {
+			any_owned_state = {
+				check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+				check_variable = { THIS.NOV_election_support_independents_tick < -3 }
+			}
+		}
+		localization_key = "GFX_NOV_arrow_left_3"
+	}
+}
+
+defined_text = {
+	name = NOVgetCandidateInLead
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_lead = 1 }
+		}
+		localization_key = NOV_shukshin_in_lead
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_lead = 4 }
+		}
+		localization_key = NOV_primakov_in_lead
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_lead = 2 }
+		}
+		localization_key = NOV_kantorovich_in_lead
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_elections_lead = 3 }
+		}
+		localization_key = NOV_koryagin_in_lead
+	}
+}
+
+defined_text = { # for the map overlays
+	name = NOVcampaignGetPartyName
+	text = {
+		trigger = {
+			has_state_flag = NOV_RAPP_campaign
+		}
+		localization_key = "NOV_RAPP_tt"
+	}
+	text = {
+		trigger = {
+			has_state_flag = NOV_VRPP_campaign
+		}
+		localization_key = "NOV_VRPP_tt"
+	}
+	text = {
+		trigger = {
+			has_state_flag = NOV_DSPR_campaign
+		}
+		localization_key = "NOV_DSPR_tt"
+	}
+	text = {
+		trigger = {
+			has_state_flag = NOV_RSLP_campaign
+		}
+		localization_key = NOV_RSLP_tt
+	}
+	text = {
+		trigger = {
+			has_state_flag = NOV_independents_campaign
+		}
+		localization_key = NOV_independents_tt
+	}
+}
+
+defined_text = {
+	name = NOVelectionsGetPlayerPartyName
+	text = {
+		trigger = {
+			has_country_flag = NOV_player_VRPP
+		}
+		localization_key = NOV_VRPP_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = NOV_player_DSPR
+		}
+		localization_key = NOV_DSPR_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = NOV_player_RSLP
+		}
+		localization_key = NOV_RSLP_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = NOV_player_RAPP
+		}
+		localization_key = NOV_RAPP_tt
+	}
+}
+
+#########################################################################
+
+### VRPP GUIS ###
+
+defined_text = {
+	name = NOVgetMegacorpTitle
+	text = {
+		trigger = {
+			check_variable = { NOV_megacorps^megacorps_idx = 0 }
+		}
+		localization_key = "FENIKS"
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_megacorps^megacorps_idx = 1 }
+		}
+		localization_key = "SIBIR"
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_megacorps^megacorps_idx = 2 }
+		}
+		localization_key = "TITAN"
+	}
+}
+
+defined_text = {
+	name = NOVgetMegacorpLogo
+	text = {
+		trigger = {
+			check_variable = { NOV_megacorps^megacorps_idx = 0 }
+		}
+		localization_key = GFX_NOV_Feniks_logo
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_megacorps^megacorps_idx = 1 }
+		}
+		localization_key = GFX_NOV_Sibir_logo
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_megacorps^megacorps_idx = 2 }
+		}
+		localization_key = GFX_NOV_Titan_logo
+	}
+}
+
+defined_text = {
+	name = NOVgetLoyaltyBar
+	text = {
+		trigger = {
+			check_variable = { NOV_megacorp_loyalties^megacorps_idx > 54 }
+		}
+		localization_key = GFX_NOV_megacorp_bar_good
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_megacorp_loyalties^megacorps_idx > 40 }
+		}
+		localization_key = GFX_NOV_megacorp_bar_meh
+	}
+	text = {
+		localization_key = GFX_NOV_megacorp_bar_bad
+	}
+}
+
+defined_text = {
+	name = NOVgetInfluenceBar
+	text = {
+		trigger = {
+			check_variable = { NOV_megacorp_influence^megacorps_idx > 66 }
+		}
+		localization_key = GFX_NOV_megacorp_bar_bad
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_megacorp_influence^megacorps_idx > 33 }
+		}
+		localization_key = GFX_NOV_megacorp_bar_meh
+	}
+	text = {
+		localization_key = GFX_NOV_megacorp_bar_good
+	}
+}
+
+defined_text = {
+	name = getNOVElectoralTarget
+	text = {
+		trigger = {
+			check_variable = { electoral_target = 1 }
+		}
+		localization_key = NOV_RAPP_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { electoral_target = 2 }
+		}
+		localization_key = NOV_VRPP_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { electoral_target = 3 }
+		}
+		localization_key = NOV_DSPR_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { electoral_target = 4 }
+		}
+		localization_key = NOV_RSLP_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { electoral_target = 5 }
+		}
+		localization_key = NOV_independents_tt
+	}
+}
+
+defined_text = {
+	name = getNOVOFNRelation
+	text = {
+		trigger = {
+			check_variable = { NOV_rslp_ofn_relation < 20 }
+		}
+		localization_key = NOV_RSLP_russia_ofn_coop_1
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_ofn_relation > 19 }				
+			check_variable = { NOV_rslp_ofn_relation < 40 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_coop_2
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_ofn_relation > 39 }				
+			check_variable = { NOV_rslp_ofn_relation < 60 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_coop_3
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_ofn_relation > 59 }				
+			check_variable = { NOV_rslp_ofn_relation < 80 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_coop_4
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_ofn_relation > 79 }				
+			check_variable = { NOV_rslp_ofn_relation < 100 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_coop_5
+	}
+}
+
+defined_text = {
+	name = getNOVOFNOpinionVRPP
+	text = {
+		trigger = {
+			check_variable = { NOV_rslp_vrpp_ofn_opinion < 20 }
+		}
+		localization_key = NOV_RSLP_russia_ofn_opinion_1
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_vrpp_ofn_opinion > 19 }				
+			check_variable = { NOV_rslp_vrpp_ofn_opinion < 40 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_opinion_2
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_vrpp_ofn_opinion > 39 }				
+			check_variable = { NOV_rslp_vrpp_ofn_opinion < 60 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_opinion_3
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_vrpp_ofn_opinion > 59 }				
+			check_variable = { NOV_rslp_vrpp_ofn_opinion < 80 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_opinion_4
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_vrpp_ofn_opinion > 79 }				
+			check_variable = { NOV_rslp_vrpp_ofn_opinion < 100 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_opinion_5
+	}
+}
+
+defined_text = {
+	name = getNOVOFNOpinionDSPR
+	text = {
+		trigger = {
+			check_variable = { NOV_rslp_dspr_ofn_opinion < 20 }
+		}
+		localization_key = NOV_RSLP_russia_ofn_opinion_1
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_dspr_ofn_opinion > 19 }				
+			check_variable = { NOV_rslp_dspr_ofn_opinion < 40 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_opinion_2
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_dspr_ofn_opinion > 39 }				
+			check_variable = { NOV_rslp_dspr_ofn_opinion < 60 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_opinion_3
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_dspr_ofn_opinion > 59 }				
+			check_variable = { NOV_rslp_dspr_ofn_opinion < 80 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_opinion_4
+	}
+	text = {
+		trigger = {
+			AND = {
+			check_variable = { NOV_rslp_dspr_ofn_opinion > 79 }				
+			check_variable = { NOV_rslp_dspr_ofn_opinion < 100 }
+			}
+		}
+		localization_key = NOV_RSLP_russia_ofn_opinion_5
+	}
+}
+
+defined_text = {
+	name = getNOVRSLPTarget
+	text = {
+		trigger = {
+			check_variable = { RSLP_Opinion_Target = 1 }
+		}
+		localization_key = NOV_OFN_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { RSLP_Opinion_Target = 2 }
+		}
+		localization_key = NOV_VRPP_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { RSLP_Opinion_Target = 3 }
+		}
+		localization_key = NOV_DSPR_tt
+	}
+}
+
+defined_text = {
+	name = NOVgetPresidency
+	text = {
+		trigger = { check_variable = { NOV_presidency = 1 } }
+		localization_key = NOV_gov_shukshin
+	}
+	text = {
+		trigger = { check_variable = { NOV_presidency = 2 } }
+		localization_key = NOV_gov_kantorovich
+	}
+	text = {
+		trigger = { check_variable = { NOV_presidency = 3 } }
+		localization_key = NOV_gov_koryagin
+	}
+	text = {
+		trigger = { check_variable = { NOV_presidency = 4 } }
+		localization_key = NOV_gov_primakov
+	}
+}
+
+defined_text = {
+	name = NOVgetVicePresidency
+	text = {
+		trigger = { check_variable = { NOV_presidency = 1 } }
+		localization_key = NOV_gov_shukshin_vice
+	}
+	text = {
+		trigger = { check_variable = { NOV_presidency = 2 } }
+		localization_key = NOV_gov_kantorovich_vice
+	}
+	text = {
+		trigger = { check_variable = { NOV_presidency = 3 } }
+		localization_key = NOV_gov_koryagin_vice
+	}
+	text = {
+		trigger = { check_variable = { NOV_presidency = 4 } }
+		localization_key = NOV_gov_primakov_vice
+	}
+}
+
+defined_text = {
+	name = NOVGetAskThemNicelyTitle
+	text = {
+		trigger = { 192 = { is_owned_by = FUK } }
+		localization_key = NOV_ask_them_nicely_reconstruction
+	}
+	text = {
+		trigger = { NOT = { 192 = { is_owned_by = FUK } } }
+		localization_key = NOV_ask_them_nicely_demand
+	}
+}
+
+defined_text = {
+	name = NOVGetAskThemNicelyDesc
+	text = {
+		trigger = { 192 = { is_owned_by = FUK } }
+		localization_key = NOV_ask_them_nicely_reconstruction_desc
+	}
+	text = {
+		trigger = { NOT = { 192 = { is_owned_by = FUK } } }
+		localization_key = NOV_ask_them_nicely_demand_desc
+	}
+}
+defined_text = {
+	name = NOVGetOdessaStatusWorldEvent
+	text = {
+		trigger = {
+			192 = {
+				OR = {
+					is_owned_by = FUK
+					is_owned_by = RUS
+				}
+			}
+		}
+		localization_key = WORLD_Odessa_Ukranian
+	}
+	text = {
+		trigger = {
+			NOT = {
+				192 = {
+					OR = {
+						is_owned_by = FUK
+						is_owned_by = RUS
+					}
+				}
+			}
+		}
+		localization_key = WORLD_Odessa_Romanian
+	}
+}
+defined_text = {
+	name = NOVGetOdessaStatusNegotiation
+	text = {
+		trigger = {
+			ROM = {
+				owns_state = 192
+			}
+		}
+		localization_key = NOV_postwar_15_no_odessa
+	}
+	text = {
+		trigger = {
+			TNS = {
+				owns_state = 192
+			}
+		}
+		localization_key = NOV_postwar_15_odessa
+	}
+}

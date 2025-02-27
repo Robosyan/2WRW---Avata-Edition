@@ -1,0 +1,307 @@
+music_station = novosibirsk_music
+#########################
+### Radio Novosibirsk ###
+#########################
+music = {
+	song = "SOLARIS"
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = anthem_of_novosibirsk
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = radio_novosibirsk_intermission_one
+	chance = {
+		factor = 0.2
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = radio_novosibirsk_intermission_two
+	chance = {
+		factor = 0.2
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = radio_novosibirsk_intermission_three
+	chance = {
+		factor = 0.2
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = radio_novosibirsk_intermission_nixon
+	chance = {
+		factor = 0.1
+		modifier = {
+			factor = 0
+			OR = {
+				has_war = yes
+				USA = {
+					has_country_leader = {
+						character = USA_Richard_Nixon
+						ruling_only = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+music = {
+	song = siberiade
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = farewell
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = na_zare
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = flight
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = aviamarch
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = fire
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = stealrussia
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = apity
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = schweine
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = gruppa_krovi
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = last_electrichka
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = peaceful_sky
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = marathon
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = kzvezdam
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = discoteka
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = slova
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 1
+			has_war = no
+		}
+	}
+}

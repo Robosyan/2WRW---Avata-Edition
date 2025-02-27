@@ -1,0 +1,74 @@
+leader_traits = {
+	### Novosibirsk
+	business_minded = {
+		GDP_growth_modifier = 5
+		political_power_factor = 0.15
+	}
+	crony_diplomat = {
+		political_power_factor = 0.1
+		trade_opinion_factor = 0.15
+	}
+	nepotistic_technocrat = {
+		stability_factor = -0.05
+		political_power_gain = 0.25
+		research_speed_factor = 0.05
+	}
+	apolitical_soldier = {
+		defence = 0.1
+		army_org_factor = 0.05
+		political_power_factor = 0.05
+	}
+	educated_reformer = {
+		progressivism_drift = 0.01
+		unemployment_policy_monthly_rate = 0.2
+		pensions_policy_monthly_rate = 0.2
+	}
+	dissent_writer = {
+		stability_factor = 0.05
+		political_power_factor = 0.15
+		academic_base_monthly_rate = 0.25
+	}
+	grassroot_planner = {
+		consumer_goods_use_modifier = 0.05
+		GDP_growth_modifier = 2.5
+		inflation_rate_modifier = -2.5
+	}
+	guard_of_the_revolution = {
+		defence = 0.1
+		army_org_factor = 0.1	
+	}
+	samizdat = {
+		liberalism_drift = 0.005
+		war_support_factor = -0.025
+		unemployment_policy_monthly_rate = 0.1
+		pensions_policy_monthly_rate = 0.1
+	}
+	human_rights_activist = {
+		war_support_factor = -0.025
+		trade_opinion_factor = 0.35
+	}
+	educated_economist = {
+		war_support_factor = -0.025
+		GDP_growth_modifier = 4
+		inflation_rate_modifier = -1
+	}
+	human_rights_council = {
+		war_support_factor = -0.025
+		political_power_factor = 0.15
+		stability_factor = 0.1
+		army_core_defence_factor = 0.5
+		army_core_attack_factor = 0.1
+	}
+	the_garaet_negotshiator = {
+		stability_factor = 0.15
+		war_support_factor = 0.1
+		political_power_factor = 0.25
+		opinion_gain_monthly_factor = 0.15
+		trade_opinion_factor = 0.3
+		GDP_growth_modifier = 4
+		inflation_rate_modifier = -1
+		unemployment_policy_monthly_rate = 0.1
+		pensions_policy_monthly_rate = 0.1
+		random = no
+	}
+}

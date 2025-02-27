@@ -1,0 +1,300 @@
+focus_tree = {
+	id = RUS_WRW_Generic_Authoritarian_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	default = no
+	shared_focus = RUS_United_Forever
+}
+
+shared_focus = {
+	id = RUS_United_Forever
+	icon = GFX_RUS_United_Forever
+	cost = 7
+	ai_will_do = {
+		factor = 1
+	}
+	x = 10
+	y = -2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: RUS_United_Forever"
+		custom_effect_tooltip = RUS_United_Forever_tt
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 25
+		set_temp_variable = {
+			pus_temp = 6
+		}
+		econ_pus_change = yes
+	}
+}
+
+shared_focus = {
+	id = RUS_Our_War_of_Strength
+	icon = GFX_RUS_Our_War_of_Strength
+	cost = 3
+	prerequisite = {
+		focus = RUS_United_Forever
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	will_lead_to_war_with  = GER
+	available = {
+		date > 1973.7.1
+		if = {
+			limit = {
+				has_global_flag = german_civil_war_bormannvic
+			}
+			GER = {
+				has_country_flag = bormann_dead
+			}
+		}
+	}
+	x = 10
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: RUS_Our_War_of_Strength"
+		set_global_flag = SECOND_WRW_HAS_BEGUN
+		set_variable = {
+			RUS_surrender_limit = 0
+		}
+		add_war_support = 0.2
+		add_stability = 0.1
+		custom_effect_tooltip = RUS_Our_War_of_Strength_tt
+		hidden_effect = {
+			SWRW_initiate = yes
+			SWRW_launch_war_declaration_events = yes
+			WRW_load_war_portraits = yes
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_Strongarm_the_Populace
+	icon = GFX_RUS_Strongarm_the_Populace
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = RUS_Our_War_of_Strength
+	prerequisite = {
+		focus = RUS_Our_War_of_Strength
+	}
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: RUS_Strongarm_the_Populace"
+		add_ideas = RUS_The_Strength_of_Our_Nation
+		set_temp_variable = {
+			pus_temp = 8
+		}
+		econ_pus_change = yes
+		add_manpower = 100000
+	}
+}
+
+shared_focus = {
+	id = RUS_Expand_the_MIC
+	icon = GFX_RUS_Expand_the_MIC
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = RUS_Our_War_of_Strength
+	prerequisite = {
+		focus = RUS_Our_War_of_Strength
+	}
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: RUS_Expand_the_MIC"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3000
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 1500
+		}
+		if = {
+			#No Step Back Tanks
+			limit = {
+				has_dlc = "No Step Back"
+			}
+			add_equipment_to_stockpile = {
+				type = MBT_chassis
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = APC_chassis
+				amount = 250
+			}
+		}
+		else = {
+			#Non-DLC Tanks
+			add_equipment_to_stockpile = {
+				type = MBT_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = APC_equipment
+				amount = 250
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = fighter_equipment
+			amount = 250
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 250
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_Forwards_for_Russia
+	icon = GFX_RUS_Forwards_for_Russia
+	cost = 3
+	dynamic = yes
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = RUS_Our_War_of_Strength
+	prerequisite = {
+		focus = RUS_Strongarm_the_Populace
+	}
+	prerequisite = {
+		focus = RUS_Expand_the_MIC
+	}
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: RUS_Forwards_for_Russia"
+		add_ideas = RUS_Death_to_the_Germans_1
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 1000
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 500
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_Ubermensch_No_More
+	icon = GFX_RUS_Ubermensch_No_More
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = RUS_Forwards_for_Russia
+	prerequisite = {
+		focus = RUS_Forwards_for_Russia
+	}
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: RUS_Ubermensch_No_More"
+		GER = {
+			add_stability = -0.1
+			add_war_support = -0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_Rout_the_Bastards
+	icon = GFX_RUS_Rout_the_Bastards
+	cost = 3
+	relative_position_id = RUS_Ubermensch_No_More
+	prerequisite = {
+		focus = RUS_Ubermensch_No_More
+	}
+	available = {
+		1442 = {
+			is_controlled_by = ROOT
+		}
+	}
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: RUS_Rout_the_Bastards"
+		swap_ideas = {
+			remove_idea = RUS_Death_to_the_Germans_1
+			add_idea = RUS_Death_to_the_Germans_2
+		}
+		add_manpower = 100000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1500
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 1500
+		}
+		if = {
+			#No Step Back Tanks
+			limit = {
+				has_dlc = "No Step Back"
+			}
+			add_equipment_to_stockpile = {
+				type = MBT_chassis
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+				type = APC_chassis
+				amount = 400
+			}
+		}
+		else = {
+			#Non-DLC Tanks
+			add_equipment_to_stockpile = {
+				type = MBT_equipment
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+				type = APC_equipment
+				amount = 400
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 800
+		}
+	}
+}
+
+shared_focus = {
+	id = RUS_The_Reich_in_Ashes
+	icon = GFX_RUS_The_Reich_in_Ashes
+	cost = 3
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = RUS_Rout_the_Bastards
+	prerequisite = {
+		focus = RUS_Rout_the_Bastards
+	}
+	available = {
+		has_global_flag = RUS_SWRW_End
+	}
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: RUS_The_Reich_in_Ashes"
+		custom_effect_tooltip = RUS_W_tt
+		TNO_Country_Closing_Screen_Show = yes
+	}
+}

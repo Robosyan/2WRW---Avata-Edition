@@ -1,0 +1,59 @@
+music = {
+	name = "Teufelslied"
+	file = "Teufelslied.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Alte_Kameraden"
+	file = "Alte_Kameraden.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Panzerlied"
+	file = "Panzerlied.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Alexandermarsch"
+	file = "Alexandermarsch.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Wir_Sind_Des_Geyers_Schwarzer_Haufen"
+	file = "Wir_Sind_Des_Geyers_Schwarzer_Haufen.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Koniggratzer_Marsch"
+	file = "Koniggratzer_Marsch.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Die_Grenzwacht_Hielt_Im_Osten"
+	file = "Die_Grenzwacht_Hielt_Im_Osten.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Du_Musst_Zur_Bundeswehr"
+	file = "Du_Musst_Zur_Bundeswehr.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Oh_Du_Schoner_Westerwald"
+	file = "Oh_Du_Schoner_Westerwald.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Ich_bin_Soldat"
+	file = "Ich_bin_Soldat.ogg"
+	volume = 0.9
+}

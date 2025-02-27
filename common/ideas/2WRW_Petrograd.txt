@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		PET_Moskowien_Refugee_Crisis = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PET_Moskowien_Refugee_Crisis" }
+			removal_cost = -1
+			picture = generic_refugee_crisis
+			
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			modifier = {
+				stability_factor = -0.10 
+				conscription_factor = 0.2
+			}
+		}
+	}
+}

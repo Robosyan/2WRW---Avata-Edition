@@ -1,0 +1,193 @@
+﻿division_template = {
+	name = "Kenestik Kavaleriya"
+	division_names_group = KAZ_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Kenestik Jayaw"
+	division_names_group = KAZ_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Kenestik Tank"
+	division_names_group = KAZ_KAZ_01
+	regiments = {
+		IFV = { x = 0 y = 0 }
+		IFV = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		#name = "203rd Rifle Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 203
+		}
+		location="12121"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5
+	}
+	division = {
+		#name = "105th Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
+		location="1239"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.4
+	}
+	division = {
+		#name = "8ya Gvardyeiskaya Strelk. Div.
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		#name = "9ya Gvardyeiskaya Strelk. Div.
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		#name = "10ya Gvardyeiskaya Strelk. Div.
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		#name = "11ya Gvardyeiskaya Strelk. Div.
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		#name = "12ya Gvardyeiskaya Strelk. Div.
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Momyshuly Guard"
+		location="7795"
+		division_template= "Kenestik Kavaleriya"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "Altay Guard"
+		location="1591"
+		division_template= "Kenestik Kavaleriya"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+	}
+	division = {
+		name = "68-şi motoatqıştar dïvïzïyası"
+		location="12329"
+		division_template= "Kenestik Tank"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location="1668"
+		division_template= "Kenestik Jayaw"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+}

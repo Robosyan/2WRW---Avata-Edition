@@ -1,0 +1,27 @@
+﻿l_english:
+
+ ### Decisions ###
+  SWRW_RUS_portrait_category: "Portrait Pickers"
+  SWRW_NOV_portrait_picker: "Shukshin's Portrait"
+  SWRW_RUS_portrait_category2: "Portrait Pickers"
+  SWRW_WRS_portrait_picker: "Tukhachevsky's Portrait"
+
+
+ NOV_Shuk_Picker:0 "The President's Look"
+ 
+ ### Events ###
+ 
+ portrait_picker.1.t:0 "The President's Look"
+ portrait_picker.1.d:0 "Shukshin sat at his table jotting notes for his upcoming speech. This speech was special, for the first time in a while he intended to change his uniform. Throughout his presidency, some of his public relations advisors expressed their concerns over his overly simple outfit he wore in every press conference and poltical rally. To appease this surprisingly vocal group, he’d try out something different for a change. Sending for his tailor, he waited until he finally arrived.\n\n'So what’ll it be, Mr. President?'"
+ portrait_picker.1.a:0 "I'll stick with my classic look, Well known, I think."
+ portrait_picker.1.b:0 "Dress to impress! Give me my coat and sunglasses!"
+ portrait_picker.1.c:0 "The people respect a strong leader. I think i'll grow some facial hair."
+ portrait_picker.1.e:0 "I have to look professional and clean. Pull that nice black suit out."
+ portrait_picker.1.f:0 "I'll choose my new brown suit and glasses."
+ 
+ portrait_picker.2.t:0 "An Outfit For A Napoleon"
+ portrait_picker.2.d:0 "Tukhachevsky sat at his desk rubbing his eyes and groaning. As much as he was fond of his nightrobe and a warm set of pyjamas, as of late the recent victories of the Red Army had required him to be more active with the common people, or at the very least the Generals around him were making fun of his dress tastes behind his back. While he would normally just have naysayers shot, today he felt a strange need to appease his staff and soldier alike, and he decided he’d try out something more formal for a change. Sending for his personal tailor (formerly Zhukov's), he waited until he finally arrived.\n\n'So what’ll it be, Comrad- Uh, Grand Marshal?'"
+ portrait_picker.2.a:0 "I'll stick with my classic look, the one we put on all the stamps."
+ portrait_picker.2.b:0 "I'm a still a fucking old man! Give me my coat, NOW!"
+ portrait_picker.2.c:0 "There's this uniform I saw in a dream once (I also want to look like a toad)"
+ portrait_picker.2.e:0 "A nice Suit will do!"

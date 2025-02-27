@@ -1,0 +1,32 @@
+﻿l_english:
+ # Characters
+
+ LIT_Vytautas_Landsbergis: "Vytautas Landsbergis"
+
+ # Character descs
+
+ POLITICS_VYTAUTAS_LANDSBERGIS_DESC: "Born in 1932 to a well-off family in Kaunas, Vytautas Landsbergis can remember the horrors of the Second World War all too vividly. When the Nazis came and conquered Lithuania, he witnessed their attempts at erasing the Lithuanian culture, and bastardizing it into something unrecognizable.\n\nIt was then that he took to writing and art, not only to soothe his own pain and create an outlet, but to keep the torch of Lithuanian culture burning brightly. From books about famous composers to books bashing the German regime, to poetry meant to inspire Lithuanians across the country to keep dreaming of a better tomorrow.\n\nWhile he may not have had a direct hand in the partisan uprisings of the early 60s as well as during the West Russian War, it was through his works - his call to action, that the people went out into the streets, Zhdanov cocktail in hand.\n\nWhile he was educated from the Lithuanian conservatory in 1958, he would not end up leading a conventional orchestra. To him, the members of the Seimas are the orchestra, working to create a future for Lithuania, the music."
+
+ # Political parties
+
+ LIT_RUS_liberalism_party: "Sajūdis"
+ LIT_RUS_liberalism_party_long: "Sajūdis"
+ LIT_RUS_progressivism_party: "LSDP"
+ LIT_RUS_progressivism_party_long: "Lietuvos Socialdemokratu Partija"
+ LIT_RUS_conservatism_party: "LKDP"
+ LIT_RUS_conservatism_party_long: "Lietuvos Krikščioniu Demokratu Partija"
+ LIT_RUS_socialist_party: "LKP - Nuosaikūs"
+ LIT_RUS_socialist_party_long: "Lietuvos Komunistu Partija - Nuosaikūs"
+ LIT_RUS_communist_party: "LKP"
+ LIT_RUS_communist_party_long: "Lietuvos Komunistu Partija"
+
+ # National spirits
+
+ LIT_cultural_resurgence: "Cultural Resurgence"
+ LIT_cultural_resurgence_desc: "Thirty years of occupation; thirty years of the Nazis attempting to eradicate our culture, all to an end now. Lithuania can breathe easy now that the days under Ostland, when German propaganda was shoved down their throat from an early age, are over.\n\nAs the Sąjūdis government spends a not insignificant amount of money on revitalizing Lithuanian culture, the scars left behind would heal eventually, and Lithuania would emerge stronger than ever before."
+
+ LIT_colonial_past: "Colonial Past"
+ LIT_colonial_past_desc: "The region's past has, through decades of German colonization and propaganda, eroded our people's national identity and culture. Many do not know how to properly speak their mother tongue, without making use of some of the countless German loanwords that have entered our language.\n\nWorse still is that the Germans still live among us in great numbers, causing ethnic tensions to be at an all time high. Many a man does not know whether their German neighbor is just a regular person like them or perhaps a bitter veteran of the Second West Russian war, out to plot to kill them and their families.\n\nWhile many Germans leave the country due to this harassment, some have decided to stay; and some, to entrench themselves in the beliefs of national socialism..."
+ # Tooltips
+
+ LIT_cultural_resurgence_tt: "§nIn time, the scars would heal - and yesterday's nightmare would become tomorrow's distant memory§!"

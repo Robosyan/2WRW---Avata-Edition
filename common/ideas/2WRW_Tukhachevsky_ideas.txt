@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+	
+		### GENERIC NATIONAL SPIRITS ###
+		
+		### SECOND GREAT PATRIOTIC WAR ###
+	
+		WRW_tukha_second_great_patriotic_war = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea WRS_veterans_of_the_long_war_2"}
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = WRS_veterans_of_the_long_war
+			
+			modifier = {
+				surrender_limit = 1
+				army_attack_factor = 0.15
+				experience_gain_army_unit_factor = 0.25
+				experience_loss_factor = -0.15
+				army_org_factor = 0.2
+				army_morale_factor = 0.15
+				experience_gain_army = 0.1
+			}
+		}
+	}
+}

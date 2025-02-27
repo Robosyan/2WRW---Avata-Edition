@@ -1,0 +1,133 @@
+music_station = klopfer_music
+
+#########################
+### Radio Wien ##########
+#########################
+
+music = {
+	song = The_Blue_Danube_Waltz
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Zug_Nach_Hamburg
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Berlin_Boys_and_Stuttgart_Girls
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Babysitter_Boogie
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Rot_Und_Schwarz
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Mein_Kleiner_VW
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Du_Du_Liegst_Mir_Im_Herzen
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Horst_Wessel_Lied
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}

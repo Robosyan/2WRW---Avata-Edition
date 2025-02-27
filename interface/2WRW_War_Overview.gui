@@ -1,0 +1,220 @@
+guiTypes = {
+	containerWindowType = {
+		name = "war_overview"
+		size = { width = 500 height = 445 }
+		position = { x = 0 y = 0 }
+		
+		iconType = {
+			name = "infoButton"
+			spriteType = "GFX_Kartenhaus_InfoButton"
+			position = { x = 434 y = 5 }
+			pdx_tooltip = wrw_war_mechanics_info_tt
+		}
+		
+		instantTextboxType= {
+			name = "tension_title"
+			position = { x = 0 y = 40 }
+			font = "aldrich_36_outline"
+			text = tension_title_loc
+			maxWidth = 500
+			maxHeight = 100
+			format = center
+		}
+		
+		iconType = {
+			name = "tension_main_bar"
+			spriteType = "GFX_WRW_Tension_bar"
+			position = { x = 52 y = 79 }
+			pdx_tooltip = "wrw_tension_info_tt"
+		}
+		
+		iconType = {
+			name = "tension_bar_frame"
+			quadTextureSprite = "GFX_tension_bar_frame"
+			position = { x = 49 y = 77 }
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "open_nuke_window"
+			spriteType = "GFX_nuke_open_window_button"
+			position = { x = 411 y = 77 }
+		}
+		
+		instantTextboxType= {
+			name = "exhaustion_title"
+			position = { x = 17 y = 180 }
+			font = "aldrich_24_outline"
+			text = "WAR EXHAUSTION"
+			maxWidth = 500
+			maxHeight = 100
+			format = center
+		}
+		iconType = {
+			name = "exhaustion_icon"
+			spriteType = "GFX_war_exhaustion_icon"
+			position = { x = 140 y = 175 }
+		}
+		
+		iconType = {
+			name = "exhaustion_bar_frame_germany"
+			spriteType = "GFX_exhaustion_bar_frame"
+			position = { x = 22 y = 210 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "exhaustion_main_bar_germany"
+			spriteType = "GFX_GER_WRW_Exhaustion_bar"
+			position = { x = 22 y = 209 }
+			pdx_tooltip = "GER_war_exhaustion_info_tt"
+		}
+		
+		iconType = {
+			name = "exhaustion_bar_frame_russia"
+			spriteType = "GFX_exhaustion_bar_frame"
+			position = { x = 270 y = 210 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "exhaustion_main_bar_russia"
+			spriteType = "GFX_RUS_WRW_Exhaustion_bar"
+			position = { x = 270 y = 209 }
+			pdx_tooltip = "RUS_war_exhaustion_info_tt"
+		}
+		
+		instantTextboxType= {
+			name = "germany_name"
+			position = { x = 27 y = 242 }
+			font = "aldrich_24_outline"
+			text = german_title_loc
+			maxWidth = 200
+			maxHeight = 150
+			format = left
+		}
+		
+		instantTextboxType= {
+			name = "german_exhaustion"
+			position = { x = 30 y = 310 }
+			font = "aldrich_36_outline"
+			text = "[?GER.WRW_war_exhaustion]%"
+			maxWidth = 150
+			maxHeight = 100
+			format = left
+		}
+		
+		instantTextboxType= {
+			name = "russia_title"
+			position = { x = 277 y = 242 }
+			font = "aldrich_24_outline"
+			text = russian_title_loc
+			maxWidth = 200
+			maxHeight = 150
+			format = right
+		}
+		
+		instantTextboxType= {
+			name = "russian_exhaustion"
+			position = { x = 326 y = 310 }
+			font = "aldrich_36_outline"
+			text = "[?RUS.WRW_war_exhaustion]%"
+			maxWidth = 150
+			maxHeight = 100
+			format = right
+		}
+		
+		buttonType = {
+			name = "frontlines_button"
+			spriteType = "GFX_frontlines_button"
+			position = { x = 11 y = 405 }
+		}
+		
+		buttonType = {
+			name = "homefront_button"
+			spriteType = "GFX_homefront_button"
+			position = { x = 174 y = 405 }
+		}
+		
+		buttonType = {
+			name = "diplomacy_button"
+			spriteType = "GFX_diplomacy_button"
+			position = { x = 337 y = 405 }
+		}
+	}
+	
+	## NUKE WINDOW ##
+	
+	containerWindowType = {
+		name = "war_overview_nuke_window"
+		size = { width = 252 height = 300 }
+		position = { x = 550 y = 79 }
+		moveable = yes
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		instantTextboxType= {
+			name = "header"
+			position = { x = -4 y = 10 }
+			font = "aldrich_24_outline"
+			text = "NUCLEAR CONSOLE"
+			maxWidth = 240
+			maxHeight = 100
+			format = center
+		}
+		
+		buttonType = {
+			name = "close_button"
+			position = { x = 224 y = 10 }
+			spriteType = GFX_crt_closebutton
+		}
+		
+		iconType = {
+			name = "nuclear_console_picture"
+			position = { x = 19 y = 36 }
+			spriteType = GFX_nuclear_console_picture
+		}
+		
+		iconType = {
+			name = "nuclear_console"
+			position = { x = 19 y = 180 }
+			spriteType = GFX_nuclear_console
+			
+		}
+		
+		buttonType = {
+			name = "key_insert"
+			position = { x = 182 y = 226 }
+			spriteType = GFX_key_insert
+			pdx_tooltip = "wrw_insert_key_tt"
+		}
+		
+		buttonType = {
+			name = "key_inserted"
+			position = { x = 182 y = 226 }
+			spriteType = GFX_key_inserted
+			pdx_tooltip = "wrw_turn_key_tt"
+		}
+		
+		iconType = {
+			name = "key_turn"
+			position = { x = 182 y = 226 }
+			spriteType = GFX_key_turn
+		}
+		
+		iconType = {
+			name = "select_fire_buttons"
+			position = { x = 182 y = 185 }
+			spriteType = GFX_select_fire_buttons
+		}
+		
+		buttonType = {
+			name = "nuclear_button"
+			position = { x = 88 y = 194 }
+			spriteType = GFX_nuclear_button
+			pdx_tooltip = "wrw_nuke_button_tt"
+		}
+	}
+}

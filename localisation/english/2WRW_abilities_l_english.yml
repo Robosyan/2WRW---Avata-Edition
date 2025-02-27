@@ -1,0 +1,10 @@
+﻿l_english:
+
+ ## GAS GAS GAS!
+ 
+ ABILITY_CHEMICAL_ARSENAL:0 "Chemical Warfare"
+ ABILITY_CHEMICAL_ARSENAL_DESC:0 "We will use our chemical arsenal to give us an edge in battle, though this is not without its cost..."
+ ABILITY_CHEMICAL_ARSENAL_TOOLTIP:0 "We will use our chemical arsenal to give us an edge in battle, though this is not without its cost..."
+ 
+ ABILITY_UNRESTRICTED_CHEMICAL_ARSENAL:0 ""
+ ABILITY_UNRESTRICTED_CHEMICAL_ARSENAL_DESC:0 ""

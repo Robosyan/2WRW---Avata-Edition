@@ -1,0 +1,77 @@
+SWRW_Iran_category = {
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	allowed = {
+	}
+	visible = {
+		OR = {
+			original_tag = PER
+			original_tag = IRC
+			original_tag = IRL
+			original_tag = IRI
+			original_tag = IRA
+			original_tag = IRB
+		}
+	}
+}
+
+SWRW_Mongolia_category = {
+	icon = GFX_decision_category_border_conflicts
+	priority = 99
+	allowed = {
+	}
+	visible = {
+		original_tag = MON
+	}
+}
+
+SWRW_Poland_category = {
+	priority = 9
+	allowed = {
+		always = yes
+	}
+	visible = {
+		original_tag = POL
+	}
+}
+
+SWRW_General_Gouvernment_category = {
+	priority = 9
+	allowed = {
+		always = yes
+	}
+	visible = {
+		original_tag = GGN
+	}
+}
+
+SWRW_Armenia_category = {
+	priority = 9
+	allowed = {
+		always = yes
+	}
+	visible = {
+		original_tag = ARM
+	}
+}
+
+SWRW_Turkey_category = {
+	priority = 9
+	allowed = {
+		#
+	}
+	visible = {
+		original_tag = TUR
+	}
+}
+
+SWRW_Mengjiang_category = {
+	priority = 9
+	allowed = {
+		always = yes
+	}
+	visible = {
+		original_tag = MEN
+	}
+}

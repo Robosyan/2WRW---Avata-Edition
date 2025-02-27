@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_BLR_religous_rebirth"
+		texturefile = "gfx/interface/ideas/national_spirits/BLR/BLR_religous_rebirth.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_a_simple_life"
+		texturefile = "gfx/interface/ideas/national_spirits/BLR/BLR_a_simple_life.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_industrial_reforms"
+		texturefile = "gfx/interface/ideas/national_spirits/BLR/BLR_industrial_reforms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BLR_educational_reforms"
+		texturefile = "gfx/interface/ideas/national_spirits/BLR/BLR_educational_reforms.dds"
+	}
+}

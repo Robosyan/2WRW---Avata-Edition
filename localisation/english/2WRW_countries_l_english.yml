@@ -1,0 +1,83 @@
+﻿l_english:
+ 
+ #Second West Russian War
+ # Novosibirsk #
+ 
+ NOV_liberalism:0 "Rossiyskaya Federatsiya"
+ NOV_liberalism_DEF:0 "Rossiyskaya Federatsiya"
+ NOV_liberalism_ADJ:0 "Russian"
+
+
+ #martial law idea to ensure RKs don't capitulate instantly
+ RK_martial_law:0 "Martial Law"
+ 
+ # Country names
+ 
+ POL_RUS:0 "Republic of Poland"
+ POL_RUS_DEF:0 "the Republic of Poland"
+ POL_RUS_ADJ:0 "Polish"
+ 
+ AZR_RUS:0 "Republic of Azerbaijan"
+ AZR_RUS_DEF:0 "the Republic of Azerbaijan"
+ AZR_RUS_ADJ:0 "Azerbaijani"
+
+ GEO_RUS:0 "Republic of Georgia"
+ GEO_RUS_DEF:0 "the Republic of Georgia"
+ GEO_RUS_ADJ:0 "Georgian"
+
+ ARM_RUS:0 "Republic of Armenia"
+ ARM_RUS_DEF:0 "the Republic of Armenia"
+ ARM_RUS_ADJ:0 "Armenian" 
+
+ LIT:0 "Republic of Lithuania"
+ LIT_DEF:0 "the Republic of Lithuania"
+ LIT_ADJ:0 "Lithuanian"
+ 
+ LAT:0 "Republic of Latvia"
+ LAT_DEF:0 "the Republic of Latvia"
+ LAT_ADJ:0 "Latvian"
+ 
+ EST_RUS:0 "Republic of Estonia"
+ EST_RUS_DEF:0 "the Republic of Estonia"
+ EST_RUS_ADJ:0 "Estonian"
+ 
+ HUD:0 "Hungarian Republic"
+ HUD_DEF:0 "the Second Hungarian Republic"
+ HUD_ADJ:0 "Hungarian"
+
+ HUS:0 "Hungarian People's Republic"
+ HUS_DEF:0 "the Hungarian People's Republic"
+ HUS_ADJ:0 "Hungarian"
+
+ REG:0 "Republik Deutschland"
+ REG_DEF:0 "die Republik Deutschland"
+ REG_ADJ:0 "Bundesdeutsch"
+
+ SIL:0 "Gemeinde Schlesien"
+ SIL_DEF:0 "die Gemeinde Schlesien"
+ SIL_ADJ:0 "Anarchistisches-Deutsch"
+
+ RPR:0 "Volksrepublik Rhein"
+ RPR_DEF:0 "die Volksrepublik Rhein"
+ RPR_ADJ:0 "Kommunist-Deutsch"
+
+ SRH:0 "Sozialistische Republik Hannover"
+ SRH_DEF:0 "die Sozialistische Republik Hannover"
+ SRH_ADJ:0 "Sozialistisch-Deutsch"
+
+ HRC:0 "Hamburger Revolutionsrat"
+ HRC_DEF:0 "das Hamburger Revolutionsrat"
+ HRC_ADJ:0 "Sozialistisch-Deutsch"
+
+ GMA:0 "Provisorische Regierung der Wehrmacht"
+ GMA_DEF:0 "die Provisorische Regierung der Wehrmacht"
+ GMA_ADJ:0 "Deutsch"
+
+ SFK:0 "Schlesische Freikorps"
+ SFK_DEF:0 "der Schlesische Freikorps"
+ SFK_ADJ:0 "Deutsch Freikorps"
+
+ OZW:0 "Operationszone Warschau"
+ OZW_DEF:0 "das Operationszone Warschau"
+ OZW_ADJ:0 "Whermacht"
+

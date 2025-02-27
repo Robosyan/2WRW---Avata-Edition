@@ -1,0 +1,29 @@
+﻿l_english:
+ # Characters
+
+ EST_Vajno_Valjas: "Vaino Väljas"
+ 
+ # Character descs
+ 
+ POLITICS_VAJNO_VALJAS_DESC: "Born in 1931, Vaino Väljas does not remember much of life before the occupation; only a few cherished memories from his childhood - memories not every Estonian living today has. Though Estonia was not treated much the same as the other Baltic states, the repression Vaino faced saw him take refuge in Moskowien of all places.\n\nFor a while he found safety in that remote place, as vast stretches of Muscovite lands were practically outside government control, though that also meant roaming brigades of bandits and no job prospects.\n\nFleeing across the border into the gaping abyss of the Russian anarchy; he found himself able to study in the university of Tomsk, even during the unification wars. Though he graduated and found work in local governments, Vaino became terribly homesick.\n\nIt was a year or two after that when the Second West Russian War broke out; renewing his hope. After the war's conclusion, he immediately traveled to his homeland, a learned man, in the hopes of aiding the transitional government, and securing Estonian independence."
+
+ # Political parties
+
+ EST_RUS_paternalism_party: "Isamaaliit"
+ EST_RUS_paternalism_party_long: "Isamaaliit"
+ EST_RUS_liberalism_party: "Eesti Koonderakond"
+ EST_RUS_liberalism_party_long: "Eesti Koonderakond"
+ EST_RUS_conservatism_party: "Rahvarinne"
+ EST_RUS_conservatism_party_long: "Rahvarinne"
+ EST_RUS_progressivism_party: "SDE"
+ EST_RUS_progressivism_party_long: "Sotsiaaldemokraatlik Erakond"
+ EST_RUS_socialist_party: "EVP"
+ EST_RUS_socialist_party_long: "Eesti Vasakpartei"
+ EST_RUS_communist_party: "EKP"
+ EST_RUS_communist_party_long: "Eestimaa Kommunistlik Partei"
+
+ # National spirits
+
+ EST_oil_shale_industry: "Oil Shale Industry"
+ EST_oil_shale_industry_desc: "While Estonia does not possess oil in the way that Azerbaijan or Iraq does, it has, through innovation or sheer luck found another source of oil: oil shale. While not all sources of it can yield petroleum, it still works well enough to keep thermo-electric plants running.\n\nThe only concern from the people seems to be the dark smoke being emitted from shale refineries, To many it is a massive improvement from Ostland's old "Industry"."
+

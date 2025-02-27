@@ -1,0 +1,205 @@
+﻿l_english:
+ 
+ # Ideas
+ 
+ RUS_kongo_emigration:0 "Dongbei Emigration"
+ 
+ # Events
+ 
+ RUS_Vladivostok.1.t:0 "Treaty of Beijing"
+ RUS_Vladivostok.1.desc:0 "With the negotitations now concluded, the time has come to sign the treaty of Beijing. Through peaceful means, we have achieved our goals and have retaken the occupied Far East. With the signing of the treaty, will see it's reintegration into [RUS.GetNameDef]. Millions across Russia have gathered on the streets in celebration and are eagerly waiting to welcome our Russian brothers and sisters back into the warm embrace our glorious Motherland."
+ RUS_Vladivostok.1.a:0 "A Victory for [RUS.GetNameDef]!"
+ 
+ RUS_Vladivostok.2.t:0 "Treaty of Beijing"
+ RUS_Vladivostok.2.desc:0 "With the negotitations now concluded, the time has come to sign the treaty of Beijing. Through peaceful means, we have achieved most of our goals and have retaken the occupied Far East though some in our government have expressed disappointment over not being able to secure the city of Vladivostok. With the signing of the treaty, will see Outer Manchuria's reintegration into [RUS.GetNameDef]. Millions across Russia have gathered on the streets in celebration and are eagerly waiting to welcome our Russian brothers and sisters back into the warm embrace our glorious Motherland."
+ RUS_Vladivostok.2.a:0 "We'll come for Vladivostok later."
+ 
+ RUS_Vladivostok.3.t:0 "Treaty of Beijing"
+ RUS_Vladivostok.3.desc:0 "With the negotitations now concluded, the time has come to sign the treaty of Beijing. Through peaceful means, we have retaken the lost Birobidzhan Oblast and with the signing of the treaty, will see it's reintegration into [RUS.GetNameDef].\n\nAlthough there are many in our government that are disappointed by the results, we are prepared to move ahead with the treaty and welcome our Russian brothers and sisters back into our glorious Motherland."
+ RUS_Vladivostok.3.a:0 "It's better than nothing."
+ 
+ RUS_Vladivostok.4.t:0 "Approaching the Sphere"
+ RUS_Vladivostok.4.desc:0 "After several weeks of chaos in Outer Manchuria and growing tension between [RUS.GetNameDef] and [JAP.GetNameDef], the Japanese have finally approached our government and has asked that we meet in the city of Beijing to discuss the future of Outer Manchuria. With the government eager to regain the occupied Far East from the Japanese, we have agreed to meet them and have sent our top diplomats to negotiate with the Japanese."
+ RUS_Vladivostok.4.a:0 "Let's begin."
+ 
+ RUS_Vladivostok.5.t:0 "The Issue of Birobidzhan"
+ RUS_Vladivostok.5.desc:0 "The Birobidzhan Oblast has been the source of the Partisan movement in Outer Manchuria who have been battling the Japanese occupation of their homeland since their illegal annexation of the territory in the late 1940s.\n\nThe land is a majority Russian province who wish only to return to the warm embrace of their Motherland. With the return of Birobidzhan, a large chunk of the Russian partisan movement would go with it."
+ RUS_Vladivostok.5.a:0 "I'm sure they'd be happy to have it off their hands."
+ 
+ RUS_Vladivostok.6.t:0 "The Russians Ask for Birobidzhan"
+ RUS_Vladivostok.6.desc:0 "In the first round of negotiations, [RUS.GetNameDef] has requested the return of the Birobidzhan Oblast. They have argued that the province is majority Russian and is home to a large portion of the partisan movement.\n\nReturning the land would deal with a large portion of the Russian partisan movement which is debilatating Outer Manchuria. It would be in our best interests that Russia regain its lost Oblast."
+ RUS_Vladivostok.6.a:0 "Give it back to the Russians."
+ 
+ RUS_Vladivostok.7.t:0 "Japan Agrees to Return Birobidzhan"
+ RUS_Vladivostok.7.desc:0 "As many had expected, the Japanese have agreed to peacefully return the Birobidzhan Oblast, stating it would be in its best interests to do so. With the issue of Birobidzhan now concluded, we are presented with two more options. We could end the negotiations here or perhaps, we could test our luck and see if we can retake the city of Khabarvosk."
+ RUS_Vladivostok.7.a:0 "Let's not push the Japanese any further."
+ RUS_Vladivostok.7.b:0 "Push for Khabarovsk."
+ 
+ RUS_Vladivostok.8.t:0 "Russia Ready to Sign the Treaty"
+ RUS_Vladivostok.8.desc:0 "After some discussions with their government, the Russian diplomats have been given the go ahead with the signing of the Treaty.\n\nAlthough we will be losing another province to the Russian state, the return of this territory will deal with the majority of our partisan problems and will benefit our Empire in the long term."
+ RUS_Vladivostok.8.a:0 "Let's get this over with..."
+ 
+ RUS_Vladivostok.9.t:0 "The Russians want Khabarovsk"
+ RUS_Vladivostok.9.desc:0 "With the issue of Birobidzhan now resolved, the Russians are now pushing for the return of Khabarovsk and territories of Outer Manchuria. Some of our diplomats and ministers in the government have become outraged by this demand but some in our government but the Russians have grown powerful since their reunification and some in our government fear saying no to the 'Fourth Power'. The decision has ultimately fallen to the Prime Minister."
+ RUS_Vladivostok.9.a:0 "Alright."
+ RUS_Vladivostok.9.b:0 "Request a compromise."
+ RUS_Vladivostok.9.c:0 "Birobidzhan is more than enough."
+ 
+ RUS_Vladivostok.10.t:0 "Japan Agrees to Return Khabarovsk"
+ RUS_Vladivostok.10.desc:0 "After some negotiation, the Japanese have finally agreed to return Khabarovsk and Outer Manchuria to the [RUS.GetNameDef]. Our diplomats have celebrated this victory has much of what was stolen by the Japanese would now be peacefully returning to Russia where it belongs."
+ RUS_Vladivostok.10.a:0 "Let's sign the treaty!"
+ RUS_Vladivostok.10.b:0 "Now. About Vladivostok."
+ 
+ RUS_Vladivostok.11.t:0 "Russia Ready to Sign the Treaty"
+ RUS_Vladivostok.11.desc:0 "With Outer Manchuria mostly back in Russian hands, [RUS.GetNameDef] is now prepared to meet with our diplomats in Beijing once more and ratify the terms that have been reached during negotiations."
+ RUS_Vladivostok.11.a:0 "Let's get this over with..."
+ 
+ RUS_Vladivostok.12.t:0 "Japan Refuses to Return Khabarovsk"
+ RUS_Vladivostok.12.desc:0 "Despite our efforts, Japan has refused to hand over Khabarovsk and Outer Manchuria, stating that it was simply too much land to hand over to [RUS.GetNameDef]. Should we just take stock of what we have and sign the treaty or should we ask them if they we're willing to make a deal for Khabarovsk."
+ RUS_Vladivostok.12.a:0 "Birobidzhan will have to do."
+ RUS_Vladivostok.12.b:0 "Offer a compromise."
+ 
+ RUS_Vladivostok.13.t:0 "Russia wants Vladivostok Back"
+ RUS_Vladivostok.13.desc:0 "Now that [RUS.GetNameDef] have secured much of Outer Manchuria, the Russians are now asking for the city of Urajio or Vladivostok in Russian. The Russians are really pushing it here but its an issue we should seriously consider. Should we return Vladivostok to the Russians are should we maintain our ownership of it?"
+ RUS_Vladivostok.13.a:0 "Fine, they can have their precious port back."
+ RUS_Vladivostok.13.b:0 "We're gonna need some concessions from the Russians."
+ RUS_Vladivostok.13.c:0 "No, absolutely not!"
+ 
+ RUS_Vladivostok.14.t:0 "Japan Agrees to Return Vladivostok!"
+ RUS_Vladivostok.14.desc:0 "After days of tense silence from the Japanese diplomats, the Japanese have agreed to return the city of Vladivostok back to [RUS.GetNameDef]. The news has been celebrated by our government as our nations goals in the Far East have finally been achieved."
+ RUS_Vladivostok.14.a:0 "A victory for the Motherland!"
+ 
+ RUS_Vladivostok.15.t:0 "The Russians are prepared to sign the treaty"
+ RUS_Vladivostok.15.desc:0 "After weeks of negotiations, [RUS.GetNameDef], having gotten everything they wanted from Japan, are finally prepared to meet once more in Beijing and sign the treaty that would ratify the terms that have been negotiated."
+ RUS_Vladivostok.15.a:0 "For the good of the Empire."
+ 
+ RUS_Vladivostok.16.t:0 "Japan Proposes a Compromise"
+ RUS_Vladivostok.16.desc:0 "Unlike Birobidzhan, Japan is not as eager to hand over Khabarovsk. They have instead proposed a deal. In exchange for handing over Khabarovsk, they have asked they maintain their resource rights in Outer Manchuria and gain access to the Tungsten reserves of the Magadan Oblast."
+ RUS_Vladivostok.16.a:0 "This is acceptable."
+ RUS_Vladivostok.16.b:0 "We'll just take Birobidzhan." 
+ 
+ RUS_Vladivostok.17.t:0 "Japan Proposes a Compromise for Vladivostok"
+ RUS_Vladivostok.17.desc:0 "After some thought, the Japanese diplomats have proposed [RUS.GetNameDef] a compromise they find reasonable. Japan is still going through an oil crisis that has handicapped their economy for some time. In exchange for the return of Vladivostok, the Japanese are asking for access to Siberian oil reserves to support their economy as well as the safe passsage of the Dongbei residents to Manchuria."
+ RUS_Vladivostok.17.a:0 "This is acceptable."
+ RUS_Vladivostok.17.b:0 "We can do without Vladivostok."
+ 
+ RUS_Vladivostok.18.t:0 "Japan Refuses Vladivostok"
+ RUS_Vladivostok.18.desc:0 "Japan has refused to handover the port city of Vladivostok, stating it was an important city for the Empire and essential in maintaining their superiority in sea of Japan. They would not simply hand it over to [RUS.GetNameDef]. Should we just take stock of what we have and sign the treaty or should we ask them if they we're willing to make a deal for Vladivostok."
+ RUS_Vladivostok.18.a:0 "We've come far enough."
+ RUS_Vladivostok.18.b:0 "Propose a compromise."
+ 
+ RUS_Vladivostok.19.t:0 "Reintegrating the Far East"
+ RUS_Vladivostok.19.desc:0 "After years of separation, the Far East is finally ready to rejoin our Motherland. Across the Federation, the people are celebrating the return of rightfully Russian land as the President continues to fulfil his promise of liberating all Russian citizens from the oppression of tyrannical powers and reintegrating our rightful territories into the Russian Federation."
+ RUS_Vladivostok.19.a:0 "Welcome to the Motherland."
+
+ RUS_Vladivostok.23.t:0 "Russia Requests our Support"
+ RUS_Vladivostok.23.desc:0 "After the unification of Russia, there had been relative silence from the unified state until now. An envoy from the [RUS.GetName] has arrived in Washington concerning their attempt to negotiate with Japan for the return of the lands of Outer Manchuria. They believe that with our aid, they can put more pressure on Japan to cede the territory.\n\nThis young Russian nation has shown potential, and with our help, they might warm up more to us in the future; however, we cannot forget the other side of the talks, Japan.\n\nAs our enemy, we would love for nothing more than to weaken Japan, but the State Department doubts the Japanese are interested in giving up land. The negotiations could easily fail, and the Japanese would remember such a slight. Refusal, though, would make the Russians mad as well.\n\nThe final choice is yours, Mr. President."
+ RUS_Vladivostok.23.a:0 "Get a Russian to LA, quickly!"
+ RUS_Vladivostok.23.b:0 "This doesn't concern us."
+ 
+ RUS_Vladivostok.24.t:0 "The United States Declines"
+ RUS_Vladivostok.24.desc:0 "Despite the best efforts of our diplomats, the Americans have declined to assist in our efforts to retake Vladivostok. Some in our foreign ministry have blamed efforts of the State Department to improve relations with the Japanese, while others point to ideological and governmental differences between our regimes. Whatever the reason, we are officially out in the cold.\n\nReports indicate the Japanese have taken America's noninvolvement as an endorsement of their position, an allegation which has scurried through the entire Co-Prosperity Sphere in a matter of days. Even nations sympathetic to our cause are beginning to distance themselves from this issue. If we are to retake Vladivostok, we must press down on the scales of diplomacy- and HARD." 
+ RUS_Vladivostok.24.a:0 "Who cares what the Americans think, anyway?"
+ 
+ RUS_Vladivostok.25.t:0 "The United States Accepts"
+ RUS_Vladivostok.25.desc:0 "Excellent news! Our plea for aid has been accepted by the United States of America. When we next enter negotiations with the Japanese, the State Department will be there to mediate- and subtly turn the negotiations to our favor. We might just have a chance at pulling this off.\n\nReports indicate that the Japanese have taken America's involvement as pressure to accept our claims. Of course, this is correct. Even nations closely tied to the Co-Prosperity Sphere are pressing for the Japanese to find an “honorable resolution” to the Vladivostock issue, for fear of retaliation from the OFN. While military action from the Americans is almost certainly off the table, we won't tell the Japanese. Let the specter of another Pacific Theater dance in their heads, and their imaginations will do the rest."
+ RUS_Vladivostok.25.a:0 "Spasibo, Amerikanets!"
+ 
+ RUS_Vladivostok.26.t:0 "Biluobizhan Negotations"
+ RUS_Vladivostok.26.desc:0 "The incorrigible barbarians of [RUS.GetNameDef] have had the gall to demand the return of the region of Biluobizhan to their government. These fools believe their wretched empire, a nation which emerged from anarchy only a scant few years ago, has the right to negotiate with The Land of the Rising Sun. Worse still, the world seems to agree with them.\n\nTo save face, we must attend the negotiations, and we must do so in good faith. As the old proverb says, supply salt to your enemy. And yet, it is also said that the mouth is the source of all disasters. May it be so to these Russian ingrates.\n\nThe region of Biluobizhan is of little value to us. Overwhelmingly populated by persons of Russian ethnicity, the region is a hotbed of partisans and rebels, one we can scarcely afford to police for its vast unrest. We could simply give up the region. This would certainly be a fortuitous development in regards to our budget and to the empire's stability. Yet such an action would be extremely unpopular, especially amongst the Army. As we attempt to balance the interests of the Navy and the Army, it may not be in our interests to upset the Generals so.\n\nBut there is another option. We can bring the Russians to the negotiating table and request an exchange. Russia is rich in natural resources, especially oil and precious metals. If we were able to sell this useless scrap of land in return for the oil we so desperately need to fuel our war machine… Well, the Generals can hardly object to that, can they..."
+ RUS_Vladivostok.26.a:0 "The Empire is strongest without dead weight. Give them Biluobizhan."
+ RUS_Vladivostok.26.b:0 "Pathetic. Have them try it again in a few years once they figure out how to conduct diplomacy."
+ RUS_Vladivostok.26.c:0 "Why give up the land for free, when we could profit from this indiscretion? Bring them to the negotiating table."
+
+ RUS_Vladivostok.27.t:0 "Japan Accepts!"
+ RUS_Vladivostok.27.desc:0 "Great news from the negotiating table! Our diplomats have won the province of Birobidzhan through hard-nosed stubbornness, a bit of compensation, and some fascinating and totally coincidental revolts by ethnic Russians in the region. We are one step closer to achieving our goals of uniting all of continental Russia.\n\nHowever, we are not done with the negotiations. Our people and especially our hawkish politicians want more, along with the partisans we've recently liberated. While Birobidzhan was a hotbed of Russian insurgents, our people at home and in Outer Manchuria want us to go further, to push for Khabarovsk, all of Primorski Krai, and even Vladivostok. It will take continued careful negotiations, some strong-arming, and perhaps some foreign assistance, but we will push through to the best of our ability for our Motherland and our people."
+ RUS_Vladivostok.27.a:0 "One down! Two to go."
+
+ RUS_Vladivostok.28.t:0 "Japan Walks Out!"
+ RUS_Vladivostok.28.desc:0 "To the leadership of [RUS.GetName],\n\nWhile we are aware of the issues in administering the province of Biluobizhan, we cannot accept any offer which does not do us the minimal respect of at least compensating our government for a cession of territory. As such, we will not be able to complete the request.\n\nFurthermore, the rancorous behavior displayed in these negotiations leads me to question the viability of future discussions. Therefore, we will be cutting off future discussions for the forseeable future.\n\nWe apologize if this is an unfortunate result for you all, as it is for us.\n\nSigned,\nSuga Nishidda, of [JAP.GetNameDef]."
+ RUS_Vladivostok.28.a:0 "Blast it all!"
+
+ RUS_Vladivostok.29.t:0 "A Japanese Counteroffer"
+ RUS_Vladivostok.29.desc:0 "The Japanese have returned to us with a counteroffer for the region of "Biluobizhan". They ask for a total payment that amounts to 800 million US dollars, which is they claim is necessary compensation for the territory they will cede to us. Some within our government question if the region is even worth that amount of money, yet others protest that any rightful territory of ours is worth more than money can buy."
+ RUS_Vladivostok.29.a:0 "They will get their money."
+ RUS_Vladivostok.29.b:0 "An outrageous demand."
+
+ RUS_Vladivostok.34.t:0 "Eyes On The Prize"
+ RUS_Vladivostok.34.desc:0 "After months of tense compromise, negotiations and strong-arming, the Japanese and our government have finally agreed to allow for Primorsky and Khabarovsk to return to the fold of our administration.\n\nOur diplomats and government are surprised at the success of the negotiations. Now, we are closing in on reclaiming the last stronghold of Japanese occupation in the Far East, the city of Vladivostok. Vladivostok, unlike the natural resource-filled states that we've reclaimed, is unique. Not only does it have a significant amount of infrastructure and development, but is the sole city of Outer Manchuria which has a warm water port. It is essential for projecting our economy eastwards and strengthening our trade routes. Therefore, it is of vital importance that we try to regain the King of the East once and for all, through all diplomacy needed.\n\nHowever, just as we will put everything into winning back Vladivostok, we must expect the Japanese to have an equal dedication to keeping the port themselves, knowing the problems that a Russian resurgence may pose in the Far East and their holdings in Korea and Manchuria. Even more relevant is that Russian partisans are unavailable to us, due to the displacement of Russians in the fifties to make room for “Dongbei”, or Korean, Japanese and Chinese communities.\n\nThis battle will be one of the hardest we will fight in the boardrooms and offices of the Co-Prosperity Sphere. Soon the Treaty will be signed, and the fate of Vladivostok and the Far East sealed forever. Let us persuade them with all of our intellect, skill and money, and finish with a resounding victory!"
+ RUS_Vladivostok.34.a:0 "The Shining Jewel of the East is in our sights!"
+ 
+ ## Lord of the East Rework ##
+ 
+ # Debug
+ 
+ RUS_vladivostok_accords_setup:0 "Vladivostok Accords Setup"
+ 
+ # Flags
+ 
+ RUS_lord_of_the_east_flag:0 "The §YVladivostok Accords§! has Begun"
+ 
+ # Ideas #
+ 
+ RUS_magadan_leased:0 "Leasing The Port Of Magadan"
+ 
+ # Decisions #
+ 
+ RUS_lord_of_the_east_category:0 "The Vladivostok Accords"
+ 
+ RUS_issue_of_birobidzhan:0 "Negotiations for §YBirobidzhan§!"
+ RUS_issue_of_primorsky:0 "Negotiations for §YPrimorsky Krai§!"
+ RUS_issue_of_vladivostok:0 "Negotiations for §YVladivostok§!"
+ 
+ RUS_north_siberian_oil_rights:0 "North Siberian Oil Rights"
+ RUS_lease_the_port_of_magadan:0 "Lease the Port of Magadan"
+ RUS_offer_west_mongolia:0 "Offer West Mongolia"
+ RUS_seek_american_support:0 "Seek American Support"
+ RUS_meet_with_the_japanese:0 "Meet with the Japanese"
+ RUS_invest_in_the_far_east:0 "Boost Investment"
+ RUS_support_russian_partisans:0 "Support Russian Partisans"
+ RUS_naval_exercises:0 "Perform Naval Exercises"
+ 
+ RUS_lote_japan_is_bribing:0 "The §RJapanese§! Are Bribing Officials"
+ RUS_lote_japan_is_stalling:0 "The §RJapanese§! Are Stalling The Talks"
+ RUS_lote_japan_is_exercising:0 "The §RJapanese§! Are Exercising"
+ RUS_lote_japan_is_enticing_corps:0 "The §RJapanese§! Are Enticing Our Corporations"
+ RUS_lote_japan_is_hunting_partisans:0 "The §RJapanese§! Are Hunting Partisans"
+ 
+ # decision custom cost
+ 
+ RUS_20_cp_cost:0 "§Y£command_power  20§!"
+ RUS_20_cp_cost_blocked:0 "§Y£command_power  20§!"
+ RUS_lote_guns_cost:0 "£weapon_icon  800 £command_power  20§!"
+ RUS_lote_guns_cost_blocked:0 "§R£weapon_icon  800 £command_power  20§!"
+ RUS_lote_naval_exercise_cost:0 "£navy_experience  20 £command_power  25§!"
+ RUS_lote_naval_exercise_cost_blocked:0 "§R£navy_experience  20 £command_power  25§!"
+ 
+ # Tooltips #
+ 
+ RUS_lote_leverage_increase_tt:0 "This will §GIncrease§! our §YLeverage§! by §G[?temp_leverage]§!\n"
+ RUS_lote_leverage_decrease_tt:0 "This will §RDecrease§! our §YLeverage§! by §R[?temp_leverage]§!\n"
+ JAP_lote_leverage_increase_tt:0 "This will §RIncrease Japanese§! §YLeverage§! by §G[?temp_leverage]§!\n"
+ JAP_lote_leverage_decrease_tt:0 "This will §GDecrease§! §RJapanese§! §YLeverage§! by §R[?temp_leverage]§!\n"
+ 
+ RUS_lote_leverage_overview_tt:0 "§YNEGOTIATIONS OVERVIEW§!\n--------------\n§GOur§! §YLeverage§! is [?RUS_lote_leverage|Y0]\n§RJapan's§! §YLeverage§! is [?JAP_lote_leverage|Y0]"
+ RUS_lote_russian_leverage_tt_Y:0 "Russian Leverage: [?RUS_lote_leverage|Y0]"
+ RUS_lote_japanese_leverage_tt_Y:0 "Japanese Leverage: [?JAP_lote_leverage|Y0]"
+ 
+ RUS_lote_japan_completes_action_tt:0 "§RJapan§! will have completed this action."
+ RUS_lote_offer_magadan_port:0 ""
+ RUS_lote_offer_western_mongolia_tt:0 "We will return the state of §Y[814.GetName]§! to §RJapan§!, hoping that will increase our §YLeverage§!."
+ RUS_lote_infantry_equipment_tt:0 "§Y800§! units of §YInfantry Equipment§! will be removed from the national stockpile."
+ RUS_lote_one_time_decision_tt:0 "\n§RThis decision can only be taken once.§!\n"
+ RUS_lote_one_time_per_round_decision_tt:0 "\n§RThis decision can only be taken once per round.§!\n"
+ RUS_lote_issue_of_birobidzhan_tt:0 "Depending on our §YLeverage§!, we might have a bigger chance of regaining our lost territory.\n\n§RWe must secure Birobidzhan in order to advance to the next round of negotiations."
+ 
+ RUS_lote_conference_end_tt:0 "§RDoing this will end the conference prematurely, cutting us off from our potential gains for the foreseeable future.§!"
+ RUS_lote_won_birobidzhan_tt:0 "§GWe will gain ownership of Birobidzhan after the conference has concluded.§!\n§RThis will decrease the efficiency of Russian partisan groups.§!"
+ RUS_lote_conference_next_phase_tt:0 "\n§YThe next round of negotiations begins.§!"
+ 
+ # Scripted GUI #
+ 
+ RUS_lote_japan_negotiation_winner:0 "§RJapan§!"
+ RUS_lote_russia_negotiation_winner:0 "§GUs§!"
+ 
+ # New Events #

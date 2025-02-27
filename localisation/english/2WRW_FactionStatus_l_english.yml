@@ -1,0 +1,34 @@
+﻿l_english:
+
+ #Collective Security Treaty Organisation
+ CSTO_Guardian_of_Eurasia: "Guardian of Eurasia"
+ CSTO_Guardian_of_Eurasia_effect: "[!CSTO_Guardian_of_Eurasia]"
+ CSTO_Guardian_of_Eurasia_desc: "Proclaming itself the 'guardian of freedom and democracy' in Eurasia, the Federation has pledged to defend the remaining states that are free from the grip of the former Axis powers, no matter the cost.\n\nWhile its success remains to be seen and various diplomats from Europe have dismissed it as nothing more than a poor attempt to rival the old order, lesser countries in central Asia now begin to approach Russia for guidance, a clear rising regional power and one day, perhaps even a potential superpower."
+ 
+ CSTO_Observer: "CSTO Observer"
+ CSTO_Observer_effect: "[!CSTO_Observer]"
+ CSTO_Observer_desc: "GDP Growth Boost: §Y3%§!\n\nObservers of the Russian led Collective Security Treaty Organisation are states which observe the affairs of the alliances, enjoying similar diplomatic and economic privileges that member states of the alliance enjoy whilst being excluded from the military responsibilities that all member states share."
+ 
+ CSTO_Member:0 "CSTO Member"
+ CSTO_Member_effect:0 "[!CSTO_Member]"
+ CSTO_Member_desc:0 "GDP Growth Boost: §Y5%§!\n\nMembers of the Collective Security Treaty Organisation are bound together in alliance under the leadership of the Russian Federation. Each member state all share the common goals of stopping the spread of Germanic imperialism and the promotion of order throughout free Eurasia."
+
+ BI_Member:0 "Balkan Internationale Member"
+ BI_Member_effect:0 "[!BI_Member]"
+ BI_Member_desc:0 "GDP Growth Boost: §Y5%§!\n\nMembers of the Balkan Internationale are bound together in alliance by the common goal of a free Balkans. Each member state all share the common goals of stopping the spread of imperialism and the promotion of equality throughout the Balkans."
+
+ VFE_Member:0 "Volksfront Europa Member"
+ VFE_Member_effect:0 "[!VFE_Member]"
+ VFE_Member_desc:0 "With the chains of the Nazi oppressors snapped, the proletariat of Germany are free to do their own bidding, with the Volksfront Europas their sword. Originally started as a coalition of leftist militias, theorists, and workers, their stated goal is the "continental defense of the European proletarian masses and the complete uprooting of Nazism". The alliance works to provide mutual economic and military assistance to the socialist states of Europe as they hope to nurture the flames of peoples' revolution across the globe."
+
+ PKT_Member:0 "Einheitspakt Member"
+ PKT_Member_effect:0 "[!PKT_Member]"
+ PKT_Member_desc:0 "GDP Growth Boost: §Y5%§!\n\n"
+
+ DPKT_Member:0 "Wiederaufbaupakt Member"
+ DPKT_Member_effect:0 "[!DPKT_Member]"
+ DPKT_Member_desc:0 "The Reconstruction Pakt is, by all accounts, a second chance. The gray specter of fascism may have been expunged in the fires of the recent civil war, but the scars of its history in Germany–and all of Europe–remain. The nightmare of Hitler’s vision has been sealed away for good; now is the time to pick up the pieces and rebuild what was destroyed. This new Pakt will seek to mend the wounds that past generations left behind. Many people will not forgive the founders for what they wrought, but the night is over and dawn has finally come. The recovery of Europe’s trauma won’t come soon, but this Pakt will be the start of better things to come."
+
+ REV_Member:0 "Rotfront Member"
+ REV_Member_effect:0 "[!REV_Member]"
+ REV_Member_desc:0 "GDP Growth Boost: §Y5%§!\n\n"

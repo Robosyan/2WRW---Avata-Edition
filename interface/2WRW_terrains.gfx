@@ -1,0 +1,93 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_terrain_moskva"
+		textureFile = "gfx/interface/terrains/terrain_city_moscow.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_moskva_winter"
+		textureFile = "gfx/interface/terrains/terrain_city_moscow.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_novosibirsk"
+		textureFile = "gfx/interface/terrains/terrain_novosibirsk.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_novosibirsk_winter"
+		textureFile = "gfx/interface/terrains/terrain_novosibirsk.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_samara"
+		textureFile = "gfx/interface/terrains/terrain_samara.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_samara_winter"
+		textureFile = "gfx/interface/terrains/terrain_samara.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_ulanude"
+		textureFile = "gfx/interface/terrains/terrain_ulanude.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_ulanude_winter"
+		textureFile = "gfx/interface/terrains/terrain_ulanude.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_perm"
+		textureFile = "gfx/interface/terrains/terrain_perm.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_perm_winter"
+		textureFile = "gfx/interface/terrains/terrain_perm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_perm"
+		textureFile = "gfx/interface/terrains/terrain_perm.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_perm_winter"
+		textureFile = "gfx/interface/terrains/terrain_perm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_yekaterinburg"
+		textureFile = "gfx/interface/terrains/terrain_yekaterinburg.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_yekaterinburg_winter"
+		textureFile = "gfx/interface/terrains/terrain_yekaterinburg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_omsk"
+		textureFile = "gfx/interface/terrains/terrain_omsk.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_omsk_winter"
+		textureFile = "gfx/interface/terrains/terrain_omsk.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_irkutsk"
+		textureFile = "gfx/interface/terrains/terrain_irkutsk.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_irkutsk_winter"
+		textureFile = "gfx/interface/terrains/terrain_irkutsk.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_terrain_vyatka"
+		textureFile = "gfx/interface/terrains/terrain_vyatka.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_vyatka_winter"
+		textureFile = "gfx/interface/terrains/terrain_vyatka.dds"
+	}
+	
+}

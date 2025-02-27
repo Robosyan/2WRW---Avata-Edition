@@ -1,0 +1,331 @@
+SWRW_initialise_nuke_system = {
+	set_variable = { Nuclear_Stage_Frame_1 = 1 }
+	set_variable = { Nuclear_Stage_Frame_2 = 2 }
+	set_variable = { Nuclear_Stage_Frame_3 = 2 }
+	set_variable = { Nuclear_Stage_Frame_4 = 2 }
+	set_variable = { Nuclear_Stage_Frame_5 = 2 }
+
+	add_to_array = { Nuclear_Stage = 1 }
+	add_to_array = { Nuclear_Stage = 2 }
+	add_to_array = { Nuclear_Stage = 3 }
+	add_to_array = { Nuclear_Stage = 4 }
+	add_to_array = { Nuclear_Stage = 5 }
+
+	set_variable = { Current_Stage = 1 }
+	set_variable = { Selected_Stage = 1 }
+	set_variable = { Nuclear_Program_Monthly = 0 }
+	SWRWNuclearUpdate = yes
+
+	add_dynamic_modifier = { modifier = SWRW_nuclear_program_Additional_Cost }
+}
+
+SWRWNuclearProgramAdvance = {
+	if = {
+		limit = {
+			has_country_flag = RUS_nuclear_program_phase_1
+		}
+		clr_country_flag = RUS_nuclear_program_phase_1
+		set_country_flag = RUS_nuclear_program_phase_2
+		set_variable = { Nuclear_Stage_Frame_2 = 1 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = RUS_nuclear_program_phase_2
+		}
+		clr_country_flag = RUS_nuclear_program_phase_2
+		set_country_flag = RUS_nuclear_program_phase_3
+		set_variable = { Nuclear_Stage_Frame_3 = 1 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = RUS_nuclear_program_phase_3
+		}
+		clr_country_flag = RUS_nuclear_program_phase_3
+		set_country_flag = RUS_nuclear_program_phase_4
+		set_variable = { Nuclear_Stage_Frame_4 = 1 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = RUS_nuclear_program_phase_4
+		}
+		clr_country_flag = RUS_nuclear_program_phase_4
+		set_country_flag = RUS_nuclear_program_phase_5
+		set_variable = { Nuclear_Stage_Frame_5 = 1 }
+	}
+	add_to_variable = { Current_Stage = 1 }
+	SWRWNuclearUpdate = yes
+	clr_country_flag = Nuclear_Program_Option1_Cooldown
+	clr_country_flag = Nuclear_Program_Option2_Cooldown
+	clr_country_flag = Nuclear_Program_Option3_Cooldown
+	clr_country_flag = Nuclear_Program_Option4_Cooldown
+}
+
+SWRWNuclearUpdate = {
+	if = {
+		limit = { NOT = { has_country_flag = RUS_nuke_viewing_other_stage } }
+		set_variable = { Selected_Stage = Current_Stage }
+	}
+	else = {
+		clr_country_flag = RUS_nuke_viewing_other_stage
+	}
+	set_temp_variable = { Helper = Selected_Stage }
+	subtract_from_temp_variable = { Helper = 1 }
+	if = {
+		limit = { check_variable = { Selected_Stage = 1 } }
+		set_variable = { Progress_Displayer = RUSNukesTheoryProgress }
+	}
+	else_if = {
+		limit = { check_variable = { Selected_Stage = 2 } }
+		set_variable = { Progress_Displayer = RUSNukesMatsProgress }
+	}
+	else_if = {
+		limit = { check_variable = { Selected_Stage = 3 } }
+		set_variable = { Progress_Displayer = RUSNukesInfraProgress }
+	}
+	else_if = {
+		limit = { check_variable = { Selected_Stage = 4 } }
+		set_variable = { Progress_Displayer = RUSNukesRefineProgress }
+	}
+	else_if = {
+		limit = { check_variable = { Selected_Stage = 5 } }
+		set_variable = { Progress_Displayer = RUSNukesWeaponsProgress }
+	}
+	force_update_dynamic_modifier = yes
+}
+
+SWRWUpdateCosts = {
+	subtract_from_variable = { RUSNukesMonthlyProgress = Nuclear_PP_Extra_True }
+	subtract_from_variable = { RUSNukesMonthlyProgress = Nuclear_Research_Extra_True }
+	subtract_from_variable = { RUSNukesMonthlyProgress = Nuclear_Money_Extra_True }
+	set_variable = { Nuclear_PP_Extra_True = Nuclear_PP_Extra }
+	set_variable = { Nuclear_Research_Extra_True = Nuclear_Research_Extra }
+	set_variable = { Nuclear_Money_Extra_True = Nuclear_Money_Extra }
+	add_to_variable = { RUSNukesMonthlyProgress = Nuclear_PP_Extra_True }
+	add_to_variable = { RUSNukesMonthlyProgress = Nuclear_Research_Extra_True }
+	add_to_variable = { RUSNukesMonthlyProgress = Nuclear_Money_Extra_True }
+
+	set_variable = { Nuclear_PP_Extra_Cost_True = Nuclear_PP_Extra_Cost }
+	set_variable = { Nuclear_Research_Extra_Cost_True = Nuclear_Research_Extra_Cost }
+	set_variable = { Nuclear_Research_Extra_Cost_True_Displayer = Nuclear_Research_Extra_Cost }
+	multiply_variable = { Nuclear_Research_Extra_Cost_True = -1 }
+	set_variable = { Nuclear_Money_Extra_Cost_True = Nuclear_Money_Extra_Cost }
+	set_variable = { Nuclear_Money_Extra_Cost_True_Displayer = Nuclear_Money_Extra_Cost_Displayer }
+	force_update_dynamic_modifier = yes
+}
+
+SWRWNuclearEffect = {
+	if = {
+		limit = { check_variable = { Current_Stage = 1 } }
+		#Button Effects
+		if = {
+			limit = { has_country_flag = Nuclear_Program_Option1_Cooldown }
+			set_temp_variable = { debt_temp = 0.3 }
+			econ_national_debt_change = yes
+			add_timed_idea = { idea = RUS_nukes_theory_develop_physics_institutes_misc_costs days = 90 }
+			TNO_improve_academic_base_med = yes
+			add_to_variable = { RUSNukesTheoryProgress = 7.5 }
+			SWRWNuclearUpdate = yes
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option2_Cooldown }
+			set_temp_variable = { debt_temp = 0.1 }
+			econ_national_debt_change = yes
+			add_to_variable = { RUSNukesTheoryProgress = 5 }
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option3_Cooldown }
+			set_temp_variable = { debt_temp = 0.075 }
+			econ_national_debt_change = yes
+			add_to_variable = { RUSNukesTheoryProgress = 5 }
+			SWRWNuclearUpdate = yes
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option4_Cooldown }
+			set_temp_variable = { debt_temp = 0.05 }
+			econ_national_debt_change = yes
+			add_to_variable = { RUSNukesTheoryProgress = 5 }
+			SWRWNuclearUpdate = yes
+			add_to_variable = { RUSNukesMonthlyProgress = 0.5 }
+		}
+	}
+	else_if = {
+		limit = { check_variable = { Current_Stage = 2 } }
+		#Button Effects
+		if = {
+			limit = { has_country_flag = Nuclear_Program_Option1_Cooldown }
+			set_temp_variable = { debt_temp = 0.05 }
+			econ_national_debt_change = yes
+			add_to_variable = { RUSNukesMatsProgress = 7.5 }
+			SWRWNuclearUpdate = yes
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option2_Cooldown }
+			set_temp_variable = { debt_temp = 0.55 }
+			econ_national_debt_change = yes
+			add_to_variable = { RUSNukesMatsProgress = 5 }
+			SWRWNuclearUpdate = yes
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option3_Cooldown }
+			set_temp_variable = { debt_temp = 0.5 }
+			econ_national_debt_change = yes
+			add_timed_idea = { idea = RUS_nukes_mats_expand_uranium_mining_misc_costs days = 90 }
+			add_to_variable = { RUSNukesMatsProgress = 7.5 }
+			SWRWNuclearUpdate = yes
+			add_to_variable = { RUSNukesMonthlyProgress = 0.5 }
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option4_Cooldown }
+			set_temp_variable = { debt_temp = 0.05 }
+			econ_national_debt_change = yes
+			add_timed_idea = { idea = RUS_nukes_mats_incentivize_skilled_laborers_misc_costs days = 90 }
+			add_to_variable = { RUSNukesMatsProgress = 5 }
+			SWRWNuclearUpdate = yes
+			add_to_variable = { RUSNukesMonthlyProgress = 0.5 }
+		}
+	}
+	else_if = {
+		limit = { check_variable = { Current_Stage = 3 } }
+		#Button Effects
+		if = {
+			limit = { has_country_flag = Nuclear_Program_Option1_Cooldown }
+			set_temp_variable = { debt_temp = 0.075 }
+			econ_national_debt_change = yes
+			add_to_variable = { RUSNukesInfraProgress = 7.5 }
+			SWRWNuclearUpdate = yes
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option2_Cooldown }
+			set_temp_variable = { debt_temp = 0.5 }
+			econ_national_debt_change = yes
+			add_to_variable = { RUSNukesInfraProgress = 5 }
+			SWRWNuclearUpdate = yes
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option3_Cooldown }
+			set_temp_variable = { debt_temp = 0.75 }
+			econ_national_debt_change = yes
+			add_timed_idea = { idea = RUS_nukes_infra_commission_additional_research_reactors_misc_costs days = 90 }
+			add_to_variable = { RUSNukesInfraProgress = 2.5 }
+			SWRWNuclearUpdate = yes
+			add_to_variable = { RUSNukesMonthlyProgress = 1 }
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option4_Cooldown }
+			set_temp_variable = { debt_temp = 0.1 }
+			econ_national_debt_change = yes
+			add_to_variable = { RUSNukesInfraProgress = 5 }
+			SWRWNuclearUpdate = yes
+			add_to_variable = { RUSNukesMonthlyProgress = 0.5 }
+		}
+	}
+	else_if = {
+		limit = { check_variable = { Current_Stage = 4 } }
+		#Button Effects
+		if = {
+			limit = { has_country_flag = Nuclear_Program_Option1_Cooldown }
+			set_temp_variable = { debt_temp = 0.5 }
+			econ_national_debt_change = yes
+			add_timed_idea = { idea = RUS_nukes_refine_construct_additional_centrifuges_misc_costs days = 90 }
+			add_to_variable = { RUSNukesRefineProgress = 2.5 }
+			SWRWNuclearUpdate = yes
+			add_to_variable = { RUSNukesMonthlyProgress = 2.5 }
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option2_Cooldown }
+			set_temp_variable = { debt_temp = 0.15 }
+			econ_national_debt_change = yes
+			add_to_variable = { RUSNukesMonthlyProgress = 3 }
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option3_Cooldown }
+			set_temp_variable = { debt_temp = 0.4 }
+			econ_national_debt_change = yes
+			add_timed_idea = { idea = RUS_nukes_refine_expand_nuclear_reprocessing_infrastructure_misc_costs days = 90 }
+			add_to_variable = { RUSNukesRefineProgress = 7.5 }
+			SWRWNuclearUpdate = yes
+			add_to_variable = { RUSNukesMonthlyProgress = 0.25 }
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option4_Cooldown }
+			TNO_improve_health_care_policy_effectiveness_med = yes
+			TNO_improve_academic_base_med = yes
+			TNO_improve_research_facilities_med = yes
+			add_to_variable = { RUSNukesMonthlyProgress = -1 }
+		}
+	}
+	else = {
+		#Button Effects
+		if = {
+			limit = { has_country_flag = Nuclear_Program_Option1_Cooldown }
+			set_temp_variable = { debt_temp = 0.5 }
+			econ_national_debt_change = yes
+			add_timed_idea = { idea = RUS_nukes_refine_construct_additional_centrifuges_misc_costs days = 90 }
+			add_to_variable = { RUSNukesWeaponsProgress = 7.5 }
+			SWRWNuclearUpdate = yes
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option2_Cooldown }
+			set_temp_variable = { debt_temp = 0.15 }
+			econ_national_debt_change = yes
+			add_to_variable = { RUSNukesWeaponsProgress = 7.5 }
+			SWRWNuclearUpdate = yes
+			add_to_variable = { RUSNukesMonthlyProgress = -0.5 }
+		}
+		else_if = {
+			limit = { has_country_flag = Nuclear_Program_Option3_Cooldown }
+			set_temp_variable = { debt_temp = 0.4 }
+			econ_national_debt_change = yes
+			add_timed_idea = { idea = RUS_nukes_refine_expand_nuclear_reprocessing_infrastructure_misc_costs days = 90 }
+			add_to_variable = { RUSNukesWeaponsProgress = 5 }
+			SWRWNuclearUpdate = yes
+			add_to_variable = { RUSNukesMonthlyProgress = 0.5 }
+		}
+	}
+}
+
+SWRWNuclearProgramCompletion = {
+	set_variable = { nuclear_stockpile = 1 }
+	set_variable = { nuclear_stockpile_k = nuclear_stockpile }
+	divide_variable = { nuclear_stockpile_k = 1000 }
+	set_variable = { nuclear_global_coverage = 0.1 }
+	calculate_strike_capability = yes
+	set_technology = { ICBM = 1 }
+	set_technology = { MRBM = 1 }
+	set_technology = { SRBM = 1 }
+	
+	set_technology = { missile_silos = 1 }
+	set_technology = { nuclear_reactors = 1 }
+	set_technology = { nuclear_weapons = 1 }
+
+	clr_country_flag = RUS_started_nukes
+
+	every_country = { limit = { is_ai = no } news_event = { id = WORLD.41046 } }
+
+	remove_dynamic_modifier = { modifier = SWRW_nuclear_program_Additional_Cost }
+}
+
+RUS_add_uncategorised_law = {
+	add_to_array = { TNO_assorted_laws_display = v }
+	custom_effect_tooltip = RUS_add_uncategorised_law_tt
+	misc_law_array_fix_scrollbar = yes
+}
+
+RUS_remove_uncategorised_law = {
+	remove_from_array = { TNO_assorted_laws_display = v }
+	custom_effect_tooltip = RUS_remove_uncategorised_law_tt
+	misc_law_array_fix_scrollbar = yes
+}
+WRW_RUS_Get_Nuclear = {
+	create_entity = {
+		entity = nuke_entity
+		id = 0401447
+		province = 3646
+		scale = .40
+		min_zoom = -1
+	}
+	set_entity_animation = {
+		id = 0401447
+		animation = "attack"
+	}
+}

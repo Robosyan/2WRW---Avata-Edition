@@ -1,0 +1,598 @@
+#Put here random shit you dont know where to put
+
+SWRW_FUK_remove_all_ideas = {
+	if = {
+		limit = { has_idea = FUK_not_yet_perished }
+		remove_ideas = FUK_not_yet_perished
+	}
+	if = {
+		limit = { has_idea = FUK_reinvigorated_UNRA }
+		remove_ideas = FUK_reinvigorated_UNRA
+	}
+	if = {
+		limit = { has_idea = FUK_ukrainian_war_machine }
+		remove_ideas = FUK_ukrainian_war_machine
+	}
+	if = {
+		limit = { has_idea = FUK_foreign_supply_bases }
+		remove_ideas = FUK_foreign_supply_bases
+	}
+	if = {
+		limit = { has_idea = FUK_idea_scraps_of_the_pipeline }
+		remove_ideas = FUK_idea_scraps_of_the_pipeline
+	}
+	if = {
+		limit = { has_idea = FUK_ukrainian_war_machine }
+		remove_ideas = FUK_ukrainian_war_machine
+	}
+	if = {
+		limit = { has_idea = FUK_collaborator_industrial_connections }
+		remove_ideas = FUK_collaborator_industrial_connections
+	}
+	if = {
+		limit = { has_idea = FUK_everything_for_victory }
+		remove_ideas = FUK_everything_for_victory
+	}
+	if = {
+		limit = { has_idea = FUK_popular_support }
+		remove_ideas = FUK_popular_support
+	}
+	if = {
+		limit = { has_idea = FUK_galician_cells }
+		remove_ideas = FUK_galician_cells
+	}
+	if = {
+		limit = { has_idea = FUK_legacy_of_the_one_hundred }
+		remove_ideas = FUK_legacy_of_the_one_hundred
+	}
+	if = {
+		limit = { has_idea = FUK_reinvigorated_UNRA }
+		remove_ideas = FUK_reinvigorated_UNRA
+	}
+	if = {
+		limit = { has_idea = FUK_formalized_officer_corps }
+		remove_ideas = FUK_formalized_officer_corps
+	}
+	if = {
+		limit = { has_idea = FUK_dropping_the_hammer }
+		remove_ideas = FUK_dropping_the_hammer
+	}
+	if = {
+		limit = { has_idea = FUK_freedom_to_ukraine_or_death_idea }
+		remove_ideas = FUK_freedom_to_ukraine_or_death_idea
+	}
+	if = {
+		limit = { has_idea = FUK_brothers_war_idea }
+		remove_ideas = FUK_brothers_war_idea
+	}
+	if = {
+		limit = { has_idea = FUK_the_national_trenching_militias_idea }
+		remove_ideas = FUK_the_national_trenching_militias_idea
+	}
+	if = {
+		limit = { has_idea = FUK_civilian_training_measures_idea }
+		remove_ideas = FUK_civilian_training_measures_idea
+	}
+	if = {
+		limit = { has_idea = FUK_federal_corporations_idea }
+		remove_ideas = FUK_federal_corporations_idea
+	}
+	if = {
+		limit = { has_idea = UKR_the_ukrainian_civil_war }
+		remove_ideas = UKR_the_ukrainian_civil_war
+	}
+	if = {
+		limit = { has_idea = UKR_the_ukrainian_civil_war_2 }
+		remove_ideas = UKR_the_ukrainian_civil_war_2
+	}
+	if = {
+		limit = { has_idea = UKR_UCW_fight_eachother }
+		remove_ideas = UKR_UCW_fight_eachother
+	}
+	if = {
+		limit = { has_idea = UKR_nuked_idea }
+		remove_ideas = UKR_nuked_idea
+	}
+	if = {
+		limit = { has_idea = UKR_the_ukrainian_civil_war }
+		remove_ideas = UKR_the_ukrainian_civil_war
+	}
+	if = {
+		limit = { has_idea = UKR_the_ukrainian_civil_war_2 }
+		remove_ideas = UKR_the_ukrainian_civil_war_2
+	}
+	if = {
+		limit = { has_idea = UKR_a_bitter_harvest_negligible }
+		remove_ideas = UKR_a_bitter_harvest_negligible
+	}
+	if = {
+		limit = { has_idea = UKR_a_bitter_harvest_mild }
+		remove_ideas = UKR_a_bitter_harvest_mild
+	}
+	if = {
+		limit = { has_idea = UKR_a_bitter_harvest_moderate }
+		remove_ideas = UKR_a_bitter_harvest_moderate
+	}
+	if = {
+		limit = { has_idea = UKR_a_bitter_harvest_severe }
+		remove_ideas = UKR_a_bitter_harvest_severe
+	}
+	if = {
+		limit = { has_idea = UKR_a_bitter_harvest_famine }
+		remove_ideas = UKR_a_bitter_harvest_famine
+	}
+	if = {
+		limit = { has_idea = UKR_ruin_of_the_breadbasket }
+		remove_ideas = UKR_ruin_of_the_breadbasket
+	}
+	if = {
+		limit = { has_dynamic_modifier = { modifier = FUK_power_struggle_unified_dynmod } }
+		remove_dynamic_modifier = { modifier = FUK_power_struggle_unified_dynmod }
+	}
+	clr_country_flag = UKR_FUK_power_struggle
+}
+
+SWRW_UKS_remove_all_ideas = {
+	if = {
+		limit = { has_idea = UKS_long_march_east }
+		remove_ideas = UKS_long_march_east
+	}
+	if = {
+		limit = { has_idea = UKS_shumskyis_clique }
+		remove_ideas = UKS_shumskyis_clique
+	}
+	if = {
+		limit = { has_idea = UKS_party_of_many_stripes }
+		remove_ideas = UKS_party_of_many_stripes
+	}
+	if = {
+		limit = { has_idea = UKS_red_army }
+		remove_ideas = UKS_red_army
+	}
+	if = {
+		limit = { has_idea = UKS_underground_workshops }
+		remove_ideas = UKS_underground_workshops
+	}
+	if = {
+		limit = { has_idea = UKS_thousand_frontlines }
+		remove_ideas = UKS_thousand_frontlines
+	}
+	if = {
+		limit = { has_idea = UKS_lessons_of_the_long_march_idea }
+		remove_ideas = UKS_lessons_of_the_long_march_idea
+	}
+	if = {
+		limit = { has_idea = UKS_scouts_0 }
+		remove_ideas = UKS_scouts_0
+	}
+	if = {
+		limit = { has_idea = UKS_scouts_1 }
+		remove_ideas = UKS_scouts_1
+	}
+	if = {
+		limit = { has_idea = UKS_rally_the_komsomol }
+		remove_ideas = UKS_rally_the_komsomol
+	}
+	if = {
+		limit = { has_idea = UKS_root_out_collaborators }
+		remove_ideas = UKS_root_out_collaborators
+	}
+	if = {
+		limit = { has_idea = UKS_convene_factory_councils }
+		remove_ideas = UKS_convene_factory_councils
+	}
+	if = {
+		limit = { has_idea = UKS_UCW_idea }
+		remove_ideas = UKS_UCW_idea
+	}
+	if = {
+		limit = { has_idea = UKR_UCW_fight_eachother }
+		remove_ideas = UKR_UCW_fight_eachother
+	}
+	if = {
+		limit = { has_idea = UKR_nuked_idea }
+		remove_ideas = UKR_nuked_idea
+	}
+	if = {
+		limit = { has_idea = UKR_the_ukrainian_civil_war }
+		remove_ideas = UKR_the_ukrainian_civil_war
+	}
+	if = {
+		limit = { has_idea = UKR_the_ukrainian_civil_war_2 }
+		remove_ideas = UKR_the_ukrainian_civil_war_2
+	}
+	if = {
+		limit = { has_idea = UKR_a_bitter_harvest_negligible }
+		remove_ideas = UKR_a_bitter_harvest_negligible
+	}
+	if = {
+		limit = { has_idea = UKR_a_bitter_harvest_mild }
+		remove_ideas = UKR_a_bitter_harvest_mild
+	}
+	if = {
+		limit = { has_idea = UKR_a_bitter_harvest_moderate }
+		remove_ideas = UKR_a_bitter_harvest_moderate
+	}
+	if = {
+		limit = { has_idea = UKR_a_bitter_harvest_severe }
+		remove_ideas = UKR_a_bitter_harvest_severe
+	}
+	if = {
+		limit = { has_idea = UKR_a_bitter_harvest_famine }
+		remove_ideas = UKR_a_bitter_harvest_famine
+	}
+	if = {
+		limit = { has_idea = UKR_ruin_of_the_breadbasket }
+		remove_ideas = UKR_ruin_of_the_breadbasket
+	}
+	if = {
+		limit = { has_dynamic_modifier = { modifier = UKS_trust_dynamic_modifier } }
+		remove_dynamic_modifier = { modifier = UKS_trust_dynamic_modifier }
+	}
+	if = {
+		limit = { has_dynamic_modifier = { modifier = UKS_authority_dynamic_modifier } }
+		remove_dynamic_modifier = { modifier = UKS_authority_dynamic_modifier }
+	}
+}
+
+SWRW_BLR_remove_all_ideas = {
+	if = {
+		limit = { has_idea = BLR_returning_germans }
+		remove_ideas = BLR_returning_germans
+	}
+	if = {
+		limit = { has_idea = BLR_Bring_on_the_Youth }
+		remove_ideas = BLR_Bring_on_the_Youth
+	}
+	if = {
+		limit = { has_idea = BLR_This_is_Our_Land }
+		remove_ideas = BLR_This_is_Our_Land
+	}
+	if = {
+		limit = { has_idea = BLR_For_Belarus }
+		remove_ideas = BLR_For_Belarus
+	}
+	if = {
+		limit = { has_idea = BLR_For_Ostland }
+		remove_ideas = BLR_For_Ostland
+	}
+	if = {
+		limit = { has_idea = BLR_The_Black_Cat_Spirit }
+		remove_ideas = BLR_The_Black_Cat_Spirit
+	}
+	if = {
+		limit = { has_idea = BLR_We_Are_Like_Vipers }
+		remove_ideas = BLR_We_Are_Like_Vipers
+	}
+	if = {
+		limit = { has_idea = OCW_cords_cut }
+		remove_ideas = OCW_cords_cut
+	}
+	if = {
+		limit = { has_idea = KOV_nothing_but_trees }
+		remove_ideas = KOV_nothing_but_trees
+	}
+}		
+
+SWRW_UPO_remove_all_ideas = {
+	if = {
+		limit = { has_idea = KOV_dybbukim1 }
+		remove_ideas = KOV_dybbukim1
+	}
+	if = {
+		limit = { has_idea = KOV_dybbukim2 }
+		remove_ideas = KOV_dybbukim2
+	}
+	if = {
+		limit = { has_idea = KOV_an_open_door1 }
+		remove_ideas = KOV_an_open_door1
+	}
+	if = {
+		limit = { has_idea = KOV_an_open_door2 }
+		remove_ideas = KOV_an_open_door2
+	}
+	if = {
+		limit = { has_idea = KOV_death_to_collaborators1 }
+		remove_ideas = KOV_death_to_collaborators1
+	}
+	if = {
+		limit = { has_idea = KOV_death_to_collaborators2 }
+		remove_ideas = KOV_death_to_collaborators2
+	}
+	if = {
+		limit = { has_idea = OCW_cords_cut }
+		remove_ideas = OCW_cords_cut
+	}
+}
+
+WRW_load_war_portraits = {
+	if = {
+		limit = { has_country_leader = { character = OMS_Dmitry_Yazov ruling_only = yes } }
+		OMS_Dmitry_Yazov = {
+			set_portraits = {
+				civilian = { large = "gfx/leaders/OMS/Portrait_Omsk_Dmitry_Yazov_2wrw.dds" }
+				army = { large = "gfx/leaders/OMS/Portrait_Omsk_Dmitry_Yazov_2wrw.dds" }
+			}
+		}
+	}
+	else_if = {
+		limit = { has_country_leader = { character = PRM_Gutrum_Vagner ruling_only = yes } }
+		PRM_Gutrum_Vagner = {
+			set_portraits = {
+				civilian = { large = "gfx/leaders/PRM/Portrait_Aryan_Brotherhood_Alexey_Dobrovolsky_2wrw.dds" }
+				army = { large = "gfx/leaders/PRM/Portrait_Aryan_Brotherhood_Alexey_Dobrovolsky_2wrw.dds" }
+			}
+		}
+	}
+	# These cant peacefully unify so ill put them here
+	else_if = {
+		limit = { has_country_leader = { character = PRM_Velimir ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/PRM/Portrait_Aryan_Brotherhood_Valery_Yemelyanov_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = AMR_Konstantin_Rodzaevsky ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/AMR/Portrait_Amur_Konstantin_Rodzaevsky_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = MAG_Mikhail_Matkovsky ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/MAG/Portrait_Magadan_Mikhail_Matkovsky_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = MAG_Nikolay_Petlin ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/MAG/Portrait_Magadan_Nikolay_Petlin_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KEM_Ronegda_I ruling_only = yes } } # lol
+		set_country_leader_portrait = { portrait = "gfx/leaders/KEM/Portrait_Kemerovo_Lydia_Krylova_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KEM_Rurik_III ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KEM/Portrait_Kemerovo_Yuriy_Krylov_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = SVR_Boris_Yeltsin ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/SVR/Portrait_Sverdlovsk_Boris_Yeltsin_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = SAM_Miletiy_Zykov ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/SAM/Portrait_Samara_Miletiy_Zykov_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = SAM_Sergey_Bunyachenko ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/SAM/Portrait_Samara_Sergey_Bunyachenko_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = VYT_Vladimir_III ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/VYT/Portrait_Vyatka_Vladimir_III_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = TYM_Lazar_Kaganovich ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/TYM/Portrait_Tyumen_Lazar_Kaganovich_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = TYM_Nikita_Khrushchev ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/TYM/Portrait_Tyumen_Nikita_Khrushchev_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = TOM_Andrey_Sakharov ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/TOM/Portrait_Tomsk_Andrey_Sakharov_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = TOM_Daniil_Kharms ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/TOM/Portrait_Tomsk_Daniil_Kharms_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = TOM_Dmitry_Likhachyov ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/TOM/Portrait_Tomsk_Dmitry_Likhachyov_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = TOM_Moisey_Vainberg ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/TOM/Portrait_Tomsk_Moisey_Vainberg_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Alexander_Yakovlev ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KOM/Portrait_Komi_Alexander_Yakovlev_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Igor_Shafarevich ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KOM/Portrait_Komi_Igor_Shafarevich_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Ivan_Serov ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KOM/Portrait_Komi_Ivan_Serov_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Konstantin_Katushev ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KOM/Portrait_Komi_Konstantin_Katushev_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Lev_Gumilyov ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KOM/Portrait_Komi_Lev_Gumilyov_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Mikhail_Suslov ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KOM/Portrait_Komi_Mikhail_Suslov_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Nikolai_Kardashev ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KOM/Portrait_Komi_Nikolai_Kardashev_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Svetlana_Bukharina ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KOM/Portrait_Komi_Svetlana_Bukharina_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Svetlana_Stalina ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KOM/Portrait_Komi_Svetlana_Stalina_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Vladimir_Chelomei ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/KOM/Portrait_Komi_Vladimir_Chelomei_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = IRK_Genrikh_Yagoda ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/IRK/Portrait_Irkutsk_Genrikh_Yagoda_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = IRK_Sergey_Bessonov ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/IRK/Portrait_Irkutsk_Sergey_Bessonov_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = CHT_Mikhail_II ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/CHT/Portrait_Chita_Mikhail_2wrw.dds" }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = BRY_Valery_Sablin ruling_only = yes } }
+		set_country_leader_portrait = { portrait = "gfx/leaders/BRY/Portrait_Buryatia_Valery_Sablin_2wrw.dds" }
+	}
+	WRW_load_war_portraits_army = yes
+}
+
+WRW_load_war_portraits_army = {
+	if = {
+		limit = { has_character = WRS_Georgy_Zhukov }
+		WRS_Georgy_Zhukov = {
+			set_portraits = {
+				civilian = { large = "gfx/leaders/WRS/Portrait_WRRF_Georgy_Zhukov_2wrw.dds" }
+				army = { large = "gfx/leaders/WRS/Portrait_WRRF_Georgy_Zhukov_2wrw.dds" }
+			}
+		}
+	}
+	if = {
+		limit = { has_character = WRS_Mikhail_Tukhachevsky }
+		WRS_Mikhail_Tukhachevsky = {
+			set_portraits = {
+				civilian = { large = "gfx/leaders/WRS/Portrait_WRRF_Mikhail_Tukhachevsky_2wrw.dds" }
+				army = { large = "gfx/leaders/WRS/Portrait_WRRF_Mikhail_Tukhachevsky_2wrw.dds" }
+			}
+		}
+	}
+	if = {
+		limit = { has_character = SVR_Pavel_Batov }
+		SVR_Pavel_Batov = {
+			set_portraits = {
+				civilian = { large = "gfx/leaders/SVR/Portrait_Sverdlovsk_Pavel_Batov_2wrw.dds" }
+				army = { large = "gfx/leaders/SVR/Portrait_Sverdlovsk_Pavel_Batov_2wrw.dds" }
+			}
+		}
+	}
+	if = {
+		limit = { has_character = SAM_Sergey_Bunyachenko }
+		SAM_Sergey_Bunyachenko = {
+			set_portraits = {
+				civilian = { large = "gfx/leaders/SAM/Portrait_Samara_Sergey_Bunyachenko_2wrw.dds" }
+				army = { large = "gfx/leaders/SAM/Portrait_Samara_Sergey_Bunyachenko_2wrw.dds" }
+			}
+		}
+	}
+	if = {
+		limit = { has_character = CHT_Boris_Shepunov }
+		CHT_Boris_Shepunov = {
+			set_portraits = {
+				civilian = { large = "gfx/leaders/CHT/Portrait_Chita_Boris_Shepunov_2wrw.dds" }
+				army = { large = "gfx/leaders/CHT/Portrait_Chita_Boris_Shepunov_2wrw.dds" }
+			}
+		}
+	}
+	if = {
+		limit = { has_character = SBA_Ivan_Stepanov }
+		SBA_Ivan_Stepanov = {
+			random_list = {
+				95 = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/SBA/Portrait_SBA_Ivan_Stepanov_2wrw.dds" }
+						army = { large = "gfx/leaders/SBA/Portrait_SBA_Ivan_Stepanov_2wrw.dds" }
+					}
+				}
+				5 = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/SBA/Portrait_SBA_Ivan_Stepinoff_2wrw.dds" }
+						army = { large = "gfx/leaders/SBA/Portrait_SBA_Ivan_Stepinoff_2wrw.dds" }
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = { has_character = MAG_Mitchell_Werbell }
+		MAG_Mitchell_Werbell = {
+			random_list = {
+				95 = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/MAG/Portrait_West_Alaska_Mitchell_WerBell_III_2wrw.dds" }
+						army = { large = "gfx/leaders/MAG/Portrait_West_Alaska_Mitchell_WerBell_III_2wrw.dds" }
+					}
+				}
+				5 = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/MAG/Portrait_West_Alaska_Punished_Mitchell_WerBell_III_2wrw.dds" }
+						army = { large = "gfx/leaders/MAG/Portrait_West_Alaska_Punished_Mitchell_WerBell_III_2wrw.dds" }
+					}
+				}
+			}
+		}
+	}
+}
+
+WRW_save_britain = {
+	ENG = {
+		set_politics = {
+			ruling_party = conservatism
+		}
+		create_country_leader = {
+			name = "Ali G"
+			picture = "gfx/leaders/debug/ali_g.dds"
+			desc = ""
+			traits = {
+				the_garaet_negotshiator
+			}
+			expire = "1999.3.4"
+			ideology = conservatism_fusion_conservatism_subtype
+		}
+		set_party_name = {
+			ideology = fascism
+			name = ENG_conservatism_2_party
+			long_name = ENG_conservatism_2_party_long
+		}
+		set_party_name = {
+			ideology = fascism_3
+			name = ENG_progressivism_1_party
+			long_name = ENG_progressivism_1_party_long
+		}
+		set_popularities = {
+			fascism = 51
+			fascism_3 = 49
+		}
+		set_cosmetic_tag = ENG_HMMLR1
+	}
+}
+
+WRW_save_america = {
+	USA = {
+		set_politics = {
+			ruling_party = national_socialism
+		}
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 0.8
+		}
+		create_country_leader = {
+			name = "Dick Richardson"
+			picture = "gfx/leaders/debug/dick.dds"
+			desc = leader_dick_desc
+			expire = "1998.2.9"
+			ideology = national_socialism_naturalised_nazism_subtype
+		}
+		set_party_name = {
+			ideology = national_socialism
+			name = "RDC/Enclave - Patriot Clique"
+			long_name = "RDC/Enclave - National-Based-Anti-Wokeist-Anti-Liberal-Patriot-Clique"
+		}
+		set_cosmetic_tag = USA_you_really_fucked_up_again
+	}
+}
+
+work_holy_shit = {
+	set_temp_variable = { TabName = token:BoP_Tab_GlobalConflicts }
+	TNO_BoP_AddTab = yes
+}

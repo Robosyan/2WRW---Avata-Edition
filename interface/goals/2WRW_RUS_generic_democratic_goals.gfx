@@ -1,0 +1,30 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_Lets_Go"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Lets_Go.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_A_War_of_Liberation"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_A_War_of_Liberation.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Establish_a_Wartime_Economy"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Establish_a_Wartime_Economy.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Lead_Ahead_Valiant_Sons"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Lead_Ahead_Valiant_Sons.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_The_Wehrmacht_Rots"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_The_Wehrmacht_Rots.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_On_the_Cusp_of_Liberty"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_On_the_Cusp_of_Liberty.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Eastern_Europe_Breathes"
+		texturefile = "gfx/interface/goals/RUS/Democratic/GFX_RUS_Eastern_Europe_Breathes.dds"
+	}
+}

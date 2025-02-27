@@ -1,0 +1,183 @@
+SWRW_Load_World_Events = {
+	### NOTE: WHEN PUTTING NEW WORLD EVENTS IN, THE DATE TRIGGER IS THE DATE THAT THE EVENT FIRES, NOT THE DAY BEFORE.
+	### FOR EXAMPLE: IF A WORLD EVENT IS SUPPOSED TO TRIGGER ON JANUARY 9TH 1974, THE TRIGGER SHOULD BE "date > 1974.01.09", NOT "date > 1974.01.08". FORMAT IS YYYY.MM.DD
+	### ULTRA MEGA EXTRA IMPORTANT: MAKE SURE THE CHECK "fire_only_once = yes" IS IN EVERY DECISION. OTHERWISE WE WILL HAVE A 1964 WINTER OLYMPICS FIASCO REPEAT.
+	### SERIOUSLY. IT WILL HAPPEN.
+	### EVEN WORSE INSTEAD OF FIRING HUNDREDS OF TIMES IT WILL FIRE INFINITELY
+	SWRW_Increase_Speer_Division_Limit = {
+		icon = GFX_decision_generic_decision
+		visible = {
+			has_global_flag = RUS_national_unification
+			has_global_flag = german_civil_war_speervic
+			RUS = { is_ai = no }
+			GER = { has_idea = GER_econ_unfucker } #this idea gets added post-epilogue which is probably a good point to undo the division limit
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Increase_Speer_Division_Limit"
+			GER = { set_variable = { sgr_wehrmacht_div_limit = 125 } }
+		}
+	}
+	SWRW_MRI_Invented = { # 16th April 1972
+		icon = GFX_decision_generic_decision
+		visible = { date > 1972.4.16 }
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_MRI_Invented"
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.41039 } }
+		}
+	}
+	SWRW_USA_JAP_SALT_Agreement = { # 12th July 1972
+		icon = GFX_decision_generic_decision
+		visible = { date > 1972.7.12 }
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_USA_JAP_SALT_Agreement"
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.41040 } }
+		}
+	}
+	SWRW_World_Trade_Center_Opened = { # 4th April 1973
+		icon = GFX_decision_generic_decision
+		visible = { date > 1973.4.4 }
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_World_Trade_Center_Opened"
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.41041 } }
+		}
+	}
+	SWRW_Sydney_Opera_House_Opened = { # 23rd October 1973
+		icon = GFX_decision_generic_decision
+		visible = { date > 1973.10.23 }
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Sydney_Opera_House_Opened"
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.41042 } }
+		}
+	}
+	SWRW_Argentina_Wins_World_Cup = { # 7th July 1974
+		icon = GFX_decision_generic_decision
+		visible = {
+			date > 1974.7.7
+			date < 1974.7.8 # making sure the event doesn't fire like 2 years later after the civil war is over
+			OR = {
+				has_global_flag = SWRW_2GCW_RPR_winner
+				has_global_flag = SWRW_2GCW_REG_winner
+				has_global_flag = SWRW_2GCW_GMA_winner
+				has_global_flag = SWRW_2GCW_GER_winner
+				has_global_flag = SWRW_2GCW_SFK_winner
+				NOT = { has_global_flag = SWRW_2GCW_happened }
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Argentina_Wins_World_Cup"
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.41036 } }
+		}
+	}
+	SWRW_Tangshan_Earthquake = { # 28th July 1976
+		icon = GFX_decision_generic_decision
+		visible = { date > 1976.7.28 }
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Tangshan_Earthquake"
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.41037 } }
+		}
+	}
+	SWRW_Rocky_Releases = { # 20th November 1976
+		icon = GFX_decision_generic_decision
+		visible = { date > 1976.11.20 }
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Rocky_Releases"
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.41044 } }
+		}
+	}
+	SWRW_Star_Wars_Releases = { # 25th May 1977
+		icon = GFX_decision_generic_decision
+		visible = { date > 1977.5.25 }
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Star_Wars_Releases"
+			every_country = { limit = { is_ai = no } news_event = { id = star_wars.1 } }
+		}
+	}
+	SWRW_Ted_Bundy_Caught = { # 23rd July 1978
+		icon = GFX_decision_generic_decision
+		visible = { date > 1978.7.23 }
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Ted_Bundy_Caught"
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.41038 } }
+		}
+	}
+	SWRW_Grey_Dusk = { # 10th August 1980
+		icon = GFX_decision_generic_decision
+		visible = { date > 1980.8.10 }
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Grey_Dusk"
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.41045 } }
+		}
+	}
+
+	SWRW_play_nixon_intermmision = {
+		icon = GFX_decision_generic_decision
+		visible = {
+			USA = {
+				is_ai = no
+			}
+		}
+		available = {
+			USA = {
+				NOT = {
+					has_country_leader = {
+						character = USA_Richard_Nixon
+						ruling_only = yes
+					}
+				}
+				is_ai = no
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_play_nixon_intermmision"
+			play_song = "radio_novosibirsk_intermission_nixon"
+		}
+	}
+}

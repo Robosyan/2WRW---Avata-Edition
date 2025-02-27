@@ -1,0 +1,62 @@
+spriteTypes = {
+	
+	#Auth tree
+	
+	spriteType = {
+		name = "GFX_idea_RUS_The_Strength_of_Our_Nation"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Authoritarian/GFX_idea_RUS_The_Strength_of_Our_Nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Death_to_the_Germans_1"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Authoritarian/GFX_idea_RUS_Death_to_the_Germans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Death_to_the_Germans_2"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Authoritarian/GFX_idea_RUS_Death_to_the_Germans.dds"
+	}
+	
+	#Commie tree
+	
+	spriteType = {
+		name = "GFX_idea_RUS_The_Peoples_Strength"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Communist/GFX_idea_RUS_The_Peoples_Strength.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_March_of_Memories_1"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Communist/GFX_idea_RUS_March_of_Memories.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_March_of_Memories_2"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Communist/GFX_idea_RUS_March_of_Memories.dds"
+	}
+	
+	#Dem tree
+	
+	spriteType = {
+		name = "GFX_idea_RUS_An_Indomitable_Spirit"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Democratic/GFX_idea_RUS_An_Indomitable_Spirit.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_For_Freedom_and_Democracy_1"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Democratic/GFX_idea_RUS_For_Freedom_and_Democracy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_For_Freedom_and_Democracy_2"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Democratic/GFX_idea_RUS_For_Freedom_and_Democracy.dds"
+	}
+	
+	#Fash tree
+	
+	spriteType = {
+		name = "GFX_idea_RUS_The_Triumph_of_Our_Will"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Fascist/GFX_idea_RUS_The_Triumph_of_Our_Will.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_A_War_of_Nation_and_Glory_1"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Fascist/GFX_idea_RUS_A_War_of_Nation_and_Glory.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_A_War_of_Nation_and_Glory_2"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/Fascist/GFX_idea_RUS_A_War_of_Nation_and_Glory.dds"
+	}
+}

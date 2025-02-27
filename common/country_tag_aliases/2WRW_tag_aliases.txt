@@ -1,0 +1,9 @@
+### SWRW ###
+
+IRN = { #Iran
+	targets = { PER IRI IRL IRC IRB IRA }
+
+	#fallback = PER
+}
+
+### END SWRW ###

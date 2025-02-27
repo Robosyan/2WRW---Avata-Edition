@@ -1,0 +1,55 @@
+﻿l_english:
+ 
+ # IDEAS #
+ 
+ RUS_russias_monster:0 "Russia's Monster"
+ RUS_supporting_armenian_rebels:0 "Russian Funded Rebels"
+
+ 
+ ### Events ###
+ 
+ vyborg_border_conflict.1.t:0 "The Fate of Vyborg"
+ vyborg_border_conflict.1.desc:0 "The city of Vyborg was won by the Soviet Union back in 1940 when Red Army troops triumphed over the Finnish troops. Although the city was eventually retaken by Finland during the Great Patriotic War, many of our Generals believe that with [195.GetName] back in the hands of the [RUS.GetName], we should put some distance between Finland and [195.GetName] and retake what is rightfully ours."
+ vyborg_border_conflict.1.a:0 "Vyborg belongs to [ROOT.GetNameDef]."
+ vyborg_border_conflict.1.b:0 "Viipuri belongs to Finland."
+ 
+ vyborg_border_conflict.2.t:0 "[ROOT.GetNameDefCap] Retakes Vyborg!"
+ vyborg_border_conflict.2.desc:0 "As expected, our forceds have triumped over the smaller Finnish naiton once again. As a result of this great victory, Vyborg has finally returned to our glorious Motherland. The people of [195.GetName] will rest easier now, knowly they won't have to fear an attack from the north anytime soon."
+ vyborg_border_conflict.2.a:0 "A victory for the Motherland!"
+ 
+ vyborg_border_conflict.3.t:0 "Finland Victorious"
+ vyborg_border_conflict.3.desc:0 "Despite the efforts of the Army, the Finnish defence has held and routed our forces. With Vyborg firmly in Finnish hands, their government has not only demanded we relinquish our claims to the reigon but also demanded we demilitarise [195.GetName]. With much of Russia exhausted from decades of warfare, our top advisors have urged the government to accept peace and to focus on rebuilding the naiton."
+ vyborg_border_conflict.3.a:0 "An embarassing defeat."
+ 
+ RUS_decisions.1.t:0 "A New Capital for the [ROOT.GetName]?"
+ RUS_decisions.1.desc:0 "Now that the Russian people have finally triumphed over Germany, it is time to decide what the future capital of Russia will be. Much of our government have supported the move to return the capital of Russia back to Moscow but there are a great deal of people who believe we should keep the capital here in [ROOT.Captial.GetName]."
+ RUS_decisions.1.a:0 "Keep the capital in [ROOT.Capital.GetName]."
+ RUS_decisions.1.b:0 "The Third Rome!"
+ RUS_decisions.1.c:0 "The Window to the West!"
+ RUS_decisions.1.d:0 "The Mother of Rus!"
+ 
+ RUS_europeansupport.1.t:0 "[FROM.GetNameDefCap] Calls for [ROOT.GetAdjective] Aid!"
+ RUS_europeansupport.1.desc:0 "As the war between the [GER.GetName] and the [FROM.GetName] rages in Eastern Europe, we have remained as spectators to the fighting.\n\nUntil now.\n\n[ROOT.GetAdjective] diplomats have approached our government, requesting weapons and aid in their effort against the Reich. Whilst many in our government sympathise with the Slavs of Eastern Europe who have long endured under the German boot, there are those who fear the consequnces we would face should the Reich triumph over the Russians once more."
+ RUS_europeansupport.1.a:0 "The [FROM.GetNameDefCap] is Europe's last hope!"
+ RUS_europeansupport.1.b:0 "Offer the [FROM.GetAdjective]s our thoughts and prayers."
+ 
+ RUS_europeansupport.2.t:0 "[FROM.GetNameDefCap] Agrees to Send Aid!"
+ RUS_europeansupport.2.desc:0 "After much consideration by the [FROM.GetAdjective] government, they have decided to support our war effort against the Wehrmacht, sending us military equipment, planes and mechanised equipment to suppliment our armies in the struggle against the [GER.GetName]."
+ RUS_europeansupport.2.a:0 "God bless the [FROM.GetName]!"
+ 
+ RUS_europeansupport.3.t:0 "[FROM.GetNameDefCap] Refuses to Send Aid!"
+ RUS_europeansupport.3.desc:0 "Despite our best efforts by our diplomats, the [FROM.GetName] has declined to support our effort against the [GER.GetName]. Our government is highly disappointed by this result but our High Command has urged us to move on from this diplomatic set back and continue on with the liberation of Eastern Europe."
+ RUS_europeansupport.3.a:0 "A great shame for Europe."
+ 
+ RUS_europeansupport.4.t:0 "A Letter from Russia"
+ RUS_europeansupport.4.desc:0 "Recently, we have recieved a letter from the President of the Russian Federation, requesting Italian assistance against Germany. The Russians have made a case to our government, citing the constant meddling in the Italian sphere of influence by the Reich and its puppets.\n\nWhile the Russians indeed make a strong case, the question for Italy now is whether we should risk supporting Russia in their war against Germany or leave the Northern Europeans to their war effort and maintain the Mediterranian status quo."
+ RUS_europeansupport.4.a:0 "We shall assist Russia."
+ RUS_europeansupport.4.b:0 "We shall maintain neutrality."
+ 
+ RUS_europeansupport.5.t:0 "Italy Agrees to Aid our Struggle"
+ RUS_europeansupport.5.desc:0 "After much debate and discussion by high ranking officals within the Italian government, the Italian Empire has eagerly decided to support the Russian Federation in its effort against the German Reich.\n\nKeen on seeing the Reich suffer the consequnces of its meddling in Mediterranian affars, Italy has provided us with financial resources and investments to help support the Russian Federation's economy and assure Russian victory against the Wehrmacht is achieved with the door for future economic and diplomatic oppertunities in the future."
+ RUS_europeansupport.5.a:0 "Our former enemy, our newest friend."
+ 
+ RUS_europeansupport.6.t:0 "Italy Refuses to Aid our Struggle"
+ RUS_europeansupport.6.desc:0 "After much debate and discussion by high ranking officals within the Italian government, the Italian Empire has decided to maintain their neutrality, determining that Italy and the Mediterranian nations do not wish to endure the wrath of the Reich and the potential fallout this could cause diplomatically for the Italian government.\n\nThis response has been met with disappointment by Russia and her allies. "
+ RUS_europeansupport.6.a:0 "The Reich's leash remains strong."

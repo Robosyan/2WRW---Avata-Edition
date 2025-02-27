@@ -1,0 +1,2098 @@
+# Second West Russian War #
+
+add_namespace = reich
+add_namespace = bormann
+
+country_event = { # Russia Demands Our Surrender
+	id = reich.2000
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2000" }
+	title = reich.2000.t
+	desc = reich.2000.desc
+	picture = GFX_report_event_generic_peace_deal
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Tell the Russians we're prepared to negotiate
+		name = reich.2000.a
+		RUS = {
+			country_event = { id = RUS.6000 }
+		}
+	}
+}
+
+country_event = {
+	id = reich.2001 #this has been changed because an event exists with this name i think
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2001" }
+	title = reich.2001.t
+	desc = reich.2001.desc
+	picture = GFX_report_event_generic_peace_deal
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { #We want our Eastern Claims. Nothing more.
+		name = reich.2001.a	
+		RUS = {
+			country_event = { id = RUS.6001 }
+		}
+	}
+}
+
+country_event = { # The Federation Demands Our Surrender - Shukshin
+	id = reich.2002
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2002" }
+	title = reich.2002.t
+	desc = reich.2002.desc
+	picture = GFX_report_event_generic_peace_deal
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Tell the Russians we're prepared to negotiate
+		name = reich.2002.a
+		RUS = {
+			country_event = { id = RUS_totalvictory.1 }
+		}
+	}
+}
+
+country_event = { # The Federation Demands Our Surrender - Pokryshkin
+	id = reich.2003
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2003" }
+	title = reich.2003.t
+	desc = reich.2003.desc
+	picture = GFX_report_event_generic_peace_deal
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Tell the Russians we're prepared to negotiate
+		name = reich.2003.a
+		RUS = {
+			country_event = { id = RUS.6003 }
+		}
+	}
+}
+
+country_event = { # Bormann Germany postwar loss outcomes
+	id = reich.2004
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2004" }
+	title = reich.2004.t
+	desc = reich.2004.desc
+	#picture = GFX_report_event_generic_peace_deal
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	option = { # Klopfer stays
+		name = reich.2004.a
+		if = {
+			limit = {
+				NOT = { GER = { has_country_flag = GER_SWRW_total_defeat } }
+			}
+			random_list = {
+				50 = { # Successor holds
+					modifier = {
+						factor = 0
+						has_game_rule = {
+							rule = GER_POST_WAR_COUP_LOSE
+							option = GER_POST_WAR_COUP_LOSE_HEUSINGER_COUP
+						}
+					}
+					if = {
+						limit = {
+							GER = {
+								has_country_leader = {
+									character = GER_gerhard_klopfer
+									ruling_only = yes
+								}
+							}
+						}
+						every_country = { limit = { is_ai = no } news_event = { id = WORLD.41026 days = 1 } }
+						add_popularity = {
+							ideology = national_socialism
+							popularity = -0.15
+						}
+					}
+					if = {
+						limit = {
+							GER = {
+								has_country_leader = {
+									character = GER_reinhard_gehlen
+									ruling_only = yes
+								}
+							}
+						}
+						every_country = { limit = { is_ai = no } news_event = { id = WORLD.41027 days = 1 } }
+						add_popularity = {
+							ideology = fascism
+							popularity = -0.1
+						}
+						add_popularity = {
+							ideology = national_socialism
+							popularity = -0.15
+						}
+					}
+					if = {
+						limit = {
+							GER = {
+								has_country_leader = {
+									character = GER_kurt_waldheim
+									ruling_only = yes
+								}
+							}
+						}
+						every_country = { limit = { is_ai = no } news_event = { id = WORLD.41028 days = 1 } }
+						add_popularity = {
+							ideology = fascism
+							popularity = -0.15
+						}
+						add_popularity = {
+							ideology = national_socialism
+							popularity = -0.1
+						}
+					}
+				}
+				50 = { # Heusinger Coup
+					modifier = {
+						factor = 0
+						OR = {
+							has_game_rule = {
+								rule = GER_POST_WAR_COUP_LOSE
+								option = GER_POST_WAR_COUP_LOSE_SUCCESOR_HOLDS
+							}
+							NOT = {
+								GER = { has_character = GER_adolf_heusinger }
+								GLC = { has_character = GER_adolf_heusinger }
+							}
+						}
+					}
+					every_country = { limit = { is_ai = no } news_event = { id = WORLD.41029 days = 1 } }
+					add_popularity = {
+						ideology = national_socialism
+						popularity = 0.3
+					}
+					set_politics = {
+						ruling_party = national_socialism
+						elections_allowed = no
+					}
+					set_politics = {
+						ruling_party = national_socialism
+					}
+					add_country_leader_role = {
+						character = GER_adolf_heusinger
+						promote_leader = yes
+						country_leader = {
+							desc = "POLITICS_ADOLF_HEUSINGER_DESC_POSTSWRW"
+							ideology = national_socialism_subtype
+							expire = 1999.1.1.1
+							id = -1
+						}
+					}
+					set_party_name = {
+						ideology = national_socialism
+						long_name = GER_heusinger_party_long
+						name = GER_heusinger_party
+					}
+					drop_cosmetic_tag = yes
+					if = {
+						limit = { country_exists = GLC }
+						GER = {
+							random_army_leader = {
+								limit = { NOT = { is_character = GER_adolf_heusinger } }
+								add_country_leader_role = {
+									country_leader = {
+										expire = "1999.4.24"
+										ideology = despotism_military_junta_subtype
+										id = -1
+									}
+								}
+								set_nationality = GLC
+							}
+						}
+						GLC = { retire_country_leader = yes }
+					}
+				}
+			}
+		}
+		else = {
+			GER = { country_event = { id = reich.2006 days = 1 } }
+		}
+	}
+}
+
+country_event = {#GO4 consolidates power
+	id = reich.2005
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2005" }
+	title = reich.2005.t
+	desc = reich.2005.desc
+	#picture = 
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2005.a
+		trigger = {
+			GER = {
+				has_country_flag = SGR_SR_fash_outcome
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = WORLD.41034 days = 1 } }
+	}
+	option = {
+		name = reich.2005.b
+		trigger = {
+			GER = {
+				has_country_flag = SGR_SR_authdem_outcome
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = WORLD.41035 days = 1 } }
+		set_politics = {
+			ruling_party = liberalism
+			elections_allowed = yes
+		}
+		retire_character = GER_various_leaders
+		add_country_leader_role = {
+			character = GER_helmut_schmidt
+			promote_leader = yes
+			country_leader = {
+				ideology = liberalism_national_liberal_subtype
+				desc = "POLITICS_HELMUT_SCHMIDT_DESC"
+				expire = "1999.3.4"
+				id = -1
+			}
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.35
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.20
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.15
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.05
+		}
+		set_party_name = {
+			ideology = liberalism
+			long_name = GER_schmidt_party_long
+			name = GER_schmidt_party
+		}
+		set_cosmetic_tag = GER_GO4
+		64 = { state_control_effect_64 = yes }
+	}
+}
+
+country_event = { # klopfer gets paranoid
+	id = reich.2006
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2006" }
+	title = reich.2006.t
+	desc = reich.2006.desc
+	picture = GFX_report_event_GER_reichsbanner
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2006.a
+		ai_chance = { factor = 50 }
+		GER = {
+			country_event = { id = reich.2007 days = 5 }
+		}
+	}
+}
+
+country_event = { # the will of willy wills the nazis out of power
+	id = reich.2007
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2007" }
+	title = reich.2007.t
+	desc = reich.2007.desc
+	picture = GFX_report_event_GER_democracy_riot_2
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2007.a
+		ai_chance = { factor = 50 }
+		hidden_effect = {
+			GER = {
+				#country_event = { id = reich.2008 days = 5 }
+			}
+			GER_SWRW_GC_willy_brandt_german_spring = yes
+		}
+	}
+}
+
+country_event = { # klopfer escapes
+	id = reich.2008
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2008" }
+	title = reich.2008.t
+	desc = reich.2008.desc
+	picture = GFX_report_event_GER_riot_chaos
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2008.a
+		ai_chance = { factor = 50 }
+		GER = {
+			country_event = { id = reich.2009 days = 5 }
+		}
+		42 = {
+			set_demilitarized_zone = yes
+		}
+		8 = {
+			set_demilitarized_zone = yes
+		}
+		1812 = {
+			set_demilitarized_zone = yes
+		}
+		28 = {
+			set_demilitarized_zone = yes
+		}
+		50 = {
+			set_demilitarized_zone = yes
+		}
+		72 = {
+			set_demilitarized_zone = yes
+		}
+		54 = {
+			set_demilitarized_zone = yes
+		}
+		1811 = {
+			set_demilitarized_zone = yes
+		}
+		1026 = {
+			set_demilitarized_zone = yes
+		}
+		53 = {
+			set_demilitarized_zone = yes
+		}
+		68 = {
+			set_demilitarized_zone = yes
+		}
+		52 = {
+			set_demilitarized_zone = yes
+		}
+		153 = {
+			set_demilitarized_zone = yes
+		}
+		86 = {
+			set_demilitarized_zone = yes
+		}
+		62 = {
+			set_demilitarized_zone = yes
+		}
+		98 = {
+			set_demilitarized_zone = yes
+		}
+		770 = {
+			set_demilitarized_zone = yes
+		}
+		1772 = {
+			set_demilitarized_zone = yes
+		}
+		4 = {
+			set_demilitarized_zone = yes
+		}
+		1025 = {
+			set_demilitarized_zone = yes
+		}
+		152 = {
+			set_demilitarized_zone = yes
+		}
+		744 = {
+			set_demilitarized_zone = yes
+		}
+		GER = {
+			country_event = { id = reich.2008 days = 5 }
+		}
+	}
+}
+
+country_event = { # will the willy die? yes... yes he will
+	id = reich.2009
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2008" }
+	title = reich.2009.t
+	desc = reich.2009.desc
+	picture = GFX_report_event_GER_reichstag_protest
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # your dead bitch
+		name = reich.2009.a
+		effect_tooltip = {
+			kill_country_leader = yes
+		}
+		REG = {
+			TNO_startup_nation = yes
+			inherit_technology = GER
+			add_state_core = 61
+			add_state_core = 776
+			add_state_core = 1813
+			add_state_core = 1814
+			add_state_core = 60
+			add_state_core = 65
+			add_state_core = 64
+			add_state_core = 63
+			transfer_state = 61
+			transfer_state = 776
+			transfer_state = 1813
+			transfer_state = 1814
+			transfer_state = 60
+			transfer_state = 65
+			transfer_state = 64
+			transfer_state = 63
+			transfer_state = 56
+			transfer_state = 1373
+			transfer_state = 1810
+			transfer_state = 1809
+			transfer_state = 51
+			transfer_state = 55
+			transfer_state = 1815
+			transfer_state = 57
+			transfer_state = 188
+			transfer_state = 59
+			transfer_state = 58
+			transfer_state = 775
+			transfer_state = 774
+			transfer_state = 66
+			transfer_state = 67
+			transfer_state = 85
+			transfer_state = 5
+			transfer_state = 97
+			transfer_state = 87
+			transfer_state = 9
+			transfer_state = 69
+			transfer_state = 75
+			load_oob = "2GCW_REG_AI"
+			#country_event = { id = reich.2009 days = 5 }
+		}
+		hidden_effect = {
+			XXX = {
+				GER_Willi_Brandner = { set_nationality = GER }
+			}
+			GER = { promote_character = GER_Willi_Brandner }
+		}
+		MST = {
+			MST_Karl_Plagge = { set_nationality = REG }
+			MST_Wilm_Hosenfeld = { set_nationality = REG }
+			MST_Max_Liedtke = { set_nationality = REG }
+			MST_Gert_Jeschonnek = { set_nationality = REG }
+			MST_Oskar_Hubert_Denhardt = { set_nationality = REG }
+		}
+		SGR = {
+			GER_wessel_freytag_von_loringhoven = { set_nationality = REG }
+			GER_friedrich_klausing = { set_nationality = REG }
+		}
+		GER = {
+			GER_joachim_sadrozinski = { set_nationality = REG }
+			set_politics = {
+				ruling_party = national_socialism
+			}
+			add_popularity = {
+				ideology = national_socialism
+				popularity = 0.4
+			}
+			add_popularity = {
+				ideology = national_socialism_1
+				popularity = 0.24
+			}
+			set_party_name = {
+				ideology = national_socialism_1
+				name = GER_brandner_short
+				long_name = GER_brandner_long
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_leader = {
+							character = GER_gerhard_klopfer
+							ruling_only = yes
+						}
+					}
+				}
+				GER_gerhard_klopfer = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							ideology = national_socialism_subtype
+							desc = "POLITICS_GERHARD_KLOPFER_2_DESC"
+							expire = "1999.1.1.1"
+							id = -1
+						}
+					}
+					set_portraits = { civilian = { large = "gfx/leaders/GER/GER_Gerhard_Klopfer_2.dds" } }
+				}
+			}
+			else = {
+				set_country_leader_description = { desc = POLITICS_GERHARD_KLOPFER_2_DESC }
+				set_country_leader_portrait = { portrait = "gfx/leaders/GER/GER_Gerhard_Klopfer_2.dds" }
+			}
+			drop_cosmetic_tag = yes
+			set_variable = { TNO_economy_type = token:Econ_Type_Corporatism }
+			set_variable = { TNO_economy_subtype = token:Econ_Subtype_Gelenkte_Wirtschaft }
+		}
+		if = {
+			limit = {
+				GER = {
+					owns_state = 1385
+				}
+			}
+			REG = {
+				transfer_state = 88
+				transfer_state = 1385
+				transfer_state = 1386
+				transfer_state = 1390
+				transfer_state = 1392
+				transfer_state = 1391
+				transfer_state = 1387
+				transfer_state = 1393
+				transfer_state = 1394
+				transfer_state = 91
+				transfer_state = 1388
+				transfer_state = 89
+				transfer_state = 90
+				transfer_state = 1384
+				transfer_state = 1389
+				transfer_state = 92
+				transfer_state = 1383
+				transfer_state = 1382
+				transfer_state = 1381
+				transfer_state = 1380
+				transfer_state = 10
+			}
+		}
+		42 = {
+			set_demilitarized_zone = no
+		}
+		8 = {
+			set_demilitarized_zone = no
+		}
+		1812 = {
+			set_demilitarized_zone = no
+		}
+		28 = {
+			set_demilitarized_zone = no
+		}
+		50 = {
+			set_demilitarized_zone = no
+		}
+		72 = {
+			set_demilitarized_zone = no
+		}
+		54 = {
+			set_demilitarized_zone = no
+		}
+		1811 = {
+			set_demilitarized_zone = no
+		}
+		1026 = {
+			set_demilitarized_zone = no
+		}
+		53 = {
+			set_demilitarized_zone = no
+		}
+		68 = {
+			set_demilitarized_zone = no
+		}
+		52 = {
+			set_demilitarized_zone = no
+		}
+		153 = {
+			set_demilitarized_zone = no
+		}
+		86 = {
+			set_demilitarized_zone = no
+		}
+		62 = {
+			set_demilitarized_zone = no
+		}
+		98 = {
+			set_demilitarized_zone = no
+		}
+		770 = {
+			set_demilitarized_zone = no
+		}
+		1772 = {
+			set_demilitarized_zone = no
+		}
+		4 = {
+			set_demilitarized_zone = no
+		}
+		1025 = {
+			set_demilitarized_zone = no
+		}
+		152 = {
+			set_demilitarized_zone = no
+		}
+		REG = {
+			change_tag_from = GER
+		}
+		GER = {
+			retire_character = GER_willy_brandt
+		}
+		REG = { country_event = { id = reich.2010 days = 5 } }
+		every_country = { news_event = { id = WORLD.42001 days = 1 } }
+	}
+}
+
+country_event = { # commies start complaining
+	id = reich.2010
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2010" }
+	title = reich.2010.t
+	desc = reich.2010.desc
+	picture = GFX_report_event_generic_socialist_protests
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2010.a
+		REG = {
+			country_event = { id = reich.2011 days = 5 }
+		}
+		55 = {
+			set_demilitarized_zone = yes
+		}
+		1809 = {
+			set_demilitarized_zone = yes
+		}
+		51 = {
+			set_demilitarized_zone = yes
+		}
+		1810 = {
+			set_demilitarized_zone = yes
+		}
+		57 = {
+			set_demilitarized_zone = yes
+		}
+		1373 = {
+			set_demilitarized_zone = yes
+		}
+		56 = {
+			set_demilitarized_zone = yes
+		}
+		59 = {
+			set_demilitarized_zone = yes
+		}
+		188 = {
+			set_demilitarized_zone = yes
+		}
+		775 = {
+			set_demilitarized_zone = yes
+		}
+		58 = {
+			set_demilitarized_zone = yes
+		}
+		1815 = {
+			set_demilitarized_zone = yes
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 7
+				}
+			}
+			35 = {
+				set_demilitarized_zone = yes
+			}
+			6 = {
+				set_demilitarized_zone = yes
+			}
+			1734 = {
+				set_demilitarized_zone = yes
+			}
+			74 = {
+				set_demilitarized_zone = yes
+			}
+			7 = {
+				set_demilitarized_zone = yes
+			}
+			1886 = {
+				set_demilitarized_zone = yes
+			}
+			36 = {
+				set_demilitarized_zone = yes
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 17
+				}
+			}
+			1733 = {
+				set_demilitarized_zone = yes
+			}
+			18 = {
+				set_demilitarized_zone = yes
+			}
+			17 = {
+				set_demilitarized_zone = yes
+			}
+			34 = {
+				set_demilitarized_zone = yes
+			}
+			29 = {
+				set_demilitarized_zone = yes
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 37
+				}
+			}
+			37 = {
+				set_demilitarized_zone = yes
+			}
+			99 = {
+				set_demilitarized_zone = yes
+			}
+		}
+		744 = {
+			set_demilitarized_zone = yes
+		}
+		774 = {
+			set_demilitarized_zone = yes
+		}
+		if = {
+			limit = { 
+				GER = {
+					controls_state = 1734
+				}
+			}
+			6 = {
+				set_demilitarized_zone = yes
+			}
+			1734 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+}
+
+country_event = { # for Stalin i think?
+	id = reich.2011
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2011" }
+	title = reich.2011.t
+	desc = reich.2011.desc
+	picture = GFX_report_event_generic_red_flag
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2011.a
+		ai_chance = { factor = 50 }
+		REG = {
+			country_event = { id = reich.2012 days = 5 }
+		}
+		55 = {
+			set_demilitarized_zone = no
+		}
+		1809 = {
+			set_demilitarized_zone = no
+		}
+		51 = {
+			set_demilitarized_zone = no
+		}
+		1810 = {
+			set_demilitarized_zone = no
+		}
+		57 = {
+			set_demilitarized_zone = no
+		}
+		1373 = {
+			set_demilitarized_zone = no
+		}
+		56 = {
+			set_demilitarized_zone = no
+		}
+		59 = {
+			set_demilitarized_zone = no
+		}
+		188 = {
+			set_demilitarized_zone = no
+		}
+		775 = {
+			set_demilitarized_zone = no
+		}
+		58 = {
+			set_demilitarized_zone = no
+		}
+		1815 = {
+			set_demilitarized_zone = no
+		}
+		35 = {
+			set_demilitarized_zone = no
+		}
+		6 = {
+			set_demilitarized_zone = no
+		}
+		1734 = {
+			set_demilitarized_zone = no
+		}
+		74 = {
+			set_demilitarized_zone = no
+		}
+		7 = {
+			set_demilitarized_zone = no
+		}
+		1886 = {
+			set_demilitarized_zone = no
+		}
+		36 = {
+			set_demilitarized_zone = no
+		}
+		1733 = {
+			set_demilitarized_zone = no
+		}
+		18 = {
+			set_demilitarized_zone = no
+		}
+		17 = {
+			set_demilitarized_zone = no
+		}
+		34 = {
+			set_demilitarized_zone = no
+		}
+		29 = {
+			set_demilitarized_zone = no
+		}
+		37 = {
+			set_demilitarized_zone = no
+		}
+		99 = {
+			set_demilitarized_zone = no
+		}
+		744 = {
+			set_demilitarized_zone = no
+		}
+		774 = {
+			set_demilitarized_zone = no
+		}
+		6 = {
+			set_demilitarized_zone = no
+		}
+		1734 = {
+			set_demilitarized_zone = no
+		}
+		HRC = {
+			TNO_startup_nation = yes
+			inherit_technology = GER
+			add_state_core = 58
+			add_state_core = 775
+			add_state_core = 774
+			transfer_state = 58
+			transfer_state = 775
+			transfer_state = 774
+			load_oob = "2GCW_HRC_AI"
+			add_ideas = REV_Member
+			set_major = yes
+		}
+		SRH = {
+			TNO_startup_nation = yes
+			inherit_technology = GER
+			add_state_core = 188
+			add_state_core = 59
+			transfer_state = 188
+			transfer_state = 59
+			load_oob = "2GCW_SRH_AI"
+			add_ideas = REV_Member
+			set_major = yes
+		}
+		RPR = {
+			TNO_startup_nation = yes
+			inherit_technology = GER
+			add_state_core = 56
+			add_state_core = 1373
+			add_state_core = 1810
+			add_state_core = 1809
+			add_state_core = 51
+			add_state_core = 55
+			add_state_core = 1815
+			add_state_core = 57
+			transfer_state = 56
+			transfer_state = 1373
+			transfer_state = 1810
+			transfer_state = 1809
+			transfer_state = 51
+			transfer_state = 55
+			transfer_state = 1815
+			transfer_state = 57
+			create_faction = REV_faction
+			add_ideas = REV_Member
+			add_to_faction = SRH
+			add_to_faction = HRC
+			load_oob = "2GCW_RPR_AI"
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 37
+				}
+			}
+			DEN = {
+				TNO_startup_nation = yes
+				transfer_state = 37
+				transfer_state = 99
+			}
+		}
+		DEN = {
+			transfer_state = 744
+			country_event = { id = DEN_Spring.1 days = 7 }
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 7
+				}
+			}
+			HOL = {
+				add_state_core = 74
+				add_state_core = 35
+				add_state_core = 7
+				add_state_core = 1886
+				add_state_core = 36
+				transfer_state = 74
+				transfer_state = 35
+				transfer_state = 7
+				transfer_state = 1886
+				transfer_state = 36
+				transfer_state = 6
+				transfer_state = 1734
+			}
+		}
+		else_if = {
+			limit = { 
+				GER = {
+					controls_state = 1734
+				}
+			 }
+			 HOL = {
+				add_state_core = 6
+				add_state_core = 1734
+				transfer_state = 6
+				transfer_state = 1734
+			 }
+		}
+		if = {
+			limit = {
+				GER = {
+					controls_state = 17
+				}
+			}
+			GLC = {
+				add_state_core = 1733
+				add_state_core = 18
+				add_state_core = 17
+				add_state_core = 34
+				add_state_core = 29
+				transfer_state = 1733
+				transfer_state = 18
+				transfer_state = 17
+				transfer_state = 34
+				transfer_state = 29
+			}
+		}
+	}
+}
+
+country_event = { # soldier gets fucked
+	id = reich.2012
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2012" }
+	title = reich.2012.t
+	desc = reich.2012.desc
+	picture = GFX_report_event_generic_soldier_2
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # 
+		name = reich.2012.a
+		ai_chance = { factor = 50 }
+		REG = {
+			country_event = { id = reich.2013 days = 5 }
+		}
+	}
+}
+
+country_event = { # wehrmacht leaving pt 1
+	id = reich.2013
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2013" }
+	title = reich.2013.t
+	desc = reich.2013.desc
+	picture = GFX_report_event_generic_injured_soldiers
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2013.a
+		ai_chance = { factor = 50 }
+		REG = {
+			country_event = { id = reich.2014 days = 5 }
+		}
+		87 = {
+			set_demilitarized_zone = yes
+		}
+		85 = {
+			set_demilitarized_zone = yes
+		}
+		5 = {
+			set_demilitarized_zone = yes
+		}
+		97 = {
+			set_demilitarized_zone = yes
+		}
+
+	}
+}
+
+country_event = { # wehrmacht leaving pt 2
+	id = reich.2014
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2014" }
+	title = reich.2014.t
+	desc = reich.2014.desc
+	picture = GFX_report_event_BRA_army_meeting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2014.a
+		ai_chance = { factor = 50 }
+		REG = {
+			country_event = { id = reich.2015 days = 5 }
+		}
+		87 = {
+			set_demilitarized_zone = no
+		}
+		85 = {
+			set_demilitarized_zone = no
+		}
+		5 = {
+			set_demilitarized_zone = no
+		}
+		97 = {
+			set_demilitarized_zone = no
+		}
+		GMA = {
+			TNO_startup_nation = yes
+			inherit_technology = GER
+			add_state_core = 87
+			add_state_core = 85
+			add_state_core = 5
+			add_state_core = 97
+			transfer_state = 85
+			transfer_state = 5
+			transfer_state = 97
+			transfer_state = 87
+			load_oob = "2GCW_GMA_AI"
+		}
+		GER = {
+			if = {
+				limit = { has_character = GER_adolf_heusinger }
+				GER_adolf_heusinger = { set_nationality = GMA }
+			}
+			every_army_leader = {
+				limit = {
+					NOT = {
+						is_character = GER_hans_krebs
+						is_character = GER_wilhelm_burgdorf
+						is_character = GER_albert_schnez
+					}
+				}
+				random_list = {
+					50 = {
+						set_nationality = GMA
+					}
+					50 = {
+						#Nothing happens
+					}
+				}
+			}
+		}
+		9 = {
+			set_demilitarized_zone = yes
+		}
+		75 = {
+			set_demilitarized_zone = yes
+		}
+		69 = {
+			set_demilitarized_zone = yes
+		}
+		66 = {
+			set_demilitarized_zone = yes
+		}
+		67 = {
+			set_demilitarized_zone = yes
+		}
+		89 = {
+			set_demilitarized_zone = yes
+		}
+		91 = {
+			set_demilitarized_zone = yes
+		}
+		1394 = {
+			set_demilitarized_zone = yes
+		}
+		1393 = {
+			set_demilitarized_zone = yes
+		}
+		1391 = {
+			set_demilitarized_zone = yes
+		}
+		1388 = {
+			set_demilitarized_zone = yes
+		}
+		1387 = {
+			set_demilitarized_zone = yes
+		}
+		1386 = {
+			set_demilitarized_zone = yes
+		}
+		1385 = {
+			set_demilitarized_zone = yes
+		}
+		1392 = {
+			set_demilitarized_zone = yes
+		}
+		1390 = {
+			set_demilitarized_zone = yes
+		}
+		88 = {
+			set_demilitarized_zone = yes
+		}
+		if = {
+			limit = {
+				REG = {
+					owns_state = 1385
+				}
+			}
+			GMA = {
+				transfer_state = 88
+				transfer_state = 1385
+				transfer_state = 1386
+				transfer_state = 1390
+				transfer_state = 1392
+				transfer_state = 1391
+				transfer_state = 1387
+				transfer_state = 1393
+				transfer_state = 1394
+				transfer_state = 91
+				transfer_state = 1388
+				transfer_state = 89
+				transfer_state = 90
+				transfer_state = 1384
+				transfer_state = 1389
+				transfer_state = 92
+				transfer_state = 1383
+				transfer_state = 1382
+				transfer_state = 1381
+				transfer_state = 1380
+				transfer_state = 10
+			}
+		}
+	}
+}
+
+country_event = { # poland fucks off
+	id = reich.2015
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2015" }
+	title = reich.2015.t
+	desc = reich.2015.desc
+	picture = GFX_report_event_generic_empty_post
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2015.a
+		ai_chance = { factor = 50 }
+		REG = {
+			country_event = { id = reich.2016 days = 5 }
+		}
+		89 = {
+			set_demilitarized_zone = no
+		}
+		91 = {
+			set_demilitarized_zone = no
+		}
+		1394 = {
+			set_demilitarized_zone = no
+		}
+		1393 = {
+			set_demilitarized_zone = no
+		}
+		1391 = {
+			set_demilitarized_zone = no
+		}
+		1388 = {
+			set_demilitarized_zone = no
+		}
+		1387 = {
+			set_demilitarized_zone = no
+		}
+		1386 = {
+			set_demilitarized_zone = no
+		}
+		1385 = {
+			set_demilitarized_zone = no
+		}
+		1392 = {
+			set_demilitarized_zone = no
+		}
+		1390 = {
+			set_demilitarized_zone = no
+		}
+		88 = {
+			set_demilitarized_zone = no
+		}
+		OZW = {
+			inherit_technology = GGN
+			TNO_startup_nation = yes
+			add_state_core = 90
+			add_state_core = 1384
+			add_state_core = 1389
+			add_state_core = 92
+			add_state_core = 1383
+			add_state_core = 1382
+			add_state_core = 1381
+			add_state_core = 1380
+			add_state_core = 10
+			add_state_core = 88
+			add_state_core = 1385
+			add_state_core = 1386
+			add_state_core = 1390
+			add_state_core = 1392
+			add_state_core = 1391
+			add_state_core = 1387
+			add_state_core = 1393
+			add_state_core = 1394
+			add_state_core = 91
+			add_state_core = 1388
+			add_state_core = 89
+			transfer_state = 90
+			transfer_state = 1384
+			transfer_state = 1389
+			transfer_state = 92
+			transfer_state = 1383
+			transfer_state = 1382
+			transfer_state = 1381
+			transfer_state = 1380
+			transfer_state = 10
+			load_oob = "2GCW_OZW_AI"
+		}
+		POL = {
+			TNO_startup_nation = yes
+			add_state_core = 90
+			add_state_core = 1384
+			add_state_core = 1389
+			add_state_core = 92
+			add_state_core = 1383
+			add_state_core = 1382
+			add_state_core = 1381
+			add_state_core = 1380
+			add_state_core = 10
+			add_state_core = 88
+			add_state_core = 1385
+			add_state_core = 1386
+			add_state_core = 1390
+			add_state_core = 1392
+			add_state_core = 1391
+			add_state_core = 1387
+			add_state_core = 1393
+			add_state_core = 1394
+			add_state_core = 91
+			add_state_core = 1388
+			add_state_core = 89
+			transfer_state = 88
+			transfer_state = 1385
+			transfer_state = 1386
+			transfer_state = 1390
+			transfer_state = 1392
+			transfer_state = 1391
+			transfer_state = 1387
+			transfer_state = 1393
+			transfer_state = 1394
+			transfer_state = 91
+			transfer_state = 1388
+			transfer_state = 89
+			set_capital = {
+				state = 88
+				remember_old_capital = no
+			}
+			inherit_technology = GGN
+			set_cosmetic_tag = POL_Uprising
+			set_politics = {
+				ruling_party = despotism
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = despotism
+				name = POL_2GCW_despotism_party
+				long_name = POL_2GCW_despotism_party_long
+			}
+			set_party_name = {
+				ideology = despotism_1
+				name = POL_despotism_party
+				long_name = POL_despotism_party_long
+			}
+			set_popularities = {
+				despotism = 40
+				conservatism = 25
+				socialist = 25
+				despotism_1 = 5
+				communist = 5
+			}
+			set_party_name = {
+				ideology = despotism
+				name = POL_2GCW_despotism_party
+				long_name = POL_2GCW_despotism_party_long
+			}
+			add_ideas = {
+				POL_one_last_chance 
+			}
+			remove_ideas = {
+				POL_home_Defense
+			}
+			XXX = {
+				POL_home_army = { set_nationality = POL }
+				POL_Karol_Wojtyla = { set_nationality = POL }
+			}
+			promote_character = POL_home_army
+			load_oob = "2GCW_POL_AI"
+		}
+	}
+}
+
+country_event = { # commie silesians blow up a building
+	id = reich.2016
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2016" }
+	title = reich.2016.t
+	desc = reich.2016.desc
+	picture = GFX_report_event_generic_exploding_building1
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2016.a
+		ai_chance = { factor = 50 }
+		REG = {
+			country_event = { id = reich.2017 days = 5 }
+		}
+		67 = {
+			set_demilitarized_zone = no
+		}
+		SIL = {
+			TNO_startup_nation = yes
+			inherit_technology = GER
+			add_state_core = 67
+			transfer_state = 67
+			load_oob = "2GCW_SIL_AI"
+		}
+	}
+}
+
+country_event = { # freikorps do some shit idk
+	id = reich.2017
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2017" }
+	title = reich.2017.t
+	desc = reich.2017.desc
+	picture = GFX_report_event_HGR_kaltenbrunner
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2017.a
+		ai_chance = { factor = 50 }
+		REG = {
+			country_event = { id = reich.2018 days = 5 }
+		}
+		66 = {
+			set_demilitarized_zone = no
+		}
+		SFK = {
+			TNO_startup_nation = yes
+			inherit_technology = GER
+			add_state_core = 66
+			transfer_state = 66
+			load_oob = "2GCW_SFK_AI"
+		}
+	}
+}
+
+country_event = { # czechs pussy out
+	id = reich.2018
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2018" }
+	title = reich.2018.t
+	desc = reich.2018.desc
+	picture = GFX_report_event_GER_wehrmacht_saluting
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # 
+		name = reich.2018.a
+		ai_chance = { factor = 50 }
+		REG = {
+			country_event = { id = reich.2019 days = 5 }
+		}
+		9 = {
+			set_demilitarized_zone = no
+		}
+		75 = {
+			set_demilitarized_zone = no
+		}
+		69 = {
+			set_demilitarized_zone = no
+		}
+		GER = {
+			GER_albert_schnez = {
+				add_country_leader_role = {
+					country_leader = {
+						desc = "POLITICS_ALBERT_SCHNEZ_DESC"
+						expire = "1999.4.3"
+						ideology = despotism_military_junta_subtype
+						id = -1
+					}
+				}
+				set_portraits = {
+					civilian = { large = "gfx/leaders/GER/Portrait_CZE_Albert_Schnez.dds" }
+					army = { large = "gfx/leaders/GER/Portrait_CZE_Albert_Schnez.dds" }
+				}
+				set_nationality = CZE
+			}
+		}
+		CZE = {
+			TNO_startup_nation = yes
+			inherit_technology = GER
+			add_state_core = 9
+			add_state_core = 69
+			add_state_core = 75
+			transfer_state = 9
+			transfer_state = 69
+			transfer_state = 75
+			load_oob = "CZE_1962"
+			set_cosmetic_tag = MDB
+			promote_character = GER_albert_schnez
+			set_variable = { TNO_economy_type = token:Econ_Type_Planned }
+			set_variable = { TNO_economy_subtype = token:Econ_Subtype_Military_Directed}
+			set_politics = { ruling_party = despotism }
+			set_popularities = {
+				despotism = 46
+				national_socialism = 34
+				ultranationalism = 8
+				socialist = 7
+				paternalism = 5
+			}
+		}
+	}
+}
+
+country_event = { # poland gets fucked
+	id = reich.2019
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2019" }
+	title = reich.2019.t
+	desc = reich.2019.desc
+	picture = GFX_report_event_generic_uprising
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = reich.2019.a
+		REG = {
+			country_event = { id = reich.2020 days = 5 }
+		}
+		if = {
+			limit = {
+				REG = {
+					is_ai = no
+				}
+			}
+			REG = {
+				country_event = { id = reich.2021 days = 1 }
+			}
+		}
+		OZW = {
+			declare_war_on = {
+				target = POL
+				type = annex_everything
+			}
+			add_ideas = { GER_economic_apocalypse }
+		}
+		POL = {
+			add_ideas = { GER_economic_apocalypse }
+		}
+		hidden_effect = {
+			# every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.5 days = 1 } }
+			if = {
+				limit = { has_global_flag = RUS_shukshin_unification }
+				set_global_flag = RUS_krakow_uprising
+				NOV = { country_event = { id = NOV_postwar.82 days = 1 } }
+			}
+		}
+	}
+}
+
+country_event = { # it's brover
+	id = reich.2020
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2020" }
+	title = reich.2020.t
+	desc = reich.2020.desc
+	picture = GFX_report_event_generic_revolution_colour
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # war never changes (commie edition)
+		name = reich.2020.a
+		trigger = {
+			REG = {
+				has_country_flag = player_picked_RPR
+			}
+		}
+		ai_chance = { factor = 50 }
+		SWRW_2GCW_begin = yes
+		RPR = {
+			change_tag_from = REG
+		}
+	}
+	option = { # war never changes (dem edition)
+		name = reich.2020.b
+		trigger = {
+			REG = {
+				has_country_flag = player_picked_REG
+			}
+		}
+		ai_chance = { factor = 50 }
+		SWRW_2GCW_begin = yes
+	}
+	option = { # war never changes (wehrmacht edition)
+		name = reich.2020.c
+		trigger = {
+			REG = {
+				has_country_flag = player_picked_GMA
+			}
+		}
+		ai_chance = { factor = 50 }
+		GMA = {
+			change_tag_from = REG
+		}
+		SWRW_2GCW_begin = yes
+	}
+	option = { # war never changes (nazi edition)
+		name = reich.2020.d
+		trigger = {
+			REG = {
+				has_country_flag = player_picked_GER
+			}
+		}
+		ai_chance = { factor = 50 }
+		GER = {
+			change_tag_from = REG
+		}
+		SWRW_2GCW_begin = yes
+	}
+	option = { # war never changes (freikorps edition)
+		name = reich.2020.e
+		trigger = {
+			REG = {
+				has_country_flag = player_picked_SFK
+			}
+		}
+		ai_chance = { factor = 50 }
+		SFK = {
+			change_tag_from = REG
+		}
+		SWRW_2GCW_begin = yes
+	}
+	option = { # war never changes (ai edition)
+		name = reich.2020.f
+		trigger = {
+			REG = {
+				NOT = {
+					has_country_flag = player_picked_RPR
+					has_country_flag = player_picked_REG
+					has_country_flag = player_picked_GMA
+					has_country_flag = player_picked_GER
+					has_country_flag = player_picked_SFK
+				}
+			}
+		}
+		ai_chance = { factor = 50 }
+		SWRW_2GCW_begin = yes
+	}
+}
+
+country_event = { #pick your side bitch
+	id = reich.2021
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2021" }
+	title = reich.2021.t
+	desc = reich.2021.desc
+	picture = GFX_report_event_generic_revolution_colour
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # the commies
+		name = reich.2021.a
+		set_country_flag = player_picked_RPR
+	}
+	option = { # the Democrats
+		name = reich.2021.b
+		set_country_flag = player_picked_REG
+	}
+	option = { # the junta
+		name = reich.2021.c
+		set_country_flag = player_picked_GMA
+	}
+	option = { # stay as the Germans
+		name = reich.2021.d
+		set_country_flag = player_picked_GER
+	}
+	option = { # SFK
+		name = reich.2021.e
+		set_country_flag = player_picked_SFK
+	}
+}
+
+country_event = { #speer pick ending event
+	id = reich.2022
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2022" }
+	title = reich.2022.t
+	desc = reich.2022.desc
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = reich.2022.a
+		random_list = {
+			45 = { # G04/Speer Counter-Coup
+				modifier = {
+					factor = 0
+					OR = {
+						has_game_rule = {
+							rule = SPEER_ENDSTATE
+							option = SPEER_ENDSTATE_SPEIDEL
+						}
+						has_game_rule = {
+							rule = SPEER_ENDSTATE
+							option = SPEER_ENDSTATE_KIESINGER
+						}	
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							has_country_flag = SGR_SR_fash_outcome
+						}
+					}
+					every_country = { limit = { is_ai = no } news_event = { id = WORLD.41030 days = 1 } }
+					GER = {
+						set_politics = {
+							ruling_party = liberalism
+							elections_allowed = no
+						}
+						retire_character = GER_various_leaders
+						add_country_leader_role = {
+							character = GER_helmut_schmidt
+							promote_leader = yes
+							country_leader = {
+								ideology = liberalism_national_liberal_subtype
+								desc = "POLITICS_HELMUT_SCHMIDT_DESC"
+								expire = "1999.3.4"
+								id = -1
+							}
+						}
+						remove_all_ministers = yes
+						fill_empty_minister = yes
+						add_popularity = {
+							ideology = liberalism
+							popularity = 0.35
+						}
+						add_popularity = {
+							ideology = conservatism
+							popularity = 0.20
+						}
+						add_popularity = {
+							ideology = progressivism
+							popularity = 0.15
+						}
+						add_popularity = {
+							ideology = paternalism
+							popularity = 0.05
+						}
+						set_party_name = {
+							ideology = liberalism
+							long_name = GER_schmidt_party_long
+							name = GER_schmidt_party
+						}
+						set_cosmetic_tag = GER_GO4
+						64 = { state_control_effect_64 = yes }
+					}
+				}
+				else = {
+					every_country = { limit = { is_ai = no } news_event = { id = WORLD.41031 days = 1 } }
+					GER = {
+						set_politics = {
+							ruling_party = national_socialism
+							elections_allowed = no
+						}
+						GER_albert_speer = {
+							set_portraits = {
+								civilian = { large = "gfx/leaders/GER/Portrait_GER_Albert_Speer_70s_sadge.dds" }
+							}
+						}
+						add_popularity = {
+							ideology = national_socialism
+							popularity = 0.85
+						}
+						remove_all_ministers = yes
+						GER_otto_ernst_remer = {
+							set_portraits = {
+								civilian = {
+									large = "gfx/leaders/GER/Portrait_GER_Otto_Ernst_Remer_70s.png"
+									small = "GFX_idea_GER_Otto_Ernst_Remer_2"
+								}
+								army = {
+									large = "gfx/leaders/GER/Portrait_GER_Otto_Ernst_Remer_70s.png"
+									small = "GFX_idea_GER_Otto_Ernst_Remer_2"
+								}
+							}
+						}
+						GER_kurt_georg_kiesinger = {
+							set_portraits = {
+								civilian = {
+									small = "GFX_idea_GER_Kurt_Georg_Kiesinger_2"
+								}
+							}
+							remove_advisor_role = { slot = head_of_government }
+							add_advisor_role = {
+								advisor = {
+									slot = head_of_government
+									idea_token = GER_Kurt_Georg_Kiesinger_hog_3
+									traits = {
+										head_of_government
+										hog_silver_tongue
+									}
+									ledger = civilian
+									cost = -1
+									can_be_fired = no
+									ai_will_do = { factor = 0 }
+								}
+								activate = yes
+							}
+						}
+						add_ideas = {
+							GER_Hans_Kehrl_eco
+							GER_Martin_Mussgnug_for
+							GER_Otto_Ernst_Remer_sec
+							GER_Otto_Ernst_Remer_high_command
+						}
+						remove_ideas = {
+							GER_SGR_shadow_government
+						}
+						retire_character = GER_Hans_Speidel
+						retire_character = GER_henning_von_tresckow
+						remove_dynamic_modifier = { modifier = GER_war_exhaustion } 
+						drop_cosmetic_tag = yes
+					}
+				}
+			}
+			30 = { #Spiedel Coup
+				modifier = {
+					factor = 0
+					OR = {
+						has_game_rule = {
+							rule = SPEER_ENDSTATE
+							option = SPEER_ENDSTATE_PATH
+						}
+						has_game_rule = {
+							rule = SPEER_ENDSTATE
+							option = SPEER_ENDSTATE_KIESINGER
+						}	
+					}
+				}
+				every_country = { limit = { is_ai = no } news_event = { id = WORLD.41033 days = 1 } }
+				GER = {
+					remove_all_ministers = yes
+					set_politics = {
+						ruling_party = despotism
+						elections_allowed = yes
+					}
+					promote_character = GER_hans_speidel
+					set_country_leader_description = { desc = "POLITICS_HANS_SPEIDEL_2_DESC" }
+					add_popularity = {
+						ideology = despotism
+						popularity = 0.45
+					}
+					add_popularity = {
+						ideology = paternalism
+						popularity = 0.25
+					}
+					drop_cosmetic_tag = yes
+				}
+			}
+			25 = { # Kiesinger Coup
+				modifier = {
+					factor = 0
+					OR = {
+						has_game_rule = {
+							rule = SPEER_ENDSTATE
+							option = SPEER_ENDSTATE_SPEIDEL
+						}
+						has_game_rule = {
+							rule = SPEER_ENDSTATE
+							option = SPEER_ENDSTATE_PATH
+						}	
+					}
+				}
+				every_country = { limit = { is_ai = no } news_event = { id = WORLD.41032 days = 1 } }
+				GER = {
+					set_politics = {
+						ruling_party = national_socialism
+						elections_allowed = no
+					}
+					GER_kurt_georg_kiesinger = {
+						set_character_name = GER_kurt_georg_kiesinger_short
+						set_portraits = { civilian = { large = "gfx/leaders/GER/GER_Kurt_Kiesinger.dds" } }
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								desc = "POLITICS_KURT_KIESINGER_DESC"
+								ideology = national_socialism_subtype
+								expire = 1999.1.1.1
+								id = -1
+							}
+						}
+					}
+					add_popularity = {
+						ideology = paternalism
+						popularity = 0.25
+					}
+					drop_cosmetic_tag = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = { #i hate this
+	id = reich.2023
+	immediate = { log = "[GetDateText]: [Root.GetName]: event reich.2023" }
+	title = reich.2023.t
+	desc = reich.2023.desc
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = reich.2023.a
+		every_state = {
+			limit = {
+				is_owned_by = MCW
+			}
+			remove_province_modifier = {
+				static_modifiers = { SWRW_MCW_extra_defense }
+				province = { all_provinces = yes }
+			}
+		}
+	}
+}
+
+# Bormann Skeleton Content #
+
+country_event = { # Bormann fucking dies
+	id = bormann.3001
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bormann.3001" }
+	title = bormann.3001.t
+	desc = bormann.3001.desc
+	picture = GFX_report_event_GER_germania_2
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = bormann.3001.a
+		trigger = {
+			GER = {
+				has_country_leader = {
+					character = GER_martin_bormann
+					ruling_only = yes
+				}
+			}
+		}
+		effect_tooltip = {
+			kill_country_leader = yes
+		}
+		hidden_effect = {
+			XXX = {
+				GER_reichstag_emergency_council_2 = { set_nationality = GER }
+			}
+			GER = { set_country_flag = bormann_dead }
+			retire_country_leader = yes
+			promote_character = GER_reichstag_emergency_council_2
+			country_event = { id = bormann.3002 days = 35 }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.41022 days = 1 } }
+			if = {
+				limit = {
+					NOT = { GER = { has_war_with = RUS } }
+				}
+				load_focus_tree = ZZZ_blank_focus
+			}
+		}
+	}
+}
+
+
+country_event = { # Choose successor
+	id = bormann.3002
+	immediate = { log = "[GetDateText]: [Root.GetName]: event bormann.3002" }
+	title = bormann.3002.t
+	desc = bormann.3002.desc
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+		name = bormann.3002.a
+		random_list = {
+			45 = {
+				modifier = {
+					factor = 0
+					NOT = {
+						has_game_rule = {
+							rule = BOR_SUCCESSOR
+							option = BOR_SUCCESSOR_KLOPFER
+						}
+						has_game_rule = {
+							rule = BOR_SUCCESSOR
+							option = DEFAULT
+						}
+					}
+				}
+				every_country = { limit = { is_ai = no } news_event = { id = WORLD.41023 days = 1 } }
+				GER = {
+					GER_gerhard_klopfer = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = national_socialism_subtype
+								desc = "POLITICS_GERHARD_KLOPFER_DESC"
+								expire = "1999.1.1.1"
+								id = -1
+							}
+						}
+						set_portraits = { civilian = { large = "gfx/leaders/GER/GER_Gerhard_Klopfer.dds" } }
+					}
+					TNO_Oil_Crisis_remove_modifier = yes
+					set_politics = {
+						ruling_party = national_socialism
+						elections_allowed = no
+					}
+				}
+			}
+			35 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							has_game_rule = {
+								rule = BOR_SUCCESSOR
+								option = BOR_SUCCESSOR_GEHLEN
+							}
+							has_game_rule = {
+								rule = BOR_SUCCESSOR
+								option = DEFAULT
+							}
+						}
+						GER = { is_ai = no }
+					}
+				}
+				every_country = { limit = { is_ai = no } news_event = { id = WORLD.41024 days = 1 } }
+				GER = {
+					GER_reinhard_gehlen = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								desc = "SWRW_POLITICS_REINHARD_GEHLEN_DESC"
+								ideology = national_socialism_reformed_national_socialism_subtype
+								expire = "1999.1.1.1"
+								id = -1
+							}
+						}
+						set_portraits = { civilian = { large = "gfx/leaders/GER/GER_Reinhard_Gehlen.dds" } }
+					}
+					TNO_Oil_Crisis_remove_modifier = yes
+					set_politics = {
+						ruling_party = national_socialism
+						elections_allowed = no
+					}
+					set_party_name = {
+						ideology = national_socialism
+						long_name = GER_gehlen_party_long
+						name = GER_gehlen_party
+					}
+					add_popularity = {
+						ideology = paternalism
+						popularity = 0.3
+					}
+				}
+			}
+			20 = {
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							has_game_rule = {
+								rule = BOR_SUCCESSOR
+								option = BOR_SUCCESSOR_WALDHEIM
+							}
+							has_game_rule = {
+								rule = BOR_SUCCESSOR
+								option = DEFAULT
+							}
+						}
+						GER = { is_ai = no }
+					}
+				}
+				every_country = { limit = { is_ai = no } news_event = { id = WORLD.41025 days = 1 } }
+				XXX = { GER_kurt_waldheim = { set_nationality = GER } }
+				GER = {
+					promote_character = GER_kurt_waldheim
+					TNO_Oil_Crisis_remove_modifier = yes
+					set_politics = {
+						ruling_party = national_socialism
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = national_socialism
+						popularity = 0.3
+					}
+				}
+			}
+		}
+	}
+}

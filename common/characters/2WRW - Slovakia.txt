@@ -1,0 +1,30 @@
+characters = {
+	SLO_Julius_Duris = {
+		name = SLO_Julius_Duris
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLO/portrait_SLO_Julius_Duris.dds"
+			}
+		}
+		country_leader = {
+			ideology = communist_subtype
+			desc = "POLITICS_SLO_JULIUS_DURIS_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	SLO_Ivan_Pietor = {
+		name = SLO_Ivan_Pietor
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLO/portrait_SLO_Ivan_Pietor.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism_free_market_conservatism_subtype
+			desc = "POLITICS_SLO_IVAN_PIETOR_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+}

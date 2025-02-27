@@ -1,0 +1,557 @@
+add_namespace = gc_netherlands
+add_namespace = gc_netherlands_news
+
+country_event = { #revolutionaries form government
+	id = gc_netherlands.1
+	title = gc_netherlands.1.t
+	desc = gc_netherlands.1.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event gc_netherlands.1"
+		hidden_effect = {
+			if = {
+				limit = { USA = { has_fascist_government = no } }
+				USA = {
+					diplomatic_relation = {
+						country = HOL
+						relation = guarantee
+						active = yes
+					}
+				}
+			}
+			74 = { set_demilitarized_zone = no }
+			drop_cosmetic_tag = yes
+			XXX = {
+				HOL_Nico_Berghuijs = { set_nationality = HOL }
+				HOL_Joop_Glimmerveen = { set_nationality = HOL }
+			}
+			set_politics = {
+				ruling_party = paternalism
+				elections_allowed = no
+			}
+			promote_character = HOL_Nico_Berghuijs
+			promote_character = HOL_Joop_Glimmerveen
+			set_popularities = {
+				paternalism = 70
+				national_socialism = 30
+			}
+			every_country = { limit = { is_ai = no } news_event = { id = gc_netherlands_news.2 days = 1 } }
+			set_party_name = {
+				ideology = national_socialism
+				long_name = HOL_free_national_socialism_party_long
+				name = HOL_free_national_socialism_party
+			}
+			remove_faction_status = yes
+			remove_ideas = {
+				HOL_german_economy
+				HOL_apathetic_populace
+				HOL_decaying_verzuiling
+				HOL_busy_ports
+			}
+			add_ideas = {
+				HOL_fractured_national_identity
+				HOL_without_a_master
+			}
+			leave_GER_sphere = yes
+			GER = {
+				set_autonomy = {
+					target = HOL
+					autonomy_state = autonomy_free
+				}
+			}
+			leave_faction = yes
+			set_variable =  { TNO_economy_type = token:Econ_Type_Capitalism }
+			set_temp_variable = { TNO_economy_subtype_temp = 0 }
+			econ_subtype_change = yes
+		}
+	}
+	option = { #Democracy
+		name = gc_netherlands.1.a
+		ai_chance = {
+			factor = 0.7
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = HOL_POST_WAR_PATH
+					option = HOL_POST_WAR_PATH_COUNTER_COUP
+				}
+			}
+		}
+		country_event = { id = gc_netherlands.2 days = 77 }
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = gc_netherlands_news.3 days = 47 } }
+		}
+	}
+	option = { #Counter-coup
+		name = gc_netherlands.1.b
+		ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = HOL_POST_WAR_PATH
+						option = HOL_POST_WAR_PATH_KINGDOM
+					}
+					has_game_rule = {
+						rule = HOL_POST_WAR_PATH
+						option = HOL_POST_WAR_PATH_REPUBLIC
+					}
+				}
+			}
+		}
+		country_event = { id = gc_netherlands.4 days = 47 }
+	}
+}
+
+country_event = { #referendum
+	id = gc_netherlands.2
+	title = gc_netherlands.2.t
+	desc = gc_netherlands.2.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands.2" }
+	option = { #passes
+		trigger = { NOT = { has_country_flag = HOL_cancel_event_chain } }
+		name = gc_netherlands.2.a
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = HOL_POST_WAR_PATH
+					option = HOL_POST_WAR_PATH_REPUBLIC
+				}
+			}
+		}
+		if = {
+			limit = { NOT = { country_exists = CUR } } #this country spawns when the Suriname indepence referendum passes
+			SUR = {
+				annex_country = {
+					target = HOL
+					transfer_troops = no
+				}
+				set_capital = {
+					state = 7
+					remember_old_capital = no
+				}
+				set_cosmetic_tag = HOL_Kingdom_real
+				add_ideas = HOL_fractured_national_identity
+			}
+			HOL = {
+				every_core_state = {
+					add_core_of = SUR
+					remove_core_of = HOL
+				}
+			}
+		}
+		else = {
+			CUR = {
+				annex_country = {
+					target = HOL
+					transfer_troops = no
+				}
+				set_capital = {
+					state = 7
+					remember_old_capital = no
+				}
+				set_cosmetic_tag = HOL_Kingdom_real
+				add_ideas = HOL_fractured_national_identity
+				remove_ideas = CUR_Exiles_in_the_Antilles
+			}
+			HOL = {
+				every_core_state = {
+					add_core_of = CUR
+					remove_core_of = HOL
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = gc_netherlands_news.4 days = 1 } }
+		}
+	}
+	option = { #fails
+		trigger = { NOT = { has_country_flag = HOL_cancel_event_chain } }
+		name = gc_netherlands.2.b
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = HOL_POST_WAR_PATH
+					option = HOL_POST_WAR_PATH_KINGDOM
+				}
+			}
+		}
+		set_cosmetic_tag = HOL_Republic
+		country_event = { id = gc_netherlands.3 days = 30 }
+		hidden_effect = {
+			USA = {
+				diplomatic_relation = {
+					country = HOL
+					relation = guarantee
+					active = no
+				}
+			}
+			every_country = { limit = { is_ai = no } news_event = { id = gc_netherlands_news.5 days = 1 } }
+		}
+	}
+	option = { #cancel
+		name = gc_netherlands.2.d
+		trigger = { has_country_flag = HOL_cancel_event_chain }
+	}
+}
+
+country_event = { #elections
+	id = gc_netherlands.3
+	title = gc_netherlands.3.t
+	desc = gc_netherlands.3.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event gc_netherlands.3"
+		hidden_effect = {
+			XXX = {
+				HOL_Bastiaan_Fortman = { set_nationality = ROOT }
+				HOL_Frans_Andriseen = { set_nationality = ROOT }
+				HOL_Hans_Janmaat = { set_nationality = ROOT }
+			}
+			remove_ideas = HOL_without_a_master
+			promote_character = HOL_Bastiaan_Fortman 
+			promote_character = HOL_Frans_Andriseen
+			promote_character = HOL_Hans_Janmaat
+			set_party_name = {
+				ideology = paternalism
+				long_name = HOL_free_paternalism_party_long
+				name = HOL_free_paternalism_party
+			}
+			set_party_name = {
+				ideology = liberal_conservatism
+				long_name = HOL_free_liberal_conservatism_party_long
+				name = HOL_free_liberal_conservatism_party
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = HOL_free_fascism_party_long
+				name = HOL_free_fascism_party
+			}
+			set_party_name = {
+				ideology = progressivism
+				long_name = HOL_free_progresivism_party_long
+				name = HOL_free_progresivism_party
+			}
+		}
+	}
+	option = {#christian democrats
+		trigger = { NOT = { has_country_flag = HOL_cancel_event_chain } }
+		name = gc_netherlands.3.a
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = HOL_POST_WAR_ELECTION
+						option = HOL_POST_WAR_ELECTION_SOCDEM
+					}
+					has_game_rule = {
+						rule = HOL_POST_WAR_ELECTION
+						option = HOL_POST_WAR_ELECTION_POPULIST
+					}
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = liberal_conservatism
+			elections_allowed = yes
+			last_election = "1937.5.26"
+		}
+		set_popularities = {
+			#real
+			liberal_conservatism = 35
+			progressivism = 20
+			paternalism = 14
+			#who cares
+			communist = 10
+			socialist = 5
+			liberalism = 6
+			conservatism = 8
+			fascism = 2
+		}
+	}
+	option = {#socdems
+		trigger = { NOT = { has_country_flag = HOL_cancel_event_chain } }
+		name = gc_netherlands.3.b
+		ai_chance = {
+			factor = 0.3
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = HOL_POST_WAR_ELECTION
+						option = HOL_POST_WAR_ELECTION_CHIRSDEM
+					}
+					has_game_rule = {
+						rule = HOL_POST_WAR_ELECTION
+						option = HOL_POST_WAR_ELECTION_POPULIST
+					}
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = progressivism
+			elections_allowed = yes
+			last_election = "1937.5.26"
+		}
+		set_popularities = {
+			#real
+			progressivism = 36
+			liberal_conservatism = 20
+			paternalism = 14
+			#who cares
+			communist = 9
+			socialist = 5
+			liberalism = 6
+			conservatism = 8
+			fascism = 2
+		}
+	}
+	option = {#populists
+		trigger = { NOT = { has_country_flag = HOL_cancel_event_chain } }
+		name = gc_netherlands.3.c
+		ai_chance = {
+			factor = 0.2
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = HOL_POST_WAR_ELECTION
+						option = HOL_POST_WAR_ELECTION_CHIRSDEM
+					}
+					has_game_rule = {
+						rule = HOL_POST_WAR_ELECTION
+						option = HOL_POST_WAR_ELECTION_SOCDEM
+					}
+				}
+			}
+		}
+		set_politics = {
+			ruling_party = paternalism
+			elections_allowed = yes
+			last_election = "1937.5.26"
+		}
+		set_popularities = {
+			#real
+			paternalism = 33
+			liberal_conservatism = 18
+			progressivism = 20
+			#who cares
+			communist = 10
+			socialist = 5
+			liberalism = 6
+			conservatism = 6
+			fascism = 2
+		}
+	}
+	option = { #cancel
+		name = gc_netherlands.3.d
+		trigger = { has_country_flag = HOL_cancel_event_chain }
+	}
+}
+
+country_event = { #counter-coup
+	id = gc_netherlands.4
+	title = gc_netherlands.4.t
+	desc = gc_netherlands.4.desc
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands.4" }
+	option = {
+		name = gc_netherlands.4.a
+		set_politics = {
+			ruling_party = national_socialism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = national_socialism
+			popularity = 1
+		}
+		USA = {
+			diplomatic_relation = {
+				country = HOL
+				relation = guarantee
+				active = no
+			}
+		}
+		set_cosmetic_tag = HOL_State_natsoc
+		set_variable = { TNO_economy_type = token:Econ_Type_Corporatism }
+		set_variable = { TNO_economy_subtype = token:Econ_Subtype_Gelenkte_Wirtschaft }
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = gc_netherlands_news.6 days = 1 } }
+		}
+	}
+}
+
+news_event = { #The Battle of Rotterdam
+	id = gc_netherlands_news.1
+	title = gc_netherlands_news.1.t
+	desc = gc_netherlands_news.1.desc
+	picture = GFX_news_HOL_rotterdam
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands_news.1" }
+	option = {
+		name = gc_netherlands_news.1.a
+		trigger = { NOT = { original_tag = GER } }
+		if = {
+			limit = { is_ai = no }
+			every_country = {
+				limit = { has_war_with = HOL }
+				white_peace = HOL
+				set_truce = { target = HOL days = 365 }
+			}
+			74 = { set_demilitarized_zone = yes }
+		}
+	}
+	option = {
+		name = gc_netherlands_news.1.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			every_country = {
+				limit = { has_war_with = HOL }
+				white_peace = HOL
+				set_truce = { target = HOL days = 365 }
+			}
+			74 = { set_demilitarized_zone = yes }
+		}
+	}
+}
+
+news_event = { #The Dutch Revolution
+	id = gc_netherlands_news.2
+	title = gc_netherlands_news.2.t
+	desc = gc_netherlands_news.2.desc
+	picture = GFX_news_HOL_liberated
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands_news.2" }
+	option = {
+		name = gc_netherlands_news.2.a
+		trigger = { NOT = { original_tag = GER } }
+	}
+	option = {
+		name = gc_netherlands_news.2.b
+		trigger = { original_tag = GER }
+	}
+}
+
+news_event = { #The Exile Referendum
+	id = gc_netherlands_news.3
+	title = gc_netherlands_news.3.t
+	desc = gc_netherlands_news.3.desc
+	picture = GFX_news_HOL_referendum
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands_news.3" }
+	option = {
+		name = gc_netherlands_news.3.a
+	}
+}
+
+news_event = { #Exiles Return to the Netherlands
+	id = gc_netherlands_news.4
+	title = gc_netherlands_news.4.t
+	desc = gc_netherlands_news.4.desc
+	picture = GFX_news_event_SUR_suriname_remains_dutch
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands_news.4" }
+	option = {
+		name = gc_netherlands_news.4.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_DUTCH_EXILES_RETURN }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { #Dutch Referendum Fails
+	id = gc_netherlands_news.5
+	title = gc_netherlands_news.5.t
+	desc = gc_netherlands_news.5.desc
+	picture = GFX_news_HOL_republic
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands_news.5" }
+	option = {
+		name = gc_netherlands_news.5.a
+	}
+}
+
+news_event = { #Collab counter-coup
+	id = gc_netherlands_news.6
+	title = gc_netherlands_news.6.t
+	desc = gc_netherlands_news.6.desc
+	picture = GFX_news_HOL_coup
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands_news.6" }
+	option = {
+		name = gc_netherlands_news.6.a
+		trigger = { NOT = { original_tag = GER } }
+	}
+	option = {
+		name = gc_netherlands_news.6.b
+		trigger = { original_tag = GER }
+	}
+}
+
+news_event = { #Germany Invades
+	id = gc_netherlands_news.7
+	title = gc_netherlands_news.7.t
+	desc = gc_netherlands_news.7.desc
+	picture = GFX_news_HOL_invasion
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands_news.7" }
+	option = {
+		name = gc_netherlands_news.7.a
+		trigger = { NOT = { original_tag = GER } }
+	}
+	option = {
+		name = gc_netherlands_news.7.b
+		trigger = { original_tag = GER }
+	}
+}
+
+news_event = { #Chrisdems win the Election
+	id = gc_netherlands_news.8
+	title = gc_netherlands_news.8.t
+	desc = gc_netherlands_news.8.desc
+	picture = GFX_news_HOL_elections_chrisdems
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands_news.8" }
+	option = {
+		name = gc_netherlands_news.8.a
+	}
+}
+
+news_event = { #Socdems win the Election
+	id = gc_netherlands_news.9
+	title = gc_netherlands_news.9.t
+	desc = gc_netherlands_news.9.desc
+	picture = GFX_news_HOL_elections_socdems
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands_news.9" }
+	option = {
+		name = gc_netherlands_news.9.a
+	}
+}
+
+news_event = { #Populists win the Election
+	id = gc_netherlands_news.10
+	title = gc_netherlands_news.10.t
+	desc = gc_netherlands_news.10.desc
+	picture = GFX_news_HOL_elections_populists
+	is_triggered_only = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event gc_netherlands_news.10" }
+	option = {
+		name = gc_netherlands_news.10.a
+	}
+}

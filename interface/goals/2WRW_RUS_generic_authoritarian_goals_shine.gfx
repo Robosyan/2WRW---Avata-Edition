@@ -1,0 +1,339 @@
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_Our_War_of_Strength_shine"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Our_War_of_Strength.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Our_War_of_Strength.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Our_War_of_Strength.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_United_Forever_shine"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_United_Forever.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_United_Forever.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_United_Forever.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Strongarm_the_Populace_shine"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Strongarm_the_Populace.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Strongarm_the_Populace.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Strongarm_the_Populace.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Expand_the_MIC_shine"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Expand_the_MIC.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Expand_the_MIC.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Expand_the_MIC.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Forwards_for_Russia_shine"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Forwards_for_Russia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Forwards_for_Russia.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Forwards_for_Russia.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Ubermensch_No_More_shine"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Ubermensch_No_More.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Ubermensch_No_More.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Ubermensch_No_More.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Rout_the_Bastards_shine"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Rout_the_Bastards.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Rout_the_Bastards.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Rout_the_Bastards.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_The_Reich_in_Ashes_shine"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_The_Reich_in_Ashes.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_The_Reich_in_Ashes.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_The_Reich_in_Ashes.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+}

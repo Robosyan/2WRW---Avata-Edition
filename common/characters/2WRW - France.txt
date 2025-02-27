@@ -1,0 +1,30 @@
+characters = {
+	GLC_Andre_Lajoinie = {
+		name = GLC_Andre_Lajoinie
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/GFX_french_André_Lajoinie.dds"
+			}
+		}
+		country_leader = {
+			ideology = communist_bolshevism_subtype
+			desc = "POLITICS_GLC_Andre_Lajoinie_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	GLC_Jacques_Chirac = {
+		name = GLC_Jacques_Chirac
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/FRA/GFX_french_Jacques_Chirac.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism_free_market_conservatism_subtype
+			desc = "POLITICS_GLC_Jacques_Chirac_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+}

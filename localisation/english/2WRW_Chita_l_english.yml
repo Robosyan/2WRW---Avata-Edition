@@ -1,0 +1,17 @@
+﻿l_english:
+
+ # Misc Localisation
+ ## Decisions ##
+ CHT_Move_Imperial_Capital:0 "Move the §nImperial Capital§!"
+ 
+ ## Events
+ RUS_decisions.2.t:0 "Move the Imperial Capital?"
+ RUS_decisions.2.desc:0 "With holy Russia united under our rightful flag, several members of the imperial cabinent feel that the old fortress of Chita has outlived its purpose and have proposed that we move the empire's government in another city more fit to administer the new lands, which would also provide a superior base of operations for the upcoming war with Germany. After much heated discussion and infighting amongst members of government (as well as a personal interjection from our Tsar), the issue of a new capital has been decided..."
+ RUS_decisions.2.a:0 "Chita shall remain the capital of the Russian Empire for the time being."
+ RUS_decisions.2.b:0 "Novonikolayevsk will serve the Empire's needs."
+ RUS_decisions.2.c:0 "The graves of the old Romanovs shall become the foundation of a new Empire."
+ RUS_decisions.2.d:0 "Vyatka is close enough to Moscow?"
+ 
+ # Tsar Mikhail
+ 
+ # The White Army

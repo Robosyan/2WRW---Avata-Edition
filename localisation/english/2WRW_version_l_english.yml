@@ -1,0 +1,5 @@
+﻿l_english:
+ # Format - TNO vMajorVersion.ContentUpdate.PatchNumber(Hotfix Letter) - Content Update Name
+ swrw_current_version:0 "SWRW v1.3.2c - §VThe§! §WBicentennial§! §zBallot§!"
+ # Format - Date of most recent update - Hotfix Or Patch Contents
+ swrw_current_version_date:0 "§YAugust 29th, 2024 -§! §VThe§! §WBicentennial§! §zBallot§!"

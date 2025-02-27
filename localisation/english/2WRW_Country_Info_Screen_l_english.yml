@@ -1,0 +1,27 @@
+﻿l_english:
+
+ TNO_COUNTRY_INFO_BUTTON_TEXT_KMC: "K Moryu!"
+
+ ##kamchatka##
+ KMC_CountryInfo_Folder.101: "The Fate of the Pacific Fleet"
+
+ KMC_CountryInfo_Content.1: "The Past"
+ KMC_CountryInfo_Content_desc.1: "In the ensuing chaos following the collapse of the §GSoviet Union§! we found ourselves the last remaining Fleet, with §BArkhangelsk, Leningrad and all ports on the Black Sea§! falling to the fascist invader we remained the sole inheritor of the proud Soviet Naval Tradition. Pledging our loyalty to §RYagoda’s§! regime, as the legitimate continuation of the USSR we served for a time from §GVladivostok§! continuing routine maritime patrol missions and guarding the ever decreasing Russian shipping coming in and out of our ports."
+
+ KMC_CountryInfo_Content.2: "The Situation"
+ KMC_CountryInfo_Content_desc.2: "With the §RJapanese§! backed invasion of the Far East by their Fascist puppets we faced a stark choice, fight and die or preserve what was left of the fleet. With no prospect of victory in the face of the overwhelming power of the §RJapanese Navy§!, §BAdmiral Ivan Yumashev§! made the decision to evacuate north to the Kamchatka Peninsula. Basing ourselves out of the then mostly abandoned port of §GPetropavlovsk-Kamchatsky§!, the small port down has gradually grown with our presence."
+
+ KMC_CountryInfo_Content.3: "Unfortunate Circumstances"
+ KMC_CountryInfo_Content_desc.3: "Without the support of a larger government the prospect of maintaining even our small navy became more difficult. With a small population, no industry to speak of and no outside support we had no other option than to turn to §YPiracy and Smuggling§!.\n\nNow a sad excuse for a navy the warships rarely raid themselves, instead preferring to operate from converted fishing, or cargo vessels to avoid suspicion, with the warships often found sitting in port, rusting and slowly falling apart. As our ships decay so do the spirits of the men. Over time more and more of our veterans perished or left of their own accord, often making off with one of our ships to operate on their own out of another village elsewhere in the peninsula, refusing to hand over their loot to the good of the fleet. What is left is a band of the aging old guard, and young men and boys who have often only joined the fleet to escape crushing poverty, hoping to chance their luck on a raid or aboard a smuggling ship. "
+
+ KMC_CountryInfo_Content.4: "The Future"
+ KMC_CountryInfo_Content_desc.4: "There are those in the fleet who hope for change however, §BVeteran Admiral Grigory Shchedrin§! and devout §RCommunist, Captain Ivan Maslennikov§! believe that the fleet must rebuild its §YProfessional Core§! and reignite its spirit as a defender of the Soviet Motherland. Should they wish to achieve their goals, it will be necessary to rely on, or even increase our efforts towards §YPiracy and Smuggling§! if they hope to fund this.\n\n==FEATURES==\n\n*Address the decaying standard of §YProfessionalism§! in the Fleet.\n\n*Conduct §YPiracy and Smuggling§! to keep what is left of the Navy afloat.\n\n*Find a way out of Kamchatka to reassert the Navy as a significant force in Russia again!"
+
+ #NOV
+ RUS_CountryInfo_Folder.103: "SWRW Info"
+ RUS_CountryInfo_Content.11: "Shukshin Features"
+ NOV_CountryInfo_Content_desc.11: " - Play as Shukshin and his successor, stabilise, reunify and lay low the German eagle and the Japanese Sun.\n\n-Reconstruct and de-nazify eastern Europe for a better tomorrow.\n\n- Vote in the 1976 election that will decide the fate of Russia and the world for decades to come."
+ SWRW_russia: "Russia Features"
+ SWRW_russia_desc: "The Second West Russian War mod introduces several new mechanics related to governing and guiding a reunified Russia through the most intense era of the modern world — the Cold War between the §MUnited States§!, the §qGerman Reich§! and the §eEmpire of Japan§!, reclaiming her lost territories with force when all other options fail.\n\nThis mod features both reworked wars and mechanics. As of now, only Shukshin in Novosibirsk has any unique content after 1972. All other unifiers have a generic SWRW tree, with nation-specific content in development for several nations."
+ SWRW_desc: "SWRW Updates"
+ SWRW_desc_desc: "§MUpdate 0.9.0§! - §MFoundations§!\n§MUpdate 1.0.0§! - §MDreams of Federation§!\n§MUpdate 1.1.0§! - §BUlysses of Serica§!\n§MUpdate 1.2.0§! - §BCodetalker§!\n§MUpdate 1.2.1§! - §OSolaris§!\n§MUpdate 1.3.0§! - §OSolaris: Heartless Sea§!\n§MUpdate 1.3.1§! - §yGlobal Conflicts: World in Flames§!\n§MUpdate 1.3.2§! - §VThe§! §WBicentennial§! §zBallot§!"

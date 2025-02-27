@@ -1,0 +1,6985 @@
+# Peace Deal Pieces (	Useful for Map Painting ;)	)
+NOV_Global_Conflict_Helper = {
+	if = {
+		limit = {
+			has_global_flag = RUS_krakow_uprising
+		}
+		clr_global_flag = RUS_krakow_uprising
+		RUS = { SWRW_fopo_remove_PLU_tab = yes }
+		GER = { SWRW_fopo_remove_PLU_tab = yes }
+	}
+	if = {
+		limit = {
+			has_global_flag = TUR_mountain_war
+		}
+		clr_global_flag = TUR_mountain_war
+		RUS = { SWRW_fopo_remove_WG_tab = yes }
+		GER = { SWRW_fopo_remove_WG_tab = yes }
+	}
+	if = {
+		limit = {
+			has_global_flag = RUS_MONGOLIAN_REBELLION
+		}
+		clr_global_flag = RUS_MONGOLIAN_REBELLION
+		RUS = { SWRW_fopo_remove_MU_tab = yes }
+		JAP = { SWRW_fopo_remove_MU_tab = yes }
+	}
+	if = {
+		limit = {
+			has_global_flag = CHI_West_Chinese_War_Started
+		}
+		clr_global_flag = CHI_West_Chinese_War_Started
+		RUS = { SWRW_fopo_remove_WCW_tab = yes }
+		JAP = { SWRW_fopo_remove_WCW_tab = yes }
+	}
+	NOV = { clr_country_flag = RUS_PROXY_WAR }
+}
+
+RUS_remove_wargoals = {
+	remove_wargoal = {
+		type = all
+		target = GER
+	}
+	remove_wargoal = {
+		type = all
+		target = MOS
+	}
+	remove_wargoal = {
+		type = all
+		target = MCW
+	}
+	remove_wargoal = {
+		type = all
+		target = CAU
+	}
+	remove_wargoal = {
+		type = all
+		target = UKR
+	}
+	remove_wargoal = {
+		type = all
+		target = BLR
+	}
+	remove_wargoal = {
+		type = all
+		target = OST
+	}
+	remove_wargoal = {
+		type = all
+		target = POL
+	}
+	remove_wargoal = {
+		type = all
+		target = GGN
+	}
+}
+
+RUS_peace_out = {
+	every_country = {
+		limit = { has_war_with = RUS }
+		white_peace = RUS
+	}
+}
+
+### Generic Reconstruction Governments ###
+
+RUS_generic_moskowien_occupation = {
+	custom_effect_tooltip = RUS_generic_moskowien_occupation_tt
+	hidden_effect = {
+		RUS_peace_out = yes
+		RUS_remove_wargoals = yes
+		RUS_end_SWRW_effects = yes
+		if = {
+			limit = { has_country_leader = { character = WRS_Mikhail_Tukhachevsky ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40073 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Igor_Shafarevich ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40074 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = WRS_Georgy_Zhukov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40075 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SVR_Pavel_Batov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40076 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = IRK_Sergey_Bessonov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40077 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = KOM has_government = socialist }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40078 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Mikhail_Suslov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40079 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Svetlana_Bukharina ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40080 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SBA_Security_Council ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40081 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = TYM_Lazar_Kaganovich ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40082 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SBA_Siberian_Soviet ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40083 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = IRK_Genrikh_Yagoda ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40084 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = TYM_Nikita_Khrushchev ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40085 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = BRY_Valery_Sablin ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40086 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = KOM OR = { has_government = progressivism has_government = liberalism has_government = liberal_conservatism } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40087 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Svetlana_Stalina ruling_only = yes } has_government = despotism }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40088 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = TOM }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40089 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SVR_Boris_Yeltsin ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40090 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = MAG_Nikolay_Petlin ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40091 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Lev_Gumilyov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40092 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SAM_Miletiy_Zykov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40093 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = VYT }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40094 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = CHT_Mikhail_II ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40095 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = PRM_Velimir ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40096 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KEM_Rurik_III ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40097 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KEM_Ronegda_I ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40098 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = CHT_Boris_Shepunov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40099 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SAM_Sergey_Bunyachenko ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40100 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = MAG_Mitchell_Werbell ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40101 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = MAG_Mikhail_Matkovsky ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40102 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = AMR }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40103 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Ivan_Serov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40104 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SAM_Vladimir_Artsezo ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40105 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = PRM_Gutrum_Vagner ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40106 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = NOV_Alexander_Pokryshkin ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40008 days = 2 } }
+		}
+		else = { every_country = { limit = { is_ai = no } news_event = { id = WORLD.40001 days = 2 } } }
+		RUS = { country_event = { id = swrw_misc.1 days = 1 } } #removing army size modifiers
+		GER = { country_event = { id = swrw_misc.1 days = 1 } } #removing army size modifiers
+		if = {
+			limit = {
+				has_global_flag = FINLAND_SWRW
+			}
+			RUS = {
+				transfer_state = 216
+			}
+		}
+		
+		MCW = {
+			every_core_state = {
+				remove_core_of = MCW
+			}
+		}
+		
+		if = {
+			limit = {
+				has_global_flag = german_civil_war_speervic
+			}
+			GER = {
+				country_event = { id = reich.2022 days = 30 }
+			}
+		}
+		else = {
+			GER = {
+				country_event = { id = reich.2004 days = 30 }
+			}
+		}
+
+		clr_global_flag = SECOND_WRW_HAS_BEGUN
+		clear_variable = WRW_deccat
+
+		transfer_state = 263
+		transfer_state = 260
+		transfer_state = 217
+		transfer_state = 243
+		transfer_state = 1434
+		transfer_state = 247
+		transfer_state = 246
+		transfer_state = 242
+		transfer_state = 219
+		transfer_state = 1442
+		transfer_state = 238
+		transfer_state = 401
+		transfer_state = 222
+		transfer_state = 264
+		transfer_state = 1435
+		transfer_state = 210
+		transfer_state = 1441
+		transfer_state = 1443
+		transfer_state = 1435
+		transfer_state = 1436
+		transfer_state = 245
+		transfer_state = 239
+		transfer_state = 224
+		transfer_state = 1402
+		transfer_state = 241
+		transfer_state = 2452
+		transfer_state = 209
+		transfer_state = 1421
+	}
+}
+
+RUS_generic_petrograd_occupation = {
+	custom_effect_tooltip = RUS_generic_petrograd_occupation_tt
+	hidden_effect = {
+		OKB = {
+			RUS_Idea_Removal_Helper = yes
+			transfer_state = 195
+
+			TNO_startup_nation = yes
+			
+			every_owned_state = {
+				add_core_of = OKB
+			}
+			remove_ideas = {
+				OKB_Defenders_of_the_Reich
+				OKB_The_Spectre_of_Schorner
+				OKB_Moskowien_Refugee_Crisis
+			}
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+			load_focus_tree = ZZZ_blank_focus
+		}
+		if = {
+			limit = {
+				AND = {
+					RUS = { has_country_flag = RUS_generic_democratic_unifier }
+					NOT = {
+						tag = VYT
+					}
+				}
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				195 = { set_state_name = "Petrograd" }
+				set_province_name = { id = 3151 name = "Petrograd" }
+				set_cosmetic_tag = OKB_generic_democratic
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_provisional_government_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Petersburg_Democratic_Government
+				}
+				set_popularities = {
+					paternalism = 55
+					national_socialism = 30
+					conservatism = 15
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = OKB_dem_cosmtag_paternalist_long
+					name = OKB_dem_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_dem_cosmtag_natsoc_long
+					name = OKB_dem_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = conservatism
+					long_name = OKB_dem_cosmtag_conservatism_long
+					name = OKB_dem_cosmtag_conservatism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = VYT
+					tag = CHT
+				}
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				195 = { set_state_name = "Saint Petersburg" }
+				set_province_name = { id = 3151 name = "Saint Petersburg" }
+				set_cosmetic_tag = OKB_generic_monarchist
+				set_politics = {
+					ruling_party = despotism
+				}
+				OKB_Mikhail_Evseev = {
+					promote_character = despotism
+				}
+				set_popularities = {
+					despotism = 67
+					national_socialism = 15
+					fascism = 18
+				}
+
+				set_autonomy = {
+					target = OKB
+					autonomy_state = autonomy_military_district
+				}
+				set_party_name = {
+					ideology = despotism 
+					long_name = OKB_generic_monarchy_long
+					name = OKB_generic_monarchy
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = OKB_generic_fascism_long
+					name = OKB_generic_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_generic_national_socialism_long
+					name = OKB_generic_national_socialism
+				}
+
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = despotism
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_aristocratic_conservatism_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Imperial_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Monarchist_Petrograd
+				}
+				set_popularities = {
+					despotism = 64
+					national_socialism = 17
+					paternalism = 19
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = OKB_generic_monarchist_party_paternalist_long
+					name = OKB_generic_monarchist_party_paternalist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = OKB_generic_monarchist_party_despotism_long
+					name = OKB_generic_monarchist_party_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_generic_monarchist_party_natsoc_long
+					name = OKB_generic_monarchist_party_natsoc
+				}
+			}
+		}
+		if = {
+			limit = { 				
+				AND = {
+					has_country_flag = RUS_generic_authoritarian_unifier
+					NOT = {
+						tag = VYT
+					}
+					NOT = {
+						tag = CHT
+					}
+				}
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				195 = { set_state_name = "Petrograd" }
+				set_province_name = { id = 3151 name = "Petrograd" }
+				set_cosmetic_tag = OKB_generic_auth
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Council_of_State.dds" }
+					}
+					set_character_name = RUS_Council_of_State
+				}
+				set_popularities = {
+					paternalism = 67
+					national_socialism = 15
+					communist = 18
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = OKB_auth_cosmtag_paternalist_long
+					name = OKB_auth_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = OKB_auth_cosmtag_communist_long
+					name = OKB_auth_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_auth_cosmtag_natsoc_long
+					name = OKB_auth_cosmtag_natsoc
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = RUS_generic_fascist_unifier
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				195 = { set_state_name = "Petrograd" }
+				set_province_name = { id = 3151 name = "Petrograd" }
+				set_cosmetic_tag = OKB_generic_fascism
+				set_politics = {
+					ruling_party = fascism
+				}
+				XXX = { OKB_Mikhail_Evseev = { set_nationality = OKB } }
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_corporate_statism_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_All_Russian_National_Council
+				}
+				set_popularities = {
+					fascism = 65
+					national_socialism = 30
+					communist = 5
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = OKB_fascism_cosmtag_communist_long
+					name = OKB_fascism_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = OKB_fascism_cosmtag_fascism_long
+					name = OKB_fascism_cosmtag_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_fascism_cosmtag_natsoc_long
+					name = OKB_fascism_cosmtag_natsoc
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = KOM_Ivan_Serov
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_assr
+			}
+			OKB = {
+				195 = { set_state_name = "Serograd" }
+				set_province_name = { id = 3151 name = "Serograd" }
+				set_cosmetic_tag = OKB_ordosocialist
+				set_politics = {
+					ruling_party = fascism
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_ordosocialism_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Ordosocialist_Council.dds" }
+					}
+					set_character_name = RUS_Ordosocialist_Council
+				}
+				set_popularities = {
+					fascism = 65
+					national_socialism = 30
+					communist = 5
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = OKB_serov_communist_long
+					name = OKB_serov_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = OKB_serov_fascism_long
+					name = OKB_serov_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_serov_natsoc_long
+					name = OKB_serov_natsoc
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = KOM_Lev_Gumilyov
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				195 = { set_state_name = "Petrograd" }
+				set_province_name = { id = 3151 name = "Petrograd" }
+				set_cosmetic_tag = OKB_eurasian
+				set_politics = {
+					ruling_party = despotism
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_eurasianism_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Eurasian_Council.dds" }
+					}
+					set_character_name = EUR_Eurasian_Council
+				}
+				set_popularities = {
+					despotism = 70
+					national_socialism = 30
+				}
+
+				set_party_name = {
+					ideology = despotism
+					long_name = OKB_eurasia_despotism_long
+					name = OKB_eurasia_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_eurasia_natsoc_long
+					name = OKB_eurasia_natsoc
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = PRM_Velimir
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				195 = { set_state_name = "Petrograd" }
+				set_province_name = { id = 3151 name = "Petrograd" }
+				set_cosmetic_tag = OKB_hyperborean
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_palingenetic_nazism_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Slavyanskyy_Sobor.dds" }
+					}
+					set_character_name = HYP_Slavyanskyy_Sobor
+				}
+				set_popularities = {
+					ultranationalism = 30
+					national_socialism = 70
+				}
+
+				set_party_name = {
+					ideology = ultranationalism
+					long_name = OKB_hyperborea_ultranationalism
+					name = OKB_hyperborea_ultranationalism_long
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_hyperborea_natsoc
+					name = OKB_hyperborea_natsoc_long
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = SBA
+					has_government = socialist
+				}
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				195 = { set_state_name = "Petrograd" }
+				set_province_name = { id = 3151 name = "Petrograd" }
+				set_cosmetic_tag = OKB_anarcho_socialism
+				set_politics = {
+					ruling_party = socialist
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = socialist_anarcho_communist_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Anarchist_Council.dds" }
+					}
+					set_character_name = RUS_Anarchist_Petrograd
+				}
+				set_popularities = {
+					socialist = 64
+					national_socialism = 17
+					despotism = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = OKB_socanarch_cosmtag_socialist_long
+					name = OKB_socanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = OKB_socanarch_cosmtag_despotism_long
+					name = OKB_socanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_socanarch_cosmtag_natsoc_long
+					name = OKB_socanarch_cosmtag_natsoc
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = SBA
+					has_government = despotism
+				}
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				195 = { set_state_name = "Petrograd" }
+				set_province_name = { id = 3151 name = "Petrograd" }
+				set_cosmetic_tag = OKB_anarcho_despotism
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = despotism
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_vanguard_anarchism_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Black_Army_Administration.dds" }
+					}
+					set_character_name = RUS_Black_Army_Administration_Leningrad
+				}
+				set_popularities = {
+					despotism = 64
+					national_socialism = 17
+					socialist = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = OKB_despanarch_cosmtag_socialist_long
+					name = OKB_despanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = OKB_despanarch_cosmtag_despotism_long
+					name = OKB_despanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_despanarch_cosmtag_natsoc_long
+					name = OKB_despanarch_cosmtag_natsoc
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = PRM
+					has_country_leader = { character = PRM_Gutrum_Vagner ruling_only = yes }
+				}
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				195 = { set_state_name = "Saynt Peytersberg" }
+				set_province_name = { id = 3151 name = "Saynt Peytersberg" }
+				set_cosmetic_tag = OKB_aryan
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_Aryan_Petrograd
+				}
+				set_popularities = {
+					national_socialism = 55
+					despotism = 20
+					national_socialism_1 = 25
+				}
+
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_aryan_cosmtag_natsoc_long
+					name = OKB_aryan_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = national_socialism_1
+					long_name = OKB_aryan_cosmtag_natsoc_1_long
+					name = OKB_aryan_cosmtag_natsoc_1
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = OKB_aryan_cosmtag_despotism_long
+					name = OKB_aryan_cosmtag_despotism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = {
+			limit = {
+				tag = KEM
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				set_cosmetic_tag = OKB_kemerovo
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Crown_Council.dds" }
+					}
+					set_character_name = RUS_Zemsky_Sobor
+				}
+				set_popularities = {
+					paternalism = 55
+					national_socialism = 25
+					liberal_conservatism = 20
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_kemerovo_party_natsoc_long
+					name = OKB_kemerovo_party_natsoc
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = OKB_kemerovo_party_paternalism_long
+					name = OKB_kemerovo_party_paternalism
+				}
+				set_party_name = {
+					ideology = liberal_conservatism
+					long_name = OKB_kemerovo_party_liberal_conservatism_long
+					name = OKB_kemerovo_party_liberal_conservatism
+				}
+				195 = { set_state_name = "Rurik" }
+				set_province_name = { id = 3151 name = "Rurik" }
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = { #werbelllllllll
+			limit = {
+				has_country_leader = {
+					character = MAG_Mitchell_Werbell
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = OKB
+				autonomy_state = autonomy_military_district
+			}
+			OKB = {
+				195 = { set_state_name = "Petrograd" }
+				set_province_name = { id = 3151 name = "Petrograd" }
+				set_cosmetic_tag = OKB_werbell
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					OKB_Mikhail_Evseev = { set_nationality = OKB }
+				}
+				add_country_leader_role = {
+					character = OKB_Mikhail_Evseev
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_anocracy_subtype
+						id = -1
+					}
+				}
+				OKB_Mikhail_Evseev = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_United_States_of_Somewhere.dds" }
+					}
+					set_character_name = RUS_St_Petesburg_Command
+				}
+				set_popularities = {
+					paternalism = 60
+					despotism = 10
+					national_socialism = 30
+				}
+
+				set_party_name = {
+					ideology = paternalism
+					long_name = OKB_werbell_cosmtag_paternalism
+					name = OKB_werbell_cosmtag_paternalism_long
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = OKB_werbell_cosmtag_despotism
+					name = OKB_werbell_cosmtag_despotism_long
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = OKB_werbell_cosmtag_natsoc
+					name = OKB_werbell_cosmtag_natsoc_long
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+	}
+}
+
+
+RUS_generic_baltic_occupation = {
+	custom_effect_tooltip = RUS_generic_baltic_occupation_tt
+	hidden_effect = {
+		OST = {
+			every_core_state = {
+				add_core_of = UPO
+				remove_core_of = OST
+			}
+		}
+		XXX = { OST_Nikolay_Skomorokhov = { set_nationality = UPO } }
+		UPO = {
+
+			transfer_state = 13
+			transfer_state = 1440
+			transfer_state = 191
+			transfer_state = 1395
+			transfer_state = 1396
+			transfer_state = 12
+			transfer_state = 943
+			transfer_state = 1397
+			transfer_state = 190
+			transfer_state = 1399
+			transfer_state = 1400
+			transfer_state = 11
+			transfer_state = 1401
+			transfer_state = 189
+			transfer_state = 1398
+			transfer_state = 96
+			
+			transfer_state = 2451
+			transfer_state = 79
+			transfer_state = 2450
+			transfer_state = 1400
+			
+			add_state_core = 2451
+			add_state_core = 79
+			add_state_core = 2450
+			add_state_core = 1400
+			
+			TNO_startup_nation = yes
+			set_capital = { state = 1397 remember_old_capital = no }
+			RUS_Idea_Removal_Helper = yes
+			
+			set_country_flag = OST_LIBERATED
+			load_focus_tree = ZZZ_blank_focus
+			
+
+			remove_state_core = 1403
+			remove_state_core = 1404
+			remove_state_core = 1405
+			remove_state_core = 1406
+			remove_state_core = 1407
+			remove_state_core = 95
+			remove_state_core = 194
+			remove_state_core = 204
+			remove_state_core = 206
+			remove_state_core = 207
+			
+			remove_state_core = 2451
+			remove_state_core = 79
+			remove_state_core = 2450
+			remove_state_core = 1400
+			
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+			
+		}
+		if = {
+			limit = { # commie ocupation
+				RUS = { has_country_flag = RUS_generic_communist_unifier }
+				NOT = {
+					has_country_leader = {
+						character = KOM_Ivan_Serov
+						ruling_only = yes
+					}
+				}
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_assr
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_generic_commie
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				# set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Worker_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				# econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = communist
+				}
+				set_cosmetic_tag = UPO_generic_commie
+				set_politics = {
+					ruling_party = communist
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = communist_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_USSR_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Congress_Of_Soviets_Baltic
+				}
+				set_popularities = {
+					communist = 18
+					communist_1 = 18
+					communist_2 = 18
+					national_socialism = 24
+					despotism = 22
+				}
+				set_party_name = {
+					ideology = communist 
+					long_name = UPO_communist_cosmtag_communist_long
+					name = UPO_communist_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = communist_1
+					long_name = UPO_communist_cosmtag_communist_1_long
+					name = UPO_communist_cosmtag_communist_1
+				}
+				set_party_name = {
+					ideology = communist_2
+					long_name = UPO_communist_cosmtag_communist_2_long
+					name = UPO_communist_cosmtag_communist_2
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = RUS_communist_cosmtag_despotism_long
+					name = RUS_communist_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = RUS_communist_cosmtag_natsoc_long
+					name = RUS_communist_cosmtag_natsoc
+				}
+			}
+		}
+		if = {
+			limit = { 
+				AND = {
+					RUS = { has_country_flag = RUS_generic_democratic_unifier }
+					NOT = {
+						tag = VYT
+					}
+				}
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_generic_democratic
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					OST_Nikolay_Skomorokhov = { set_nationality = UPO }
+				}
+				promote_character = OST_Nikolay_Skomorokhov
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Baltic_Democratic_Government
+				}
+				set_popularities = {
+					paternalism = 60
+					national_socialism = 20
+					conservatism = 20
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = UPO_dem_cosmtag_paternalist_long
+					name = UPO_dem_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_dem_cosmtag_natsoc_long
+					name = UPO_dem_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = conservatism
+					long_name = UPO_dem_cosmtag_conservatism_long
+					name = UPO_dem_cosmtag_conservatism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = VYT
+					tag = CHT
+				}
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_generic_monarchist
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = despotism
+				}
+				XXX = {
+					OST_Nikolay_Skomorokhov = { set_nationality = UPO }
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_aristocratic_conservatism_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Imperial_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Monarchist_Baltic
+				}
+				set_popularities = {
+					despotism = 54
+					national_socialism = 17
+					paternalism = 19
+					conservatism = 10
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = UPO_generic_monarchist_party_paternalist_long
+					name = UPO_generic_monarchist_party_paternalist
+				}
+				set_party_name = {
+					ideology = conservatism
+					long_name = UPO_generic_monarchist_party_conservatism_long
+					name = UPO_generic_monarchist_party_conservatism
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = UPO_generic_monarchist_party_despotism_long
+					name = UPO_generic_monarchist_party_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_generic_monarchist_party_natsoc_long
+					name = UPO_generic_monarchist_party_natsoc
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					has_country_flag = RUS_generic_authoritarian_unifier
+					NOT = {
+						tag = VYT
+					}
+					NOT = {
+						tag = CHT
+					}
+				}
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_generic_auth
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = paternalism
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Council_of_State.dds" }
+					}
+					set_character_name = RUS_Council_of_State
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = UPO_auth_cosmtag_paternalist_long
+					name = UPO_auth_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = UPO_auth_cosmtag_communist_long
+					name = UPO_auth_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_auth_cosmtag_natsoc_long
+					name = UPO_auth_cosmtag_natsoc
+				}
+				set_popularities = {
+					paternalism = 54
+					national_socialism = 24
+					communist = 22
+				}
+			}
+			
+		}
+		if = {
+			limit = { 
+				has_country_flag = RUS_generic_fascist_unifier
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_generic_fascism
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = fascism
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_corporate_statism_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_All_Russian_National_Council
+				}
+				set_popularities = {
+					fascism = 65
+					national_socialism = 30
+					communist = 5
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = UPO_fascism_cosmtag_communist_long
+					name = UPO_fascism_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = UPO_fascism_cosmtag_fascism_long
+					name = UPO_fascism_cosmtag_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_fascism_cosmtag_natsoc_long
+					name = UPO_fascism_cosmtag_natsoc
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = KOM_Ivan_Serov
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_assr
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_ordosocialist
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = fascism
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_ordosocialism_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Ordosocialist_Council.dds" }
+					}
+					set_character_name = RUS_Ordosocialist_Council
+				}
+			
+				set_popularities = {
+					fascism = 65
+					national_socialism = 30
+					communist = 5
+				}
+
+				set_party_name = {
+					ideology = communist
+					long_name = UPO_serov_communist_long
+					name = UPO_serov_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = UPO_serov_fascism_long
+					name = UPO_serov_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_serov_natsoc_long
+					name = UPO_serov_natsoc
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = KOM_Lev_Gumilyov
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_eurasian
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = despotism
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_eurasianism_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Eurasian_Council.dds" }
+					}
+					set_character_name = EUR_Eurasian_Council
+				}
+				set_popularities = {
+					despotism = 70
+					national_socialism = 30
+				}
+
+				set_party_name = {
+					ideology = despotism
+					long_name = UPO_eurasia_despotism_long
+					name = UPO_eurasia_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_eurasia_natsoc_long
+					name = UPO_eurasia_natsoc
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = PRM_Velimir
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_hyperborean
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_palingenetic_nazism_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Slavyanskyy_Sobor.dds" }
+					}
+					set_character_name = HYP_Slavyanskyy_Sobor
+				}
+			
+				set_popularities = {
+					ultranationalism = 30
+					national_socialism = 70
+				}
+
+				set_party_name = {
+					ideology = ultranationalism
+					long_name = UPO_hyperborea_ultranationalism_long
+					name = UPO_hyperborea_ultranationalism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_hyperborea_natsoc_long
+					name = UPO_hyperborea_natsoc
+				}
+			}
+		}
+		if = {
+			limit = { 
+				AND = {
+					tag = SBA
+					has_government = socialist
+				}
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_anarcho_socialism
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = socialist
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = socialist_anarcho_communist_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Anarchist_Council.dds" }
+					}
+					set_character_name = RUS_Anarchist_Baltic
+				}
+				set_popularities = {
+					socialist = 64
+					national_socialism = 17
+					despotism = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = UPO_socanarch_cosmtag_socialist_long
+					name = UPO_socanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = UPO_socanarch_cosmtag_despotism_long
+					name = UPO_socanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_socanarch_cosmtag_natsoc_long
+					name = UPO_socanarch_cosmtag_natsoc
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = SBA
+					has_government = despotism
+				}
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_anarcho_despotism
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = despotism
+				}
+				XXX = {
+					OST_Nikolay_Skomorokhov = { set_nationality = UPO }
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_vanguard_anarchism_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Black_Army_Administration.dds" }
+					}
+					set_character_name = RUS_Black_Army_Administration_Baltic
+				}
+				set_popularities = {
+					despotism = 64
+					national_socialism = 17
+					socialist = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = UPO_despanarch_cosmtag_socialist_long
+					name = UPO_despanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = UPO_despanarch_cosmtag_despotism_long
+					name = UPO_despanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_despanarch_cosmtag_natsoc_long
+					name = UPO_despanarch_cosmtag_natsoc
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = PRM
+					has_country_leader = { character = PRM_Gutrum_Vagner ruling_only = yes }
+				}
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_aryan
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_Aryan_Baltic
+				}
+				set_popularities = {
+					national_socialism = 60
+					despotism = 20
+					national_socialism_1 = 20
+				}
+
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_aryan_cosmtag_natsoc_long
+					name = UPO_aryan_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = national_socialism_1
+					long_name = UPO_aryan_cosmtag_natsoc_1_long
+					name = UPO_aryan_cosmtag_natsoc_1
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = UPO_aryan_cosmtag_despotism_long
+					name = UPO_aryan_cosmtag_despotism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = {
+			limit = {
+				tag = KEM
+			}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_kemerovo
+				set_politics = {
+					ruling_party = paternalism
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Crown_Council.dds" }
+					}
+					set_character_name = RUS_Zemsky_Sobor
+				}
+				set_popularities = {
+					paternalism = 55
+					national_socialism = 25
+					liberal_conservatism = 20
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_kemerovo_party_natsoc_long
+					name = UPO_kemerovo_party_natsoc
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = UPO_kemerovo_party_paternalism_long
+					name = UPO_kemerovo_party_paternalism
+				}
+				set_party_name = {
+					ideology = liberal_conservatism
+					long_name = UPO_kemerovo_party_liberal_conservatism_long
+					name = UPO_kemerovo_party_liberal_conservatism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = { #werbelllllllll
+			limit = {
+					has_country_leader = {
+						character = MAG_Mitchell_Werbell
+						ruling_only = yes
+					}
+				}
+			set_autonomy = {
+				target = UPO
+				autonomy_state = autonomy_military_district
+			}
+			UPO = {
+				set_cosmetic_tag = UPO_werbell
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					OST_Nikolay_Skomorokhov = { set_nationality = UPO }
+				}
+				add_country_leader_role = {
+					character = OST_Nikolay_Skomorokhov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_anocracy_subtype
+						id = -1
+					}
+				}
+				OST_Nikolay_Skomorokhov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_United_States_of_Somewhere.dds" }
+					}
+					set_character_name = RUS_Baltic_Command
+				}
+				set_popularities = {
+					paternalism = 53
+					national_socialism = 7
+					despotism = 10
+					liberalism = 10
+					conservatism = 10
+					liberal_conservatism = 10
+				}
+
+				set_party_name = {
+					ideology = paternalism
+					long_name = UPO_werbell_cosmtag_paternalism
+					name = UPO_werbell_cosmtag_paternalism_long
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = UPO_werbell_cosmtag_despotism
+					name = UPO_werbell_cosmtag_despotism_long
+				}
+				set_party_name = {
+					ideology = liberalism
+					long_name = UPO_werbell_cosmtag_liberalism
+					name = UPO_werbell_cosmtag_liberalism_long
+				}
+				set_party_name = {
+					ideology = conservatism
+					long_name = UPO_werbell_cosmtag_conservatism
+					name = UPO_werbell_cosmtag_conservatism_long
+				}
+				set_party_name = {
+					ideology = liberal_conservatism
+					long_name = UPO_werbell_cosmtag_liberal_conservatism
+					name = UPO_werbell_cosmtag_liberal_conservatism_long
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UPO_werbell_cosmtag_natsoc
+					name = UPO_werbell_cosmtag_natsoc_long
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		GER_begin_pakt_collapse = yes
+	}
+}
+
+RUS_generic_caucasian_occupation = {
+	custom_effect_tooltip = RUS_generic_caucasian_occupation_tt
+	hidden_effect = {
+		CAU = {
+			every_core_state = {
+				remove_core_of = CAU
+				add_core_of = ADY
+				transfer_state_to = ADY
+			}
+		}
+		
+		ADY = {
+			TNO_startup_nation = yes
+			inherit_technology = CAU
+			set_capital = { state = 231 remember_old_capital = no }
+			RUS_Idea_Removal_Helper = yes
+			
+			set_country_flag = CAU_LIBERATED
+			load_focus_tree = ZZZ_blank_focus
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+		}
+		XXX = { CAU_Caucasian_Council = { set_nationality = ADY } }
+		if = {
+			limit = { 
+				RUS = { has_country_flag = RUS_generic_communist_unifier }
+				NOT = {
+					has_country_leader = {
+						character = KOM_Ivan_Serov
+						ruling_only = yes
+					}
+				}
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_assr
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_generic_commie
+				set_politics = {
+					ruling_party = communist
+				}
+				set_popularities = {
+					communist = 34
+					communist_1 = 13
+					communist_2 = 8
+					despotism = 12
+					national_socialism = 33
+				}
+				set_politics = {
+					ruling_party = communist
+				}
+				CAU_Caucasian_Council = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							expire = "1999.1.1"
+							ideology = communist_subtype
+							id = -1
+						}
+					}
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_USSR_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Congress_Of_Soviets_Caucasus
+				}
+				SOV_get_set_party_name = yes
+				set_party_name = {
+					ideology = communist_1
+					long_name = CAU_communist_cosmtag_communist_1_long
+					name = CAU_communist_cosmtag_communist_1
+				}
+				set_party_name = {
+					ideology = communist_2
+					long_name = CAU_communist_cosmtag_communist_2_long
+					name = CAU_communist_cosmtag_communist_2
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = RUS_communist_cosmtag_despotism_long
+					name = RUS_communist_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = RUS_communist_cosmtag_natsoc_long
+					name = RUS_communist_cosmtag_natsoc
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				# set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Worker_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				# econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				AND = {
+					RUS = { has_country_flag = RUS_generic_democratic_unifier }
+					NOT = {
+						tag = VYT
+					}
+				}
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_generic_democratic
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					CAU_Mikhail_Baganov = { set_nationality = ADY }
+				}
+				promote_character = CAU_Mikhail_Baganov
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Caucasus_Democratic_Government
+				}
+				set_popularities = {
+					paternalism = 60
+					national_socialism = 25
+					conservatism = 15
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = CAU_dem_cosmtag_paternalist_long
+					name = CAU_dem_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_dem_cosmtag_natsoc_long
+					name = CAU_dem_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = conservatism
+					long_name = CAU_dem_cosmtag_conservatism_long
+					name = CAU_dem_cosmtag_conservatism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = VYT
+					tag = CHT
+				}
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_generic_monarchist
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = despotism
+				}
+				XXX = {
+					CAU_Mikhail_Baganov = { set_nationality = ADY }
+				}
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_aristocratic_conservatism_subtype
+						id = -1
+					}
+				}
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Imperial_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Monarchist_Caucasus
+				}
+				set_popularities = {
+					despotism = 54
+					national_socialism = 17
+					paternalism = 19
+					conservatism = 10
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = CAU_generic_monarchist_party_paternalist_long
+					name = CAU_generic_monarchist_party_paternalist
+				}
+				set_party_name = {
+					ideology = conservatism
+					long_name = CAU_generic_monarchist_party_conservatism_long
+					name = CAU_generic_monarchist_party_conservatism
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = CAU_generic_monarchist_party_despotism_long
+					name = CAU_generic_monarchist_party_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_generic_monarchist_party_natsoc_long
+					name = CAU_generic_monarchist_party_natsoc
+				}
+			}
+		}
+		if = {
+			limit = { 	
+				AND = {
+					has_country_flag = RUS_generic_authoritarian_unifier
+					NOT = {
+						tag = VYT
+					}
+					NOT = {
+						tag = CHT
+					}
+				}
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_generic_auth
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = { CAU_Mikhail_Baganov = { set_nationality = ADY } }
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Council_of_State.dds" }
+					}
+					set_character_name = RUS_Council_of_State
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = CAU_auth_cosmtag_paternalist_long
+					name = CAU_auth_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = CAU_auth_cosmtag_communist_long
+					name = CAU_auth_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_auth_cosmtag_natsoc_long
+					name = CAU_auth_cosmtag_natsoc
+				}
+				set_popularities = {
+					paternalism = 52
+					communist = 15
+					national_socialism = 33
+				}
+			
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 	
+				has_country_flag = RUS_generic_fascist_unifier
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_generic_fascism
+				set_politics = {
+					ruling_party = fascism
+				}
+				XXX = { CAU_Mikhail_Baganov = { set_nationality = ADY } }
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_corporate_statism_subtype
+						id = -1
+					}
+				}
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_All_Russian_National_Council
+				}
+				set_popularities = {
+					fascism = 65
+					national_socialism = 30
+					communist = 5
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = CAU_fascism_cosmtag_communist_long
+					name = CAU_fascism_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = CAU_fascism_cosmtag_fascism_long
+					name = CAU_fascism_cosmtag_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_fascism_cosmtag_natsoc_long
+					name = CAU_fascism_cosmtag_natsoc
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = KOM_Ivan_Serov
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_assr
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_ordosocialist
+				set_politics = {
+					ruling_party = fascism
+				}
+			
+				XXX = {
+					CAU_Mikhail_Baganov = { set_nationality = ADY }
+				}
+
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_ordosocialism_subtype
+						id = -1
+					}
+				}
+
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Ordosocialist_Council.dds" }
+					}
+					set_character_name = RUS_Ordosocialist_Council
+				}
+			
+				set_popularities = {
+					fascism = 65
+					national_socialism = 30
+					communist = 5
+				}
+
+				set_party_name = {
+					ideology = communist
+					long_name = CAU_serov_communist_long
+					name = CAU_serov_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = CAU_serov_fascism_long
+					name = CAU_serov_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_serov_natsoc_long
+					name = CAU_serov_natsoc
+				}
+			
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = KOM_Lev_Gumilyov
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_eurasian
+				set_politics = {
+					ruling_party = despotism
+				}
+			
+				XXX = {
+					CAU_Mikhail_Baganov= { set_nationality = ADY }
+				}
+
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_eurasianism_subtype
+						id = -1
+					}
+				}
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Eurasian_Council.dds" }
+					}
+					set_character_name = EUR_Eurasian_Council
+				}
+				set_popularities = {
+					despotism = 70
+					national_socialism = 30
+				}
+
+				set_party_name = {
+					ideology = despotism
+					long_name = CAU_eurasia_despotism_long
+					name = CAU_eurasia_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_eurasia_natsoc_long
+					name = CAU_eurasia_natsoc
+				}
+			
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = PRM_Velimir
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_hyperborean
+				set_politics = {
+					ruling_party = national_socialism
+				}
+			
+				XXX = {
+					CAU_Mikhail_Baganov = { set_nationality = ADY }
+				}
+
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_palingenetic_nazism_subtype
+						id = -1
+					}
+				}
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Slavyanskyy_Sobor.dds" }
+					}
+					set_character_name = HYP_Slavyanskyy_Sobor
+				}
+			
+				set_popularities = {
+					ultranationalism = 30
+					national_socialism = 70
+				}
+
+				set_party_name = {
+					ideology = ultranationalism
+					long_name = CAU_hyperborea_ultranationalism_long
+					name = CAU_hyperborea_ultranationalism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_hyperborea_natsoc_long
+					name = CAU_hyperborea_natsoc
+				}
+			
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = SBA
+					has_government = socialist
+				}
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_anarcho_socialism
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = socialist
+				}
+				XXX = {
+					CAU_Mikhail_Baganov = { set_nationality = ADY }
+				}
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = socialist_anarcho_communist_subtype
+						id = -1
+					}
+				}
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Anarchist_Council.dds" }
+					}
+					set_character_name = RUS_Anarchist_Caucasus
+				}
+				set_popularities = {
+					socialist = 64
+					national_socialism = 17
+					despotism = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = CAU_socanarch_cosmtag_socialist_long
+					name = CAU_socanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = CAU_socanarch_cosmtag_despotism_long
+					name = CAU_socanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_socanarch_cosmtag_natsoc_long
+					name = CAU_socanarch_cosmtag_natsoc
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = SBA
+					has_government = despotism
+				}
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_anarcho_despotism
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = despotism
+				}
+				XXX = {
+					CAU_Mikhail_Baganov = { set_nationality = ADY }
+				}
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_vanguard_anarchism_subtype
+						id = -1
+					}
+				}
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Black_Army_Administration.dds" }
+					}
+					set_character_name = RUS_Black_Army_Administration_Caucasus
+				}
+				set_popularities = {
+					despotism = 64
+					national_socialism = 17
+					socialist = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = CAU_despanarch_cosmtag_socialist_long
+					name = CAU_despanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = CAU_despanarch_cosmtag_despotism_long
+					name = CAU_despanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_despanarch_cosmtag_natsoc_long
+					name = CAU_despanarch_cosmtag_natsoc
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = PRM
+					has_country_leader = { character = PRM_Gutrum_Vagner ruling_only = yes }
+				}
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_aryan
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				XXX = {
+					CAU_Mikhail_Baganov = { set_nationality = ADY }
+				}
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_subtype
+						id = -1
+					}
+				}
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_Aryan_Caucasus
+				}
+				set_popularities = {
+					national_socialism = 65
+					despotism = 20
+					national_socialism_1 = 15
+				}
+
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_aryan_cosmtag_natsoc_long
+					name = CAU_aryan_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = national_socialism_1
+					long_name = CAU_aryan_cosmtag_natsoc_1_long
+					name = CAU_aryan_cosmtag_natsoc_1
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = CAU_aryan_cosmtag_despotism_long
+					name = CAU_aryan_cosmtag_despotism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = {
+			limit = {
+				tag = KEM
+			}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_kemerovo
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					CAU_Mikhail_Baganov = { set_nationality = ADY }
+				}
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Crown_Council.dds" }
+					}
+					set_character_name = RUS_Zemsky_Sobor
+				}
+				set_popularities = {
+					paternalism = 55
+					national_socialism = 25
+					liberal_conservatism = 20
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_kemerovo_party_natsoc_long
+					name = CAU_kemerovo_party_natsoc
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = CAU_kemerovo_party_paternalism_long
+					name = CAU_kemerovo_party_paternalism
+				}
+				set_party_name = {
+					ideology = liberal_conservatism
+					long_name = CAU_kemerovo_party_liberal_conservatism_long
+					name = CAU_kemerovo_party_liberal_conservatism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}		
+		if = { #werbelllllllll
+			limit = {
+				has_country_leader = {
+					character = MAG_Mitchell_Werbell
+					ruling_only = yes
+					}
+				}
+			set_autonomy = {
+				target = ADY
+				autonomy_state = autonomy_military_district
+			}
+			ADY = {
+				set_cosmetic_tag = CAU_werbell
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					CAU_Mikhail_Baganov = { set_nationality = ADY }
+				}
+				add_country_leader_role = {
+					character = CAU_Mikhail_Baganov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_anocracy_subtype
+						id = -1
+					}
+				}
+				CAU_Mikhail_Baganov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_United_States_of_Somewhere.dds" }
+					}
+					set_character_name = RUS_Caucasian_Command
+				}
+				set_popularities = {
+					paternalism = 55
+					national_socialism = 10
+					despotism = 10
+					communist = 25
+				}
+
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CAU_werbell_cosmtag_natsoc
+					name = CAU_werbell_cosmtag_natsoc_long
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = CAU_werbell_cosmtag_paternalism
+					name = CAU_werbell_cosmtag_paternalism_long
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = CAU_werbell_cosmtag_despotism
+					name = CAU_werbell_cosmtag_despotism_long
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = CAU_werbell_cosmtag_communist
+					name = CAU_werbell_cosmtag_communist_long
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+	}
+}
+
+RUS_generic_ukraine_occupation = {
+	custom_effect_tooltip = RUS_generic_ukraine_occupation_tt
+	hidden_effect = {
+		XXX = {
+			UKR_Dmitry_Glinka = { set_nationality = FUK }
+			CRI_Matvei_Batrakov = { set_nationality = UKS }
+		}
+		BOV = {
+			every_core_state = {
+				remove_core_of = PREV
+			}
+		}
+		UKS = {
+			every_core_state = {
+				remove_core_of = PREV
+			}
+		}
+
+		UKS = {
+			add_state_core = 228
+			add_state_core = 227
+			add_state_core = 221
+			add_state_core = 1426
+			add_state_core = 226
+			add_state_core = 259
+			add_state_core = 225
+			add_state_core = 197
+			add_state_core = 1427
+			add_state_core = 202
+			add_state_core = 1428
+			add_state_core = 201
+			add_state_core = 1430
+			add_state_core = 773
+			add_state_core = 199
+			add_state_core = 93
+			add_state_core = 200
+			add_state_core = 1429
+			add_state_core = 1431
+
+			transfer_state = 228
+			transfer_state = 227
+			transfer_state = 221
+			transfer_state = 1426
+			transfer_state = 226
+			transfer_state = 259
+			transfer_state = 225
+			transfer_state = 197
+			transfer_state = 1427
+			transfer_state = 202
+			transfer_state = 1428
+			transfer_state = 201
+			transfer_state = 1430
+			transfer_state = 773
+			transfer_state = 199
+			transfer_state = 93
+			transfer_state = 200
+			transfer_state = 1429
+			transfer_state = 1431
+
+			TNO_startup_nation = yes
+
+			set_capital = { state = 1428 remember_old_capital = no }
+			RUS_Idea_Removal_Helper = yes
+			remove_all_ministers = yes
+			fill_empty_minister = yes
+
+			UKR = {
+				remove_state_core = 218
+				remove_state_core = 228
+				remove_state_core = 227
+				remove_state_core = 221
+				remove_state_core = 1426
+				remove_state_core = 226
+				remove_state_core = 259
+				remove_state_core = 225
+				remove_state_core = 197
+				remove_state_core = 1427
+				remove_state_core = 202
+				remove_state_core = 1428
+				remove_state_core = 201
+				remove_state_core = 1430
+				remove_state_core = 773
+				remove_state_core = 199
+				remove_state_core = 93
+				remove_state_core = 200
+				remove_state_core = 1429
+				remove_state_core = 1431
+			}
+
+		
+		
+			load_focus_tree = ZZZ_blank_focus
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+		}
+		if = {
+			limit = {
+				TNS = { has_government = national_socialism }
+			}
+			every_state = {
+				limit = {
+					is_owned_by = TNS
+				}
+				TNS = { remove_state_core = PREV }
+			}
+			UKS = {
+				add_state_core = 192
+				add_state_core = 198
+				add_state_core = 1282
+				add_state_core = 1965
+				add_state_core = 1966
+				transfer_state = 192
+				transfer_state = 198
+				transfer_state = 1282
+				transfer_state = 1965
+				transfer_state = 1966
+			}
+		}
+		FUK = {
+			add_state_core = 137
+			add_state_core = 196
+			add_state_core = 1532
+
+			transfer_state = 137
+			transfer_state = 196
+			transfer_state = 1532
+
+			TNO_startup_nation = yes
+
+			set_capital = { state = 1532 remember_old_capital = no }
+			RUS_Idea_Removal_Helper = yes
+			remove_all_ministers = yes
+			fill_empty_minister = yes
+
+			CRI = {
+				remove_state_core = 137
+				remove_state_core = 196
+				remove_state_core = 1532
+			}
+			
+			GER = {
+				remove_state_core = 137
+				remove_state_core = 196
+				remove_state_core = 1532
+
+				add_state_claim = 137
+				add_state_claim = 196
+				add_state_claim = 1532
+			}
+		
+			load_focus_tree = ZZZ_blank_focus
+		
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+		}
+		if = {
+			limit = { 
+		
+				AND = {
+					RUS = { has_country_flag = RUS_generic_communist_unifier }
+					NOT = {
+						has_country_leader = {
+							character = KOM_Ivan_Serov
+							ruling_only = yes
+						}
+					}
+				}
+				
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_assr
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_assr
+			}
+			FUK = {
+				set_cosmetic_tag = CRI_generic_commie
+				set_politics = {
+					ruling_party = communist
+				}
+				set_popularities = {
+					communist = 43
+					despotism = 10
+					national_socialism = 34
+					fascism = 13
+				}
+				set_politics = {
+					ruling_party = communist
+				}
+				UKR_Dmitry_Glinka = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							expire = "1999.1.1"
+							ideology = communist_subtype
+							id = -1
+						}
+					}
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_USSR_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Congress_Of_Soviets_Crimea
+				}
+				SOV_get_set_party_name = yes
+				set_party_name = {
+					ideology = communist_1
+					long_name = UKS_communist_party_long
+					name = UKS_communist_party
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = RUS_communist_cosmtag_despotism_long
+					name = RUS_communist_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = RUS_communist_cosmtag_natsoc_long
+					name = RUS_communist_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = RUS_communist_cosmtag_fascism_long
+					name = RUS_communist_cosmtag_fascism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				# set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Worker_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				# econ_join_sphere_RUS = yes
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_generic_commie
+				set_politics = {
+					ruling_party = communist
+				}
+				set_popularities = {
+					communist = 43
+					despotism = 10
+					national_socialism = 34
+					fascism = 13
+				}
+				set_politics = {
+					ruling_party = communist
+				}
+				CRI_Matvei_Batrakov = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							expire = "1999.1.1"
+							ideology = communist_subtype
+							id = -1
+						}
+					}
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_USSR_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Congress_Of_Soviets_Ukraine
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = RUS_communist_cosmtag_despotism_long
+					name = RUS_communist_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = RUS_communist_cosmtag_natsoc_long
+					name = RUS_communist_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = RUS_communist_cosmtag_fascism_long
+					name = RUS_communist_cosmtag_fascism
+				}
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				# set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Worker_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				# econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				AND = {
+					RUS = { has_country_flag = RUS_generic_democratic_unifier }
+					NOT = {
+						tag = VYT
+					}
+				}
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_generic_democratic
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					CRI_Matvei_Batrakov = { set_nationality = UKS }
+				}
+				promote_character = CRI_Matvei_Batrakov
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Ukraine_Democratic_Government
+				}
+				set_popularities = {
+					paternalism = 60
+					national_socialism = 20
+					conservatism = 20
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = UKR_dem_cosmtag_paternalist_long
+					name = UKR_dem_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_dem_cosmtag_natsoc_long
+					name = UKR_dem_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = conservatism
+					long_name = UKR_dem_cosmtag_conservatism_long
+					name = UKR_dem_cosmtag_conservatism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			FUK = {
+				set_cosmetic_tag = CRI_generic_democratic
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					UKR_Dmitry_Glinka = { set_nationality = FUK }
+				}
+				promote_character = UKR_Dmitry_Glinka
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Crimea_Democratic_Government
+				}
+				set_popularities = {
+					paternalism = 55
+					national_socialism = 30
+					conservatism = 15
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = CRI_dem_cosmtag_paternalist_long
+					name = CRI_dem_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_dem_cosmtag_natsoc_long
+					name = CRI_dem_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = conservatism
+					long_name = CRI_dem_cosmtag_conservatism_long
+					name = CRI_dem_cosmtag_conservatism
+				}
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+					OR = {
+						tag = VYT
+						tag = CHT
+					}
+				}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_generic_monarchist
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 47
+					national_socialism = 21
+					paternalism = 20
+					conservatism = 12
+				}
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_aristocratic_conservatism_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Imperial_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Monarchist_Ukraine
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = UKR_generic_monarchist_party_paternalist_long
+					name = UKR_generic_monarchist_party_paternalist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = UKR_generic_monarchist_party_despotism_long
+					name = UKR_generic_monarchist_party_despotism
+				}
+				set_party_name = {
+					ideology = conservatism
+					long_name = UKR_generic_monarchist_party_conservatism_long
+					name = UKR_generic_monarchist_party_conservatism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_generic_monarchist_party_natsoc_long
+					name = UKR_generic_monarchist_party_natsoc
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			FUK = {
+				set_cosmetic_tag = CRI_generic_monarchist
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 59
+					national_socialism = 21
+					paternalism = 20
+				}
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_aristocratic_conservatism_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Imperial_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Monarchist_Crimea
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = CRI_generic_monarchist_party_paternalist_long
+					name = CRI_generic_monarchist_party_paternalist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = CRI_generic_monarchist_party_despotism_long
+					name = CRI_generic_monarchist_party_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_generic_monarchist_party_natsoc_long
+					name = CRI_generic_monarchist_party_natsoc
+				}
+			
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					has_country_flag = RUS_generic_authoritarian_unifier
+					NOT = {
+						tag = VYT
+					}
+					NOT = {
+						tag = CHT
+					}
+				}
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_generic_auth
+				set_politics = {
+					ruling_party = paternalism
+				}
+				set_popularities = {
+					paternalism = 59
+					national_socialism = 21
+					communist = 20
+				}
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Council_of_State.dds" }
+					}
+					set_character_name = RUS_Council_of_State
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = UKR_auth_cosmtag_paternalist_long
+					name = UKR_auth_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = UKR_auth_cosmtag_communist_long
+					name = UKR_auth_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_auth_cosmtag_natsoc_long
+					name = UKR_auth_cosmtag_natsoc
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			FUK = {
+				set_cosmetic_tag = CRI_generic_auth
+				set_politics = {
+					ruling_party = paternalism
+				}
+				set_popularities = {
+					paternalism = 59
+					national_socialism = 21
+					communist = 20
+				}
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Council_of_State.dds" }
+					}
+					set_character_name = RUS_Council_of_State
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = UKR_auth_cosmtag_paternalist_long
+					name = UKR_auth_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = UKR_auth_cosmtag_communist_long
+					name = UKR_auth_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_auth_cosmtag_natsoc_long
+					name = UKR_auth_cosmtag_natsoc
+				}
+			
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = RUS_generic_fascist_unifier
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_generic_fascism
+				set_politics = {
+					ruling_party = fascism
+				}
+				XXX = { CRI_Matvei_Batrakov = { set_nationality = UKS } }
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_corporate_statism_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_All_Russian_National_Council
+				}
+				set_popularities = {
+					fascism = 58
+					national_socialism = 19
+					communist = 23
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = UKR_fascism_cosmtag_communist_long
+					name = UKR_fascism_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = UKR_fascism_cosmtag_fascism_long
+					name = UKR_fascism_cosmtag_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_fascism_cosmtag_natsoc_long
+					name = UKR_fascism_cosmtag_natsoc
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			FUK = {
+				set_cosmetic_tag = CRI_generic_fascism
+				set_politics = {
+					ruling_party = fascism
+				}
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_corporate_statism_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_All_Russian_National_Council
+				}
+				set_popularities = {
+					fascism = 65
+					national_socialism = 30
+					communist = 5
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = CRI_fascism_cosmtag_communist_long
+					name = CRI_fascism_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = CRI_fascism_cosmtag_fascism_long
+					name = CRI_fascism_cosmtag_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_fascism_cosmtag_natsoc_long
+					name = CRI_fascism_cosmtag_natsoc
+				}
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = KOM_Ivan_Serov
+					ruling_only = yes
+				}
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_assr
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_assr
+			}
+			
+			FUK = {
+				set_cosmetic_tag = CRI_ordosocialist
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_ordosocialism_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Ordosocialist_Council.dds" }
+					}
+					set_character_name = RUS_Ordosocialist_Council
+				}
+				set_politics = {
+					ruling_party = fascism
+				}
+				set_popularities = {
+					fascism = 65
+					national_socialism = 30
+					communist = 5
+				}
+
+				set_party_name = {
+					ideology = communist
+					long_name = CRI_serov_communist_long
+					name = CRI_serov_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = CRI_serov_fascism_long
+					name = CRI_serov_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_serov_natsoc_long
+					name = CRI_serov_natsoc
+				}
+
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_ordosocialist
+
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_ordosocialism_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Ordosocialist_Council.dds" }
+					}
+					set_character_name = RUS_Ordosocialist_Council
+				}
+				
+				set_politics = {
+					ruling_party = fascism
+				}
+				set_popularities = {
+					fascism = 65
+					national_socialism = 30
+					communist = 5
+				}
+
+				set_party_name = {
+					ideology = communist
+					long_name = UKR_serov_communist_long
+					name = UKR_serov_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = UKR_serov_fascism_long
+					name = UKR_serov_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_serov_natsoc_long
+					name = UKR_serov_natsoc
+				}
+			
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = KOM_Lev_Gumilyov
+					ruling_only = yes
+				}
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			
+			FUK = {
+				set_cosmetic_tag = CRI_eurasian
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_eurasianism_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Eurasian_Council.dds" }
+					}
+					set_character_name = EUR_Eurasian_Council
+				}
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 70
+					national_socialism = 30
+				}
+
+				set_party_name = {
+					ideology = despotism
+					long_name = CRI_eurasia_despotism_long
+					name = CRI_eurasia_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_eurasia_natsoc_long
+					name = CRI_eurasia_natsoc
+				}
+
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_eurasian
+
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_eurasianism_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Eurasian_Council.dds" }
+					}
+					set_character_name = EUR_Eurasian_Council
+				}
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 70
+					national_socialism = 30
+				}
+
+				set_party_name = {
+					ideology = despotism
+					long_name = UKR_eurasia_despotism_long
+					name = UKR_eurasia_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_eurasia_natsoc_long
+					name = UKR_eurasia_natsoc
+				}
+			
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = PRM_Velimir
+					ruling_only = yes
+				}
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			
+			FUK = {
+				set_cosmetic_tag = CRI_hyperborean
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_palingenetic_nazism_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Slavyanskyy_Sobor.dds" }
+					}
+					set_character_name = HYP_Slavyanskyy_Sobor
+				}
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				set_popularities = {
+					ultranationalism = 30
+					national_socialism = 70
+				}
+
+				set_party_name = {
+					ideology = ultranationalism
+					long_name = CRI_hyperborea_ultranationalism_long
+					name = CRI_hyperborea_ultranationalism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_hyperborea_natsoc_long
+					name = CRI_hyperborea_natsoc
+				}
+
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_hyperborean
+
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_palingenetic_nazism_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Slavyanskyy_Sobor.dds" }
+					}
+					set_character_name = HYP_Slavyanskyy_Sobor
+				}
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				set_popularities = {
+					ultranationalism = 30
+					national_socialism = 70
+				}
+
+				set_party_name = {
+					ideology = ultranationalism
+					long_name = UKR_hyperborea_ultranationalism_long
+					name = UKR_hyperborea_ultranationalism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_hyperborea_natsoc_long
+					name = UKR_hyperborea_natsoc
+				}
+			
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				AND = {
+					tag = SBA
+					has_government = socialist
+				}
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			
+			FUK = {
+				set_cosmetic_tag = CRI_anarcho_socialism
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = socialist_anarcho_communist_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Anarchist_Council.dds" }
+					}
+					set_character_name = RUS_Anarchist_Crimea
+				}
+				set_politics = {
+					ruling_party = socialist
+				}
+				set_popularities = {
+					socialist = 64
+					national_socialism = 17
+					despotism = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = CRI_socanarch_cosmtag_socialist_long
+					name = CRI_socanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = CRI_socanarch_cosmtag_despotism_long
+					name = CRI_socanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_socanarch_cosmtag_natsoc_long
+					name = CRI_socanarch_cosmtag_natsoc
+				}
+
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_anarcho_socialism
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = socialist_anarcho_communist_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Anarchist_Council.dds" }
+					}
+					set_character_name = RUS_Anarchist_Ukraine
+				}
+				set_politics = {
+					ruling_party = socialist
+				}
+				set_popularities = {
+					socialist = 64
+					national_socialism = 17
+					despotism = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = UKR_socanarch_cosmtag_socialist_long
+					name = UKR_socanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = UKR_socanarch_cosmtag_despotism_long
+					name = UKR_socanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_socanarch_cosmtag_natsoc_long
+					name = UKR_socanarch_cosmtag_natsoc
+				}
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = SBA
+					has_government = despotism
+				}
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			
+			FUK = {
+				set_cosmetic_tag = CRI_anarcho_despotism
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_vanguard_anarchism_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Black_Army_Administration.dds" }
+					}
+					set_character_name = RUS_Black_Army_Administration_Crimea
+				}
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 64
+					national_socialism = 17
+					socialist = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = CRI_despanarch_cosmtag_socialist_long
+					name = CRI_despanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = CRI_despanarch_cosmtag_despotism_long
+					name = CRI_despanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_despanarch_cosmtag_natsoc_long
+					name = CRI_despanarch_cosmtag_natsoc
+				}
+
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_anarcho_despotism
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_vanguard_anarchism_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Black_Army_Administration.dds" }
+					}
+					set_character_name = RUS_Black_Army_Administration_Ukraine
+				}
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 64
+					national_socialism = 17
+					socialist = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = UKR_despanarch_cosmtag_socialist_long
+					name = UKR_despanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = UKR_despanarch_cosmtag_despotism_long
+					name = UKR_despanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_despanarch_cosmtag_natsoc_long
+					name = UKR_despanarch_cosmtag_natsoc
+				}
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = PRM
+					has_country_leader = { character = PRM_Gutrum_Vagner ruling_only = yes }
+				}
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			
+			FUK = {
+				set_cosmetic_tag = CRI_aryan
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_Aryan_Crimea
+				}
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				set_popularities = {
+					national_socialism = 55
+					despotism = 20
+					national_socialism_1 = 25
+				}
+
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_aryan_cosmtag_natsoc_long
+					name = CRI_aryan_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = national_socialism_1
+					long_name = CRI_aryan_cosmtag_natsoc_1_long
+					name = CRI_aryan_cosmtag_natsoc_1
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = CRI_aryan_cosmtag_despotism_long
+					name = CRI_aryan_cosmtag_despotism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_aryan
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_Aryan_Ukraine
+				}
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				set_popularities = {
+					national_socialism = 55
+					despotism = 25
+					national_socialism_1 = 20
+				}
+
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_aryan_cosmtag_natsoc_long
+					name = UKR_aryan_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = national_socialism_1
+					long_name = UKR_aryan_cosmtag_natsoc_1_long
+					name = UKR_aryan_cosmtag_natsoc_1
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = UKR_aryan_cosmtag_despotism_long
+					name = UKR_aryan_cosmtag_despotism
+				}
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				tag = KEM
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			
+			FUK = {
+				set_cosmetic_tag = CRI_kemerovo
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Crown_Council.dds" }
+					}
+					set_character_name = RUS_Zemsky_Sobor
+				}
+				set_politics = {
+					ruling_party = paternalism
+				}
+				set_popularities = {
+					paternalism = 55
+					national_socialism = 25
+					liberal_conservatism = 20
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_kemerovo_party_natsoc_long
+					name = CRI_kemerovo_party_natsoc
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = CRI_kemerovo_party_paternalism_long
+					name = CRI_kemerovo_party_paternalism
+				}
+				set_party_name = {
+					ideology = liberal_conservatism
+					long_name = CRI_kemerovo_party_liberal_conservatism_long
+					name = CRI_kemerovo_party_liberal_conservatism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_kemerovo
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Crown_Council.dds" }
+					}
+					set_character_name = RUS_Zemsky_Sobor
+				}
+				set_politics = {
+					ruling_party = paternalism
+				}
+				set_popularities = {
+					paternalism = 55
+					national_socialism = 25
+					liberal_conservatism = 20
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_kemerovo_party_natsoc_long
+					name = UKR_kemerovo_party_natsoc
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = UKR_kemerovo_party_paternalism_long
+					name = UKR_kemerovo_party_paternalism
+				}
+				set_party_name = {
+					ideology = liberal_conservatism
+					long_name = UKR_kemerovo_party_liberal_conservatism_long
+					name = UKR_kemerovo_party_liberal_conservatism
+				}
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+
+		if = {
+			limit = {
+				has_country_leader = {
+					character = MAG_Mitchell_Werbell
+					ruling_only = yes
+				}
+			}
+			
+			set_autonomy = {
+				target = FUK
+				autonomy_state = autonomy_military_district
+			}
+			set_autonomy = {
+				target = UKS
+				autonomy_state = autonomy_military_district
+			}
+			
+			FUK = {
+				set_cosmetic_tag = CRI_werbell
+				add_country_leader_role = {
+					character = UKR_Dmitry_Glinka
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_anocracy_subtype
+						id = -1
+					}
+				}
+				UKR_Dmitry_Glinka = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_United_States_of_Somewhere.dds" }
+					}
+					set_character_name = RUS_Crimean_Command
+				}
+				set_politics = {
+					ruling_party = paternalism
+				}
+				set_popularities = {
+					paternalism = 60
+					despotism = 10
+					national_socialism = 20
+					fascism = 10
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = CRI_werbell_cosmtag_paternalism
+					name = CRI_werbell_cosmtag_paternalism_long
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = CRI_werbell_cosmtag_despotism
+					name = CRI_werbell_cosmtag_despotism_long
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = CRI_werbell_cosmtag_natsoc
+					name = CRI_werbell_cosmtag_natsoc_long
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = CRI_werbell_cosmtag_fascism
+					name = CRI_werbell_cosmtag_fascism_long
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+			UKS = {
+				set_cosmetic_tag = UKR_werbell
+				add_country_leader_role = {
+					character = CRI_Matvei_Batrakov
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_anocracy_subtype
+						id = -1
+					}
+				}
+				CRI_Matvei_Batrakov = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_United_States_of_Somewhere.dds" }
+					}
+					set_character_name = RUS_Ukranian_Command
+				}
+				set_politics = {
+					ruling_party = paternalism
+				}
+				set_popularities = {
+					paternalism = 60
+					despotism = 10
+					national_socialism = 20
+					fascism = 10
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = UKR_werbell_cosmtag_paternalism
+					name = UKR_werbell_cosmtag_paternalism_long
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = UKR_werbell_cosmtag_despotism
+					name = UKR_werbell_cosmtag_despotism_long
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = UKR_werbell_cosmtag_natsoc
+					name = UKR_werbell_cosmtag_natsoc_long
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = UKR_werbell_cosmtag_fascism
+					name = UKR_werbell_cosmtag_fascism_long
+				}
+				TNO_startup_nation = yes
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+	}
+}
+
+RUS_generic_belarus_occupation = {
+	custom_effect_tooltip = RUS_generic_belarus_occupation_tt
+	hidden_effect = {
+		XXX = {
+			BLR_Boris_Fulik = { set_nationality = BLR }
+		}
+		BLR = {
+			add_state_core = 1404
+			add_state_core = 1405
+			add_state_core = 1403
+			add_state_core = 194
+			add_state_core = 204
+			add_state_core = 206
+			add_state_core = 207
+			add_state_core = 1403
+			add_state_core = 95
+			add_state_core = 1406
+			add_state_core = 1407
+			add_state_core = 206
+			
+			transfer_state = 1404
+			transfer_state = 1405
+			transfer_state = 1403
+			transfer_state = 194
+			transfer_state = 204
+			transfer_state = 206
+			transfer_state = 207
+			transfer_state = 1403
+			transfer_state = 95
+			transfer_state = 1406
+			transfer_state = 1407
+			transfer_state = 206
+			
+			TNO_startup_nation = yes
+			
+			RUS_Idea_Removal_Helper = yes
+			
+			load_focus_tree = ZZZ_blank_focus
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+		}
+		if = {
+			limit = { 
+				RUS = { has_country_flag = RUS_generic_communist_unifier }
+				NOT = {
+					has_country_leader = {
+						character = KOM_Ivan_Serov
+						ruling_only = yes
+					}
+				}
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_assr
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_generic_commie
+				set_politics = {
+					ruling_party = communist
+				}
+				BLR_Boris_Fulik = {
+					add_country_leader_role = {
+						promote_leader = yes
+						country_leader = {
+							expire = "1999.1.1"
+							ideology = communist_subtype
+							id = -1
+						}
+					}
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_USSR_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Congress_Of_Soviets_Belarus
+				}
+				set_party_name = {
+					ideology = communist 
+					long_name = BLR_communist_cosmtag_communist_long
+					name = BLR_communist_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = RUS_communist_cosmtag_despotism_long
+					name = RUS_communist_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = RUS_communist_cosmtag_natsoc_long
+					name = RUS_communist_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = RUS_communist_cosmtag_fascism_long
+					name = RUS_communist_cosmtag_fascism
+				}
+				
+				set_popularities = {
+					communist = 49
+					national_socialism = 21
+					despotism = 18
+					fascism = 12
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				# set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Worker_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				# econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				AND = {
+					RUS = { has_country_flag = RUS_generic_democratic_unifier }
+					NOT = {
+						tag = VYT
+					}
+				}
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_generic_democratic
+				set_politics = {
+					ruling_party = paternalism
+				}
+				XXX = {
+					BLR_Boris_Fulik = { set_nationality = BLR }
+				}
+				promote_character = BLR_Boris_Fulik
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Belarus_Democratic_Government
+				}
+				set_popularities = {
+					paternalism = 65
+					national_socialism = 20
+					conservatism = 15
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = BLR_dem_cosmtag_paternalist_long
+					name = BLR_dem_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_dem_cosmtag_natsoc_long
+					name = BLR_dem_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = conservatism
+					long_name = BLR_dem_cosmtag_conservatism_long
+					name = BLR_dem_cosmtag_conservatism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					tag = VYT
+					tag = CHT
+				}
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_generic_monarchist
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = despotism
+				}
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_aristocratic_conservatism_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Imperial_Provisional_Government.dds" }
+					}
+					set_character_name = RUS_Monarchist_Belarus
+				}
+				set_popularities = {
+					despotism = 64
+					national_socialism = 17
+					paternalism = 19
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = BLR_generic_monarchist_party_paternalist_long
+					name = BLR_generic_monarchist_party_paternalist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = BLR_generic_monarchist_party_despotism_long
+					name = BLR_generic_monarchist_party_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_generic_monarchist_party_natsoc_long
+					name = BLR_generic_monarchist_party_natsoc
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					has_country_flag = RUS_generic_authoritarian_unifier
+					NOT = {
+						tag = VYT
+					}
+					NOT = {
+						tag = CHT
+					}
+				}
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_generic_auth
+				set_politics = {
+					ruling_party = paternalism
+				}
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Council_of_State.dds" }
+					}
+					set_character_name = RUS_Council_of_State
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = BLR_auth_cosmtag_paternalist_long
+					name = BLR_auth_cosmtag_paternalist
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = BLR_auth_cosmtag_communist_long
+					name = BLR_auth_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_auth_cosmtag_natsoc_long
+					name = BLR_auth_cosmtag_natsoc
+				}
+				
+				set_popularities = {
+					paternalism = 59
+					national_socialism = 21
+					communist = 20
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_country_flag = RUS_generic_fascist_unifier
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_generic_fascism
+				set_politics = {
+					ruling_party = fascism
+				}
+				XXX = { BLR_Boris_Fulik = { set_nationality = BLR } }
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_corporate_statism_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_All_Russian_National_Council
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = BLR_fascism_cosmtag_communist_long
+					name = BLR_fascism_cosmtag_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = BLR_fascism_cosmtag_fascism_long
+					name = BLR_fascism_cosmtag_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_fascism_cosmtag_natsoc_long
+					name = BLR_fascism_cosmtag_natsoc
+				}
+				set_popularities = {
+					fascism = 49
+					national_socialism = 21
+					communist = 30
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = KOM_Ivan_Serov
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_assr
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_ordosocialist
+
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = fascism_ordosocialism_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Ordosocialist_Council.dds" }
+					}
+					set_character_name = RUS_Ordosocialist_Council
+				}
+				set_politics = {
+					ruling_party = fascism
+				}
+				set_popularities = {
+					fascism = 65
+					national_socialism = 30
+					communist = 5
+				}
+
+				set_party_name = {
+					ideology = communist
+					long_name = BLR_serov_communist_long
+					name = BLR_serov_communist
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = BLR_serov_fascism_long
+					name = BLR_serov_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_serov_natsoc_long
+					name = BLR_serov_natsoc
+				}
+
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = KOM_Lev_Gumilyov
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_eurasian
+
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_eurasianism_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Eurasian_Council.dds" }
+					}
+					set_character_name = EUR_Eurasian_Council
+				}
+				set_politics = {
+					ruling_party = despotism
+				}
+				set_popularities = {
+					despotism = 70
+					national_socialism = 30
+				}
+
+				set_party_name = {
+					ideology = despotism
+					long_name = BLR_eurasia_despotism_long
+					name = BLR_eurasia_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_eurasia_natsoc_long
+					name = BLR_eurasia_natsoc
+				}
+
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = { 
+				has_country_leader = {
+					character = PRM_Velimir
+					ruling_only = yes
+				}
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_hyperborean
+
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_palingenetic_nazism_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Slavyanskyy_Sobor.dds" }
+					}
+					set_character_name = HYP_Slavyanskyy_Sobor
+				}
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				set_popularities = {
+					ultranationalism = 30
+					national_socialism = 70
+				}
+
+				set_party_name = {
+					ideology = ultranationalism
+					long_name = BLR_hyperborea_ultranationalism_long
+					name = BLR_hyperborea_ultranationalism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_hyperborea_natsoc_long
+					name = BLR_hyperborea_natsoc
+				}
+
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = SBA
+					has_government = socialist
+				}
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_anarcho_socialism
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = socialist
+				}
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = socialist_anarcho_communist_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Anarchist_Council.dds" }
+					}
+					set_character_name = RUS_Anarchist_Belarus
+				}
+				set_popularities = {
+					socialist = 64
+					national_socialism = 17
+					despotism = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = BLR_socanarch_cosmtag_socialist_long
+					name = BLR_socanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = BLR_socanarch_cosmtag_despotism_long
+					name = BLR_socanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_socanarch_cosmtag_natsoc_long
+					name = BLR_socanarch_cosmtag_natsoc
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = SBA
+					has_government = despotism
+				}
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_anarcho_despotism
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes
+				set_politics = {
+					ruling_party = despotism
+				}
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = despotism_vanguard_anarchism_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Black_Army_Administration.dds" }
+					}
+					set_character_name = RUS_Black_Army_Administration_Belarus
+				}
+				set_popularities = {
+					despotism = 64
+					national_socialism = 17
+					socialist = 19
+				}
+
+				set_party_name = {
+					ideology = socialist
+					long_name = BLR_despanarch_cosmtag_socialist_long
+					name = BLR_despanarch_cosmtag_socialist
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = BLR_despanarch_cosmtag_despotism_long
+					name = BLR_despanarch_cosmtag_despotism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_despanarch_cosmtag_natsoc_long
+					name = BLR_despanarch_cosmtag_natsoc
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					tag = PRM
+					has_country_leader = { character = PRM_Gutrum_Vagner ruling_only = yes }
+				}
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_aryan
+				set_politics = {
+					ruling_party = national_socialism
+				}
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = national_socialism_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_All_Russian_National_Council.dds" }
+					}
+					set_character_name = RUS_Aryan_Belarus
+				}
+				set_popularities = {
+					national_socialism = 65
+					despotism = 20
+					national_socialism_1 = 15
+				}
+
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_aryan_cosmtag_natsoc_long
+					name = BLR_aryan_cosmtag_natsoc
+				}
+				set_party_name = {
+					ideology = national_socialism_1
+					long_name = BLR_aryan_cosmtag_natsoc_1_long
+					name = BLR_aryan_cosmtag_natsoc_1
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = BLR_aryan_cosmtag_despotism_long
+					name = BLR_aryan_cosmtag_despotism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = {
+			limit = {
+				tag = KEM
+			}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_kemerovo
+				set_politics = {
+					ruling_party = paternalism
+				}
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_oligarchy_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_Crown_Council.dds" }
+					}
+					set_character_name = RUS_Zemsky_Sobor
+				}
+				set_popularities = {
+					paternalism = 55
+					national_socialism = 25
+					liberal_conservatism = 20
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_kemerovo_party_natsoc_long
+					name = BLR_kemerovo_party_natsoc
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = BLR_kemerovo_party_paternalism_long
+					name = BLR_kemerovo_party_paternalism
+				}
+				set_party_name = {
+					ideology = liberal_conservatism
+					long_name = BLR_kemerovo_party_liberal_conservatism_long
+					name = BLR_kemerovo_party_liberal_conservatism
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+		if = { #werbelllllllll
+			limit = { 
+				has_country_leader = {
+					character = MAG_Mitchell_Werbell
+					ruling_only = yes
+					}
+				}
+			set_autonomy = {
+				target = BLR
+				autonomy_state = autonomy_military_district
+			}
+			BLR = {
+				set_cosmetic_tag = BLR_werbell
+				set_politics = {
+					ruling_party = paternalism
+				}
+
+				add_country_leader_role = {
+					character = BLR_Boris_Fulik
+					promote_leader = yes
+					country_leader = {
+						expire = "1999.1.1"
+						ideology = paternalism_anocracy_subtype
+						id = -1
+					}
+				}
+				BLR_Boris_Fulik = {
+					set_portraits = {
+						civilian = { large = "gfx/leaders/RUS/Portrait_RUS_United_States_of_Somewhere.dds" }
+					}
+					set_character_name = RUS_Belarus_Command
+				}
+				set_popularities = {
+					paternalism = 55
+					national_socialism = 10
+					despotism = 10
+					socialist = 25
+				}
+
+				set_party_name = {
+					ideology = paternalism
+					long_name = BLR_werbell_cosmtag_paternalism
+					name = BLR_werbell_cosmtag_paternalism_long
+				}
+				set_party_name = {
+					ideology = despotism
+					long_name = BLR_werbell_cosmtag_despotism
+					name = BLR_werbell_cosmtag_despotism_long
+				}
+				set_party_name = {
+					ideology = socialist
+					long_name = BLR_werbell_cosmtag_socialist
+					name = BLR_werbell_cosmtag_socialist_long
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = BLR_werbell_cosmtag_natsoc
+					name = BLR_werbell_cosmtag_natsoc_long
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+				set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+				econ_type_change = yes
+				econ_subtype_change = yes
+				econ_join_sphere_RUS = yes	
+			}
+		}
+	}
+}
+
+# Utility #
+RUS_end_SWRW_effects = { # peace things that should happen always after SWRW
+	RUS_restore_pre_war_conscription = yes
+	clr_global_flag = RUS_SWRW_ongoing_global
+	clr_global_flag = SECOND_WRW_HAS_BEGUN
+	clear_variable = WRW_deccat
+	RUS_peace_out = yes
+	RUS_remove_wargoals = yes
+	RUS_post_SWRW_germany = yes
+	RUS = { country_event = { id = swrw_misc.1 days = 1 } } #removing army size modifiers
+	GER = { country_event = { id = swrw_misc.1 days = 1 } } #removing army size modifiers
+}
+
+RUS_take_finnish_land_post_SWRW = { # i dont like repeating 8 lines for this shithole
+	if = {
+		limit = {
+			has_global_flag = FINLAND_SWRW
+		}
+		RUS = {
+			transfer_state = 216
+		}
+	}
+}
+
+RUS_post_SWRW_germany = { # germanbros in shambles
+	if = {
+		limit = {
+			has_global_flag = german_civil_war_speervic
+		}
+		GER = {
+			country_event = { id = reich.2022 days = 30 }
+		}
+	}
+	else = {
+		GER = {
+			country_event = { id = reich.2004 days = 30 }
+		}
+	}
+}
+
+# Shukshin #
+RUS_shukshin_moskowien_occupation = {
+	custom_effect_tooltip = RUS_shukshin_moskowien_occupation_tt
+	hidden_effect = {
+		RUS_end_SWRW_effects = yes
+		XXX = {
+			RDC_Alexander_Novikov = { set_nationality = MCW }
+		}
+		RUS_take_finnish_land_post_swrw = yes
+		set_autonomy = {
+			target = MCW
+			autonomy_state = autonomy_military_district
+		}
+		MCW = {
+			set_cosmetic_tag = RDC_Novosibirsk
+			RUS_Idea_Removal_Helper = yes
+			transfer_state = 263
+		    transfer_state = 260
+		    transfer_state = 217
+		    transfer_state = 243
+		    transfer_state = 1434
+		    transfer_state = 247
+		    transfer_state = 246
+			transfer_state = 257
+		    transfer_state = 242
+		    transfer_state = 219
+		    transfer_state = 1442
+		    transfer_state = 238
+		    transfer_state = 401
+		    transfer_state = 222
+		    transfer_state = 264
+		    transfer_state = 1435
+		    transfer_state = 210
+		    transfer_state = 1441
+		    transfer_state = 1443
+		    transfer_state = 1435
+		    transfer_state = 1436
+		    transfer_state = 245
+		    transfer_state = 239
+		    transfer_state = 224
+			transfer_state = 1402
+			transfer_state = 241
+			transfer_state = 2452
+			transfer_state = 209
+			transfer_state = 1421
+			
+			every_owned_state = {
+				add_core_of = OKB
+			}
+			
+			TNO_startup_nation = yes
+
+			remove_state_core = 195
+
+			set_capital = { state = 1442 }
+			
+			set_politics = {
+				ruling_party = paternalism
+			}
+				
+			RDC_Alexander_Novikov = {
+				promote_character = paternalism
+			}
+				
+			set_popularities = {
+				paternalism = 72
+				fascism = 28 # Probably should be changed to NatSoc
+			}
+
+			add_ideas = {
+				### Political ###
+				tno_political_parties_controlled_opposition
+				tno_religious_rights_secularism
+				tno_trade_unions_illegal
+				tno_immigration_encouraged_immigration
+				tno_slavery_outlawed
+				tno_public_meetings_regulated
+				tno_press_rights_censored_press
+				tno_vote_franchise_elite_voting
+				tno_refugees_open
+
+				### Military ###
+				tno_conscription_limited_conscription
+				tno_women_noncombat_only
+				tno_military_supervision_rules_of_engagement
+				tno_training_basic_training
+				tno_racial_integration_integrated_military
+				tno_draft_exemptions_educational_deferment
+
+				### Economic ###
+				tno_trade_laws_export_focus
+				tno_income_taxation_flat_taxes
+				tno_minimum_wage_trinket_minimum_wage
+				tno_max_workhours_12_hour_work_day
+				tno_child_labor_illegal
+				tno_pensions_low_pensions
+				tno_unemployment_low_subsidies
+
+				### Social ###
+				tno_safety_minimal_regulations
+				tno_health_care_low_income_protections
+				tno_pollution_few_regulations
+				tno_education_public_education
+				tno_penal_system_incarceration
+				tno_lgbt_rights_lgbt_outlawed
+				tno_gender_rights_women_in_the_workplace
+				tno_minorities_equal_rights
+				tno_security_regulated_police
+
+				#Post-War Issues#
+				MOS_rural_state
+				MOS_language_problem_russia
+				MOS_war_torn_region
+			}
+			remove_ideas = {
+				MCW_Pakt_Commission
+				MCW_Russia_in_ruins
+			}
+			
+			set_party_name = { 
+				ideology = paternalism
+				long_name = MOS_Novosibirsk_Administration_long
+				name = MOS_Novosibirsk_Administration_short
+			}
+			set_party_name = { 
+				ideology = fascism
+				long_name = MOS_Novosibirsk_fascism_long
+				name = MOS_Novosibirsk_fascism_short
+ 
+			}
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+			set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+			econ_type_change = yes
+			econ_subtype_change = yes
+			econ_join_sphere_RUS = yes
+			add_ideas = CSTO_Member
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+		}
+		
+		every_country = { limit = { is_ai = no } news_event = { id = WORLD.40006 days = 1 } }
+	}
+}
+
+# Shukshin #
+
+RUS_shukshin_petrograd_occupation = {
+	custom_effect_tooltip = RUS_shukshin_petrograd_occupation_tt
+	hidden_effect = {
+		XXX = {
+			OKB_Mikhail_Evseev = { set_nationality = OKB }
+		}
+		set_autonomy = {
+			target = OKB
+			autonomy_state = autonomy_military_district
+		}
+		OKB = {
+			set_cosmetic_tag = OKB_Novosibirsk
+			RUS_Idea_Removal_Helper = yes
+			transfer_state = 195
+			
+			TNO_startup_nation = yes
+			
+			every_owned_state = {
+				add_core_of = OKB
+			}
+			
+			#195 = { set_state_name = "Saint Petersburg" }
+			
+			set_politics = {
+				ruling_party = paternalism
+			}
+			OKB_Mikhail_Evseev = {
+				promote_character = paternalism
+			}
+			set_popularities = {
+				paternalism = 67
+				national_socialism = 15
+				fascism = 18
+			}
+			set_party_name = {
+				ideology = paternalism 
+				long_name = CRI_Novosibirsk_Administration_long
+				name = CRI_Novosibirsk_Administration_short
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = OKB_Novosibirsk_fascism_long
+				name = OKB_Novosibirsk_fascism
+			}
+			set_party_name = {
+				ideology = national_socialism
+				long_name = OKB_Novosibirsk_national_socialism_long
+				name = OKB_Novosibirsk_national_socialism
+			}
+			load_focus_tree = ZZZ_blank_focus
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+			set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+			econ_type_change = yes
+			econ_subtype_change = yes
+			econ_join_sphere_RUS = yes
+			add_ideas = CSTO_Member
+			remove_ideas = {
+				OKB_Defenders_of_the_Reich
+				OKB_The_Spectre_of_Schorner
+				OKB_Moskowien_Refugee_Crisis
+			}
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+		}
+	}
+}
+
+RUS_shukshin_baltic_occupation = {
+	custom_effect_tooltip = RUS_shukshin_baltic_occupation_tt
+	hidden_effect = {
+		OST = {
+			every_core_state = {
+				add_core_of = UPO
+				remove_core_of = OST
+			}
+		}
+		XXX = {
+			OST_Nikolay_Skomorokhov = { set_nationality = UPO }
+		}
+		set_autonomy = {
+			target = UPO
+			autonomy_state = autonomy_military_district
+		}
+		UPO = {
+			set_capital = { state = 1397 remember_old_capital = no }
+			set_cosmetic_tag = OST_Novosibirsk
+			RUS_Idea_Removal_Helper = yes
+			add_ideas = CSTO_Member
+
+			transfer_state = 13
+			transfer_state = 1440
+			transfer_state = 191
+			transfer_state = 1395
+			transfer_state = 1396
+			transfer_state = 12
+			transfer_state = 943
+			transfer_state = 1397
+			transfer_state = 190
+			transfer_state = 1399
+			transfer_state = 1400
+			transfer_state = 11
+			transfer_state = 1401
+			transfer_state = 189
+			transfer_state = 1398
+			transfer_state = 96
+			
+			transfer_state = 2451
+			transfer_state = 79
+			transfer_state = 2450
+			transfer_state = 1400
+			
+			TNO_startup_nation = yes
+			
+			set_politics = {
+				ruling_party = paternalism
+			}
+			OST_Nikolay_Skomorokhov = {
+				promote_character = paternalism
+			}
+			set_party_name = { 
+				ideology = paternalism 
+				long_name = CRI_Novosibirsk_Administration_long
+				name = CRI_Novosibirsk_Administration_short
+			}
+			set_party_name = { 
+				ideology = conservatism 
+				long_name = OST_Novosibirsk_Administration_long
+				name = OST_Novosibirsk_Administration_short
+			}
+			set_popularities = {
+				paternalism = 54
+				national_socialism = 24
+				fascism = 22
+			}
+			set_country_flag = OST_LIBERATED
+			load_focus_tree = ZZZ_blank_focus
+			add_ideas = {
+				LIT_colonial_past
+
+				### Political ###
+				tno_political_parties_controlled_opposition
+				tno_religious_rights_secularism
+				tno_trade_unions_illegal
+				tno_immigration_encouraged_immigration
+				tno_slavery_outlawed
+				tno_public_meetings_regulated
+				tno_press_rights_censored_press
+				tno_vote_franchise_elite_voting
+				tno_refugees_open
+
+				### Military ###
+				tno_conscription_limited_conscription
+				tno_women_noncombat_only
+				tno_military_supervision_rules_of_engagement
+				tno_training_basic_training
+				tno_racial_integration_integrated_military
+				tno_draft_exemptions_educational_deferment
+
+				### Economic ###
+				tno_trade_laws_export_focus
+				tno_income_taxation_flat_taxes
+				tno_minimum_wage_trinket_minimum_wage
+				tno_max_workhours_12_hour_work_day
+				tno_child_labor_illegal
+				tno_pensions_low_pensions
+				tno_unemployment_low_subsidies
+
+				### Social ###
+				tno_safety_minimal_regulations
+				tno_health_care_low_income_protections
+				tno_pollution_few_regulations
+				tno_education_public_education
+				tno_penal_system_incarceration
+				tno_lgbt_rights_lgbt_outlawed
+				tno_gender_rights_women_in_the_workplace
+				tno_minorities_equal_rights
+				tno_security_regulated_police
+			}
+
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+			set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+			econ_type_change = yes
+			econ_subtype_change = yes
+			econ_join_sphere_RUS = yes
+
+			remove_state_core = 1403
+			remove_state_core = 1404
+			remove_state_core = 1405
+			remove_state_core = 1406
+			remove_state_core = 1407
+			remove_state_core = 95
+			remove_state_core = 194
+			remove_state_core = 204
+			remove_state_core = 206
+			remove_state_core = 207
+			
+			remove_state_core = 2451
+			remove_state_core = 79
+			remove_state_core = 2450
+			remove_state_core = 1400
+			
+			remove_state_core = 2452
+			remove_state_core = 241
+			remove_state_core = 1421
+			remove_state_core = 209
+			remove_state_core = 1402
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+		}
+		GER_begin_pakt_collapse = yes
+	}
+}
+
+RUS_shukshin_caucasian_occupation = {
+	custom_effect_tooltip = RUS_shukshin_caucasian_occupation_tt
+	hidden_effect = {
+		CAU = {
+			every_core_state = {
+				remove_core_of = CAU
+				add_core_of = ADY
+			}
+		}
+		XXX = {
+			CAU_Mikhail_Baganov = { set_nationality = ADY }
+		}
+		set_autonomy = {
+			target = ADY
+			autonomy_state = autonomy_military_district
+		}
+		ADY = {
+			set_capital = {state = 231 remember_old_capital = no}
+			set_cosmetic_tag = CAU_Novosibirsk
+			RUS_Idea_Removal_Helper = yes
+			transfer_state = 234
+			transfer_state = 235
+			transfer_state = 1558
+			transfer_state = 1559
+			transfer_state = 1560
+			transfer_state = 1561
+			transfer_state = 232
+			transfer_state = 1564
+			transfer_state = 231
+			transfer_state = 1556
+			transfer_state = 1554
+			transfer_state = 229
+			transfer_state = 1552
+			
+			transfer_state = 1552
+			transfer_state = 244
+			transfer_state = 1730
+			transfer_state = 2131
+			transfer_state = 237
+			transfer_state = 1293
+			
+			TNO_startup_nation = yes
+
+			set_politics = {
+				ruling_party = paternalism
+			}
+			add_ideas = {
+				CAU_echoes_of_kaukasia
+				CAU_waning_stratification
+
+				### Political ###
+				tno_political_parties_controlled_opposition
+				tno_religious_rights_secularism
+				tno_trade_unions_illegal
+				tno_immigration_encouraged_immigration
+				tno_slavery_outlawed
+				tno_public_meetings_regulated
+				tno_press_rights_censored_press
+				tno_vote_franchise_elite_voting
+				tno_refugees_open
+
+				### Military ###
+				tno_conscription_limited_conscription
+				tno_women_noncombat_only
+				tno_military_supervision_rules_of_engagement
+				tno_training_basic_training
+				tno_racial_integration_integrated_military
+				tno_draft_exemptions_educational_deferment
+
+				### Economic ###
+				tno_trade_laws_export_focus
+				tno_income_taxation_flat_taxes
+				tno_minimum_wage_trinket_minimum_wage
+				tno_max_workhours_12_hour_work_day
+				tno_child_labor_illegal
+				tno_pensions_low_pensions
+				tno_unemployment_low_subsidies
+
+				### Social ###
+				tno_safety_minimal_regulations
+				tno_health_care_low_income_protections
+				tno_pollution_few_regulations
+				tno_education_public_education
+				tno_penal_system_incarceration
+				tno_lgbt_rights_lgbt_outlawed
+				tno_gender_rights_women_in_the_workplace
+				tno_minorities_equal_rights
+				tno_security_regulated_police
+			}
+			CAU_Mikhail_Baganov = {
+				promote_character = paternalism
+			}
+			set_party_name = { 
+				ideology = paternalism 
+				long_name = CRI_Novosibirsk_Administration_long
+				name = CRI_Novosibirsk_Administration_short
+			}
+			set_popularities = {
+				paternalism = 52
+				conservatism = 15
+				national_socialism = 11
+				national_socialism_2 = 22
+			}
+			set_country_flag = CAU_LIBERATED
+			load_focus_tree = ZZZ_blank_focus
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+			set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+			econ_type_change = yes
+			econ_subtype_change = yes
+			econ_join_sphere_RUS = yes
+			add_ideas = CSTO_Member
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+		}
+	}
+}
+
+RUS_shukshin_ukraine_occupation = {
+	custom_effect_tooltip = RUS_shukshin_ukraine_occupation_tt
+	hidden_effect = {
+		XXX = {
+			UKR_Dmitry_Glinka = { set_nationality = UKS }
+			CRI_Matvei_Batrakov = { set_nationality = FUK }
+		}
+		set_autonomy = {
+			target = FUK
+			autonomy_state = autonomy_military_district
+		}
+		set_autonomy = {
+			target = UKS
+			autonomy_state = autonomy_military_district
+		}
+		BOV = {
+			every_core_state = {
+				remove_core_of = PREV
+			}
+		}
+		UKS = {
+			every_core_state = {
+				remove_core_of = PREV
+			}
+		}
+		UKS = {
+			set_cosmetic_tag = UKR_Novosibirsk
+			RUS_Idea_Removal_Helper = yes
+			add_ideas = CSTO_Member
+			add_state_core = 228
+			add_state_core = 227
+			add_state_core = 221
+			add_state_core = 1426
+			add_state_core = 226
+			add_state_core = 259
+			add_state_core = 225
+			add_state_core = 197
+			add_state_core = 1427
+			add_state_core = 202
+			add_state_core = 1428
+			add_state_core = 201
+			add_state_core = 1430
+			add_state_core = 773
+			add_state_core = 199
+			add_state_core = 93
+			add_state_core = 200
+			add_state_core = 1429
+			add_state_core = 1431
+			add_state_core = 218
+
+			transfer_state = 228
+			transfer_state = 227
+			transfer_state = 221
+			transfer_state = 1426
+			transfer_state = 226
+			transfer_state = 259
+			transfer_state = 225
+			transfer_state = 197
+			transfer_state = 1427
+			transfer_state = 202
+			transfer_state = 1428
+			transfer_state = 201
+			transfer_state = 1430
+			transfer_state = 773
+			transfer_state = 199
+			transfer_state = 93
+			transfer_state = 200
+			transfer_state = 1429
+			transfer_state = 1431
+			transfer_state = 218
+
+			TNO_startup_nation = yes
+
+			if = {
+				limit = {
+					TNS = { has_government = national_socialism }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = TNS
+					}
+					TNS = { remove_state_core = PREV }
+					UKS = {
+						add_state_core = 192
+					    add_state_core = 198
+					    add_state_core = 1282
+					    add_state_core = 1285
+					    add_state_core = 1965
+					    add_state_core = 1966
+					    transfer_state = 192
+					    transfer_state = 198
+					    transfer_state = 1282
+					    transfer_state = 1285
+					    transfer_state = 1965
+					    transfer_state = 1966
+					}
+				}
+			}
+
+			UKR = {
+				remove_state_core = 228
+				remove_state_core = 227
+				remove_state_core = 221
+				remove_state_core = 1426
+				remove_state_core = 226
+				remove_state_core = 259
+				remove_state_core = 225
+				remove_state_core = 197
+				remove_state_core = 1427
+				remove_state_core = 202
+				remove_state_core = 1428
+				remove_state_core = 201
+				remove_state_core = 1430
+				remove_state_core = 773
+				remove_state_core = 199
+				remove_state_core = 93
+				remove_state_core = 200
+				remove_state_core = 1429
+				remove_state_core = 1431
+			}
+			set_politics = {
+				ruling_party = paternalism
+			}
+			set_popularities = {
+				paternalism = 42
+				conservatism = 25
+				national_socialism = 5
+				fascism = 28
+			}
+			set_party_name = { 
+				ideology = paternalism 
+				long_name = CRI_Novosibirsk_Administration_long
+				name = CRI_Novosibirsk_Administration_short
+			}
+			UKR_Dmitry_Glinka = {
+				promote_character = paternalism
+			}
+			remove_all_ministers = yes
+			fill_empty_minister = yes
+			SWRW_FUK_remove_all_ideas = yes
+			add_ideas = {
+				UKR_memories_of_generalplan_ost
+				UKR_legacy_of_the_occupation
+
+				### Political ###
+				tno_political_parties_controlled_opposition
+				tno_religious_rights_secularism
+				tno_trade_unions_illegal
+				tno_immigration_encouraged_immigration
+				tno_slavery_outlawed
+				tno_public_meetings_regulated
+				tno_press_rights_censored_press
+				tno_vote_franchise_elite_voting
+				tno_refugees_open
+
+				### Military ###
+				tno_conscription_limited_conscription
+				tno_women_noncombat_only
+				tno_military_supervision_rules_of_engagement
+				tno_training_basic_training
+				tno_racial_integration_integrated_military
+				tno_draft_exemptions_educational_deferment
+
+				### Economic ###
+				tno_trade_laws_export_focus
+				tno_income_taxation_flat_taxes
+				tno_minimum_wage_trinket_minimum_wage
+				tno_max_workhours_12_hour_work_day
+				tno_child_labor_illegal
+				tno_pensions_low_pensions
+				tno_unemployment_low_subsidies
+
+				### Social ###
+				tno_safety_minimal_regulations
+				tno_health_care_low_income_protections
+				tno_pollution_few_regulations
+				tno_education_public_education
+				tno_penal_system_incarceration
+				tno_lgbt_rights_lgbt_outlawed
+				tno_gender_rights_women_in_the_workplace
+				tno_minorities_equal_rights
+				tno_security_regulated_police
+			}
+			load_focus_tree = ZZZ_blank_focus
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+			set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+			econ_type_change = yes
+			econ_subtype_change = yes
+			econ_join_sphere_RUS = yes
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+			if = {
+				limit = {
+					UKR = { # Apparently this shouldn't happen during normal gameplay but whatever
+						has_idea = UKR_ruin_of_the_breadbasket 
+					}		# Also i have to check for idea instead of flag because the flag is cleared after invasion
+				}
+				add_ideas = UKR_ruin_of_the_breadbasket
+				set_capital = {
+					state = 221
+					remember_old_capital = no
+				}
+			}
+			else = {
+				set_capital = {
+					state = 1428
+					remember_old_capital = no
+				}
+			}
+		}
+		FUK = {
+			set_cosmetic_tag = CRI_Novosibirsk
+		
+			add_state_core = 137
+			add_state_core = 196
+			add_state_core = 1532
+
+			transfer_state = 137
+			transfer_state = 196
+			transfer_state = 1532
+			set_capital = { state = 1532 remember_old_capital = no }
+
+			TNO_startup_nation = yes
+
+			CRI = {
+				remove_state_core = 137
+				remove_state_core = 196
+				remove_state_core = 1532
+			}
+			 
+			GER = {
+				remove_state_core = 137
+				remove_state_core = 196
+				remove_state_core = 1532
+
+				add_state_claim = 137
+				add_state_claim = 196
+				add_state_claim = 1532
+			}
+			set_politics = {
+				ruling_party = paternalism
+			}
+			set_popularities = {
+				paternalism = 42
+				conservatism = 10
+				national_socialism = 35
+				fascism = 13
+			}
+			remove_all_ministers = yes
+			fill_empty_minister = yes
+			SWRW_UKS_remove_all_ideas = yes
+			add_ideas = {
+				### Political ###
+				tno_political_parties_controlled_opposition
+				tno_religious_rights_secularism
+				tno_trade_unions_illegal
+				tno_immigration_encouraged_immigration
+				tno_slavery_outlawed
+				tno_public_meetings_regulated
+				tno_press_rights_censored_press
+				tno_vote_franchise_elite_voting
+				tno_refugees_open
+
+				### Military ###
+				tno_conscription_limited_conscription
+				tno_women_noncombat_only
+				tno_military_supervision_rules_of_engagement
+				tno_training_basic_training
+				tno_racial_integration_integrated_military
+				tno_draft_exemptions_educational_deferment
+
+				### Economic ###
+				tno_trade_laws_export_focus
+				tno_income_taxation_flat_taxes
+				tno_minimum_wage_trinket_minimum_wage
+				tno_max_workhours_12_hour_work_day
+				tno_child_labor_illegal
+				tno_pensions_low_pensions
+				tno_unemployment_low_subsidies
+
+				### Social ###
+				tno_safety_minimal_regulations
+				tno_health_care_low_income_protections
+				tno_pollution_few_regulations
+				tno_education_public_education
+				tno_penal_system_incarceration
+				tno_lgbt_rights_lgbt_outlawed
+				tno_gender_rights_women_in_the_workplace
+				tno_minorities_equal_rights
+				tno_security_regulated_police
+			}
+			CRI_Matvei_Batrakov = { promote_character = paternalism }
+			set_party_name = { 
+				ideology = paternalism 
+				long_name = CRI_Novosibirsk_Administration_long
+				name = CRI_Novosibirsk_Administration_short
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = CRI_Novosibirsk_Administration_fascism_long
+				name = CRI_Novosibirsk_Administration_fascism
+			}
+			set_party_name = {
+				ideology = national_socialism
+				name = CRI_Novosibirsk_Administration_national_socialism
+				long_name = CRI_Novosibirsk_Administration_national_socialism_long
+			}
+			load_focus_tree = ZZZ_blank_focus
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+			set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+			econ_type_change = yes
+			econ_subtype_change = yes
+			econ_join_sphere_RUS = yes
+			add_ideas = CSTO_Member
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+		}
+	}
+}
+
+RUS_shukshin_belarus_occupation = {
+	custom_effect_tooltip = RUS_shukshin_belarus_occupation_tt
+	hidden_effect = {
+		XXX = {
+			BLR_Boris_Fulik = { set_nationality = BLR }
+		}
+		set_autonomy = {
+			target = BLR
+			autonomy_state = autonomy_military_district
+		}
+		BLR = {
+			set_cosmetic_tag = BLR_Novosibirsk
+			RUS_Idea_Removal_Helper = yes
+			add_state_core = 1404
+			add_state_core = 1405
+			add_state_core = 1403
+			add_state_core = 194
+			add_state_core = 204
+			add_state_core = 206
+			add_state_core = 207
+			add_state_core = 1403
+			add_state_core = 95
+			add_state_core = 1406
+			add_state_core = 1407
+			add_state_core = 206
+			
+			transfer_state = 1404
+			transfer_state = 1405
+			transfer_state = 1403
+			transfer_state = 194
+			transfer_state = 204
+			transfer_state = 206
+			transfer_state = 207
+			transfer_state = 1403
+			transfer_state = 95
+			transfer_state = 1406
+			transfer_state = 1407
+			transfer_state = 206
+			TNO_startup_nation = yes
+			
+			set_politics = {
+				ruling_party = paternalism
+			}
+			set_party_name = { 
+				ideology = paternalism 
+				long_name = CRI_Novosibirsk_Administration_long
+				name = CRI_Novosibirsk_Administration_short
+			}
+			BLR_Boris_Fulik = {
+				promote_character = paternalism
+			}
+			set_popularities = {
+				paternalism = 49
+				national_socialism = 21
+				fascism = 30
+			}
+			remove_ideas = {
+				BLR_The_Black_Cat_Spirit
+				BLR_We_Are_Like_Vipers
+				OCW_cords_cut
+				BLR_For_Ostland
+			}
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+			set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+			econ_type_change = yes
+			econ_subtype_change = yes
+			econ_join_sphere_RUS = yes
+			add_ideas = CSTO_Member
+			load_focus_tree = ZZZ_blank_focus
+
+			set_variable = { national_debt = 0 }
+			calculate_display_variables = yes
+			TNO_improve_poverty_high = yes
+			TNO_improve_poverty_high = yes
+		}
+	}
+}
+
+### Central Asia ###
+# Shukshin #
+
+RUS_shukshin_central_asia_occupation = {
+	custom_effect_tooltip = RUS_shukshin_central_asia_occupation_tt
+	hidden_effect = {
+		NOV = {
+			set_autonomy = {
+				target = UZB
+				autonomous_state = autonomy_puppet
+			}
+			set_autonomy = {
+				target = TRK
+				autonomous_state = autonomy_puppet
+			}
+			set_autonomy = {
+				target = TAJ
+				autonomous_state = autonomy_puppet
+			}
+			set_autonomy = {
+				target = KYR
+				autonomous_state = autonomy_puppet
+			}
+		}
+		UZB = {
+			set_cosmetic_tag = UZB_Novosibirsk
+			
+			set_capital = { state = 1467 }
+			
+			transfer_state = 585
+			transfer_state = 750
+			transfer_state = 405
+			transfer_state = 1468
+			transfer_state = 1467
+			
+			transfer_state = 2195
+		    transfer_state = 2194
+			transfer_state = 2196
+			transfer_state = 2205
+			
+			add_state_core = 2195
+		    add_state_core = 2194
+			add_state_core = 2196
+			add_state_core = 2205
+			
+			add_state_core = 585
+			add_state_core = 750
+			add_state_core = 405
+			add_state_core = 1468
+			add_state_core = 1467
+			
+			set_popularities = {
+				conservatism = 35
+				paternalism = 30
+				liberalism = 20
+				progressivism = 10
+				despotism = 5
+			}
+
+			set_politics = {
+				ruling_party = paternalism
+			}
+			XXX = {
+				UZB_RUS_Provisional_Government = { set_nationality = UZB }
+			}
+			promote_character = UZB_RUS_Provisional_Government
+
+			remove_ideas = {
+				UZB_Jadid
+				UZB_Rise_of_Discontent
+			}
+			TNO_Oil_Crisis_remove_modifier = yes
+
+			if = {
+				limit = {
+					has_idea = OFN_Observer
+				}
+				remove_ideas = OFN_Observer
+			}
+			else_if = {
+				limit = {
+					has_idea = Sphere_Observer
+				}
+				remove_ideas = Sphere_Observer
+			} #removes other faction ideas
+
+			econ_join_sphere_RUS = yes
+			add_ideas = CSTO_Member
+			remove_ideas = UZB_Jadid
+			remove_ideas = UZB_Rise_of_Discontent
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+			econ_type_change = yes
+		}
+		TRK = {
+			set_cosmetic_tag = TRK_Novosibirsk
+			
+			transfer_state = 2201
+		    transfer_state = 584
+			transfer_state = 2203
+			transfer_state = 2202
+			transfer_state = 2204
+			
+			
+			add_state_core = 2201
+		    add_state_core = 584
+			add_state_core = 2203
+			add_state_core = 2202
+			add_state_core = 2204
+		
+			set_popularities = {
+				conservatism = 35
+				paternalism = 40
+				liberalism = 10
+				progressivism = 10
+				despotism = 5
+			}
+
+			set_politics = {
+				ruling_party = paternalism
+			}
+			XXX = {
+				TRK_RUS_Provisional_Government = { set_nationality = TRK }
+			}
+			promote_character = TRK_RUS_Provisional_Government
+			econ_join_sphere_RUS = yes
+			add_ideas = CSTO_Member
+			remove_ideas = { 
+				TRK_Fragmented_Tribes
+				TRK_Question_Of_Identity
+				TRK_A_Modern_Silk_Road
+			}
+			TNO_Oil_Crisis_remove_modifier = yes
+
+			if = {
+				limit = {
+					has_idea = OFN_Observer
+				}
+				remove_ideas = OFN_Observer
+			}
+			else_if = {
+				limit = {
+					has_idea = Sphere_Observer
+				}
+				remove_ideas = Sphere_Observer
+			} 									#removes other faction ideas
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+			econ_type_change = yes
+		}
+
+		TAJ = {
+			set_cosmetic_tag = TAJ_Novosibirsk
+			
+			transfer_state = 742
+			transfer_state = 1466
+			
+		    transfer_state = 2198
+			transfer_state = 2199
+			transfer_state = 2200
+			
+			add_state_core = 742
+			add_state_core = 1466
+			add_state_core = 2198
+			add_state_core = 2199
+			add_state_core = 2200
+			
+			set_popularities = {
+				conservatism = 15
+				paternalism = 50
+				liberalism = 10
+				progressivism = 10
+				despotism = 15
+			}
+
+			set_politics = {
+				ruling_party = paternalism
+			}
+			XXX = {
+				TAJ_RUS_Provisional_Government = { set_nationality = TAJ }
+			}
+			
+			promote_character = TAJ_RUS_Provisional_Government
+
+			remove_ideas = {
+				TAJ_fading_economy
+				TAJ_flooded_streets
+			}
+			TNO_Oil_Crisis_remove_modifier = yes
+
+			if = {
+				limit = {
+					has_idea = OFN_Observer
+				}
+				remove_ideas = OFN_Observer
+			}
+			else_if = {
+				limit = {
+					has_idea = Sphere_Observer
+				}
+				remove_ideas = Sphere_Observer
+			} 	
+
+			econ_join_sphere_RUS = yes
+			add_ideas = CSTO_Member
+			remove_ideas = TAJ_flooded_streets
+			remove_ideas = TAJ_fading_economy
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+			econ_type_change = yes
+		}
+		KYR = {
+			set_cosmetic_tag = KYR_Novosibirsk
+			
+			transfer_state = 2197
+			transfer_state = 586
+			transfer_state = 732
+
+			add_state_core = 586
+			add_state_core = 732
+			add_state_core = 2197
+			
+			set_popularities = {
+				conservatism = 25
+				paternalism = 40
+				liberalism = 10
+				progressivism = 10
+				despotism = 15
+			}
+
+			set_politics = {
+				ruling_party = paternalism
+			}
+			XXX = {
+				KYR_RUS_Provisional_Government = { set_nationality = KYR }
+			}
+			promote_character = KYR_RUS_Provisional_Government
+			econ_join_sphere_RUS = yes
+
+			remove_ideas = {
+				KYR_Stabilization_Regime
+			}
+			TNO_Oil_Crisis_remove_modifier = yes
+
+			if = {
+				limit = {
+					has_idea = OFN_Observer
+				}
+				remove_ideas = OFN_Observer
+			}
+			else_if = {
+				limit = {
+					has_idea = Sphere_Observer
+				}
+				remove_ideas = Sphere_Observer
+			} 	
+
+			add_ideas = CSTO_Member
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+			econ_type_change = yes
+		}
+		NOV = {
+			add_to_faction = UZB
+			add_to_faction = TRK
+			add_to_faction = TAJ
+			add_to_faction = KYR
+		}
+	}
+}
+
+## Loss peace deal
+
+RUS_lost_war = {
+	hidden_effect = {
+		RUS_peace_out = yes
+		RUS_remove_wargoals = yes
+		RUS = { country_event = { id = swrw_misc.1 days = 1 } } #removing army size modifiers
+		GER = { country_event = { id = swrw_misc.1 days = 1 } } #removing army size modifiers
+	}
+	GER = {
+		set_country_flag = GER_SWRW_Victory
+		if = {
+			limit = {
+				has_country_leader = {
+					character = GER_albert_speer
+					ruling_only = yes
+				}
+			}
+			country_event = { id = reich.2005 days = 1 }
+		}
+		clr_country_flag = RUS_SWRW_ongoing
+	}
+	MCW = {
+		transfer_state = 214
+		transfer_state = 859
+		transfer_state = 858
+		transfer_state = 861
+		transfer_state = 860
+		transfer_state = 857
+		transfer_state = 351
+		transfer_state = 856
+		transfer_state = 252
+		transfer_state = 855
+		transfer_state = 256
+		transfer_state = 862
+		transfer_state = 262
+		transfer_state = 863
+		transfer_state = 870
+		transfer_state = 869
+		transfer_state = 868
+		transfer_state = 397
+		transfer_state = 866
+		transfer_state = 398
+		transfer_state = 867
+		transfer_state = 400
+		transfer_state = 752
+		transfer_state = 865
+		transfer_state = 399
+		transfer_state = 854
+		transfer_state = 249
+		transfer_state = 753
+		transfer_state = 864
+		transfer_state = 651
+		transfer_state = 853
+		transfer_state = 250
+		transfer_state = 851
+		transfer_state = 850
+		transfer_state = 251
+		transfer_state = 755
+		transfer_state = 852
+		transfer_state = 849
+		transfer_state = 652
+		transfer_state = 1887
+		
+		every_state = {
+			limit = { is_owned_by = MCW } 
+			add_core_of = MCW
+		}
+		854 = {
+			set_state_name = "Joschkar-Ola"
+		}
+		857 = {
+			set_state_name = "Wologda"
+		}
+		351 = {
+			set_state_name = "Manturowo"
+		}
+		867 = {
+			set_state_name = "Scharja"
+		}
+		855 = {
+			set_state_name = "Semjonow"
+		}
+		252 = {
+			set_state_name = "Nischni Nowgorod"
+		}
+		256 = {
+			set_state_name = "Tscheboksary"
+		}
+		250 = {
+			set_state_name = "Sysran"
+		}
+		249 = {
+			set_state_name = "Kasan"
+		}
+		400 = {
+			set_state_name = "Wjatka"
+		}
+		651 = {
+			set_state_name = "Nabereschnyje Tschelny"
+		}
+		397 = {
+			set_state_name = "Syktywkar"
+		}
+		214 = {
+			set_state_name = "Archangelsk"
+		}
+		858 = {
+			set_state_name = "Wytegra"
+		}
+		755 = {
+			set_state_name = "Balakowo"
+		}
+		860 = {
+			set_state_name = "Weliki Ustjug"
+		}
+		861 = {
+			set_state_name = "Plessezk"
+		}
+		862 = {
+			set_state_name = "Nesen"
+		}
+		863 = {
+			set_state_name = "Workuta"
+		}
+		869 = {
+			set_state_name = "Uchta"
+		}
+		398 = {
+			set_state_name = "Uchta"
+		}
+		262 = {
+			set_state_name = "Narjan-Mar"
+		}
+		852 = {
+			set_state_name = "Alexejewka"
+		}
+		853 = {
+			set_state_name = "Ufa"
+		}
+		864 = {
+			set_state_name = "Saigatka"
+		}
+		865 = {
+			set_state_name = "Yurlinsky"
+		}
+		set_province_name = { id = 9402 name = "Joschkar-Ola" }
+		set_province_name = { id = 6338 name = "Kasan" }
+		set_province_name = { id = 9259 name = "Nowotscheboksarsk" }
+		set_province_name = { id = 9131 name = "Wologda" }		
+		set_province_name = { id = 6124 name = "Wjatka" }		
+		set_province_name = { id = 9385 name = "Nabereschnyje Tschelny" }		
+		set_province_name = { id = 11375 name = "Nischni Nowgorod" }		
+		set_province_name = { id = 6327 name = "Kstowo" }		
+		set_province_name = { id = 3282 name = "Tscheboksary" }	
+		set_province_name = { id = 6121 name = "Syktywkar" }
+		set_province_name = { id = 6502 name = "Balakowo" }
+		set_province_name = { id = 6226 name = "Sysran" }
+		set_province_name = { id = 12527 name = "Beresniki" }
+		set_province_name = { id = 270 name = "Semjonow" }
+		set_province_name = { id = 6077 name = "Galitsch" }
+		set_province_name = { id = 3315 name = "Wolschsk" }
+		set_province_name = { id = 11075 name = "Manturowo" }
+		set_province_name = { id = 9159 name = "Kineschma" }
+		set_province_name = { id = 73 name = "Scharja" }
+		set_province_name = { id = 11107 name = "Grjasowez" }
+		set_province_name = { id = 11189 name = "Scheksna" }
+		set_province_name = { id = 166 name = "Wytegra" }
+		set_province_name = { id = 3338 name = "Archangelsk" }
+		set_province_name = { id = 9124 name = "Weliki Ustjug" }
+		set_province_name = { id = 9349 name = "Naryschewo" }
+		set_province_name = { id = 112 name = "Schachunja" }
+		set_province_name = { id = 9146 name = "Slobodskoi" }
+		set_province_name = { id = 13344 name = "Wytschegodski" }
+		set_province_name = { id = 11074 name = "Welsk" }
+		set_province_name = { id = 72 name = "Njandoma" }
+		set_province_name = { id = 9130 name = "Plessezk " }
+		set_province_name = { id = 9293 name = "Glasow" }
+		set_province_name = { id = 1295 name = "Uchta" }
+		set_province_name = { id = 3168 name = "Sewerodwinsk" }
+		set_province_name = { id = 6192 name = "Mesen" }
+		set_province_name = { id = 105 name = "Narjan-Mar" }
+		set_province_name = { id = 10723 name = "Petschora" }
+		set_province_name = { id = 9205 name = "Ussinsk" }
+		set_province_name = { id = 13357 name = "Workuta" }
+		set_province_name = { id = 12130 name = "Ascha" }
+		set_province_name = { id = 6278 name = "Ischewsk" }
+		set_province_name = { id = 6323 name = "Jelabuga" }
+		set_province_name = { id = 9299 name = "Stawropol-Wolschskij" }
+		set_province_name = { id = 312 name = "Nowodwinsk" }
+		set_province_name = { id = 464 name = "Gurjew" }
+		set_province_name = { id = 9420 name = "Alexejewka" } 
+		set_province_name = { id = 9391 name = "Iwaschtschenkowo" }
+		set_province_name = { id = 7403 name = "Tschaikowski" }
+		set_province_name = { id = 11228 name = "Lyswa" }
+		set_province_name = { id = 11228 name = "Lyswa" }
+		set_province_name = { id = 9243 name = "Nowosamarowsk" }
+		set_province_name = { id = 6275 name = "Schiguljowsk" }
+		if = {
+			limit = {
+				has_global_flag = german_civil_war_bormannvic
+			}
+			set_cosmetic_tag = MCW_bormann
+			set_popularities = {
+				national_socialism = 100
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_flag = german_civil_war_speervic
+			}
+			set_cosmetic_tag = MCW_speer
+			set_popularities = {
+				paternalism = 10
+				despotism = 80
+				national_socialism = 10
+			}
+		}
+	}
+	
+	FIN = {
+		transfer_state = 1887
+		transfer_state = 1359
+		transfer_state = 215
+	}
+	RUS = {
+		if = {
+			limit = { has_country_leader = { character = SBA_Siberian_Soviet ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40018 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SBA_Security_Council ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40019 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = WRS_Georgy_Zhukov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40020 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = WRS_Mikhail_Tukhachevsky ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40021 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Mikhail_Suslov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40022 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = KOM has_government = socialist }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40023 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Svetlana_Bukharina ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40024 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = TYM_Lazar_Kaganovich ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40025 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = TYM_Nikita_Khrushchev ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40026 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = IRK_Genrikh_Yagoda ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40027 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = IRK_Sergey_Bessonov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40028 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = BRY_Valery_Sablin ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40029 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Svetlana_Stalina ruling_only = yes } has_government = despotism }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40049 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SAM_Miletiy_Zykov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40050 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = VYT }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40051 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = MAG_Mitchell_Werbell ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40052 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Igor_Shafarevich ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40053 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Ivan_Serov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40054 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KOM_Lev_Gumilyov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40055 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = KOM OR = { has_government = progressivism has_government = liberalism has_government = liberal_conservatism } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40056 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = TOM }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40057 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SVR_Boris_Yeltsin ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40058 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = MAG_Nikolay_Petlin ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40059 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_flag = CHT_mikhail_victorious }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40060 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KEM_Rurik_III ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40061 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = KEM_Ronegda_I ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40062 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SVR_Pavel_Batov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40063 days = 2 } }
+		}
+		else_if = { #i'm going to fucking neck myself
+			limit = { has_global_flag = NOV_Shukshin_Death }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40107 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = NOV_Alexander_Pokryshkin ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40064 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = CHT_Boris_Shepunov ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40065 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SAM_Sergey_Bunyachenko ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40066 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = AMR }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40067 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = SAM_Vladimir_Artsezo ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40068 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = PRM_Gutrum_Vagner ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40069 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = PRM_Velimir ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40070 days = 2 } }
+		}
+		else_if = {
+			limit = { original_tag = OMS }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40071 days = 2 } }
+		}
+		else_if = {
+			limit = { has_country_leader = { character = MAG_Mikhail_Matkovsky ruling_only = yes } }
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40072 days = 2 } }
+		}
+		else = { every_country = { limit = { is_ai = no } news_event = { id = WORLD.40002 days = 2 } } }
+		clr_country_flag = RUS_SWRW_ongoing
+		clear_variable = WRW_deccat
+	}
+}
+
+RUS_Idea_Removal_Helper = { #removes a ton of ideas of the RKs
+	remove_faction_status = yes
+	leave_GER_sphere = yes
+	if = {
+		limit = { has_idea = RK_martial_law }
+		remove_ideas = RK_martial_law
+	}
+	if = {
+		limit = { has_idea = WRW_integrated_administration }
+		remove_ideas = WRW_integrated_administration
+	}
+	if = {
+		limit = { has_idea = NOV_they_are_broken_idea }
+		remove_ideas = NOV_they_are_broken_idea
+	}
+	if = {
+		limit = { has_idea = WRW_partisan_uprisings }
+		remove_ideas = WRW_partisan_uprisings
+	}
+	if = {
+		limit = { has_idea = GER_BOR_Econ_RK_idea }
+		remove_ideas = GER_BOR_Econ_RK_idea
+	}
+	if = {
+		limit = { has_idea = Pakt_Reichsland }
+		remove_ideas = Pakt_Reichsland
+	}
+	if = {
+		limit = { has_idea = Pakt_Autonomous_Reichskommissariat }
+		remove_ideas = Pakt_Autonomous_Reichskommissariat
+	}
+	if = {
+		limit = { has_dynamic_modifier = { modifier = TNO_Oil_Crisis_dynamic_modifier } }
+		TNO_Oil_Crisis_remove_modifier = yes
+	}
+	if = {
+		limit = { original_tag = UKS }
+		SWRW_UKS_remove_all_ideas = yes
+	}
+	if = {
+		limit = { original_tag = FUK }
+		SWRW_FUK_remove_all_ideas = yes
+	}
+	if = {
+		limit = { original_tag = BLR }
+		SWRW_BLR_remove_all_ideas = yes
+	}
+	if = {
+		limit = { original_tag = UPO }
+		SWRW_UPO_remove_all_ideas = yes
+	}
+}
+
+RUS_save_pre_war_conscription = {
+	hidden_effect = {
+		if = {
+			limit = { has_idea = tno_conscription_disarmed_nation }
+			set_country_flag = RUS_pre_war_conscription_1
+		}
+		else_if = {
+			limit = { has_idea = tno_conscription_volunteer_only }
+			set_country_flag = RUS_pre_war_conscription_2
+		}
+		else_if = {
+			limit = { has_idea = tno_conscription_limited_conscription }
+			set_country_flag = RUS_pre_war_conscription_3
+		}
+		else_if = {
+			limit = { has_idea = tno_conscription_broadened_conscription }
+			set_country_flag = RUS_pre_war_conscription_4
+		}
+		else_if = {
+			limit = { has_idea = tno_conscription_extensive_conscription }
+			set_country_flag = RUS_pre_war_conscription_5
+		}
+		else_if = {
+			limit = { has_idea = tno_conscription_service_by_requirement }
+			set_country_flag = RUS_pre_war_conscription_6
+		}
+		else_if = {
+			limit = { has_idea = tno_conscription_all_adults_serve }
+			set_country_flag = RUS_pre_war_conscription_7
+		}
+		else_if = {
+			limit = { has_idea = tno_conscription_scraping_the_barrel }
+			set_country_flag = RUS_pre_war_conscription_8
+		}
+	}
+}
+
+RUS_restore_pre_war_conscription = {
+	hidden_effect = {
+		tno_conscription_clear = yes
+		if = {
+			limit = { has_country_flag = RUS_pre_war_conscription_1 }
+			add_ideas = tno_conscription_disarmed_nation
+			clr_country_flag = RUS_pre_war_conscription_1
+		}
+		else_if = {
+			limit = { has_country_flag = RUS_pre_war_conscription_2 }
+			add_ideas = tno_conscription_disarmed_nation
+			clr_country_flag = RUS_pre_war_conscription_2
+		}
+		else_if = {
+			limit = { has_country_flag = RUS_pre_war_conscription_3 }
+			add_ideas = tno_conscription_disarmed_nation
+			clr_country_flag = RUS_pre_war_conscription_3
+		}
+		else_if = {
+			limit = { has_country_flag = RUS_pre_war_conscription_4 }
+			add_ideas = tno_conscription_disarmed_nation
+			clr_country_flag = RUS_pre_war_conscription_4
+		}
+		else_if = {
+			limit = { has_country_flag = RUS_pre_war_conscription_5 }
+			add_ideas = tno_conscription_disarmed_nation
+			clr_country_flag = RUS_pre_war_conscription_5
+		}
+		else_if = {
+			limit = { has_country_flag = RUS_pre_war_conscription_6 }
+			add_ideas = tno_conscription_disarmed_nation
+			clr_country_flag = RUS_pre_war_conscription_6
+		}
+		else_if = {
+			limit = { has_country_flag = RUS_pre_war_conscription_7 }
+			add_ideas = tno_conscription_disarmed_nation
+			clr_country_flag = RUS_pre_war_conscription_7
+		}
+		else_if = {
+			limit = { has_country_flag = RUS_pre_war_conscription_8 }
+			add_ideas = tno_conscription_disarmed_nation
+			clr_country_flag = RUS_pre_war_conscription_8
+		}
+	}
+}

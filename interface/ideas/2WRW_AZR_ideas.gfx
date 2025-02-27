@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_AZR_heydarism"
+		texturefile = "gfx/interface/ideas/national_spirits/AZR/idea_AZR_heydarism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AZR_heydarism"
+		texturefile = "gfx/interface/ideas/AZR/idea_AZR_heydarism.dds"
+	}
+}

@@ -1,0 +1,38 @@
+scripted_gui = {
+	RUS_Far_East_Negotiations_GUI = {
+		context_type = decision_category
+		window_name = "RUS_Far_East_Negotiations_GUI"
+
+		#visible = {
+		#	has_country_flag = RUS_lord_of_the_east_flag
+		#	NOT = {
+		#		has_global_flag = AFTER_MIDNIGHT_COMMENCED
+		#	}
+		#}
+		
+		properties = {
+			RUS_lote_scales = {
+				image = "[GetRUSLoteScaleImage]"
+			}
+		}
+		
+		triggers = {
+			RUS_birobidzhan_state_highlighted_visible = {
+				has_country_flag = RUS_issue_of_birobidzhan
+			}
+			RUS_primorsky_state_highlighted_visible = {
+				has_country_flag = RUS_issue_of_primorsky
+			}
+			RUS_vladivostok_state_highlighted_visible = {
+				has_country_flag = RUS_issue_of_vladivostok
+			}
+			
+			RUS_birobidzhan_state_owned_visible = {
+				has_country_flag = RUS_lote_round_1_won
+			}
+			RUS_primorsky_state_owned_visible = {
+				has_country_flag = RUS_lote_round_2_won
+			}
+		}
+	}
+}

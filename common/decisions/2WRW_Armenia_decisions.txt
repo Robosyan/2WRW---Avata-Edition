@@ -1,0 +1,123 @@
+SWRW_Armenia_category = {
+
+	ARM_demand_turkish_surrender = {
+	
+		icon = GFX_decision_diplo_kaukasien
+		
+		allowed = { }
+		visible = {
+			has_global_flag = TUR_mountain_war
+			original_tag = ARM
+		}
+		
+		available = {
+			230 = { is_controlled_by = ARM }
+			1567 = { is_controlled_by = ARM }
+			1568 = { is_controlled_by = ARM }
+			OR = {
+				1565 = { is_controlled_by = GEO }
+				1565 = { is_controlled_by = ADY }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		days_remove = 28
+
+		cancel_trigger = {
+			NOT = {
+				AND = {
+					230 = { is_controlled_by = ARM }
+					1567 = { is_controlled_by = ARM }
+					1568 = { is_controlled_by = ARM }
+					OR = {
+						1565 = { is_controlled_by = GEO }
+						1565 = { is_controlled_by = ADY }
+					}
+				}
+			}
+		}
+		complete_effect = {}
+		cancel_effect = {}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: ARM_demand_turkish_surrender"
+			every_country = {
+				limit = { has_war_with = TUR }
+				white_peace = TUR
+			}
+			if = {
+				limit = {
+					country_exists = GEO
+				}
+				GEO = {
+					transfer_state = 1565
+					econ_join_sphere_RUS = yes
+					delete_unit_template_and_units = { 
+						division_template = "Kveiti Divizia"
+						disband = yes
+					}
+				}
+			}
+			else = {
+				ADY = {
+					transfer_state = 1565
+				}
+			}
+			1448 = { set_demilitarized_zone = yes }
+
+			NOV_Global_Conflict_Helper = yes
+			transfer_state = 230
+			transfer_state = 1567
+			set_capital = {
+				state = 230
+				remember_old_capital = no
+			}
+			econ_join_sphere_RUS = yes
+			RUS = {
+				add_to_faction = GEO
+				add_to_faction = ARM
+			}
+
+			promote_character = ARM_Gurgen_Arutjunovic_Dalibaltajan
+
+			set_politics = {
+				ruling_party = paternalism
+			}
+
+			set_popularities = {
+				paternalism = 43
+				despotism = 23
+				communist = 17
+				ultranationalism = 17
+			}
+
+			set_party_name = {
+				ideology = paternalism
+				name = ARM_democratic_paternalism
+				long_name = ARM_democratic_paternalism_long
+			}
+			GEO = {
+				if = {
+					limit = {
+						GEO = { is_in_faction_with = USA }
+					}	
+					add_ideas = OFN_Independent_Member
+				}
+				else = {
+					add_ideas = CSTO_Member
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { is_in_faction_with = USA }
+				}	
+				add_ideas = OFN_Independent_Member
+			}
+			else = {
+				add_ideas = CSTO_Member
+			}
+		}
+	}
+}

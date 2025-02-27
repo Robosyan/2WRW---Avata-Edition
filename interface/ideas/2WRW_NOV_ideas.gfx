@@ -1,0 +1,58 @@
+spriteTypes = {
+	
+	# Second West Russian War
+	
+	# Novosibirsk Region #
+	
+	spriteType = {
+		name = "GFX_idea_NOV_all_russian_army"
+		texturefile = "gfx/interface/ideas/national_spirits/NOV/NOV_all_russian_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOV_the_west_russian_plan"
+		texturefile = "gfx/interface/ideas/national_spirits/NOV/NOV_the_west_russian_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOV_national_recovery_act"
+		texturefile = "gfx/interface/ideas/national_spirits/NOV/NOV_national_recovery_act.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOV_russian_dream"
+		texturefile = "gfx/interface/ideas/national_spirits/NOV/NOV_russian_dream.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOV_blitzkreig_of_our_own"
+		texturefile = "gfx/interface/ideas/national_spirits/NOV/idea_NOV_blitzkreig_of_our_own.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOV_lessons_barbarossa_pic"
+		texturefile = "gfx/interface/ideas/national_spirits/NOV/NOV_lessons_barbarossa_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RUS_Defenders_of_Moscow_pic"
+		texturefile = "gfx/interface/ideas/national_spirits/RUS/idea_RUS_Defenders_of_Moscow.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOV_Moscow_Offensive"
+		texturefile = "gfx/interface/ideas/national_spirits/NOV/GFX_idea_NOV_Moscow_Offensive.dds"
+	}
+	
+	# Post War #
+	
+	spriteType = {
+		name = "GFX_idea_latvian_cultural_renaissance"
+		texturefile = "gfx/interface/ideas/national_spirits/SWRW/GFX_idea_latvian_cultural_renaissance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOV_humanitarian_aid"
+		texturefile = "gfx/interface/ideas/NOV/NOV_humanitarian_aid.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOV_russias_monster"
+		texturefile = "gfx/interface/ideas/national_spirits/SWRW/GFX_idea_NOV_russias_monster.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_NOV_electoral_committee"
+		texturefile = "gfx/interface/ideas/national_spirits/NOV/Electoral_Commission.dds"
+	}
+}

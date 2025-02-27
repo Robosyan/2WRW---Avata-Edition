@@ -1,0 +1,1705 @@
+# Vladivostok
+add_namespace = RUS_Vladivostok
+country_event = {
+	#Total Return of Vladivostok
+	id = RUS_Vladivostok.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.1"
+	}
+	title = RUS_Vladivostok.1.t
+	desc = RUS_Vladivostok.1.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.1.a
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = NOV
+					has_global_flag = RUS_shukshin_unification
+				}
+				set_autonomy = {
+					target = ALT
+					autonomy_state = autonomy_military_district
+				}
+				ALT = {
+					set_cosmetic_tag = KOL_VLD
+					set_politics = {
+						ruling_party = paternalism
+					}
+					create_country_leader = {
+						name = "Ivan Tarasov"
+						picture = "gfx/leaders/NOV/Portrait_Novosibirsk_Ivan_Tarasov.png"
+						desc = ""
+						expire = "1999.3.4"
+						ideology = paternalism_provisional_government_subtype
+					}
+					set_popularities = {
+						paternalism = 52
+						conservatism = 18
+						fascism = 12
+						national_socialism = 18
+					}
+					set_party_name = {
+						ideology = paternalism
+						long_name = KOL_Reintegration_Novosibirsk_long
+						name = KOL_Reintegration_Novosibirsk_short
+					}
+					set_party_name = {
+						ideology = fascism
+						name = KOL_Reintegration_Novosibirsk_fascism
+						long_name = KOL_Reintegration_Novosibirsk_fascism_long
+					}
+					set_party_name = {
+						ideology = national_socialism
+						name = KOL_Reintegration_Novosibirsk_national_socialism
+						long_name = KOL_Reintegration_Novosibirsk_national_socialism_long
+					}
+					set_party_name = {
+						ideology = conservatism
+						name = KOL_Reintegration_Novosibirsk_conservatism
+						long_name = KOL_Reintegration_Novosibirsk_conservatism_long
+					}
+					remove_ideas = RUS_isolated_vilages
+					remove_ideas = GAY_warrior_order
+					remove_ideas = ALT_religious_divide
+					remove_ideas = ALT_christian_socialism
+					remove_ideas = ALT_agrarian_economy
+					remove_ideas = CEN_SIB_the_flight_east
+					set_country_flag = RUS_cancel_all_ideas
+					add_ideas = RUS_kongo_emigration
+					set_capital = {
+						state = 809
+					}
+					if = {
+						limit = { 1364 = { NOT = { is_owned_by = RUS } } }
+						transfer_state = 1364
+						1364 = {
+							add_core_of = ALT
+						}
+					}
+					transfer_state = 409
+					transfer_state = 408
+					transfer_state = 809
+					transfer_state = 657
+					transfer_state = 1644
+					transfer_state = 1646
+					408 = {
+						add_core_of = ALT
+					}
+					409 = {
+						add_core_of = ALT
+					}
+					809 = {
+						add_core_of = ALT
+					}
+					1644 = {
+						add_core_of = ALT
+					}
+					1646 = {
+						add_core_of = ALT
+					}
+					657 = {
+						add_core_of = ALT
+					}
+					add_ideas = CSTO_member
+					econ_join_sphere_RUS = yes
+				}
+				RUS = {
+					if = {
+						limit = {
+							has_country_flag = RUS_BIROBIDZHAN_COMPROMISE
+						}
+						set_temp_variable = {
+							temp_econ_spending_amount = 0.8
+						}
+						econ_spend_money_once_effect_raw_money = yes
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_country_flag = RUS_KHABAROVSK_COMPROMISE
+								has_country_flag = RUS_VLADIVOSTOK_COMPROMISE
+							}
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 563
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 561
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 562
+						}
+					}
+					else_if = {
+						limit = {
+							AND = {
+								has_country_flag = RUS_KHABAROVSK_COMPROMISE
+								has_country_flag = RUS_VLADIVOSTOK_COMPROMISE
+							}
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 574
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 760
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 890
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 759
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 564
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 565
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 566
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 759
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 654
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 891
+						}
+					}
+					country_event = {
+						id = RUS_Vladivostok.19
+						days = 450
+					}
+				}
+				hidden_effect = {
+					809 = {
+						add_province_modifier = {
+							static_modifiers = {
+								terrain_vladivostok_rus
+							}
+							province = {
+								all_provinces = yes
+								limit_to_victory_point = yes
+							}
+						}
+					}
+				}
+			}
+			else = {
+				809 = {
+					set_variable = {
+						nationality = 556
+					}
+				}
+				409 = {
+					set_variable = {
+						nationality = 556
+					}
+				}
+				RUS = {
+					if = {
+						limit = { 1364 = { NOT = { is_owned_by = RUS } } }
+						transfer_state = 1364
+					}
+					transfer_state = 409
+					transfer_state = 408
+					transfer_state = 657
+					transfer_state = 809
+					transfer_state = 1644
+					transfer_state = 1646
+					if = {
+						limit = {
+							has_country_flag = RUS_BIROBIDZHAN_COMPROMISE
+						}
+						set_temp_variable = {
+							temp_econ_spending_amount = 0.8
+						}
+						econ_spend_money_once_effect_raw_money = yes
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_country_flag = RUS_KHABAROVSK_COMPROMISE
+								has_country_flag = RUS_VLADIVOSTOK_COMPROMISE
+							}
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 563
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 561
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 562
+						}
+					}
+					else_if = {
+						limit = {
+							has_country_flag = RUS_KHABAROVSK_COMPROMISE
+							has_country_flag = RUS_VLADIVOSTOK_COMPROMISE
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 574
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 760
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 890
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 759
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 564
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 565
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 566
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 759
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 654
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 891
+						}
+					}
+				}
+			}
+			JAP = {
+				if = {
+					limit = {
+						RUS = {
+							has_country_flag = RUS_VLADIVOSTOK_COMPROMISE
+						}
+					}
+					TNO_Oil_Crisis_remove_modifier = yes
+				}
+			}
+			MAN = {
+				remove_state_core = 657
+				remove_state_core = 409
+				remove_state_core = 408
+				remove_state_core = 809
+				remove_ideas = {
+					RUS_outer_manchurian_partisans_two
+				}
+			}
+			RUS = {
+				RUS_end_vladivostok_conference = yes
+			}
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40010 days = 1 } }
+		}
+		set_country_flag = RUS_VLADIVOSTOK_RESOLVED
+	}
+}
+
+country_event = {
+	#Total Return of Outer Manchuria
+	id = RUS_Vladivostok.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.2"
+	}
+	title = RUS_Vladivostok.2.t
+	desc = RUS_Vladivostok.2.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.2.a
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = NOV
+					has_global_flag = RUS_shukshin_unification
+				}
+				RUS = {
+					puppet = ALT
+				}
+				set_autonomy = {
+					target = ALT
+					autonomy_state = autonomy_military_district
+				}
+				ALT = {
+					set_cosmetic_tag = KOL_VLD
+					set_politics = {
+						ruling_party = paternalism
+					}
+					create_country_leader = {
+						name = "Ivan Tarasov"
+						picture = "gfx/leaders/NOV/Portrait_Novosibirsk_Ivan_Tarasov.dds"
+						desc = ""
+						expire = "1999.3.4"
+						ideology = paternalism_provisional_government_subtype
+					}
+					set_popularities = {
+						paternalism = 52
+						conservatism = 18
+						fascism = 12
+						national_socialism = 18
+					}
+					set_party_name = {
+						ideology = paternalism
+						long_name = KOL_Reintegration_Novosibirsk_long
+						name = KOL_Reintegration_Novosibirsk_short
+					}
+					set_party_name = {
+						ideology = fascism
+						name = KOL_Reintegration_Novosibirsk_fascism
+						long_name = KOL_Reintegration_Novosibirsk_fascism_long
+					}
+					set_party_name = {
+						ideology = national_socialism
+						name = KOL_Reintegration_Novosibirsk_national_socialism
+						long_name = KOL_Reintegration_Novosibirsk_national_socialism_long
+					}
+					set_party_name = {
+						ideology = conservatism
+						name = KOL_Reintegration_Novosibirsk_conservatism
+						long_name = KOL_Reintegration_Novosibirsk_conservatism_long
+					}
+					remove_ideas = RUS_isolated_vilages
+					remove_ideas = GAY_warrior_order
+					remove_ideas = ALT_religious_divide
+					remove_ideas = ALT_christian_socialism
+					remove_ideas = ALT_agrarian_economy
+					remove_ideas = CEN_SIB_the_flight_east
+					set_country_flag = RUS_cancel_all_ideas
+					add_ideas = RUS_kongo_emigration
+					set_capital = {
+						state = 409
+					}
+					if = {
+						limit = { 1364 = { NOT = { is_owned_by = RUS } } }
+						transfer_state = 1364
+					}
+					transfer_state = 408
+					transfer_state = 409
+					transfer_state = 657
+					transfer_state = 1644
+					transfer_state = 1646
+					408 = {
+						add_core_of = ALT
+					}
+					409 = {
+						add_core_of = ALT
+					}
+					1644 = {
+						add_core_of = ALT
+					}
+					1646 = {
+						add_core_of = ALT
+					}
+					657 = {
+						add_core_of = ALT
+					}
+					add_ideas = CSTO_member
+					econ_join_sphere_RUS = yes
+				}
+				RUS = {
+					if = {
+						limit = {
+							has_country_flag = RUS_BIROBIDZHAN_COMPROMISE
+						}
+						set_temp_variable = {
+							temp_econ_spending_amount = 0.8
+						}
+						econ_spend_money_once_effect_raw_money = yes
+					}
+					else_if = {
+						limit = {
+							has_country_flag = RUS_KHABAROVSK_COMPROMISE
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 563
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 561
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 562
+						}
+					}
+					country_event = {
+						id = RUS_Vladivostok.19
+						days = 670
+					}
+				}
+			}
+			else = {
+				409 = {
+					set_variable = {
+						nationality = 556
+					}
+				}
+				RUS = {
+					if = {
+						limit = { 1364 = { NOT = { is_owned_by = RUS } } }
+						transfer_state = 1364
+					}
+					transfer_state = 409
+					transfer_state = 408
+					transfer_state = 657
+					transfer_state = 1644
+					transfer_state = 1646
+					if = {
+						limit = {
+							has_country_flag = RUS_BIROBIDZHAN_COMPROMISE
+						}
+						set_temp_variable = {
+							temp_econ_spending_amount = 0.8
+						}
+						econ_spend_money_once_effect_raw_money = yes
+					}
+					else_if = {
+						limit = {
+							has_country_flag = RUS_KHABAROVSK_COMPROMISE
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 563
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 561
+						}
+						give_resource_rights = {
+							receiver = JAP
+							state = 562
+						}
+					}
+				}
+			}
+			MAN = {
+				remove_ideas = {
+					RUS_outer_manchurian_partisans_two
+				}
+			}
+			RUS = {
+				RUS_end_vladivostok_conference = yes
+			}
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40016 days = 1 } }
+		}
+		set_country_flag = RUS_VLADIVOSTOK_RESOLVED
+	}
+}
+
+country_event = {
+	#Birobidzhan
+	id = RUS_Vladivostok.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.3"
+	}
+	title = RUS_Vladivostok.3.t
+	desc = RUS_Vladivostok.3.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.3.a
+		if = {
+			limit = {
+				original_tag = NOV
+				has_global_flag = RUS_shukshin_unification
+			}
+			RUS = {
+				puppet = ALT
+			}
+			set_autonomy = {
+				target = ALT
+				autonomy_state = autonomy_military_district
+			}
+			RUS = {
+				if = {
+					limit = {
+						has_country_flag = RUS_BIROBIDZHAN_COMPROMISE
+					}
+					set_temp_variable = {
+						temp_econ_spending_amount = 0.8
+					}
+					econ_spend_money_once_effect_raw_money = yes
+				}
+				RUS_end_vladivostok_conference = yes
+			}
+			ALT = {
+				set_cosmetic_tag = KOL_VLD
+				set_politics = {
+					ruling_party = paternalism
+				}
+				create_country_leader = {
+					name = "Ivan Tarasov"
+					picture = "gfx/leaders/NOV/Portrait_Novosibirsk_Ivan_Tarasov.dds"
+					desc = ""
+					expire = "1999.3.4"
+					ideology = paternalism_provisional_government_subtype
+				}
+				set_popularities = {
+					paternalism = 52
+					conservatism = 18
+					fascism = 12
+					national_socialism = 18
+				}
+				set_party_name = {
+					ideology = paternalism
+					long_name = KOL_Reintegration_Novosibirsk_long
+					name = KOL_Reintegration_Novosibirsk_short
+				}
+				set_party_name = {
+					ideology = fascism
+					name = KOL_Reintegration_Novosibirsk_fascism
+					long_name = KOL_Reintegration_Novosibirsk_fascism_long
+				}
+				set_party_name = {
+					ideology = national_socialism
+					name = KOL_Reintegration_Novosibirsk_national_socialism
+					long_name = KOL_Reintegration_Novosibirsk_national_socialism_long
+				}
+				set_party_name = {
+					ideology = conservatism
+					name = KOL_Reintegration_Novosibirsk_conservatism
+					long_name = KOL_Reintegration_Novosibirsk_conservatism_long
+				}
+				remove_ideas = RUS_isolated_vilages
+				remove_ideas = GAY_warrior_order
+				remove_ideas = ALT_religious_divide
+				remove_ideas = ALT_christian_socialism
+				remove_ideas = ALT_agrarian_economy
+				remove_ideas = CEN_SIB_the_flight_east
+				set_country_flag = RUS_cancel_all_ideas
+				add_ideas = RUS_kongo_emigration
+				if = {
+					limit = { 1364 = { NOT = { is_owned_by = RUS } } }
+					transfer_state = 1364
+					1364 = {
+						add_core_of = ALT
+					}
+				}
+				transfer_state = 657
+				transfer_state = 1646
+				transfer_state = 1647
+				657 = {
+					add_core_of = ALT
+				}
+				1646 = {
+					add_core_of = ALT
+				}
+				1647 = {
+					add_core_of = ALT
+				}
+				RUS = {
+					RUS_end_vladivostok_conference = yes
+				}
+			}
+		}
+		else = {
+			RUS = {
+				if = {
+					limit = { 1364 = { NOT = { is_owned_by = RUS } } }
+					transfer_state = 1364
+				}
+				transfer_state = 657
+				transfer_state = 1646
+				transfer_state = 1647
+				RUS_end_vladivostok_conference = yes
+			}
+		}
+		MAN = {
+			remove_ideas = RUS_outer_manchurian_partisans_two
+		}
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40011 days = 1 } }
+		}
+		set_country_flag = RUS_VLADIVOSTOK_RESOLVED
+	}
+}
+
+country_event = {
+	# Approaching the Sphere
+	id = RUS_Vladivostok.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.4"
+	}
+	title = RUS_Vladivostok.4.t
+	desc = RUS_Vladivostok.4.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.4.a
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = WORLD.40015 days = 1 } }
+		}
+		RUS_start_vladivostok_conference = yes
+	}
+}
+
+country_event = {
+	#Birobidzhan
+	id = RUS_Vladivostok.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.5"
+	}
+	title = RUS_Vladivostok.5.t
+	desc = RUS_Vladivostok.5.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.5.a
+		JAP = {
+			country_event = {
+				id = RUS_Vladivostok.26
+				hours = 6
+			}
+		}
+	}
+}
+
+country_event = {
+	#Birobidzhan - Japan (DEPRECATED)
+	id = RUS_Vladivostok.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.6"
+	}
+	title = RUS_Vladivostok.6.t
+	desc = RUS_Vladivostok.6.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.6.a
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.7
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	#Birobidzhan - Success
+	id = RUS_Vladivostok.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.7"
+	}
+	title = RUS_Vladivostok.7.t
+	desc = RUS_Vladivostok.7.desc
+	picture = GFX_report_event_generic_peace_deal
+	immediate = {
+		hidden_effect = {
+			set_temp_variable = {
+				temp_leverage = -25
+			}
+			RUS_lote_increase_leverage = yes
+		}
+		clr_country_flag = RUS_met_with_JAP
+		clr_country_flag = RUS_met_with_USA
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		# end negotiations
+		name = RUS_Vladivostok.7.a
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_FULL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY
+					}
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.8
+				days = 2
+			}
+		}
+	}
+	option = {
+		# more
+		name = RUS_Vladivostok.7.b
+		ai_chance = {
+			base = 80
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_JAP_VLADIVOSTOK
+					option = RUS_JAP_VLADIVOSTOK_MINIMUM_VICTORY
+				}
+			}
+		}
+		custom_effect_tooltip = RUS_lote_conference_next_phase_tt
+		RUS = {
+			set_country_flag = RUS_issue_of_primorsky
+		}
+	}
+}
+
+country_event = {
+	# Russia Satisfied - Birobidzhan
+	id = RUS_Vladivostok.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.8"
+	}
+	title = RUS_Vladivostok.8.t
+	desc = RUS_Vladivostok.8.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.8.a
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.3
+				days = 2
+			}
+		}
+		RUS_end_vladivostok_conference = yes
+	}
+}
+
+country_event = {
+	# Russia wants Primorsky Krai
+	id = RUS_Vladivostok.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.9"
+	}
+	title = RUS_Vladivostok.9.t
+	desc = RUS_Vladivostok.9.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		# Yes
+		name = RUS_Vladivostok.9.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = RUS_lote_leverage
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					RUS_lote_leverage > JAP_lote_leverage
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.10
+				days = 2
+			}
+		}
+	}
+	option = {
+		# Compromise
+		name = RUS_Vladivostok.9.b
+		ai_chance = {
+			base = 60
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_FULL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY
+					}
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.16
+				days = 2
+			}
+		}
+	}
+	option = {
+		# No
+		name = RUS_Vladivostok.9.c
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = JAP_lote_leverage
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					JAP_lote_leverage > RUS_lote_leverage
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_FULL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY
+					}
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.12
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	# Primorsky Krai returned!
+	id = RUS_Vladivostok.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.10"
+	}
+	title = RUS_Vladivostok.10.t
+	desc = RUS_Vladivostok.10.desc
+	picture = GFX_report_event_generic_peace_deal
+	immediate = {
+		hidden_effect = {
+			set_temp_variable = {
+				temp_leverage = -25
+			}
+			RUS_lote_increase_leverage = yes
+		}
+		clr_country_flag = RUS_met_with_JAP
+		clr_country_flag = RUS_met_with_USA
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.10.a
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_JAP_VLADIVOSTOK
+					option = RUS_JAP_VLADIVOSTOK_FULL_VICTORY
+				}
+			}
+		}
+		JAP = {
+			country_event = {
+				id = RUS_Vladivostok.11
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = RUS_Vladivostok.10.b
+		ai_chance = {
+			base = 80
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_JAP_VLADIVOSTOK
+					option = RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY
+				}
+			}
+		}
+		JAP = {
+			country_event = {
+				id = RUS_Vladivostok.34
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	# Russia Staisfied - Khabarovsk!
+	id = RUS_Vladivostok.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.11"
+	}
+	title = RUS_Vladivostok.11.t
+	desc = RUS_Vladivostok.11.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.11.a
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.2
+				days = 2
+			}
+		}
+		RUS_end_vladivostok_conference = yes
+	}
+}
+
+country_event = {
+	# Japan Refuses Khbarvosk
+	id = RUS_Vladivostok.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.12"
+	}
+	title = RUS_Vladivostok.12.t
+	desc = RUS_Vladivostok.12.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		# Damn
+		name = RUS_Vladivostok.12.a
+		ai_chance = {
+			base = 10
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.3
+				days = 2
+			}
+		}
+	}
+	option = {
+		# Offer a Compromise
+		name = RUS_Vladivostok.12.b
+		ai_chance = {
+			base = 160
+		}
+		hidden_effect = {
+			RUS = {
+				country_event = {
+					id = RUS_Vladivostok.16
+					days = 2
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	# Russia wants Vladivostok
+	id = RUS_Vladivostok.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.13"
+	}
+	title = RUS_Vladivostok.13.t
+	desc = RUS_Vladivostok.13.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.13.a
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = RUS_lote_leverage
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					RUS_lote_leverage > JAP_lote_leverage
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_JAP_VLADIVOSTOK
+					option = RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.14
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = RUS_Vladivostok.13.b
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = RUS_lote_leverage
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_FULL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				check_variable = {
+					RUS_lote_leverage > JAP_lote_leverage
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.17
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = RUS_Vladivostok.13.c
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = JAP_lote_leverage
+				factor = 0.5
+			}
+			modifier = {
+				factor = 0.1
+				check_variable = {
+					RUS_lote_leverage > JAP_lote_leverage
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_JAP_VLADIVOSTOK
+					option = RUS_JAP_VLADIVOSTOK_FULL_VICTORY
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.18
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	# Japan Agrees to Return Vladivostok
+	id = RUS_Vladivostok.14
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.14"
+	}
+	title = RUS_Vladivostok.14.t
+	desc = RUS_Vladivostok.14.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.14.a
+		JAP = {
+			country_event = {
+				id = RUS_Vladivostok.15
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	# Russia more than Satisfied - Vladivostok
+	id = RUS_Vladivostok.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.15"
+	}
+	title = RUS_Vladivostok.15.t
+	desc = RUS_Vladivostok.15.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.15.a
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.1
+				days = 2
+			}
+		}
+		hidden_effect = {
+			RUS_end_vladivostok_conference = yes
+		}
+	}
+}
+
+country_event = {
+	# Khabarovsk Compromise
+	id = RUS_Vladivostok.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.16"
+	}
+	title = RUS_Vladivostok.16.t
+	desc = RUS_Vladivostok.16.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.16.a
+		set_country_flag = RUS_KHABAROVSK_COMPROMISE
+		ai_chance = {
+			base = 320
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.10
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = RUS_Vladivostok.16.b
+		ai_chance = {
+			base = 20
+		}
+		JAP = {
+			country_event = {
+				id = RUS_Vladivostok.8
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	# Vladivostok Compromise
+	id = RUS_Vladivostok.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.17"
+	}
+	title = RUS_Vladivostok.17.t
+	desc = RUS_Vladivostok.17.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.17.a
+		set_country_flag = RUS_VLADIVOSTOK_COMPROMISE
+		ai_chance = {
+			base = 160
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.14
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = RUS_Vladivostok.17.b
+		ai_chance = {
+			base = 20
+		}
+		JAP = {
+			country_event = {
+				id = RUS_Vladivostok.11
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	# Japan Refuses Vladivostok
+	id = RUS_Vladivostok.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.18"
+	}
+	title = RUS_Vladivostok.18.t
+	desc = RUS_Vladivostok.18.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.18.a
+		ai_chance = {
+			base = 40
+		}
+		JAP = {
+			country_event = {
+				id = RUS_Vladivostok.11
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = RUS_Vladivostok.18.b
+		ai_chance = {
+			base = 80
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_JAP_VLADIVOSTOK
+					option = RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY
+				}
+			}
+		}
+		hidden_effect = {
+			RUS = {
+				country_event = {
+					id = RUS_Vladivostok.17
+					days = 2
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Annexation
+	id = RUS_Vladivostok.19
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.19"
+	}
+	title = RUS_Vladivostok.19.t
+	desc = RUS_Vladivostok.19.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_Vladivostok.19.a
+		if = {
+			limit = {
+				ALT = {
+					owns_state = 809
+				}
+			}
+			809 = {
+				set_variable = {
+					nationality = 556
+				}
+			}
+		}
+		
+		if = {
+			limit = {
+				ALT = {
+					owns_state = 409
+				}
+			}
+			409 = {
+				set_variable = {
+					nationality = 556
+				}
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 657
+			}
+			657 = {
+				set_variable = {
+					nationality = 151
+				}
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 1646
+			}
+			1646 = {
+				set_variable = {
+					nationality = 151
+				}
+			}
+		}
+		annex_country = {
+			target = ALT
+			transfer_troops = no
+		}
+	}
+}
+
+#### LOTE stuff ####
+country_event = {
+	# Across The Bering Strait
+	id = RUS_Vladivostok.23
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.23"
+	}
+	title = RUS_Vladivostok.23.t
+	desc = RUS_Vladivostok.23.desc
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		# yes I hate japan
+		name = RUS_Vladivostok.23.a
+		ai_chance = {
+			factor = 80
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.25
+				days = 1
+			}
+		}
+	}
+	option = {
+		# nah fam
+		name = RUS_Vladivostok.23.b
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				RUS = {
+					has_country_leader = {
+						character = MAG_Nikolay_Petlin
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS.Vladivostok.24
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	# USA declines
+	id = RUS_Vladivostok.24
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.24"
+	}
+	title = RUS_Vladivostok.24.t
+	desc = RUS_Vladivostok.24.desc
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = RUS_Vladivostok.24.a
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	# USA accepts
+	id = RUS_Vladivostok.25
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.25"
+	}
+	title = RUS_Vladivostok.25.t
+	desc = RUS_Vladivostok.25.desc
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		#
+		name = RUS_Vladivostok.25.a
+		ai_chance = {
+			factor = 1
+		}
+		set_temp_variable = {
+			temp_leverage = 10
+		}
+		RUS_lote_increase_leverage = yes
+	}
+}
+
+country_event = {
+	# Birobidzhan negotiatons - Japan
+	id = RUS_Vladivostok.26
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.26"
+	}
+	title = RUS_Vladivostok.26.t
+	desc = RUS_Vladivostok.26.desc
+	picture = GFX_report_event_JAP_generic_diplomats
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		# accept
+		name = RUS_Vladivostok.26.a
+		ai_chance = {
+			base = 20
+			modifier = {
+				add = RUS_lote_leverage
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					RUS_lote_leverage > JAP_lote_leverage
+				}
+			}
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_JAP_VLADIVOSTOK
+					option = RUS_JAP_VLADIVOSTOK_FAIL
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.27
+				hours = 3
+			}
+		}
+	}
+	option = {
+		# decline
+		name = RUS_Vladivostok.26.b
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = JAP_lote_leverage
+				factor = 0.5
+			}
+			modifier = {
+				factor = 0.1
+				check_variable = {
+					RUS_lote_leverage > JAP_lote_leverage
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_FAIL
+					}
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_FULL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_MINIMUM_VICTORY
+					}
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.28
+				hours = 3
+			}
+		}
+	}
+	option = {
+		# counter-offer
+		name = RUS_Vladivostok.26.c
+		ai_chance = {
+			base = 10
+			modifier = {
+				add = RUS_lote_leverage
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_FAIL
+					}
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_FULL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_JAP_VLADIVOSTOK
+						option = RUS_JAP_VLADIVOSTOK_MINIMUM_VICTORY
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				check_variable = {
+					RUS_lote_leverage > JAP_lote_leverage
+				}
+			}
+		}
+		RUS = {
+			country_event = {
+				id = RUS_Vladivostok.29
+				hours = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	# Japan accepts!
+	id = RUS_Vladivostok.27
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.27"
+	}
+	title = RUS_Vladivostok.27.t
+	desc = RUS_Vladivostok.27.desc
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = RUS_Vladivostok.27.a
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = RUS_lote_round_1_won
+		custom_effect_tooltip = RUS_lote_won_birobidzhan_tt
+		JAP = {
+			country_event = {
+				id = RUS_Vladivostok.6
+				days = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	# Japan declines
+	id = RUS_Vladivostok.28
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.28"
+	}
+	title = RUS_Vladivostok.28.t
+	desc = RUS_Vladivostok.28.desc
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = RUS_Vladivostok.28.a
+		ai_chance = {
+			factor = 1
+		}
+		RUS_end_vladivostok_conference = yes
+		MAN = {
+			remove_ideas = {
+				RUS_outer_manchurian_partisans_two
+			}
+		}
+	}
+}
+
+country_event = {
+	# Japanese Counter-Offer
+	id = RUS_Vladivostok.29
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.29"
+	}
+	title = RUS_Vladivostok.29.t
+	desc = RUS_Vladivostok.29.desc
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = RUS_Vladivostok.29.a
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = RUS_BIROBIDZHAN_COMPROMISE
+		set_country_flag = RUS_lote_round_1_won
+		custom_effect_tooltip = RUS_lote_won_birobidzhan_tt
+		JAP = {
+			country_event = {
+				id = RUS_Vladivostok.6
+				days = 1
+			}
+		}
+	}
+	option = {
+		#
+		name = RUS_Vladivostok.29.b
+		ai_chance = {
+			factor = 1
+		}
+		country_event = {
+			id = RUS_Vladivostok.28
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	# Vladivostok Negotiations
+	id = RUS_Vladivostok.34
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_Vladivostok.34"
+	}
+	title = RUS_Vladivostok.34.t
+	desc = RUS_Vladivostok.34.desc
+	picture = GFX_report_event_vladivostok
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = RUS_Vladivostok.34.a
+		ai_chance = {
+			factor = 1
+		}
+		RUS = {
+			set_country_flag = RUS_issue_of_vladivostok
+			set_country_flag = RUS_lote_round_2_won
+		}
+		custom_effect_tooltip = RUS_lote_conference_next_phase_tt
+	}
+}

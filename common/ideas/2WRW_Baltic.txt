@@ -1,0 +1,150 @@
+ideas = {
+	country = {
+		
+		## LITHUANIA ##
+
+		LIT_cultural_resurgence = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = LIT_cultural_resurgence
+			
+			modifier = {
+				monthly_population = 0.05
+				stability_factor = 0.1
+				custom_modifier_tooltip = LIT_cultural_resurgence_tt
+			}
+		}
+		
+		LIT_colonial_past = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = OST_colonial_past
+			modifier = {
+				stability_factor = -0.20
+				monthly_population = -0.20
+				political_power_gain = -0.25
+				national_socialism_acceptance = 25
+			}
+		}
+		
+		## ESTONIA ##
+
+		EST_lingustic_classes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea EST_lingustic_classes"}
+			
+			allowed = { always = no }
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+
+		EST_oil_shale_industry = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea EST_oil_shale_industry"}
+			
+			allowed = { always = no }
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = EST_oil_shale_industry
+			
+			modifier = {
+				fuel_gain_factor_from_states = 0.33
+				annual_gdp_growth_factor = 0.10
+				misc_income_modifier = 0.03
+			}
+		}
+
+		## LATVIA ##
+
+		LAT_pearl_of_the_baltic = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = LAT_pearl_of_the_baltic_sea
+			modifier = {
+				consumer_goods_use_modifier = -0.05
+				gdp_growth_modifier = 1.5
+			}
+		}
+
+		LAT_lettendeutschen = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = LAT_lettendeutschen
+			modifier = {
+				stability_factor = -0.20
+				political_power_gain = -0.25
+				national_socialism_acceptance = 25
+			}
+		}
+
+		LAT_picking_up_the_pieces = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = LAT_picking_up_the_pieces
+			modifier = {
+				stability_factor = -0.10
+				annual_gdp_growth_factor = -0.33
+			}
+		}
+
+		LAT_cultural_rebirth = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LAT_cultural_rebirth"}
+			
+			allowed = { always = no }
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = LAT_cultural_renaissance
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.1
+				stability_factor = 0.1
+			}
+		}
+
+		## BALTIC FEDERATION ##
+
+		OST_the_baltic_confederation = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea LAT_cultural_rebirth"}
+			
+			allowed = { always = no }
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			picture = OST_the_baltic_confederation
+			
+			modifier = {
+				stability_factor = 0.08
+				political_power_factor = -0.65
+				admin_efficiency_monthly_rate = 0.5
+			}
+		}
+	}
+}

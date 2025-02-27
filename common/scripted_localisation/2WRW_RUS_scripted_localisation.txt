@@ -1,0 +1,232 @@
+﻿defined_text = {
+	name = RUSGetUniqueNamePlain
+	text = {
+		trigger = {
+			OR = {
+				original_tag = IRK
+				original_tag = BRY
+				original_tag = WRS
+				original_tag = PRC
+				original_tag = TYM
+				AND = {
+					original_tag = KOM
+					has_government = communist
+				}
+			}
+		}
+		localization_key = RUS_name_plain_soviet
+	}
+	text = {
+		trigger = {
+			AND = {
+				original_tag = KOM
+				OR = {
+					has_country_leader = { character = KOM_Andrei_Zhdanov ruling_only = yes }
+					has_country_leader = { character = KOM_Vladimir_Chelomei  ruling_only = yes }
+					has_country_leader = { character = KOM_Nikolai_Kardashev  ruling_only = yes }
+				}
+			}
+		}
+		localization_key = RUS_name_plain_ultravis
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = VYT
+				original_tag = CHT
+			}
+		}
+		localization_key = RUS_name_plain_empire
+	}
+	text = {
+		trigger = {
+			original_tag = KOM
+			has_country_leader = {
+				character = KOM_Lev_Gumilyov
+				ruling_only = yes
+			}
+		}
+		localization_key = RUS_name_plain_eurasia
+	}
+	text = {
+		trigger = {
+			has_country_leader = {
+				character = KOM_Sergey_Taboritsky
+				ruling_only = yes
+			}
+		}
+		localization_key = RUS_name_plain_tabby
+	}
+	text = {
+		trigger = {
+			original_tag = KOM
+			has_government = national_socialism
+		}
+		localization_key = RUS_name_plain_ordsoc
+	}
+	text = {
+		trigger = {
+			original_tag = PRM
+			has_government = ultranationalism
+		}
+		localization_key = RUS_name_plain_hyperborea
+	}
+	text = {
+		trigger = {
+			original_tag = PRM
+			has_government = national_socialism
+		}
+		localization_key = RUS_name_plain_ab
+	}
+	text = {
+		trigger = {
+			original_tag = SBA
+		}
+		localization_key = RUS_name_plain_SBA
+	}
+	text = {
+		trigger = {
+			is_russian_nation = yes
+		}
+		localization_key = RUS_name_plain_generic
+	}
+}
+defined_text = {
+	name = RUSGetUniqueNameTitle
+	text = {
+		trigger = {
+			OR = {
+				original_tag = IRK
+				original_tag = BRY
+				original_tag = WRS
+				original_tag = PRC
+				original_tag = TYM
+				AND = {
+					original_tag = KOM
+					has_government = communist
+				}
+			}
+		}
+		localization_key = RUS_name_title_soviet
+	}
+	text = {
+		trigger = {
+			AND = {
+				original_tag = KOM
+				OR = {
+					has_country_leader = { character = KOM_Andrei_Zhdanov ruling_only = yes }
+					has_country_leader = { character = KOM_Vladimir_Chelomei  ruling_only = yes }
+					has_country_leader = { character = KOM_Nikolai_Kardashev  ruling_only = yes }
+				}
+			}
+		}
+		localization_key = RUS_name_title_ultravis
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = VYT
+				original_tag = CHT
+			}
+		}
+		localization_key = RUS_name_title_empire
+	}
+	text = {
+		trigger = {
+			original_tag = KOM
+			has_country_leader = {
+				character = KOM_Lev_Gumilyov
+				ruling_only = yes
+			}
+		}
+		localization_key = RUS_name_title_eurasia
+	}
+	text = {
+		trigger = {
+			has_country_leader = {
+				character = KOM_Sergey_Taboritsky
+				ruling_only = yes
+			}
+		}
+		localization_key = RUS_name_title_tabby
+	}
+	text = {
+		trigger = {
+			original_tag = KOM
+			has_government = national_socialism
+		}
+		localization_key = RUS_name_title_ordsoc
+	}
+	text = {
+		trigger = {
+			original_tag = PRM
+			has_government = ultranationalism
+		}
+		localization_key = RUS_name_title_hyperborea
+	}
+	text = {
+		trigger = {
+			original_tag = PRM
+			has_government = national_socialism
+		}
+		localization_key = RUS_name_title_ab
+	}
+	text = {
+		trigger = {
+			original_tag = SBA
+		}
+		localization_key = RUS_name_title_SBA
+	}
+	text = {
+		trigger = {
+			is_russian_nation = yes
+		}
+		localization_key = RUS_name_title_generic
+	}
+}
+
+defined_text = {
+	name = RUSGetEasternEuropeNames
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = SGR_collab_regimes
+			}
+		}
+		localization_key = RUS_Eastern_Europe_Speer_Collab
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = SGR_reichslander
+			}
+		}
+		localization_key = RUS_Eastern_Europe_Speer_Reichslander
+	}
+	text = {
+		localization_key = RUS_Eastern_Europe_Generic
+	}
+}
+
+defined_text = {
+	name = RUSGetWesternmostCity
+	text = {
+		trigger = {
+			RUS = {
+				owns_state = 11
+			}
+		}
+		localization_key = RUS_Westernmost_Baltic
+	}
+	text = {
+		trigger = {
+			RUS = {
+				owns_state = 1428
+			}
+		}
+		localization_key = RUS_Westernmost_Ukraine
+	}
+	text = {
+		localization_key = RUS_Westernmost_Default
+	}
+}

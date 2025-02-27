@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_GEO_tavusipuli_sakartvelo"
+		texturefile = "gfx/interface/ideas/national_spirits/GEO/idea_GEO_tavusipuli_sakartvelo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GEO_there_will_be_blood"
+		texturefile = "gfx/interface/ideas/national_spirits/GEO/idea_GEO_there_will_be_blood.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GEO_whispering_mountains"
+		texturefile = "gfx/interface/ideas/national_spirits/GEO/idea_GEO_whispering_mountains.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GEO_tavusipuli_sakartvelo"
+		texturefile = "gfx/interface/ideas/GEO/idea_GEO_tavusipuli_sakartvelo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GEO_there_will_be_blood"
+		texturefile = "gfx/interface/ideas/GEO/idea_GEO_there_will_be_blood.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GEO_whispering_mountains"
+		texturefile = "gfx/interface/ideas/GEO/idea_GEO_whispering_mountains.dds"
+	}
+}

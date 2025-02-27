@@ -1,0 +1,627 @@
+on_actions = {
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							tag = RUS
+							tag = GER
+						}
+					}
+					FROM = {
+						OR = {
+							tag = GER
+							tag = RUS
+						}
+					}
+					
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = RUS_SWRW_PEACEDEAL
+							option = RUS_SWRW_PEACEDEAL_CAUCASUS
+						}
+						NOT = {
+							RUS = {
+								has_idea = Custom_TNO_war_buff
+							}
+							RUS = { is_ai = no }
+							GER = { is_ai = no }
+						}
+					}
+					RUS = {
+						add_ideas = Custom_TNO_war_buff
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = RUS_SWRW_PEACEDEAL
+							option = RUS_SWRW_PEACEDEAL_MOSCOW
+						}
+						NOT = {
+							RUS = {
+								has_idea = Custom_TNO_war_buff
+							}
+							RUS = { is_ai = no }
+							GER = { is_ai = no }
+						}
+					}
+					RUS = {
+						add_ideas = Custom_TNO_war_buff
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = RUS_SWRW_PEACEDEAL
+							option = RUS_SWRW_PEACEDEAL_FULL_VICTORY
+						}
+						NOT = {
+							RUS = {
+								has_idea = Custom_TNO_war_buff
+							}
+							RUS = { is_ai = no }
+							GER = { is_ai = no }
+						}
+					}
+					RUS = {
+						add_ideas = Custom_TNO_war_buff
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = RUS_SWRW_PEACEDEAL
+							option = RUS_SWRW_PEACEDEAL_UKRAINE
+						}
+						NOT = {
+							RUS = {
+								has_idea = Custom_TNO_war_buff
+							}
+							RUS = { is_ai = no }
+							GER = { is_ai = no }
+						}
+					}
+					RUS = {
+						add_ideas = Custom_TNO_war_buff
+					}
+				}	
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = RUS_SWRW_PEACEDEAL
+							option = RUS_SWRW_PEACEDEAL_TOTAL_DEFEAT
+						}
+						NOT = {
+							GER = {
+								has_idea = Custom_TNO_war_buff
+							}
+							RUS = { is_ai = no }
+							GER = { is_ai = no }
+						}
+					}
+					GER = {
+						add_ideas = Custom_TNO_war_buff
+					}
+				}
+			}
+		}
+	}
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = { # The Second West Russian War starts
+					ROOT = {
+						OR = {
+							tag = RUS
+							tag = GER
+						}
+					}
+					FROM = {
+						OR = {
+							tag = RUS
+							tag = GER
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_game_rule = {
+								rule = RUS_SWRW_PEACEDEAL
+								option = RUS_SWRW_PEACEDEAL_MOSCOW
+							}
+							has_game_rule = {
+								rule = RUS_SWRW_PEACEDEAL
+								option = RUS_SWRW_PEACEDEAL_CAUCASUS
+							}
+							has_game_rule = {
+								rule = RUS_SWRW_PEACEDEAL
+								option = RUS_SWRW_PEACEDEAL_UKRAINE
+							}
+							has_game_rule = {
+								rule = RUS_SWRW_PEACEDEAL
+								option = RUS_SWRW_PEACEDEAL_FULL_VICTORY
+							}
+						}
+						NOT = {
+							has_global_flag = SECOND_WEST_RUSSIAN_WAR_BUFF_APPLIED
+						}
+						RUS = { is_ai = no }
+						GER = { is_ai = no }
+					}
+					set_global_flag = SECOND_WEST_RUSSIAN_WAR_BUFF_APPLIED
+					RUS = { apply_war_buff_with_5_divisions = yes }
+				}
+				else_if = {
+					limit = {
+						has_game_rule = {
+							rule = RUS_SWRW_PEACEDEAL
+							option = RUS_SWRW_PEACEDEAL_TOTAL_DEFEAT
+						}
+						NOT = {
+							has_global_flag = SECOND_WEST_RUSSIAN_WAR_BUFF_APPLIED
+						}
+						RUS = { is_ai = no }
+						GER = { is_ai = no }
+					}
+					set_global_flag = SECOND_WEST_RUSSIAN_WAR_BUFF_APPLIED
+					GER = { apply_war_buff_with_10_divisions = yes }
+				}
+			}
+			if = {
+				limit = { # The Hungarian Civil War starts
+					ROOT = {
+						OR = {
+							tag = HUN
+							tag = HUS
+							tag = HUD
+						}
+					}
+					FROM = {
+						OR = {
+							tag = HUN
+							tag = HUS
+							tag = HUD
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = HUNGARIAN_CIVIL_WAR_OUTCOME
+							option = HUNGARIAN_CIVIL_WAR_OUTCOME_HUN
+						}
+						NOT = {
+							has_global_flag = HUN_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = HUN_WAR_BUFF_APPLIED
+					HUN = { apply_war_buff_with_5_divisions = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = HUNGARIAN_CIVIL_WAR_OUTCOME
+							option = HUNGARIAN_CIVIL_WAR_OUTCOME_HUS
+						}
+						NOT = {
+							has_global_flag = HUN_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = HUN_WAR_BUFF_APPLIED
+					HUS = { apply_war_buff_with_5_divisions = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = HUNGARIAN_CIVIL_WAR_OUTCOME
+							option = HUNGARIAN_CIVIL_WAR_OUTCOME_HUD
+						}
+						NOT = {
+							has_global_flag = HUN_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = HUN_WAR_BUFF_APPLIED
+					HUD = { apply_war_buff_with_5_divisions = yes }
+				}
+			}
+			if = {
+				limit = { # The Second German Civil War starts
+					ROOT = {
+						OR = {
+							tag = REG
+							tag = RPR
+							tag = GMA
+							tag = GER
+						}
+					}
+					FROM = {
+						OR = {
+							tag = REG
+							tag = RPR
+							tag = GMA
+							tag = GER
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = SECOND_GERMAN_CIVIL_WAR
+							option = SECOND_GERMAN_CIVIL_WAR_GER
+						}
+						NOT = {
+							has_global_flag = SECOND_GER_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = SECOND_GER_WAR_BUFF_APPLIED
+					GER = { apply_war_buff_with_5_divisions = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = SECOND_GERMAN_CIVIL_WAR
+							option = SECOND_GERMAN_CIVIL_WAR_REG
+						}
+						NOT = {
+							has_global_flag = SECOND_GER_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = SECOND_GER_WAR_BUFF_APPLIED
+					REG = { apply_war_buff_with_5_divisions = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = SECOND_GERMAN_CIVIL_WAR
+							option = SECOND_GERMAN_CIVIL_WAR_RPR
+						}
+						NOT = {
+							has_global_flag = SECOND_GER_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = SECOND_GER_WAR_BUFF_APPLIED
+					RPR = { apply_war_buff_with_5_divisions = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = SECOND_GERMAN_CIVIL_WAR
+							option = SECOND_GERMAN_CIVIL_WAR_GMA
+						}
+						NOT = {
+							has_global_flag = SECOND_GER_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = SECOND_GER_WAR_BUFF_APPLIED
+					GMA = { apply_war_buff_with_5_divisions = yes }
+				}
+			}
+			if = {
+				limit = { # Poland vs OZW starts
+					ROOT = {
+						OR = {
+							tag = OZW
+							tag = POL
+						}
+					}
+					FROM = {
+						OR = {
+							tag = OZW
+							tag = POL
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = POL_VS_OZW
+							option = POL_VS_OZW_POL_WINNER
+						}
+						NOT = {
+							has_global_flag = POL_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = POL_WAR_BUFF_APPLIED
+					POL = { apply_war_buff_with_5_divisions = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = POL_VS_OZW
+							option = POL_VS_OZW_OZW_WINNER
+						}
+						NOT = {
+							has_global_flag = OZW_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = OZW_WAR_BUFF_APPLIED
+					OZW = { apply_war_buff_with_5_divisions = yes }
+				}
+			}
+			if = {
+				limit = { # France vs Paktkommission starts
+					ROOT = {
+						OR = {
+							tag = FRA
+							tag = GLC
+						}
+					}
+					FROM = {
+						OR = {
+							tag = FRA
+							tag = GLC
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = FRA_VS_GLC
+							option = FRA_VS_GLC_FRA_WINNER
+						}
+						NOT = {
+							has_global_flag = FRA_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = FRA_WAR_BUFF_APPLIED
+					FRA = { apply_war_buff_with_5_divisions = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = FRA_VS_GLC
+							option = FRA_VS_GLC_GLC_WINNER
+						}
+						NOT = {
+							has_global_flag = GLC_WAR_BUFF_APPLIED
+						}
+					}
+					set_global_flag = GLC_WAR_BUFF_APPLIED
+					GLC = { apply_war_buff_with_5_divisions = yes }
+				}
+			}
+		}
+	}
+	on_peace = {
+		effect = {
+			if = {
+				limit = { # Second West Russian War ends
+					ROOT = {
+						OR = {
+							tag = RUS
+							tag = GER
+						}
+					}
+					FROM = {
+						OR = {
+							tag = GER
+							tag = RUS
+						}
+					}
+				}
+				if = {
+					limit = {
+						GER = {
+							has_idea = Custom_TNO_war_buff
+						}
+					}
+					GER = {
+						remove_ideas = Custom_TNO_war_buff
+					}
+				}
+				if = {
+					limit = {
+						RUS = {
+							has_idea = Custom_TNO_war_buff
+						}
+					}
+					RUS = {
+						remove_ideas = Custom_TNO_war_buff
+					}
+				}
+			}
+		}
+	}
+	on_peace = {
+		effect = {
+			if = {
+				limit = { # Hungarian Civil War ends
+					ROOT = {
+						OR = {
+							tag = HUN
+							tag = HUS
+							tag = HUD
+						}
+					}
+					FROM = {
+						OR = {
+							tag = HUN
+							tag = HUS
+							tag = HUD
+						}
+					}
+					NOT = {
+						count_triggers = {
+							amount = 2
+							country_exists = HUN
+							country_exists = HUS
+							country_exists = HUD
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = HUNGARIAN_CIVIL_WAR_OUTCOME
+							option = HUNGARIAN_CIVIL_WAR_OUTCOME_HUN
+						}
+					}
+					HUN = { remove_war_buff = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = HUNGARIAN_CIVIL_WAR_OUTCOME
+							option = HUNGARIAN_CIVIL_WAR_OUTCOME_HUS
+						}
+					}
+					HUS = { remove_war_buff = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = HUNGARIAN_CIVIL_WAR_OUTCOME
+							option = HUNGARIAN_CIVIL_WAR_OUTCOME_HUD
+						}
+					}
+					HUD = { remove_war_buff = yes }
+				}
+			}
+			if = {
+				limit = { # The Second German Civil War ends
+					ROOT = {
+						OR = {
+							tag = GMA
+							tag = GER
+							tag = REG
+							tag = SIL
+							tag = RPR
+							tag = HRC
+							tag = SFK
+						}
+					}
+					FROM = {
+						OR = {
+							tag = GMA
+							tag = GER
+							tag = REG
+							tag = SIL
+							tag = RPR
+							tag = HRC
+							tag = SFK
+						}
+					}
+					NOT = {
+						count_triggers = {
+							amount = 2
+							country_exists = GMA
+							country_exists = GER
+							country_exists = REG
+							country_exists = RPR
+							country_exists = SFK
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = SECOND_GERMAN_CIVIL_WAR
+							option = SECOND_GERMAN_CIVIL_WAR_REG
+						}
+					}
+					REG = { remove_war_buff = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = SECOND_GERMAN_CIVIL_WAR
+							option = SECOND_GERMAN_CIVIL_WAR_RPR
+						}
+					}
+					RPR = { remove_war_buff = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = SECOND_GERMAN_CIVIL_WAR
+							option = SECOND_GERMAN_CIVIL_WAR_GMA
+						}
+					}
+					GMA = { remove_war_buff = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = SECOND_GERMAN_CIVIL_WAR
+							option = SECOND_GERMAN_CIVIL_WAR_GER
+						}
+					}
+					GER = { remove_war_buff = yes }
+				}
+			}
+			if = {
+				limit = { # Poland vs OZW ends
+					ROOT = {
+						OR = {
+							tag = POL
+							tag = OZW
+						}
+					}
+					FROM = {
+						OR = {
+							tag = POL
+							tag = OZW
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = POL_VS_OZW
+							option = POL_VS_OZW_POL_WINNER
+						}
+					}
+					POL = { remove_war_buff = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = POL_VS_OZW
+							option = POL_VS_OZW_OZW_WINNER
+						}
+					}
+					OZW = { remove_war_buff = yes }
+				}
+			}
+			if = {
+				limit = { # France vs Paktkommission ends
+					ROOT = {
+						OR = {
+							tag = FRA
+							tag = GLC
+						}
+					}
+					FROM = {
+						OR = {
+							tag = FRA
+							tag = GLC
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = FRA_VS_GLC
+							option = FRA_VS_GLC_FRA_WINNER
+						}
+					}
+					FRA = { remove_war_buff = yes }
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = FRA_VS_GLC
+							option = FRA_VS_GLC_GLC_WINNER
+						}
+					}
+					GLC = { remove_war_buff = yes }
+				}
+			}
+		}
+	}
+}

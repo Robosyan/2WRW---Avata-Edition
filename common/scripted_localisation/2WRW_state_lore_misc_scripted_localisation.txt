@@ -1,0 +1,295 @@
+# Misc stuff
+
+defined_text = {
+	name = Statelore_Get_petropavlovsk-kamchatsky_desc
+	text = {
+		trigger = {
+			KMC = {
+				has_country_leader = {
+					character = KMC_Ivan_Yumashev
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = state_lore_desc.801_unfin
+	}
+	text = {
+		localization_key = state_lore_desc.801_fin
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_sevastopol
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			1532 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_name.53_RUS
+	}
+	text = {
+		localization_key = state_lore_name.53
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_moscow
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			1442 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_name.89_RUS
+	}
+	text = {
+		localization_key = state_lore_name.89
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_volgograd
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			243 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_name.88_RUS
+	}
+	text = {
+		localization_key = state_lore_name.88
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_st_petersburg
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			195 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_name.87_RUS
+	}
+	text = {
+		localization_key = state_lore_name.87
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_sevastopol_initial
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			1532 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_initials.53_RUS
+	}
+	text = {
+		localization_key = state_lore_initials.53
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_moscow_initial
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			1442 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_initials.89_RUS
+	}
+	text = {
+		localization_key = state_lore_initials.89
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_volgograd_initial
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			243 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_initials.88_RUS
+	}
+	text = {
+		localization_key = state_lore_initials.88
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_st_petersburg_initial
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			195 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_initials.87_RUS
+	}
+	text = {
+		localization_key = state_lore_initials.87
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_sevastopol_desc
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			1532 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_desc.53_RUS
+	}
+	text = {
+		localization_key = state_lore_desc.53
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_moscow_desc
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			1442 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_desc.89_RUS
+	}
+	text = {
+		localization_key = state_lore_desc.89
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_volgograd_desc
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			243 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_desc.88_RUS
+	}
+	text = {
+		localization_key = state_lore_desc.88
+	}
+}
+
+defined_text = {
+	name = Statelore_Get_st_petersburg_desc
+	text = {
+		trigger = {
+			has_global_flag = RUS_national_unification
+			195 = {
+				owner = {
+					OR = {
+						tag = RUS
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		localization_key = state_lore_desc.87_RUS
+	}
+	text = {
+		localization_key = state_lore_desc.87
+	}
+}

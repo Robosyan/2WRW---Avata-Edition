@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_HUN_From_the_Shadows"
+		texturefile = "gfx/interface/ideas/HUN/GFX_idea_HUN_From_the_Shadows.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUD_The_Landowners_Party"
+		texturefile = "gfx/interface/ideas/HUN/GFX_idea_HUD_The_Landowners_Party.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HUS_The_Hungarian_Red_Army"
+		texturefile = "gfx/interface/ideas/HUN/GFX_idea_HUS_The_Hungarian_Red_Army.dds"
+	}
+}

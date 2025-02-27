@@ -1,0 +1,143 @@
+units = {
+	fleet = {
+		name = "U.S Submarine Task Force"
+		naval_base = 3338		# Arkhangelsk
+		task_force = {
+			name = "Task Force 30"
+			location = 3338
+			ship = {
+				name = "NRF Moskva"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_3 = {
+						amount = 1
+						owner = USA
+						version_name = "Sturgeon Class"
+					}
+				}
+			}
+			#actually a Skipjack
+			ship = {
+				name = "NRF Pokryshkin"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Balao Class"
+					}
+				}
+			}
+			ship = {
+				name = "NRF Arkhangelsk"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Balao Class"
+					}
+				}
+			}
+			ship = {
+				name = "NRF Russia"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Balao Class"
+					}
+				}
+			}
+			ship = {
+				name = "NRF Shukshin"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Balao Class"
+					}
+				}
+			}
+			ship = {
+				name = "NRF Tsar"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Balao Class"
+					}
+				}
+			}
+			ship = {
+				name = "NRF Slava"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Balao Class"
+					}
+				}
+			}
+			ship = {
+				name = "NRF Barents"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_2 = {
+						amount = 1
+						owner = USA
+						version_name = "Tench Class"
+					}
+				}
+			}
+			ship = {
+				name = "NRF Perm"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Balao Class"
+					}
+				}
+			}
+			ship = {
+				name = "NRF Alexander"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Balao Class"
+					}
+				}
+			}
+			ship = {
+				name = "NRF Katerina"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Balao Class"
+					}
+				}
+			}
+			ship = {
+				name = "NRF Murmansk"
+				definition = submarine
+				equipment = {
+					ship_hull_submarine_1 = {
+						amount = 1
+						owner = USA
+						version_name = "Balao Class"
+					}
+				}
+			}
+		}
+	}
+}

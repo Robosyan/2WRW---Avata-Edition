@@ -1,0 +1,284 @@
+ideas = {
+	country = {
+		RUS_russian_military_advisers = {
+			on_add = {
+				log = "GetDateText]: [Root.GetName]: add idea RUS_russian_military_advisers"
+			}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = URL_volunteer_militia_programs
+			modifier = {
+				army_org = 5
+				army_attack_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = RUS
+				experience_gain_army = 0.1
+				command_power_gain = 0.05
+			}
+		}
+		RUS_reconstruction_era = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_reconstruction_era"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_administrative_shortcomings
+			modifier = {
+				stability_factor = -0.3
+				political_power_factor = -0.1
+				consumer_goods_use_modifier = 0.225
+				conscription_factor = -0.33
+				taxable_population_factor = -0.1
+			}
+		}
+		RUS_russias_monster = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_russias_monster"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_russias_monster
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				consumer_goods_use_modifier = 0.05
+				supply_consumption_factor = 0.12
+				conscription_factor = -0.05
+				monthly_population = -0.05
+			}
+		}
+		RUS_supporting_armenian_rebels = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_russias_monster"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_expanded_safety_net
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+			}
+		}
+		RUS_outer_manchurian_partisans = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_outer_manchurian_partisans"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_partisan_alliance
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.125
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.1
+			}
+		}
+		RUS_outer_manchurian_partisans_two = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_outer_manchurian_partisans"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_partisan_alliance
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.2
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_org_factor = -0.2
+				monthly_population = -0.1
+			}
+		}
+		RUS_Polish_Resistance = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Polish_Resistance"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_partisan_alliance
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.2
+			}
+		}
+		RUS_space_technology = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Polish_Resistance"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_research_and_development
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		RUS_nomadic_resistance = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_Polish_Resistance"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = AKT_Kazakh_Horsemen
+			modifier = {
+				required_garrison_factor = 0.5
+				compliance_gain = -0.5
+				resistance_growth = 0.5
+				stability_factor = -0.1
+			}
+		}
+		MON_Natsagiin_Influence = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea MON_Natsagiin_Influence"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_Social_Rights_3
+			modifier = {
+				progressivism_drift = 0.05
+				political_power_factor = -0.25
+				stability_factor = -0.01
+			}
+		}
+		RUS_kongo_emigration = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_kongo_emigration"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_refugee_crisis
+			modifier = {
+				monthly_population = -0.25
+				stability_factor = -0.1
+			}
+		}
+		RUS_magadan_leased = {
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = RUS_port_of_magadan
+			modifier = {
+				min_export = -0.05
+				trade_opinion_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				trade_cost_for_target_factor = 0.6
+			}
+		}
+		RUS_humanitarian_aid = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_humanitarian_aid"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_humanitarian_aid
+			modifier = {
+				monthly_population = 0.05
+				stability_factor = 0.2
+			}
+		}
+		RUS_reconstruction_help = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_reconstruction_help"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = NOV_humanitarian_aid
+			modifier = {
+				annual_gdp_growth_factor = 0.15
+				consumer_goods_use_modifier = -0.225
+			}
+		}
+		RUS_nazi_werewolves = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_nazi_werewolves"
+			}
+			allowed = { always = no }
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_terror_werewolves
+			modifier = {
+				war_support_factor = -0.2
+				stability_factor = -0.2
+				monthly_population = -0.1
+			}
+		}
+		RUS_nazi_werewolves_two = {
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea RUS_nazi_werewolves_two"
+			}
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_country_flag = RUS_cancel_all_ideas
+			}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = generic_terror_werewolves
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.1
+				monthly_population = -0.05
+			}
+		}
+	}
+}

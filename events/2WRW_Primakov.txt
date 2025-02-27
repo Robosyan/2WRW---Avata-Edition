@@ -1,0 +1,464 @@
+add_namespace = VRPP
+add_namespace = VRPP_News
+
+country_event = {
+	id = VRPP.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.1"}
+	title = VRPP.1.t
+	desc = VRPP.1.desc
+	picture = GFX_report_event_NOV_primakov_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.1.a
+	}
+}
+
+country_event = {
+	id = VRPP.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.2"}
+	title = VRPP.2.t
+	desc = VRPP.2.desc
+	picture = GFX_report_event_GNG_sony_5_inch_tv
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.2.a
+		hidden_effect = {
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/NOV/Yevgeny_Primakov_Sunglasses.dds"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = VRPP.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.3"}
+	title = VRPP.3.t
+	desc = VRPP.3.desc
+	picture = GFX_report_event_GNG_generic_construction_workers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.3.a
+	}
+}
+
+country_event = {
+	id = VRPP.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.4"}
+	title = VRPP.4.t
+	desc = VRPP.4.desc
+	picture = GFX_report_event_AZH_kirana_store
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.4.a
+		hidden_effect = {
+			country_event = { id = VRPP.5 days = 10 }
+		}
+	}
+}
+
+country_event = {
+	id = VRPP.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.5"}
+	title = VRPP.5.t
+	desc = VRPP.5.desc
+	picture = GFX_report_event_generic_gun_by_phone
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.5.a
+	}
+}
+
+country_event = {
+	id = VRPP.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.6"}
+	title = VRPP.6.t
+	desc = VRPP.6.desc
+	picture = GFX_report_event_generic_radio1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.6.a
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = VRPP.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.7"}
+	title = VRPP.7.t
+	desc = VRPP.7.desc
+	picture = GFX_report_event_generic_gun_by_phone
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.7.a
+	}
+}
+
+country_event = {
+	id = VRPP.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.8"}
+	title = VRPP.8.t
+	desc = VRPP.8.desc
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.8.a
+		custom_effect_tooltip = VRPP.8_tt
+	}
+}
+
+country_event = {
+	id = VRPP.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.9"}
+	title = VRPP.9.t
+	desc = VRPP.9.desc
+	picture = GFX_report_event_RUS_double_headed_eagle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.9.a
+	}
+}
+
+country_event = {
+	id = VRPP.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.10"}
+	title = VRPP.10.t
+	desc = VRPP.10.desc
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = GFX_report_event_IBR_rain
+	
+	option = {
+		name = VRPP.10.a
+		add_stability = -0.2
+		hidden_effect = {
+			country_event = { id = VRPP.11 days = 15 }
+		}
+	}
+}
+
+country_event = {
+	id = VRPP.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.11"}
+	title = VRPP.11.t
+	desc = VRPP.11.desc
+	picture = GFX_report_event_GNG_pistol_on_desk
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.11.a
+		country_event = { id = VRPP.12 days = 2 }
+		hidden_effect = {
+			retire_character = NOV_Yevgeny_Primakov
+		}
+		add_manpower = -1
+		NOV_Yuri_Zubakov = { promote_character = paternalism }
+		hidden_effect = {
+			every_country = { limit = { is_ai = no } news_event = { id = VRPP_News.1 hours = 1 } }
+		}
+	}
+}
+
+country_event = {
+	id = VRPP.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.12"}
+	title = VRPP.12.t
+	desc = VRPP.12.desc
+	picture = GFX_report_event_GNG_generic_conference_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.12.a
+		country_event = { id = VRPP.13 days = 4 }
+	}
+}
+
+country_event = {
+	id = VRPP.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.13"}
+	title = VRPP.13.t
+	desc = VRPP.13.desc
+	picture = GFX_report_event_RUS_crowd
+	
+	is_triggered_only = yes
+	
+	option = { #nuuu shuk ded!!!!!!!!
+		name = VRPP.13.a
+		add_stability = -0.1
+		add_war_support = -0.05
+		hidden_effect = {
+			set_country_flag = NOV_Zubakov_Coup
+			country_event = { id = VRPP.14 hours = 1 }
+			country_event = { id = VRPP.16 days = 7 }
+			every_country = { limit = { is_ai = no } news_event = { id = VRPP_News.2 hours = 3 } }
+		}
+	}
+	option = { #holsum chungus
+		name = VRPP.13.b 
+		set_politics = { ruling_party = conservatism }
+		add_popularity = { ideology = conservatism popularity = 0.15 }
+		remove_all_ministers = yes
+		add_ideas = {
+			NOV_Alexander_Pokryshkin_hog
+			NOV_Vladimir_Sobolev_for
+			NOV_Mikhail_Kerchenko_eco
+			NOV_Amet_khan_Sultan_sec
+		}
+		hidden_effect = {
+			set_country_flag = NOV_Shukshin_Counter_Coup
+			country_event = { id = VRPP.15 hours = 1 }
+			country_event = { id = VRPP.17 days = 7 }
+			every_country = { limit = { is_ai = no } news_event = { id = VRPP_News.3 hours = 3 } }
+		}
+	}
+}
+
+country_event = {
+	id = VRPP.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.14"}
+	title = VRPP.14.t
+	desc = VRPP.14.desc
+	picture = GFX_report_event_GNG_blood_on_ground
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.14.a
+		add_manpower = -46
+		effect_tooltip = {
+			kill_country_leader = yes
+		}
+		hidden_effect = {
+			retire_character = NOV_Vasily_Shukshin
+		}
+		add_country_leader_role = {
+			character = NOV_Alexander_Pokryshkin
+			promote_leader = yes
+			country_leader = {
+				desc = "POLITICS_ALEXANDER_POKRYSHKIN_DESC"
+				expire = "1999.1.1"
+				ideology = conservatism_agrarianism_subtype
+				traits = { the_siberian_falcon }
+				id = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = VRPP.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.15"}
+	title = VRPP.15.t
+	desc = VRPP.15.desc
+	picture = report_event_russia_vasily_shukshin_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.15.a
+	}
+}
+
+country_event = {
+	id = VRPP.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.16"}
+	title = VRPP.16.t
+	desc = VRPP.16.desc
+	picture = GFX_report_event_NOV_alexander_pokryshkin_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.16.a
+		TNO_Country_Closing_Screen_Show = yes
+		hidden_effect = {
+			set_cosmetic_tag = NOV_VRPP
+		}
+	}
+}
+
+country_event = {
+	id = VRPP.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.17"}
+	title = VRPP.17.t
+	desc = VRPP.17.desc
+	picture = GFX_report_event_ob_sunset
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.17.a
+		add_popularity = { ideology = paternalism popularity = 0.15 }
+		add_country_leader_role = {
+			character = NOV_Vasily_Shukshin
+			promote_leader = yes
+			country_leader = {
+				desc = "POLITICS_VASILY_SHUKSHIN_DESC"
+				expire = "1999.1.1"
+				ideology = paternalism_anocracy_subtype
+				id = -1
+			}
+		}
+		set_party_name = { 
+			ideology = paternalism
+			long_name = NOV_shukshin_RAPP_Libcon_long
+			name = NOV_shukshin_RAPP_Libcon_short
+		}
+		TNO_Country_Closing_Screen_Show = yes
+		hidden_effect = {
+			set_cosmetic_tag = NOV_VRPP
+		}
+	}
+}
+
+country_event = {
+	id = VRPP.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP.18"}
+	title = VRPP.18.t
+	desc = VRPP.18.desc
+	picture = GFX_report_event_glass_and_cigar
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = VRPP.18.a
+		TNO_Country_Closing_Screen_Show = yes
+		hidden_effect = {
+			set_cosmetic_tag = NOV_VRPP
+		}
+	}
+}
+
+news_event = { # Primakov Assassinated
+	id = VRPP_News.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP_News.1"}
+	title = VRPP_News.1.t
+	desc = VRPP_News.1.desc
+	picture = GFX_news_primakov_death
+	
+	is_triggered_only = yes
+
+	option = {
+		name = VRPP_News.1.a
+		trigger = { tag = RUS }
+	}
+	option = {
+		name = VRPP_News.1.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = VRPP_News.1.c
+		trigger = { tag = JAP }
+	}
+	option = {
+		name = VRPP_News.1.d
+		trigger = { tag = GER }
+	}
+	option = {
+		name = VRPP_News.1.e
+		trigger = {
+			NOT = {
+				tag = NOV
+				tag = USA
+				tag = JAP
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { # Russian Army opens fire, Shuk dies
+	id = VRPP_News.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP_News.2"}
+	title = VRPP_News.2.t
+	desc = VRPP_News.2.desc
+	picture = GFX_news_shukshin_death
+	
+	is_triggered_only = yes
+
+	option = {
+		name = VRPP_News.2.a
+		trigger = { tag = RUS }
+	}
+	option = {
+		name = VRPP_News.2.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = VRPP_News.2.c
+		trigger = { tag = JAP }
+	}
+	option = {
+		name = VRPP_News.2.d
+		trigger = { tag = GER }
+	}
+	option = {
+		name = VRPP_News.2.e
+		trigger = {
+			NOT = {
+				tag = NOV
+				tag = USA
+				tag = JAP
+				tag = GER
+			}
+		}
+	}
+}
+
+news_event = { # Shuk owns the VRPP tards
+	id = VRPP_News.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event VRPP_News.3"}
+	title = VRPP_News.3.t
+	desc = VRPP_News.3.desc
+	picture = GFX_news_shukshin_countercoup
+	
+	is_triggered_only = yes
+
+	option = {
+		name = VRPP_News.3.a
+		trigger = { tag = NOV }
+	}
+	option = {
+		name = VRPP_News.3.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = VRPP_News.3.c
+		trigger = { tag = JAP }
+	}
+	option = {
+		name = VRPP_News.3.d
+		trigger = { tag = GER }
+	}
+	option = {
+		name = VRPP_News.3.e
+		trigger = {
+			NOT = {
+				tag = NOV
+				tag = USA
+				tag = JAP
+				tag = GER
+			}
+		}
+	}
+}

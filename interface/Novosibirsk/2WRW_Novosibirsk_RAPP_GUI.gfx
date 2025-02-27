@@ -1,0 +1,95 @@
+spriteTypes = {
+	spriteType = {
+		name = "NOV_decision_category_baikonur"
+		textureFile = "gfx/interface/decisions/NOV_decision_baikonur.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_roskosmos"
+		textureFile = "gfx/interface/decisions/decision_category_roskosmos.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_RAPP_BG"
+		textureFile = "gfx/interface/novosibirsk_gui/rapp/GFX_NOV_RAPP_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_RAPP_Stage_1"
+		textureFile = "gfx/interface/novosibirsk_gui/rapp/GFX_NOV_RAPP_Stage_1.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_RAPP_Stage_2"
+		textureFile = "gfx/interface/novosibirsk_gui/rapp/GFX_NOV_RAPP_Stage_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_RAPP_Baikonur"
+		textureFile = "gfx/interface/novosibirsk_gui/rapp/GFX_NOV_RAPP_Baikonur.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_RAPP_Baikonur_2"
+		textureFile = "gfx/interface/novosibirsk_gui/rapp/GFX_NOV_RAPP_Baikonur_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Launch_Progressbar_Frame"
+		textureFile = "gfx/interface/novosibirsk_gui/rapp/GFX_Launch_Progressbar_Frame.dds"
+	}
+	spriteType = {
+		name = "GFX_Flight_Trajectory_Frame"
+		textureFile = "gfx/interface/novosibirsk_gui/rapp/GFX_Flight_Trajectory_Frame.dds"
+	}
+	spriteType = {
+		name = "NOV_RAPP_Button"
+		textureFile = "gfx/interface/novosibirsk_gui/rapp/GFX_NOV_RAPP_Button.dds"
+	}
+	progressbartype = {
+		name = "GFX_Launch_Progressbar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/rapp/GFX_NOV_Launch_Progressbar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/rapp/GFX_NOV_Launch_Progressbar_2.dds"
+		size = { x = 66 y = 438 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_Launch_Pad_Frames"
+		texturefile = "gfx/interface/novosibirsk_gui/rapp/GFX_Launch_Pad_Frames.dds"
+		noOfFrames = 4
+		animation_rate_fps = 1
+		looping = no
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_Soyuz_Frames"
+		texturefile = "gfx/interface/novosibirsk_gui/rapp/GFX_Soyuz_Frames.dds"
+		noOfFrames = 42
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_Flight_Trajectory_Frames"
+		texturefile = "gfx/interface/novosibirsk_gui/rapp/GFX_Flight_Trajectory_Frames.dds"
+		noOfFrames = 75
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_Proton_Frames"
+		texturefile = "gfx/interface/novosibirsk_gui/rapp/GFX_Proton_Frames.dds"
+		noOfFrames = 42
+		animation_rate_fps = 8
+		looping = no
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_Soyuz_Frames_Test"
+		texturefile = "gfx/interface/novosibirsk_gui/rapp/GFX_Soyuz_Frames_Test.dds"
+		noOfFrames = 10
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+}

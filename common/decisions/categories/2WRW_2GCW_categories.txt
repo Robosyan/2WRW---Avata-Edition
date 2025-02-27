@@ -1,0 +1,150 @@
+SWRW_2GCW_Regional_Winning_category = {
+
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	visible_when_empty = no
+	allowed = {
+	}
+	visible = {
+		OR = {
+			tag = GMA
+			tag = REG
+			tag = RPR
+			tag = GER
+			tag = HRC
+			tag = SFK
+			tag = SRH
+			tag = SIL
+		}
+		has_global_flag = SGCW_ongoing
+		
+	}
+}
+
+SWRW_Silesian_category = {
+
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	visible_when_empty = no
+	allowed = {
+	}
+	visible = {
+		OR = {
+			tag = SIL
+			tag = SFK
+			tag = CZE
+		}
+		has_global_flag = SGCW_ongoing
+	}
+}
+
+SWRW_GMA_category = {
+
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	visible_when_empty = yes
+	allowed = {
+	}
+	visible = {
+		tag = GMA
+		has_global_flag = SGCW_MainRegional_unification
+		
+	}
+}
+
+SWRW_Commie_category = {
+
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	visible_when_empty = yes
+	allowed = {
+	}
+	visible = {
+		has_global_flag = SGCW_MainRegional_unification
+		tag = RPR
+	}
+}
+
+SWRW_REG_category = {
+
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	visible_when_empty = yes
+	allowed = {
+	}
+	visible = {
+		has_global_flag = SGCW_MainRegional_unification
+		tag = REG
+	}
+}
+
+SWRW_GER_category = {
+
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	visible_when_empty = yes
+	
+	visible = {
+		has_global_flag = SGCW_MainRegional_unification
+		tag = GER
+	}
+}
+
+SWRW_SIL_category = {
+
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	visible_when_empty = yes
+	allowed = {
+	}
+	visible = {
+		has_global_flag = SGCW_SilesianRegional_unification
+		tag = SIL
+	}
+}
+
+SWRW_SFK_category = {
+
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	visible_when_empty = yes
+	allowed = {
+	}
+	visible = {
+		has_global_flag = SGCW_SilesianRegional_unification
+		tag = SFK
+	}
+}
+
+
+SWRW_2GCW_Winning_debug_category = {
+
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	visible_when_empty = yes
+	allowed = {
+	}
+	visible = {
+		OR = {
+			tag = GMA
+			tag = REG
+			tag = RPR
+			tag = GER
+			tag = HRC
+			tag = SFK
+			tag = SRH
+			tag = SIL
+		}
+		is_debug = yes
+		
+	}
+}

@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_ost_german_autonomy"
+		texturefile = "gfx/interface/state_modifiers/ost_german_autonomy.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_volga_autonomy"
+		texturefile = "gfx/interface/state_modifiers/volga_autonomy.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_autonomous_republics"
+		texturefile = "gfx/interface/state_modifiers/autonomous_republic.dds"
+	}
+	spriteType = {
+		name = "GFX_Sparse_Population"
+		texturefile = "gfx/interface/state_modifiers/sparse_population.dds"
+	}
+}

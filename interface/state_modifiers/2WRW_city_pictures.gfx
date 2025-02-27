@@ -1,0 +1,18 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_terrain_moscow_ruined"
+		textureFile = "gfx/interface/terrains/terrain_city_moscow_ruined.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_moscow_restored"
+		textureFile = "gfx/interface/terrains/terrain_city_moscow_restored.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_vladivostok_jap"
+		textureFile = "gfx/interface/terrains/terrain_city_vladivostok_1.dds"
+	}
+	spriteType = {
+		name = "GFX_terrain_vladivostok_rus"
+		textureFile = "gfx/interface/terrains/terrain_city_vladivostok_2.dds"
+	}
+}

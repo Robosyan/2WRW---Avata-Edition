@@ -1,0 +1,33 @@
+﻿l_english:
+ 
+ #Cosmetic Tag
+
+ QIN_WCH:0 "National Chinese Republic"
+ QIN_WCH_DEF:0 "the Second National Government of the Republic of China"
+ QIN_WCH_ADJ:0 "Chinese"
+
+ # Party Name Changes
+
+ QIN_provisional_government_long:0 "Kuomintang Provisional Government"
+ QIN_provisional_government_short:0 "KMT - Provisional Government"
+
+ QIN_WCH_despotism_long:0 "KMT - Hardliners"
+ QIN_WCH_despotism_party:0 "Kuomintang - Hardliner Faction"
+ 
+ QIN_WCH_paternalism_party:0 "KMT - Orthodox"
+ QIN_WCH_paternalism_long:0 "Kuomintang - Orthodox Faction"
+ 
+ QIN_WCH_conservatism_party:0 "KMT - Moderate"
+ QIN_WCH_conservatism_long:0 "Kuomintang - Monderate Faction"
+
+ QIN_WCH_liberalism_party:0 "KMT - Reform"
+ QIN_WCH_liberalism_long:0 "Kuomintang - Reformist Faction"
+
+ QIN_WCH_communist_party:0 "CPC"
+ QIN_WCH_communist_long:0 "Communist Party of China"
+
+ #Character
+ QIN_Sun_Tse_Ping: "Sun Tse Ping"
+ POLITICS_SUN_TSE_PING_DESC: ""
+ QIN_Li_Xiannian: "Li Xiannian"
+ POLITICS_LI_XIANNIAN_DESC: ""

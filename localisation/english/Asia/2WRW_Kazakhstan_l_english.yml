@@ -1,0 +1,40 @@
+﻿l_english:
+ 
+ # Cosmetic Tags
+ 
+ PAV_Russian_Democracy:0 "Republic of Kazakhstan"
+ PAV_Russian_Democracy_DEF:0 "the Republic of Kazakhstan"
+ PAV_Russian_Democracy_ADJ:0 "Kazakh"
+
+ PAV_Novosibirsk_ally:0 "Republic of Kazakhstan"
+ PAV_Novosibirsk_ally_DEF:0 "the Republic of Kazakhstan"
+ PAV_Novosibirsk_ally_ADJ:0 "Kazakh"
+ 
+ PAV_Russian_Imperial_Protectorate:0 "Imperial Domain of Kazakhstan"
+ PAV_Russian_Imperial_Protectorate_DEF:0 "the Imperial Domain of Kazakhstan"
+ PAV_Russian_Imperial_Protectorate_ADJ:0 "Kazakh"
+ 
+ PAV_Russian_Imperial_Protectorate_Chita:0 "Imperial Governorate of Kazakhstan"
+ PAV_Russian_Imperial_Protectorate_Chita_DEF:0 "the Imperial Governorate of Kazakhstan"
+ PAV_Russian_Imperial_Protectorate_Chita_ADJ:0 "Kazakh"
+ 
+ KAZ_Russia_Sablin:0 "Kazakh Soviet Socialist Republic"
+ KAZ_Russia_Sablin_DEF:0 "the Kazakh Soviet Socialist Republic"
+ KAZ_Russia_Sablin_ADJ:0 "Kazakh"
+ 
+ # Misc
+ 
+ PAV_Sultanakhmet_Kozhikov:0 "Sultanakhmet Kozhikov"
+ PAV_RUS_Imperial_Government:0 "Imperial Government"
+ PAV_RUS_Imperial_Government_Alternate:0 "Imperskoye Pravitel'stvo"
+ 
+ PAV_RUS_Imperial_Government_long:0 "Imperatorskiy Sovet Kazakhstana"
+ PAV_RUS_Imperial_Government_short:0 "ISK"
+ 
+ TAJ_RUS_Provisional_Government_short:0 "Rossiyskaya Administratsiya"
+ KRK_RUS_Provisional_Government_short:0 "Rossiyskaya Administratsiya"
+ UZB_RUS_Provisional_Government_short:0 "Rossiyskaya Administratsiya"
+ KYR_RUS_Provisional_Government_short:0 "Rossiyskaya Administratsiya" 
+ TRK_RUS_Provisional_Government_short:0 "Rossiyskaya Administratsiya"
+  
+ ### Events ###

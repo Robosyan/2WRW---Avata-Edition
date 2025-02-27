@@ -1,0 +1,161 @@
+GER_baldman_can_die_now = {
+	GER = {
+		has_country_leader = {
+			character = GER_martin_bormann
+			ruling_only = yes
+		}
+		has_completed_focus = BOR_autumn_in_germany
+	}
+	date > 1973.7.1
+}
+
+RUS_war_enjoyer = {
+	OR = {
+		original_tag = OMS
+		has_country_leader = {
+			character = WRS_Mikhail_Tukhachevsky
+			ruling_only = yes
+		}
+		has_country_leader = {
+			character = PRM_Velimir
+			ruling_only = yes
+		}
+		has_country_leader = {
+			character = KOM_Lev_Gumilyov
+			ruling_only = yes
+		}
+	}
+}
+
+GER_war_weaksauce = {
+	original_tag = GER
+	has_country_leader = {
+		character = GER_kurt_waldheim
+		ruling_only = yes
+	}
+}
+
+is_german_aligned = {
+	OR = {
+		original_tag = GER
+		original_tag = GGN
+		original_tag = MCW
+		original_tag = HUN
+		original_tag = ROM
+		original_tag = UKR
+		original_tag = CAU
+		original_tag = JST
+		original_tag = MST
+		original_tag = OST
+		original_tag = DST
+		original_tag = CRI
+		original_tag = PSK
+		is_in_faction_with = GER
+		AND = {
+			tag = PRM
+			has_government = national_socialism
+		}
+	}
+}
+
+is_russian_aligned = {
+	OR = {
+		is_russian_nation = yes
+		is_kazakh_nation = yes
+		original_tag = ADY
+		original_tag = DAG
+		original_tag = AZR
+		original_tag = ARM
+		original_tag = UPO
+		original_tag = BLR
+		original_tag = FUK
+	}
+}
+
+GER_will_accept_minor_victory = {
+	AND = {
+		GER = {
+			check_variable = {
+				WRW_war_exhaustion > 40
+			}
+		}
+		RUS = {
+			controls_state = 1442
+			controls_state = 195
+			controls_state = 243
+		}
+	}
+}
+
+GER_will_accept_small_victory = {
+	# Moskowien and caucasia
+	AND = {
+		GER = {
+			check_variable = {
+				WRW_war_exhaustion > 55
+			}
+		}
+		RUS = {
+			controls_state = 1442
+			controls_state = 195
+			controls_state = 243
+			controls_state = 231
+		}
+	}
+}
+
+GER_will_accept_medium_victory = {
+	# Moskowien, Caucasia and Ukraine
+	AND = {
+		GER = {
+			check_variable = {
+				WRW_war_exhaustion > 65
+			}
+		}
+		RUS = {
+			controls_state = 1442
+			controls_state = 195
+			controls_state = 243
+			controls_state = 231
+			controls_state = 1428
+			controls_state = 1532
+		}
+	}
+}
+
+GER_will_accept_total_victory = {
+	# Everything
+	AND = {
+		GER = {
+			check_variable = {
+				WRW_war_exhaustion > 80
+			}
+		}
+		RUS = {
+			controls_state = 1442
+			controls_state = 195
+			controls_state = 243
+			controls_state = 231
+			controls_state = 1428
+			controls_state = 1532
+			controls_state = 1397
+			controls_state = 13
+			controls_state = 96
+			controls_state = 1404
+		}
+	}
+}
+
+is_2GCW_german_nation = {
+	OR = {
+		original_tag = GER
+		original_tag = REG
+		original_tag = GMA
+		original_tag = HRC
+		original_tag = SRH
+		original_tag = RPR
+		original_tag = CZE
+		original_tag = SFK
+		original_tag = SIL
+	}
+}

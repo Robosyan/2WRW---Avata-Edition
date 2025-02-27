@@ -1,0 +1,51 @@
+SWRW_Azerbaijan_category = {
+	icon = GFX_decision_category_RUS_forpol
+	
+	priority = 9
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+		original_tag = AZR
+	}
+}
+
+SWRW_Georgia_category = {
+	icon = GFX_decision_category_RUS_forpol
+	
+	priority = 9
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+		original_tag = GEO
+	}
+}
+
+SWRW_Avaria_category = {
+	icon = GFX_decision_category_RUS_forpol
+	
+	priority = 9
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+		original_tag = DAG
+	}
+}
+
+SWRW_Adygea_category = {
+	icon = GFX_decision_category_RUS_forpol
+	
+	priority = 9
+	
+	allowed = {
+		always = yes
+	}
+	visible = {
+		original_tag = ADY
+	}
+}

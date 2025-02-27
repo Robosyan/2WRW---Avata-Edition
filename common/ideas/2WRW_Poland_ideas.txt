@@ -1,0 +1,43 @@
+ideas = {
+
+	country = {
+		POL_armia_krajowa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAU_waning_stratification"}
+			picture = POL_armia_krajowa
+			modifier = {
+				experience_gain_army_factor = 0.25
+				conscription_factor = 0.20
+				army_core_attack_factor = 0.125
+				army_core_defence_factor = 0.15
+			}
+		}
+		POL_nowa_polska_volunteers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_nowa_polska_volunteers"}
+			picture = CAU_echoes_of_kaukasia
+			modifier = {
+				weekly_manpower = 1200
+				army_org_factor = -0.05
+			}
+		}
+		POL_winds_of_change_idea = {
+			on_add = { log = "GetDateText]: [Root.GetName]: add idea POL_winds_of_change_idea" }
+			removal_cost = -1
+			picture = NPL_winds_of_change
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.3
+			}
+		}
+		POL_vistula_german_conflict_idea = {
+			on_add = { log = "GetDateText]: [Root.GetName]: add idea POL_vistula_german_conflict_idea" }
+			removal_cost = -1
+			picture = POL_vistula_german_conflict
+			modifier = {
+				war_support_factor = -0.05
+				conscription_factor = -0.1
+				army_org_Factor = -0.025
+			}
+		}
+	}
+}
+

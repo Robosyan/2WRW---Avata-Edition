@@ -1,0 +1,532 @@
+ideas = {
+	country = {
+		GER_Verteidige_das_Vaterland = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_Verteidige_das_Vaterland" }
+			name = GER_Verteidige_das_Vaterland
+			picture = GFX_idea_GER_Verteidige_das_Vaterland
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				army_defence_factor = 0.1
+				recruitable_population_factor = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			targeted_modifier = {
+				tag = RUS
+				defense_bonus_against = 0.05
+			}
+		}
+
+		GER_The_Means_of_War_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_The_Means_of_War_1" }
+			name = GER_The_Means_of_War
+			picture = GFX_idea_GER_The_Means_of_War_1
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+
+		GER_The_Means_of_War_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_The_Means_of_War_2" }
+			name = GER_The_Means_of_War
+			picture = GFX_idea_GER_The_Means_of_War_2
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.08
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				MBT_chassis = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.02 instant = yes
+				}
+			}
+		}
+
+		GER_The_Means_of_War_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_The_Means_of_War_3" }
+			name = GER_The_Means_of_War
+			picture = GFX_idea_GER_The_Means_of_War_3
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.18
+				free_production_units_modifier = 5
+				army_org_factor = -0.05
+				weekly_manpower = -500
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.04 instant = yes
+				}
+				MBT_chassis = {
+					build_cost_ic = -0.03 instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.02 instant = yes
+				}
+			}
+		}
+
+		GER_The_Final_Line_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_The_Final_Line_1" }
+			name = GER_The_Final_Line
+			picture = GFX_idea_GER_The_Final_Line_1
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				weekly_manpower = 100
+				dig_in_speed_factor = 0.05
+				war_support_factor = 0.05
+				training_time_factor = -0.1
+				encryption_factor = 0.2
+			}
+		}
+
+		GER_The_Final_Line_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_The_Final_Line_2" }
+			name = GER_The_Final_Line
+			picture = GFX_idea_GER_The_Final_Line_2
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				weekly_manpower = 200
+				dig_in_speed_factor = 0.05
+				war_support_factor = 0.05
+				training_time_factor = -0.2
+				encryption_factor = 0.2
+				army_defence_factor = 0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+
+		GER_The_Final_Line_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_The_Final_Line_3" }
+			name = GER_The_Final_Line
+			picture = GFX_idea_GER_The_Final_Line_3
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				weekly_manpower = 200
+				dig_in_speed_factor = 0.25
+				war_support_factor = 0.05
+				training_time_factor = -0.2
+				encryption_factor = 0.2
+				army_attack_factor = -0.15
+				army_defence_factor = 0.2
+				experience_gain_army_factor = 0.05
+			}
+		}
+
+		GER_Into_the_Ostfront = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_Into_the_Ostfront" }
+			name = GER_Into_the_Ostfront
+			picture = GFX_idea_GER_Into_the_Ostfront
+			cancel = {
+				has_war = no
+			}
+			targeted_modifier = {
+				tag = RUS
+				attack_bonus_against = 0.1
+				breakthrough_bonus_against = 0.05
+			}
+			modifier = {
+				ground_attack_factor = 0.05
+				army_speed_factor = 0.1
+				army_morale_factor = 0.1
+				army_defence_factor = -0.1
+				supply_consumption_factor = 0.05
+				army_fuel_consumption_factor = 0.05
+			}
+		}
+
+		GER_Wolves_of_the_Fatherland = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_Wolves_of_the_Fatherland" }
+			name = GER_Wolves_of_the_Fatherland
+			picture = GFX_idea_GER_Wolves_of_the_Fatherland
+			cancel = {
+				has_war = no
+			}
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+
+		SWRW_GER_Endsieg = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SWRW_GER_Endsieg" }
+			name = SWRW_GER_Endsieg
+			picture = GFX_idea_SWRW_GER_Endsieg
+			modifier = {
+				monthly_population = 0.1
+				war_support_factor = 0.25
+				research_speed_factor = 0.15
+				poverty_monthly_rate = 0.08
+				academic_base_monthly_rate = 2
+				industrial_expertise_monthly_rate = 2
+			}
+		}
+		
+		GER_economic_apocalypse = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_economic_apocalypse" }
+			name = GER_economic_apocalypse
+			picture = GER_economic_apocalypse
+			modifier = {
+				stability_factor = -0.35
+				industrial_capacity_factory = -0.40
+				annual_gdp_growth_factor = -0.05
+				political_power_gain = -0.15
+				production_speed_dockyard_factor = -0.45
+				local_resources_factor = -0.25
+				army_fuel_consumption_factor = 0.3
+			}
+		}
+		
+		GER_the_god_of_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_the_god_of_war" }
+			name = GER_the_god_of_war
+			picture = GFX_idea_GER_the_god_of_war
+			modifier = {
+				war_support_factor = -0.20
+				army_morale_factor = -0.15
+				land_reinforce_rate = -0.02
+				army_attack_factor = -0.1
+				army_defence_factor = -0.15
+			}
+		}
+
+		GER_the_werewolf_threat = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_the_werewolf_threat" }
+			name = GER_the_werewolf_threat
+			picture = GFX_idea_generic_terror_werewolves
+			modifier = {
+				stability_factor = -0.20
+				national_socialism_drift = 0.10
+			}
+		}
+
+		GER_the_second_german_civil_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_second_german_civil_war" }
+			name = GER_the_second_german_civil_war
+			picture = GFX_idea_GER_the_second_german_civil_war
+			modifier = {
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		GER_a_nation_in_flames = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_a_nation_in_flames" }
+			name = GER_a_nation_in_flames
+			picture = GFX_idea_GER_a_nation_in_flames
+			modifier = {
+				stability_factor = -0.15
+				army_attack_speed_factor = 0.15
+			}
+		}
+
+		REG_the_second_german_civil_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea REG_second_german_civil_war" }
+			name = REG_the_second_german_civil_war
+			picture = GFX_idea_REG_the_second_german_civil_war
+			modifier = {
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		REG_a_nation_in_flames = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea REG_a_nation_in_flames" }
+			name = REG_a_nation_in_flames
+			picture = GFX_idea_REG_a_nation_in_flames
+			modifier = {
+				stability_factor = -0.15
+				army_attack_speed_factor = 0.15
+			}
+		}
+
+		SIL_the_second_german_civil_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SIL_second_german_civil_war" }
+			name = SIL_the_second_german_civil_war
+			picture = GFX_idea_SIL_the_second_german_civil_war
+			modifier = {
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		SIL_a_nation_in_flames = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SIL_a_nation_in_flames" }
+			name = SIL_a_nation_in_flames
+			picture = GFX_idea_SIL_a_nation_in_flames
+			modifier = {
+				stability_factor = -0.15
+				army_attack_speed_factor = 0.15
+			}
+		}
+
+		RPR_the_second_german_civil_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RPR_second_german_civil_war" }
+			name = RPR_the_second_german_civil_war
+			picture = GFX_idea_RPR_the_second_german_civil_war
+			modifier = {
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		RPR_a_nation_in_flames = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RPR_a_nation_in_flames"}
+			name = RPR_a_nation_in_flames
+			picture = GFX_idea_RPR_a_nation_in_flames
+			modifier = {
+				stability_factor = -0.15
+				army_attack_speed_factor = 0.15
+			}
+		}
+
+		SRH_the_second_german_civil_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRH_second_german_civil_war" }
+			name = SRH_the_second_german_civil_war
+			picture = GFX_idea_SRH_the_second_german_civil_war
+			modifier = {
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		SRH_a_nation_in_flames = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRH_a_nation_in_flames"}
+			name = SRH_a_nation_in_flames
+			picture = GFX_idea_SRH_a_nation_in_flames
+			modifier = {
+				stability_factor = -0.15
+				army_attack_speed_factor = 0.15
+			}
+		}
+
+		HRC_the_second_german_civil_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HRC_second_german_civil_war" }
+			name = HRC_the_second_german_civil_war
+			picture = GFX_idea_GCW_the_second_german_civil_war
+			modifier = {
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		HRC_a_nation_in_flames = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HRC_a_nation_in_flames"}
+			name = HRC_a_nation_in_flames
+			picture = GFX_idea_HRC_a_nation_in_flames
+			modifier = {
+				stability_factor = -0.15
+				army_attack_speed_factor = 0.15
+			}
+		}
+
+		GMA_the_second_german_civil_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GMA_second_german_civil_war" }
+			name = GMA_the_second_german_civil_war
+			picture = GFX_idea_GCW_the_second_german_civil_war
+			modifier = {
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		GMA_a_nation_in_flames = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GMA_a_nation_in_flames"}
+			name = GMA_a_nation_in_flames
+			picture = GFX_idea_GMA_a_nation_in_flames
+			modifier = {
+				stability_factor = -0.15
+				army_attack_speed_factor = 0.15
+			}
+		}
+
+		SFK_the_second_german_civil_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SFK_second_german_civil_war" }
+			name = SFK_the_second_german_civil_war
+			picture = GFX_idea_GCW_the_second_german_civil_war
+			modifier = {
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		SFK_a_nation_in_flames = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SFK_a_nation_in_flames"}
+			name = SFK_a_nation_in_flames
+			picture = GFX_idea_SFK_a_nation_in_flames
+			modifier = {
+				stability_factor = -0.15
+				army_attack_speed_factor = 0.15
+			}
+		}
+
+		OZW_the_second_german_civil_war = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea OZW_second_german_civil_war" }
+			name = OZW_the_second_german_civil_war
+			picture = GFX_idea_GCW_the_second_german_civil_war
+			modifier = {
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		OZW_a_nation_in_flames = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea OZW_a_nation_in_flames"}
+			name = OZW_a_nation_in_flames
+			picture = GFX_idea_OZW_a_nation_in_flames
+			modifier = {
+				stability_factor = -0.15
+				army_attack_speed_factor = 0.15
+			}
+		}
+
+		REG_germanys_last_hope = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea REG_germanys_last_hope" }
+			name = REG_germanys_last_hope
+			picture = GFX_idea_REG_germanys_last_hope
+			modifier = {
+				war_support_factor = 0.15
+				army_org_factor = 0.15
+				weekly_manpower = 500
+			}
+		}
+
+		POL_one_last_chance = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POL_one_last_chance" }
+			name = POL_one_last_chance
+			picture = GFX_idea_POL_one_last_chance
+			modifier = {
+				army_core_attack_factor  = 0.10
+				army_org_regain = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+
+		GER_our_reich_of_ash = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_our_reich_of_ash" }
+			name = GER_our_reich_of_ash
+			picture = GFX_idea_GER_our_reich_of_ash
+			modifier = {
+				war_support_weekly_factor = -0.1
+				political_power_gain = -0.10
+				army_org_factor = -0.10
+			}
+		}
+
+		RPR_red_star_reborn = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RPR_red_star_reborn" }
+			name = RPR_red_star_reborn
+			picture = GFX_idea_RPR_red_star_reborn
+			modifier = {
+				war_support_factor = 0.10
+				industrial_capacity_factory = 0.10
+				supply_factor = 0.48
+			}
+		}
+
+		GMA_flames_of_their_reckoning = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GMA_flames_of_their_reckoning" }
+			name = GMA_flames_of_their_reckoning
+			picture = GFX_idea_GMA_flames_of_their_reckoning
+			modifier = {
+				army_core_attack_factor  = 0.10
+				stability_weekly_factor = -0.01
+				planning_speed  = 0.05
+			}
+		}
+
+		SFK_freikorps_voran = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SFK_freikorps_voran" }
+			name = SFK_freikorps_voran
+			picture = GFX_idea_SFK_freikorps_voran
+			modifier = {
+				army_org_factor = 0.15
+				experience_loss_factor = -0.15
+				org_loss_when_moving = 0.05
+			}
+		}
+
+		OZW_one_last_fight = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea OZW_one_last_fight" }
+			name = OZW_one_last_fight
+			picture = GFX_idea_OZW_one_last_fight
+			modifier = {
+				weekly_manpower = -500
+				command_abilities_cost_factor = -0.95
+				army_core_attack_factor = 0.10
+				supply_consumption_factor = 0.05
+			}
+		}
+
+		HRC_forty_years_of_rage_unleashed = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HRC_forty_years_of_rage_unleashed" }
+			name = HRC_forty_years_of_rage_unleashed
+			picture = GFX_idea_HRC_forty_years_of_rage_unleashed
+			modifier = {
+				industrial_capacity_factory = 0.10
+				army_core_defence_factor = 0.10
+				army_core_attack_factor = 0.10
+				experience_loss_factor = -0.05
+			}
+		}
+
+		SRH_red_dawn = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRH_red_dawn"}
+			name = SRH_red_dawn
+			picture = GFX_idea_SRH_red_dawn
+			modifier = {
+				industrial_capacity_factory = 0.20
+				army_core_defence_factor = 0.10
+				army_infantry_attack_factor = 0.15
+				army_breakthrough_against_major_factor = 0.15
+			}
+		}
+		GER_Reconstruction_of_Germany = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GER_Reconstruction_of_Germany" }
+			name = GER_Reconstruction_of_Germany
+			picture = GFX_idea_GER_Reconstruction_of_Germany
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industry_repair_factor = 0.25
+				industry_free_repair_factor = 0.25
+				local_resources_factor = -0.15
+				industrial_capacity_factory = -0.20
+				annual_gdp_growth_factor = -0.01
+				production_speed_dockyard_factor = -0.25
+			}
+		}
+	}
+}

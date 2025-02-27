@@ -1,0 +1,58 @@
+characters = {
+	AZR_heydar_aliyev = {
+		name = AZR_heydar_aliyev
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/AZR/Portrait_Heydar_Aliyev.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_anocracy_subtype
+			desc = "POLITICS_HEYDAR_ALIYEV_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	ARM_Gurgen_Arutjunovic_Dalibaltajan = {
+		name = ARM_Gurgen_Arutjunovic_Dalibaltajan
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/ARM/Portrait_Gurgen_Arutjunovic_Dalibaltajan.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = "POLITICS_GURGEN_ARUTJUNOVIC_DALIBALTAJAN_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	CAU_Caucasian_Council = {
+		name = CAU_Caucasian_Council
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/LAT/Portrait_Baltic_Council.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism_christian_conservatism_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	GEO_Zviad_Gamsakhurdia = {
+		name = GEO_Zviad_Gamsakhurdia
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/GEO/Portrait_Zviad_Gamsakhurdia.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_anocracy_subtype
+			desc = "POLITICS_ZVIAD_GAMSAKHURDIA_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+}

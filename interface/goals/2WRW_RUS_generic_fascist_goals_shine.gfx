@@ -1,0 +1,339 @@
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_Toppling_The_Menace_shine"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Toppling_The_Menace.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Toppling_The_Menace.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Toppling_The_Menace.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Slava_shine"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Slava.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Slava.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Slava.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Honor_in_Labor_shine"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Honor_in_Labor.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Honor_in_Labor.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Honor_in_Labor.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Praise_The_Soldiery_shine"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Praise_the_Soldiery.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Praise_the_Soldiery.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Praise_the_Soldiery.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_A_Westward_Wall_shine"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Westward_Wall.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Westward_Wall.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Westward_Wall.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_Extinguishing_The_Prussian_Spirit_shine"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Extinguishing_the_Prussian_Spirit.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Extinguishing_the_Prussian_Spirit.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_Extinguishing_the_Prussian_Spirit.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_A_Resurgent_Eagle_shine"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Resurgent_Eagle.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Resurgent_Eagle.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Resurgent_Eagle.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+	spriteType = {
+		name = "GFX_RUS_A_Russian_Century_shine"
+		texturefile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Russian_Century.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		legacy_lazy_load = no
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Russian_Century.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/interface/goals/RUS/Fascist/GFX_RUS_A_Russian_Century.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0.0
+				y = 0.0
+			}
+			animationtexturescale = {
+				x = 1.0
+				y = 1.0
+			}
+		}
+	}
+}

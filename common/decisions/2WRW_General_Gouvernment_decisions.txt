@@ -1,0 +1,54 @@
+SWRW_General_Gouvernment_category = {
+	
+	GGN_demand_russian_surrender = {
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		allowed = {
+			original_tag = GGN
+		}
+			
+		visible = {
+			country_exists = GGN
+			has_global_flag = RUS_krakow_uprising
+		}
+		
+		available = {
+			OR = {
+				POL = { has_capitulated = yes }
+				NOT = { country_exists = POL }
+			}
+		}
+
+		fire_only_once = yes
+
+		#days_re_enable = 75
+
+		#cost = 35
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: GGN_demand_russian_surrender "
+			
+			hidden_effect = {
+				annex_country = {
+					target = POL
+					transfer_troops = yes
+				}
+				
+				GER = {
+					annex_country = {
+						target = GGN
+						transfer_troops = yes
+					}
+				}
+			
+				clr_global_flag = RUS_krakow_uprising
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.7 days = 1 } }
+				}
+			}
+		}
+	}
+}

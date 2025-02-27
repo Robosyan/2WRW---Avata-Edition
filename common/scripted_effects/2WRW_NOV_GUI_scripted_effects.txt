@@ -1,0 +1,4692 @@
+#################################
+#	    TABLE OF CONTENTS       #
+#################################
+
+## USEFUL TAGS (CTRL+F THESE FOR QUICK ACCESS) ##
+
+# ELECTIONS
+
+# DUMA
+
+
+### solstron-piña one struggle
+
+#########################
+#      	  DUMA  	    #   
+#########################
+
+NOV_setup_duma_seat_positions = {
+	ROOT = {
+		### Insert into a history file or scripted effect, this sets up all of the seat positions
+		### Note that you'll need to fill out NOV_duma_frame_array yourself with the proper frames for each seat
+
+		# so that we can use resize_array to fill our array with the right number of seats for each party
+		set_temp_variable = { t1 = NOV_rapp_duma_seats }
+		set_temp_variable = { t2 = NOV_vrpp_duma_seats }
+		set_temp_variable = { t3 = NOV_dspr_duma_seats }
+		set_temp_variable = { t4 = NOV_rslp_duma_seats }
+		set_temp_variable = { t5 = NOV_nfm_duma_seats }
+		set_temp_variable = { t6 = NOV_rirm_duma_seats }
+		set_temp_variable = { t7 = NOV_cprf_duma_seats }
+		set_temp_variable = { t8 = 450 }
+
+		add_to_temp_variable = { t2 = t1 }
+		add_to_temp_variable = { t3 = t2 }
+		add_to_temp_variable = { t4 = t3 }
+		add_to_temp_variable = { t5 = t4 }
+		add_to_temp_variable = { t6 = t5 }
+		add_to_temp_variable = { t7 = t6 }
+
+		clear_array = NOV_duma_frame_array
+
+		resize_array = {
+			array = NOV_duma_frame_array
+			value = 1
+			size = t1
+		}
+		resize_array = {
+			array = NOV_duma_frame_array
+			value = 2
+			size = t2
+		}
+		resize_array = {
+			array = NOV_duma_frame_array
+			value = 3
+			size = t3
+		}
+		resize_array = {
+			array = NOV_duma_frame_array
+			value = 4
+			size = t4
+		}
+		resize_array = {
+			array = NOV_duma_frame_array
+			value = 5
+			size = t5
+		}
+		resize_array = {
+			array = NOV_duma_frame_array
+			value = 6
+			size = t6
+		}
+		resize_array = {
+			array = NOV_duma_frame_array
+			value = 7
+			size = t7
+		}
+		resize_array = {
+			array = NOV_duma_frame_array
+			value = 8
+			size = t8
+		}
+
+		clear_array = NOV_duma_x_pos
+		clear_array = NOV_duma_y_pos
+
+		add_to_array = { NOV_duma_x_pos = 0 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 12 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 23 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 35 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 46 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 58 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 69 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 81 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 93 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 104 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 116 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 1 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 13 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 24 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 36 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 47 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 59 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 71 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 3 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 82 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 14 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 94 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 26 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 38 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 106 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 49 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 61 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 118 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 5 }
+		add_to_array = { NOV_duma_y_pos = 216 }
+		add_to_array = { NOV_duma_x_pos = 17 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 73 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 28 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 85 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 40 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 52 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 97 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 8 }
+		add_to_array = { NOV_duma_y_pos = 204 }
+		add_to_array = { NOV_duma_x_pos = 20 }
+		add_to_array = { NOV_duma_y_pos = 205 }
+		add_to_array = { NOV_duma_x_pos = 64 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 109 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 32 }
+		add_to_array = { NOV_duma_y_pos = 205 }
+		add_to_array = { NOV_duma_x_pos = 76 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 44 }
+		add_to_array = { NOV_duma_y_pos = 205 }
+		add_to_array = { NOV_duma_x_pos = 12 }
+		add_to_array = { NOV_duma_y_pos = 192 }
+		add_to_array = { NOV_duma_x_pos = 121 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 89 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 56 }
+		add_to_array = { NOV_duma_y_pos = 205 }
+		add_to_array = { NOV_duma_x_pos = 23 }
+		add_to_array = { NOV_duma_y_pos = 193 }
+		add_to_array = { NOV_duma_x_pos = 36 }
+		add_to_array = { NOV_duma_y_pos = 194 }
+		add_to_array = { NOV_duma_x_pos = 68 }
+		add_to_array = { NOV_duma_y_pos = 205 }
+		add_to_array = { NOV_duma_x_pos = 101 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 48 }
+		add_to_array = { NOV_duma_y_pos = 194 }
+		add_to_array = { NOV_duma_x_pos = 16 }
+		add_to_array = { NOV_duma_y_pos = 181 }
+		add_to_array = { NOV_duma_x_pos = 81 }
+		add_to_array = { NOV_duma_y_pos = 206 }
+		add_to_array = { NOV_duma_x_pos = 28 }
+		add_to_array = { NOV_duma_y_pos = 182 }
+		add_to_array = { NOV_duma_x_pos = 113 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 60 }
+		add_to_array = { NOV_duma_y_pos = 194 }
+		add_to_array = { NOV_duma_x_pos = 40 }
+		add_to_array = { NOV_duma_y_pos = 182 }
+		add_to_array = { NOV_duma_x_pos = 93 }
+		add_to_array = { NOV_duma_y_pos = 206 }
+		add_to_array = { NOV_duma_x_pos = 73 }
+		add_to_array = { NOV_duma_y_pos = 194 }
+		add_to_array = { NOV_duma_x_pos = 21 }
+		add_to_array = { NOV_duma_y_pos = 169 }
+		add_to_array = { NOV_duma_x_pos = 126 }
+		add_to_array = { NOV_duma_y_pos = 218 }
+		add_to_array = { NOV_duma_x_pos = 53 }
+		add_to_array = { NOV_duma_y_pos = 182 }
+		add_to_array = { NOV_duma_x_pos = 33 }
+		add_to_array = { NOV_duma_y_pos = 171 }
+		add_to_array = { NOV_duma_x_pos = 106 }
+		add_to_array = { NOV_duma_y_pos = 206 }
+		add_to_array = { NOV_duma_x_pos = 86 }
+		add_to_array = { NOV_duma_y_pos = 194 }
+		add_to_array = { NOV_duma_x_pos = 66 }
+		add_to_array = { NOV_duma_y_pos = 183 }
+		add_to_array = { NOV_duma_x_pos = 46 }
+		add_to_array = { NOV_duma_y_pos = 171 }
+		add_to_array = { NOV_duma_x_pos = 27 }
+		add_to_array = { NOV_duma_y_pos = 158 }
+		add_to_array = { NOV_duma_x_pos = 119 }
+		add_to_array = { NOV_duma_y_pos = 206 }
+		add_to_array = { NOV_duma_x_pos = 99 }
+		add_to_array = { NOV_duma_y_pos = 195 }
+		add_to_array = { NOV_duma_x_pos = 79 }
+		add_to_array = { NOV_duma_y_pos = 183 }
+		add_to_array = { NOV_duma_x_pos = 59 }
+		add_to_array = { NOV_duma_y_pos = 172 }
+		add_to_array = { NOV_duma_x_pos = 39 }
+		add_to_array = { NOV_duma_y_pos = 160 }
+		add_to_array = { NOV_duma_x_pos = 52 }
+		add_to_array = { NOV_duma_y_pos = 160 }
+		add_to_array = { NOV_duma_x_pos = 72 }
+		add_to_array = { NOV_duma_y_pos = 172 }
+		add_to_array = { NOV_duma_x_pos = 33 }
+		add_to_array = { NOV_duma_y_pos = 147 }
+		add_to_array = { NOV_duma_x_pos = 92 }
+		add_to_array = { NOV_duma_y_pos = 184 }
+		add_to_array = { NOV_duma_x_pos = 112 }
+		add_to_array = { NOV_duma_y_pos = 195 }
+		add_to_array = { NOV_duma_x_pos = 132 }
+		add_to_array = { NOV_duma_y_pos = 207 }
+		add_to_array = { NOV_duma_x_pos = 45 }
+		add_to_array = { NOV_duma_y_pos = 149 }
+		add_to_array = { NOV_duma_x_pos = 65 }
+		add_to_array = { NOV_duma_y_pos = 161 }
+		add_to_array = { NOV_duma_x_pos = 85 }
+		add_to_array = { NOV_duma_y_pos = 173 }
+		add_to_array = { NOV_duma_x_pos = 105 }
+		add_to_array = { NOV_duma_y_pos = 184 }
+		add_to_array = { NOV_duma_x_pos = 59 }
+		add_to_array = { NOV_duma_y_pos = 150 }
+		add_to_array = { NOV_duma_x_pos = 40 }
+		add_to_array = { NOV_duma_y_pos = 137 }
+		add_to_array = { NOV_duma_x_pos = 125 }
+		add_to_array = { NOV_duma_y_pos = 196 }
+		add_to_array = { NOV_duma_x_pos = 79 }
+		add_to_array = { NOV_duma_y_pos = 162 }
+		add_to_array = { NOV_duma_x_pos = 52 }
+		add_to_array = { NOV_duma_y_pos = 139 }
+		add_to_array = { NOV_duma_x_pos = 99 }
+		add_to_array = { NOV_duma_y_pos = 173 }
+		add_to_array = { NOV_duma_x_pos = 72 }
+		add_to_array = { NOV_duma_y_pos = 151 }
+		add_to_array = { NOV_duma_x_pos = 119 }
+		add_to_array = { NOV_duma_y_pos = 185 }
+		add_to_array = { NOV_duma_x_pos = 92 }
+		add_to_array = { NOV_duma_y_pos = 163 }
+		add_to_array = { NOV_duma_x_pos = 47 }
+		add_to_array = { NOV_duma_y_pos = 127 }
+		add_to_array = { NOV_duma_x_pos = 66 }
+		add_to_array = { NOV_duma_y_pos = 140 }
+		add_to_array = { NOV_duma_x_pos = 139 }
+		add_to_array = { NOV_duma_y_pos = 197 }
+		add_to_array = { NOV_duma_x_pos = 113 }
+		add_to_array = { NOV_duma_y_pos = 174 }
+		add_to_array = { NOV_duma_x_pos = 86 }
+		add_to_array = { NOV_duma_y_pos = 152 }
+		add_to_array = { NOV_duma_x_pos = 60 }
+		add_to_array = { NOV_duma_y_pos = 130 }
+		add_to_array = { NOV_duma_x_pos = 80 }
+		add_to_array = { NOV_duma_y_pos = 141 }
+		add_to_array = { NOV_duma_x_pos = 107 }
+		add_to_array = { NOV_duma_y_pos = 164 }
+		add_to_array = { NOV_duma_x_pos = 133 }
+		add_to_array = { NOV_duma_y_pos = 186 }
+		add_to_array = { NOV_duma_x_pos = 55 }
+		add_to_array = { NOV_duma_y_pos = 117 }
+		add_to_array = { NOV_duma_x_pos = 74 }
+		add_to_array = { NOV_duma_y_pos = 131 }
+		add_to_array = { NOV_duma_x_pos = 100 }
+		add_to_array = { NOV_duma_y_pos = 153 }
+		add_to_array = { NOV_duma_x_pos = 68 }
+		add_to_array = { NOV_duma_y_pos = 120 }
+		add_to_array = { NOV_duma_x_pos = 127 }
+		add_to_array = { NOV_duma_y_pos = 175 }
+		add_to_array = { NOV_duma_x_pos = 94 }
+		add_to_array = { NOV_duma_y_pos = 143 }
+		add_to_array = { NOV_duma_x_pos = 121 }
+		add_to_array = { NOV_duma_y_pos = 165 }
+		add_to_array = { NOV_duma_x_pos = 88 }
+		add_to_array = { NOV_duma_y_pos = 132 }
+		add_to_array = { NOV_duma_x_pos = 64 }
+		add_to_array = { NOV_duma_y_pos = 108 }
+		add_to_array = { NOV_duma_x_pos = 82 }
+		add_to_array = { NOV_duma_y_pos = 122 }
+		add_to_array = { NOV_duma_x_pos = 115 }
+		add_to_array = { NOV_duma_y_pos = 155 }
+		add_to_array = { NOV_duma_x_pos = 148 }
+		add_to_array = { NOV_duma_y_pos = 187 }
+		add_to_array = { NOV_duma_x_pos = 76 }
+		add_to_array = { NOV_duma_y_pos = 112 }
+		add_to_array = { NOV_duma_x_pos = 109 }
+		add_to_array = { NOV_duma_y_pos = 144 }
+		add_to_array = { NOV_duma_x_pos = 142 }
+		add_to_array = { NOV_duma_y_pos = 177 }
+		add_to_array = { NOV_duma_x_pos = 103 }
+		add_to_array = { NOV_duma_y_pos = 134 }
+		add_to_array = { NOV_duma_x_pos = 73 }
+		add_to_array = { NOV_duma_y_pos = 99 }
+		add_to_array = { NOV_duma_x_pos = 97 }
+		add_to_array = { NOV_duma_y_pos = 124 }
+		add_to_array = { NOV_duma_x_pos = 136 }
+		add_to_array = { NOV_duma_y_pos = 167 }
+		add_to_array = { NOV_duma_x_pos = 91 }
+		add_to_array = { NOV_duma_y_pos = 114 }
+		add_to_array = { NOV_duma_x_pos = 130 }
+		add_to_array = { NOV_duma_y_pos = 157 }
+		add_to_array = { NOV_duma_x_pos = 86 }
+		add_to_array = { NOV_duma_y_pos = 103 }
+		add_to_array = { NOV_duma_x_pos = 124 }
+		add_to_array = { NOV_duma_y_pos = 146 }
+		add_to_array = { NOV_duma_x_pos = 118 }
+		add_to_array = { NOV_duma_y_pos = 136 }
+		add_to_array = { NOV_duma_x_pos = 82 }
+		add_to_array = { NOV_duma_y_pos = 91 }
+		add_to_array = { NOV_duma_x_pos = 113 }
+		add_to_array = { NOV_duma_y_pos = 126 }
+		add_to_array = { NOV_duma_x_pos = 107 }
+		add_to_array = { NOV_duma_y_pos = 116 }
+		add_to_array = { NOV_duma_x_pos = 101 }
+		add_to_array = { NOV_duma_y_pos = 106 }
+		add_to_array = { NOV_duma_x_pos = 157 }
+		add_to_array = { NOV_duma_y_pos = 179 }
+		add_to_array = { NOV_duma_x_pos = 95 }
+		add_to_array = { NOV_duma_y_pos = 96 }
+		add_to_array = { NOV_duma_x_pos = 151 }
+		add_to_array = { NOV_duma_y_pos = 169 }
+		add_to_array = { NOV_duma_x_pos = 146 }
+		add_to_array = { NOV_duma_y_pos = 159 }
+		add_to_array = { NOV_duma_x_pos = 92 }
+		add_to_array = { NOV_duma_y_pos = 83 }
+		add_to_array = { NOV_duma_x_pos = 140 }
+		add_to_array = { NOV_duma_y_pos = 149 }
+		add_to_array = { NOV_duma_x_pos = 134 }
+		add_to_array = { NOV_duma_y_pos = 139 }
+		add_to_array = { NOV_duma_x_pos = 128 }
+		add_to_array = { NOV_duma_y_pos = 129 }
+		add_to_array = { NOV_duma_x_pos = 123 }
+		add_to_array = { NOV_duma_y_pos = 119 }
+		add_to_array = { NOV_duma_x_pos = 117 }
+		add_to_array = { NOV_duma_y_pos = 109 }
+		add_to_array = { NOV_duma_x_pos = 111 }
+		add_to_array = { NOV_duma_y_pos = 99 }
+		add_to_array = { NOV_duma_x_pos = 105 }
+		add_to_array = { NOV_duma_y_pos = 89 }
+		add_to_array = { NOV_duma_x_pos = 103 }
+		add_to_array = { NOV_duma_y_pos = 76 }
+		add_to_array = { NOV_duma_x_pos = 168 }
+		add_to_array = { NOV_duma_y_pos = 172 }
+		add_to_array = { NOV_duma_x_pos = 162 }
+		add_to_array = { NOV_duma_y_pos = 162 }
+		add_to_array = { NOV_duma_x_pos = 156 }
+		add_to_array = { NOV_duma_y_pos = 152 }
+		add_to_array = { NOV_duma_x_pos = 150 }
+		add_to_array = { NOV_duma_y_pos = 142 }
+		add_to_array = { NOV_duma_x_pos = 145 }
+		add_to_array = { NOV_duma_y_pos = 132 }
+		add_to_array = { NOV_duma_x_pos = 139 }
+		add_to_array = { NOV_duma_y_pos = 122 }
+		add_to_array = { NOV_duma_x_pos = 133 }
+		add_to_array = { NOV_duma_y_pos = 112 }
+		add_to_array = { NOV_duma_x_pos = 127 }
+		add_to_array = { NOV_duma_y_pos = 102 }
+		add_to_array = { NOV_duma_x_pos = 121 }
+		add_to_array = { NOV_duma_y_pos = 92 }
+		add_to_array = { NOV_duma_x_pos = 116 }
+		add_to_array = { NOV_duma_y_pos = 82 }
+		add_to_array = { NOV_duma_x_pos = 113 }
+		add_to_array = { NOV_duma_y_pos = 70 }
+		add_to_array = { NOV_duma_x_pos = 126 }
+		add_to_array = { NOV_duma_y_pos = 76 }
+		add_to_array = { NOV_duma_x_pos = 132 }
+		add_to_array = { NOV_duma_y_pos = 86 }
+		add_to_array = { NOV_duma_x_pos = 138 }
+		add_to_array = { NOV_duma_y_pos = 96 }
+		add_to_array = { NOV_duma_x_pos = 144 }
+		add_to_array = { NOV_duma_y_pos = 106 }
+		add_to_array = { NOV_duma_x_pos = 150 }
+		add_to_array = { NOV_duma_y_pos = 116 }
+		add_to_array = { NOV_duma_x_pos = 125 }
+		add_to_array = { NOV_duma_y_pos = 64 }
+		add_to_array = { NOV_duma_x_pos = 155 }
+		add_to_array = { NOV_duma_y_pos = 126 }
+		add_to_array = { NOV_duma_x_pos = 161 }
+		add_to_array = { NOV_duma_y_pos = 136 }
+		add_to_array = { NOV_duma_x_pos = 167 }
+		add_to_array = { NOV_duma_y_pos = 146 }
+		add_to_array = { NOV_duma_x_pos = 173 }
+		add_to_array = { NOV_duma_y_pos = 157 }
+		add_to_array = { NOV_duma_x_pos = 179 }
+		add_to_array = { NOV_duma_y_pos = 167 }
+		add_to_array = { NOV_duma_x_pos = 138 }
+		add_to_array = { NOV_duma_y_pos = 71 }
+		add_to_array = { NOV_duma_x_pos = 143 }
+		add_to_array = { NOV_duma_y_pos = 81 }
+		add_to_array = { NOV_duma_x_pos = 149 }
+		add_to_array = { NOV_duma_y_pos = 91 }
+		add_to_array = { NOV_duma_x_pos = 136 }
+		add_to_array = { NOV_duma_y_pos = 59 }
+		add_to_array = { NOV_duma_x_pos = 155 }
+		add_to_array = { NOV_duma_y_pos = 101 }
+		add_to_array = { NOV_duma_x_pos = 161 }
+		add_to_array = { NOV_duma_y_pos = 111 }
+		add_to_array = { NOV_duma_x_pos = 167 }
+		add_to_array = { NOV_duma_y_pos = 121 }
+		add_to_array = { NOV_duma_x_pos = 173 }
+		add_to_array = { NOV_duma_y_pos = 132 }
+		add_to_array = { NOV_duma_x_pos = 149 }
+		add_to_array = { NOV_duma_y_pos = 66 }
+		add_to_array = { NOV_duma_x_pos = 155 }
+		add_to_array = { NOV_duma_y_pos = 77 }
+		add_to_array = { NOV_duma_x_pos = 148 }
+		add_to_array = { NOV_duma_y_pos = 55 }
+		add_to_array = { NOV_duma_x_pos = 179 }
+		add_to_array = { NOV_duma_y_pos = 142 }
+		add_to_array = { NOV_duma_x_pos = 161 }
+		add_to_array = { NOV_duma_y_pos = 87 }
+		add_to_array = { NOV_duma_x_pos = 185 }
+		add_to_array = { NOV_duma_y_pos = 152 }
+		add_to_array = { NOV_duma_x_pos = 167 }
+		add_to_array = { NOV_duma_y_pos = 97 }
+		add_to_array = { NOV_duma_x_pos = 173 }
+		add_to_array = { NOV_duma_y_pos = 107 }
+		add_to_array = { NOV_duma_x_pos = 191 }
+		add_to_array = { NOV_duma_y_pos = 162 }
+		add_to_array = { NOV_duma_x_pos = 161 }
+		add_to_array = { NOV_duma_y_pos = 63 }
+		add_to_array = { NOV_duma_x_pos = 179 }
+		add_to_array = { NOV_duma_y_pos = 118 }
+		add_to_array = { NOV_duma_x_pos = 160 }
+		add_to_array = { NOV_duma_y_pos = 51 }
+		add_to_array = { NOV_duma_x_pos = 167 }
+		add_to_array = { NOV_duma_y_pos = 73 }
+		add_to_array = { NOV_duma_x_pos = 185 }
+		add_to_array = { NOV_duma_y_pos = 128 }
+		add_to_array = { NOV_duma_x_pos = 173 }
+		add_to_array = { NOV_duma_y_pos = 83 }
+		add_to_array = { NOV_duma_x_pos = 179 }
+		add_to_array = { NOV_duma_y_pos = 94 }
+		add_to_array = { NOV_duma_x_pos = 191 }
+		add_to_array = { NOV_duma_y_pos = 138 }
+		add_to_array = { NOV_duma_x_pos = 173 }
+		add_to_array = { NOV_duma_y_pos = 59 }
+		add_to_array = { NOV_duma_x_pos = 185 }
+		add_to_array = { NOV_duma_y_pos = 104 }
+		add_to_array = { NOV_duma_x_pos = 172 }
+		add_to_array = { NOV_duma_y_pos = 48 }
+		add_to_array = { NOV_duma_x_pos = 179 }
+		add_to_array = { NOV_duma_y_pos = 70 }
+		add_to_array = { NOV_duma_x_pos = 197 }
+		add_to_array = { NOV_duma_y_pos = 149 }
+		add_to_array = { NOV_duma_x_pos = 191 }
+		add_to_array = { NOV_duma_y_pos = 115 }
+		add_to_array = { NOV_duma_x_pos = 185 }
+		add_to_array = { NOV_duma_y_pos = 80 }
+		add_to_array = { NOV_duma_x_pos = 203 }
+		add_to_array = { NOV_duma_y_pos = 159 }
+		add_to_array = { NOV_duma_x_pos = 197 }
+		add_to_array = { NOV_duma_y_pos = 125 }
+		add_to_array = { NOV_duma_x_pos = 191 }
+		add_to_array = { NOV_duma_y_pos = 91 }
+		add_to_array = { NOV_duma_x_pos = 185 }
+		add_to_array = { NOV_duma_y_pos = 57 }
+		add_to_array = { NOV_duma_x_pos = 184 }
+		add_to_array = { NOV_duma_y_pos = 45 }
+		add_to_array = { NOV_duma_x_pos = 191 }
+		add_to_array = { NOV_duma_y_pos = 68 }
+		add_to_array = { NOV_duma_x_pos = 197 }
+		add_to_array = { NOV_duma_y_pos = 102 }
+		add_to_array = { NOV_duma_x_pos = 203 }
+		add_to_array = { NOV_duma_y_pos = 136 }
+		add_to_array = { NOV_duma_x_pos = 197 }
+		add_to_array = { NOV_duma_y_pos = 78 }
+		add_to_array = { NOV_duma_x_pos = 203 }
+		add_to_array = { NOV_duma_y_pos = 113 }
+		add_to_array = { NOV_duma_x_pos = 197 }
+		add_to_array = { NOV_duma_y_pos = 55 }
+		add_to_array = { NOV_duma_x_pos = 196 }
+		add_to_array = { NOV_duma_y_pos = 43 }
+		add_to_array = { NOV_duma_x_pos = 209 }
+		add_to_array = { NOV_duma_y_pos = 147 }
+		add_to_array = { NOV_duma_x_pos = 203 }
+		add_to_array = { NOV_duma_y_pos = 89 }
+		add_to_array = { NOV_duma_x_pos = 203 }
+		add_to_array = { NOV_duma_y_pos = 66 }
+		add_to_array = { NOV_duma_x_pos = 209 }
+		add_to_array = { NOV_duma_y_pos = 124 }
+		add_to_array = { NOV_duma_x_pos = 209 }
+		add_to_array = { NOV_duma_y_pos = 100 }
+		add_to_array = { NOV_duma_x_pos = 209 }
+		add_to_array = { NOV_duma_y_pos = 77 }
+		add_to_array = { NOV_duma_x_pos = 215 }
+		add_to_array = { NOV_duma_y_pos = 158 }
+		add_to_array = { NOV_duma_x_pos = 209 }
+		add_to_array = { NOV_duma_y_pos = 54 }
+		add_to_array = { NOV_duma_x_pos = 209 }
+		add_to_array = { NOV_duma_y_pos = 42 }
+		add_to_array = { NOV_duma_x_pos = 215 }
+		add_to_array = { NOV_duma_y_pos = 135 }
+		add_to_array = { NOV_duma_x_pos = 215 }
+		add_to_array = { NOV_duma_y_pos = 112 }
+		add_to_array = { NOV_duma_x_pos = 215 }
+		add_to_array = { NOV_duma_y_pos = 88 }
+		add_to_array = { NOV_duma_x_pos = 215 }
+		add_to_array = { NOV_duma_y_pos = 65 }
+		add_to_array = { NOV_duma_x_pos = 221 }
+		add_to_array = { NOV_duma_y_pos = 42 }
+		add_to_array = { NOV_duma_x_pos = 221 }
+		add_to_array = { NOV_duma_y_pos = 123 }
+		add_to_array = { NOV_duma_x_pos = 221 }
+		add_to_array = { NOV_duma_y_pos = 100 }
+		add_to_array = { NOV_duma_x_pos = 221 }
+		add_to_array = { NOV_duma_y_pos = 77 }
+		add_to_array = { NOV_duma_x_pos = 221 }
+		add_to_array = { NOV_duma_y_pos = 146 }
+		add_to_array = { NOV_duma_x_pos = 221 }
+		add_to_array = { NOV_duma_y_pos = 54 }
+		add_to_array = { NOV_duma_x_pos = 227 }
+		add_to_array = { NOV_duma_y_pos = 65 }
+		add_to_array = { NOV_duma_x_pos = 228 }
+		add_to_array = { NOV_duma_y_pos = 88 }
+		add_to_array = { NOV_duma_x_pos = 228 }
+		add_to_array = { NOV_duma_y_pos = 112 }
+		add_to_array = { NOV_duma_x_pos = 228 }
+		add_to_array = { NOV_duma_y_pos = 135 }
+		add_to_array = { NOV_duma_x_pos = 234 }
+		add_to_array = { NOV_duma_y_pos = 42 }
+		add_to_array = { NOV_duma_x_pos = 234 }
+		add_to_array = { NOV_duma_y_pos = 54 }
+		add_to_array = { NOV_duma_x_pos = 228 }
+		add_to_array = { NOV_duma_y_pos = 158 }
+		add_to_array = { NOV_duma_x_pos = 234 }
+		add_to_array = { NOV_duma_y_pos = 77 }
+		add_to_array = { NOV_duma_x_pos = 234 }
+		add_to_array = { NOV_duma_y_pos = 100 }
+		add_to_array = { NOV_duma_x_pos = 234 }
+		add_to_array = { NOV_duma_y_pos = 124 }
+		add_to_array = { NOV_duma_x_pos = 240 }
+		add_to_array = { NOV_duma_y_pos = 66 }
+		add_to_array = { NOV_duma_x_pos = 240 }
+		add_to_array = { NOV_duma_y_pos = 89 }
+		add_to_array = { NOV_duma_x_pos = 234 }
+		add_to_array = { NOV_duma_y_pos = 147 }
+		add_to_array = { NOV_duma_x_pos = 246 }
+		add_to_array = { NOV_duma_y_pos = 43 }
+		add_to_array = { NOV_duma_x_pos = 246 }
+		add_to_array = { NOV_duma_y_pos = 55 }
+		add_to_array = { NOV_duma_x_pos = 240 }
+		add_to_array = { NOV_duma_y_pos = 113 }
+		add_to_array = { NOV_duma_x_pos = 246 }
+		add_to_array = { NOV_duma_y_pos = 78 }
+		add_to_array = { NOV_duma_x_pos = 240 }
+		add_to_array = { NOV_duma_y_pos = 136 }
+		add_to_array = { NOV_duma_x_pos = 246 }
+		add_to_array = { NOV_duma_y_pos = 102 }
+		add_to_array = { NOV_duma_x_pos = 252 }
+		add_to_array = { NOV_duma_y_pos = 68 }
+		add_to_array = { NOV_duma_x_pos = 259 }
+		add_to_array = { NOV_duma_y_pos = 45 }
+		add_to_array = { NOV_duma_x_pos = 258 }
+		add_to_array = { NOV_duma_y_pos = 57 }
+		add_to_array = { NOV_duma_x_pos = 252 }
+		add_to_array = { NOV_duma_y_pos = 91 }
+		add_to_array = { NOV_duma_x_pos = 246 }
+		add_to_array = { NOV_duma_y_pos = 125 }
+		add_to_array = { NOV_duma_x_pos = 240 }
+		add_to_array = { NOV_duma_y_pos = 159 }
+		add_to_array = { NOV_duma_x_pos = 258 }
+		add_to_array = { NOV_duma_y_pos = 80 }
+		add_to_array = { NOV_duma_x_pos = 252 }
+		add_to_array = { NOV_duma_y_pos = 115 }
+		add_to_array = { NOV_duma_x_pos = 246 }
+		add_to_array = { NOV_duma_y_pos = 149 }
+		add_to_array = { NOV_duma_x_pos = 264 }
+		add_to_array = { NOV_duma_y_pos = 70 }
+		add_to_array = { NOV_duma_x_pos = 271 }
+		add_to_array = { NOV_duma_y_pos = 48 }
+		add_to_array = { NOV_duma_x_pos = 258 }
+		add_to_array = { NOV_duma_y_pos = 104 }
+		add_to_array = { NOV_duma_x_pos = 270 }
+		add_to_array = { NOV_duma_y_pos = 59 }
+		add_to_array = { NOV_duma_x_pos = 252 }
+		add_to_array = { NOV_duma_y_pos = 138 }
+		add_to_array = { NOV_duma_x_pos = 264 }
+		add_to_array = { NOV_duma_y_pos = 94 }
+		add_to_array = { NOV_duma_x_pos = 270 }
+		add_to_array = { NOV_duma_y_pos = 83 }
+		add_to_array = { NOV_duma_x_pos = 258 }
+		add_to_array = { NOV_duma_y_pos = 128 }
+		add_to_array = { NOV_duma_x_pos = 276 }
+		add_to_array = { NOV_duma_y_pos = 73 }
+		add_to_array = { NOV_duma_x_pos = 283 }
+		add_to_array = { NOV_duma_y_pos = 51 }
+		add_to_array = { NOV_duma_x_pos = 264 }
+		add_to_array = { NOV_duma_y_pos = 118 }
+		add_to_array = { NOV_duma_x_pos = 282 }
+		add_to_array = { NOV_duma_y_pos = 63 }
+		add_to_array = { NOV_duma_x_pos = 252 }
+		add_to_array = { NOV_duma_y_pos = 162 }
+		add_to_array = { NOV_duma_x_pos = 270 }
+		add_to_array = { NOV_duma_y_pos = 107 }
+		add_to_array = { NOV_duma_x_pos = 276 }
+		add_to_array = { NOV_duma_y_pos = 97 }
+		add_to_array = { NOV_duma_x_pos = 258 }
+		add_to_array = { NOV_duma_y_pos = 152 }
+		add_to_array = { NOV_duma_x_pos = 282 }
+		add_to_array = { NOV_duma_y_pos = 87 }
+		add_to_array = { NOV_duma_x_pos = 264 }
+		add_to_array = { NOV_duma_y_pos = 142 }
+		add_to_array = { NOV_duma_x_pos = 295 }
+		add_to_array = { NOV_duma_y_pos = 55 }
+		add_to_array = { NOV_duma_x_pos = 288 }
+		add_to_array = { NOV_duma_y_pos = 77 }
+		add_to_array = { NOV_duma_x_pos = 294 }
+		add_to_array = { NOV_duma_y_pos = 66 }
+		add_to_array = { NOV_duma_x_pos = 270 }
+		add_to_array = { NOV_duma_y_pos = 132 }
+		add_to_array = { NOV_duma_x_pos = 276 }
+		add_to_array = { NOV_duma_y_pos = 121 }
+		add_to_array = { NOV_duma_x_pos = 282 }
+		add_to_array = { NOV_duma_y_pos = 111 }
+		add_to_array = { NOV_duma_x_pos = 288 }
+		add_to_array = { NOV_duma_y_pos = 101 }
+		add_to_array = { NOV_duma_x_pos = 307 }
+		add_to_array = { NOV_duma_y_pos = 59 }
+		add_to_array = { NOV_duma_x_pos = 293 }
+		add_to_array = { NOV_duma_y_pos = 91 }
+		add_to_array = { NOV_duma_x_pos = 299 }
+		add_to_array = { NOV_duma_y_pos = 81 }
+		add_to_array = { NOV_duma_x_pos = 305 }
+		add_to_array = { NOV_duma_y_pos = 71 }
+		add_to_array = { NOV_duma_x_pos = 264 }
+		add_to_array = { NOV_duma_y_pos = 167 }
+		add_to_array = { NOV_duma_x_pos = 270 }
+		add_to_array = { NOV_duma_y_pos = 157 }
+		add_to_array = { NOV_duma_x_pos = 276 }
+		add_to_array = { NOV_duma_y_pos = 146 }
+		add_to_array = { NOV_duma_x_pos = 281 }
+		add_to_array = { NOV_duma_y_pos = 136 }
+		add_to_array = { NOV_duma_x_pos = 287 }
+		add_to_array = { NOV_duma_y_pos = 126 }
+		add_to_array = { NOV_duma_x_pos = 318 }
+		add_to_array = { NOV_duma_y_pos = 64 }
+		add_to_array = { NOV_duma_x_pos = 293 }
+		add_to_array = { NOV_duma_y_pos = 116 }
+		add_to_array = { NOV_duma_x_pos = 299 }
+		add_to_array = { NOV_duma_y_pos = 106 }
+		add_to_array = { NOV_duma_x_pos = 305 }
+		add_to_array = { NOV_duma_y_pos = 96 }
+		add_to_array = { NOV_duma_x_pos = 310 }
+		add_to_array = { NOV_duma_y_pos = 86 }
+		add_to_array = { NOV_duma_x_pos = 316 }
+		add_to_array = { NOV_duma_y_pos = 76 }
+		add_to_array = { NOV_duma_x_pos = 329 }
+		add_to_array = { NOV_duma_y_pos = 70 }
+		add_to_array = { NOV_duma_x_pos = 327 }
+		add_to_array = { NOV_duma_y_pos = 82 }
+		add_to_array = { NOV_duma_x_pos = 321 }
+		add_to_array = { NOV_duma_y_pos = 92 }
+		add_to_array = { NOV_duma_x_pos = 315 }
+		add_to_array = { NOV_duma_y_pos = 102 }
+		add_to_array = { NOV_duma_x_pos = 310 }
+		add_to_array = { NOV_duma_y_pos = 112 }
+		add_to_array = { NOV_duma_x_pos = 304 }
+		add_to_array = { NOV_duma_y_pos = 122 }
+		add_to_array = { NOV_duma_x_pos = 298 }
+		add_to_array = { NOV_duma_y_pos = 132 }
+		add_to_array = { NOV_duma_x_pos = 292 }
+		add_to_array = { NOV_duma_y_pos = 142 }
+		add_to_array = { NOV_duma_x_pos = 287 }
+		add_to_array = { NOV_duma_y_pos = 152 }
+		add_to_array = { NOV_duma_x_pos = 281 }
+		add_to_array = { NOV_duma_y_pos = 162 }
+		add_to_array = { NOV_duma_x_pos = 275 }
+		add_to_array = { NOV_duma_y_pos = 172 }
+		add_to_array = { NOV_duma_x_pos = 340 }
+		add_to_array = { NOV_duma_y_pos = 76 }
+		add_to_array = { NOV_duma_x_pos = 337 }
+		add_to_array = { NOV_duma_y_pos = 89 }
+		add_to_array = { NOV_duma_x_pos = 332 }
+		add_to_array = { NOV_duma_y_pos = 99 }
+		add_to_array = { NOV_duma_x_pos = 326 }
+		add_to_array = { NOV_duma_y_pos = 109 }
+		add_to_array = { NOV_duma_x_pos = 320 }
+		add_to_array = { NOV_duma_y_pos = 119 }
+		add_to_array = { NOV_duma_x_pos = 314 }
+		add_to_array = { NOV_duma_y_pos = 129 }
+		add_to_array = { NOV_duma_x_pos = 309 }
+		add_to_array = { NOV_duma_y_pos = 139 }
+		add_to_array = { NOV_duma_x_pos = 303 }
+		add_to_array = { NOV_duma_y_pos = 149 }
+		add_to_array = { NOV_duma_x_pos = 350 }
+		add_to_array = { NOV_duma_y_pos = 83 }
+		add_to_array = { NOV_duma_x_pos = 297 }
+		add_to_array = { NOV_duma_y_pos = 159 }
+		add_to_array = { NOV_duma_x_pos = 291 }
+		add_to_array = { NOV_duma_y_pos = 169 }
+		add_to_array = { NOV_duma_x_pos = 347 }
+		add_to_array = { NOV_duma_y_pos = 96 }
+		add_to_array = { NOV_duma_x_pos = 285 }
+		add_to_array = { NOV_duma_y_pos = 179 }
+		add_to_array = { NOV_duma_x_pos = 342 }
+		add_to_array = { NOV_duma_y_pos = 106 }
+		add_to_array = { NOV_duma_x_pos = 336 }
+		add_to_array = { NOV_duma_y_pos = 116 }
+		add_to_array = { NOV_duma_x_pos = 330 }
+		add_to_array = { NOV_duma_y_pos = 126 }
+		add_to_array = { NOV_duma_x_pos = 360 }
+		add_to_array = { NOV_duma_y_pos = 91 }
+		add_to_array = { NOV_duma_x_pos = 324 }
+		add_to_array = { NOV_duma_y_pos = 136 }
+		add_to_array = { NOV_duma_x_pos = 318 }
+		add_to_array = { NOV_duma_y_pos = 146 }
+		add_to_array = { NOV_duma_x_pos = 357 }
+		add_to_array = { NOV_duma_y_pos = 103 }
+		add_to_array = { NOV_duma_x_pos = 313 }
+		add_to_array = { NOV_duma_y_pos = 157 }
+		add_to_array = { NOV_duma_x_pos = 351 }
+		add_to_array = { NOV_duma_y_pos = 114 }
+		add_to_array = { NOV_duma_x_pos = 307 }
+		add_to_array = { NOV_duma_y_pos = 167 }
+		add_to_array = { NOV_duma_x_pos = 345 }
+		add_to_array = { NOV_duma_y_pos = 124 }
+		add_to_array = { NOV_duma_x_pos = 370 }
+		add_to_array = { NOV_duma_y_pos = 99 }
+		add_to_array = { NOV_duma_x_pos = 339 }
+		add_to_array = { NOV_duma_y_pos = 134 }
+		add_to_array = { NOV_duma_x_pos = 301 }
+		add_to_array = { NOV_duma_y_pos = 177 }
+		add_to_array = { NOV_duma_x_pos = 334 }
+		add_to_array = { NOV_duma_y_pos = 144 }
+		add_to_array = { NOV_duma_x_pos = 366 }
+		add_to_array = { NOV_duma_y_pos = 112 }
+		add_to_array = { NOV_duma_x_pos = 295 }
+		add_to_array = { NOV_duma_y_pos = 187 }
+		add_to_array = { NOV_duma_x_pos = 328 }
+		add_to_array = { NOV_duma_y_pos = 155 }
+		add_to_array = { NOV_duma_x_pos = 360 }
+		add_to_array = { NOV_duma_y_pos = 122 }
+		add_to_array = { NOV_duma_x_pos = 379 }
+		add_to_array = { NOV_duma_y_pos = 108 }
+		add_to_array = { NOV_duma_x_pos = 354 }
+		add_to_array = { NOV_duma_y_pos = 132 }
+		add_to_array = { NOV_duma_x_pos = 322 }
+		add_to_array = { NOV_duma_y_pos = 165 }
+		add_to_array = { NOV_duma_x_pos = 348 }
+		add_to_array = { NOV_duma_y_pos = 143 }
+		add_to_array = { NOV_duma_x_pos = 316 }
+		add_to_array = { NOV_duma_y_pos = 175 }
+		add_to_array = { NOV_duma_x_pos = 375 }
+		add_to_array = { NOV_duma_y_pos = 120 }
+		add_to_array = { NOV_duma_x_pos = 342 }
+		add_to_array = { NOV_duma_y_pos = 153 }
+		add_to_array = { NOV_duma_x_pos = 369 }
+		add_to_array = { NOV_duma_y_pos = 131 }
+		add_to_array = { NOV_duma_x_pos = 387 }
+		add_to_array = { NOV_duma_y_pos = 117 }
+		add_to_array = { NOV_duma_x_pos = 310 }
+		add_to_array = { NOV_duma_y_pos = 186 }
+		add_to_array = { NOV_duma_x_pos = 336 }
+		add_to_array = { NOV_duma_y_pos = 164 }
+		add_to_array = { NOV_duma_x_pos = 363 }
+		add_to_array = { NOV_duma_y_pos = 141 }
+		add_to_array = { NOV_duma_x_pos = 383 }
+		add_to_array = { NOV_duma_y_pos = 130 }
+		add_to_array = { NOV_duma_x_pos = 356 }
+		add_to_array = { NOV_duma_y_pos = 152 }
+		add_to_array = { NOV_duma_x_pos = 330 }
+		add_to_array = { NOV_duma_y_pos = 174 }
+		add_to_array = { NOV_duma_x_pos = 303 }
+		add_to_array = { NOV_duma_y_pos = 197 }
+		add_to_array = { NOV_duma_x_pos = 377 }
+		add_to_array = { NOV_duma_y_pos = 140 }
+		add_to_array = { NOV_duma_x_pos = 395 }
+		add_to_array = { NOV_duma_y_pos = 127 }
+		add_to_array = { NOV_duma_x_pos = 350 }
+		add_to_array = { NOV_duma_y_pos = 163 }
+		add_to_array = { NOV_duma_x_pos = 324 }
+		add_to_array = { NOV_duma_y_pos = 185 }
+		add_to_array = { NOV_duma_x_pos = 370 }
+		add_to_array = { NOV_duma_y_pos = 151 }
+		add_to_array = { NOV_duma_x_pos = 344 }
+		add_to_array = { NOV_duma_y_pos = 173 }
+		add_to_array = { NOV_duma_x_pos = 391 }
+		add_to_array = { NOV_duma_y_pos = 139 }
+		add_to_array = { NOV_duma_x_pos = 364 }
+		add_to_array = { NOV_duma_y_pos = 162 }
+		add_to_array = { NOV_duma_x_pos = 317 }
+		add_to_array = { NOV_duma_y_pos = 196 }
+		add_to_array = { NOV_duma_x_pos = 403 }
+		add_to_array = { NOV_duma_y_pos = 137 }
+		add_to_array = { NOV_duma_x_pos = 384 }
+		add_to_array = { NOV_duma_y_pos = 150 }
+		add_to_array = { NOV_duma_x_pos = 337 }
+		add_to_array = { NOV_duma_y_pos = 184 }
+		add_to_array = { NOV_duma_x_pos = 357 }
+		add_to_array = { NOV_duma_y_pos = 173 }
+		add_to_array = { NOV_duma_x_pos = 378 }
+		add_to_array = { NOV_duma_y_pos = 161 }
+		add_to_array = { NOV_duma_x_pos = 398 }
+		add_to_array = { NOV_duma_y_pos = 149 }
+		add_to_array = { NOV_duma_x_pos = 311 }
+		add_to_array = { NOV_duma_y_pos = 207 }
+		add_to_array = { NOV_duma_x_pos = 331 }
+		add_to_array = { NOV_duma_y_pos = 195 }
+		add_to_array = { NOV_duma_x_pos = 351 }
+		add_to_array = { NOV_duma_y_pos = 184 }
+		add_to_array = { NOV_duma_x_pos = 410 }
+		add_to_array = { NOV_duma_y_pos = 147 }
+		add_to_array = { NOV_duma_x_pos = 371 }
+		add_to_array = { NOV_duma_y_pos = 172 }
+		add_to_array = { NOV_duma_x_pos = 391 }
+		add_to_array = { NOV_duma_y_pos = 160 }
+		add_to_array = { NOV_duma_x_pos = 404 }
+		add_to_array = { NOV_duma_y_pos = 160 }
+		add_to_array = { NOV_duma_x_pos = 384 }
+		add_to_array = { NOV_duma_y_pos = 172 }
+		add_to_array = { NOV_duma_x_pos = 364 }
+		add_to_array = { NOV_duma_y_pos = 183 }
+		add_to_array = { NOV_duma_x_pos = 344 }
+		add_to_array = { NOV_duma_y_pos = 195 }
+		add_to_array = { NOV_duma_x_pos = 324 }
+		add_to_array = { NOV_duma_y_pos = 206 }
+		add_to_array = { NOV_duma_x_pos = 416 }
+		add_to_array = { NOV_duma_y_pos = 158 }
+		add_to_array = { NOV_duma_x_pos = 397 }
+		add_to_array = { NOV_duma_y_pos = 171 }
+		add_to_array = { NOV_duma_x_pos = 377 }
+		add_to_array = { NOV_duma_y_pos = 183 }
+		add_to_array = { NOV_duma_x_pos = 357 }
+		add_to_array = { NOV_duma_y_pos = 194 }
+		add_to_array = { NOV_duma_x_pos = 337 }
+		add_to_array = { NOV_duma_y_pos = 206 }
+		add_to_array = { NOV_duma_x_pos = 410 }
+		add_to_array = { NOV_duma_y_pos = 171 }
+		add_to_array = { NOV_duma_x_pos = 390 }
+		add_to_array = { NOV_duma_y_pos = 182 }
+		add_to_array = { NOV_duma_x_pos = 317 }
+		add_to_array = { NOV_duma_y_pos = 218 }
+		add_to_array = { NOV_duma_x_pos = 422 }
+		add_to_array = { NOV_duma_y_pos = 169 }
+		add_to_array = { NOV_duma_x_pos = 370 }
+		add_to_array = { NOV_duma_y_pos = 194 }
+		add_to_array = { NOV_duma_x_pos = 350 }
+		add_to_array = { NOV_duma_y_pos = 206 }
+		add_to_array = { NOV_duma_x_pos = 402 }
+		add_to_array = { NOV_duma_y_pos = 182 }
+		add_to_array = { NOV_duma_x_pos = 382 }
+		add_to_array = { NOV_duma_y_pos = 194 }
+		add_to_array = { NOV_duma_x_pos = 329 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 415 }
+		add_to_array = { NOV_duma_y_pos = 182 }
+		add_to_array = { NOV_duma_x_pos = 362 }
+		add_to_array = { NOV_duma_y_pos = 206 }
+		add_to_array = { NOV_duma_x_pos = 427 }
+		add_to_array = { NOV_duma_y_pos = 181 }
+		add_to_array = { NOV_duma_x_pos = 395 }
+		add_to_array = { NOV_duma_y_pos = 194 }
+		add_to_array = { NOV_duma_x_pos = 342 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 374 }
+		add_to_array = { NOV_duma_y_pos = 205 }
+		add_to_array = { NOV_duma_x_pos = 407 }
+		add_to_array = { NOV_duma_y_pos = 194 }
+		add_to_array = { NOV_duma_x_pos = 419 }
+		add_to_array = { NOV_duma_y_pos = 193 }
+		add_to_array = { NOV_duma_x_pos = 387 }
+		add_to_array = { NOV_duma_y_pos = 205 }
+		add_to_array = { NOV_duma_x_pos = 354 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 322 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 431 }
+		add_to_array = { NOV_duma_y_pos = 192 }
+		add_to_array = { NOV_duma_x_pos = 399 }
+		add_to_array = { NOV_duma_y_pos = 205 }
+		add_to_array = { NOV_duma_x_pos = 366 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 411 }
+		add_to_array = { NOV_duma_y_pos = 205 }
+		add_to_array = { NOV_duma_x_pos = 334 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 378 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 423 }
+		add_to_array = { NOV_duma_y_pos = 205 }
+		add_to_array = { NOV_duma_x_pos = 435 }
+		add_to_array = { NOV_duma_y_pos = 204 }
+		add_to_array = { NOV_duma_x_pos = 346 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 390 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 402 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 358 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 414 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 370 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 426 }
+		add_to_array = { NOV_duma_y_pos = 217 }
+		add_to_array = { NOV_duma_x_pos = 438 }
+		add_to_array = { NOV_duma_y_pos = 216 }
+		add_to_array = { NOV_duma_x_pos = 325 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 381 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 393 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 337 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 405 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 417 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 348 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 428 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 360 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 440 }
+		add_to_array = { NOV_duma_y_pos = 229 }
+		add_to_array = { NOV_duma_x_pos = 372 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 384 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 395 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 407 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 419 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 430 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 442 }
+		add_to_array = { NOV_duma_y_pos = 241 }
+		add_to_array = { NOV_duma_x_pos = 327 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 338 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 350 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 362 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 373 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 385 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 396 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 408 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 420 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 431 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+		add_to_array = { NOV_duma_x_pos = 443 }
+		add_to_array = { NOV_duma_y_pos = 254 }
+	}
+}
+
+NOV_setup_council_seat_positions = {
+
+	set_temp_variable = { t1 = NOV_rapp_council_seats }
+	set_temp_variable = { t2 = NOV_vrpp_council_seats }
+	set_temp_variable = { t3 = NOV_dspr_council_seats }
+	set_temp_variable = { t4 = NOV_rslp_council_seats }
+	set_temp_variable = { t5 = NOV_nfm_council_seats }
+	set_temp_variable = { t6 = NOV_rirm_council_seats }
+	set_temp_variable = { t7 = NOV_cprf_council_seats }
+	set_temp_variable = { t8 = 170 }
+
+	add_to_temp_variable = { t2 = t1 }
+	add_to_temp_variable = { t3 = t2 }
+	add_to_temp_variable = { t4 = t3 }
+	add_to_temp_variable = { t5 = t4 }
+	add_to_temp_variable = { t6 = t5 }
+	add_to_temp_variable = { t7 = t6 }
+
+	clear_array = NOV_council_frame_array
+
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 1
+		size = t1
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 2
+		size = t2
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 3
+		size = t3
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 4
+		size = t4
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 5
+		size = t5
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 6
+		size = t6
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 7
+		size = t7
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 8
+		size = t8
+	}
+
+	clear_array = NOV_council_x_pos
+	clear_array = NOV_council_y_pos
+
+
+	add_to_array = { NOV_council_x_pos = 0 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 18 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 35 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 53 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 71 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 89 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 106 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 2 }
+	add_to_array = { NOV_council_y_pos = 230 }
+	add_to_array = { NOV_council_x_pos = 20 }
+	add_to_array = { NOV_council_y_pos = 229 }
+	add_to_array = { NOV_council_x_pos = 38 }
+	add_to_array = { NOV_council_y_pos = 229 }
+	add_to_array = { NOV_council_x_pos = 56 }
+	add_to_array = { NOV_council_y_pos = 229 }
+	add_to_array = { NOV_council_x_pos = 74 }
+	add_to_array = { NOV_council_y_pos = 228 }
+	add_to_array = { NOV_council_x_pos = 6 }
+	add_to_array = { NOV_council_y_pos = 209 }
+	add_to_array = { NOV_council_x_pos = 92 }
+	add_to_array = { NOV_council_y_pos = 229 }
+	add_to_array = { NOV_council_x_pos = 24 }
+	add_to_array = { NOV_council_y_pos = 209 }
+	add_to_array = { NOV_council_x_pos = 110 }
+	add_to_array = { NOV_council_y_pos = 229 }
+	add_to_array = { NOV_council_x_pos = 43 }
+	add_to_array = { NOV_council_y_pos = 208 }
+	add_to_array = { NOV_council_x_pos = 61 }
+	add_to_array = { NOV_council_y_pos = 208 }
+	add_to_array = { NOV_council_x_pos = 12 }
+	add_to_array = { NOV_council_y_pos = 189 }
+	add_to_array = { NOV_council_x_pos = 31 }
+	add_to_array = { NOV_council_y_pos = 189 }
+	add_to_array = { NOV_council_x_pos = 80 }
+	add_to_array = { NOV_council_y_pos = 207 }
+	add_to_array = { NOV_council_x_pos = 50 }
+	add_to_array = { NOV_council_y_pos = 188 }
+	add_to_array = { NOV_council_x_pos = 99 }
+	add_to_array = { NOV_council_y_pos = 209 }
+	add_to_array = { NOV_council_x_pos = 19 }
+	add_to_array = { NOV_council_y_pos = 170 }
+	add_to_array = { NOV_council_x_pos = 70 }
+	add_to_array = { NOV_council_y_pos = 188 }
+	add_to_array = { NOV_council_x_pos = 39 }
+	add_to_array = { NOV_council_y_pos = 170 }
+	add_to_array = { NOV_council_x_pos = 119 }
+	add_to_array = { NOV_council_y_pos = 208 }
+	add_to_array = { NOV_council_x_pos = 90 }
+	add_to_array = { NOV_council_y_pos = 187 }
+	add_to_array = { NOV_council_x_pos = 59 }
+	add_to_array = { NOV_council_y_pos = 169 }
+	add_to_array = { NOV_council_x_pos = 29 }
+	add_to_array = { NOV_council_y_pos = 151 }
+	add_to_array = { NOV_council_x_pos = 50 }
+	add_to_array = { NOV_council_y_pos = 151 }
+	add_to_array = { NOV_council_x_pos = 109 }
+	add_to_array = { NOV_council_y_pos = 190 }
+	add_to_array = { NOV_council_x_pos = 80 }
+	add_to_array = { NOV_council_y_pos = 169 }
+	add_to_array = { NOV_council_x_pos = 40 }
+	add_to_array = { NOV_council_y_pos = 134 }
+	add_to_array = { NOV_council_x_pos = 71 }
+	add_to_array = { NOV_council_y_pos = 151 }
+	add_to_array = { NOV_council_x_pos = 102 }
+	add_to_array = { NOV_council_y_pos = 169 }
+	add_to_array = { NOV_council_x_pos = 62 }
+	add_to_array = { NOV_council_y_pos = 134 }
+	add_to_array = { NOV_council_x_pos = 131 }
+	add_to_array = { NOV_council_y_pos = 190 }
+	add_to_array = { NOV_council_x_pos = 53 }
+	add_to_array = { NOV_council_y_pos = 117 }
+	add_to_array = { NOV_council_x_pos = 94 }
+	add_to_array = { NOV_council_y_pos = 152 }
+	add_to_array = { NOV_council_x_pos = 122 }
+	add_to_array = { NOV_council_y_pos = 173 }
+	add_to_array = { NOV_council_x_pos = 85 }
+	add_to_array = { NOV_council_y_pos = 135 }
+	add_to_array = { NOV_council_x_pos = 76 }
+	add_to_array = { NOV_council_y_pos = 119 }
+	add_to_array = { NOV_council_x_pos = 67 }
+	add_to_array = { NOV_council_y_pos = 102 }
+	add_to_array = { NOV_council_x_pos = 117 }
+	add_to_array = { NOV_council_y_pos = 152 }
+	add_to_array = { NOV_council_x_pos = 109 }
+	add_to_array = { NOV_council_y_pos = 136 }
+	add_to_array = { NOV_council_x_pos = 100 }
+	add_to_array = { NOV_council_y_pos = 120 }
+	add_to_array = { NOV_council_x_pos = 147 }
+	add_to_array = { NOV_council_y_pos = 174 }
+	add_to_array = { NOV_council_x_pos = 92 }
+	add_to_array = { NOV_council_y_pos = 105 }
+	add_to_array = { NOV_council_x_pos = 83 }
+	add_to_array = { NOV_council_y_pos = 89 }
+	add_to_array = { NOV_council_x_pos = 138 }
+	add_to_array = { NOV_council_y_pos = 158 }
+	add_to_array = { NOV_council_x_pos = 135 }
+	add_to_array = { NOV_council_y_pos = 139 }
+	add_to_array = { NOV_council_x_pos = 126 }
+	add_to_array = { NOV_council_y_pos = 123 }
+	add_to_array = { NOV_council_x_pos = 117 }
+	add_to_array = { NOV_council_y_pos = 108 }
+	add_to_array = { NOV_council_x_pos = 109 }
+	add_to_array = { NOV_council_y_pos = 92 }
+	add_to_array = { NOV_council_x_pos = 100 }
+	add_to_array = { NOV_council_y_pos = 77 }
+	add_to_array = { NOV_council_x_pos = 156 }
+	add_to_array = { NOV_council_y_pos = 146 }
+	add_to_array = { NOV_council_x_pos = 165 }
+	add_to_array = { NOV_council_y_pos = 162 }
+	add_to_array = { NOV_council_x_pos = 118 }
+	add_to_array = { NOV_council_y_pos = 66 }
+	add_to_array = { NOV_council_x_pos = 127 }
+	add_to_array = { NOV_council_y_pos = 82 }
+	add_to_array = { NOV_council_x_pos = 136 }
+	add_to_array = { NOV_council_y_pos = 97 }
+	add_to_array = { NOV_council_x_pos = 145 }
+	add_to_array = { NOV_council_y_pos = 112 }
+	add_to_array = { NOV_council_x_pos = 154 }
+	add_to_array = { NOV_council_y_pos = 128 }
+	add_to_array = { NOV_council_x_pos = 137 }
+	add_to_array = { NOV_council_y_pos = 58 }
+	add_to_array = { NOV_council_x_pos = 146 }
+	add_to_array = { NOV_council_y_pos = 73 }
+	add_to_array = { NOV_council_x_pos = 155 }
+	add_to_array = { NOV_council_y_pos = 88 }
+	add_to_array = { NOV_council_x_pos = 176 }
+	add_to_array = { NOV_council_y_pos = 138 }
+	add_to_array = { NOV_council_x_pos = 165 }
+	add_to_array = { NOV_council_y_pos = 104 }
+	add_to_array = { NOV_council_x_pos = 174 }
+	add_to_array = { NOV_council_y_pos = 119 }
+	add_to_array = { NOV_council_x_pos = 185 }
+	add_to_array = { NOV_council_y_pos = 153 }
+	add_to_array = { NOV_council_x_pos = 156 }
+	add_to_array = { NOV_council_y_pos = 51 }
+	add_to_array = { NOV_council_x_pos = 166 }
+	add_to_array = { NOV_council_y_pos = 67 }
+	add_to_array = { NOV_council_x_pos = 176 }
+	add_to_array = { NOV_council_y_pos = 82 }
+	add_to_array = { NOV_council_x_pos = 186 }
+	add_to_array = { NOV_council_y_pos = 98 }
+	add_to_array = { NOV_council_x_pos = 177 }
+	add_to_array = { NOV_council_y_pos = 46 }
+	add_to_array = { NOV_council_x_pos = 197 }
+	add_to_array = { NOV_council_y_pos = 132 }
+	add_to_array = { NOV_council_x_pos = 187 }
+	add_to_array = { NOV_council_y_pos = 62 }
+	add_to_array = { NOV_council_x_pos = 196 }
+	add_to_array = { NOV_council_y_pos = 114 }
+	add_to_array = { NOV_council_x_pos = 197 }
+	add_to_array = { NOV_council_y_pos = 79 }
+	add_to_array = { NOV_council_x_pos = 207 }
+	add_to_array = { NOV_council_y_pos = 149 }
+	add_to_array = { NOV_council_x_pos = 197 }
+	add_to_array = { NOV_council_y_pos = 43 }
+	add_to_array = { NOV_council_x_pos = 207 }
+	add_to_array = { NOV_council_y_pos = 95 }
+	add_to_array = { NOV_council_x_pos = 207 }
+	add_to_array = { NOV_council_y_pos = 60 }
+	add_to_array = { NOV_council_x_pos = 218 }
+	add_to_array = { NOV_council_y_pos = 130 }
+	add_to_array = { NOV_council_x_pos = 218 }
+	add_to_array = { NOV_council_y_pos = 113 }
+	add_to_array = { NOV_council_x_pos = 218 }
+	add_to_array = { NOV_council_y_pos = 77 }
+	add_to_array = { NOV_council_x_pos = 218 }
+	add_to_array = { NOV_council_y_pos = 42 }
+	add_to_array = { NOV_council_x_pos = 228 }
+	add_to_array = { NOV_council_y_pos = 60 }
+	add_to_array = { NOV_council_x_pos = 229 }
+	add_to_array = { NOV_council_y_pos = 95 }
+	add_to_array = { NOV_council_x_pos = 239 }
+	add_to_array = { NOV_council_y_pos = 43 }
+	add_to_array = { NOV_council_x_pos = 229 }
+	add_to_array = { NOV_council_y_pos = 149 }
+	add_to_array = { NOV_council_x_pos = 239 }
+	add_to_array = { NOV_council_y_pos = 79 }
+	add_to_array = { NOV_council_x_pos = 240 }
+	add_to_array = { NOV_council_y_pos = 114 }
+	add_to_array = { NOV_council_x_pos = 249 }
+	add_to_array = { NOV_council_y_pos = 62 }
+	add_to_array = { NOV_council_x_pos = 239 }
+	add_to_array = { NOV_council_y_pos = 132 }
+	add_to_array = { NOV_council_x_pos = 259 }
+	add_to_array = { NOV_council_y_pos = 46 }
+	add_to_array = { NOV_council_x_pos = 250 }
+	add_to_array = { NOV_council_y_pos = 98 }
+	add_to_array = { NOV_council_x_pos = 260 }
+	add_to_array = { NOV_council_y_pos = 82 }
+	add_to_array = { NOV_council_x_pos = 270 }
+	add_to_array = { NOV_council_y_pos = 67 }
+	add_to_array = { NOV_council_x_pos = 279 }
+	add_to_array = { NOV_council_y_pos = 51 }
+	add_to_array = { NOV_council_x_pos = 251 }
+	add_to_array = { NOV_council_y_pos = 153 }
+	add_to_array = { NOV_council_x_pos = 262 }
+	add_to_array = { NOV_council_y_pos = 119 }
+	add_to_array = { NOV_council_x_pos = 271 }
+	add_to_array = { NOV_council_y_pos = 104 }
+	add_to_array = { NOV_council_x_pos = 260 }
+	add_to_array = { NOV_council_y_pos = 138 }
+	add_to_array = { NOV_council_x_pos = 281 }
+	add_to_array = { NOV_council_y_pos = 88 }
+	add_to_array = { NOV_council_x_pos = 290 }
+	add_to_array = { NOV_council_y_pos = 73 }
+	add_to_array = { NOV_council_x_pos = 299 }
+	add_to_array = { NOV_council_y_pos = 58 }
+	add_to_array = { NOV_council_x_pos = 282 }
+	add_to_array = { NOV_council_y_pos = 128 }
+	add_to_array = { NOV_council_x_pos = 291 }
+	add_to_array = { NOV_council_y_pos = 112 }
+	add_to_array = { NOV_council_x_pos = 300 }
+	add_to_array = { NOV_council_y_pos = 97 }
+	add_to_array = { NOV_council_x_pos = 309 }
+	add_to_array = { NOV_council_y_pos = 82 }
+	add_to_array = { NOV_council_x_pos = 318 }
+	add_to_array = { NOV_council_y_pos = 66 }
+	add_to_array = { NOV_council_x_pos = 271 }
+	add_to_array = { NOV_council_y_pos = 162 }
+	add_to_array = { NOV_council_x_pos = 280 }
+	add_to_array = { NOV_council_y_pos = 146 }
+	add_to_array = { NOV_council_x_pos = 336 }
+	add_to_array = { NOV_council_y_pos = 77 }
+	add_to_array = { NOV_council_x_pos = 327 }
+	add_to_array = { NOV_council_y_pos = 92 }
+	add_to_array = { NOV_council_x_pos = 319 }
+	add_to_array = { NOV_council_y_pos = 108 }
+	add_to_array = { NOV_council_x_pos = 310 }
+	add_to_array = { NOV_council_y_pos = 123 }
+	add_to_array = { NOV_council_x_pos = 301 }
+	add_to_array = { NOV_council_y_pos = 139 }
+	add_to_array = { NOV_council_x_pos = 298 }
+	add_to_array = { NOV_council_y_pos = 158 }
+	add_to_array = { NOV_council_x_pos = 353 }
+	add_to_array = { NOV_council_y_pos = 89 }
+	add_to_array = { NOV_council_x_pos = 344 }
+	add_to_array = { NOV_council_y_pos = 105 }
+	add_to_array = { NOV_council_x_pos = 289 }
+	add_to_array = { NOV_council_y_pos = 174 }
+	add_to_array = { NOV_council_x_pos = 336 }
+	add_to_array = { NOV_council_y_pos = 120 }
+	add_to_array = { NOV_council_x_pos = 327 }
+	add_to_array = { NOV_council_y_pos = 136 }
+	add_to_array = { NOV_council_x_pos = 319 }
+	add_to_array = { NOV_council_y_pos = 152 }
+	add_to_array = { NOV_council_x_pos = 369 }
+	add_to_array = { NOV_council_y_pos = 102 }
+	add_to_array = { NOV_council_x_pos = 360 }
+	add_to_array = { NOV_council_y_pos = 119 }
+	add_to_array = { NOV_council_x_pos = 351 }
+	add_to_array = { NOV_council_y_pos = 135 }
+	add_to_array = { NOV_council_x_pos = 314 }
+	add_to_array = { NOV_council_y_pos = 173 }
+	add_to_array = { NOV_council_x_pos = 342 }
+	add_to_array = { NOV_council_y_pos = 152 }
+	add_to_array = { NOV_council_x_pos = 383 }
+	add_to_array = { NOV_council_y_pos = 117 }
+	add_to_array = { NOV_council_x_pos = 305 }
+	add_to_array = { NOV_council_y_pos = 190 }
+	add_to_array = { NOV_council_x_pos = 374 }
+	add_to_array = { NOV_council_y_pos = 134 }
+	add_to_array = { NOV_council_x_pos = 334 }
+	add_to_array = { NOV_council_y_pos = 169 }
+	add_to_array = { NOV_council_x_pos = 365 }
+	add_to_array = { NOV_council_y_pos = 151 }
+	add_to_array = { NOV_council_x_pos = 396 }
+	add_to_array = { NOV_council_y_pos = 134 }
+	add_to_array = { NOV_council_x_pos = 356 }
+	add_to_array = { NOV_council_y_pos = 169 }
+	add_to_array = { NOV_council_x_pos = 327 }
+	add_to_array = { NOV_council_y_pos = 190 }
+	add_to_array = { NOV_council_x_pos = 386 }
+	add_to_array = { NOV_council_y_pos = 151 }
+	add_to_array = { NOV_council_x_pos = 407 }
+	add_to_array = { NOV_council_y_pos = 151 }
+	add_to_array = { NOV_council_x_pos = 377 }
+	add_to_array = { NOV_council_y_pos = 169 }
+	add_to_array = { NOV_council_x_pos = 346 }
+	add_to_array = { NOV_council_y_pos = 187 }
+	add_to_array = { NOV_council_x_pos = 317 }
+	add_to_array = { NOV_council_y_pos = 208 }
+	add_to_array = { NOV_council_x_pos = 397 }
+	add_to_array = { NOV_council_y_pos = 170 }
+	add_to_array = { NOV_council_x_pos = 366 }
+	add_to_array = { NOV_council_y_pos = 188 }
+	add_to_array = { NOV_council_x_pos = 417 }
+	add_to_array = { NOV_council_y_pos = 170 }
+	add_to_array = { NOV_council_x_pos = 337 }
+	add_to_array = { NOV_council_y_pos = 209 }
+	add_to_array = { NOV_council_x_pos = 386 }
+	add_to_array = { NOV_council_y_pos = 188 }
+	add_to_array = { NOV_council_x_pos = 356 }
+	add_to_array = { NOV_council_y_pos = 207 }
+	add_to_array = { NOV_council_x_pos = 405 }
+	add_to_array = { NOV_council_y_pos = 189 }
+	add_to_array = { NOV_council_x_pos = 424 }
+	add_to_array = { NOV_council_y_pos = 189 }
+	add_to_array = { NOV_council_x_pos = 375 }
+	add_to_array = { NOV_council_y_pos = 208 }
+	add_to_array = { NOV_council_x_pos = 393 }
+	add_to_array = { NOV_council_y_pos = 208 }
+	add_to_array = { NOV_council_x_pos = 325 }
+	add_to_array = { NOV_council_y_pos = 229 }
+	add_to_array = { NOV_council_x_pos = 412 }
+	add_to_array = { NOV_council_y_pos = 209 }
+	add_to_array = { NOV_council_x_pos = 344 }
+	add_to_array = { NOV_council_y_pos = 229 }
+	add_to_array = { NOV_council_x_pos = 430 }
+	add_to_array = { NOV_council_y_pos = 209 }
+	add_to_array = { NOV_council_x_pos = 362 }
+	add_to_array = { NOV_council_y_pos = 228 }
+	add_to_array = { NOV_council_x_pos = 380 }
+	add_to_array = { NOV_council_y_pos = 229 }
+	add_to_array = { NOV_council_x_pos = 398 }
+	add_to_array = { NOV_council_y_pos = 229 }
+	add_to_array = { NOV_council_x_pos = 416 }
+	add_to_array = { NOV_council_y_pos = 229 }
+	add_to_array = { NOV_council_x_pos = 434 }
+	add_to_array = { NOV_council_y_pos = 230 }
+	add_to_array = { NOV_council_x_pos = 330 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 347 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 365 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 383 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 400 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 418 }
+	add_to_array = { NOV_council_y_pos = 250 }
+	add_to_array = { NOV_council_x_pos = 436 }
+	add_to_array = { NOV_council_y_pos = 250 }
+}
+
+NOV_setup_starting_duma_seat_frames = {
+	set_variable = { NOV_rapp_duma_seats = 180 }
+	set_variable = { NOV_vrpp_duma_seats = 156 }
+	set_variable = { NOV_dspr_duma_seats = 45 }
+	set_variable = { NOV_rslp_duma_seats = 36 }
+	set_variable = { NOV_nfm_duma_seats = 9 }
+	set_variable = { NOV_rirm_duma_seats = 5 }
+	set_variable = { NOV_cprf_duma_seats = 7 }
+	set_variable = { NOV_srp_duma_seats = 12 }
+}
+
+NOV_setup_starting_council_seat_frames = {
+	set_variable = { NOV_rapp_council_seats = 76 }
+	set_variable = { NOV_vrpp_council_seats = 70 }
+	set_variable = { NOV_dspr_council_seats = 8 }
+	set_variable = { NOV_rslp_council_seats = 6 }
+	set_variable = { NOV_nfm_council_seats = 3 }
+	set_variable = { NOV_rirm_council_seats = 2 }
+	set_variable = { NOV_cprf_council_seats = 2 }
+	set_variable = { NOV_srp_council_seats = 3 }
+}
+
+NOV_setup_federal_assembly = {
+
+	# set up duma & federation council
+	set_variable = { NOV_presidency = 1 } #Shukshin
+	NOV_setup_starting_duma_seat_frames = yes
+	NOV_setup_duma_seat_positions = yes
+	NOV_setup_starting_council_seat_frames = yes
+	NOV_setup_council_seat_positions = yes
+
+	#so that you don't see a blank screen when you first click in
+	clear_array = NOV_duma_selected_tab
+	add_to_array = { NOV_duma_selected_tab = 1 }
+	clear_array = NOV_duma_tab_frames
+	add_to_array = { NOV_duma_tab_frames = 2 }
+	add_to_array = { NOV_duma_tab_frames = 1 }
+	set_variable = { NOV_parliament_gui_type_frames^0 = 2 }
+	set_variable = { NOV_parliament_gui_type_frames^1 = 1 }
+
+	add_to_array = { NOV_party_list = 0 }
+	add_to_array = { NOV_party_list = 1 }
+	add_to_array = { NOV_party_list = 2 }
+	add_to_array = { NOV_party_list = 3 }
+	add_to_array = { NOV_party_list = 4 }
+	add_to_array = { NOV_party_list = 5 }
+	add_to_array = { NOV_party_list = 6 }
+	add_to_array = { NOV_party_list = 7 }
+
+	# set up party opinions
+
+	add_to_array = { NOV_party_opinions = 100 }
+	if = {
+		limit = {
+			has_completed_focus = NOV_shukshin_a_deal_with_the_new_parties
+		}
+		add_to_array = { NOV_party_opinions = -95 }
+		add_to_array = { NOV_party_opinions = 35 }
+		add_to_array = { NOV_party_opinions = 25 }
+	}
+	else = {
+		add_to_array = { NOV_party_opinions = 10 }
+		add_to_array = { NOV_party_opinions = -20 }
+		add_to_array = { NOV_party_opinions = -10 }
+	}
+	add_to_array = { NOV_party_opinions = 50 }
+	add_to_array = { NOV_party_opinions = 5 }
+	add_to_array = { NOV_party_opinions = -40 }
+	add_to_array = { NOV_party_opinions = -50 }
+
+	# set up coalition
+	if = {
+		limit = { has_country_flag = NOV_VRPP_Coalition }
+		add_to_array = { NOV_coalition = 0 }
+		add_to_array = { NOV_coalition = 1 }
+		add_to_variable = { NOV_party_opinions^var:1 = 15 }
+		clamp_variable = {
+			var = NOV_party_opinions^1
+			min = -100
+			max = 100
+		}
+	}
+	else_if = {
+		limit = { NOT = { has_country_flag = NOV_VRPP_Coalition } }
+		add_to_array = { NOV_coalition = 0 }
+		add_to_array = { NOV_coalition = 2 }
+		add_to_array = { NOV_coalition = 3 }
+		add_to_array = { NOV_coalition = 4 }
+	}
+
+	set_variable = { NOV_coalition_seats_duma = NOV_rapp_duma_seats }
+	add_to_variable = { NOV_coalition_seats_duma = NOV_dspr_duma_seats }
+	add_to_variable = { NOV_coalition_seats_duma = NOV_rslp_duma_seats }
+	add_to_variable = { NOV_coalition_seats_duma = NOV_nfm_duma_seats }
+
+	set_variable = { NOV_coalition_seats_council = NOV_rapp_council_seats }
+	add_to_variable = { NOV_coalition_seats_council = NOV_dspr_council_seats }
+	add_to_variable = { NOV_coalition_seats_council = NOV_rslp_council_seats }
+	add_to_variable = { NOV_coalition_seats_council = NOV_nfm_council_seats }
+  
+	NOV_Coalition_Unity = yes
+	NOV_bills_generate_party_votes = yes
+}
+
+NOV_Coalition_Unity = {
+	set_variable = { NOV_coalition_unity = 0 }
+	for_each_loop = {
+		array = NOV_party_opinions
+		index = i
+		value = v
+		if = {
+			limit = { is_in_array = { NOV_coalition = i } }
+			add_to_variable = { NOV_coalition_unity = v }
+		}
+	}
+	set_temp_variable = { unity_average_maker = NOV_coalition^num } # pulls amount of elements in array
+	divide_variable = { NOV_coalition_unity = unity_average_maker } # divides total unity by amount of elements to get average
+}
+
+### BILLS ###
+
+NOV_start_bill_voting = { # activates the current bill and pushes it to the state duma
+	custom_effect_tooltip = NOV_start_bill_voting_tt
+	set_variable = { NOV_active_bill = bill_id }
+	set_country_flag = NOV_active_bill
+
+	set_variable = { NOV_bill_timer = 30 }
+	NOV_bills_generate_party_votes = yes
+
+	set_temp_variable = { alert_id = token:Alert_NOV_assembly }
+	add_TNO_alert = yes
+}
+NOV_bills_conclusion = {
+	if = {
+		limit = {
+			check_variable = { NOV_bill_total_votes > 225 }
+		}
+		NOV_bills_effects = yes
+	}
+	else = {
+		if = {
+			limit = {
+				NOV = { has_country_leader = { character = NOV_Vasily_Shukshin ruling_only = yes}}	
+			}
+			country_event = {id = NOV_bill.11}
+		}
+		else = {#Primakov
+			country_event = {id = NOV_bill.12}
+		}
+	}
+	clear_variable = NOV_active_bill
+}
+NOV_bills_effects = {
+	if = {
+		limit = {
+			check_variable = { NOV_active_bill = 1 }
+		}
+		country_event = { id = NOV_bill.1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_active_bill = 2 }
+		}
+		country_event = { id = NOV_bill.2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_active_bill = 3 }
+		}
+		country_event = { id = NOV_bill.3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_active_bill = 4 }
+		}
+		country_event = { id = NOV_bill.4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_active_bill = 5 }
+		}
+		country_event = { id = NOV_bill.5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_active_bill = 6 }
+		}
+		country_event = { id = NOV_bill.6 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_active_bill = 7 }
+		}
+		country_event = { id = NOV_bill.7 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_active_bill = 8 }
+		}
+		country_event = { id = NOV_bill.8 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_active_bill = 9 }
+		}	
+		country_event = { id = NOV_bill.9 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_active_bill = 10 }
+		}
+		country_event = { id = NOV_bill.10 }
+	}
+}
+
+NOV_bills_button_effect = {
+	if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 0 }
+		}
+		set_temp_variable = { temp_seats = NOV_rapp_duma_seats }
+		set_temp_variable = { temp_seats_base = NOV_rapp_bill_votes }
+		set_temp_variable = { temp_cap = NOV_rapp_duma_seats }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 1 }
+		}
+		set_temp_variable = { temp_seats = NOV_vrpp_duma_seats }
+		set_temp_variable = { temp_seats_base = NOV_vrpp_bill_votes }
+		set_temp_variable = { temp_cap = NOV_vrpp_duma_seats }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 2 }
+		}
+		set_temp_variable = { temp_seats = NOV_dspr_duma_seats }
+		set_temp_variable = { temp_seats_base = NOV_dspr_bill_votes }
+		set_temp_variable = { temp_cap = NOV_dspr_duma_seats }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 3 }
+		}
+		set_temp_variable = { temp_seats = NOV_rslp_duma_seats }
+		set_temp_variable = { temp_seats_base = NOV_rslp_bill_votes }
+		set_temp_variable = { temp_cap = NOV_rslp_duma_seats }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 4 }
+		}
+		set_temp_variable = { temp_seats = NOV_nfm_duma_seats }
+		set_temp_variable = { temp_seats_base = NOV_nfm_bill_votes }
+		set_temp_variable = { temp_cap = NOV_nfm_duma_seats }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 5 }
+		}
+		set_temp_variable = { temp_seats = NOV_rirm_duma_seats }
+		set_temp_variable = { temp_seats_base = NOV_rirm_bill_votes }
+		set_temp_variable = { temp_cap = NOV_rirm_duma_seats }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 6 }
+		}
+		set_temp_variable = { temp_seats = NOV_cprf_duma_seats }
+		set_temp_variable = { temp_seats_base = NOV_cprf_bill_votes }
+		set_temp_variable = { temp_cap = NOV_cprf_duma_seats }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 7 }
+		}
+		set_temp_variable = { temp_seats = NOV_srp_duma_seats }
+		set_temp_variable = { temp_seats_base = NOV_srp_bill_votes }
+		set_temp_variable = { temp_cap = NOV_srp_duma_seats }
+	}
+	set_temp_variable = { temp_votes = 0.03 }
+	set_temp_variable = { temp_votes_modifier = 0.03 }
+	set_temp_variable = { temp_opinion = NOV_party_opinions^NOV_bills_target_party }
+	multiply_temp_variable = { temp_opinion = 0.8 }
+	divide_temp_variable = { temp_opinion = 100 }
+
+	multiply_temp_variable = { temp_votes_modifier = temp_opinion }
+	add_to_temp_variable = { temp_votes = temp_votes_modifier }
+
+	multiply_temp_variable = { temp_seats = temp_votes }
+	round_temp_variable = temp_seats
+	add_to_temp_variable = { temp_seats_base = temp_seats }
+
+	clamp_temp_variable = {
+		var = temp_seats_base
+		min = 1
+		max = temp_cap
+	}
+	if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 0 }
+		}
+		set_variable = { NOV_rapp_bill_votes = temp_seats_base }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 1 }
+		}
+		set_variable = { NOV_vrpp_bill_votes = temp_seats_base }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 2 }
+		}
+		set_variable = { NOV_dspr_bill_votes = temp_seats_base }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 3 }
+		}
+		set_variable = { NOV_rslp_bill_votes = temp_seats_base }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 4 }
+		}
+		set_variable = { NOV_nfm_bill_votes = temp_seats_base }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 5 }
+		}
+		set_variable = { NOV_rirm_bill_votes = temp_seats_base }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 6 }
+		}
+		set_variable = { NOV_cprf_bill_votes = temp_seats_base }
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_bills_target_party = 7 }
+		}
+		set_variable = { NOV_srp_bill_votes = temp_seats_base }
+	}
+	NOV_bills_update_votes = yes
+}
+
+NOV_bills_generate_party_votes = { # generates all party votes depending on their opinion towards you or whether they are in a coalition with you or not
+	
+	NOV_Coalition_Unity = yes
+	
+	set_temp_variable = { vote_divider_constant = 5 }
+	if = {
+		limit = {
+			has_government = conservatism
+		}
+		set_variable = { NOV_rapp_bill_votes = NOV_rapp_duma_seats }
+	}
+	else_if = {
+		limit = { is_in_array = { NOV_coalition = NOV_party_list^0 } }
+		set_temp_variable = { temp_seats = NOV_rapp_duma_seats}
+		set_temp_variable = { temp_unity = NOV_coalition_unity }
+		add_to_temp_variable = { temp_unity = 15 } #Bonus for being in the Coalition
+		clamp_temp_variable = {
+			var = temp_unity
+			min = 0
+			max = 100
+		}
+		divide_temp_variable = { temp_unity = 100 }
+		multiply_temp_variable = { temp_seats = temp_unity }
+		round_temp_variable = temp_seats
+		set_variable = { NOV_rapp_bill_votes = temp_seats }
+	}
+	else = {
+		set_temp_variable = { temp_votes = NOV_rapp_duma_seats }
+		divide_temp_variable = { temp_votes = vote_divider_constant }
+
+		set_temp_variable = { temp_votes_modifier = temp_votes }
+		set_temp_variable = { temp_opinion = NOV_party_opinions^0 }
+
+		divide_temp_variable = { temp_opinion = 100 } # this is to convert to percentages
+		multiply_temp_variable = { temp_votes_modifier = temp_opinion }
+		add_to_temp_variable = { temp_votes = temp_votes_modifier }
+		set_variable = { NOV_rapp_bill_votes = temp_votes }
+		round_variable = NOV_rapp_bill_votes
+	}
+	if = {
+		limit = {
+			has_government = paternalism
+		}
+		set_variable = { NOV_vrpp_bill_votes = NOV_vrpp_duma_seats }
+	}
+	else_if = {
+		limit = { is_in_array = { NOV_coalition = NOV_party_list^1 } }
+		set_temp_variable = { temp_seats = NOV_vrpp_duma_seats}
+		set_temp_variable = { temp_unity = NOV_coalition_unity }
+		add_to_temp_variable = { temp_unity = 15 } #Bonus for being in the Coalition
+		clamp_temp_variable = {
+			var = temp_unity
+			min = 0
+			max = 100
+		}
+		divide_temp_variable = { temp_unity = 100 }
+		multiply_temp_variable = { temp_seats = temp_unity }
+		round_temp_variable = temp_seats
+		set_variable = { NOV_vrpp_bill_votes = temp_seats }
+	}
+	else = {
+		set_temp_variable = { temp_votes = NOV_vrpp_duma_seats }
+		divide_temp_variable = { temp_votes = vote_divider_constant }
+
+		set_temp_variable = { temp_votes_modifier = temp_votes }
+		set_temp_variable = { temp_opinion = NOV_party_opinions^1 }
+
+		divide_temp_variable = { temp_opinion = 100 } # this is to convert to percentages
+		multiply_temp_variable = { temp_votes_modifier = temp_opinion }
+		add_to_temp_variable = { temp_votes = temp_votes_modifier }
+		set_variable = { NOV_vrpp_bill_votes = temp_votes }
+		round_variable = NOV_vrpp_bill_votes
+	}
+	if = {
+		limit = {
+			has_government = progressivism
+		}
+		set_variable = { NOV_dspr_bill_votes = NOV_dspr_duma_seats }
+	}
+	else_if = {
+		limit = { is_in_array = { NOV_coalition = NOV_party_list^2 } }
+		set_temp_variable = { temp_seats = NOV_dspr_duma_seats}
+		set_temp_variable = { temp_unity = NOV_coalition_unity }
+		add_to_temp_variable = { temp_unity = 15 } #Bonus for being in the Coalition
+		clamp_temp_variable = {
+			var = temp_unity
+			min = 0
+			max = 100
+		}
+		divide_temp_variable = { temp_unity = 100 }
+		multiply_temp_variable = { temp_seats = temp_unity }
+		round_temp_variable = temp_seats
+		set_variable = { NOV_dspr_bill_votes = temp_seats }
+	}
+	else = {
+		set_temp_variable = { temp_votes = NOV_dspr_duma_seats }
+		divide_temp_variable = { temp_votes = vote_divider_constant }
+
+		set_temp_variable = { temp_votes_modifier = temp_votes }
+		set_temp_variable = { temp_opinion = NOV_party_opinions^2 }
+
+		divide_temp_variable = { temp_opinion = 100 } # this is to convert to percentages
+		multiply_temp_variable = { temp_votes_modifier = temp_opinion }
+		add_to_temp_variable = { temp_votes = temp_votes_modifier }
+		set_variable = { NOV_dspr_bill_votes = temp_votes }
+		round_variable = NOV_dspr_bill_votes
+	}
+	if = {
+		limit = {
+			has_government = liberalism
+		}
+		set_variable = { NOV_rslp_bill_votes = NOV_rslp_duma_seats }
+	}
+	else_if = {
+		limit = { is_in_array = { NOV_coalition = NOV_party_list^3 } }
+		set_temp_variable = { temp_seats = NOV_rslp_duma_seats}
+		set_temp_variable = { temp_unity = NOV_coalition_unity }
+		add_to_temp_variable = { temp_unity = 15 } #Bonus for being in the Coalition
+		clamp_temp_variable = {
+			var = temp_unity
+			min = 0
+			max = 100
+		}
+		divide_temp_variable = { temp_unity = 100 }
+		multiply_temp_variable = { temp_seats = temp_unity }
+		round_temp_variable = temp_seats
+		set_variable = { NOV_rslp_bill_votes = temp_seats }
+	}
+	else = {
+		set_temp_variable = { temp_votes = NOV_rslp_duma_seats }
+		divide_temp_variable = { temp_votes = vote_divider_constant }
+
+		set_temp_variable = { temp_votes_modifier = temp_votes }
+		set_temp_variable = { temp_opinion = NOV_party_opinions^3 }
+
+		divide_temp_variable = { temp_opinion = 100 } # this is to convert to percentages
+		multiply_temp_variable = { temp_votes_modifier = temp_opinion }
+		add_to_temp_variable = { temp_votes = temp_votes_modifier }
+		set_variable = { NOV_rslp_bill_votes = temp_votes }
+		round_variable = NOV_rslp_bill_votes
+	}
+	if = {
+		limit = { is_in_array = { NOV_coalition = NOV_party_list^4 } }
+		set_temp_variable = { temp_seats = NOV_nfm_duma_seats}
+		set_temp_variable = { temp_unity = NOV_coalition_unity }
+		add_to_temp_variable = { temp_unity = 15 } #Bonus for being in the Coalition
+		clamp_temp_variable = {
+			var = temp_unity
+			min = 0
+			max = 100
+		}
+		divide_temp_variable = { temp_unity = 100 }
+		multiply_temp_variable = { temp_seats = temp_unity }
+		round_temp_variable = temp_seats
+		set_variable = { NOV_nfm_bill_votes = temp_seats }
+	}
+	else = {
+		set_temp_variable = { temp_votes = NOV_nfm_duma_seats }
+		divide_temp_variable = { temp_votes = vote_divider_constant }
+
+		set_temp_variable = { temp_votes_modifier = temp_votes }
+		set_temp_variable = { temp_opinion = NOV_party_opinions^4 }
+
+		divide_temp_variable = { temp_opinion = 100 } # this is to convert to percentages
+		multiply_temp_variable = { temp_votes_modifier = temp_opinion }
+		add_to_temp_variable = { temp_votes = temp_votes_modifier }
+		set_variable = { NOV_nfm_bill_votes = temp_votes }
+		round_variable = NOV_nfm_bill_votes
+	}
+	if = {
+		limit = {
+			has_government = despotism
+		}
+		set_variable = { NOV_rirm_bill_votes = NOV_rirm_duma_seats }
+	}
+	else_if = {
+		limit = { is_in_array = { NOV_coalition = NOV_party_list^5 } }
+		set_temp_variable = { temp_seats = NOV_rirm_duma_seats}
+		set_temp_variable = { temp_unity = NOV_coalition_unity }
+		add_to_temp_variable = { temp_unity = 15 } #Bonus for being in the Coalition
+		clamp_temp_variable = {
+			var = temp_unity
+			min = 0
+			max = 100
+		}
+		divide_temp_variable = { temp_unity = 100 }
+		multiply_temp_variable = { temp_seats = temp_unity }
+		round_temp_variable = temp_seats
+		set_variable = { NOV_rirm_bill_votes = temp_seats }
+	}
+	else = {
+		set_temp_variable = { temp_votes = NOV_rirm_duma_seats }
+		divide_temp_variable = { temp_votes = vote_divider_constant }
+
+		set_temp_variable = { temp_votes_modifier = temp_votes }
+		set_temp_variable = { temp_opinion = NOV_party_opinions^5 }
+
+		divide_temp_variable = { temp_opinion = 100 } # this is to convert to percentages
+		multiply_temp_variable = { temp_votes_modifier = temp_opinion }
+		add_to_temp_variable = { temp_votes = temp_votes_modifier }
+		set_variable = { NOV_rirm_bill_votes = temp_votes }
+		round_variable = NOV_rirm_bill_votes
+	}
+	if = {
+		limit = {
+			has_government = communist
+		}
+		set_variable = { NOV_cprf_bill_votes = NOV_cprf_duma_seats }
+	}
+	else_if = {
+		limit = { is_in_array = { NOV_coalition = NOV_party_list^6 } }
+		set_temp_variable = { temp_seats = NOV_cprf_duma_seats}
+		set_temp_variable = { temp_unity = NOV_coalition_unity }
+		add_to_temp_variable = { temp_unity = 15 } #Bonus for being in the Coalition
+		clamp_temp_variable = {
+			var = temp_unity
+			min = 0
+			max = 100
+		}
+		divide_temp_variable = { temp_unity = 100 }
+		multiply_temp_variable = { temp_seats = temp_unity }
+		round_temp_variable = temp_seats
+		set_variable = { NOV_cprf_bill_votes = temp_seats }
+	}
+	else = {
+		set_temp_variable = { temp_votes = NOV_cprf_duma_seats }
+		divide_temp_variable = { temp_votes = vote_divider_constant }
+
+		set_temp_variable = { temp_votes_modifier = temp_votes }
+		set_temp_variable = { temp_opinion = NOV_party_opinions^6 }
+
+		divide_temp_variable = { temp_opinion = 100 } # this is to convert to percentages
+		multiply_temp_variable = { temp_votes_modifier = temp_opinion }
+		add_to_temp_variable = { temp_votes = temp_votes_modifier }
+		set_variable = { NOV_cprf_bill_votes = temp_votes }
+		round_variable = NOV_cprf_bill_votes
+	}
+	if = {
+		limit = {
+			has_government = socialist
+		}
+		set_variable = { NOV_srp_bill_votes = NOV_srp_duma_seats }
+	}
+	else_if = {
+		limit = { is_in_array = { NOV_coalition = NOV_party_list^7 } }
+		set_temp_variable = { temp_seats = NOV_srp_duma_seats}
+		set_temp_variable = { temp_unity = NOV_coalition_unity }
+		add_to_temp_variable = { temp_unity = 15 } #Bonus for being in the Coalition
+		clamp_temp_variable = {
+			var = temp_unity
+			min = 0
+			max = 100
+		}
+		divide_temp_variable = { temp_unity = 100 }
+		multiply_temp_variable = { temp_seats = temp_unity }
+		round_temp_variable = temp_seats
+		set_variable = { NOV_srp_bill_votes = temp_seats }
+	}
+	else = {
+		set_temp_variable = { temp_votes = NOV_srp_duma_seats }
+		divide_temp_variable = { temp_votes = vote_divider_constant }
+
+		set_temp_variable = { temp_votes_modifier = temp_votes }
+		set_temp_variable = { temp_opinion = NOV_party_opinions^7 }
+
+		divide_temp_variable = { temp_opinion = 100 } # this is to convert to percentages
+		multiply_temp_variable = { temp_votes_modifier = temp_opinion }
+		add_to_temp_variable = { temp_votes = temp_votes_modifier }
+		set_variable = { NOV_srp_bill_votes = temp_votes }
+		round_variable = NOV_srp_bill_votes
+	}
+	NOV_bills_update_votes = yes
+}
+
+NOV_bills_update_votes = {
+
+	set_variable = { NOV_bill_total_votes = NOV_rapp_bill_votes }
+	add_to_variable = { NOV_bill_total_votes = NOV_vrpp_bill_votes }
+	add_to_variable = { NOV_bill_total_votes = NOV_dspr_bill_votes }
+	add_to_variable = { NOV_bill_total_votes = NOV_rslp_bill_votes }
+	add_to_variable = { NOV_bill_total_votes = NOV_nfm_bill_votes }
+	add_to_variable = { NOV_bill_total_votes = NOV_rirm_bill_votes }
+	add_to_variable = { NOV_bill_total_votes = NOV_cprf_bill_votes }
+	add_to_variable = { NOV_bill_total_votes = NOV_srp_bill_votes }
+}
+
+#########################
+#       ELECTIONS       #   
+#########################
+
+NOV_elections_setup_arrays = { # sets up arrays so that we can track population
+	every_owned_state = {
+		limit = {
+			OR = {
+				is_far_east_state = yes
+				state = 809
+				state = 408
+				state = 409
+				state = 657
+				state = 1364
+				state = 1644
+				state = 1646
+			}
+		}
+		add_to_array = { ROOT.NOV_election_far_east = THIS.id }
+	}
+	every_owned_state = {
+		limit = {
+			is_central_siberia_state = yes
+		}
+		add_to_array = { ROOT.NOV_election_cen_sib = THIS.id }
+	}
+	every_owned_state = {
+		limit = {
+			is_west_siberia_state = yes
+		}
+		add_to_array = { ROOT.NOV_election_wes_sib = THIS.id }
+	}
+	every_owned_state = {
+		limit = {
+			OR = {
+				state = 398
+				state = 865
+				state = 752
+				state = 400
+				state = 854
+				state = 256
+				state = 252
+				state = 250
+				state = 251
+				state = 755
+				state = 850
+				state = 851
+				state = 852
+				state = 652
+				state = 849
+				state = 847
+				state = 848
+				state = 846
+				state = 582
+				state = 651
+				state = 853
+				state = 864
+				state = 753
+			}
+		}
+		add_to_array = { ROOT.NOV_election_volga = THIS.id }
+	}
+
+	every_owned_state = {
+		limit = {
+			OR = {
+				state = 855
+				state = 867
+				state = 351
+				state = 856
+				state = 857
+				state = 861
+				state = 859
+				state = 858
+				state = 214
+				state = 860
+				state = 862
+				state = 262
+				state = 870
+				state = 868
+				state = 397
+				state = 869
+				state = 866
+				state = 146
+				state = 216
+				state = 215
+				state = 213
+				state = 1359
+				state = 147
+				state = 238
+				state = 246
+				state = 247
+				state = 1475
+				state = 264
+				state = 208
+				state = 1421
+				state = 195
+				state = 209
+				state = 257
+				state = 255
+				state = 1314
+				state = 247
+				state = 1477
+				state = 1434
+				state = 220
+				state = 1712
+			}
+		}
+		add_to_array = { ROOT.NOV_election_north = THIS.id }
+	}
+
+	every_owned_state = {
+		limit = {
+			OR = {
+				state = 242
+				state = 1476
+				state = 219
+				state = 1478
+				state = 1442
+				state = 248
+				state = 238
+				state = 253
+				state = 1444
+				state = 205
+				state = 1435
+				state = 222
+				state = 401
+				state = 240
+				state = 210
+				state = 258
+				state = 254
+				state = 1441
+				state = 1436
+				state = 263
+				state = 245
+				state = 239
+			}
+		}
+		add_to_array = { ROOT.NOV_election_moscow = THIS.id }
+	}
+
+	every_owned_state = {
+		limit = {
+			OR = {
+				is_core_of = ADY
+				state = 1532
+				state = 137
+				state = 260
+				state = 224
+				state = 265
+				state = 247
+				state = 237
+				state = 244
+				state = 236
+				state = 265
+			}
+		}
+		add_to_array = { ROOT.NOV_election_caucasus = THIS.id }
+	}
+
+	# set up array of states for election regions
+
+	add_to_array = { ROOT.NOV_election_regions = 562 } # Magadan for far east
+	add_to_array = { ROOT.NOV_election_regions = 570 } # Novosibirsk for central sib
+	add_to_array = { ROOT.NOV_election_regions = 754 } # Chelyabinsk for west sib
+	add_to_array = { ROOT.NOV_election_regions = 850 } # Samara for volga
+	add_to_array = { ROOT.NOV_election_regions = 857 } # Vologda for northern district
+	if = {
+		limit = {
+			owns_state = 243
+		}
+		add_to_array = { ROOT.NOV_election_regions = 243.id } # Paulusburg for caucasus
+	}
+	if = {
+		limit = {
+			owns_state = 1442
+		}
+		add_to_array = { ROOT.NOV_election_regions = 1442.id } # Moscow for moscow
+	}
+}
+
+
+NOV_initialize_election_mechanics = {
+	clear_array = NOV_duma_selected_tab
+	add_to_array = { NOV_duma_selected_tab = 2 }
+	clear_array = NOV_duma_tab_frames
+	add_to_array = { NOV_duma_tab_frames = 1 }
+	add_to_array = { NOV_duma_tab_frames = 2 }
+	set_variable = { NOV_Election_Time_Left = 100 }
+
+	NOV_elections_setup_arrays = yes # sets up population
+
+	# calculates total population for each region
+
+	every_owned_state = {
+		limit = { is_in_array = { ROOT.NOV_election_far_east = THIS } }
+		add_to_variable = { 562.NOV_election_population = THIS.state_population_k }
+	}
+	every_owned_state = {
+		limit = { is_in_array = { ROOT.NOV_election_cen_sib = THIS } }
+		add_to_variable = { 570.NOV_election_population = THIS.state_population_k }
+	}
+	every_owned_state = {
+		limit = { is_in_array = { ROOT.NOV_election_wes_sib = THIS } }
+		add_to_variable = { 754.NOV_election_population = THIS.state_population_k }
+	}
+	every_owned_state = {
+		limit = { is_in_array = { ROOT.NOV_election_volga = THIS } }
+		add_to_variable = { 850.NOV_election_population = THIS.state_population_k }
+	}
+	every_owned_state = {
+		limit = { is_in_array = { ROOT.NOV_election_north = THIS } }
+		add_to_variable = { 857.NOV_election_population = THIS.state_population_k }
+	}
+	every_owned_state = {
+		limit = { is_in_array = { ROOT.NOV_election_caucasus = THIS } }
+		add_to_variable = { 243.NOV_election_population = THIS.state_population_k }
+	}
+	every_owned_state = {
+		limit = { is_in_array = { ROOT.NOV_election_moscow = THIS } }
+		add_to_variable = { 1442.NOV_election_population = THIS.state_population_k }
+	}
+
+	# set up support values and total national population
+
+	set_temp_variable = { region_id = 1 }
+
+	for_each_scope_loop = { # randomizes popularities
+		array = ROOT.NOV_election_regions
+		break = break
+
+		multiply_variable = { THIS.NOV_election_population = 0.63 } # multiplies total pop by eligible population, sitting at 63%
+
+		set_variable = { THIS.NOV_election_region_id = region_id } # Assigns each state a region ID, corresponding with the variable that controls what state is selected
+		add_to_temp_variable = { region_id = 1 } # Assures no 2 states have the same ID
+		add_to_variable = { ROOT.NOV_election_total_population = THIS.NOV_election_population } # Merges all local populations into one big national population variable
+		set_variable = { THIS.NOV_election_population_display = THIS.NOV_election_population }
+		divide_variable = { THIS.NOV_election_population_display = 1000 }
+	}
+	if = {
+		limit = { check_variable = { NOV_Election_Num = 0 } }
+		562 = {
+			set_variable = { THIS.NOV_election_support_RAPP = 42 }
+			set_variable = { THIS.NOV_election_support_VRPP = 23 }
+			set_variable = { THIS.NOV_election_support_DSPR = 9 }
+			set_variable = { THIS.NOV_election_support_RSLP = 11 }
+			set_variable = { THIS.NOV_election_support_independents = 14 }
+		}
+		570 = {
+			set_variable = { THIS.NOV_election_support_RAPP = 36 }
+			set_variable = { THIS.NOV_election_support_VRPP = 27 }
+			set_variable = { THIS.NOV_election_support_DSPR = 12 }
+			set_variable = { THIS.NOV_election_support_RSLP = 8 }
+			set_variable = { THIS.NOV_election_support_independents = 17 }
+		}
+		754 = {
+			set_variable = { THIS.NOV_election_support_RAPP = 29 }
+			set_variable = { THIS.NOV_election_support_VRPP = 22 }
+			set_variable = { THIS.NOV_election_support_DSPR = 13 }
+			set_variable = { THIS.NOV_election_support_RSLP = 21 }
+			set_variable = { THIS.NOV_election_support_independents = 15 }
+		}
+		850 = {
+			set_variable = { THIS.NOV_election_support_RAPP = 36 }
+			set_variable = { THIS.NOV_election_support_VRPP = 31 }
+			set_variable = { THIS.NOV_election_support_DSPR = 10 }
+			set_variable = { THIS.NOV_election_support_RSLP = 7 }
+			set_variable = { THIS.NOV_election_support_independents = 16 }
+		}
+		857 = {
+			set_variable = { THIS.NOV_election_support_RAPP = 21 }
+			set_variable = { THIS.NOV_election_support_VRPP = 16 }
+			set_variable = { THIS.NOV_election_support_DSPR = 34 }
+			set_variable = { THIS.NOV_election_support_RSLP = 9 }
+			set_variable = { THIS.NOV_election_support_independents = 20 }
+		}
+		243 = {
+			NOV_election_randomize_popularities = yes
+		}
+		1442 = {
+			NOV_election_randomize_popularities = yes
+		}
+	}
+	else_if = {
+		limit = { check_variable = { NOV_Election_Num > 0 } } #After 1st election, popularity now determines starting support
+
+		562 = {
+			NOV_election_randomize_popularities_2 = yes
+		}
+		570 = {
+			NOV_election_randomize_popularities_2 = yes
+		}
+		754 = {
+			NOV_election_randomize_popularities_2 = yes
+		}
+		850 = {
+			NOV_election_randomize_popularities_2 = yes
+		}
+		857 = {
+			NOV_election_randomize_popularities_2 = yes
+		}
+		243 = {
+			NOV_election_randomize_popularities_2 = yes
+		}
+		1442 = {
+			NOV_election_randomize_popularities_2 = yes
+		}		
+	}
+	NOV_election_update_display = yes
+	set_country_flag = NOV_elections_ongoing
+}
+
+NOV_election_randomize_popularities = { # this is to partially randomize popularities, while leaving room for modifiers from foci
+	randomize_temp_variable = {
+		var = temp_RAPP_support
+		distribution = uniform
+		min = 20
+		max = 30
+	}
+	randomize_temp_variable = {
+		var = temp_VRPP_support
+		distribution = uniform
+		min = 20
+		max = 24
+	}
+	randomize_temp_variable = {
+		var = temp_DSPR_support
+		distribution = uniform
+		min = 18
+		max = 25
+	}
+	randomize_temp_variable = {
+		var = temp_RSLP_support
+		distribution = uniform
+		min = 15
+		max = 21
+	}
+	set_temp_variable = { temp_independents_support = 100 }
+	subtract_from_temp_variable = { temp_independents_support = temp_RAPP_support }
+	subtract_from_temp_variable = { temp_independents_support = temp_VRPP_support }
+	subtract_from_temp_variable = { temp_independents_support = temp_DSPR_support }
+	subtract_from_temp_variable = { temp_independents_support = temp_RSLP_support }
+
+	set_variable = { THIS.NOV_election_support_RAPP = temp_RAPP_support }
+	set_variable = { THIS.NOV_election_support_VRPP = temp_VRPP_support }
+	set_variable = { THIS.NOV_election_support_DSPR = temp_DSPR_support }
+	set_variable = { THIS.NOV_election_support_RSLP = temp_RSLP_support }
+	set_variable = { THIS.NOV_election_support_independents = temp_independents_support }
+}
+
+NOV_election_randomize_popularities_2 = {
+	set_temp_variable = { NOV_election_residue = 100 }
+	set_temp_variable = { temp_rapp_elec_max = NOV.party_popularity@conservatism }
+	set_temp_variable = { temp_vrpp_elec_max = NOV.party_popularity@paternalism }
+	set_temp_variable = { temp_dspr_elec_max = NOV.party_popularity@progressivism }
+	set_temp_variable = { temp_rslp_elec_max = NOV.party_popularity@liberalism }
+
+	multiply_temp_variable = { temp_rapp_elec_max = 100 }
+	multiply_temp_variable = { temp_vrpp_elec_max = 100 }
+	multiply_temp_variable = { temp_dspr_elec_max = 100 }
+	multiply_temp_variable = { temp_rslp_elec_max = 100 }
+	
+	randomize_temp_variable = {
+		var = temp_rapp_elec
+		distribution = uniform
+		min = 10
+		max = temp_rapp_elec_max
+	}
+	randomize_temp_variable = {
+		var = temp_vrpp_elec
+		distribution = uniform
+		min = 10
+		max = temp_vrpp_elec_max
+	}
+	randomize_temp_variable = {
+		var = temp_dspr_elec
+		distribution = uniform
+		min = 10
+		max = temp_dspr_elec_max
+	}
+	randomize_temp_variable = {
+		var = temp_rslp_elec
+		distribution = uniform
+		min = 10
+		max = temp_rslp_elec_max
+	}
+	subtract_from_temp_variable = { NOV_election_residue = temp_rapp_elec }
+	subtract_from_temp_variable = { NOV_election_residue = temp_vrpp_elec }
+	subtract_from_temp_variable = { NOV_election_residue = temp_dspr_elec }
+	subtract_from_temp_variable = { NOV_election_residue = temp_rslp_elec }
+
+	divide_temp_variable = { NOV_election_residue = 3 }
+	set_temp_variable = { temp_ind_elec = NOV_election_residue }
+	add_to_temp_variable = { temp_ind_elec = NOV_election_residue }
+	if = {
+		limit = { has_government = conservatism }
+		add_to_temp_variable = { temp_rapp_elec = NOV_election_residue }
+	}
+	else_if = {
+		limit = { has_government = paternalism }
+		add_to_temp_variable = { temp_vrpp_elec = NOV_election_residue }
+	}
+	else_if = {
+		limit = { has_government = progressivism }
+		add_to_temp_variable = { temp_dspr_elec = NOV_election_residue }
+	}
+	else_if = {
+		limit = { has_government = liberalism }
+		add_to_temp_variable = { temp_rslp_elec = NOV_election_residue }
+	}
+	set_variable = { THIS.NOV_election_support_RAPP = temp_rapp_elec }
+	set_variable = { THIS.NOV_election_support_VRPP = temp_vrpp_elec }
+	set_variable = { THIS.NOV_election_support_DSPR = temp_dspr_elec }
+	set_variable = { THIS.NOV_election_support_RSLP = temp_rslp_elec }
+	set_variable = { THIS.NOV_election_support_independents = temp_ind_elec }
+}
+
+NOV_election_generate_party_voters = {
+	set_temp_variable = { temp_popularity_storer = NOV_election_support_RAPP }
+	divide_temp_variable = { temp_popularity_storer = 100 }
+	set_variable = { THIS.NOV_election_support_RAPP_pop = THIS.NOV_election_population }
+	multiply_variable = { THIS.NOV_election_support_RAPP_pop = temp_popularity_storer }
+	divide_variable = { THIS.NOV_election_support_RAPP_pop = 1000 }
+		
+	set_temp_variable = { temp_popularity_storer = NOV_election_support_VRPP }
+	divide_temp_variable = { temp_popularity_storer = 100 }
+	set_variable = { THIS.NOV_election_support_VRPP_pop = THIS.NOV_election_population }
+	multiply_variable = { THIS.NOV_election_support_VRPP_pop = temp_popularity_storer }
+	divide_variable = { THIS.NOV_election_support_VRPP_pop = 1000 }
+
+	set_temp_variable = { temp_popularity_storer = NOV_election_support_DSPR }
+	divide_temp_variable = { temp_popularity_storer = 100 }
+	set_variable = { THIS.NOV_election_support_DSPR_pop = THIS.NOV_election_population }
+	multiply_variable = { THIS.NOV_election_support_DSPR_pop = temp_popularity_storer }
+	divide_variable = { THIS.NOV_election_support_DSPR_pop = 1000 }
+
+	set_temp_variable = { temp_popularity_storer = NOV_election_support_RSLP }
+	divide_temp_variable = { temp_popularity_storer = 100 }
+	set_variable = { THIS.NOV_election_support_RSLP_pop = THIS.NOV_election_population }
+	multiply_variable = { THIS.NOV_election_support_RSLP_pop = temp_popularity_storer }
+	divide_variable = { THIS.NOV_election_support_RSLP_pop = 1000 }
+
+	set_temp_variable = { temp_popularity_storer = NOV_election_support_independents }
+	divide_temp_variable = { temp_popularity_storer = 100 }
+	set_variable = { THIS.NOV_election_support_independents_pop = THIS.NOV_election_population }
+	multiply_variable = { THIS.NOV_election_support_independents_pop = temp_popularity_storer }
+	divide_variable = { THIS.NOV_election_support_independents_pop = 1000 }
+}
+
+NOV_Support_Clamp = {
+	clamp_variable = {
+		var = NOV_election_support_RAPP_pop
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = NOV_election_support_VRPP_pop
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = NOV_election_support_DSPR_pop
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = NOV_election_support_RSLP_pop
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = NOV_election_support_independents_pop
+		min = 0
+		max = 100
+	}
+	#Resize all values
+	#set_temp_variable = { scarlet_devil_mansion = NOV_election_support_RAPP_pop }
+	#add_to_temp_variable = { scarlet_devil_mansion = NOV_election_support_VRPP_pop }
+	#add_to_temp_variable = { scarlet_devil_mansion = NOV_election_support_DSPR_pop }
+	#add_to_temp_variable = { scarlet_devil_mansion = NOV_election_support_RSLP_pop }
+	#add_to_temp_variable = { scarlet_devil_mansion = NOV_election_support_independents_pop }
+	#set_temp_variable = { imperishable_night = 100 }
+	#divide_temp_variable = { imperishable_night = scarlet_devil_mansion }
+	#multiply_temp_variable = { NOV_election_support_RAPP_pop = imperishable_night }
+	#multiply_temp_variable = { NOV_election_support_VRPP_pop = imperishable_night }
+	#multiply_temp_variable = { NOV_election_support_DSPR_pop = imperishable_night }
+	#multiply_temp_variable = { NOV_election_support_RSLP_pop = imperishable_night }
+	#multiply_temp_variable = { NOV_election_support_independents_pop = imperishable_night }
+}
+
+NOV_election_update_display = {
+	clr_country_flag = NOV_pop_million
+
+	# clearing cached party popularity values #
+
+	set_variable = { NOV_election_support_RAPP_pop = 0 }
+	set_variable = { NOV_election_support_VRPP_pop = 0 }
+	set_variable = { NOV_election_support_DSPR_pop = 0 }
+	set_variable = { NOV_election_support_RSLP_pop = 0 }
+	set_variable = { NOV_election_support_independents_pop = 0 }
+
+	for_each_scope_loop = {
+		array = ROOT.NOV_election_regions
+		# updates region overlay colors #
+
+		if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_RSLP }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_independents }
+			}
+			set_variable = { THIS.NOV_election_region_frame = 1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_RSLP }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_independents }
+			}
+			set_variable = { THIS.NOV_election_region_frame = 2 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_RSLP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_independents }
+			}
+			set_variable = { THIS.NOV_election_region_frame = 3 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_independents }
+			}
+			set_variable = { THIS.NOV_election_region_frame = 4 }
+		}
+		else_if = {
+			 limit = {
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_RSLP }
+			}
+			set_variable = { THIS.NOV_election_region_frame = 5 }
+		}
+
+		# generate voting population for each party in millions #
+
+		NOV_election_generate_party_voters = yes
+
+		# national party popularity #
+
+		add_to_variable = { ROOT.NOV_election_support_RAPP_pop = THIS.NOV_election_support_RAPP_pop }
+		add_to_variable = { ROOT.NOV_election_support_VRPP_pop = THIS.NOV_election_support_VRPP_pop }
+		add_to_variable = { ROOT.NOV_election_support_DSPR_pop = THIS.NOV_election_support_DSPR_pop }
+		add_to_variable = { ROOT.NOV_election_support_RSLP_pop = THIS.NOV_election_support_RSLP_pop }
+		add_to_variable = { ROOT.NOV_election_support_independents_pop = THIS.NOV_election_support_independents_pop }
+	}
+	NOV_Support_Clamp = yes
+	set_temp_variable = { total_voting_pop = NOV_election_support_RAPP_pop }
+	add_to_temp_variable = { total_voting_pop = NOV_election_support_VRPP_pop }
+	add_to_temp_variable = { total_voting_pop = NOV_election_support_DSPR_pop }
+	add_to_temp_variable = { total_voting_pop = NOV_election_support_RSLP_pop }
+	add_to_temp_variable = { total_voting_pop = NOV_election_support_independents_pop }
+
+	set_temp_variable = { rapp_pop_percentage = NOV_election_support_RAPP_pop }
+	set_temp_variable = { vrpp_pop_percentage = NOV_election_support_VRPP_pop }
+	set_temp_variable = { dspr_pop_percentage = NOV_election_support_DSPR_pop }
+	set_temp_variable = { rslp_pop_percentage = NOV_election_support_RSLP_pop }
+	set_temp_variable = { independents_pop_percentage = NOV_election_support_independents_pop }
+
+	divide_temp_variable = { rapp_pop_percentage = total_voting_pop }
+	multiply_temp_variable = { rapp_pop_percentage = 100 }
+
+	divide_temp_variable = { vrpp_pop_percentage = total_voting_pop }
+	multiply_temp_variable = { vrpp_pop_percentage = 100 }
+
+	divide_temp_variable = { dspr_pop_percentage = total_voting_pop }
+	multiply_temp_variable = { dspr_pop_percentage = 100 }
+
+	divide_temp_variable = { rslp_pop_percentage = total_voting_pop }
+	multiply_temp_variable = { rslp_pop_percentage = 100 }
+
+	divide_temp_variable = { independents_pop_percentage = total_voting_pop }
+	multiply_temp_variable = { independents_pop_percentage = 100 }
+
+	set_variable = { NOV_election_presidential_support_RAPP_display = rapp_pop_percentage }
+	set_variable = { NOV_election_presidential_support_VRPP_display = vrpp_pop_percentage }
+	set_variable = { NOV_election_presidential_support_DSPR_display = dspr_pop_percentage }
+	set_variable = { NOV_election_presidential_support_RSLP_display = rslp_pop_percentage }
+	set_variable = { NOV_election_presidential_support_independents_display = independents_pop_percentage }
+
+	# changes picture of candidate in the lead #
+
+	NOVUpdateLeadingCandidate = yes
+
+	random_owned_state = { # sets correct display progress bars
+		limit = {
+			check_variable = { THIS.NOV_election_region_id = ROOT.NOV_elections_selected_region }
+		}
+		set_variable = { ROOT.NOV_election_population_display = THIS.NOV_election_population }
+		if = {
+			limit = { check_variable = { ROOT.NOV_election_population_display > 999 } }
+			divide_variable = { ROOT.NOV_election_population_display = 1000 }
+			ROOT = { set_country_flag = NOV_pop_million }
+		}
+
+		set_variable = { ROOT.NOV_RAPP_support_display = THIS.NOV_election_support_RAPP }
+		set_variable = { ROOT.NOV_VRPP_support_display = THIS.NOV_election_support_VRPP }
+		set_variable = { ROOT.NOV_DSPR_support_display = THIS.NOV_election_support_DSPR }
+		set_variable = { ROOT.NOV_RSLP_support_display = THIS.NOV_election_support_RSLP }
+		set_variable = { ROOT.NOV_independents_support_display = THIS.NOV_election_support_independents }
+
+		NOV_election_generate_party_voters = yes
+
+		set_variable = { ROOT.NOV_RAPP_support_pop_display = THIS.NOV_election_support_RAPP_pop }
+		set_variable = { ROOT.NOV_VRPP_support_pop_display = THIS.NOV_election_support_VRPP_pop }
+		set_variable = { ROOT.NOV_DSPR_support_pop_display = THIS.NOV_election_support_DSPR_pop }
+		set_variable = { ROOT.NOV_RSLP_support_pop_display = THIS.NOV_election_support_RSLP_pop }
+		set_variable = { ROOT.NOV_support_independents_pop_display = THIS.NOV_election_support_independents_pop }
+	}
+}
+
+### CAMPAIGN MECHANICS SCRIPTED EFFECTS ###
+
+NOV_election_get_campaigning_party = {
+	if = {
+		limit = { ROOT = { has_country_flag = NOV_player_RAPP } }
+		THIS = { set_state_flag = NOV_RAPP_campaign }
+	}
+	else_if = {
+		limit = { ROOT = { has_country_flag = NOV_player_VRPP } }
+		THIS = { set_state_flag = NOV_VRPP_campaign }
+	}
+	else_if = {
+		limit = { ROOT = { has_country_flag = NOV_player_DSPR } }
+		THIS = { set_state_flag = NOV_DSPR_campaign }
+	}
+	else_if = {
+		limit = { ROOT = { has_country_flag = NOV_player_RSLP } }
+		THIS = { set_state_flag = NOV_RSLP_campaign }
+	}
+}
+
+NOV_election_hold_rally = {
+	if = {
+		limit = { has_state_flag = NOV_RAPP_campaign }
+		set_temp_variable = { temp_add = 0 }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+	
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		add_to_variable = { THIS.NOV_election_support_RAPP = temp_add }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_VRPP_campaign }
+		set_temp_variable = { temp_add = 0 }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+	
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		add_to_variable = { THIS.NOV_election_support_VRPP = temp_add }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_DSPR_campaign }
+		set_temp_variable = { temp_add = 0 }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+	
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		add_to_variable = { THIS.NOV_election_support_DSPR = temp_add }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_RSLP_campaign }
+		set_temp_variable = { temp_add = 0 }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+	
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		add_to_variable = { THIS.NOV_election_support_RSLP = temp_add }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_independents_campaign }
+		set_temp_variable = { temp_add = 0 }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+	
+		set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+		divide_temp_variable = { temp_storer = 10 }
+		subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		add_to_temp_variable = { temp_add = temp_storer }
+
+		add_to_variable = { THIS.NOV_election_support_independents = temp_add }
+	}
+}
+
+NOV_election_discredit_opposition = {
+	if = {
+		limit = { has_state_flag = NOV_RAPP_campaign }
+		if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_RSLP }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_RSLP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_RSLP }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		}
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_VRPP_campaign }
+		if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_RSLP }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_RSLP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_RSLP }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		}
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_DSPR_campaign }
+		if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_RSLP }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_RSLP }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_RSLP }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		}
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_RSLP_campaign }
+		if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_independents }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_independents > THIS.NOV_election_support_DSPR }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		}
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_independents_campaign }
+		if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_RAPP > THIS.NOV_election_support_RSLP }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_DSPR }
+				check_variable = { THIS.NOV_election_support_VRPP > THIS.NOV_election_support_RSLP }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_DSPR > THIS.NOV_election_support_RSLP }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+		else_if = {
+			limit = {
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_RAPP }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_VRPP }
+				check_variable = { THIS.NOV_election_support_RSLP > THIS.NOV_election_support_DSPR }
+			}
+			set_temp_variable = { temp_add = 0 }
+			set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+			divide_temp_variable = { temp_storer = 8 }
+			subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+			divide_temp_variable = { temp_storer = 4 }			
+
+			add_to_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+			add_to_variable = { THIS.NOV_election_support_independents = temp_storer }
+		}
+	}
+}
+
+NOV_election_campaign = {
+	if = {
+		limit = { has_state_flag = NOV_RAPP_campaign }
+		add_to_variable = { THIS.NOV_election_support_RAPP_tick = 1.5 }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_VRPP_campaign }
+		add_to_variable = { THIS.NOV_election_support_VRPP_tick = 1.5 }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_DSPR_campaign }
+		add_to_variable = { THIS.NOV_election_support_DSPR_tick = 1.5 }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_RSLP_campaign }
+		add_to_variable = { THIS.NOV_election_support_RSLP_tick = 1.5 }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_independents_campaign }
+		add_to_variable = { THIS.NOV_election_support_independents_tick = 1.5 }
+	}
+}
+
+NOV_election_slander = {
+	if = {
+		limit = { has_state_flag = NOV_RAPP_campaign }
+		subtract_from_variable = { THIS.NOV_election_support_VRPP_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_DSPR_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_RSLP_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_independents_tick = 0.5 }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_VRPP_campaign }
+		subtract_from_variable = { THIS.NOV_election_support_DSPR_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_RSLP_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_independents_tick = 0.5 }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_DSPR_campaign }
+		subtract_from_variable = { THIS.NOV_election_support_VRPP_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_RSLP_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_independents_tick = 0.5 }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_RSLP_campaign }
+		subtract_from_variable = { THIS.NOV_election_support_VRPP_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_DSPR_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_independents_tick = 0.5 }
+	}
+	else_if = {
+		limit = { has_state_flag = NOV_independents_campaign }
+		subtract_from_variable = { THIS.NOV_election_support_VRPP_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_DSPR_tick = 0.5 }
+		subtract_from_variable = { THIS.NOV_election_support_RSLP_tick = 0.5 }
+	}
+}
+
+NOV_election_tick = {
+	for_each_scope_loop = {
+		array = ROOT.NOV_election_regions
+		
+		set_temp_variable = { temp_storer = 0 }
+		add_to_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP_tick }
+		divide_temp_variable = { temp_storer = 100 }
+		set_temp_variable = { temp_pop_storer = temp_storer }
+		multiply_temp_variable = { temp_pop_storer = THIS.NOV_election_support_RAPP }
+		add_to_temp_variable = { temp_storer = 1 }
+		multiply_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+		divide_temp_variable = { temp_pop_storer = 4 }
+		subtract_from_variable = { NOV_election_support_VRPP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_DSPR = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_RSLP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_independents = temp_pop_storer }
+
+		set_temp_variable = { temp_storer = 0 }
+		add_to_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP_tick }
+		divide_temp_variable = { temp_storer = 100 }
+		set_temp_variable = { temp_pop_storer = temp_storer }
+		multiply_temp_variable = { temp_pop_storer = THIS.NOV_election_support_VRPP }
+		add_to_temp_variable = { temp_storer = 1 }
+		multiply_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+		divide_temp_variable = { temp_pop_storer = 4 }
+		subtract_from_variable = { NOV_election_support_RAPP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_DSPR = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_RSLP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_independents = temp_pop_storer }
+
+		set_temp_variable = { temp_storer = 0 }
+		add_to_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR_tick }
+		divide_temp_variable = { temp_storer = 100 }
+		set_temp_variable = { temp_pop_storer = temp_storer }
+		multiply_temp_variable = { temp_pop_storer = THIS.NOV_election_support_DSPR }
+		add_to_temp_variable = { temp_storer = 1 }
+		multiply_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+		divide_temp_variable = { temp_pop_storer = 4 }
+		subtract_from_variable = { NOV_election_support_VRPP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_RAPP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_RSLP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_independents = temp_pop_storer }
+
+		set_temp_variable = { temp_storer = 0 }
+		add_to_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP_tick }
+		divide_temp_variable = { temp_storer = 100 }
+		set_temp_variable = { temp_pop_storer = temp_storer }
+		multiply_temp_variable = { temp_pop_storer = THIS.NOV_election_support_RSLP }
+		add_to_temp_variable = { temp_storer = 1 }
+		multiply_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+		divide_temp_variable = { temp_pop_storer = 4 }
+		subtract_from_variable = { NOV_election_support_VRPP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_DSPR = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_RAPP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_independents = temp_pop_storer }
+
+		set_temp_variable = { temp_storer = 0 }
+		add_to_temp_variable = { temp_storer = THIS.NOV_election_support_independents_tick }
+		divide_temp_variable = { temp_storer = 100 }
+		set_temp_variable = { temp_pop_storer = temp_storer }
+		multiply_temp_variable = { temp_pop_storer = THIS.NOV_election_support_independents }
+		add_to_temp_variable = { temp_storer = 1 }
+		multiply_variable = { THIS.NOV_election_support_independents = temp_storer }
+		divide_temp_variable = { temp_pop_storer = 4 }
+		subtract_from_variable = { NOV_election_support_VRPP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_DSPR = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_RAPP = temp_pop_storer }
+		subtract_from_variable = { NOV_election_support_RSLP = temp_pop_storer }
+
+		NOV_Support_Clamp = yes
+	}
+	NOV_election_update_display = yes
+	clr_country_flag = NOV_elections_has_campaigned # allows player to interact again
+	NOV_Opposition_Campaign = yes
+	NOV_Opposition_Campaign = yes
+}
+#Used to give random campaigning effects to states
+NOV_Opposition_Campaign = { 
+	if = {
+		limit = {
+			has_country_flag = NOV_player_RAPP
+		}
+		random_list = {
+			30 = {
+				NOV_Opposition_Campaign_DSPR = yes
+			}
+			30 = {
+				NOV_Opposition_Campaign_VRPP = yes
+			}
+			30 = {
+				NOV_Opposition_Campaign_RSLP = yes
+			}
+			10 = {
+				NOV_Opposition_Campaign_Independents = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = NOV_player_VRPP
+		}
+		random_list = {
+			30 = {
+				NOV_Opposition_Campaign_DSPR = yes
+			}
+			30 = {
+				NOV_Opposition_Campaign_RAPP = yes
+			}
+			30 = {
+				NOV_Opposition_Campaign_RSLP = yes
+			}
+			10 = {
+				NOV_Opposition_Campaign_Independents = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = NOV_player_DSPR
+		}
+		random_list = {
+			30 = {
+				NOV_Opposition_Campaign_RAPP = yes
+			}
+			30 = {
+				NOV_Opposition_Campaign_VRPP = yes
+			}
+			30 = {
+				NOV_Opposition_Campaign_RSLP = yes
+			}
+			10 = {
+				NOV_Opposition_Campaign_Independents = yes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = NOV_player_RSLP
+		}
+		random_list = {
+			30 = {
+				NOV_Opposition_Campaign_DSPR = yes
+			}
+			30 = {
+				NOV_Opposition_Campaign_VRPP = yes
+			}
+			30 = {
+				NOV_Opposition_Campaign_RAPP = yes
+			}
+			10 = {
+				NOV_Opposition_Campaign_Independents = yes
+			}
+		}
+	}
+}
+
+NOV_Opposition_Campaign_DSPR = {
+	random_list = {
+		50 = {
+			random_scope_in_array = {
+				array = ROOT.NOV_election_regions
+
+				set_temp_variable = { temp_add = 0 }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+	
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				add_to_variable = { THIS.NOV_election_support_DSPR = temp_add }
+				THIS = { set_state_flag = NOV_DSPR_campaign }
+			}
+		}
+		50 = {
+			random_scope_in_array = {
+				array = ROOT.NOV_election_regions
+				
+				add_to_variable = { THIS.NOV_election_support_DSPR_tick = 1.5 }
+				THIS = { set_state_flag = NOV_DSPR_campaign }
+			}
+		}
+	}
+	NOV_election_update_display = yes
+}
+
+NOV_Opposition_Campaign_VRPP = {
+	random_list = {
+		50 = {
+			random_scope_in_array = {
+				array = ROOT.NOV_election_regions
+
+				set_temp_variable = { temp_add = 0 }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+	
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				add_to_variable = { THIS.NOV_election_support_VRPP = temp_add }
+				THIS = { set_state_flag = NOV_VRPP_campaign }
+			}
+		}
+		50 = {
+			random_scope_in_array = {
+				array = ROOT.NOV_election_regions
+				
+				add_to_variable = { THIS.NOV_election_support_VRPP_tick = 1.5 }
+				THIS = { set_state_flag = NOV_VRPP_campaign }
+			}
+		}
+	}
+	NOV_election_update_display = yes
+}
+
+NOV_Opposition_Campaign_RAPP = {
+	random_list = {
+		50 = {
+			random_scope_in_array = {
+				array = ROOT.NOV_election_regions
+
+				set_temp_variable = { temp_add = 0 }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+	
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				add_to_variable = { THIS.NOV_election_support_RAPP = temp_add }
+				THIS = { set_state_flag = NOV_RAPP_campaign }
+			}
+		}
+		50 = {
+			random_scope_in_array = {
+				array = ROOT.NOV_election_regions
+				
+				add_to_variable = { THIS.NOV_election_support_RAPP_tick = 1.5 }
+				THIS = { set_state_flag = NOV_RAPP_campaign }
+			}
+		}
+	}
+	NOV_election_update_display = yes
+}
+
+NOV_Opposition_Campaign_RSLP = {
+	random_list = {
+		50 = {
+			random_scope_in_array = {
+				array = ROOT.NOV_election_regions
+				
+				set_temp_variable = { temp_add = 0 }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+	
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_independents }
+				divide_temp_variable = { temp_storer = 20 }
+				subtract_from_variable = { THIS.NOV_election_support_independents = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				add_to_variable = { THIS.NOV_election_support_RSLP = temp_add }
+				THIS = { set_state_flag = NOV_RSLP_campaign }
+			}
+		}
+		50 = {
+			random_scope_in_array = {
+				array = ROOT.NOV_election_regions
+				
+				add_to_variable = { THIS.NOV_election_support_RSLP_tick = 1.5 }
+				THIS = { set_state_flag = NOV_RSLP_campaign }
+			}
+		}
+	}
+	NOV_election_update_display = yes
+}
+
+NOV_Opposition_Campaign_Independents = {
+	random_list = {
+		50 = {
+			random_scope_in_array = {
+				array = ROOT.NOV_election_regions
+				
+				set_temp_variable = { temp_add = 0 }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_RAPP }
+				divide_temp_variable = { temp_storer = 25 }
+				subtract_from_variable = { THIS.NOV_election_support_RAPP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_DSPR }
+				divide_temp_variable = { temp_storer = 25 }
+				subtract_from_variable = { THIS.NOV_election_support_DSPR = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_VRPP }
+				divide_temp_variable = { temp_storer = 25 }
+				subtract_from_variable = { THIS.NOV_election_support_VRPP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+	
+				set_temp_variable = { temp_storer = THIS.NOV_election_support_RSLP }
+				divide_temp_variable = { temp_storer = 25 }
+				subtract_from_variable = { THIS.NOV_election_support_RSLP = temp_storer }
+				add_to_temp_variable = { temp_add = temp_storer }
+
+				add_to_variable = { THIS.NOV_election_support_independents = temp_add }
+			}
+		}
+		50 = {
+			random_scope_in_array = {
+				array = ROOT.NOV_election_regions
+				
+				add_to_variable = { THIS.NOV_election_support_independents_tick = 1.5 }
+			}
+		}
+	}
+	NOV_election_update_display = yes
+}
+
+NOV_end_elections = {
+	clr_country_flag = NOV_elections_ongoing
+
+	set_temp_variable = { temp_popularity_storer = NOV_election_presidential_support_independents_display }
+	divide_temp_variable = { temp_popularity_storer = 4 }
+
+	set_variable = { rapp_pop = NOV_election_presidential_support_RAPP_display }
+	set_variable = { vrpp_pop = NOV_election_presidential_support_VRPP_display }
+	set_variable = { dspr_pop = NOV_election_presidential_support_DSPR_display }
+	set_variable = { rslp_pop = NOV_election_presidential_support_RSLP_display }
+
+	set_variable = { nfm_pop = temp_popularity_storer } #They represent NFM also
+	set_variable = { rirm_pop = temp_popularity_storer }
+	set_variable = { cprf_pop = temp_popularity_storer }
+	set_variable = { srp_pop = temp_popularity_storer }	
+
+	round_variable = rapp_pop
+	round_variable = vrpp_pop
+	round_variable = dspr_pop
+	round_variable = rslp_pop
+	round_variable = srp_pop
+	round_variable = cprf_pop
+	round_variable = rirm_pop
+	round_variable = nfm_pop
+
+	set_variable = { piechart_fixer = rapp_pop } #28
+	add_to_variable = { piechart_fixer = vrpp_pop } #21
+	add_to_variable = { piechart_fixer = dspr_pop } #29
+	add_to_variable = { piechart_fixer = rslp_pop } #12
+	add_to_variable = { piechart_fixer = srp_pop } #3
+	add_to_variable = { piechart_fixer = cprf_pop }
+	add_to_variable = { piechart_fixer = rirm_pop }
+	add_to_variable = { piechart_fixer = nfm_pop }
+
+	set_variable = { piechart_fixer_buddy = 100 }
+	subtract_from_variable = { piechart_fixer_buddy = piechart_fixer }
+	add_to_variable = { rapp_pop = piechart_fixer_buddy }
+
+	set_popularities = {
+		conservatism = rapp_pop
+		paternalism = vrpp_pop
+		progressivism = dspr_pop
+		liberalism = rslp_pop
+		socialist = srp_pop
+		communist = cprf_pop
+		despotism = rirm_pop
+		conservatism_1 = nfm_pop
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { NOV_election_support_RAPP_pop > NOV_election_support_VRPP_pop }
+				check_variable = { NOV_election_support_RAPP_pop > NOV_election_support_DSPR_pop }
+				check_variable = { NOV_election_support_RAPP_pop > NOV_election_support_RSLP_pop }
+			}			
+		}
+		set_politics = {
+			ruling_party = conservatism
+		}
+		
+		set_variable = { NOV_presidency = 1 }
+		clear_array = NOV_coalition
+		add_to_array = { NOV_coalition = 0 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { NOV_election_support_VRPP_pop > NOV_election_support_RAPP_pop }
+				check_variable = { NOV_election_support_VRPP_pop > NOV_election_support_DSPR_pop }
+				check_variable = { NOV_election_support_VRPP_pop > NOV_election_support_RSLP_pop }
+			}
+		}
+		set_politics = {
+			ruling_party = paternalism
+		}
+		add_to_variable = { NOV_party_opinions^var:0 = -95 }
+		clamp_variable = {
+			var = NOV_party_opinions^0
+			min = -100
+			max = 100
+		}
+		add_to_variable = { NOV_party_opinions^var:6 = -50 }
+		clamp_variable = {
+			var = NOV_party_opinions^6
+			min = -100
+			max = 100
+		}
+		add_to_variable = { NOV_party_opinions^var:7 = -50 }
+		clamp_variable = {
+			var = NOV_party_opinions^7
+			min = -100
+			max = 100
+		}
+		set_variable = { NOV_presidency = 4 }
+		clear_array = NOV_coalition
+		add_to_array = { NOV_coalition = 1 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { NOV_election_support_DSPR_pop > NOV_election_support_VRPP_pop }
+				check_variable = { NOV_election_support_DSPR_pop > NOV_election_support_RAPP_pop }
+				check_variable = { NOV_election_support_DSPR_pop > NOV_election_support_RSLP_pop }
+			}					
+		}
+		set_politics = {
+			ruling_party = progressivism
+		}
+		set_cosmetic_tag = RUS_FIXED
+		add_to_variable = { NOV_party_opinions^var:0 = -50 }
+		clamp_variable = {
+			var = NOV_party_opinions^0
+			min = -100
+			max = 100
+		}
+		set_variable = { NOV_presidency = 2 }
+		clear_array = NOV_coalition
+		add_to_array = { NOV_coalition = 2 }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = { NOV_election_support_RSLP_pop > NOV_election_support_VRPP_pop }
+				check_variable = { NOV_election_support_RSLP_pop > NOV_election_support_DSPR_pop }
+				check_variable = { NOV_election_support_RSLP_pop > NOV_election_support_RAPP_pop }
+			}				
+		}
+		set_politics = {
+			ruling_party = liberalism
+		}
+		set_cosmetic_tag = RUS_FIXED
+		add_to_variable = { NOV_party_opinions^var:0 = -50 }
+		clamp_variable = {
+			var = NOV_party_opinions^0
+			min = -100
+			max = 100
+		}
+		set_variable = { NOV_presidency = 3 }
+		clear_array = NOV_coalition
+		add_to_array = { NOV_coalition = 3 }
+	}
+	NOV_adjust_parliament_seats = yes
+	NOV_adjust_council_seats = yes
+	if = { #If not over 50%, asks to form a coalition.
+		limit = {
+			check_variable = { NOV_coalition_seats_duma < 225 }
+		}
+		hidden_effect = {
+			country_event = {
+				id = NOV_federalassembly.102
+				hours = 1
+			}
+		}
+	}
+}
+
+NOV_adjust_parliament_seats = {
+	set_temp_variable = { temp_RAPP = NOV.party_popularity@conservatism }
+	set_temp_variable = { temp_VRPP = NOV.party_popularity@paternalism }
+	set_temp_variable = { temp_DSPR = NOV.party_popularity@progressivism }
+	set_temp_variable = { temp_RSLP = NOV.party_popularity@liberalism }
+	set_temp_variable = { temp_SRP = NOV.party_popularity@socialist }
+	set_temp_variable = { temp_CPRF = NOV.party_popularity@communist }
+	set_temp_variable = { temp_RIRM = NOV.party_popularity@despotism }
+
+	multiply_temp_variable = { temp_RAPP = 450 }	
+	round_temp_variable = temp_RAPP
+	multiply_temp_variable = { temp_VRPP = 450 }	
+	round_temp_variable = temp_VRPP
+	multiply_temp_variable = { temp_DSPR = 450 }	
+	round_temp_variable = temp_DSPR
+	multiply_temp_variable = { temp_RSLP = 450 }	
+	round_temp_variable = temp_RSLP
+	multiply_temp_variable = { temp_SRP = 450 }	
+	round_temp_variable = temp_SRP
+	multiply_temp_variable = { temp_CPRF = 450 }	
+	round_temp_variable = temp_CPRF
+	multiply_temp_variable = { temp_RIRM = 450 }	
+	round_temp_variable = temp_RIRM
+
+
+	set_variable = { NOV_rapp_duma_seats = temp_RAPP }
+	set_variable = { NOV_vrpp_duma_seats = temp_VRPP }
+	set_variable = { NOV_dspr_duma_seats = temp_DSPR }
+	set_variable = { NOV_rslp_duma_seats = temp_RSLP }
+	set_variable = { NOV_srp_duma_seats = temp_SRP }
+	set_variable = { NOV_rirm_duma_seats = temp_CPRF }
+	set_variable = { NOV_cprf_duma_seats = temp_RIRM }
+	set_variable_to_random = {
+		var = NOV_nfm_duma_seats
+		min = 3
+		max = 11
+		integer = yes
+		}
+	subtract_from_variable = { NOV_rapp_duma_seats = NOV_nfm_duma_seats }
+
+	set_temp_variable = { temp_total_check = 0 } #As Duma is based on ideology, this prevents having less than 450 due to other ideologies present
+	add_to_temp_variable = { temp_total_check = NOV_rapp_duma_seats }
+	add_to_temp_variable = { temp_total_check = NOV_vrpp_duma_seats }
+	add_to_temp_variable = { temp_total_check = NOV_dspr_duma_seats }
+	add_to_temp_variable = { temp_total_check = NOV_rslp_duma_seats }
+	add_to_temp_variable = { temp_total_check = NOV_srp_duma_seats }
+	add_to_temp_variable = { temp_total_check = NOV_rirm_duma_seats }
+	add_to_temp_variable = { temp_total_check = NOV_cprf_duma_seats }
+
+	set_temp_variable = { t1 = NOV_rapp_duma_seats }
+	set_temp_variable = { t2 = NOV_vrpp_duma_seats }
+	set_temp_variable = { t3 = NOV_dspr_duma_seats }
+	set_temp_variable = { t4 = NOV_rslp_duma_seats }
+	set_temp_variable = { t5 = NOV_nfm_duma_seats }
+	set_temp_variable = { t5 = NOV_srp_duma_seats }
+	set_temp_variable = { t6 = NOV_rirm_duma_seats }
+	set_temp_variable = { t7 = NOV_cprf_duma_seats }
+	set_temp_variable = { t8 = 450 }
+
+	add_to_temp_variable = { t2 = t1 }
+	add_to_temp_variable = { t3 = t2 }
+	add_to_temp_variable = { t4 = t3 }
+	add_to_temp_variable = { t5 = t4 }
+	add_to_temp_variable = { t6 = t5 }
+	add_to_temp_variable = { t7 = t6 }
+
+	clear_array = NOV_duma_frame_array
+
+	resize_array = {
+		array = NOV_duma_frame_array
+		value = 1
+		size = t1
+	}
+	resize_array = {
+		array = NOV_duma_frame_array
+		value = 2
+		size = t2
+	}
+	resize_array = {
+		array = NOV_duma_frame_array
+		value = 3
+		size = t3
+	}
+	resize_array = {
+		array = NOV_duma_frame_array
+		value = 4
+		size = t4
+	}
+	resize_array = {
+		array = NOV_duma_frame_array
+		value = 5
+		size = t5
+	}
+	resize_array = {
+		array = NOV_duma_frame_array
+		value = 6
+		size = t6
+	}
+	resize_array = {
+		array = NOV_duma_frame_array
+		value = 7
+		size = t7
+	}
+	resize_array = {
+		array = NOV_duma_frame_array
+		value = 8
+		size = t8
+	}
+
+	if = {
+		limit = { has_government = conservatism	}
+		set_variable = { NOV_coalition_seats_duma = NOV_rapp_duma_seats }
+	}
+	else_if = {
+		limit = { has_government = paternalism }
+		set_variable = { NOV_coalition_seats_duma = NOV_vrpp_duma_seats }
+	}
+	else_if = {
+		limit = { has_government = progressivism }
+		set_variable = { NOV_coalition_seats_duma = NOV_dspr_duma_seats }
+	}
+	else_if = {
+		limit = { has_government = liberalism }
+		set_variable = { NOV_coalition_seats_duma = NOV_rslp_duma_seats }
+	}
+}
+
+NOV_adjust_council_seats = {
+	set_temp_variable = { temp_RAPP = NOV.party_popularity@conservatism }
+	set_temp_variable = { temp_VRPP = NOV.party_popularity@paternalism }
+	set_temp_variable = { temp_DSPR = NOV.party_popularity@progressivism }
+	set_temp_variable = { temp_RSLP = NOV.party_popularity@liberalism }
+	set_temp_variable = { temp_SRP = NOV.party_popularity@socialist }
+	set_temp_variable = { temp_CPRF = NOV.party_popularity@communist }
+	set_temp_variable = { temp_RIRM = NOV.party_popularity@despotism }
+
+	multiply_temp_variable = { temp_RAPP = 170 }	
+	round_temp_variable = temp_RAPP
+	multiply_temp_variable = { temp_VRPP = 170 }	
+	round_temp_variable = temp_VRPP
+	multiply_temp_variable = { temp_DSPR = 170 }	
+	round_temp_variable = temp_DSPR
+	multiply_temp_variable = { temp_RSLP = 170 }	
+	round_temp_variable = temp_RSLP
+	multiply_temp_variable = { temp_SRP = 170 }	
+	round_temp_variable = temp_SRP
+	multiply_temp_variable = { temp_CPRF = 170 }	
+	round_temp_variable = temp_CPRF
+	multiply_temp_variable = { temp_RIRM = 170 }	
+	round_temp_variable = temp_RIRM
+
+
+	set_variable = { NOV_rapp_council_seats = temp_RAPP }
+	set_variable = { NOV_vrpp_council_seats = temp_VRPP }
+	set_variable = { NOV_dspr_council_seats = temp_DSPR }
+	set_variable = { NOV_rslp_council_seats = temp_RSLP }
+	set_variable = { NOV_nfm_council_seats = temp_SRP }
+	set_variable = { NOV_rirm_council_seats = temp_CPRF }
+	set_variable = { NOV_cprf_council_seats = temp_RIRM }
+	set_variable_to_random = {
+		var = NOV_nfm_duma_seats
+		min = 3
+		max = 11
+		integer = yes
+		}
+	subtract_from_variable = { NOV_rapp_duma_seats = NOV_nfm_duma_seats }
+
+	set_temp_variable = { temp_total_check = 0 } #As Duma is based on ideology, this prevents having less than 450 due to other ideologies present
+	add_to_temp_variable = { temp_total_check = NOV_rapp_council_seats }
+	add_to_temp_variable = { temp_total_check = NOV_vrpp_council_seats }
+	add_to_temp_variable = { temp_total_check = NOV_dspr_council_seats }
+	add_to_temp_variable = { temp_total_check = NOV_rslp_council_seats }
+	add_to_temp_variable = { temp_total_check = NOV_nfm_council_seats }
+	add_to_temp_variable = { temp_total_check = NOV_rirm_council_seats }
+	add_to_temp_variable = { temp_total_check = NOV_cprf_council_seats }
+
+	set_temp_variable = { t1 = NOV_rapp_council_seats }
+	set_temp_variable = { t2 = NOV_vrpp_council_seats }
+	set_temp_variable = { t3 = NOV_dspr_council_seats }
+	set_temp_variable = { t4 = NOV_rslp_council_seats }
+	set_temp_variable = { t5 = NOV_nfm_council_seats }
+	set_temp_variable = { t5 = NOV_srp_council_seats }
+	set_temp_variable = { t6 = NOV_rirm_council_seats }
+	set_temp_variable = { t7 = NOV_cprf_council_seats }
+	set_temp_variable = { t8 = 450 }
+
+	add_to_temp_variable = { t2 = t1 }
+	add_to_temp_variable = { t3 = t2 }
+	add_to_temp_variable = { t4 = t3 }
+	add_to_temp_variable = { t5 = t4 }
+	add_to_temp_variable = { t6 = t5 }
+	add_to_temp_variable = { t7 = t6 }
+
+	clear_array = NOV_council_frame_array
+
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 1
+		size = t1
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 2
+		size = t2
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 3
+		size = t3
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 4
+		size = t4
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 5
+		size = t5
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 6
+		size = t6
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 7
+		size = t7
+	}
+	resize_array = {
+		array = NOV_council_frame_array
+		value = 8
+		size = t8
+	}
+}
+
+##############################################################
+
+
+#### VRPP GUIS ####
+
+### MEGACORP MECHANIC
+
+NOV_VRPP_setup_megacorp_mechanics = { # sets up all starting variables and arrays
+
+	clear_array = NOV_megacorps
+	clear_array = NOV_megacorp_loyalties
+	clear_array = NOV_megacorp_influence
+	
+	if = {
+		limit = {
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+		}
+		add_to_array = { NOV_megacorps = 0 } # FENIKS
+		add_to_array = { NOV_megacorps = 1 } # SIBIR
+		add_to_array = { NOV_megacorps = 2 } # TITAN
+
+		add_to_array = { NOV_megacorp_loyalties = 45 }
+		add_to_array = { NOV_megacorp_loyalties = 60 }
+		add_to_array = { NOV_megacorp_loyalties = 40 }
+
+		add_to_array = { NOV_megacorp_influence = 25 }
+		add_to_array = { NOV_megacorp_influence = 40 }
+		add_to_array = { NOV_megacorp_influence = 33 }
+
+		NOV_VRPP_calculate_econ_influence = yes
+		NOV_VRPP_calculate_GDP_objective = yes
+		set_country_flag = NOV_Megacorp_Demanding
+	}
+	else_if = {
+		limit = {
+			has_country_flag = NOV_DSPR_Switch
+		}
+		add_to_array = { NOV_megacorps = 0 } # FENIKS
+		add_to_array = { NOV_megacorps = 1 } # SIBIR
+		add_to_array = { NOV_megacorps = 2 } # TITAN
+
+		add_to_array = { NOV_megacorp_loyalties = 100 }
+		add_to_array = { NOV_megacorp_loyalties = 100 }
+		add_to_array = { NOV_megacorp_loyalties = 100 }
+
+		add_to_array = { NOV_megacorp_influence = 100 }
+		add_to_array = { NOV_megacorp_influence = 100 }
+		add_to_array = { NOV_megacorp_influence = 100 }
+	}
+}
+
+NOV_VRPP_calculate_econ_influence = { # calculates progress bars as well as gov and people share of influence
+
+	## sets up the government and people control numbers ##
+
+	set_temp_variable = { temp_influence = 300 }
+	set_temp_variable = { centralization_gov = economic_centralization }
+	divide_temp_variable = { centralization_gov = 100 }
+	set_temp_variable = { centralization_ppl = 1 }
+	subtract_from_temp_variable = { centralization_ppl = centralization_gov }
+
+	subtract_from_temp_variable = { temp_influence = NOV_megacorp_influence^0 }
+	subtract_from_temp_variable = { temp_influence = NOV_megacorp_influence^1 }
+	subtract_from_temp_variable = { temp_influence = NOV_megacorp_influence^2 }
+
+	set_variable = { NOV_megacorp_influence_gov = temp_influence }
+	multiply_variable = { NOV_megacorp_influence_gov = centralization_gov }
+	set_variable = { NOV_megacorp_influence_ppl = temp_influence }
+	multiply_variable = { NOV_megacorp_influence_ppl = centralization_ppl }
+
+	## sets up progress bar frames ##
+
+	# to make the bars overlap, we add the frame of the previous bar
+
+	set_variable = { NOV_VRPP_econ_influence_gov_frame = NOV_megacorp_influence_gov }
+
+	set_variable = { NOV_VRPP_econ_influence_ppl_frame = NOV_megacorp_influence_ppl }
+	add_to_variable = { NOV_VRPP_econ_influence_ppl_frame = NOV_VRPP_econ_influence_gov_frame }
+
+	set_variable = { NOV_VRPP_econ_influence_fen_frame = NOV_megacorp_influence^0 }
+	add_to_variable = { NOV_VRPP_econ_influence_fen_frame = NOV_VRPP_econ_influence_ppl_frame }
+
+	set_variable = { NOV_VRPP_econ_influence_sib_frame = NOV_megacorp_influence^1 }
+	add_to_variable = { NOV_VRPP_econ_influence_sib_frame = NOV_VRPP_econ_influence_fen_frame }
+
+	set_variable = { NOV_VRPP_econ_influence_tit_frame = NOV_megacorp_influence^2 }
+	add_to_variable = { NOV_VRPP_econ_influence_tit_frame = NOV_VRPP_econ_influence_sib_frame }
+}
+
+NOV_VRPP_increase_megacorp_influence = { # increases influence for all megacorps
+	for_each_loop = {
+		array = NOV_megacorp_influence
+		index = i
+
+		add_to_variable = { NOV_megacorp_influence^i = temp_influence }
+		clamp_variable = {
+			var = NOV_megacorp_influence^i
+			min = 0
+			max = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { temp_influence < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_influence }
+	}
+	if = {
+		limit = {
+			check_variable = { temp_influence < 0 }
+		}
+		custom_effect_tooltip = NOV_VRPP_influence_tt_4
+	}
+	else = {
+		custom_effect_tooltip = NOV_VRPP_influence_tt_3
+	}
+	NOV_VRPP_calculate_econ_influence = yes
+}
+
+NOV_VRPP_increase_specific_megacorp_influence = { # increases influence for a single megacorp
+	add_to_variable = { NOV_megacorp_influence^target = temp_influence }
+	clamp_variable = {
+		var = NOV_megacorp_influence^target
+		min = 0
+		max = 100
+	}
+	if = {
+		limit = {
+			check_variable = { temp_influence < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_influence }
+	}
+	if = {
+		limit = {
+			check_variable = { temp_influence < 0 }
+		}
+		custom_effect_tooltip = NOV_VRPP_influence_tt_2
+	}
+	else = {
+		custom_effect_tooltip = NOV_VRPP_influence_tt_1
+	}
+	NOV_VRPP_calculate_econ_influence = yes
+}
+
+NOV_VRPP_increase_megacorp_loyalty = { # increases loyalty for all megacorps
+	for_each_loop = {
+		array = NOV_megacorp_loyalties
+		index = i
+
+		add_to_variable = { NOV_megacorp_loyalties^i = temp_loyalty }
+		clamp_variable = {
+			var = NOV_megacorp_loyalties^i
+			min = 0
+			max = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { temp_loyalty < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_loyalty }
+	}
+	if = {
+		limit = {
+			check_variable = { temp_influence < 0 }
+		}
+		custom_effect_tooltip = NOV_VRPP_loyalty_tt_4
+	}
+	else = {
+		custom_effect_tooltip = NOV_VRPP_loyalty_tt_3
+	}
+}
+
+NOV_VRPP_increase_specific_megacorp_loyalty = { # increases loyalty for a single megacorp
+	add_to_variable = { NOV_megacorp_loyalties^target = temp_loyalty }
+	clamp_variable = {
+		var = NOV_megacorp_loyalties^target
+		min = 0
+		max = 100
+	}
+	if = {
+		limit = {
+			check_variable = { temp_loyalty < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_loyalty }
+	}
+	if = {
+		limit = {
+			AND = {
+				NOT = { has_country_flag = NOV_DSPR_Switch }
+				check_variable = { temp_loyalty < 0 }
+			}
+		}
+		custom_effect_tooltip = NOV_VRPP_loyalty_tt_2
+	}
+	else_if = {
+		limit = {
+			AND = {
+				NOT = { has_country_flag = NOV_DSPR_Switch }
+				check_variable = { temp_loyalty > 0 }
+			}
+		}
+		custom_effect_tooltip = NOV_VRPP_loyalty_tt_1
+	}
+	else_if = {
+		limit = {
+			AND = {
+				has_country_flag = NOV_DSPR_Switch
+				check_variable = { temp_loyalty < 0 }
+			}
+		}
+		custom_effect_tooltip = NOV_DSPR_loyalty_tt_1
+	}
+	else_if = {
+		limit = {
+			AND = {
+				has_country_flag = NOV_DSPR_Switch
+				check_variable = { temp_loyalty > 0 }
+			}
+		}
+		custom_effect_tooltip = NOV_DSPR_loyalty_tt_2
+	}
+}
+
+NOV_VRPP_calculate_GDP_objective = { #This calculates how much GDP the player should have in 120 days.
+	set_variable = { mike = 0 }
+	NOV_VRPP_cannot_be_bothered_to_do_a_loop = yes
+	NOV_VRPP_cannot_be_bothered_to_do_a_loop = yes
+	NOV_VRPP_cannot_be_bothered_to_do_a_loop = yes
+	NOV_VRPP_cannot_be_bothered_to_do_a_loop = yes
+}
+
+NOV_VRPP_cannot_be_bothered_to_do_a_loop = {
+	set_variable = { goutokuji = GDP_growth_real_monthly }
+	divide_variable = { goutokuji = 100 }
+	if = {
+		limit = {
+			check_variable = { mike = 0 }
+		}
+		set_variable = { mike = GDP }
+	}
+	multiply_variable = { goutokuji = mike }
+	add_to_variable = { mike = goutokuji }
+}
+
+### PROPAGANDA MECHANIC
+
+NOV_VRPP_Budget_Change = { # changes budget
+	add_to_variable = { Nov_Media_Budget = temp_budget }
+	if = {
+		limit = {
+			check_variable = { temp_budget < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_budget }
+	}
+	if = {
+		limit = {
+			check_variable = { temp_budget < 0 }
+		}
+		custom_effect_tooltip = NOV_VRPP_Budget_tt_1
+	}
+	else = {
+		custom_effect_tooltip = NOV_VRPP_Budget_tt_2
+	}
+	clamp_variable = {
+		var = Nov_Media_Budget
+		min = 0
+		max = 999999
+	}
+}
+
+NOV_VRPP_Fortnightly_Budget_Change = { # changes budget gain
+	add_to_variable = { NOV_Fortnightly_Profit = temp_fortnightly_budget }
+	if = {
+		limit = {
+			check_variable = { temp_fortnightly_budget < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_fortnightly_budget }
+	}
+	if = {
+		limit = {
+			check_variable = { temp_fortnightly_budget < 0 }
+		}
+		custom_effect_tooltip = NOV_VRPP_Fortnightly_Budget_tt_1
+	}
+	else = {
+		custom_effect_tooltip = NOV_VRPP_Fortnightly_Budget_tt_2
+	}
+	clamp_variable = {
+		var = NOV_Fortnightly_Profit
+		min = 0
+		max = 999999
+	}
+}
+
+NOV_VRPP_Market_Share_Change = { # changes market share
+	add_to_variable = { NOV_Media_Market_Share = temp_market_share }
+	if = {
+		limit = {
+			check_variable = { temp_market_share < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_market_share }
+		custom_effect_tooltip = NOV_VRPP_Market_Share_Change_tt_1
+	}
+	else_if = {
+		limit = {
+			check_variable = { temp_market_share > 0 }
+		}
+		custom_effect_tooltip = NOV_VRPP_Market_Share_Change_tt_2
+	}
+}
+
+NOV_VRPP_Legal_Strength_Change = { # changes GFX_Legal_strength
+	add_to_variable = { NOV_Media_Legal_Strength^temp_target = temp_legal_strength }
+	if = {
+		limit = {
+			check_variable = { temp_legal_strength < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_legal_strength }
+		custom_effect_tooltip = NOV_VRPP_Legal_Strength_Change_tt_1
+	}
+	else_if = {
+		limit = {
+			check_variable = { temp_legal_strength > 0 }
+		}
+		custom_effect_tooltip = NOV_VRPP_Legal_Strength_Change_tt_2
+	}
+	clamp_variable = {
+		var = NOV_True_Worth
+		min = 0
+		max = 999999
+	}
+	set_temp_variable = { shikieki = temp_legal_strength }
+	#add_to_temp_variable = { shikieki = temp_legal_strength }
+	#divide_temp_variable = { shikieki = 100 }
+	#add_to_temp_variable = { shikieki = 1 }
+	multiply_temp_variable = { shikieki = 2 }
+	NOV_Media_True_Cost_Calculation = yes
+}
+
+NOV_VRPP_Legal_Strength_Change_all = { # changes GFX_Legal_strength
+	for_each_loop = {
+		array = NOV_Media_Legal_Strength
+		index = i
+
+		add_to_variable = { NOV_Media_Legal_Strength^i = temp_legal_strength }
+		clamp_variable = {
+			var = NOV_Media_Legal_Strength^i
+			min = 0
+			max = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { temp_legal_strength < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_legal_strength }
+		custom_effect_tooltip = NOV_VRPP_Legal_Strength_All_Change_tt_1
+	}
+	else_if = {
+		limit = {
+			check_variable = { temp_legal_strength > 0 }
+		}
+		custom_effect_tooltip = NOV_VRPP_Legal_Strength_All_Change_tt_2
+	}
+	clamp_variable = {
+		var = NOV_True_Worth
+		min = 0
+		max = 999999
+	}
+	NOV_Media_True_Cost_Calculation = yes
+}
+
+NOV_Media_True_Cost_Calculation = {
+	NOV_Media_Clamp = yes
+	#Rule - At 100% Strength, price is doubled. at 0% price is normal.
+	clear_array = NOV_True_Worth
+
+	for_each_loop = {
+		array = NOV_Media_Legal_Strength
+		index = natsuki_idx
+		value = v
+
+		divide_temp_variable = { v = 100 }
+		add_to_temp_variable = { v = 1 }
+		multiply_temp_variable = { v = NOV_Media_Worth^natsuki_idx }
+		add_to_array = { NOV_True_Worth = v }
+	}
+}
+
+NOV_Select_Media = { # selects media to be interacting with
+	set_variable = { NOV_selected_id = 0 }
+	set_variable = { NOV_selected_id = temp_id }
+}
+
+NOV_Media_Setup = { # self explainatory
+	set_variable = { NOV_Media_Market_Share = 5 }
+	set_variable = { Nov_Media_Budget = 150 }
+	set_variable = { NOV_Fortnightly_Profit = 4.58 }
+
+	add_to_array = { NOV_Media_Worth = 0 } #Null Placeholder
+	add_to_array = { NOV_Media_Worth = 323.67 }
+	add_to_array = { NOV_Media_Worth = 140.91 }
+	add_to_array = { NOV_Media_Worth = 34.28 }
+	add_to_array = { NOV_Media_Worth = 72.35 }
+	add_to_array = { NOV_Media_Worth = 102.33 }
+	add_to_array = { NOV_Media_Worth = 184.63 }
+
+	add_to_array = { NOV_Media_Legal_Strength = 0 } #Null Placeholder
+	add_to_array = { NOV_Media_Legal_Strength = 95 } 
+	add_to_array = { NOV_Media_Legal_Strength = 80 } 
+	add_to_array = { NOV_Media_Legal_Strength = 35 } 
+	add_to_array = { NOV_Media_Legal_Strength = 55 } 
+	add_to_array = { NOV_Media_Legal_Strength = 60 } 
+	add_to_array = { NOV_Media_Legal_Strength = 80 } 
+
+	NOV_Media_True_Cost_Calculation = yes
+}
+
+NOV_Media_Clamp = {
+	for_each_loop = {
+		array = NOV_Media_Legal_Strength
+		index = natsuki_idx
+		value = v
+
+		clamp_variable = {
+			var = v
+			min = 0
+			max = 100
+		}
+	}
+}
+
+NOV_VRPP_Buy_Channel = {
+	if = {
+		limit = {
+			check_variable = { NOV_selected_id = 1 }
+		}
+		set_temp_variable = { temp_market_share = 26 }
+		NOV_VRPP_Market_Share_Change = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_selected_id = 2 }
+		}
+		set_temp_variable = { temp_market_share = 17 }
+		NOV_VRPP_Market_Share_Change = yes	
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_selected_id = 3 }
+		}
+		set_temp_variable = { temp_market_share = 4 }
+		NOV_VRPP_Market_Share_Change = yes	
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_selected_id = 4 }
+		}
+		set_temp_variable = { temp_market_share = 7 }
+		NOV_VRPP_Market_Share_Change = yes	
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_selected_id = 5 }
+		}
+		set_temp_variable = { temp_market_share = 15 }
+		NOV_VRPP_Market_Share_Change = yes	
+	}
+	else_if = {
+		limit = {
+			check_variable = { NOV_selected_id = 6 }
+		}
+		set_temp_variable = { temp_market_share = 21 }
+		NOV_VRPP_Market_Share_Change = yes	
+	}
+
+	set_temp_variable = { temp_total = NOV_True_Worth^NOV_selected_id }
+	set_temp_variable = { temp_storer = 0 }
+	subtract_from_temp_variable = { temp_storer = temp_total }
+	set_temp_variable = { temp_budget = temp_storer }
+	NOV_VRPP_Budget_Change = yes
+	set_variable = { NOV_selected_id = 0 }
+	set_temp_variable = { temp_legal_strength = 5 }
+	NOV_VRPP_Legal_Strength_Change_all = yes
+}
+
+NOV_RSLP_OFN_Setup = { # self explainatory
+	set_variable = { NOV_rslp_ofn_relation = 25 }
+	set_variable = { NOV_rslp_vrpp_ofn_opinion = 5 }
+	set_variable = { NOV_rslp_dspr_ofn_opinion = 15 }
+
+	NOV_RSLP_OFN_Clamp = yes
+}
+NOV_RSLP_OFN_Clamp = {
+	clamp_temp_variable = {
+		var = NOV_rslp_ofn_relation
+		min = 0
+		max = 100
+	}
+	clamp_temp_variable = {
+		var = NOV_rslp_vrpp_ofn_opinion
+		min = 0
+		max = NOV_rslp_dspr_ofn_opinion
+	}
+	clamp_temp_variable = {
+		var = NOV_rslp_dspr_ofn_opinion
+		min = 0
+		max = 100
+	}
+}
+
+NOV_RSLP_Opinion_Change = {
+	#Changes to OFN Opinion
+	if = {
+		limit = {
+			check_variable = { RSLP_Opinion_Target = 1 }
+			check_variable = { Temp_Opinion < 0  }
+		}
+		set_temp_variable = { RSLP_Displayer = 0 }
+		add_to_variable = { NOV_rslp_ofn_relation = Temp_Opinion }
+		subtract_from_temp_variable = { RSLP_Displayer = Temp_Opinion }
+		custom_effect_tooltip = "NOV_RSLP_Opinion_Change_Negative_tt"
+	}
+	else_if = {
+		limit = {
+			check_variable = { RSLP_Opinion_Target = 1 }
+			check_variable = { Temp_Opinion > 0  }
+		}
+		add_to_variable = { NOV_rslp_ofn_relation = Temp_Opinion }
+		custom_effect_tooltip = "NOV_RSLP_Opinion_Change_Positive_tt"
+	}
+	else_if = {
+		limit = {
+			check_variable = { RSLP_Opinion_Target = 2 }
+			check_variable = { Temp_Opinion < 0  }
+		}
+		set_temp_variable = { RSLP_Displayer = 0 }
+		add_to_variable = { NOV_rslp_vrpp_ofn_opinion = Temp_Opinion }
+		subtract_from_temp_variable = { RSLP_Displayer = Temp_Opinion }
+		custom_effect_tooltip = "NOV_RSLP_Opinion_Change_Negative_tt"
+	}
+	else_if = {
+		limit = {
+			check_variable = { RSLP_Opinion_Target = 2 }
+			check_variable = { Temp_Opinion > 0  }
+		}
+		add_to_variable = { NOV_rslp_vrpp_ofn_opinion = Temp_Opinion }
+		custom_effect_tooltip = "NOV_RSLP_Opinion_Change_Positive_tt"
+	}
+	else_if = {
+		limit = {
+			check_variable = { RSLP_Opinion_Target = 3 }
+			check_variable = { Temp_Opinion < 0  }
+		}
+		set_temp_variable = { RSLP_Displayer = 0 }
+		add_to_variable = { NOV_rslp_dspr_ofn_opinion = Temp_Opinion }
+		subtract_from_temp_variable = { RSLP_Displayer = Temp_Opinion }
+		custom_effect_tooltip = "NOV_RSLP_Opinion_Change_Negative_tt"
+	}
+	else_if = {
+		limit = {
+			check_variable = { RSLP_Opinion_Target = 3 }
+			check_variable = { Temp_Opinion > 0  }
+		}
+		add_to_variable = { NOV_rslp_dspr_ofn_opinion = Temp_Opinion }
+		custom_effect_tooltip = "NOV_RSLP_Opinion_Change_Positive_tt"
+	}
+}
+
+NOV_RAPP_Space_Setup = { # self explainatory
+	set_temp_variable = { temp_spend = 650 }
+	NOV_RAPP_Space_Total_Cost_Change = yes
+}
+
+NOV_RAPP_Space_Total_Cost_Change = { # Adds to total cost to remind players how expensive it is
+	set_variable = { RAPP_total_investment = temp_spend }
+	divide_temp_variable = { temp_spend = 1000 }
+	set_temp_variable = { temp_econ_spending_amount = temp_spend }
+	econ_spend_money_once_effect_raw_money = yes
+	if = {
+		limit = {
+			check_variable = { temp_spend < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_spend }
+		custom_effect_tooltip = NOV_RAPP_Space_Total_Cost_Change_tt_2
+	}
+	else_if = {
+		limit = {
+			check_variable = { temp_spend > 0 }
+		}
+		custom_effect_tooltip = NOV_RAPP_Space_Total_Cost_Change_tt_1
+	}
+}
+
+NOV_RAPP_Monthly_Change = { # changes how much more you spend every month
+	add_to_variable = { RAPP_Space_Monthly_Cost = temp_monthly }
+	if = {
+		limit = {
+			check_variable = { temp_monthly < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_monthly }
+		custom_effect_tooltip = NOV_RAPP_Monthly_Change_tt_1
+	}
+	else_if = {
+		limit = {
+			check_variable = { temp_monthly > 0 }
+		}
+		custom_effect_tooltip = NOV_RAPP_Monthly_Change_tt_2
+	}
+}
+
+NOV_RAPP_Monthly_Progress_Change = { # monthly progressing
+	add_to_variable = { RAPP_Space_Monthly = temp_monthly_progress }
+	if = {
+		limit = {
+			check_variable = { temp_monthly_progress < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_monthly_progress }
+		custom_effect_tooltip = NOV_RAPP_Monthly_Progress_Change_tt_1
+	}
+	else_if = {
+		limit = {
+			check_variable = { temp_monthly_progress > 0 }
+		}
+		custom_effect_tooltip = NOV_RAPP_Monthly_Progress_Change_tt_2
+	}
+}
+
+NOV_RAPP_Progress_Change = { # total progress
+	add_to_variable = { RAPP_Progress = temp_progress }
+	if = {
+		limit = {
+			check_variable = { temp_progress < 0 }
+		}
+		set_temp_variable = { temp_display = 0 }
+		subtract_from_temp_variable = { temp_display = temp_progress }
+		custom_effect_tooltip = NOV_RAPP_Progress_Change_tt_1
+	}
+	else_if = {
+		limit = {
+			check_variable = { temp_progress > 0 }
+		}
+		custom_effect_tooltip = NOV_RAPP_Progress_Change_tt_2
+	}
+	clamp_variable = {
+		var = RAPP_Progress
+		min = 1
+		max = 100
+	}
+}
+
+NOVUpdateLeadingCandidate = {
+	if = {
+		limit = {
+			check_variable = { THIS.NOV_election_support_RAPP_pop > THIS.NOV_election_support_VRPP_pop }
+			check_variable = { THIS.NOV_election_support_RAPP_pop > THIS.NOV_election_support_DSPR_pop }
+			check_variable = { THIS.NOV_election_support_RAPP_pop > THIS.NOV_election_support_RSLP_pop }
+		}
+		set_variable = { THIS.NOV_elections_lead = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { THIS.NOV_election_support_VRPP_pop > THIS.NOV_election_support_RAPP_pop }
+			check_variable = { THIS.NOV_election_support_VRPP_pop > THIS.NOV_election_support_DSPR_pop }
+			check_variable = { THIS.NOV_election_support_VRPP_pop > THIS.NOV_election_support_RSLP_pop }
+		}
+		set_variable = { THIS.NOV_elections_lead = 4 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { THIS.NOV_election_support_DSPR_pop > THIS.NOV_election_support_VRPP_pop }
+			check_variable = { THIS.NOV_election_support_DSPR_pop > THIS.NOV_election_support_RAPP_pop }
+			check_variable = { THIS.NOV_election_support_DSPR_pop > THIS.NOV_election_support_RSLP_pop }
+		}
+		set_variable = { THIS.NOV_elections_lead = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { THIS.NOV_election_support_RSLP_pop > THIS.NOV_election_support_VRPP_pop }
+			check_variable = { THIS.NOV_election_support_RSLP_pop > THIS.NOV_election_support_DSPR_pop }
+			check_variable = { THIS.NOV_election_support_RSLP_pop > THIS.NOV_election_support_RAPP_pop }
+		}
+		set_variable = { THIS.NOV_elections_lead = 3 }
+	}
+}

@@ -1,0 +1,232 @@
+vrpp_megacorp_gone = {
+	custom_trigger_tooltip = {
+		tooltip = vrpp_megacorp_gone_tt
+		NOT = { has_country_flag = NOV_Megacorp_Demanding }
+	}
+}
+vrpp_megacorp_crisis = {
+	custom_trigger_tooltip = {
+		tooltip = vrpp_megacorp_crisis_tt
+		OR = { 
+			AND = {
+				check_variable = { NOV_megacorp_loyalties^0 < 20 }
+				check_variable = { NOV_megacorp_loyalties^1 < 20 }
+				check_variable = { NOV_megacorp_loyalties^2 < 20 }
+				check_variable = { NOV_megacorp_influence^0 > 50 }
+				check_variable = { NOV_megacorp_influence^1 > 50 }
+				check_variable = { NOV_megacorp_influence^2 > 50 }
+			}
+			has_country_flag = NOV_test_flag
+		}
+	}
+}
+
+dspr_dismantling = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_dismantling_tt
+		has_country_flag = NOV_DSPR_Switch
+	}
+}
+
+dspr_selected = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_selected_tt
+		has_country_flag = DSPR_Selected
+	}
+}
+
+dspr_sibir_1 = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_sibir_1_tt
+		AND = {
+			check_variable = { NOV_megacorp_loyalties^1 < 75 }
+			check_variable = { NOV_megacorp_influence^1 < 75 }
+		}
+	}
+}
+
+dspr_sibir_2 = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_sibir_2_tt
+		AND = {
+			check_variable = { NOV_megacorp_loyalties^1 < 50 }
+			check_variable = { NOV_megacorp_influence^1 < 50 }
+		}
+	}
+}
+
+dspr_sibir_3 = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_sibir_3_tt
+		AND = {
+			check_variable = { NOV_megacorp_loyalties^1 < 25 }
+			check_variable = { NOV_megacorp_influence^1 < 25 }
+		}
+	}
+}
+
+dspr_titan_1 = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_titan_1_tt
+		AND = {
+			check_variable = { NOV_megacorp_loyalties^2 < 85 }
+			check_variable = { NOV_megacorp_influence^2 < 85 }
+		}
+	}
+}
+
+dspr_titan_2 = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_titan_2_tt
+		AND = {
+			check_variable = { NOV_megacorp_loyalties^2 < 65 }
+			check_variable = { NOV_megacorp_influence^2 < 65 }
+		}
+	}
+}
+
+dspr_titan_3 = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_titan_3_tt
+		AND = {
+			check_variable = { NOV_megacorp_loyalties^2 < 40 }
+			check_variable = { NOV_megacorp_influence^2 < 40 }
+		}
+	}
+}
+
+dspr_feniks_1 = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_feniks_1_tt
+		AND = {
+			check_variable = { NOV_megacorp_loyalties^0 < 75 }
+			check_variable = { NOV_megacorp_influence^0 < 75 }
+		}
+	}
+}
+
+dspr_feniks_2 = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_feniks_2_tt
+		AND = {
+			check_variable = { NOV_megacorp_loyalties^0 < 50 }
+			check_variable = { NOV_megacorp_influence^0 < 50 }
+		}
+	}
+}
+
+dspr_feniks_3 = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_feniks_3_tt
+		AND = {
+			check_variable = { NOV_megacorp_loyalties^0 < 25 }
+			check_variable = { NOV_megacorp_influence^0 < 25 }
+		}
+	}
+}
+
+dspr_feniks_ded = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_feniks_ded_tt
+		has_country_flag = DSPR_Feniks_Dismantle
+	}
+}
+
+dspr_sibir_ded = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_sibir_ded_tt
+		has_country_flag = DSPR_Sibir_Dismantle
+	}
+}
+
+dspr_titan_ded = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_titan_ded_tt
+		has_country_flag = DSPR_Titan_Dismantle
+	}
+}
+
+dspr_dismantling = {
+	custom_trigger_tooltip = {
+		tooltip = dspr_dismantling_tt
+		has_country_flag = NOV_DSPR_Switch
+	}
+}
+
+rslp_fopo = {
+	custom_trigger_tooltip = {
+		tooltip = rslp_fopo_tt
+		has_country_flag = NOV_RSLP_Tour
+	}
+}
+rslp_ofn = {
+	custom_trigger_tooltip = {
+		tooltip = rslp_ofn_tt
+		has_country_flag = NOV_RSLP_OFN
+	}
+}
+rslp_shukshin_talk = {
+	custom_trigger_tooltip = {
+		tooltip = rslp_shukshin_talk_tt
+		has_country_flag = NOV_RSLP_SHUKSHIN_TALK
+	}
+}
+rslp_shukshin = {
+	custom_trigger_tooltip = {
+		tooltip = rslp_shukshin_tt
+		has_country_flag = NOV_RSLP_SHUKSHIN
+	}
+}
+rslp_conservative_100 = {
+	custom_trigger_tooltip = {
+		tooltip = rslp_conservative_100_tt
+		check_variable = { NOV_rslp_vrpp_ofn_opinion > 79 } 
+	}
+}
+rslp_kantorovich_talk = {
+	custom_trigger_tooltip = {
+		tooltip = rslp_kantorovich_talk_tt
+		has_country_flag = NOV_RSLP_KANTOROVICH_TALK
+	}
+}
+rslp_kantorovich = {
+	custom_trigger_tooltip = {
+		tooltip = rslp_kantorovich_tt
+		has_country_flag = NOV_RSLP_KANTOROVICH
+	}
+}
+rslp_socialist_100 = {
+	custom_trigger_tooltip = {
+		tooltip = rslp_socialist_100_tt
+		check_variable = { NOV_rslp_dspr_ofn_opinion > 79 } 
+	}
+}
+rapp_rocket = {
+	custom_trigger_tooltip = {
+		tooltip = rapp_rocket_tt
+		AND = {
+			has_country_flag = NOV_RAPP_Stage_2
+			check_variable = { RAPP_Progress = 100 } 
+		}
+	}
+}
+rapp_rocket_palse = {
+	custom_trigger_tooltip = {
+		tooltip = rapp_rocket_palse_tt
+		has_country_flag = NOV_RAPP_Palse_Spending_Pulse
+	}
+}
+
+rapp_space_check = {
+	custom_trigger_tooltip = {
+		tooltip = rapp_space_check_tt
+		has_country_flag = NOV_RAPP_Stage_3
+	}
+}
+
+duma_not_voting = {
+	custom_trigger_tooltip = {
+		tooltip = duma_not_voting_tt
+		NOT = { has_country_flag = NOV_active_bill }
+	}
+}

@@ -1,0 +1,281 @@
+defined_text = {
+	name = NOVgetMegacorpName
+	text = {
+		trigger = {
+			check_variable = { target = 0 }
+		}
+		localization_key = SWRW_NOV_VRPP_Megacorp_Name_0
+	}
+	text = {
+		trigger = {
+			check_variable = { target = 1 }
+		}
+		localization_key = SWRW_NOV_VRPP_Megacorp_Name_1
+	}
+	text = {
+		trigger = {
+			check_variable = { target = 2 }
+		}
+		localization_key = SWRW_NOV_VRPP_Megacorp_Name_2
+	}
+}
+
+defined_text = {
+	name = NOVgetExpectations
+	text = {
+		trigger = {
+			check_variable = { mike < GDP }
+		}
+		localization_key = SWRW_NOV_VRPP_Megacorp_Expectations_Good
+	}
+	text = {
+		trigger = {
+			check_variable = { mike > GDP }
+		}
+		localization_key = SWRW_NOV_VRPP_Megacorp_Expectations_Bad
+	}
+}
+
+defined_text = {
+	name = NOVgetMediaTitle
+	text = {
+		trigger = {
+			check_variable = { NOV_selected_id = 1 }
+		}
+		localization_key = NOVMediaTitle_1
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_selected_id = 2 }
+		}
+		localization_key = NOVMediaTitle_2
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_selected_id = 3 }
+		}
+		localization_key = NOVMediaTitle_3
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_selected_id = 4 }
+		}
+		localization_key = NOVMediaTitle_4
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_selected_id = 5 }
+		}
+		localization_key = NOVMediaTitle_5
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_selected_id = 6 }
+		}
+		localization_key = NOVMediaTitle_6
+	}
+}
+
+defined_text = {
+	name = NOVgetMediaTitle2
+	text = {
+		trigger = {
+			check_variable = { temp_target = 1 }
+		}
+		localization_key = NOVMediaTitle_1
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_target = 2 }
+		}
+		localization_key = NOVMediaTitle_2
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_target = 3 }
+		}
+		localization_key = NOVMediaTitle_3
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_target = 4 }
+		}
+		localization_key = NOVMediaTitle_4
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_target = 5 }
+		}
+		localization_key = NOVMediaTitle_5
+	}
+	text = {
+		trigger = {
+			check_variable = { temp_target = 6 }
+		}
+		localization_key = NOVMediaTitle_6
+	}
+}
+
+defined_text = {
+	name = NOVgetMediaLegalStrength
+	text = {
+		trigger = {
+			check_variable = { NOV_Media_Legal_Strength^NOV_selected_id > 94 }
+		}
+		localization_key = NOVgetMediaLegalStrength_1
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_Media_Legal_Strength^NOV_selected_id > 89 }
+				check_variable = { NOV_Media_Legal_Strength^NOV_selected_id < 95 }
+			}
+		}
+		localization_key = NOVgetMediaLegalStrength_2
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_Media_Legal_Strength^NOV_selected_id > 74 }
+				check_variable = { NOV_Media_Legal_Strength^NOV_selected_id < 90 }
+			}
+		}
+		localization_key = NOVgetMediaLegalStrength_3
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_Media_Legal_Strength^NOV_selected_id > 49 }
+				check_variable = { NOV_Media_Legal_Strength^NOV_selected_id < 75 }
+			}
+		}
+		localization_key = NOVgetMediaLegalStrength_4
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_Media_Legal_Strength^NOV_selected_id > 24 }
+				check_variable = { NOV_Media_Legal_Strength^NOV_selected_id < 50 }
+			}
+		}
+		localization_key = NOVgetMediaLegalStrength_5
+	}
+	text = {
+		trigger = {
+			check_variable = { NOV_Media_Legal_Strength^NOV_selected_id < 25 }
+		}
+		localization_key = NOVgetMediaLegalStrength_6
+	}
+}
+
+defined_text = {
+	name = getNOVGUISwitch_1
+	text = {
+		trigger = {
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+		}
+		localization_key = getNOVGUISwitch_1_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = NOV_DSPR_Switch
+		}
+		localization_key = getNOVGUISwitch_1_2
+	}
+}
+
+defined_text = {
+	name = getNOVGUISwitch_2
+	text = {
+		trigger = {
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+		}
+		localization_key = getNOVGUISwitch_2_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = NOV_DSPR_Switch
+		}
+		localization_key = getNOVGUISwitch_2_2
+	}
+}
+
+defined_text = {
+	name = getNOVGUISwitch_3
+	text = {
+		trigger = {
+			NOT = { has_country_flag = NOV_DSPR_Switch }
+		}
+		localization_key = getNOVGUISwitch_3_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = NOV_DSPR_Switch
+		}
+		localization_key = getNOVGUISwitch_3_2
+	}
+}
+
+defined_text = {
+	name = getSibirFolderLoc
+	text = {
+		trigger = {
+			NOT = { has_country_flag = NOV_DSPR_Sibir }
+		}
+		localization_key = getSibirFolderLoc_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = NOV_DSPR_Sibir
+		}
+		localization_key = getSibirFolderLoc_2
+	}
+}
+
+defined_text = {
+	name = getGenericFolderLoc
+	text = {
+		trigger = {
+			NOT = { has_country_flag = NOV_DSPR_Generic }
+		}
+		localization_key = getGenericFolderLoc_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = NOV_DSPR_Generic
+		}
+		localization_key = getGenericFolderLoc_2
+	}
+}
+
+defined_text = {
+	name = getTitanFolderLoc
+	text = {
+		trigger = {
+			NOT = { has_country_flag = NOV_DSPR_Titan }
+		}
+		localization_key = getTitanFolderLoc_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = NOV_DSPR_Titan
+		}
+		localization_key = getTitanFolderLoc_2
+	}
+}
+
+defined_text = {
+	name = getFeniksFolderLoc
+	text = {
+		trigger = {
+			NOT = { has_country_flag = NOV_DSPR_Feniks }
+		}
+		localization_key = getFeniksFolderLoc_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = NOV_DSPR_Feniks
+		}
+		localization_key = getFeniksFolderLoc_2
+	}
+}

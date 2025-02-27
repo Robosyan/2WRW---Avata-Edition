@@ -1,0 +1,118 @@
+RUS_SWRW_category = {
+	
+	#Victory Events Decisions
+
+	RUS_move_captial = { # Generic
+		
+		icon = decision_generic_political_action
+		
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			1442 = { is_owned_by = RUS }
+			NOT = {
+				original_tag = NOV
+				has_global_flag = RUS_shukshin_unification
+			}
+		}
+		
+		available = {
+			195 = { is_core_of = RUS }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: The Russians Have Won!"
+			country_event = RUS_decisions.1
+		}
+	}
+
+	RUS_bring_st_petersburg_back_into_the_fold = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			195 = { controller = { is_subject_of = RUS } }
+		}
+
+		visible = {
+			195 = { owner = { is_subject_of = RUS } }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 195
+			}
+		}
+
+		# on_map_mode = map_only
+
+		modifier = {
+			stability_weekly = -0.015
+			political_power_gain = -0.25
+			gdp_growth_modifier = -0.5
+		}
+
+		cost = 75
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = 100
+		fire_only_once = yes
+
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_bring_st_petersburg_back_into_the_fold remove"
+			custom_effect_tooltip = NOV_deport_the_petrograd_germans_tt
+			195 = { owner = { remove_state_core = 195 } }
+			RUS = {
+				add_state_core = 195
+				transfer_state = 195
+			}
+			195 = {
+				set_variable = { 195.nationality = 151 }
+				add_manpower = -250000
+				set_temp_variable = { state_value_multiplier_temp = 0.60 }
+				econ_state_value_change_multiply = yes
+			}
+		}
+	}
+	
+	CHT_Move_Imperial_Capital = { # Generic
+		
+		icon = decision_generic_political_action
+		
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			AND = {
+				original_tag = CHT
+				has_global_flag = RUS_national_unification
+			}
+		}
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: The Russians Have Won!"
+			country_event = RUS_decisions.2
+		}
+	}
+}

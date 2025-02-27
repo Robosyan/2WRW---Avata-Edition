@@ -1,0 +1,149 @@
+﻿division_template = {
+	name = "Jayaw Bolim"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Miliciya Bolimsesi"
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Motorizovanniy Bolim"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+
+	}
+}
+division_template = {
+	name = "Qarw-jaraq Bolimsesi"
+
+	regiments = {
+		IFV = { x = 0 y = 0 }
+		IFV = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+
+	}
+}
+#
+units = {
+	division = {
+		name="1-y Erkin Bolim"
+		location="7708"
+		division_template= "Jayaw Bolim"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name="1-y Miliciya 'Mukanov'"
+		location= "1879"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name="2-y Miliciya 'Pavlodar'"
+		location="1864"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name="3-y Miliciya 'Qazaqstan'"
+		location="4670"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name="4-y Miliciya 'Qazaqstan'"
+		location="7317"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name="5-y Miliciya 'Qazaqstan'"
+		location="1879"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location="12635"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location="10235"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location="10218"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location="10653"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location="1668"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location="7784"
+		division_template= "Miliciya Bolimsesi"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75
+	}
+}

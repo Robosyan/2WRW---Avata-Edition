@@ -1,0 +1,121 @@
+ideas = {
+	country = {
+	
+		### GENERIC NATIONAL SPIRITS ###
+	
+		WRW_integrated_administration = { # NatSpirit to make the RK's not surrender
+			picture = generic_german_advisors
+			modifier = {
+				surrender_limit = 1
+				command_power_gain_mult = 0.25
+				conscription_factor = 0.125
+				hidden_modifier = {
+					ai_focus_defense_factor = 1000
+					ai_focus_war_production_factor = 500
+				}
+			}
+		}
+		
+		WRW_partisan_uprisings = { # NatSpirit that disrupts supplies in both the RK as well as Germany
+			picture = BRY_Idealistic_Revolutionaries
+			modifier = {
+				stability_factor = -0.20
+				conscription_factor = -0.15
+				supply_consumption_factor = 0.33
+				army_speed_factor = -0.33
+				required_garrison_factor = 0.25
+			}
+			targeted_modifier = {
+				tag = GER
+				supply_consumption_factor = 0.08
+			}
+		}
+		
+		WRW_nationwide_strikes = { # NatSpirit that disrupts RK industry
+			picture = generic_Social_Rights_3
+			modifier = {
+				stability_factor = -0.2
+				industrial_capacity_factory = -0.25
+				consumer_goods_use_modifier = 0.20
+			}
+		}
+		
+		WRW_intensified_bombing_runs = { # NatSpirit that makes you more vulnerable to bombing
+			picture = RUS_luftwaffe_bombings
+			modifier = {
+				stability_factor = -0.05
+				army_speed_factor = -0.1
+				industry_air_damage_factor = 0.25
+				industry_repair_factor = -0.33
+				production_speed_buildings_factor = -0.33
+			}
+		}
+		
+		RUS_corporate_concessions = { # Megacorp event chain
+			picture = LIB_widespread_corruption
+			modifier = {
+				air_attack_factor = -0.15
+				air_bombing_targetting = -0.25
+			}
+		}
+		
+		GER_corporate_concessions = { # Megacorp event chain
+			picture = LIB_widespread_corruption
+			modifier = {
+				industrial_capacity_factory = -0.2
+			}
+		}
+		
+		GER_disloyal_corporations = { # Megacorp event chain
+			picture = LIB_widespread_corruption
+			modifier = {
+				industrial_capacity_factory = -0.1
+			}
+			cancel = {
+				NOT = { has_country_flag = GER_SWRW_ongoing }
+			}
+		}
+		
+		WRW_red_cross_help = { # Red Cross
+			picture = NOV_humanitarian_aid
+			modifier = {
+				army_attack_factor = -0.05
+			}
+			cancel = {
+				has_war = no
+			}
+			equipment_bonus = {
+				infantry = {
+					casualty_trickleback = 0.1
+					experience_loss_factor = -0.05
+				}
+			}
+			# targeted_modifier = {
+			# 	tag = USA
+			# 	intel_from_operatives_factor = 0.1
+			# }
+		}
+		GER_rerouted_settlers_funds = { # Norway event chain
+			picture = BRY_wheels_of_labor
+			modifier = {
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.05
+			}
+		}
+		
+		GER_naval_maps = { # Norway event chain
+			picture = YEM_The_Aden_Arsenal
+			name = GER_naval_maps
+			modifier = {
+				invasion_preparation = 0.5
+			}
+		}
+		GER_naval_maps_2 = { # Norway event chain
+			picture = YEM_The_Aden_Arsenal
+			name = GER_naval_maps
+			modifier = {
+				invasion_preparation = 0.8
+			}
+		}
+	}
+}

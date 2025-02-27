@@ -1,0 +1,357 @@
+spriteTypes = {
+
+	### Second West Russian War ###
+
+	### Decision Categories ###
+	
+	spriteType = {
+		name = "GFX_decision_category_SWRW"
+		texturefile = "gfx/interface/decisions/decision_category_SWRW.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_rus_duma"
+		texturefile = "gfx/interface/decisions/decision_category_rus_duma.dds"
+	}
+
+	### Decisions ###
+	
+	spriteType = {
+		name = "GFX_decision_final_strike"
+		texturefile = "gfx/interface/decisions/decision_final_strike.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_assassination"
+		texturefile = "gfx/interface/decisions/decision_generic_assassination.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_volgastaat"
+		texturefile = "gfx/interface/decisions/decision_volgastaat.dds"
+	}
+	
+	# Global Conflicts
+	
+	spriteType = {
+		name = "GFX_decision_category_RUS_forpol"
+		textureFile = "gfx/interface/decisions/russia_forpol_category.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_volgastaat"
+		texturefile = "gfx/interface/decisions/decision_volgastaat.dds"
+	}
+	
+	# Peace Icons
+	
+	spriteType = {
+		name = "GFX_decision_offer_peace"
+		texturefile = "gfx/interface/decisions/decision_offer_peace.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_category_siberian_railway"
+		texturefile = "gfx/interface/decisions/decision_category_siberian_railway.dds"
+	}
+	
+	# Lord of the East Decision Icons
+	
+	spriteType = {
+		name = "GFX_decision_category_far_east_negotiations"
+		texturefile = "gfx/interface/decisions/decision_category_far_east_negotiations.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_birobidzhan_icon"
+		texturefile = "gfx/interface/decisions/decision_birobidzhan_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_primorsky_icon"
+		texturefile = "gfx/interface/decisions/decision_primorsky_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_vladivostok_icon"
+		texturefile = "gfx/interface/decisions/decision_vladivostok_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_oil_icon"
+		texturefile = "gfx/interface/decisions/decision_oil_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_lease_magadan_port_icon"
+		texturefile = "gfx/interface/decisions/decision_lease_magadan_port_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_great_us_seal_icon"
+		texturefile = "gfx/interface/decisions/decision_great_us_seal_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_naval_exercises"
+		texturefile = "gfx/interface/decisions/decision_naval_exercises.dds"
+	}
+
+	# West China
+	spriteType = {
+		name = "GFX_decision_category_west_china"
+		texturefile = "gfx/interface/decisions/decision_category_west_china.dds"
+	}
+	
+	# Manchuria War
+
+	spriteType = {
+		name = "GFX_decision_category_manchuria_war"
+		texturefile = "gfx/interface/decisions/decision_category_manchuria_war.dds"
+	}
+	
+	# Generic Tukhachevsky
+
+	spriteType = {
+		name = "GFX_decision_tukhachevsky_soviet_symbol"
+		texturefile = "gfx/interface/decisions/GFX_decision_tukhachevsky_soviet_symbol.dds"
+	}
+	
+	# Reintegration
+	
+	# West Russia
+	
+	spriteType = {
+		name = "GFX_decision_vyatka_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_vyatka_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_perm_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_perm_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_tatarstan_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_tatarstan_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_arkhangelsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_arkhangelsk_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_plesetsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_plesetsk_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ukhta_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_ukhta_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_bashkiria_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_bashkiria_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_brezniki_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_brezniki_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_gayny_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_gayny_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_gorky_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_gorky_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_komi_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_komi_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_onega_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_onega_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_samara_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_samara_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_vologda_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_vologda_icon.dds"
+	}
+	
+	# Southern Urals 
+	
+	spriteType = {
+		name = "GFX_decision_orenburg_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_orenburg_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ural_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_ural_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_magnitogorsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_magnitogorsk_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_orsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_orsk_icon.dds"
+	}
+	
+	# Urals
+	
+	spriteType = {
+		name = "GFX_decision_omsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_omsk_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_tyumen_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_tyumen_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_sverdlovsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_sverdlovsk_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_zlatoust_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_zlatoust_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_surgut_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_surgut_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_yugra_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_yugra_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_vorkuta_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_vorkuta_icon.dds"
+	}
+	
+	# Central Siberia
+	
+	spriteType = {
+		name = "GFX_decision_tomsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_tomsk_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kemerovo_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_kemerovo_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_krasnoyarsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_krasnoyarsk_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_novosibirsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_novosibirsk_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kansk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_kansk_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_altai_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_altai_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_west_mongolia_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_west_mongolia_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_tuva_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_tuva_icon.dds"
+	}
+	
+	# Far East
+	
+	spriteType = {
+		name = "GFX_decision_aldan_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_aldan_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_yakutsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_yakutsk_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_irkutsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_irkutsk_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_buryatia_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_buryatia_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_chita_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_chita_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_amur_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_amur_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_magadan_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_magadan_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_northern_siberia_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_northern_siberia_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_chukotka_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_chukotka_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_kamchatka_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_kamchatka_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_birobidzhan_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_birobidzhan_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_khabarovsk_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_khabarovsk_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_vladivostok_icon"
+		texturefile = "gfx/interface/decisions/reintegration_icons/decision_vladivostok_icon.dds"
+	}
+	
+	## regular decisions
+	
+	spriteType = {
+		name = "GFX_decision_raise_tax"
+		texturefile = "gfx/interface/decisions/decision_raise_tax.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_volgastaat"
+		texturefile = "gfx/interface/decisions/decision_volgastaat.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_build_schools"
+		texturefile = "gfx/interface/decisions/decision_build_schools.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_plan_offensive"
+		texturefile = "gfx/interface/decisions/decision_plan_offensive.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_offer_peace"
+		texturefile = "gfx/interface/decisions/decision_offer_peace.dds"
+	}
+}
+

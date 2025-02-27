@@ -1,0 +1,642 @@
+# Use useful_python_programs/scars_thingy.py for ease of usage.
+
+# TODO: (use CTRL + F to jump between these)
+# 1) TITLE
+# 2) INITIALS
+# 3) DESCRIPTION
+
+################
+### 1) TITLE ###
+################
+
+defined_text = {
+	name = Statelore_Get_Name
+	## SWRW ###
+	text = {
+		trigger = {
+			has_global_flag = OMS_World_Ended
+		}
+		localization_key = OMS_World_Ended_Title
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 53 }
+		}
+		localization_key = [Statelore_Get_sevastopol] ### SWRW ###
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 87 }
+		}
+		localization_key = [Statelore_Get_st_petersburg] ### SWRW ###
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 88 }
+		}
+		localization_key = [Statelore_Get_volgograd] ### SWRW ###
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 89 }
+		}
+		localization_key = [Statelore_Get_moscow] ### SWRW ###
+	}
+	### SWRW ###
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 801 }
+		}
+		localization_key = state_lore_name.801
+	}
+	### SWRW ###
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 801 }
+		}
+		localization_key = state_lore_name.801
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 802 }
+		}
+		localization_key = state_lore_name.802
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 803 }
+		}
+		localization_key = state_lore_name.803
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 804 }
+		}
+		localization_key = state_lore_name.804
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 805 }
+		}
+		localization_key = state_lore_name.805
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 806 }
+		}
+		localization_key = state_lore_name.806
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 807 }
+		}
+		localization_key = state_lore_name.807
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 808 }
+		}
+		localization_key = state_lore_name.808
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 809 }
+		}
+		localization_key = state_lore_name.809
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 810 }
+		}
+		localization_key = state_lore_name.810
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 811 }
+		}
+		localization_key = state_lore_name.811
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 812 }
+		}
+		localization_key = state_lore_name.812
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 813 }
+		}
+		localization_key = state_lore_name.813
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 814 }
+		}
+		localization_key = state_lore_name.814
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 815 }
+		}
+		localization_key = state_lore_name.815
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 816 }
+		}
+		localization_key = state_lore_name.816
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 817 }
+		}
+		localization_key = state_lore_name.817
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 818 }
+		}
+		localization_key = state_lore_name.818
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 819 }
+		}
+		localization_key = state_lore_name.819
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 820 }
+		}
+		localization_key = state_lore_name.820
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 821 }
+		}
+		localization_key = state_lore_name.821
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 822 }
+		}
+		localization_key = state_lore_name.822
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 823 }
+		}
+		localization_key = state_lore_name.823
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 824 }
+		}
+		localization_key = state_lore_name.824
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 825 }
+		}
+		localization_key = state_lore_name.825
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 826 }
+		}
+		localization_key = state_lore_name.826
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 827 }
+		}
+		localization_key = state_lore_name.827
+	}
+	### END SWRW ###
+	text = {
+		localization_key = "state_lore_name.[?selected_lore]"
+	}
+}
+
+###################
+### 2) INITIALS ###
+###################
+
+defined_text = {
+	name = Statelore_Get_Initials
+	### SWRW ###
+	text = {
+		trigger = {
+			has_global_flag = OMS_World_Ended
+		}
+		localization_key = OMS_World_Ended_Initials
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 53 }
+		}
+		localization_key = [Statelore_Get_sevastopol_initial] ### SWRW ###
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 87 }
+		}
+		localization_key = [Statelore_Get_st_petersburg_initial] ### SWRW ###
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 88 }
+		}
+		localization_key = [Statelore_Get_volgograd_initial] ### SWRW ###
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 89 }
+		}
+		localization_key = [Statelore_Get_moscow_initial] ### SWRW ###
+	}
+	### SWRW ###
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 800 }
+		}
+		localization_key = state_lore_initials.800
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 801 }
+		}
+		localization_key = state_lore_initials.801
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 802 }
+		}
+		localization_key = state_lore_initials.802
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 803 }
+		}
+		localization_key = state_lore_initials.803
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 804 }
+		}
+		localization_key = state_lore_initials.804
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 805 }
+		}
+		localization_key = state_lore_initials.805
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 806 }
+		}
+		localization_key = state_lore_initials.806
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 807 }
+		}
+		localization_key = state_lore_initials.807
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 808 }
+		}
+		localization_key = state_lore_initials.808
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 809 }
+		}
+		localization_key = state_lore_initials.809
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 810 }
+		}
+		localization_key = state_lore_initials.810
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 811 }
+		}
+		localization_key = state_lore_initials.811
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 812 }
+		}
+		localization_key = state_lore_initials.812
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 813 }
+		}
+		localization_key = state_lore_initials.813
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 814 }
+		}
+		localization_key = state_lore_initials.814
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 815 }
+		}
+		localization_key = state_lore_initials.815
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 816 }
+		}
+		localization_key = state_lore_initials.816
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 817 }
+		}
+		localization_key = state_lore_initials.817
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 818 }
+		}
+		localization_key = state_lore_initials.818
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 819 }
+		}
+		localization_key = state_lore_initials.819
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 820 }
+		}
+		localization_key = state_lore_initials.820
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 821 }
+		}
+		localization_key = state_lore_initials.821
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 822 }
+		}
+		localization_key = state_lore_initials.822
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 823 }
+		}
+		localization_key = state_lore_initials.823
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 824 }
+		}
+		localization_key = state_lore_initials.824
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 825 }
+		}
+		localization_key = state_lore_initials.825
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 826 }
+		}
+		localization_key = state_lore_initials.826
+	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 827 }
+		}
+		localization_key = state_lore_initials.827
+	}
+	### END SWRW ###
+	text = {
+		localization_key = "state_lore_initials.[?lore_entries_onscreen^sl_i]"
+	}
+}
+
+######################
+### 3) DESCRIPTION ###
+######################
+defined_text = {
+	name = Statelore_Get_Desc
+	### SWRW ###
+	text = {
+		trigger = {
+			has_global_flag = OMS_World_Ended
+		}
+		localization_key = OMS_World_Ended_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 53 }
+		}
+		localization_key = [Statelore_Get_sevastopol_desc] ### SWRW ###
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 87 }
+		}
+		localization_key = [Statelore_Get_st_petersburg_desc] ### SWRW ###
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 88 }
+		}
+		localization_key = [Statelore_Get_volgograd_desc] ### SWRW ###
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 89 }
+		}
+		localization_key = [Statelore_Get_moscow_desc] ### SWRW ###
+	}
+	### SWRW ###
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 800 }
+		}
+		localization_key = state_lore_desc.800
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 801 }
+		}
+		localization_key = state_lore_desc.801
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 802 }
+		}
+		localization_key = state_lore_desc.802
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 803 }
+		}
+		localization_key = state_lore_desc.803
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 804 }
+		}
+		localization_key = state_lore_desc.804
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 805 }
+		}
+		localization_key = state_lore_desc.805
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 806 }
+		}
+		localization_key = state_lore_desc.806
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 807 }
+		}
+		localization_key = state_lore_desc.807
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 808 }
+		}
+		localization_key = state_lore_desc.808
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 809 }
+		}
+		localization_key = state_lore_desc.809
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 810 }
+		}
+		localization_key = state_lore_desc.810
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 811 }
+		}
+		localization_key = state_lore_desc.811
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 812 }
+		}
+		localization_key = state_lore_desc.812
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 813 }
+		}
+		localization_key = state_lore_desc.813
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 814 }
+		}
+		localization_key = state_lore_desc.814
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 815 }
+		}
+		localization_key = state_lore_desc.815
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 816 }
+		}
+		localization_key = state_lore_desc.816
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 817 }
+		}
+		localization_key = state_lore_desc.817
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 818 }
+		}
+		localization_key = state_lore_desc.818
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 819 }
+		}
+		localization_key = state_lore_desc.819
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 820 }
+		}
+		localization_key = state_lore_desc.820
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 821 }
+		}
+		localization_key = state_lore_desc.821
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 822 }
+		}
+		localization_key = state_lore_desc.822
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 823 }
+		}
+		localization_key = state_lore_desc.823
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 824 }
+		}
+		localization_key = state_lore_desc.824
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 825 }
+		}
+		localization_key = state_lore_desc.825
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 826 }
+		}
+		localization_key = state_lore_desc.826
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 827 }
+		}
+		localization_key = state_lore_desc.827
+	}
+	### END SWRW ###
+	text = {
+		localization_key = state_lore_desc.[?selected_lore]
+	}
+}

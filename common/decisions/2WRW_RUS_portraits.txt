@@ -1,0 +1,20 @@
+SWRW_RUS_portrait_category = {
+	SWRW_NOV_portrait_picker = {
+		fire_only_once = no
+		days_re_enable = 1
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		}
+		visible = {
+			has_country_leader = {
+				character = NOV_Vasily_Shukshin
+				ruling_only = yes
+			}
+		}
+		complete_effect = {
+			country_event = { id = portrait_picker.1 }
+		}
+	}
+}

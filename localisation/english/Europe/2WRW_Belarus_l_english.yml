@@ -1,0 +1,42 @@
+﻿l_english:
+ # Characters
+
+ BLR_Pyotr_Masherov: "Pyotr Masherov"
+
+ # Character descs
+
+ POLITICS_PYOTR_MASHEROV_DESC: "Born in 1919, right after the end of the First World war, Pyotr Mirinovich Masherov was born to a simple family, living hand-to-mouth for most of his early youth. Graduating as a physics and mathematics teacher in 1939, he did not have much time to practice his profession before the Second World War broke out.\n\nAfter escaping captivity in 1941, he began forming the Komsonol underground, which would eventually become the Belarusian resistance against Nazi occupation. Mathematics teacher by day, partisan leader at night; his movement would come to be feared by Wehrmacht soldiers stationed across the country.\n\nHe would continue agitating even after the war, being one of only a few partisan groups in the area, though he would eventually lay low after the West Russian War.  And when all hope seemed lost, he heard tales of a storm brewing in Russia.\n\nHe traded his books for rifles once again, and marched into battle once more. Being of key importance to the Russian army in regards to intel, as well as supporting them by cutting off German supply and assisting in vital sieges - Masherov would come to be respected and liked by the Russian regiments that fought alongside him. After the war, he assisted the transitional government in reconstructing the region, being a valuable asset because of his popularity.\n\nIt should then be no surprise that when the voting ballots were cast, his party won with flying colors.\n\nOne day, Belarus shall be truly free, and it shall be because of his reforms."
+
+ # Political parties
+
+ BLR_RUS_conservatism_party: "BNF"
+ BLR_RUS_conservatism_party_long: "Belaruski Narodny Front"
+ BLR_RUS_liberalism_party: "NLDPB"
+ BLR_RUS_liberalism_party_long: "Novy Liberal'no-demokraticheskaya Partiya Belarusi"
+ BLR_RUS_progressivism_party: "BSDH"
+ BLR_RUS_progressivism_party_long: "Bielaruskaja Sacyjal-Demakratyčnaja Hramada"
+ BLR_RUS_socialist_party: "BPL"
+ BLR_RUS_socialist_party_long: "Bielaruskaja Partyja Lievych"
+ BLR_RUS_communist_party: "PKB"
+ BLR_RUS_communist_party_long: "Partyja Kamunistaŭ Bielaruskaja"
+
+ # Cosmetic tags
+
+ BLR_RUS: "Republic of Belarus"
+ BLR_RUS_ADJ: "Belarusian"
+ BLR_RUS_DEF: "the Republic of Belarus"
+ 
+ BLR_POSTSWRW: "Reichsland Weißrussland"
+ BLR_POSTSWRW_ADJ: "das Reichsland Weißrussland"
+ BLR_POSTSWRW_DEF: "Weißrussisch"
+
+ # National spirits
+
+ BLR_a_simple_life: "A Simple Life"
+ BLR_a_simple_life_desc: "§W"The Lord will open the heavens, the storehouse of his bounty, to send rain on your land in season and to bless all the work of your hands. You will lend to many nations but will borrow from none."§! §O-Deuteronomy 28:12§!\n\nBelarus has always been a simple nation of simple people living a simple lifestyle. And while Ukraine is Europe's greatest grain producer, Belarus is its second largest producer of grain.\n\nThough it will be nigh-impossible to step out of our southern brother's shadow, Belarus must feed itself and its slavic neighbors!"
+
+ BLR_educational_reforms: "Educational Reforms"
+ BLR_educational_reforms_desc: "With president Masherov himself being a former teacher, it is only natural that the betterment of the sciences and education of the common person is at the uttermost forefront of his agenda, and despite the evident struggles in reconstruction millions of rubles are poured into universities.\n\nFor, if anything he thinks to himself that, the future of the Belarusian economy rests soley the shoulders of the new intellectual generation, clean and healthy from the horrors of the old order...\n\n§VThis may have drastic effects on the radical right's actions in the future if he fails to produce results soon or if reconstruction is delayed.§!"
+
+ BLR_industrial_reforms: "The New Industrial Sector?"
+ BLR_industrial_reforms_desc: "Another step in president Masherov's plans for the newborn nation is to sponsor vast industrialization, especially in the chemical sector. While it may be costly in the short term and has proven to be a powerful rallying point for the mostly agrarian opposition, in his eyes it is imperative to kickstart the Belarusian economy.\n\n§VThis may have drastic effects on the country in the future if this goes unchecked.§!"

@@ -1,0 +1,30 @@
+ideas = {
+	country = {
+		HUN_From_the_Shadows = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HUN_From_the_Shadows" }
+			picture = GFX_idea_HUN_From_the_Shadows
+			modifier = {
+				stability_factor = -0.1
+				misc_income_modifier = 0.05
+			}
+		}
+
+		HUD_The_Landowners_Party = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HUD_The_Landowners_Party" }
+			picture = GFX_idea_HUD_The_Landowners_Party
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		HUS_The_Hungarian_Red_Army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HUS_The_Hungarian_Red_Army" }
+			picture = GFX_idea_HUS_The_Hungarian_Red_Army
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.05
+			}
+		}
+	}
+}

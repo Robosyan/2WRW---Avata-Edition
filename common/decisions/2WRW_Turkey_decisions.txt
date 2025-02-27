@@ -1,0 +1,49 @@
+SWRW_Turkey_category = {
+
+	TUR_demand_russian_surrender = {
+	
+		icon = GFX_decision_diplo_kaukasien
+			
+		visible = {
+			has_global_flag = TUR_mountain_war
+			original_tag = TUR
+		}
+		
+		available = {
+			AND = {
+				NOT = { country_exists = ARM }
+				NOT = { country_exists = GEO }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: TUR_demand_russian_surrender"
+			ARM = { dismantle_faction = yes }
+			if = {
+				limit = { NOT = { country_exists = ADY } }
+				GEO = {
+					transfer_state = 231
+					transfer_state = 1556
+					transfer_state = 1558
+				}
+			}
+			else = {
+				white_peace = ADY
+			}
+			TUR = {
+				transfer_state = 1565
+				annex_country = {
+					target = ARM
+					transfer_troops = yes
+				}
+			}
+			NOV_Global_Conflict_Helper = yes
+		}
+	}
+}

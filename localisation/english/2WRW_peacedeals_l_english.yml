@@ -1,0 +1,80 @@
+﻿l_english:
+ 
+ # Peace Deal Tooltips
+ RUS_generic_moskowien_occupation_tt:0 "§Y[RUSGetUniqueNameTitle] will occupy Moskowien§!"
+ RUS_generic_petrograd_occupation_tt:0 "§Y[RUSGetUniqueNameTitle] will occupy Saint Petersburg§!"
+ RUS_generic_baltic_occupation_tt:0 "§Y[RUSGetUniqueNameTitle] will occupy the Baltic States§!"
+ RUS_generic_belarus_occupation_tt:0 "§Y[RUSGetUniqueNameTitle] will occupy Belarus§!"
+ RUS_generic_ukraine_occupation_tt:0 "§Y[RUSGetUniqueNameTitle] will occupy Ukraine and Gotenland§!"
+ RUS_generic_caucasian_occupation_tt:0 "§Y[RUSGetUniqueNameTitle] will occupy Caucasia§!"
+ 
+ kazahkstan_occupation_tt:0 "§YWe will install a friendly Kazakh government.§!"
+ NPL_restoration_tt:0 "We will restore the Polish Exile government in Uralsk"
+ shukshin_kazahkstan_occupation_tt:0 "§Y[Root.GetNameDefCap] will occupy Kazahkstan§!"
+ RUS_shukshin_central_asia_occupation_tt:0 "§YWe will establish friendly governments in Central Asia.§!"
+ RUS_shukshin_moskowien_occupation_tt:0 "§Y[Root.GetNameDefCap] will occupy Moskowien§!"
+ RUS_shukshin_petrograd_occupation_tt:0 "§Y[Root.GetNameDefCap] will occupy Saint Petersburg§!"
+ RUS_shukshin_baltic_occupation_tt:0 "§Y[Root.GetNameDefCap] will occupy the Baltic States§!"
+ RUS_shukshin_belarus_occupation_tt:0 "§Y[Root.GetNameDefCap] will occupy Belarus§!"
+ RUS_shukshin_ukraine_occupation_tt:0 "§Y[Root.GetNameDefCap] will occupy Ukraine and Gotenland§!"
+ RUS_shukshin_caucasian_occupation_tt:0 "§Y[Root.GetNameDefCap] will occupy Caucasia§!"
+ 
+ # Central Asia
+ Turkmenistan_Occupation_tt:0 "§YWe will establish a friendly government in Turkmenistan§!"
+ Karakalpakstan_Occupation_tt:0 "§YWe will establish a friendly government in Karakalpakstan§!"
+ Uzbekistan_Occupation_tt:0 "§YWe will establish a friendly government in Uzbekistan"§! 
+ Tajikistan_Occupation_tt:0 "§YWe will establish a friendly government in Tajikistan§!"
+ Kyrgyzstan_Occupation_tt:0 "§YWe will establish a friendly government in Kyrgyzstan§!"
+ 
+
+ # Minor Flags
+ PAV_peace_deal_4:0 "Total Victory has been achieved!"
+ RUS_no_caucasus:0 "We have conquered Caucasia!"
+ 
+ # West Russia
+
+ RUS_victory.1.t:0 "The Germans Offer Moskowien"
+ RUS_victory.1.desc:0 "With [1442.GetName] and [217.GetName] back in Russian hands, the Germans have approached our government with an offer of peace. They are prepared to hand over all of Moskowien in exchange for peace between the [RUS.GetName] and the [GER.GetName]. The government is divided but much of our high command feel we can continue our great advance toward the heart of the Reich and raise the banner of the Motherland over the ruins of the Volkshalle."
+ RUS_victory.1.a:0 "Let's not push Germany any further"
+ RUS_victory.1.b:0 "Onwards! To Germania!"
+
+ RUS_victory.2.t:0 "The Germans Offer Caucasia"
+ RUS_victory.2.desc:0 "As our soldier digs ever deeper into the dark heart of the Reich, the Teutons have approached our government once again, this time offer their prized Reichkommisariat Kaukasia and the port city of Rostov in exchange for peace. Our government has signalled their support for the deal, calling for [RUS.GetLeader] to accept peace with Germany but some generals in our staff, vengeance not yet fulfiled, have proposed we continue our advance and push for Ostland and Ukraine."
+ RUS_victory.2.a:0 "The Phoenix Rises"
+ RUS_victory.2.b:0 "Push the Germans back to their borders."
+
+ RUS_victory.3.t:0 "The Germans Offer Ukraine"
+ RUS_victory.3.desc:0 "With our soldiers nearing the borders of the inner Reich, the German government has approached our government for the third time, offering us many concessions in the east. In addition to their previous offer of Moskowien and Caucasia, they are willing to cede control of Ukraine and the Crimean peninsula. Many within the public and our upper echelons of government cry out to accept this offer, saying that too many have died already and that the bloodshed shouldn’t go on any longer. However, many within our armed forces say that the Germans are on the verge of total collapse, and that this may be our last chance to reclaim all our core Russian territory."
+ RUS_victory.3.a:0 "Decades of humiliation, avenged"
+ RUS_victory.3.b:0 "The whole west will be liberated!"
+
+ RUS_victory.4.t:0 "The Germans Unconditionally Surrender"
+ RUS_victory.4.desc:0 "With the fighting in the west reaching its inevitable conclusion, a communication has arrived from our nemesis in Germania; the German Reich and all of its codependents have offered to unconditionally surrender to the forces of the [RUS.GetName]. With this, we finally have the opportunity to avenge the defeats of Barbarossa and Suvorov, and the moment for the reclamation of all of our unlawfully annexed land has arisen at last. From Riga to Magadan, and from Sevastopol to Murmansk, Russia is now unquestionably free and united. To reject this offer would certainly lead to an inevitable nuclear response, and it is unnecessary to push any further into the heart of the fascist cancer. This may be our last chance."
+ RUS_victory.4.a:0 "The Motherland returns to the world stage."
+ RUS_victory.4.b:0 "Nothing shall keep us from Germania!"
+ 
+ RUS_victory.5.t:0 "Germany Demands Our Surrender!"
+ RUS_victory.5.desc:0 "As we prepare our nuclear arsenal to destory the German nation, ambassadors have aproached out government, asking for our surrender. Emphasizing the destructive potential of unleashing nuclear bombs upon Eurasia, the Germans have offered what they considered 'Getting off lightly'. They are demanding the annexation of all the territories up to the Urals and recognition that Eastern Europe shall forever be under the lordship of the Reich."
+ RUS_victory.5.a:0 "I suppose it's that or the End of the World..."
+
+ RUS_victory.6.t:0 "Germany Agrees to our Demands"
+ RUS_victory.6.desc:0 "We have received a reply from the Führer himself, who has accepted all terms of the Treaty Of Riga. All hostilities along the front are to cease, and both German and Russian troops will withdraw from the occupied areas. At long last, the sacrifices of the millions who gave their lives for Russia will no longer be in vain."
+ RUS_victory.6.a:0 "The wrongs of Bukharin, righted."
+
+ RUS_victory.7.t:0 "Germany Agrees to our Demands"
+ RUS_victory.7.desc:0 "We have received a reply from the Führer himself, who has accepted all terms of the Treaty Of Riga. All hostilities along the front are to cease, and both German and Russian troops will withdraw from the occupied areas. At long last, the sacrifices of the millions who gave their lives for Russia will no longer be in vain."
+ RUS_victory.7.a:0 "The wrongs of Bukharin, righted."
+
+ RUS_victory.8.t:0 "Germany Agrees to our Demands"
+ RUS_victory.8.desc:0 "We have received a reply from the Führer himself, who has accepted all terms of the Treaty Of Riga. All hostilities along the front are to cease, and both German and Russian troops will withdraw from the occupied areas. At long last, the sacrifices of the millions who gave their lives for Russia will no longer be in vain."
+ RUS_victory.8.a:0 "The wrongs of Bukharin, righted."
+
+ RUS_victory.9.t:0 "Germany Agrees to our Demands"
+ RUS_victory.9.desc:0 "We have received a reply from the Führer himself, who has accepted all terms of the Treaty Of Riga. All hostilities along the front are to cease, and both German and Russian troops will withdraw from the occupied areas. At long last, the sacrifices of the millions who gave their lives for Russia will no longer be in vain."
+ RUS_victory.9.a:0 "The wrongs of Bukharin, righted."
+ 
+ #Shukshin Deals
+ 
+ RUS_totalvictory.1.t:0 "The Treaty of Riga"
+ RUS_totalvictory.1.desc:0 "The German Foreign Minister entered the manor, referred to as the House of the Black Heads by local Latvians. He had been sent here by the Führer to do the impossible job of negotiating a 'fair' peace settlement for the Reich, a task he was already sure would be impossible. He kept a scowl on his face, his face glistening with sweat as the rather unfriendly-looking Russian soldiers escorted him to a study. Waiting patiently inside the room was none other than the Federation's most feared general, Alexander Novikov himself.\n\n"You finally made it, German," The Field Marshal spat out the last word, a snarl on his face, his bright blue eyes glaring daggers at the Foreign Minister, akin to that of a wolf stalking its prey.\n\n"I'm sorry, Slav," The Foreign Minister replied, hate in his quivery, laughably high-pitched voice, drawing out the final syllable in an attempt to assert an aura of dominance over the smirking Russian who towered over him a meter away. "I don't like wasting my time with subhumans."\n\n"Very well then!" the general chortled, gesturing to the papers laid out on the table in the middle of the room rather elaborately. "Would you Ubermensch kindly sign the terms of surrender? The war has... not gone well for your side, and I think we both agree it is time for our Motherland's rightful territories to be returned to her. It's not like your forces could ever match up to ours, anyway," Novikov mocked, flashing quite the grin.\n\nHe picked up the papers detailing the Treaty of Riga, his hands trembling as he scanned through the terms, his worse fears being confirmed. Brauchitschstadt, Paulusburg, Kiew and Riga. The damned beasts wanted it all back. Unacceptable, every cell in his body screamed, as he put pen to paper, signing the treaty that would cripple Germany forever. Disgraceful! Atrocious! The piece of paper was practically spitting on the Reich's pride, on everything they stood for!\n\nAnd yet, he had no other choice.\n\nSo, the curtains close on this era as the tortured of Russia rejoice. From Murmansk to Omolon, the Baltic to the Bering, their Motherland emerges from the dust once again. However bruised and battered she may be, the treaty is a clear message to the world."
+ RUS_totalvictory.1.a:0 "Russia is back!"

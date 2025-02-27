@@ -1,0 +1,85 @@
+#West Russian War - Invasion of the Reich #
+# Second West Russian War #
+RUS_SWRW_category = {
+	icon = GFX_decision_category_SWRW
+	picture = GFX_RUS_category_insurgency
+	priority = 999999
+	allowed = {
+		is_russian_unifier = yes
+	}
+	visible = {
+		has_global_flag = RUS_national_unification
+		NOT = {
+			AND = {
+				original_tag = NOV
+				has_global_flag = RUS_shukshin_unification
+			}
+		}
+	}
+	on_map_area = {
+		target_array = MCW.controlled_states
+		target_array = MOS.controlled_states
+		target_array = OKB.controlled_states
+		target_array = RDC.controlled_states
+		target_array = PAU.controlled_states
+		target_array = CAU.controlled_states
+		target_array = OST.controlled_states
+		target_array = BLR.controlled_states
+		target_array = UKR.controlled_states
+		target_array = GOT.controlled_states
+		target_array = ARM.controlled_states
+		state = 137
+		state = 1532
+		state = 198
+		state = 192
+		state = 1285
+		state = 146
+		state = 1712
+		state = 1565
+		state = 230
+		state = 1568
+		state = 1567
+		state = 78
+		state = 1286
+		state = 84
+	}
+}
+
+#THIS DECCAT HAS BEEN MERGED WITH SWRW_novosibirsk_misc_category, PLEASE DO NOT PUT SHUKSHIN CHECKS IN HERE
+RUS_intervention_category = {
+	icon = GFX_decision_category_infiltration
+	picture = GFX_RUS_decision_political_situation
+	priority = 9
+	allowed = {
+		is_russian_unifier = yes
+	}
+	visible = {
+		has_global_flag = RUS_national_unification
+	}
+}
+
+RUS_partisans_decisions_category = {
+	icon = GFX_decision_category_infiltration
+	picture = GFX_RUS_category_insurgency
+	priority = 9
+	allowed = {
+		always = yes
+		TAG = RUS
+	}
+	visible = {
+		has_country_flag = RUS_PARTISAN_AVENGERS
+	}
+}
+
+RUS_War_Overview_Deccat = {
+	icon = GFX_decision_category_SWRW
+	picture = GFX_RUS_decision_political_situation
+	priority = 99999
+	allowed = {
+	}
+	visible = {
+		has_country_flag = RUS_SWRW_ongoing
+	}
+	visible_when_empty = yes
+	scripted_gui = war_overview
+}

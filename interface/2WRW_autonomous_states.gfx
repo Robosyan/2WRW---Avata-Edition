@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_autonomy_assr_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_assr_icon.dds"
+	}
+}

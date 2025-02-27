@@ -1,0 +1,42 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_CAU_echoes_of_kaukasia"
+		texturefile = "gfx/interface/ideas/national_spirits/CAU/idea_CAU_echoes_of_kaukasia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAU_waning_stratification"
+		texturefile = "gfx/interface/ideas/national_spirits/CAU/idea_CAU_waning_stratification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAU_the_caucasian_experiment"
+		texturefile = "gfx/interface/ideas/national_spirits/CAU/idea_CAU_the_caucasian_experiment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAU_ethnic_tensions"
+		texturefile = "gfx/interface/ideas/national_spirits/CAU/idea_CAU_ethnic_tensions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAU_administrative_unknowns"
+		texturefile = "gfx/interface/ideas/national_spirits/CAU/idea_CAU_administrative_unknowns.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAU_echoes_of_kaukasia"
+		texturefile = "gfx/interface/ideas/CAU/idea_CAU_echoes_of_kaukasia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAU_waning_stratification"
+		texturefile = "gfx/interface/ideas/CAU/idea_CAU_waning_stratification.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAU_the_caucasian_experiment"
+		texturefile = "gfx/interface/ideas/CAU/idea_CAU_the_caucasian_experiment.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAU_ethnic_tensions"
+		texturefile = "gfx/interface/ideas/CAU/idea_CAU_ethnic_tensions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CAU_administrative_unknowns"
+		texturefile = "gfx/interface/ideas/CAU/idea_CAU_administrative_unknowns.dds"
+	}
+}

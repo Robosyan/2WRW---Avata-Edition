@@ -1,0 +1,344 @@
+# D R E A M S   O F   F E D E R A T I O N
+
+# OLD OLD OLD OLD Two Factions - Reformists V Reactionaries OLD OLD OLD OLD NO LONGER IN USE
+
+# Starting Variables
+
+NOV_setup_starting_variables = {
+	set_country_flag = Reformist_Constitution
+	
+	set_variable = { NOV_Seat_num = 100 }
+	set_variable = { NOV_Upper_House_Approval = 100 }
+	
+	NOV_get_upper_house = yes
+	NOV_get_lower_house = yes
+}
+
+# Apply Duma
+
+NOV_Apply_RAPP_Duma = {
+	set_country_flag = Reformist_Constitution
+	clr_country_flag = Silovik_Constitution
+	
+	set_variable = { NOV_Seat_num = 100 }
+	NOV_get_lower_house = yes
+	NOV_get_upper_house = yes
+}
+
+NOV_Apply_SIL_Duma = {
+	set_country_flag = Silovik_Constitution
+	clr_country_flag = Reformist_Constitution
+	
+	set_variable = { NOV_Seat_num = 100 }
+	NOV_get_lower_house = yes
+	NOV_get_upper_house = yes
+}
+#
+
+NOV_save_current_values = {
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = Reformist_Constitution
+				has_country_flag = Silovik_Constitution
+			}
+		}
+		set_variable = { NOV_RAPP_upper_house_old_value = NOV_RAPP_upper_seats }
+		set_variable = { NOV_SIL_upper_house_old_value = NOV_SIL_upper_seats }
+	}
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = Reformist_Constitution
+				has_country_flag = Silovik_Constitution
+			}
+		}
+		set_variable = { NOV_RAPP_lower_house_old_value = NOV_RAPP_lower_seats }
+		set_variable = { NOV_SIL_lower_house_old_value = NOV_SIL_lower_seats }
+	}
+}
+
+NOV_calculate_new_values = {
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = Reformist_Constitution
+				has_country_flag = Silovik_Constitution
+			}
+		}
+		set_variable = { NOV_RAPP_upper_house_display = NOV_RAPP_upper_seats }
+		subtract_from_variable = { NOV_RAPP_upper_house_display = NOV_RAPP_upper_house_old_value }
+		set_variable = { NOV_SIL_upper_house_display = NOV_SIL_upper_seats }
+		subtract_from_variable = { NOV_SIL_upper_house_display = NOV_SIL_upper_house_old_value }
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = Modernist_Constitution
+			}
+		}
+		set_variable = { NOV_RAPP_lower_house_display = NOV_RAPP_lower_seats }
+		subtract_from_variable = { NOV_RAPP_lower_house_display = NOV_RAPP_lower_house_old_value }
+		set_variable = { NOV_SIL_lower_house_display = NOV_SIL_lower_seats }
+		subtract_from_variable = { NOV_SIL_lower_house_display = NOV_SIL_lower_house_old_value }
+	}
+}
+
+NOV_clear_all_values = {
+	clear_variable = NOV_RAPP_upper_house_old_value
+	clear_variable = NOV_SIL_upper_house_old_value
+	
+	clear_variable = NOV_RAPP_lower_house_old_value
+	clear_variable = NOV_SIL_lower_house_old_value
+	
+	clear_variable = NOV_RAPP_lower_house_display
+	clear_variable = NOV_SIL_lower_house_display
+	
+	clear_variable = NOV_RAPP_upper_house_display
+	clear_variable = NOV_SIL_upper_house_display
+}
+
+# Upper House
+
+NOV_get_upper_house = {
+	set_temp_variable = { NOV_RAPP_upper_house_num = 50 }
+	set_temp_variable = { NOV_SIL_upper_house_num = 50 }
+	
+	#multiply_temp_variable = { NOV_RAPP_upper_house_num = 0.50 }
+	#multiply_temp_variable = { NOV_SIL_upper_house_num = 0.50 }
+	
+	set_variable = { NOV_RAPP_upper_seats = party_popularity_100@conservatism }
+	set_variable = { NOV_SIL_upper_seats = party_popularity_100@paternalism }
+	
+	divide_variable = { NOV_RAPP_upper_seats = 2 }
+	divide_variable = { NOV_SIL_upper_seats = 2 }
+	
+	round_variable = NOV_RAPP_upper_seats
+	round_variable = NOV_SIL_upper_seats
+	
+	set_temp_variable = { NOV_Fix_Numbers = NOV_RAPP_upper_seats }
+	add_to_temp_variable = { NOV_Fix_Numbers = NOV_SIL_upper_seats }
+	
+	subtract_from_temp_variable = { NOV_Fix_Numbers = 50 }
+	multiply_temp_variable = { NOV_Fix_Numbers = -1 }
+	set_temp_variable = { NOV_check_loop = 1 }
+	for_loop_effect = {
+		end = 55
+		if = {
+			limit = {
+				check_variable = { NOV_Fix_Numbers < 0 }
+			}
+			set_temp_variable = { NOV_check_fix_numbers = 1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { NOV_Fix_Numbers > 0 }
+			}
+			set_temp_variable = { NOV_check_fix_numbers = 1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { NOV_Fix_Numbers = 0 }
+			}
+			set_temp_variable = { break = 1 }
+		}
+		
+		if = {
+			limit = {
+				check_variable = { break = 0 }
+			}
+			if = {
+				limit = {
+					check_variable = { NOV_check_loop = 1 }
+				}
+				add_to_temp_variable = { NOV_check_loop = 1 }
+				if = {
+					limit = {
+						check_variable = { NOV_check_fix_numbers = 0 }
+						check_variable = { NOV_RAPP_upper_seats > 0 }
+					}
+					add_to_variable = { NOV_RAPP_upper_seats = -1 }
+					add_to_temp_variable = { NOV_Fix_Numbers = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { NOV_check_fix_numbers = 1 }
+					}
+					add_to_variable = { NOV_RAPP_upper_seats = 1 }
+					add_to_temp_variable = { NOV_Fix_Numbers = -1 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { NOV_check_loop = 4 }
+				}
+				add_to_temp_variable = { NOV_check_loop = 1 }
+				if = {
+					limit = {
+						check_variable = { NOV_check_fix_numbers = 0 }
+						check_variable = { NOV_SIL_upper_seats > 0 }
+					}
+					add_to_variable = { NOV_SIL_upper_seats = -1 }
+					add_to_temp_variable = { NOV_Fix_Numbers = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { NOV_check_fix_numbers = 1 }
+					}
+					add_to_variable = { NOV_SIL_upper_seats = 1 }
+					add_to_temp_variable = { NOV_Fix_Numbers = -1 }
+				}
+			}
+			else = {
+				set_temp_variable = { NOV_check_loop = 1 }
+			}
+		}
+	}
+	NOV_Get_Upper_House_Array = yes
+}
+
+NOV_Get_Upper_House_Array = {
+	clear_array = NOV_Upper_House_Display
+	add_to_array = { NOV_Upper_House_Display = 0 }
+	resize_array = { NOV_Upper_House_Display = 50 }
+	
+	for_each_loop = {
+		array = NOV_Upper_House_Display
+		set_temp_variable = { temp_index = i }
+		add_to_variable = { temp_index = -0.01 }
+		if = {
+			limit = {
+				check_variable = { NOV_RAPP_upper_seats > temp_index }
+			}
+			set_variable = { NOV_Upper_House_Display^i = 1 }
+		}
+		else_if = {
+			limit = {
+				set_temp_variable = { NOV_SIL_Gui_temp = NOV_RAPP_upper_seats }
+				add_to_temp_variable = { NOV_SIL_Gui_temp = NOV_SIL_upper_seats }
+				check_variable = { NOV_SIL_Gui_temp > temp_index }
+			}
+			set_variable = { NOV_Upper_House_Display^i = 2 }
+		}
+	}
+}
+
+# Lower House
+
+NOV_get_lower_house = {
+	set_temp_variable = { NOV_seat_to_distribute = NOV_Seat_num }
+	divide_temp_variable = { NOV_seat_to_distribute = 100 }
+	
+	set_variable = { NOV_RAPP_lower_seats = party_popularity_100@conservatism }
+	set_variable = { NOV_SIL_lower_seats = party_popularity_100@paternalism }
+	
+	round_variable = NOV_RAPP_lower_seats
+	round_variable = NOV_SIL_lower_seats
+	
+	#
+	
+	set_temp_variable = { NOV_Fix_Numbers = NOV_RAPP_lower_seats }
+	add_to_temp_variable = { NOV_Fix_Numbers = NOV_SIL_lower_seats }
+	
+	subtract_from_temp_variable = { NOV_Fix_Numbers = NOV_Seat_num }
+	multiply_temp_variable = { NOV_Fix_Numbers = -1 }
+	set_temp_variable = { NOV_check_loop = 1 }
+	for_loop_effect = {
+		end = 110
+		if = {
+			limit = {
+				check_variable = { NOV_Fix_Numbers < 0 }
+			}
+			set_temp_variable = { NOV_check_fix_numbers = 0 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { NOV_Fix_Numbers > 0 }
+			}
+			set_temp_variable = { NOV_check_fix_numbers = 1 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { NOV_Fix_Numbers = 0 }
+			}
+			set_temp_variable = { break = 1 }
+		}
+		
+		if = {
+			limit = { #fuck you johan lmao
+				check_variable = { break = 0 }
+			}
+			if = {
+				limit = {
+					check_variable = { NOV_check_loop = 1 }
+				}
+				add_to_temp_variable = { NOV_check_loop = 1 }
+				if = {
+					limit = {
+						check_variable = { NOV_check_fix_numbers = 0 }
+						check_variable = { NOV_RAPP_upper_seats > 0 }
+					}
+					add_to_variable = { NOV_RAPP_lower_seats = -1 }
+					add_to_temp_variable = { NOV_Fix_Numbers = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { NOV_check_fix_numbers = 1 }
+					}
+					add_to_variable = { NOV_RAPP_lower_seats = 1 }
+					add_to_temp_variable = { NOV_Fix_Numbers = -1 }
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { NOV_check_loop = 2 }
+				}
+				add_to_temp_variable = { NOV_check_loop = 1 }
+				if = {
+					limit = {
+						check_variable = { NOV_check_fix_numbers = 0 }
+						check_variable = { NOV_SIL_lower_seats > 0 }
+					}
+					add_to_variable = { NOV_SIL_lower_seats = -1 }
+					add_to_temp_variable = { NOV_Fix_Numbers = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { NOV_check_fix_numbers = 1 }
+					}
+					add_to_variable = { NOV_SIL_lower_seats = 1 }
+					add_to_temp_variable = { NOV_Fix_Numbers = -1 }
+				}
+			}
+			else = {
+				set_temp_variable = { NOV_check_loop = 1 }
+			}
+		}
+	}
+	NOV_Get_Lower_House_Array = yes
+}
+
+NOV_Get_Lower_House_Array = {
+	clear_array = NOV_Lower_House_Display
+	add_to_array = { NOV_Lower_House_Display = 0 }
+	resize_array = { NOV_Lower_House_Display = NOV_Seat_num }
+	for_each_loop = {
+		array = NOV_Lower_House_Display
+		set_temp_variable = { temp_index = i }
+		add_to_variable = { temp_index = -0.01 }
+		if = {
+			limit = {
+				check_variable = { NOV_RAPP_lower_seats > temp_index }
+			}
+			set_variable = { NOV_Lower_House_Display^i = 1 }
+		}
+		else_if = {
+			limit = {
+				set_temp_variable = { NOV_SIL_Gui_temp = NOV_RAPP_lower_seats }
+				add_to_temp_variable = { NOV_SIL_Gui_temp = NOV_SIL_lower_seats }
+				check_variable = { NOV_SIL_Gui_temp > temp_index }
+			}
+			set_variable = { NOV_Lower_House_Display^i = 2 }
+		}
+	}
+}

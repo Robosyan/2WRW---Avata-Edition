@@ -1,0 +1,86 @@
+ideas = {
+	country = {
+		MOS_language_problem = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MOS_language_problem" }
+			picture = MOS_language_problem
+			allowed = { always = no }
+			removal_cost = -1
+			
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.3
+			}
+		}
+		
+		MOS_rural_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MOS_rural_state" }
+			removal_cost = -1
+			picture = MOS_rural_state
+			
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				conscription_factor = -0.2
+			}
+		}
+		
+		MOS_language_problem_russia = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MOS_language_problem_russia" }
+			removal_cost = -1
+			picture = MOS_language_problem_russia
+			
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.3
+			}
+		}
+		
+		MOS_war_torn_region = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MOS_war_torn_region" }
+			removal_cost = -1
+			picture = MOS_war_torn_region
+			
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			modifier = {
+				consumer_goods_factor = 0.35
+				local_resources_factor = -0.20
+				industrial_capacity_factory = -0.5
+				production_speed_buildings_factor = -0.5
+			}
+		}
+		
+		MOS_rural_recovery_act = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MOS_rural_recovery_act" }
+			removal_cost = -1
+			picture = VIN_agrarian_society
+			
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			modifier = {
+				monthly_population = 0.1
+				local_resources_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		MOS_urban_reconstruction = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea MOS_war_torn_region" }
+			removal_cost = -1
+			picture = VIN_agrarian_society
+			
+			allowed = { always = no }
+			cancel = { has_country_flag = RUS_cancel_all_ideas }
+			modifier = {
+				monthly_population = 0.1
+				local_resources_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+	}
+}

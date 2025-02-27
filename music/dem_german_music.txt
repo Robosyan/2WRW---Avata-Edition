@@ -1,0 +1,165 @@
+music_station = dem_german_music
+
+#########################
+### Radio Berlin ########
+#########################
+
+music = {
+	song = Teufelslied
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Alte_Kameraden
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Panzerlied
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Alexandermarsch
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Wir_Sind_Des_Geyers_Schwarzer_Haufen
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Koniggratzer_Marsch
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Die_Grenzwacht_Hielt_Im_Osten
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Du_Musst_Zur_Bundeswehr
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Oh_Du_Schoner_Westerwald
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Ich_bin_Soldat
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}

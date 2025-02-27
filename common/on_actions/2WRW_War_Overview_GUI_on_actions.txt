@@ -1,0 +1,49 @@
+on_actions = {
+	on_weekly = {
+		#This is so all lands captured in SWRW is always owned by Russia alone
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = RUS_national_unification
+					RUS = { has_war_with = GER }
+				}
+				every_state = {
+					limit = {
+						AND = {
+							OR = {
+								is_core_of = MOS
+								is_core_of = UKR
+								is_core_of = CAU
+								is_core_of = OST
+								is_core_of = NOR
+								is_core_of = FIN
+								AND = {
+									is_core_of = GER
+									state = 196
+									state = 137
+									state = 1532
+									state = 195
+								}
+							}
+							NOT = {  
+								OR = {
+									is_fully_controlled_by = MOS
+									is_fully_controlled_by = UKR
+									is_fully_controlled_by = CAU
+									is_fully_controlled_by = OST
+									is_fully_controlled_by = NOR
+									is_fully_controlled_by = FIN
+									is_fully_controlled_by = GER
+								}
+							}
+							OR = {
+								is_fully_controlled_by = IRC
+							}
+						}
+					}
+					set_state_controller_to = RUS
+				}
+			}
+		}
+	}
+}

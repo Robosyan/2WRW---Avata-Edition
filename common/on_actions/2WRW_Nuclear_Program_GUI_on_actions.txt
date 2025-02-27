@@ -1,0 +1,52 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			if = {
+				limit = { has_country_flag = RUS_started_nukes }
+				SWRWUpdateCosts = yes
+				if = {
+					limit = {
+						check_variable = { RUSNukesMonthlyProgress > 5 }
+					}
+					subtract_from_variable = { RUSNukesMonthlyProgress = 0.5 }
+				}
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								has_country_flag = RUS_nuclear_program_phase_1
+								check_variable = { RUSNukesTheoryProgress > 99.99 }
+							}
+							AND = {
+								has_country_flag = RUS_nuclear_program_phase_2
+								check_variable = { RUSNukesMatsProgress > 99.99 }
+							}
+							AND = {
+								has_country_flag = RUS_nuclear_program_phase_3
+								check_variable = { RUSNukesInfraProgress > 99.99 }
+							}
+							AND = {
+								has_country_flag = RUS_nuclear_program_phase_4
+								check_variable = { RUSNukesRefineProgress > 99.99 }
+							}
+						}
+					}
+					SWRWNuclearProgramAdvance = yes
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = { has_country_flag = RUS_started_nukes }
+				clamp_variable = { var = RUSNukesTheoryProgress min = 0 max = 100 }
+				clamp_variable = { var = RUSNukesMatsProgress min = 0 max = 100 }
+				clamp_variable = { var = RUSNukesInfraProgress min = 0 max = 100 }
+				clamp_variable = { var = RUSNukesRefineProgress min = 0 max = 100 }
+				clamp_variable = { var = RUSNukesWeaponsProgress min = 0 max = 100 }
+				SWRWNuclearUpdate = yes
+			}
+		}
+	}
+}

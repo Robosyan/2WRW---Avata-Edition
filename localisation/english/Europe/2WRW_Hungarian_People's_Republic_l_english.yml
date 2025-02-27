@@ -1,0 +1,67 @@
+﻿l_english:
+
+ HUN_Imre_Nagy:0 "Imre Nagy"
+ POLITICS_Imre_Nagy_DESC:0 "Imre Nagy has been fighting for the Hungarian proletariat nearly all his life. Attending a gymnasium starting in 1907, by 1912 he had been kicked out due to poor grades. Choosing to embrace his working class life, he apprenticed for a locksmith before moving to work in a factory in northern Hungary. With the outbreak of the Great War, he was conscripted and was injured in battle against the Russians. Taken prisoner, he was shipped off to Siberia. There he became radicalized by imprisoned Soviet dissidents, and upon his return to Hungary, with the aid of the Cheka, he became a key figure in the Hungarian Communist Party.\n\nForced to flee Hungary before the war, he witnessed the destruction of the Soviet Union at the hands of the German Reich from within the halls of the Kremlin. Escaping the decimation of the Russian plains, he snuck his way back into his home country to try and salvage whatever remnants of the partisan movement remained. Forced to work in the shadows for the ensuing decades, he gathered arms, men, and nurtured his burning hatred for the fascist beasts destroying the workers of his country.\n\nThe chaos following the Second West Russian War was just the spark he needed. He has sent the word out: the Hungarian revolution is at hand. Workers and peasants flock to his cause; the old revolutionary has one last chance to free the chains of his country."
+
+ HUS_progressivism:0 "Kingdom of Hungary"
+ HUS_progressivism_DEF:0 "the Kingdom of Hungary"
+ HUS_progressivism_ADJ:0 "Hungarian"
+ HUS_fascism:0 "Kingdom of Hungary"
+ HUS_fascism_DEF:0 "the Kingdom of Hungary"
+ HUS_liberalism:0 "Republic of Hungary"
+ HUS_liberalism_DEF:0 "the Republic of Hungary"
+ HUS_conservatism:0 "Hungarian Republic"
+ HUS_conservatism_DEF:0 "the Second Hungarian Republic"
+ HUS_paternalism:0 "Kingdom of Hungary"
+ HUS_paternalism_DEF:0 "the Kingdom of Hungary"
+ HUS_despotism:0 "Kingdom of Hungary"
+ HUS_despotism_DEF:0 "the Kingdom of Hungary"
+ HUS_communist:0 "Hungarian People's Republic"
+ HUS_communist_DEF:0 "the Hungarian People's Republic"
+ HUS_socialist:0 "Hungarian People's Republic"
+ HUS_socialist_DEF:0 "the Hungarian People's Republic"
+ HUS_national_socialism:0 "Hungary"
+ HUS_national_socialism_DEF:0 "Hungary"
+ HUS_ultranationalism:0 "Hungary"
+ HUS_ultranationalism_DEF:0 "Hungary"
+ HUS_fascism_ADJ:0 "Hungarian"
+ HUS_liberalism_ADJ:0 "Hungarian"
+ HUS_conservatism_ADJ:0 "Hungarian"
+ HUS_paternalism_ADJ:0 "Hungarian"
+ HUS_communist_ADJ:0 "Hungarian"
+ HUS_despotism_ADJ:0 "Hungarian"
+ HUS_socialist_ADJ:0 "Hungarian"
+ HUS_ultranationalism_ADJ:0 "Hungarian"
+ HUS_national_socialism_ADJ:0 "Hungarian"
+
+ HUS_communist_party:0 "KMP"
+ HUS_communist_party_long:0 "Kommunisták Magyarországi Pártja"
+
+ HUS_socialist_party:0 "MSZMP"
+ HUS_socialist_party_long:0 "Magyarországi Szocialista Munkáspárt"
+
+ HUS_progressivism_party:0 "MSZDP"
+ HUS_progressivism_party_long:0 "Magyarországi Szociáldemokrata Párt"
+
+ HUS_liberalism_party:0 "PDP"
+ HUS_liberalism_party_long:0 "Polgári Demokrata Párt"
+
+
+ HUS_conservatism_party:0 "FKgP"
+ HUS_conservatism_party_long:0 "Független Kisgazda-, Földmunkás- és Polgári Párt"
+
+ HUS_paternalism_party:0 "MÉP - Horthy Wing"
+ HUS_paternalism_party_long:0 "Magyar Élet Pártja - Horthy Wing"
+
+ HUS_despotism_party:0 "MKH"
+ HUS_despotism_party_long:0 "Magyar Királyi Honvédség"
+
+ HUS_fascism_party:0 "MÉP - Imrédy Wing"
+ HUS_fascism_party_long:0 "Magyar Élet Pártja - Imrédy Wing"
+
+ HUS_national_socialism_party:0 "Volksbund"
+ HUS_national_socialism_party_long:0 "Volksbund der Deutschen in Ungarn"
+
+ HUS_ultranationalism_party:0 "NYKP"
+ HUS_ultranationalism_party_long:0 "Nyilaskeresztes Párt - Hungarista Mozgalom"
+

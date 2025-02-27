@@ -1,0 +1,266 @@
+JAP_MDG_Rename = { #Japanises States and Province Names in Madagascar
+	hidden_effect = {
+		set_province_name = { id = 13705 name = VICTORY_POINTS_13706_ijn }
+		945 = { set_state_name = STATE_945_ijn }
+		set_province_name = { id = 15944 name = VICTORY_POINTS_15944_ijn }
+		945 = { set_state_name = STATE_945_ijn }
+		1861 = { set_state_name = STATE_1861_ijn }
+		set_province_name = { id = 15936 name = VICTORY_POINTS_15936_ijn }
+		1042 = { set_state_name = STATE_1042_ijn }
+		set_province_name = { id = 1879 name = VICTORY_POINTS_1879_ijn }
+		1878 = { set_state_name = STATE_1878_ijn }
+		set_province_name = { id = 15931 name = VICTORY_POINTS_15931_ijn }
+		946 = { set_state_name = STATE_946_ijn }
+		1879 = { set_state_name = STATE_1879_ijn }
+		set_province_name = { id = 15948 name = VICTORY_POINTS_15948_ijn }
+		944 = { set_state_name = STATE_944_ijn }
+		1859 = { set_state_name = STATE_1859_ijn }
+		set_province_name = { id = 15920 name = VICTORY_POINTS_15920_ijn }
+		1857 = { set_state_name = STATE_1857_ijn }
+		947 = { set_state_name = STATE_947_ijn }
+		543 = { set_state_name = STATE_543_ijn }
+		set_province_name = { id = 15924 name = VICTORY_POINTS_15924_ijn }
+		1862 = { set_state_name = STATE_1862_ijn }
+		1043 = { set_state_name = STATE_1043_ijn }
+		1877 = { set_state_name = STATE_1877_ijn }
+		set_province_name = { id = 13764 name = VICTORY_POINTS_13764_ijn }
+		1858 = { set_state_name = STATE_1858_ijn }
+		set_province_name = { id = 15967 name = VICTORY_POINTS_15967_ijn }
+		set_province_name = { id = 15921 name = VICTORY_POINTS_15921_ijn }
+		set_province_name = { id = 15914 name = VICTORY_POINTS_15914_ijn }
+		set_province_name = { id = 15916 name = VICTORY_POINTS_15916_ijn }
+		set_province_name = { id = 15955 name = VICTORY_POINTS_15955_ijn }
+		set_province_name = { id = 13728 name = VICTORY_POINTS_13728_ijn }
+		set_province_name = { id = 13576 name = VICTORY_POINTS_13576_ijn }
+		set_province_name = { id = 15960 name = VICTORY_POINTS_15960_ijn }
+		set_province_name = { id = 13657 name = VICTORY_POINTS_13657_ijn }
+		set_province_name = { id = 2200 name = VICTORY_POINTS_2200_ijn }
+		set_province_name = { id = 13696 name = VICTORY_POINTS_13696_ijn }
+		set_province_name = { id = 13633 name = VICTORY_POINTS_13633_ijn }
+		set_variable = { 1860.nationality = 62 } #lol?
+		MAD = { set_capital = { state = 945 } }
+		leave_GER_sphere = yes
+		
+	} 
+}
+
+JAP_MAR_Seizure = {
+	hidden_effect = {
+		706 = { set_state_name = STATE_706_ijn }
+		set_province_name = { id = 13017 name = VICTORY_POINTS_13017_ijn }
+		707 = { set_state_name = STATE_707_ijn }
+		set_province_name = { id = 13018 name = VICTORY_POINTS_13018_ijn }
+		JAP = {
+			set_state_owner = 706
+			set_state_owner = 707
+			set_state_controller = 706
+			set_state_controller = 707
+		}
+		GER = {
+			set_temp_variable = { SeaZone_ID = 6 } # 6; Indian Ocean
+			Cold_War_GUI_PowerProjection_RemoveSeaZone = yes
+		}
+	}
+}
+
+JAP_Colonial_Restructuring = {
+	custom_effect_tooltip = JAP_MAR_Seizure_tt1 # Swapped the two tt's arround so they would display in the correct order (see events)
+	hidden_effect = {
+		JAP = {
+			add_to_faction = MAD
+			random_unit_leader = {
+				limit = {
+					has_id = 2154
+				}
+				set_nationality = MAD
+			}
+		}
+		XXX = {
+			MAD_Keiu_Matsuo = {
+				set_nationality = MAD
+			}	
+		}
+		MAD = {
+			set_politics = {
+				ruling_party = despotism
+				elections_allowed = no
+			}
+			set_party_name = {
+				ideology = despotism
+				long_name = "Dai-Nippon Teikoku - Kaigun"
+				name = "Dai-Nippon Teikoku - Kaigun"
+			}
+			kill_country_leader = yes
+			remove_ideas = Pakt_Autonomous_Reichskommissariat
+			remove_ideas = Pakt_Military_Authority
+			remove_ideas = Pakt_Protektorat
+			remove_ideas = Pakt_Mitstreiter
+			remove_ideas = Pakt_Integrated_Reichskommissariat
+			add_ideas = Sphere_Imp_Protectorate
+			econ_join_sphere_JAP = yes
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+			set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Military_Directed }
+			econ_type_change = yes
+			econ_subtype_change = yes
+			set_popularities = {
+				despotism = 50
+				fascism = 10
+				national_socialism = 20
+				paternalism = 10
+				socialist = 0
+				communist = 10
+			}
+			set_cosmetic_tag = IJN_Administration
+			if = {
+				limit = { MAD = { has_war_with = RUS } }
+				MAD = { white_peace = RUS }
+			}
+			if = {
+				limit = { 
+					OR = { 
+						is_in_faction_with = RUS
+						is_subject_of = RUS
+					}
+					has_war_with = MAD
+				}
+				MAD = { white_peace = ROOT }
+			}
+			promote_character = MAD_Keiu_Matsuo
+		}
+		every_state = {
+			limit = { is_owned_by = MAD }
+			add_core_of = MAD
+		}
+	}
+}
+
+leave_zollverein = {
+	custom_effect_tooltip = leave_zollverein_tt
+	hidden_effect = {
+		remove_ideas = SGR_zollverein_basic
+		set_variable = { ZV_pp_gain = 0 }
+		set_variable = { ZV_production_gain = 0 }
+		set_variable = { ZV_consumer_goods = 0 }
+		GER = { remove_from_array = { ZV_members = PREV } }
+		set_variable = { ZollvereinPayments = 0 }
+		remove_dynamic_modifier = { modifier = GER_SGR_ZV_member_dynamic_modifier }
+	}
+	econ_leave_sphere = yes
+	hidden_effect = {
+		GER = { check_zollverein_boni = yes }
+	}
+}
+
+leave_GER_sphere = {
+	if = {
+		limit = { has_global_flag = german_civil_war_speervic }
+		leave_zollverein = yes
+	}
+	else = {
+		econ_leave_sphere = yes
+	}
+}
+
+NOR_Milorg_Coup = {
+	NOR = {
+		set_politics = {
+		ruling_party = paternalism
+		elections_allowed = no
+		}
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = conservatism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = socialist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.05
+		}
+		leave_faction = yes
+		set_variable = { TNO_economy_type = token:Econ_Type_Capitalism }
+		set_temp_variable = { TNO_economy_subtype_temp = 0 }
+		econ_subtype_change = yes
+		remove_faction_status = yes
+		set_cosmetic_tag = NOR_milorg
+		set_country_flag = Milorg_coup_happen
+		if = {
+			limit = {
+				has_war_with = RUS
+			}
+			white_peace = RUS
+		}
+	}
+	GER = {
+		set_autonomy = {
+			target = NOR
+			autonomy_state = autonomy_free
+		}
+		set_temp_variable = { SeaZone_ID = 4 } # 4; North Sea
+		Cold_War_GUI_PowerProjection_RemoveSeaZone = yes
+	}
+}
+
+GER_begin_pakt_collapse = {
+	HOL_begin_independence = yes
+	if = { #making sure norway fucks off if germany offers full surrender before ostland caps
+		limit = {
+			NOT = {
+				NOR = { has_country_flag = fuck_the_pakt }
+			}
+		}
+		NOR = {
+			country_event = { id = pakt_collapse.7 days = 7 }
+			set_country_flag = fuck_the_pakt
+		}
+	}
+	every_country = {
+		limit = {
+			OR = {
+				has_idea = Pakt_Bundnispartner
+				has_idea = Pakt_Mitstreiter
+				has_idea = Pakt_Marionettenstaat
+			}
+			NOT = { has_country_flag = fuck_the_pakt }
+		}
+		add_to_array = {
+			array = GER.pakt_members
+			value = THIS.id
+		}
+	}
+	GER = {
+		country_event = { id = pakt_collapse.13 days = 14 }
+		country_event = { id = pakt_collapse.17 days = 7 }
+	}
+	if = {
+		limit = {
+			ENG = {
+				is_in_faction_with = GER
+				NOT = { has_government = national_socialism }
+			}
+		}
+		ENG = {
+			country_event = { id = pakt_collapse.15 days = 6 }
+		}
+	}
+	IRE = {
+		country_event = { id = pakt_collapse.14 days = 6 }
+	}
+	ULS = {
+		country_event = { id = pakt_collapse.15 days = 6 }
+	}
+}

@@ -1,0 +1,38 @@
+﻿l_english:
+ # Characters
+ GEO_Zviad_Gamsakhurdia: "Zviad Gamsakhurdia"
+
+ # Character descs
+ POLITICS_ZVIAD_GAMSAKHURDIA_DESC: "Born in 1939 to a distinguished Georgian family, Zviad Gamsakhurdia can only recount small slivers of memories of life before the German invasion of his homeland. The rest are all stories recounted by his father, one of the most well known Georgian writers of this century. It is said it was his father's works that instilled in him the courage to keep dreaming, to keep fighting for a free Georgia.\n\nDuring Josias' long reign of terror he would do his best to disrupt the Nazi resource machine; organize strikes, steal supplies and organize raids on Nazi convoys. This painted a large target on his back, yet also made him popular amongst the common Georgian folk. So popular in fact, that both times he was arrested, his own people without his guidance managed to break him out of the labor camp he was sent to.\n\nHe might have been a hero back in those days, but Gamsakhurdia's policies regarding Georgia's vast ethnic minority groups have been dubious at best, with some even wondering: how much freedom and how many rights does it take to stabilize a country?\n\nGamsakhurdia has a herculean task ahead of him and in order to complete it he must toe a very fine line.\n\nFor if he tips too much to one side, his reign will be at an end."
+
+ # Political parties
+
+ GEO_RUS_paternalism_party: "MM-TS"
+ GEO_RUS_paternalism_party_long: "Mrgvali Magida - Tavisupali Sakartvelo"
+ GEO_RUS_conservatism_party: "MB"
+ GEO_RUS_conservatism_party_long: "Mshvidobis Blok'i"
+ GEO_RUS_liberalism_party: "TB"
+ GEO_RUS_liberalism_party_long: "Tavisuplebis Blok'i"
+ GEO_RUS_progressivism_party: "SSDP"
+ GEO_RUS_progressivism_party_long: "Sakartvelos Sotsial-Demok'rat'iuli P'art'ia"
+ GEO_RUS_communist_party: "KPS"
+ GEO_RUS_communist_party_long: "Sakartvelos K'omunist'uri P'art'ia"
+ GEO_RUS_socialist_party: "KPS"
+ GEO_RUS_socialist_party_long: "Sakartvelos K'omunist'uri P'art'ia"
+
+ # Cosmetic tags
+
+ GEO_free_democratic: "Free Georgia"
+ GEO_free_democratic_ADJ: "Georgian"
+ GEO_free_democratic_DEF: "Free Georgia"
+
+ # National spirits
+
+ GEO_the_whispering_mountains: "The Whispering Mountains"
+ GEO_the_whispering_mountains_desc: "Deep within the Caucasus mountains of Georgia lie many ethnic minority groups, the largest of which the Abkhaz and Ossetian people. Many of these people, though they struggled together with the Kartvelians against Josias' tyrannical rule; now dream of their own state. The Georgian government has met these dreams and ideas with fierce opposition; repressing minority rights and letting Georgian paramilitaries run rampant without punishment in these regions. The people there are preparing for something big, and the silence has been deafening as of late.\n\n§RShould the government experience a prolonged period of political instability, these minority groups will likely attempt to carve out their own statelets.§!"
+
+ GEO_the_smell_of_blood: "There Will Be Blood"
+ GEO_the_smell_of_blood_desc: "When the spoils of the Second World War were divided among the Axis powers, Turkey was granted the region of Batumi, among other holdings. Now that Georgia is no longer chained down by the eagle of fascism, the tyranny of Josias; many are preparing for war, as they are certain to have the backing of the Russian bear should they seek to reclaim their territory."
+
+ GEO_tavisupali_sakartvelo: "'Tavisupali' Sakartvelo"
+ GEO_tavisupali_sakartvelo_desc: "Tavisupali Sakartvelo means 'Free Georgia' and is the name of the ruling party. But the name is ironic at best given its repression of minority rights, free speech, right of assembly and right of protest. President Gamsakhurdia feels that taking away these fundamental rights that set democracy apart from other, more sinister ideologies are merely 'emergency measures' until the current political and ethnic crises have been resolved.\n\nFor the people though, they have seen their hero turn on them, and the minority groups in the country are even less amused. There is one thing on everyone's mind though, Abkhaz, Ossetian and Kartvelian alike: what if the situation is not temporary? What if this is the new normal?\nThe more people think this, the more people begin to get disillusioned with the lie they live in; the more will fight for a truly free Georgia."

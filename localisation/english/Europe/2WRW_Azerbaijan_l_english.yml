@@ -1,0 +1,34 @@
+﻿l_english:
+ # Characters
+ AZR_heydar_aliyev: "Heydar Aliyev"
+
+ # Character descs
+
+ POLITICS_HEYDAR_ALIYEV_DESC: "There is much to say about Heydar Aliyev, for he is a man with many faces. Before the war, he studied architecture, then had an interest in joining the Azerbaijani security apparatus, though his ambitions were cut short by the Second World war.\n\nDuring his time in occupied Azerbaijan, he did his best to be a thorn in the side to Josias and his goons: from organizing strikes and uprisings to stealing from Nazi convoys and leading the local SS troops on wild goose chases.\n\nDuring the Second West Russian war, he organized the largest scale revolt seen in that conflict, in Baku. It was after that, and after Russian troops captured the city that he could start building his influence.\n\nCozying up not only with the local population, but assisting the Russian military in pacifying the region earned him quite a few favors with both parties.\n\nindeed, there is much to say about Heydar Aliyev and indeed; he does have many faces. But, they all have one thing in common: the lust for power. All his life, he dreamed of being in a position where he could influence an entire nation. Now that he has reached this position it is time for him to make good on his promises and craft a new Azerbaijan from the ashes of the old - a better Azerbaijan."
+
+ # Political parties
+
+ AZR_RUS_paternalism_party: "YAP"
+ AZR_RUS_paternalism_party_long: "Yeni Azerbaycan Partiyası"
+ AZR_RUS_progressivism_party: "Hümmet"
+ AZR_RUS_progressivism_party_long: "Hümmet"
+ AZR_RUS_communist_party: "APK"
+ AZR_RUS_communist_party_long: "Azerbaycan Kommunist Partiyası"
+ AZR_RUS_socialist_party: "AXC"
+ AZR_RUS_socialist_party_long: "Azerbaycan Xalq Cebhesi"
+
+ # Cosmetic tags
+
+ AZR_free_democratic: "Azerbaijan"
+ AZR_free_democratic_ADJ: "Azerbaijani"
+ AZR_free_democratic_DEF: "the Republic of Azerbaijan"
+
+ # National spirits
+
+ AZR_black_gold: "Black Gold"
+ AZR_black_gold_desc: "To most countries around the Caspian Sea, black gold means caviar; the expensive sturgeon eggs that sell for an arm and a limb to the rich elite in the West and East alike. To Azerbaijan however, it refers to its vast deposits of natural oil. With the oil crisis of the early seventies fresh in mind, it would not be hard for an oil producing country like Azerbaijan to find buyers. "
+ AZR_nagorno_karabakh_issue: "The Nagorno-Karabakh Issue"
+ AZR_nagorno_karabakh_issue_desc: "Nagorno-Karabakh has always been a troublesome region; Azerbaijani on paper but Armenian in reality. With most of the Azerbaijani population having been displaced during the reign of Josias in favor of keeping the Caucasian ethnicities separated, tensions in the area have been at an all time high. Azerbaijan would like to get the region off their hands, if the de jure Armenian state of Nakhchivan return to Azerbaijani rule. Needless to say, the Armenians in the region are not exactly thrilled about that either.\n\n§RIt is imperative a solution to the problem be found momentarily, lest the situation deteriorate into a full-scale conflict.§!"
+ AZR_heydarism: "Heydarism"
+ AZR_heydarism_desc: "Though Heydar Aliyev is a divisive figure outside Azerbaijan, in Azerbaijan he is widely hailed as a hero of the people, with a Hitler-like cult of personality behind him. But while most of the populace cheers him on like the next messiah, others are starting to wonder what effect this cult of personality, aptly named 'Heydarism' is going to have on the nation's democracy in the long run. Some are even claiming the elections were tampered with, whether they accuse Heydar himself or Russia, due to his collaborative nature with the Russians.\n\nThese people are far in the minority though, yet it is still strange no agitators have been around spewing their conspiracy theories for long is it not? Maybe it is better to accept that Heydar is improving the country and crafting a new Azerbaijan..."
+

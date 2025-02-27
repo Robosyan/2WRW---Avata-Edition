@@ -1,0 +1,142 @@
+### NATIONALITIES ###
+
+on_actions = {
+	on_startup = {
+		effect = {
+			NOV = {
+				add_to_array = { MCW_russian_states = 1421.id }
+				add_to_array = { MCW_russian_states = 208.id }
+				add_to_array = { MCW_russian_states = 264.id }
+				add_to_array = { MCW_russian_states = 257.id }
+				add_to_array = { MCW_russian_states = 1434.id }
+				add_to_array = { MCW_russian_states = 220.id }
+				add_to_array = { MCW_russian_states = 255.id }
+				add_to_array = { MCW_russian_states = 1314.id }
+				add_to_array = { MCW_russian_states = 247.id }
+				add_to_array = { MCW_russian_states = 246.id }
+				add_to_array = { MCW_russian_states = 1475.id }
+				add_to_array = { MCW_russian_states = 238.id }
+				add_to_array = { MCW_russian_states = 253.id }
+				add_to_array = { MCW_russian_states = 248.id }
+				add_to_array = { MCW_russian_states = 1442.id }
+				add_to_array = { MCW_russian_states = 1478.id }
+				add_to_array = { MCW_russian_states = 242.id }
+				add_to_array = { MCW_russian_states = 223.id }
+				add_to_array = { MCW_russian_states = 1444.id }
+				add_to_array = { MCW_russian_states = 1476.id }
+				add_to_array = { MCW_russian_states = 219.id }
+				add_to_array = { MCW_russian_states = 401.id }
+				add_to_array = { MCW_russian_states = 222.id }
+				add_to_array = { MCW_russian_states = 1435.id }
+				add_to_array = { MCW_russian_states = 258.id }
+				add_to_array = { MCW_russian_states = 254.id }
+				add_to_array = { MCW_russian_states = 263.id }
+				add_to_array = { MCW_russian_states = 1436.id }
+				add_to_array = { MCW_russian_states = 240.id }
+				add_to_array = { MCW_russian_states = 260.id }
+				add_to_array = { MCW_russian_states = 245.id }
+				add_to_array = { MCW_russian_states = 224.id }
+				add_to_array = { MCW_russian_states = 265.id }
+				add_to_array = { MCW_russian_states = 237.id } # i = 33
+			
+				### GERMAN MUSCOVITE STATES ###
+				
+				add_to_array = { MCW_german_states = 209.id }
+				add_to_array = { MCW_german_states = 1443.id }
+				add_to_array = { MCW_german_states = 210.id }
+				add_to_array = { MCW_german_states = 1441.id }
+				add_to_array = { MCW_german_states = 239.id }
+				add_to_array = { MCW_german_states = 243.id }
+				add_to_array = { MCW_german_states = 244.id }
+				add_to_array = { MCW_german_states = 236.id }
+				add_to_array = { MCW_german_states = 243.id }
+				add_to_array = { MCW_german_states = 217.id }
+				add_to_array = { MCW_german_states = 239.id } # i = 10
+				
+				### PETROGRAD ###
+				
+				add_to_array = { PET_states = 195.id }
+				
+				### UKRAINIAN STATES ###
+
+				add_to_array = { UKR_states = 218.id }
+				add_to_array = { UKR_states = 228.id }
+				add_to_array = { UKR_states = 227.id }
+				add_to_array = { UKR_states = 200.id }
+				add_to_array = { UKR_states = 196.id }
+				add_to_array = { UKR_states = 197.id } 
+				add_to_array = { UKR_states = 226.id }
+				add_to_array = { UKR_states = 1426.id }
+				add_to_array = { UKR_states = 221.id }
+				add_to_array = { UKR_states = 259.id }
+				add_to_array = { UKR_states = 225.id }
+				add_to_array = { UKR_states = 202.id }
+				add_to_array = { UKR_states = 1428.id }
+				add_to_array = { UKR_states = 773.id }
+				add_to_array = { UKR_states = 199.id }
+				add_to_array = { UKR_states = 93.id }
+				add_to_array = { UKR_states = 201.id }	
+				add_to_array = { UKR_states = 1430.id }	
+				add_to_array = { UKR_states = 1427.id } # i = 20
+				
+				### CRIMEA ###
+				
+				add_to_array = { CRI_states = 137.id }	
+				add_to_array = { CRI_states = 1532.id }
+				
+				### KAUKASUS ###
+				
+				add_to_array = { CAU_states = 1554.id }
+				add_to_array = { CAU_states = 231.id }
+				add_to_array = { CAU_states = 1556.id }
+				add_to_array = { CAU_states = 1558.id }
+				add_to_array = { CAU_states = 223.id }
+				add_to_array = { CAU_states = 232.id }
+				add_to_array = { CAU_states = 1564.id }
+				add_to_array = { CAU_states = 235.id }
+				add_to_array = { CAU_states = 1560.id }
+				add_to_array = { CAU_states = 1561.id }
+				add_to_array = { CAU_states = 1559.id }
+				add_to_array = { CAU_states = 234.id } # i = 15
+				
+				### BELARUS ###
+				
+				add_to_array = { BLR_states = 1429.id }
+				add_to_array = { BLR_states = 1431.id }
+				add_to_array = { BLR_states = 241.id }
+				add_to_array = { BLR_states = 1407.id }
+				add_to_array = { BLR_states = 204.id }
+				add_to_array = { BLR_states = 206.id }
+				add_to_array = { BLR_states = 194.id }
+				add_to_array = { BLR_states = 95.id }
+				add_to_array = { BLR_states = 1406.id }
+				add_to_array = { BLR_states = 1403.id }
+				add_to_array = { BLR_states = 1405.id }
+				add_to_array = { BLR_states = 207.id }
+				add_to_array = { BLR_states = 96.id } # i = 12
+				
+				### BALTIC STATES ###
+				
+				add_to_array = { BLT_states = 11.id }
+				add_to_array = { BLT_states = 1401.id }
+				add_to_array = { BLT_states = 189.id }
+				add_to_array = { BLT_states = 190.id }
+				add_to_array = { BLT_states = 1339.id }
+				add_to_array = { BLT_states = 140.id }
+				add_to_array = { BLT_states = 13.id }
+				add_to_array = { BLT_states = 191.id }
+				add_to_array = { BLT_states = 1395.id }
+				add_to_array = { BLT_states = 1396.id }
+				add_to_array = { BLT_states = 1397.id }
+				add_to_array = { BLT_states = 12.id }
+				add_to_array = { BLT_states = 1398.id }
+				add_to_array = { BLT_states = 943.id } # i = 13
+			}
+			NOV = { country_event = { id = NOV_flavor.12 days = 90 } }
+
+			ZZZ = { SWRW_pakt_universal_renamings = yes }
+
+			GER = { set_variable = { bgr_wehrmacht_div_limit = 150 } }
+		}
+	}
+}

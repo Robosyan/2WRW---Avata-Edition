@@ -1,0 +1,143 @@
+# Debug
+NOV_federal_assembly_debug_category = {
+	icon = GFX_decision_category_generic_formable_nations
+	picture = GFX_decision_DON_new_homeland
+	allowed = {
+		original_tag = NOV
+	}
+	visible = {
+		is_debug = yes
+		is_ai = no
+	}
+	priority = 200
+}
+NOV_SWRW_debug_category = {
+	icon = GFX_decision_category_debug
+	picture = GFX_decision_DON_new_homeland
+	allowed = {
+		is_russian_unifier = yes
+	}
+	visible = {
+		is_debug = yes
+		is_ai = no
+	}
+	priority = 200
+}
+
+# In-Game
+NOV_deport_germans_decision_category = {
+	icon = GFX_decision_category_generic_formable_nations
+	picture = GFX_decision_NPL_new_homeland
+	allowed = {
+		original_tag = NOV
+	}
+	visible = {
+		has_country_flag = NOV_fate_of_the_germans
+		NOT = { has_global_flag = AFTER_MIDNIGHT_COMMENCED }
+	}
+	visible_when_empty = no
+	priority = 100
+}
+
+NOV_nazi_partisans_category = {
+	icon = GFX_decision_category_infiltration
+	picture = GFX_BRG_decision_Adler
+	
+	allowed = {
+		original_tag = NOV
+	}
+	visible = {
+		has_country_flag = NOV_nazi_partisans_decisions
+		NOT = { has_global_flag = AFTER_MIDNIGHT_COMMENCED }
+	}
+	visible_when_empty = no
+	priority = 250
+}
+
+SWRW_novosibirsk_misc_category = {
+	#icon = GFX_decision_category_infiltration
+	#picture = GFX_BRG_decision_Adler
+	
+	allowed = {
+		original_tag = NOV
+	}
+	visible = {
+		AND = {
+			original_tag = NOV
+			has_global_flag = RUS_shukshin_unification
+		}
+	}
+	visible_when_empty = no
+	priority = 250
+}
+
+NOV_VRPP_megacorp_influence_deccat = {
+
+	icon = GFX_decision_category_power_struggle
+	#picture = GFX_RUS_decision_political_situation
+	priority = 99999
+
+	allowed = {
+		original_tag = NOV
+	}
+	visible = {
+		OR = {
+			AND = {
+				has_country_flag = NOV_VRPP_GUI_1
+				NOT = {
+					AND = {
+						has_country_flag = DSPR_Feniks_Dismantled 
+						has_country_flag = NOV_DSPR_Sibir_Dismantled 
+						has_country_flag = DSPR_Titan_Dismantled 
+					}
+				}
+			}
+			AND = {
+				has_country_flag = NOV_VRPP_GUI_1_VRPP
+			}
+		}
+	}
+	
+	scripted_gui = NOV_VRPP_megacorp_influence_deccat
+}
+
+NOV_VRPP_media_category = {
+
+	icon = GFX_decision_category_generic_economy
+	#picture = GFX_RUS_decision_political_situation
+	priority = 99997
+
+	allowed = {
+		original_tag = NOV
+	}
+	visible = {
+		has_country_flag = NOV_VRPP_GUI_2
+	}
+	
+	scripted_gui = NOV_VRPP_megacorp_media
+}
+NOV_RAPP_space_category = {
+	icon = GFX_decision_category_roskosmos
+	picture = NOV_decision_category_baikonur
+	allowed = {
+		original_tag = NOV
+	}
+	visible = {
+		has_country_flag = NOV_RAPP_GUI
+		is_ai = no
+	}
+	priority = 99998
+}
+
+NOV_RSLP_russia_ofn = {
+	icon = GFX_decision_category_russia_ofn
+	allowed = {
+		original_tag = NOV
+	}
+	visible = {
+		has_country_flag = NOV_RSLP_GUI
+		is_ai = no
+	}
+	priority = 100000
+	scripted_gui = NOV_RSLP_ofn_relations
+}

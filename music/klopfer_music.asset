@@ -1,0 +1,47 @@
+music = {
+	name = "The_Blue_Danube_Waltz"
+	file = "The_Blue_Danube_Waltz.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Zug_Nach_Hamburg"
+	file = "Zug_Nach_Hamburg.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Berlin_Boys_and_Stuttgart_Girls"
+	file = "Berlin_Boys_and_Stuttgart_Girls.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Babysitter_Boogie"
+	file = "Babysitter_Boogie.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Rot_Und_Schwarz"
+	file = "Rot_Und_Schwarz.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Mein_Kleiner_VW"
+	file = "Mein_Kleiner_VW.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Du_Du_Liegst_Mir_Im_Herzen"
+	file = "Du_Du_Liegst_Mir_Im_Herzen.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Horst_Wessel_Lied"
+	file = "Horst_Wessel_Lied.ogg"
+	volume = 0.9
+}

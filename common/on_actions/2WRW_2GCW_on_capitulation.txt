@@ -1,0 +1,17 @@
+on_actions = {
+	# FROM = winner
+	# ROOT = country being capitulated/loser
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { is_2GCW_german_nation = yes }
+					ROOT = { is_2GCW_german_nation = yes }
+				}
+				ROOT = {
+					transfer_navy = { target = FROM }
+				}
+			}
+		}
+	}
+}

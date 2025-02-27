@@ -1,0 +1,355 @@
+add_namespace = vyborg_border_conflict
+
+country_event = { #Intro event
+	id = vyborg_border_conflict.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vyborg_border_conflict.1"}
+	title = vyborg_border_conflict.1.t
+	desc = vyborg_border_conflict.1.desc
+	picture = GFX_report_event_RUS_soviet_mech_infantry_6
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = vyborg_border_conflict.1.a
+		ai_chance = { factor = 80 }
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 209
+				num_provinces = 2
+				on_win = vyborg_border_conflict.2
+				on_lose = vyborg_border_conflict.3
+			}
+			defender = {
+				state = 216
+				num_provinces = 2
+			}
+		}
+	}
+	
+	option = { #
+		name = vyborg_border_conflict.1.b
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = { #Victory
+	id = vyborg_border_conflict.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vyborg_border_conflict.2"}
+	title = vyborg_border_conflict.2.t
+	desc = vyborg_border_conflict.2.desc
+	picture = GFX_report_event_RUS_military
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = vyborg_border_conflict.2.a
+		ai_chance = { factor = 1 }
+		transfer_state = 216
+		add_state_core = 216
+		
+	}
+}
+
+country_event = { #Victory
+	id = vyborg_border_conflict.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event vyborg_border_conflict.3"}
+	title = vyborg_border_conflict.3.t
+	desc = vyborg_border_conflict.3.desc
+	picture = GFX_report_event_RUS_devastation_generic_4
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = vyborg_border_conflict.3.a
+		ai_chance = { factor = 1 }
+		195 = {
+			set_demilitarized_zone = yes
+		}
+	}
+}
+
+add_namespace = RUS_decisions
+
+country_event = { #Move Capitals
+	id = RUS_decisions.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_decisions.1"}
+	title = RUS_decisions.1.t
+	desc = RUS_decisions.1.desc
+	picture = GFX_event_pic_moscow_destroyed
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = RUS_decisions.1.a
+		ai_chance = { factor = 1 }
+	}
+	
+	option = { #
+		name = RUS_decisions.1.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			ROOT = { owns_state = 1442 }
+		}
+		set_capital = { state = 1442 }
+	}
+	
+	option = { #
+		name = RUS_decisions.1.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			ROOT = { owns_state = 195 }
+		}
+		set_capital = { state = 195 }
+	}
+	
+	option = { #
+		name = RUS_decisions.1.d
+		ai_chance = { factor = 1 }
+		trigger = {
+			original_tag = KEM
+		}
+		set_capital = { state = 1428 }
+	}
+}
+
+country_event = { #Move the Imperial Capital (Chita)
+	id = RUS_decisions.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_decisions.2"}
+	title = RUS_decisions.2.t
+	desc = RUS_decisions.2.desc
+	picture = GFX_report_event_RUS_tsarist_treasure
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = RUS_decisions.2.a
+		ai_chance = { factor = 1 }
+	}
+	
+	option = { #
+		name = RUS_decisions.2.b
+		ai_chance = { factor = 1 }
+		set_capital = { state = 570 }
+	}
+	
+	option = { #
+		name = RUS_decisions.2.c
+		ai_chance = { factor = 1 }
+		set_capital = { state = 653 }
+	}
+	
+	option = { #
+		name = RUS_decisions.2.d
+		ai_chance = { factor = 1 }
+		set_capital = { state = 400 }
+	}
+}
+
+country_event = { # The Nukus Accords
+	id = RUS_decisions.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_decisions.3"}
+	title = RUS_decisions.3.t
+	desc = RUS_decisions.3.desc
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # Independence
+		name = RUS_decisions.3.a
+		ai_chance = { factor = 1 }
+		RUS_Central_Asia_Karakalpakstan_Occupation = yes
+		set_country_flag = RUS_Karakalpakstan_Future_Decided
+	}
+	
+	option = { # Return to Uzbekistan
+		name = RUS_decisions.3.b
+		ai_chance = { factor = 1 }
+		
+		UZB = { transfer_state = 750 }
+		UZB = { add_state_core = 750 }
+		set_country_flag = RUS_Karakalpakstan_Future_Decided
+	}
+}
+
+add_namespace = RUS_europeansupport
+
+country_event = { # Event
+	id = RUS_europeansupport.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_europeansupport.1"}
+	title = RUS_europeansupport.1.t
+	desc = RUS_europeansupport.1.desc
+	picture = GFX_report_event_RUS_the_motherland_calls
+
+	is_triggered_only = yes
+
+	option = { #
+		name = RUS_europeansupport.1.a
+		ai_chance = { factor = 5 }
+		RUS = {
+			country_event = RUS_europeansupport.2
+		}
+	}
+	option = { #
+		name = RUS_europeansupport.1.b
+		ai_chance = { factor = 1 }
+		RUS = {
+			country_event = RUS_europeansupport.3
+		}
+	}
+}
+
+country_event = { # Weapons
+	id = RUS_europeansupport.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_europeansupport.2"}
+	title = RUS_europeansupport.2.t
+	desc = RUS_europeansupport.2.desc
+	picture = GFX_report_event_generic_crate_of_guns
+
+	is_triggered_only = yes
+
+	option = { #
+		name = RUS_europeansupport.2.a
+		ai_chance = { factor = 5 }
+		RUS = {
+			add_equipment_to_stockpile = {
+
+				type = infantry_equipment
+
+				amount = 10000
+
+			}
+			
+			add_equipment_to_stockpile = {
+
+				type = anti_tank_equipment
+
+				amount = 1000
+
+			}
+			
+			add_equipment_to_stockpile = {
+
+				type = anti_air_shoulder_equipment
+
+				amount = 1000
+
+			}
+			
+			add_equipment_to_stockpile = {
+
+				type = mbt_equipment
+
+				amount = 100
+
+			}
+			
+			add_equipment_to_stockpile = {
+
+				type = interceptor_equipment
+
+				amount = 100
+
+			}
+			
+			add_equipment_to_stockpile = {
+
+				type = fighter_equipment
+
+				amount = 100
+
+			}
+			
+			add_equipment_to_stockpile = {
+
+				type = tac_bomber_equipment
+
+				amount = 50
+
+			}
+		}
+	}
+}
+
+country_event = { # Event
+	id = RUS_europeansupport.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_europeansupport.3"}
+	title = RUS_europeansupport.3.t
+	desc = RUS_europeansupport.3.desc
+	picture = GFX_report_event_RUS_crowd
+
+	is_triggered_only = yes
+
+	option = { #
+		name = RUS_europeansupport.3.a
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { # A Letter to Italy
+	id = RUS_europeansupport.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_europeansupport.4"}
+	title = RUS_europeansupport.4.t
+	desc = RUS_europeansupport.4.desc
+	picture = GFX_report_event_RUS_the_motherland_calls
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = RUS_europeansupport.4.a
+		ai_chance = { factor = 5 }
+		RUS = { country_event = { id = RUS_europeansupport.5 days = 2 } }
+	}
+	option = { #
+		name = RUS_europeansupport.4.b
+		ai_chance = { factor = 3 }
+		RUS = { country_event = { id = RUS_europeansupport.6 days = 2 } }
+	}
+}
+
+country_event = { # Italy Agrees
+	id = RUS_europeansupport.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_europeansupport.5"}
+	title = RUS_europeansupport.5.t
+	desc = RUS_europeansupport.5.desc
+	picture = GFX_report_event_generic_money
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = RUS_europeansupport.5.a
+		ai_chance = { factor = 5 }
+		set_temp_variable = { gdp_growth_temp = 0.2 }
+		econ_gdp_growth_change = yes
+		set_temp_variable = { money_reserves_temp = 0.5 }
+		econ_money_reserves_change_raw_money = yes
+		ITA = {
+			set_temp_variable = { temp_econ_spending_amount = 0.5 }
+			econ_spend_money_once_effect_raw_money = yes
+		}
+	}
+}
+
+country_event = { # Italy Refuses
+	id = RUS_europeansupport.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RUS_europeansupport.6"}
+	title = RUS_europeansupport.6.t
+	desc = RUS_europeansupport.6.desc
+	picture = GFX_report_event_RUS_crowd
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = RUS_europeansupport.6.a
+		ai_chance = { factor = 5 }
+	}
+}

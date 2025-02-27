@@ -1,0 +1,131 @@
+units = {
+	fleet = {
+		name = "U.S Submarine Task Force"
+		naval_base = 3338		# Arkhangelsk
+		task_force = {
+			name = "Task Force 30"
+			location = 3338
+			ship = {
+				name = "NRF Moskva"
+				definition = submarine
+				equipment = {
+					submarine_3 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			#actually a Skipjack
+			ship = {
+				name = "NRF Pokryshkin"
+				definition = submarine
+				equipment = {
+					submarine_1 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			ship = {
+				name = "NRF Arkhangelsk"
+				definition = submarine
+				equipment = {
+					submarine_1 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			ship = {
+				name = "NRF Russia"
+				definition = submarine
+				equipment = {
+					submarine_1 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			ship = {
+				name = "NRF Shukshin"
+				definition = submarine
+				equipment = {
+					submarine_1 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			ship = {
+				name = "NRF Tsar"
+				definition = submarine
+				equipment = {
+					submarine_1 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			ship = {
+				name = "NRF Slava"
+				definition = submarine
+				equipment = {
+					submarine_1 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			ship = {
+				name = "NRF Barents"
+				definition = submarine
+				equipment = {
+					submarine_2 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			ship = {
+				name = "NRF Perm"
+				definition = submarine
+				equipment = {
+					submarine_1 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			ship = {
+				name = "NRF Alexander"
+				definition = submarine
+				equipment = {
+					submarine_1 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			ship = {
+				name = "NRF Katerina"
+				definition = submarine
+				equipment = {
+					submarine_1 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+			ship = {
+				name = "NRF Murmansk"
+				definition = submarine
+				equipment = {
+					submarine_1 = {
+						amount = 1
+						owner = USA
+					}
+				}
+			}
+		}
+	}
+}

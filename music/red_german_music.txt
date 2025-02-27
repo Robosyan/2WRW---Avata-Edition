@@ -1,0 +1,134 @@
+
+music_station = red_german_music
+
+#########################
+### Radio Wien ##########
+#########################
+
+music = {
+	song = Auferstanden_aus_Ruinen
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Einheitsfrontlied
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = IFA_Wartburg_Hail_The_Youth
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Der_Heilige_Krieg_The_Sacred_War
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Die_Internationale
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Unsere_Panzerdivision_Tank_March
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Unterwegs_On_the_Road
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}
+
+music = {
+	song = Der_Heimliche_Aufmarsch_The_Secret_Deployment
+	chance = {
+		modifier = {
+			factor = 0
+			
+				has_war = yes
+		}		
+		modifier = {
+				factor = 1
+
+				has_war = no
+		}		
+	}
+}

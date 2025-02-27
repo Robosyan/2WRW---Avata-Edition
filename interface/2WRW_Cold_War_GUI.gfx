@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_Cold_War_GUI_Russia"
+		texturefile = "gfx/interface/cold_war_gui/Cold_War_GUI_Russia.dds"
+	}
+}

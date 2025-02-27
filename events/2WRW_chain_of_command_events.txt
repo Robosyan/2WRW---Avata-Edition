@@ -1,0 +1,727 @@
+﻿add_namespace = RUS_chain_of_command
+country_event = {
+	#Initial Event
+	id = RUS_chain_of_command.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.1"
+	}
+	title = RUS_chain_of_command.1.t
+	desc = RUS_chain_of_command.1.desc
+	is_triggered_only = yes
+	picture = GFX_report_event_RUS_soviet_officers_1
+	option = {
+		name = RUS_chain_of_command.1.a
+		add_dynamic_modifier = {
+			modifier = RUS_chain_of_command
+		}
+		custom_effect_tooltip = RUS_chain_of_command_effect
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = OMS
+					has_character = OMS_Dmitry_Yazov
+				}
+				country_event = {
+					id = RUS_chain_of_command.2
+					days = 5
+				}
+			}
+			if = {
+				limit = {
+					has_character = NOV_Nestor_Kozin
+				}
+				country_event = {
+					id = RUS_chain_of_command.3
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					original_tag = VYT
+					has_character = VYT_Nikolay_Rumyantsev
+				}
+				country_event = {
+					id = RUS_chain_of_command.4
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SVR
+					has_character = SVR_Pavel_Batov
+				}
+				country_event = {
+					id = RUS_chain_of_command.5
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					has_character = KEM_Boris_Krylov
+				}
+				country_event = {
+					id = RUS_chain_of_command.6
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					has_character = SBA_Androniy_Mishurenko
+				}
+				country_event = {
+					id = RUS_chain_of_command.7
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					has_character = PRC_Leonid_Brezhnev
+				}
+				country_event = {
+					id = RUS_chain_of_command.8
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					has_character = TYM_Ivan_Konev
+				}
+				country_event = {
+					id = RUS_chain_of_command.9
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					has_character = BRY_Mikhail_Markheev
+				}
+				country_event = {
+					id = RUS_chain_of_command.10
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_character = WRS_Dmitry_Ustinov
+						has_character = KOM_Dmitry_Ustinov
+					}
+				}
+				country_event = {
+					id = RUS_chain_of_command.11
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					original_tag = IRK
+					has_character = IRK_Genrikh_Lyushkov
+				}
+				country_event = {
+					id = RUS_chain_of_command.12
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					has_character = MAG_Alexander_Pavlov
+				}
+				country_event = {
+					id = RUS_chain_of_command.13
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					original_tag = CHT
+					has_character = CHT_Dmitry_Volkogonov
+				}
+				country_event = {
+					id = RUS_chain_of_command.14
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					original_tag = PRM
+					has_character = PRM_Gabriel_Shvarzenbakh
+				}
+				country_event = {
+					id = RUS_chain_of_command.15
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_character = KOM_Nikolay_Oplesnin
+						has_character = WRS_Nikolay_Oplesnin
+					}
+				}
+				country_event = {
+					id = RUS_chain_of_command.16
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					has_character = SAM_Mikhail_Meandrov
+				}
+				country_event = {
+					id = RUS_chain_of_command.17
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					has_character = WRS_Sergey_Akhromeyev
+				}
+				country_event = {
+					id = RUS_chain_of_command.18
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					has_character = AMR_Lev_Okhotin
+					original_tag = AMR
+				}
+				country_event = {
+					id = RUS_chain_of_command.20
+					days = 5
+					random_hours = 600
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_character = AMR_Lev_Okhotin
+					}
+					has_character = AMR_Konstantin_Ageev
+					original_tag = AMR
+				}
+				country_event = {
+					id = RUS_chain_of_command.19
+					days = 5
+					random_hours = 600
+				}
+			}
+			if = {
+				limit = {
+					has_character = KOM_Viktor_Larionov
+				}
+				country_event = {
+					id = RUS_chain_of_command.22
+					days = 5
+					random_hours = 600
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Yazov
+	id = RUS_chain_of_command.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.2"
+	}
+	title = RUS_chain_of_command.2.t
+	desc = RUS_chain_of_command.2.desc
+	picture = GFX_report_event_OMS_yazov
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.2.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_yazov
+			var = RUS_coc_breakthrough
+			value = 0.05
+		}
+		#+5% breakthrough
+		add_manpower = -1
+		hidden_effect = {
+			scoped_sound_effect = tno_gunfire
+		}
+	}
+}
+
+country_event = {
+	#Nestor Kozin
+	id = RUS_chain_of_command.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.3"
+	}
+	title = RUS_chain_of_command.3.t
+	desc = RUS_chain_of_command.3.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.3.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_kozin
+			var = RUS_coc_infantry_attack
+			value = 0.05
+		}
+		#+5% Infantry attack
+	}
+}
+
+country_event = {
+	#Nikolay Rumyantsev
+	id = RUS_chain_of_command.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.4"
+	}
+	title = RUS_chain_of_command.4.t
+	desc = RUS_chain_of_command.4.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.4.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_rumyantsev
+			var = RUS_coc_reinforce_rate
+			value = 0.02
+		}
+		#+2% reinforce rate
+	}
+}
+
+country_event = {
+	#Pavel Batov
+	id = RUS_chain_of_command.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.5"
+	}
+	title = RUS_chain_of_command.5.t
+	desc = RUS_chain_of_command.5.desc
+	picture = GFX_report_event_SVR_batov
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.5.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_batov
+			var = RUS_coc_recovery
+			value = 0.1
+		}
+		#+10% division recovery rate
+	}
+}
+
+country_event = {
+	#Boris Krylov
+	id = RUS_chain_of_command.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.6"
+	}
+	title = RUS_chain_of_command.6.t
+	desc = RUS_chain_of_command.6.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.6.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_krylov_mishurenko
+			var = RUS_coc_supply_consumption
+			value = -0.075
+		}
+		#Supply consumption -7.5%
+	}
+}
+
+country_event = {
+	#Androniy Mishurenko
+	id = RUS_chain_of_command.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.7"
+	}
+	title = RUS_chain_of_command.7.t
+	desc = RUS_chain_of_command.7.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.7.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_krylov_mishurenko
+			var = RUS_coc_supply_consumption
+			value = -0.075
+		}
+		#Supply consumption -7.5%
+	}
+}
+
+country_event = {
+	#Leonid Brezhnev
+	id = RUS_chain_of_command.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.8"
+	}
+	title = RUS_chain_of_command.8.t
+	desc = RUS_chain_of_command.8.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.8.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_brezhnev
+			var = RUS_coc_mot_defence
+			value = -0.1
+		}
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_brezhnev_2
+			var = RUS_coc_mot_attack
+			value = -0.1
+		}
+	}
+}
+
+country_event = {
+	#Ivan Konev
+	id = RUS_chain_of_command.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.9"
+	}
+	title = RUS_chain_of_command.9.t
+	desc = RUS_chain_of_command.9.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.9.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_konev
+			var = RUS_coc_max_entrenchment
+			value = 5
+		}
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_konev_2
+			var = RUS_coc_recon_entrenched
+			value = 0.25
+		}
+		GER = {
+			add_manpower = -4
+		}
+		#GER gets manpower -4. Modify National Spirit "Chain of Command" with Max Entrenchment: +5.0, Recon Bonus While Entrenched: +25.0%
+	}
+}
+
+country_event = {
+	#Mikhail Markheev
+	id = RUS_chain_of_command.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.10"
+	}
+	title = RUS_chain_of_command.10.t
+	desc = RUS_chain_of_command.10.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.10.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_markheev
+			var = RUS_coc_armor_speed
+			value = 0.05
+		}
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_markheev_2
+			var = RUS_coc_armor_attack
+			value = 0.05
+		}
+		#Armor speed +5% and armor division attack +5%
+	}
+}
+
+#Dmitry Ustinov
+country_event = {
+	id = RUS_chain_of_command.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.11"
+	}
+	title = RUS_chain_of_command.11.t
+	desc = RUS_chain_of_command.11.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.11.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_ustinov
+			var = RUS_coc_recovery
+			value = -0.075
+		}
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_ustinov_2
+			var = army_attack_factor
+			value = 0.05
+		}
+		#Division recovery rate -10% and Division attack +5%
+	}
+}
+
+country_event = {
+	#Genrikh Lyushkov
+	id = RUS_chain_of_command.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.12"
+	}
+	title = RUS_chain_of_command.12.t
+	desc = RUS_chain_of_command.12.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.12.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_lyushkov
+			var = RUS_coc_encryption
+			value = 0.25
+		}
+		retire_character = IRK_Gurgen_Aseryants
+		#Gurgen Aseryants dies. Encryption +1
+	}
+}
+
+country_event = {
+	#Alexander Pavlov
+	id = RUS_chain_of_command.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.13"
+	}
+	title = RUS_chain_of_command.13.t
+	desc = RUS_chain_of_command.13.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.13.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_pavlov
+			var = RUS_coc_max_entrenchment
+			value = 1
+		}
+		#+1 max entrenchment
+	}
+}
+
+country_event = {
+	#Dmitry Volkogonov
+	id = RUS_chain_of_command.14
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.14"
+	}
+	title = RUS_chain_of_command.14.t
+	desc = RUS_chain_of_command.14.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.14.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_volkogonov
+			var = RUS_coc_mot_defence
+			value = 0.15
+		}
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_volkogonov_2
+			var = RUS_coc_mech_defence
+			value = 0.15
+		}
+		#Motorized Defense: +15.00% and Mechanized Defense: +15.00%
+	}
+}
+
+country_event = {
+	#Gabriel Shvarzenbakh
+	id = RUS_chain_of_command.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.15"
+	}
+	title = RUS_chain_of_command.15.t
+	desc = RUS_chain_of_command.15.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.15.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_shvarzenbakh
+			var = RUS_coc_org
+			value = 0.05
+		}
+		#+5% division organization
+	}
+}
+
+country_event = {
+	#Nikolay Oplesnin
+	id = RUS_chain_of_command.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.16"
+	}
+	title = RUS_chain_of_command.16.t
+	desc = RUS_chain_of_command.16.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.16.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_oplesnin
+			var = RUS_coc_max_entrenchment
+			value = 2
+		}
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_oplesnin_2
+			var = RUS_coc_recon_entrenched
+			value = 0.1
+		}
+	}
+}
+
+country_event = {
+	#Mikhail Meandrov
+	id = RUS_chain_of_command.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.17"
+	}
+	title = RUS_chain_of_command.17.t
+	desc = RUS_chain_of_command.17.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.17.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_meandrov
+			var = RUS_coc_supply_consumption
+			value = 0.1
+		}
+		#Penalty to supply
+	}
+}
+
+#Sergey Akhromeyev
+country_event = {
+	id = RUS_chain_of_command.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.18"
+	}
+	title = RUS_chain_of_command.18.t
+	desc = RUS_chain_of_command.18.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.18.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_akhromeyev
+			var = RUS_coc_org
+			value = 0.1
+		}
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_akhromeyev_2
+			var = RUS_coc_recovery
+			value = 0.05
+		}
+		#+10% division organization and +5% division recovery rate.
+	}
+}
+
+country_event = {
+	#(received if RUS does not have Marshal "Lev Okhotin" and has General "Konstantin Ageev")
+	id = RUS_chain_of_command.19
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.19"
+	}
+	title = RUS_chain_of_command.19.t
+	desc = RUS_chain_of_command.19.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.19.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_ageev
+			var = RUS_coc_org
+			value = -0.1
+		}
+		#-10% division organization.
+	}
+}
+
+country_event = {
+	#AMR has Marshal "Lev Okhotin"
+	id = RUS_chain_of_command.20
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.20"
+	}
+	title = RUS_chain_of_command.20.t
+	desc = RUS_chain_of_command.20.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.20.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_okhotin
+			var = RUS_coc_attack
+			value = 0.15
+		}
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_okhotin_2
+			var = RUS_coc_org
+			value = -0.1
+		}
+		add_manpower = -23
+		#-23 manpower. +15% division attack and -10% organization
+	}
+}
+
+country_event = {
+	#Pavel Sudoplatov
+	id = RUS_chain_of_command.21
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.21"
+	}
+	title = RUS_chain_of_command.21.t
+	desc = RUS_chain_of_command.21.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.21.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_sudoplatov
+			var = RUS_coc_org
+			value = 0.05
+		}
+		#+5% division organization
+	}
+}
+
+country_event = {
+	#Viktor Larionov
+	id = RUS_chain_of_command.22
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_chain_of_command.22"
+	}
+	title = RUS_chain_of_command.22.t
+	desc = RUS_chain_of_command.22.desc
+	#picture = x
+	is_triggered_only = yes
+	option = {
+		name = RUS_chain_of_command.22.a
+		add_to_variable = {
+			tooltip = RUS_chain_of_command_larionov
+			var = RUS_coc_weekly_manpower
+			value = -250
+		}
+		add_manpower = -1013
+		TNO_worsen_army_professionalism_med = yes
+		#Army professionalism will begin to decrease. Lose 1013 manpower. Decrease weekly manpower gain by 250
+	}
+}

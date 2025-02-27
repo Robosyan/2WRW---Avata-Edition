@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_category_image_template"
+		texturefile = "gfx/interface/decisions/category_image_template.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_default"
+		texturefile = "gfx/interface/decisions/decision_icon_default.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_icon_default"
+		texturefile = "gfx/interface/decisions/decision_icon_default.dds"
+	}
+	spriteType = {
+		name = "GFX_category_west_china"
+		texturefile = "gfx/interface/decisions/category_west_china.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_persia"
+		texturefile = "gfx/interface/decisions/decision_category_persia.dds"
+	}
+}

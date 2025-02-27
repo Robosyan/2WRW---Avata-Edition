@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_MOS_language_problem"
+		texturefile = "gfx/interface/ideas/national_spirits/MOS/MOS_language_problem.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MOS_rural_state"
+		texturefile = "gfx/interface/ideas/national_spirits/MOS/MOS_rural_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MOS_language_problem_russia"
+		texturefile = "gfx/interface/ideas/national_spirits/MOS/MOS_language_problem_russia.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MOS_war_torn_region"
+		texturefile = "gfx/interface/ideas/national_spirits/MOS/MOS_war_torn_region.dds"
+	}
+}

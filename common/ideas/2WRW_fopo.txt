@@ -1,0 +1,16 @@
+ideas = {
+	#################################################
+	#                  Dummy Ideas                  #
+	#################################################
+
+	#|=====[ SWRW ]=====|#
+	hidden_ideas = {
+		SWRW_GC_PLU = {} # Kraków Uprising
+		SWRW_GC_WG = {} # West Georgia Conflict
+		SWRW_GC_WCW = {} # West Civil War
+		SWRW_GC_MU = {} # Mongolian Uprising
+		SWRW_GC_HCW = {} # Hungarian Civil War
+		SWRW_GC_2GCW = {} # Second German Civil War
+	}
+}
+

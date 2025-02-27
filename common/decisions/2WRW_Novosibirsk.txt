@@ -1,0 +1,735 @@
+NOV_deport_germans_decision_category = {
+	
+	# Deportation Decisions
+	
+	NOV_deport_the_kurzeme_germans = {
+		icon = GFX_decision_diplo_ostland
+		
+		allowed = {
+			tag = NOV
+		}
+		
+		visible = {
+			has_country_flag = NOV_fate_of_the_germans
+			943 = { is_owned_by = UPO }
+			191 = { is_owned_by = UPO }
+			1397 = { is_owned_by = UPO }
+			1401 = { is_owned_by = UPO }
+			UPO = { is_subject_of = RUS }
+		}
+		
+		cost = 50
+		ai_will_do = {
+			factor = 2
+		}
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			943 = {
+				set_variable = { 943.nationality = 169 }
+				add_manpower = -150000
+				set_temp_variable = { state_value_multiplier_temp = 0.75 }
+				econ_state_value_change_multiply = yes
+			}
+			191 = {
+				set_variable = { 191.nationality = 168 }
+				add_manpower = -35000
+				set_temp_variable = { state_value_multiplier_temp = 0.8 }
+				econ_state_value_change_multiply = yes
+			}
+			1397 = {
+				set_variable = { 1397.nationality = 169 }
+				add_manpower = -250000
+				set_temp_variable = { state_value_multiplier_temp = 0.66 }
+				econ_state_value_change_multiply = yes
+			}
+			1401 = {
+				set_variable = { 1401.nationality = 268 }
+				add_manpower = -100000
+				set_temp_variable = { state_value_multiplier_temp = 0.9 }
+				econ_state_value_change_multiply = yes
+			}
+			
+			custom_effect_tooltip = NOV_deport_the_kurzeme_germans_tt
+		}
+	}
+	
+	NOV_deport_the_moskowien_settlers = {
+		icon = GFX_decision_diplo_moskowien
+		
+		allowed = {
+			tag = NOV
+		}
+		
+		visible = {
+			has_country_flag = NOV_fate_of_the_germans
+			239 = { is_owned_by = RUS }
+			260 = { is_owned_by = RUS }
+			243 = { is_owned_by = RUS }
+		}
+		
+		cost = 50
+		
+		days_remove = 60
+		ai_will_do = {
+			factor = 2
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			209 = {
+				set_variable = { 209.nationality = 151 }
+				add_manpower = -250000
+				set_temp_variable = { state_value_multiplier_temp = 0.2 }
+				econ_state_value_change_multiply = yes
+			}
+			1402 = {
+				set_variable = { 1402.nationality = 151 }
+				add_manpower = -50000
+				set_temp_variable = { state_value_multiplier_temp = 0.4 }
+				econ_state_value_change_multiply = yes
+			}
+			1421 = {
+				set_variable = { 1421.nationality = 151 }
+				add_manpower = -50000
+				set_temp_variable = { state_value_multiplier_temp = 0.4 }
+				econ_state_value_change_multiply = yes
+			}
+			257 = {
+				set_variable = { 257.nationality = 151 }
+				add_manpower = -50000
+				set_temp_variable = { state_value_multiplier_temp = 0.4 }
+				econ_state_value_change_multiply = yes
+			}
+			
+			custom_effect_tooltip = NOV_deport_the_moskowien_settlers_tt
+		}
+	}
+	
+	NOV_fate_of_the_volga = {
+		icon = GFX_decision_volgastaat
+		
+		allowed = {
+			tag = NOV
+		}
+		
+		visible = {
+			has_country_flag = NOV_fate_of_the_germans
+			239 = { is_owned_by = NOV }
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = NOV_postwar.23
+			
+			custom_effect_tooltip = NOV_fate_of_the_volga_tt
+		}
+	}
+	
+	NOV_deport_the_volga_germans = {
+
+		icon = GFX_decision_volgastaat
+
+		allowed = {
+			tag = NOV
+		}
+
+		visible = {
+			has_country_flag = volga_germans_deported
+		}
+
+		cost = 50
+		
+		days_remove = 80
+		ai_will_do = {
+			factor = 2
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Timeout NOV_deport_the_volga_germans"
+			239 = {
+				set_variable = { 239.nationality = 151 }
+				add_manpower = -850000
+				set_temp_variable = { state_value_multiplier_temp = 0.4 }
+				econ_state_value_change_multiply = yes
+			}
+			260 = {
+				set_variable = { 260.nationality = 151 }
+				add_manpower = -100000
+				set_temp_variable = { state_value_multiplier_temp = 0.4 }
+				econ_state_value_change_multiply = yes
+			}
+			243 = {
+				set_variable = { 243.nationality = 151 }
+				add_manpower = -150000
+				set_temp_variable = { state_value_multiplier_temp = 0.4 }
+				econ_state_value_change_multiply = yes
+			}
+			custom_effect_tooltip = NOV_deport_the_volga_germans_tt
+			clr_country_flag = volga_germans_deported
+		}
+	}
+	
+	NOV_deport_the_german_settlers_from_ukraine = {
+		icon = GFX_decision_diplo_ukraine
+		
+		allowed = {
+			tag = NOV
+		}
+		
+		visible = {
+			has_country_flag = NOV_fate_of_the_germans
+			1428 = { is_owned_by = UKS }
+			1430 = { is_owned_by = UKS }
+			UKS = {
+				is_subject_of = RUS
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		cost = 50
+		
+		days_remove = 60
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			1428 = {
+				set_variable = { 1428.nationality = 164 }
+				add_manpower = -150000
+				set_temp_variable = { state_value_multiplier_temp = 0.66 }
+				econ_state_value_change_multiply = yes
+			}
+			1430 = {
+				set_variable = { 1430.nationality = 164 }
+				add_manpower = -50000
+				set_temp_variable = { state_value_multiplier_temp = 0.8 }
+				econ_state_value_change_multiply = yes
+			}
+			custom_effect_tooltip = NOV_deport_the_german_settlers_from_ukraine_tt
+		}
+	}
+
+	NOV_fate_of_petrograd = {
+		icon = GFX_decision_revolt
+		
+		allowed = {
+			tag = NOV
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		visible = {
+			has_country_flag = NOV_fate_of_the_germans
+			195 = { is_owned_by = OKB }
+			OKB = {
+				is_subject_of = RUS
+			}
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = NOV_postwar.11
+			custom_effect_tooltip = NOV_fate_of_petrograd_tt
+		}
+	}
+	
+	NOV_deport_the_petrograd_germans = {
+
+		icon = GFX_decision_revolt
+
+		allowed = {
+			tag = NOV
+		}
+
+		visible = {
+			has_country_flag = petrograd_germans_deported
+		}
+
+		cost = 50
+		ai_will_do = {
+			factor = 2
+		}
+		days_remove = 80
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Timeout NOV_deport_the_petrograd_germans"
+			195 = {
+				set_variable = { 195.nationality = 151 }
+				add_manpower = -250000
+				set_temp_variable = { state_value_multiplier_temp = 0.66 }
+				econ_state_value_change_multiply = yes
+			}
+			custom_effect_tooltip = NOV_deport_the_petrograd_germans_tt
+			clr_country_flag = petrograd_germans_deported
+		}
+	}
+	
+	NOV_fate_of_gotenland = {
+		icon = GFX_decision_diplo_ukraine
+		
+		allowed = {
+			tag = NOV
+		}
+		
+		visible = {
+			has_country_flag = NOV_fate_of_the_germans
+			196 = { is_owned_by = FUK }
+			FUK = {
+				is_subject_of = RUS
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = NOV_postwar.24
+			
+			set_country_flag = fate_of_gotenland_decided
+			custom_effect_tooltip = NOV_fate_of_gotenland_tt
+		}
+	}
+	
+	NOV_deport_the_gotenland_germans = {
+
+		icon = GFX_decision_diplo_ukraine
+
+		allowed = {
+			tag = NOV
+		}
+
+		visible = {
+			has_country_flag = gotish_germans_deported
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		cost = 50
+		
+		days_remove = 80
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Timeout NOV_deport_the_gotenland_germans"
+			200 = {
+				set_variable = { 200.nationality = 164 }
+				add_manpower = -500000
+				set_temp_variable = { state_value_multiplier_temp = 0.45 }
+				econ_state_value_change_multiply = yes
+			}
+			196 = {
+				set_variable = { 196.nationality = 164 }
+				add_manpower = -350000
+				set_temp_variable = { state_value_multiplier_temp = 0.8 }
+				econ_state_value_change_multiply = yes
+			}
+			custom_effect_tooltip = NOV_deport_the_gotenland_germans_tt
+			clr_country_flag = gotish_germans_deported
+		}
+	}
+	
+	NOV_future_of_crimea = {
+		icon = GFX_decision_diplo_crimea
+		
+		allowed = {
+			tag = NOV
+		}
+		
+		available = {
+		}
+		
+		visible = {
+			has_country_flag = NOV_fate_of_the_germans
+			has_country_flag = fate_of_gotenland_decided
+			NOT = {
+				has_country_flag = crimean_germans_deported
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = NOV_postwar.25
+			
+			custom_effect_tooltip = NOV_future_of_crimea_tt
+		}
+	}
+	
+	NOV_deport_the_crimean_germans = {
+
+		icon = GFX_decision_revolt
+
+		allowed = {
+			tag = NOV
+		}
+
+		visible = {
+			has_country_flag = crimean_germans_deported
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		cost = 50
+		
+		days_remove = 80
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Timeout NOV_deport_the_crimean_germans"
+			if = {
+				limit = {
+					RUS = {
+						owns_state = 137
+						owns_state = 1532
+					}	
+				}
+				137 = {
+					# set_variable = { 137.nationality = 151 }
+					add_manpower = -150000
+					set_temp_variable = { state_value_multiplier_temp = 0.5 }
+					econ_state_value_change_multiply = yes
+				}
+				1532 = {
+					set_variable = { 1532.nationality = 151 }
+					add_manpower = -30000
+					set_temp_variable = { state_value_multiplier_temp = 0.2 }
+					econ_state_value_change_multiply = yes
+				}
+			}
+			else = {
+				137 = {
+					set_variable = { 137.nationality = 151 }
+					add_manpower = -500000
+					set_temp_variable = { state_value_multiplier_temp = 0.5 }
+					econ_state_value_change_multiply = yes
+				}
+				1532 = {
+					set_variable = { 1532.nationality = 151 }
+					add_manpower = -80000
+					set_temp_variable = { state_value_multiplier_temp = 0.2 }
+					econ_state_value_change_multiply = yes
+				}
+			}
+			custom_effect_tooltip = NOV_deport_the_crimean_germans_tt
+			clr_country_flag = crimean_germans_deported
+		}
+	}
+}
+
+NOV_nazi_partisans_category = {
+
+	NOV_the_werewolves_strike = {
+
+		icon = GFX_decision_revolt
+
+		allowed = {
+			original_tag = NOV
+		}
+		visible = {
+			has_country_flag = NOV_nazi_partisans_decisions
+		}
+		activation = {
+			has_country_flag = NOV_nazi_partisans_decisions
+		}
+		available = {
+			NOT = { has_country_flag = NOV_nazi_partisans_decisions }
+		}
+		is_good = no
+		days_mission_timeout = 60
+
+		days_re_enable = 1
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision Timeout NOV_the_werewolves_strike"
+			activate_mission = NOV_the_werewolves_strike
+			random_list = {
+				50 = { country_event = NOV_postwar.20 }
+				45 = { country_event = NOV_postwar.21 }
+				5 = { country_event = NOV_postwar.22 }
+			}
+		}
+	}
+	
+	NOV_the_final_strike = {
+		icon = GFX_decision_final_strike
+		
+		allowed = {
+			tag = NOV
+		}
+		
+		available = {
+			has_completed_focus = NOV_strike_the_nazi_partisans
+			custom_trigger_tooltip = {
+				tooltip = NOV_the_final_strike_tt
+				check_variable = { NOV_nazi_partisan_strength = 0 }
+			}
+		}
+		
+		visible = {
+			has_country_flag = NOV_nazi_partisans_decisions
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		days_remove = 7
+		
+		fire_only_once = yes
+		
+		custom_cost_trigger = { command_power > 14.99 }
+		custom_cost_text = decision_cost_15_cp
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -15
+			}
+		}
+		remove_effect = {
+			country_event = { id = NOV_postwar.19 days = 1 }
+		}
+	}
+	
+	NOV_order_a_bombing_run = {
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		allowed = {
+			tag = NOV
+		}
+		
+		visible = {
+			has_country_flag = NOV_nazi_partisans_decisions
+			has_completed_focus = NOV_airforce_patrols
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = anti_nazi_operation_active
+			}
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		days_remove = 5
+		
+		days_re_enable = 10
+		
+		custom_cost_trigger = { command_power > 4.99 }
+		custom_cost_text = decision_cost_5_cp
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+			set_country_flag = anti_nazi_operation_active
+		}
+		remove_effect = {
+			NOV_decrease_nazi_strength = yes
+			
+			clr_country_flag = anti_nazi_operation_active
+		}
+	}
+	
+	NOV_strike_urban_outposts = {
+		icon = decision_generic_assault
+		
+		allowed = {
+			tag = NOV
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = anti_nazi_operation_active
+			}	
+		}
+		
+		visible = {
+			has_country_flag = NOV_nazi_partisans_decisions
+			has_completed_focus = NOV_deploy_special_forces
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		days_remove = 10
+		
+		days_re_enable = 20
+		
+		custom_cost_trigger = { command_power > 4.99 }
+		custom_cost_text = decision_cost_5_cp
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -5
+			}
+			set_country_flag = anti_nazi_operation_active
+		}
+		remove_effect = {
+			NOV_decrease_nazi_strength = yes
+			
+			
+			clr_country_flag = anti_nazi_operation_active
+		}
+	}
+	
+	NOV_assassinate_werewolf_leadership = {
+		icon = GFX_decision_generic_assassination
+		
+		allowed = {
+			tag = NOV
+		}
+		
+		available = {
+			NOT = {
+				has_country_flag = anti_nazi_operation_active
+			}
+		}
+		
+		visible = {
+			has_country_flag = NOV_nazi_partisans_decisions
+			#has_completed_focus = NOV_expand_intelligence_presence
+		}
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		days_remove = 20
+		
+		days_re_enable = 30
+		
+		custom_cost_trigger = { command_power > 9.99 }
+		custom_cost_text = decision_cost_5_cp
+		
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -10
+			}
+			set_country_flag = anti_nazi_operation_active
+		}
+		remove_effect = {
+			NOV_assassinate_nazi_strength = yes
+			
+			clr_country_flag = anti_nazi_operation_active
+		}
+	}
+}
+
+SWRW_novosibirsk_misc_category = {
+
+	NOV_fate_of_armenia = {
+	
+		icon = GFX_decision_diplo_kaukasien
+		
+		visible = {
+			original_tag = NOV
+			ARM = { is_in_faction_with = RUS }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: NOV_fate_of_armenia"
+			country_event = NOV_postwar.100
+		}
+	}
+	RUS_shukshin_reorganise_central_asia = {
+		icon = GFX_decision_generic_document
+
+		allowed = {
+			original_tag = NOV
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+
+		visible = {
+			AND = {
+				586 = {
+					is_owned_by = RUS
+				}
+				732 = {
+					is_owned_by = RUS
+				}
+				742 = {
+					is_owned_by = RUS
+				}
+				585 = {
+					is_owned_by = RUS
+				}
+				405 = {
+					is_owned_by = RUS
+				}
+				750 = {
+					is_owned_by = RUS
+				}
+				564 = {
+					is_owned_by = RUS
+				}
+				original_tag = NOV
+				has_global_flag = RUS_shukshin_unification
+			}
+		}
+
+		available = {
+			has_war = no
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_CENTRAL_ASIA_FATE
+					option = RUS_CENTRAL_ASIA_FATE_ANNEX
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Reorganise Central Asia"
+			hidden_effect = {
+				TRK = {
+					remove_ideas = ZZZ_anarchy
+				}
+			}
+			clr_global_flag = TNO_rip_turkmenistan
+			RUS_shukshin_central_asia_occupation = yes
+			hidden_effect = {
+				every_country = {
+					limit = { has_idea = CA_Turkes_Kenes_Apathy }
+					remove_ideas = CA_Turkes_Kenes_Apathy
+				}
+			}
+		}
+	}
+}

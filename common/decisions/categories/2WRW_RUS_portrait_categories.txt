@@ -1,0 +1,11 @@
+SWRW_RUS_portrait_category = {
+	icon = GFX_decision_category_RUS_forpol
+	picture = GFX_decision_DON_new_homeland
+	allowed = {
+		is_russian_unifier = yes
+	}
+	visible = {
+		has_global_flag = RUS_national_unification
+	}
+	priority = 200
+}

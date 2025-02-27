@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_LAT_cultural_renaissance"
+		texturefile = "gfx/interface/ideas/national_spirits/LAT/GFX_idea_LAT_cultural_renaissance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_lettendeutschen"
+		texturefile = "gfx/interface/ideas/national_spirits/LAT/GFX_idea_LAT_lettendeutschen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_picking_up_the_pieces"
+		texturefile = "gfx/interface/ideas/national_spirits/LAT/GFX_idea_LAT_picking_up_the_pieces.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_pearl_of_the_baltic_sea"
+		texturefile = "gfx/interface/ideas/national_spirits/LAT/GFX_idea_LAT_pearl_of_the_baltic_sea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_cultural_renaissance"
+		texturefile = "gfx/interface/ideas/LAT/GFX_idea_LAT_cultural_renaissance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_lettendeutschen"
+		texturefile = "gfx/interface/ideas/LAT/GFX_idea_LAT_lettendeutschen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_picking_up_the_pieces"
+		texturefile = "gfx/interface/ideas/LAT/GFX_idea_LAT_picking_up_the_pieces.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LAT_pearl_of_the_baltic_sea"
+		texturefile = "gfx/interface/ideas/LAT/GFX_idea_LAT_pearl_of_the_baltic_sea.dds"
+	}
+}

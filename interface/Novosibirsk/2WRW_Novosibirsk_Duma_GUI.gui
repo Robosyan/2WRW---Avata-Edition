@@ -1,0 +1,1361 @@
+# D R E A M S   O F   F E D E R A T I O N
+
+guiTypes = {
+
+	extendedScrollbarType = {
+		name = "NOV_vertical_scrollbar"
+		position = { x =-12 y = 0 }
+		size = { width = 18 height = 18 }
+		startValue = 0
+		orientation = lower_right
+		origo = lower_right
+		smooth_scrolling = 0.10
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_scrollbar_vertical_bg"
+		}
+
+		slider = {
+			name = "Slider"
+			quadTextureSprite = "yearslider_slider2"
+			position = { x = -2 y = -2 }
+		}
+
+		track = {
+			name = "Track"
+			quadTextureSprite = "GFX_blank"
+			position = { x = 3 y = 0 }
+			alwaystransparent = yes
+		}
+
+		decreaseButton = {
+			name = "Decrease"
+			quadTextureSprite = "GFX_scroll_up"
+			position = { x = 2 y = 4 }
+			scale = 0.9
+		}
+
+		increaseButton = {
+			name = "Increase"
+			quadTextureSprite = "GFX_scroll_down"
+			position = { x=-16 y = -18}
+			scale = 0.9
+		}
+	}
+
+	containerWindowType = {
+		name = "NOV_Federation_Duma_GUI_Opener"
+		size = { width = 220 height = 128 }
+		position = { x = 0 y = 289 }
+		buttonType = {
+			name = "NOV_Federation_Duma_GUI_Open_Button"
+			spriteType = "GFX_Tomsk_Duma_GUI"
+			position = { x = 131 y = 31 }
+			scale = 0.65
+		}
+		iconType = {
+			name = "gui_alert"
+			spriteType = "GFX_gui_alert"
+			position = { x = 185 y = -16 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "NOV_federation_duma_GUI"
+		size = { width = 1300 height = 718 }
+		position = { x = 540 y = 2000 }
+		moveable = yes
+		clipping = no
+		show_position = { x= 540 y= 140 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+		
+		containerWindowType = {
+			name = "tabs"
+			size = { width = 100%% height = 28 }
+			position = { x = 0 y = -23 }
+
+			buttonType = {
+				name = "tab_0"
+				position = { x = 10 y = -2 }
+				quadTextureSprite = "GFX_BRA_Map_Tab"
+				buttonFont = "Bomb_18"
+				text = "FEDERAL ASSEMBLY"
+			}
+			iconType = {
+				name = "tab_icon_0"
+				quadTextureSprite = "GFX_NOV_tab_duma_icon"
+				position = { x = 17 y = 3 }
+			}
+			
+			buttonType = {
+				name = "tab_1"
+				position = { x = 244 y = -2 }
+				quadTextureSprite = "GFX_BRA_Map_Tab"
+				buttonFont = "Bomb_18"
+				text = BRA_map_senate_title
+			}
+			iconType = {
+				name = "tab_icon_1"
+				quadTextureSprite = "GFX_BRA_Map_Tab_Senado_Icon"
+				position = { x = 252 y = 4 }
+			}
+		}
+
+		background = {
+			name = "NOV_OpeningScreen_BG_real"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+		
+		gridboxtype = {
+			name = "current_tab"
+			position = { x = -650 y = 0 }
+			size = { width = 1300 height = 718 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+		
+		buttonType = {
+			name = "close_duma_button"
+			position = { x = -29 y = 10 }
+			quadTextureSprite ="GFX_crt_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+
+	containerWindowType = {
+		name = "NOV_federal_assembly_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 1300 height = 718 }
+
+		iconType = {
+			name = "NOV_federal_assembly_outline"
+			spriteType = "GFX_NOV_duma_outline"
+			position = { x = 15 y = 151 }
+		}
+
+		iconType = {
+			name = "NOV_assembly_emblem"
+			spriteType = "GFX_NOV_assembly_emblem"
+			position = { x = 15 y = 18 }
+			pdx_tooltip = "NOV_assembly_info_tt"
+		}
+
+		instantTextBoxType = {
+			name = "NOV_Presidential_Race"
+			position = { x = 124 y = 51 }
+			font = "aldrich_48_outline"
+			text = "THE FEDERAL ASSEMBLY"
+			format = center
+			maxWidth = 1050
+		}
+
+		## STATE DUMA / FEDERATION COUNCIL ##
+
+		containerWindowType = {
+			name = "NOV_duma_window"
+			position = { x = 17 y = 153 }
+
+			iconType = {
+				name = "NOV_info_box"
+				spriteType = "GFX_NOV_small_info_box"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "NOV_assembly_info_tt"
+			}
+
+			instantTextBoxType = {
+				name = "NOV_duma_header"
+				position = { x = 56 y = 0 }
+				font = "aldrich_28_outline"
+				text = "[NOVgetAssemblyType]"
+				format = center
+				maxWidth = 500
+			}
+
+			buttonType = {
+				name = "NOV_duma_toggle"
+				position = { x = 0 y = 44 }
+				quadTextureSprite ="GFX_NOV_duma_toggle_button"
+			}
+			buttonType = {
+				name = "NOV_council_toggle"
+				position = { x = 70 y = 44 }
+				quadTextureSprite ="GFX_NOV_council_toggle_button"
+			}
+
+			# Spread: 1.85
+			# First Row Radius: 5.7
+			# Total Delegates: 450
+			gridboxtype = {
+				name = "NOV_duma_diagram_container"
+				position = { x = 32 y = 0 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+
+			# Spread: 2.83
+			# First Row Radius: 5.7
+			# Total Delegates: 170
+			gridboxtype = {
+				name = "NOV_council_container"
+				position = { x = 32 y = 0 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+
+			instantTextBoxType = {
+				name = "NOV_duma_seat_count"
+				position = { x = 207 y = 210 }
+				font = "aldrich_48_outline"
+				text = "[NOVgetAssemblySeats]"
+				format = center
+				maxWidth = 200
+			}
+		}
+
+		## BILLS ##
+
+		containerWindowType = {
+			name = "NOV_bills_window"
+			position = { x = 17 y = 427 }
+
+			iconType = {
+				name = "NOV_info_box"
+				spriteType = "GFX_NOV_small_info_box"
+				position = { x = 0 y = 15 }
+				pdx_tooltip = "NOV_bills_info_tt"
+			}
+
+			instantTextBoxType = {
+				name = "NOV_bills_header"
+				position = { x = 208 y = 15 }
+				font = "aldrich_28_outline"
+				text = "BILLS"
+				format = center
+				maxWidth = 200
+			}
+
+			instantTextBoxType = {
+				name = "NOV_bill_title"
+				position = { x = -15 y = 40 }
+				font = "aldrich_22_outline"
+				text = "[NOVgetBillName]"
+				format = center
+				maxWidth = 400
+			}
+
+			instantTextBoxType = {
+				name = "NOV_bill_desc"
+				position = { x = 7 y = 65 }
+				font = "aldrich_16_outline"
+				text = "[NOVgetBillDesc]"
+				format = center
+				maxWidth = 350
+			}
+
+			instantTextBoxType = {
+				name = "NOV_voting_header"
+				position = { x = 384 y = 40 }
+				font = "aldrich_22_outline"
+				text = "NOV_bill_voting"
+				format = center
+				maxWidth = 200
+			}
+
+			instantTextBoxType = {
+				name = "NOV_bills_time"
+				position = { x = 359 y = 65 }
+				font = "aldrich_18_outline" 
+				text = "[NOVgetVotingStatus]"
+				format = center
+				maxWidth = 250
+			}
+
+			iconType = {
+				name = "NOV_bill_progress_bar_frame"
+				spriteType = "GFX_NOV_bills_progress_bar_frame"
+				position = { x = 383 y = 88 }
+			}
+
+			iconType = {
+				name = "NOV_bills_progress_bar"
+				spriteType = "GFX_NOV_bills_progress_bar"
+				position = { x = 383 y = 87 }
+				pdx_tooltip = "NOV_bills_progress_bar_tt"
+			}
+
+			iconType = {
+				name = "NOV_timer_blocker"
+				spriteType = "GFX_NOV_timer_blocker"
+				position = { x = 383 y = 88 }
+			}
+
+			iconType = {
+				name = "NOV_bills_parties_window"
+				spriteType = "GFX_NOV_bills_parties_window"
+				position = { x = 366 y = 114 }
+			}
+
+			containerWindowType = {
+				name = "NOV_bills_parties_list_window"
+				position = { x = 367 y = 116 }
+				size = { width = 246 height = 116 }
+				verticalScrollbar = NOV_vertical_scrollbar
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_window_transparent"
+					#quadTextureSprite ="GFX_tiled_window_thin_border2"
+				}
+				gridboxtype = {
+					name = "NOV_bills_parties_list"
+					position = { x = 0 y = 0 }
+					size = { width = 207 height = 350 }
+					slotsize = { width = 100% height = 44 }
+					max_slots_horizontal = 1
+					add_horizontal = no
+				}
+			}
+
+			instantTextBoxType = {
+				name = "NOV_bills_total_votes"
+				position = { x = 360 y = 244 }
+				font = "aldrich_22_outline" 
+				text = "[NOVgetBillTotalVotes]"
+				format = center
+				maxWidth = 250
+			}
+		}
+
+		## GOVERNMENT ##
+
+		containerWindowType = {
+			name = "NOV_government_window"
+			position = { x = 500 y = 153 }
+
+			iconType = {
+				name = "NOV_info_box"
+				spriteType = "GFX_NOV_small_info_box"
+				position = { x = 134 y = 0 }
+				pdx_tooltip = "NOV_government_info_tt"
+			}
+
+			instantTextBoxType = {
+				name = "NOV_government_header"
+				position = { x = 189 y = 0 }
+				font = "aldrich_28_outline"
+				text = "NOV_gov_header"
+				format = center
+				maxWidth = 250
+			}
+
+			instantTextBoxType = {
+				name = "NOV_president_header"
+				position = { x = 124 y = 50 }
+				font = "aldrich_18_outline"
+				text = "President"
+				format = center
+				maxWidth = 200
+			}
+
+			instantTextBoxType = {
+				name = "NOV_vice_president_header"
+				position = { x = 304 y = 50 }
+				font = "aldrich_18_outline"
+				text = "Vice President"
+				format = center
+				maxWidth = 200
+			}
+
+			iconType = {
+				name = "NOV_president_picture"
+				spriteType = "GFX_NOV_presidential_candidates"
+				position = { x = 143 y = 72 }
+			}
+
+			iconType = {
+				name = "NOV_vice_president_picture"
+				spriteType = "GFX_NOV_vice_presidents"
+				position = { x = 324 y = 72 }
+			}
+
+			instantTextBoxType = {
+				name = "NOV_president_name"
+				position = { x = 124 y = 290 }
+				font = "aldrich_18_outline"
+				text = "[NOVgetPresidency]"
+				format = center
+				maxWidth = 200
+			}
+
+			instantTextBoxType = {
+				name = "NOV_vice_president_name"
+				position = { x = 304 y = 290 }
+				font = "aldrich_18_outline"
+				text = "[NOVgetVicePresidency]"
+				format = center
+				maxWidth = 200
+			}
+
+			### COALITION MECHANIC ###
+
+			instantTextBoxType = {
+				name = "NOV_coalition_header"
+				position = { x = 189 y = 330 }
+				font = "aldrich_24_outline"
+				text = "COALITION"
+				format = center
+				maxWidth = 250
+			}
+
+			instantTextBoxType = {
+				name = "NOV_coalition_council_seat_count"
+				position = { x = 238 y = 354 }
+				font = "aldrich_18_outline"
+				text = "NOV_coalition_council_seats"
+				format = center
+				maxWidth = 150
+			}
+
+			instantTextBoxType = {
+				name = "NOV_coalition_duma_seat_count"
+				position = { x = 214 y = 372 }
+				font = "aldrich_18_outline"
+				text = "NOV_coalition_duma_seats"
+				format = center
+				maxWidth = 200
+			}
+
+			iconType = {
+				name = "NOV_coalition_box"
+				spriteType = "GFX_NOV_coalition_box"
+				position = { x = 228 y = 392 }
+			}
+
+			gridboxtype = {
+				name = "NOV_coalition_parties"
+				position = { x = 167 y = 393 }
+				size = { width = 168 height = 82 }
+				slotsize = { width = 44 height = 44 }
+				max_slots_horizontal = 4
+				add_horizontal = yes
+			}
+
+			instantTextBoxType = {
+				name = "NOV_coalition_unity_header"
+				position = { x = 190 y = 478 }
+				font = "aldrich_20_outline"
+				text = "COALITION UNITY"
+				format = center
+				maxWidth = 250
+			}
+
+			iconType = {
+				name = "NOV_coalition_unity_bar_frame"
+				spriteType = "GFX_NOV_coalition_unity_progress_bar_frame"
+				position = { x = 228 y = 502 }
+			}
+
+			iconType = {
+				name = "NOV_coalition_unity_bar"
+				spriteType = "GFX_NOV_coalition_unity_progress_bar"
+				position = { x = 228 y = 501 }
+				pdx_tooltip = "NOV_coalition_unity_bar_tt"
+			}
+		}
+
+		## PARTIES ##
+
+		containerWindowType = {
+			name = "NOV_parties_window"
+			position = { x = 800 y = 153 }
+
+			iconType = {
+				name = "NOV_info_box"
+				spriteType = "GFX_NOV_small_info_box"
+				position = { x = 198 y = 0 }
+				pdx_tooltip = "NOV_parties_info_tt"
+			}
+
+			instantTextBoxType = {
+				name = "NOV_parties_header"
+				position = { x = 215 y = 0 }
+				font = "aldrich_28_outline"
+				text = "PARTIES"
+				format = center
+				maxWidth = 250
+			}
+
+			containerWindowType = {
+				name = "NOV_parties_list_window"
+				position = { x = 146 y = 26 }
+				size = { width = 350 height = 522 }
+				verticalScrollbar = NOV_vertical_scrollbar
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_window_transparent"
+					#quadTextureSprite ="GFX_tiled_window_thin_border2"
+				}
+
+				gridboxtype = {
+					name = "NOV_parties_list"
+					position = { x = -259  y = 0 }
+					size = { width = 100%% height = 763 }
+					slotsize = { width = 225 height = 96 }
+					max_slots_horizontal = 1
+					add_horizontal = no
+				}
+			}
+		}
+	}
+	
+	containerWindowType = {
+		name = "NOV_presidential_election_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 1300 height = 718 }
+
+			containerWindowType = {
+			name = "NOV_Russian_Federation_Electoral_Map"
+			position = { x = 0 y = -60 }
+
+			## buttons
+
+			buttonType = { # 5
+				name = "NOV_Northern_Voting_District_button"
+				spriteType = "GFX_NOV_northern_voting_district_button"
+				position = { x = 51 y = 72 }
+				pdx_tooltip = "NOV_Northern_voting_district_tt"
+				pdx_tooltip_delayed = "NOV_Northern_voting_district_delayed_tt"
+			}			
+			buttonType = { # 4
+				name = "NOV_Volga_Voting_District_button"
+				spriteType = "GFX_NOV_volga_voting_district_button"
+				position = { x = 165 y = 220 }
+				pdx_tooltip = "NOV_Volga_voting_district_tt"
+				pdx_tooltip_delayed = "NOV_Volga_voting_district_delayed_tt"
+			}
+			buttonType = { # 3
+				name = "NOV_Ural_Voting_District_button"
+				spriteType = "GFX_NOV_ural_voting_district_button"
+				position = { x = 287 y = 72 }
+				pdx_tooltip = "NOV_Ural_voting_district_tt"
+				pdx_tooltip_delayed = "NOV_Ural_voting_district_delayed_tt"
+			}
+			
+			buttonType = { # 2
+				name = "NOV_Siberian_Voting_District_button"
+				spriteType = "GFX_NOV_siberian_voting_district_button"
+				position = { x = 380 y = 70 }
+				pdx_tooltip = "NOV_Siberian_voting_district_tt"
+				pdx_tooltip_delayed = "NOV_Siberian_voting_district_delayed_tt"
+			}
+			buttonType = { # 1
+				name = "NOV_Far_East_Voting_District_button"
+				spriteType = "GFX_NOV_far_east_voting_district_button"
+				position = { x = 583 y = 72 }
+				pdx_tooltip = "NOV_Far_East_voting_district_tt"
+				pdx_tooltip_delayed = "NOV_Far_East_voting_district_delayed_tt"
+			}
+			buttonType = { # 6
+				name = "NOV_Kuban_voting_district_button"
+				spriteType = "GFX_NOV_crimea_voting_district_button"
+				position = { x = 90 y = 306 }
+				pdx_tooltip = "NOV_Kuban_voting_district_tt"
+				pdx_tooltip_delayed = "NOV_Kuban_voting_district_delayed_tt"
+			}
+			buttonType = { # 7
+				name = "NOV_Muscovy_Voting_District_button"
+				spriteType = "GFX_NOV_moscow_voting_district_button"
+				position = { x = 70 y = 248 }
+				pdx_tooltip = "NOV_Moscow_voting_district_tt"
+				pdx_tooltip_delayed = "NOV_Moscow_voting_district_delayed_tt"
+			}
+			
+			## overlays
+
+			iconType = {
+				name = "NOV_Northern_Voting_District_overlay"
+				spriteType = "GFX_NOV_northern_voting_district_overlay"
+				position = { x = 51 y = 70 }
+			}			
+			iconType = {
+				name = "NOV_Volga_Voting_District_overlay"
+				quadTextureSprite = "GFX_NOV_volga_voting_district_overlay"
+				position = { x = 165 y = 218 }
+			}
+			iconType = {
+				name = "NOV_Ural_Voting_District_overlay"
+				quadTextureSprite = "GFX_NOV_ural_voting_district_overlay"
+				frame = 2
+				position = { x = 287 y = 70 }
+			}
+			iconType = {
+				name = "NOV_Siberian_Voting_District_overlay"
+				quadTextureSprite = "GFX_NOV_siberian_voting_district_overlay"
+				position = { x = 380 y = 70 }
+			}
+			iconType = {
+				name = "NOV_Far_East_Voting_District_overlay"
+				quadTextureSprite = "GFX_NOV_far_east_voting_district_overlay"
+				position = { x = 583 y = 70 }
+			}
+			iconType = {
+				name = "NOV_kuban_voting_district_overlay"
+				spriteType = "GFX_NOV_kuban_voting_district_overlay"
+				position = { x = 90 y = 306 }
+			}
+			iconType = {
+				name = "NOV_Muscovy_Voting_District_overlay"
+				spriteType = "GFX_NOV_moscow_voting_district_overlay"
+				position = { x = 70 y = 247 }
+			}
+
+			iconType = {
+				name = "NOV_Presidential_Election_Map_Minimum"
+				quadTextureSprite = "GFX_NOV_voting_district_map"
+				position = { x = 50 y = 70 }
+				alwaystransparent = yes
+			}
+
+			# occupied lands #
+
+			buttonType = {
+				name = "NOV_occupied_karelia_district_button"
+				quadTextureSprite = "GFX_NOV_occupied_karelia_district"
+				position = { x = 53 y = 100 }
+				pdx_tooltip = "NOV_Karelia_Occupation_Status_Occupied_tt"
+			}
+			buttonType = {
+				name = "NOV_occupied_vyborg_district_button"
+				spriteType = "GFX_NOV_occupied_vyborg_district"
+				position = { x = 53 y = 193 }
+				pdx_tooltip = "NOV_Karelia_Occupation_Status_Occupied_tt"
+			}
+			iconType = {
+				name = "NOV_Karelia_liberated_borders"
+				quadTextureSprite = "GFX_NOV_Karelia_liberated_borders"
+				position = { x = 57 y = 99 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "NOV_vyborg_occupied_borders"
+				quadTextureSprite = "GFX_NOV_vyborg_occupied_borders"
+				position = { x = 81 y = 194 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "NOV_petrograd_liberated_borders"
+				quadTextureSprite = "GFX_NOV_petrograd_liberated_borders"
+				position = { x = 50 y = 99 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "NOV_petrograd_vyborg_liberated_borders"
+				quadTextureSprite = "GFX_NOV_petrograd_vyborg_liberated_borders"
+				position = { x = 50 y = 99 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "NOV_noKarelia_liberated_borders"
+				quadTextureSprite = "GFX_NOV_noKarelia_liberated_borders"
+				position = { x = 50 y = 220 }
+				alwaystransparent = yes
+			}
+			
+			buttonType = {
+				name = "NOV_occupied_kuban_district"
+				spriteType = "GFX_NOV_occupied_kuban_district"
+				position = { x = 90 y = 353 }
+				pdx_tooltip = "NOV_German_Occupation_Status_Occupied_tt"
+			}
+
+			iconType = {
+				name = "NOV_kuban_liberated_borders"
+				quadTextureSprite = "GFX_NOV_kuban_liberated_borders"
+				position = { x = 144 y = 306 }
+				alwaystransparent = yes
+			}
+			
+			buttonType = {
+				name = "NOV_occupied_crimea_district"
+				spriteType = "GFX_NOV_occupied_crimea_district"
+				position = { x = 90 y = 374 }
+				pdx_tooltip = "NOV_German_Occupation_Status_Occupied_tt"
+			}
+			iconType = {
+				name = "NOV_caucusus_liberated_borders"
+				quadTextureSprite = "GFX_NOV_caucusus_liberated_borders"
+				position = { x = 122 y = 306 }
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "NOV_crimea_liberated_borders"
+				quadTextureSprite = "GFX_NOV_crimea_liberated_borders"
+				position = { x = 89 y = 306 }
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name = "NOV_moscow_liberated_borders"
+				quadTextureSprite = "GFX_NOV_muscovy_liberated_borders"
+				position = { x = 69 y = 247 }
+				alwaystransparent = yes
+			}
+			
+			# Far East Occupation
+			
+			buttonType = {
+				name = "NOV_occupied_far_eastern_district_button"
+				spriteType = "GFX_NOV_occupied_far_eastern_district"
+				position = { x = 831 y = 281 }
+				pdx_tooltip = "NOV_Far_East_Occupation_Status_Occupied_tt"
+			}
+			
+			buttonType = {
+				name = "NOV_occupied_khbarovsk_far_eastern_district"
+				spriteType = "GFX_NOV_occupied_khbarovsk_far_eastern_district"
+				position = { x = 854 y = 304 }
+				pdx_tooltip = "NOV_Far_East_Occupation_Status_Occupied_tt"
+			}
+			
+			buttonType = {
+				name = "NOV_occupied_vladivostok_far_eastern_district"
+				spriteType = "GFX_NOV_occupied_vladivostok_far_eastern_district"
+				position = { x = 864 y = 398 }
+				pdx_tooltip = "NOV_Far_East_Occupation_Status_Occupied_tt"
+			}
+			
+			iconType = {
+				name = "NOV_birobidzhan_liberated_borders"
+				quadTextureSprite = "GFX_NOV_birobidzhan_liberated_borders"
+				position = { x = 830 y = 280 }
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name = "NOV_khbarovsk_liberated_borders"
+				quadTextureSprite = "GFX_NOV_khbarovsk_liberated_borders"
+				position = { x = 830 y = 280 }
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name = "NOV_vladivostok_liberated_borders"
+				quadTextureSprite = "GFX_NOV_vladivostok_liberated_borders"
+				position = { x = 830 y = 280 }
+				alwaystransparent = yes
+			}
+			
+			buttonType = {
+				name = "NOV_occupied_petrograd_district_button"
+				spriteType = "GFX_NOV_occupied_petrograd_district"
+				position = { x = 51 y = 216 }
+				pdx_tooltip = "NOV_German_Occupation_Status_Occupied_tt"
+			}
+			
+			buttonType = {
+				name = "NOV_occupied_caucasia_district_button"
+				spriteType = "GFX_NOV_occupied_caucasia_district"
+				position = { x = 90 y = 307 }
+				pdx_tooltip = "NOV_German_Occupation_Status_Occupied_tt"
+			}
+			
+			buttonType = {
+				name = "NOV_occupied_moscow_district_button"
+				spriteType = "GFX_NOV_occupied_moscow_district"
+				position = { x = 70 y = 248 }
+				pdx_tooltip = "NOV_German_Occupation_Status_Occupied_tt"
+			}
+
+			## region highlights ##
+
+			iconType = {
+				name = "NOV_Northern_Voting_District_highlight"
+				position = { x = 19 y = 68 }
+				orientation = "TOP_RIGHT"
+			}			
+			iconType = {
+				name = "NOV_Volga_Voting_District_highlight"
+				spriteType = "GFX_NOV_Volga_District_Highlight"
+				position = { x = 162 y = 216 }
+			}
+			iconType = {
+				name = "NOV_Ural_Voting_District_highlight"
+				spriteType = "GFX_NOV_Ural_District_Highlight"
+				position = { x = 284 y = 68 }
+			}
+			iconType = {
+				name = "GFX_NOV_Siberia_District_Highlight"
+				spriteType = "GFX_NOV_Siberia_District_Highlight"
+				position = { x = 375 y = 68 }
+			}
+			iconType = {
+				name = "NOV_Far_East_Voting_District_highlight"
+				position = { x = 580 y = 68 }
+			}
+			iconType = {
+				name = "NOV_kuban_voting_district_highlight"
+				position = { x = 87 y = 304 }
+				orientation = "TOP_RIGHT"
+			}
+			iconType = {
+				name = "NOV_Muscovy_Voting_District_highlight"
+				spriteType = "GFX_NOV_Muscovy_District_Highlight"
+				position = { x = 67 y = 245 }
+			}
+
+
+			iconType = {
+				name = "NOV_PEM_dividers"
+				quadTextureSprite = "GFX_NOV_presidential_elections_dividers"
+				position = { x = 7 y = 431 }
+				alwaystransparent = yes
+			}
+			
+			instantTextBoxType = {
+				name = "NOV_Presidential_Race"
+				position = { x = 26 y = 431 }
+				font = "aldrich_36_outline"
+				text = "PRESIDENTIAL RACE"
+				format = center
+				maxWidth = 600
+			}
+				
+			instantTextBoxType = {
+				name = "NOV_District_Select"
+				position = { x = 672 y = 431 }
+				font = "aldrich_36_outline"
+				text = [Root.NOV_District_Select_lockey]
+				format = center
+				maxWidth = 600
+			}
+			
+			# District Selection #
+			
+			iconType = {
+				name = "NOV_district_select_picture_icon"
+				quadTextureSprite = "GFX_idea_unknown"
+				position = { x = 655 y = 472 }
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name = "NOV_region_information_gui"
+				quadTextureSprite = "GFX_NOV_select_region_animation"
+				position = { x = 855 y = 472 }
+				alwaystransparent = yes
+			}
+
+			### CAMPAIGN OVERLAYS ###
+
+			iconType = {
+				name = "NOV_campaign_overlay_far_east"
+				spriteType = "GFX_NOV_RAPP_campaign"
+				position = { x = 800 y = 150 }
+				pdx_tooltip = NOV_far_east_campaign_tt
+			}
+
+			iconType = {
+				name = "NOV_campaign_overlay_central_siberia"
+				spriteType = "GFX_NOV_RAPP_campaign"
+				position = { x = 500 y = 190 }
+				pdx_tooltip = NOV_cen_sib_campaign_tt
+			}
+
+			iconType = {
+				name = "NOV_campaign_overlay_urals"
+				spriteType = "GFX_NOV_RAPP_campaign"
+				position = { x = 320 y = 180 }
+				pdx_tooltip = NOV_ural_campaign_tt
+			}
+
+			iconType = {
+				name = "NOV_campaign_overlay_north"
+				spriteType = "GFX_NOV_RAPP_campaign"
+				position = { x = 180 y = 170 }
+				pdx_tooltip = NOV_north_campaign_tt
+			}
+
+			iconType = {
+				name = "NOV_campaign_overlay_volga"
+				spriteType = "GFX_NOV_RAPP_campaign"
+				position = { x = 220 y = 260 }
+				pdx_tooltip = NOV_volga_campaign_tt
+			}
+
+			iconType = {
+				name = "NOV_campaign_overlay_kuban"
+				spriteType = "GFX_NOV_RAPP_campaign"
+				position = { x = 150 y = 355 }
+				pdx_tooltip = NOV_kuban_campaign_tt
+			}
+
+			iconType = {
+				name = "NOV_campaign_overlay_moscow"
+				spriteType = "GFX_NOV_RAPP_campaign"
+				position = { x = 120 y = 275 }
+				pdx_tooltip = NOV_moscow_campaign_tt
+			}
+
+			containerWindowType = {
+				name = "NOV_Next_Election_Window"
+				
+				iconType = {
+					name = "NOV_next_election_space"
+					quadTextureSprite = "GFX_NOV_next_election_space"
+					position = { x = 1036 y = 416 }
+					alwaystransparent = yes
+				}
+				
+				instantTextBoxType = {
+					name = "NOV_Next_Election_Text"
+					position = { x = 1028 y = 418 }
+					font = "aldrich_14_outline"
+					text = "[NOV_Next_Election_Loc]"
+					format = center
+					maxWidth = 275
+				}
+			}
+
+			containerWindowType = {
+				name = "NOV_Regional_Elections_Support_Bars"
+				position = { x = 400 y = 400 }
+
+				instantTextBoxType = {
+					name = "NOV_region_statistics"
+					position = { x = 445 y = 68 }
+					font = "aldrich_28_outline"
+					text = "NOV_election_statistics"
+					format = center
+					maxWidth = 450
+				}
+
+				instantTextBoxType = {
+					name = "NOV_region_population"
+					position = { x = 445 y = 96 }
+					font = "aldrich_24_outline"
+					text = "NOV_regional_population"
+					format = center
+					maxWidth = 450
+				}
+
+				iconType = {
+					name = "NOV_RAPP_popularity_bar"
+					spriteType = "GFX_NOV_RAPP_progress_bar"
+					position = { x = 484 y = 136 }
+					pdx_tooltip = "NOV_regional_RAPP_support_tt"
+				}
+
+				iconType = {
+					name = "NOV_VRPP_popularity_bar"
+					spriteType = "GFX_NOV_VRPP_progress_bar"
+					position = { x = 482 y = 165 }
+					pdx_tooltip = "NOV_regional_VRPP_support_tt"
+				}
+
+					iconType = {
+					name = "NOV_DSPR_popularity_bar"
+					spriteType = "GFX_NOV_DSPR_progress_bar"
+					position = { x = 484 y = 194 }
+					pdx_tooltip = "NOV_regional_DSPR_support_tt"
+				}
+
+				iconType = {
+					name = "NOV_RSLP_popularity_bar"
+					spriteType = "GFX_NOV_RSLP_progress_bar"
+					position = { x = 484 y = 223 }
+					pdx_tooltip = "NOV_regional_RSLP_support_tt"
+				}
+
+				iconType = {
+					name = "NOV_independents_popularity_bar"
+					spriteType = "GFX_NOV_IND_progress_bar"
+					position = { x = 484 y = 252 }
+					pdx_tooltip = "NOV_regional_independents_support_tt"
+				}
+
+				## Party tick arrows ##
+
+				iconType = {
+					name = "NOV_RAPP_momentum"
+					spriteType = "GFX_NOV_arrow_right_3"
+					position = { x = 540 y = 127 }
+				}
+				iconType = {
+					name = "NOV_VRPP_momentum"
+					spriteType = "GFX_NOV_arrow_right_3"
+					position = { x = 540 y = 156 }
+				}
+				iconType = {
+					name = "NOV_DSPR_momentum"
+					spriteType = "GFX_NOV_arrow_right_3"
+					position = { x = 540 y = 185 }
+				}
+				iconType = {
+					name = "NOV_RSLP_momentum"
+					spriteType = "GFX_NOV_arrow_right_3"
+					position = { x = 540 y = 214 }
+				}
+				iconType = {
+					name = "NOV_independents_momentum"
+					spriteType = "GFX_NOV_arrow_right_3"
+					position = { x = 596 y = 243 }
+				}
+
+				## Interactions ##
+
+				instantTextBoxType = {
+					name = "NOV_region_interactions"
+					position = { x = 422 y = 276 }
+					font = "aldrich_28_outline"
+					text = "NOV_election_interactions"
+					format = center
+					maxWidth = 500
+				} 
+
+				buttonType = {
+					name = "NOV_interaction_rally"
+					spriteType = "GFX_NOV_rally_good_button"
+					position = { x = 484 y = 310 }
+					pdx_tooltip = "NOV_hold_rally_tt"
+				}
+
+				buttonType = {
+					name = "NOV_interaction_discredit_opposition"
+					spriteType = "GFX_NOV_bad_rally_button"
+					position = { x = 484 y = 340 }
+					pdx_tooltip = "NOV_discredit_opposition_tt"
+				}
+
+				buttonType = {
+					name = "NOV_interaction_campaign"
+					spriteType = "GFX_NOV_campaign_good_button"
+					position = { x = 674 y = 310 }
+					pdx_tooltip = "NOV_campaign_tt"
+				}
+
+				buttonType = {
+					name = "NOV_interaction_slander"
+					spriteType = "GFX_NOV_bad_campaign_button"
+					position = { x = 674 y = 340 }
+					pdx_tooltip = "NOV_slander_tt"
+				}
+			}
+
+			containerWindowType = {
+				name = "NOV_Presidential_Race_Support_Bars"
+				
+				instantTextBoxType = {
+					name = "NOV_graph_header"
+					position = { x = -84 y = 474 }
+					font = "aldrich_28_outline"
+					text = "THE POLLS"
+					format = center
+					maxWidth = 500
+				}
+			
+				iconType = {
+					name = "NOV_elections_graph"
+					spriteType = "GFX_NOV_graph"
+					position = { x = 10 y = 485 }
+					alwaystransparent = yes
+				}
+				
+				iconType = {
+					name = "NOV_RAPP_presidential_progress_bar"
+					quadTextureSprite = "GFX_NOV_RAPP_presidential_progress_bar"
+					position = { x = 18 y = 510 }
+					pdx_tooltip = "NOV_presidential_RAPP_support_tt"
+				}
+				
+				iconType = {
+					name = "NOV_VRPP_presidential_progress_bar"
+					quadTextureSprite = "GFX_NOV_VRPP_presidential_progress_bar"
+					position = { x = 18 y = 555 }
+					pdx_tooltip = "NOV_presidential_VRPP_support_tt"
+				}
+				
+				iconType = {
+					name = "NOV_DSPR_presidential_progress_bar"
+					quadTextureSprite = "GFX_NOV_DSPR_presidential_progress_bar"
+					position = { x = 18 y = 600 }
+					pdx_tooltip = "NOV_presidential_DSPR_support_tt"
+				}
+				
+				iconType = {
+					name = "NOV_RSLP_presidential_progress_bar"
+					quadTextureSprite = "GFX_NOV_RSLP_presidential_progress_bar"
+					position = { x = 18 y = 645 }
+					pdx_tooltip = "NOV_presidential_RSLP_support_tt"
+				}
+
+				iconType = {
+					name = "NOV_independents_presidential_progress_bar"
+					quadTextureSprite = "GFX_NOV_IND_presidential_progress_bar"
+					position = { x = 18 y = 690 }
+					pdx_tooltip = "NOV_presidential_independents_support_tt"
+				}
+
+				## leading candidate ##
+
+				instantTextBoxType = {
+					name = "NOV_lead_candidate_header"
+					position = { x = 363 y = 474 }
+					font = "aldrich_28_outline"
+					text = "LEAD CANDIDATE"
+					format = center
+					maxWidth = 250
+				}
+
+				instantTextBoxType = {
+					name = "NOV_lead_candidate_name"
+					position = { x = 238 y = 730 }
+					font = "aldrich_20_outline"
+					text = "[NOVgetCandidateInLead]"
+					format = center
+					maxWidth = 500
+				}
+
+				iconType = {
+					name = "NOV_lead_candidate"
+					quadTextureSprite = "GFX_NOV_presidential_candidates"
+					position = { x = 408 y = 505 }
+				}
+				iconType = {
+					name = "NOV_russia_not_in_election_gui"
+					quadTextureSprite = "GFX_NOV_russia_not_in_election_gui"
+					position = { x = 13 y = 472 }
+				}
+			}
+
+			iconType = {
+				name = "NOV_election_progress_bar_space"
+				quadTextureSprite = "GFX_NOV_election_progress_bar_space"
+				position = { x = 1042 y = 400 }
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "NOV_Election_Time_Bar"
+				quadTextureSprite = "GFX_NOV_Election_Bar"
+				position = { x = 1044 y = 401 }
+				pdx_tooltip = "NOV_Election_Time_Bar_tt"
+			}
+		}
+	}
+
+	### GRIDBOXES ###
+
+	## ASSEMBLY SEATS ##
+
+	containerWindowType = {
+		name = "NOV_duma_seat_container"
+		position = { x = 0 y = 0 }
+
+		iconType = { 
+			name = "NOV_duma_seat"
+			quadTextureSprite = "GFX_NOV_federal_assembly_seat"
+		}
+	}
+
+	containerWindowType = {
+		name = "NOV_council_seat_container"
+		position = { x = 0 y = 0 }
+
+		iconType = { 
+			name = "NOV_council_seat"
+			quadTextureSprite = "GFX_NOV_federal_assembly_seat"
+		}
+	}
+
+	## PARTY LISTS ##
+
+	containerWindowType = {
+		name = "NOV_party_window_container"
+		position = { x = 119 y = 29 }
+
+		iconType = { 
+			name = "NOV_party_window"
+			quadTextureSprite = "GFX_NOV_party_window"
+			position = { x = 0 y = -28 }
+		}
+
+		iconType = { 
+			name = "NOV_party_icon"
+			quadTextureSprite = "GFX_NOV_RAPP"
+			position = { x = 0 y = -28 }
+			pdx_tooltip = "NOV_party_tt"
+		}
+
+		instantTextBoxType = {
+			name = "NOV_party_name"
+			position = { x = 43 y = -18 }
+			font = "aldrich_20_outline"
+			text = "[NOVgetPartyName]"
+			format = left
+			maxWidth = 125
+		}
+
+		instantTextBoxType = {
+			name = "NOV_party_duma_seats"
+			position = { x = 160 y = -26 }
+			font = "aldrich_16_outline"
+			text = "[NOVgetPartyDumaSeats]"
+			format = right
+			maxWidth = 100
+		}
+
+		instantTextBoxType = {
+			name = "NOV_party_council_seats"
+			position = { x = 160 y = -8 }
+			font = "aldrich_16_outline"
+			text = "[NOVgetPartyCouncilSeats]"
+			format = right
+			maxWidth = 100
+		}
+
+		instantTextBoxType = {
+			name = "NOV_party_opinion"
+			position = { x = 0 y = 24 }
+			font = "aldrich_20_outline"
+			text = "[NOVgetPartyOpinion]"
+			format = center
+		}
+
+		buttonType = {
+			name = "NOV_parties_interaction"
+			spriteType = "GFX_NOV_party_interaction_button"
+			position = { x = 206 y = 11 } 
+			pdx_tooltip = "NOV_parties_interaction_tt"
+		}
+	}
+
+	containerWindowType = {
+		name = "NOV_coalition_party_container"
+		position = { x = 0 y = 0 }
+
+		iconType = { 
+			name = "NOV_coalition_party_icon"
+			quadTextureSprite = "GFX_NOV_RAPP"
+			position = { x = 0 y = 0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "NOV_bills_party_container"
+		position = { x = 0 y = 0 }
+
+		iconType = { 
+			name = "NOV_party_icon"
+			quadTextureSprite = "GFX_NOV_RAPP"
+			position = { x = 0 y = -1 }
+		}
+
+		instantTextBoxType = {
+			name = "NOV_party_votes"
+			position = { x = 6 y = 9 }
+			font = "aldrich_18_outline"
+			text = "[NOVgetBillPartyVotes]"
+			format = center
+		}
+
+		buttonType = {
+			name = "NOV_bills_parties_interaction"
+			spriteType = "GFX_NOV_bills_interaction_button"
+			position = { x = 174 y = 5 } 
+			#pdx_tooltip = "NOV_campaign_tt"
+		}
+	}
+
+	## PARTIES INTERACTION MENU ##
+
+	containerWindowType = {
+		name = "NOV_parties_interaction_menu"
+		size = { width = 370 height = 330 }
+		position = { x = 1169 y = 288 }
+		moveable = no
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_thin_border2"
+		}
+
+		buttonType = {
+			name = "close_menu_button"
+			position = { x = -29 y = 10 }
+			quadTextureSprite ="GFX_crt_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		
+		iconType = { 
+			name = "NOV_party_interaction_icon"
+			quadTextureSprite = "GFX_NOV_RAPP"
+			position = { x = 41 y = 30 }
+		}
+
+		instantTextBoxType = {
+			name = "NOV_parties_interaction_header"
+			position = { x = 6 y = 38 }
+			font = "aldrich_28_outline"
+			text = "NOV_parties_interaction_header"
+			format = center
+			maxWidth = 400
+		}
+
+		buttonType = {
+			name = "NOV_party_interaction_bribe_officials"
+			spriteType = "GFX_NOV_party_interaction_menu_button"
+			position = { x = 24 y = 92 }
+			buttonFont = "aldrich_20_outline"
+			text = "BRIBE PARTY OFFICIALS"
+			pdx_tooltip = "NOV_party_interaction_bribe_officials_tt"
+		}
+
+		buttonType = {
+			name = "NOV_party_interaction_token_concessions"
+			spriteType = "GFX_NOV_party_interaction_menu_button"
+			position = { x = 24 y = 148 }
+			buttonFont = "aldrich_20_outline"
+			text = "MAKE TOKEN CONCESSIONS"
+			pdx_tooltip = "NOV_party_interaction_token_concessions_tt"
+		}
+
+		buttonType = {
+			name = "NOV_party_interaction_sit_down"
+			spriteType = "GFX_NOV_party_interaction_menu_button"
+			position = { x = 24 y = 204 }
+			buttonFont = "aldrich_20_outline"
+			text = "SIT DOWN WITH PARTY LEADERS"
+			pdx_tooltip = "NOV_party_interaction_sit_down_tt"
+		}
+
+		buttonType = {
+			name = "NOV_party_interaction_accuse"
+			spriteType = "GFX_NOV_party_interaction_menu_button"
+			position = { x = 24 y = 260 }
+			buttonFont = "aldrich_20_outline"
+			text = "ACCUSE OF POPULISM"
+			pdx_tooltip = "NOV_party_interaction_accuse_tt"
+		}
+	}
+}

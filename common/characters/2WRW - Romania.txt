@@ -1,0 +1,15 @@
+characters = {
+	### ROMANIA
+	ROM_Ion_Iliescu = {
+		name = ROM_Ion_Iliescu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ROM/Portrait_Romania_Ion_Iliescu.dds"
+			}
+		}
+		country_leader = {
+			expire = "1999.1.1"
+			ideology = progressivism_reformist_socialism_subtype
+		}
+	}
+}

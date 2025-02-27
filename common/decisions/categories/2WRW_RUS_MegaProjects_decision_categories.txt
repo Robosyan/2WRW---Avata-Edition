@@ -1,0 +1,20 @@
+
+RUS_SWRW_siberian_railway_category = {
+
+	icon = GFX_decision_category_siberian_railway
+	picture = GFX_RUS_decision_political_situation
+
+	allowed = {
+		always = yes
+		OR = {
+			is_russian_nation = yes
+		}
+	}
+	
+	visible = {
+		has_country_flag = RUS_SIBERIAN_RAILWAY_MEGAPROJECT
+	}
+	scripted_gui = RUS_Siberian_Railway_GUI_Opener
+	visible_when_empty = yes
+	priority = 200
+}

@@ -1,0 +1,2230 @@
+on_actions = {
+	#### PEACE/WAR VICTORY ON_CAPITULATION BLOCK ####
+	#### PUT YOUR SHIT HERE
+	# At the end of each global block, set the skip_default_capitulation GLOBAL flag
+	# Otherwise shit will just get annexed
+	# Really
+	# It will.
+
+	# FROM = winner
+	# ROOT = country being capitulated/loser
+	
+	# Anytime y'all are triggering the popup manually, please add 1 to the dirty variable, `global.peace_popup_dirty`
+	
+	#See TNO_economy_scripted_effects regarding how transfer_GDP works
+
+	on_capitulation = {
+		effect = {
+			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+
+			set_global_flag = show_peace_popup_alert
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+
+			if = {
+				limit = {
+					event_target:losing_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:losing_country
+						}
+					}
+				}
+				set_global_flag = losing_country_multiple
+			}
+
+			if = {
+				limit = {
+					event_target:winning_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:winning_country
+						}
+					}
+				}
+				set_global_flag = winning_country_multiple
+			}
+			add_to_variable = { global.peace_popup_dirty = 1 }
+
+			FROM = { # winner simply gets GDP recalculated :)
+				recalculate_GDP_and_PUs_on_demand = yes
+			}
+
+			#Annexation block
+			#This if block will only fire if FROM (capitulator) and ROOT (country being capitulated)
+			#That is to say, if one side has completely lost (nobody left to fight on)
+
+			if = {
+				limit = {
+					OR = {
+						ROOT = { is_in_faction = no }
+						ROOT = {
+							all_allied_country = {
+								has_capitulated = yes
+							}
+						}
+					}
+				}
+				log = "war_won"
+				set_global_flag = war_won
+
+				#GDP is no longer transferred.
+				# every_country = {
+				# 	limit = {
+				# 		OR = {
+				# 			is_in_faction_with = ROOT
+				# 			original_tag = ROOT
+				# 		}
+				# 	}
+				# 	FROM = {
+				# 		#transfer_GDP = yes
+				# 	}
+				# }
+
+				#Mountain War, this only triggers if you decide to beat Turkey to death for some reason
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								is_russian_nation = yes 
+								original_tag = GEO
+								original_tag = ARM
+								original_tag = ADY
+							}
+						}
+						ROOT = { original_tag = TUR }
+					}
+					FROM = {
+						every_country = {
+							limit = { has_war_with = TUR }
+							white_peace = TUR
+						}
+						if = { #Georgia and Armenia are free
+							limit = {
+								country_exists = GEO
+								country_exists = ARM
+							}
+							ARM = { 
+								transfer_state = 230
+								transfer_state = 1567
+								dismantle_faction = yes
+								if = {
+									limit = {
+										RUS = { is_faction_leader = yes }
+									}
+									add_ideas = CSTO_Member
+								}
+								else = {
+									add_ideas = OFN_Independent_Member
+								}
+							}
+							GEO = { 
+								transfer_state = 231
+								transfer_state = 1556
+								transfer_state = 1558
+								if = {
+									limit = {
+										RUS = { is_faction_leader = yes }
+									}
+									add_ideas = CSTO_Member
+								}
+								else = {
+									add_ideas = OFN_Independent_Member
+								}
+								delete_unit_template_and_units = { 
+									division_template = "Kveiti Divizia"
+									disband = yes
+								}
+							}
+							RUS = {
+								set_autonomy = {
+									target = GEO
+									autonomy_state = autonomy_client_state
+								}
+								set_autonomy = {
+									target = ARM
+									autonomy_state = autonomy_client_state
+								}
+								add_to_faction = GEO
+								add_to_faction = ARM
+							}
+						}
+						else_if = { #Caucasian federation
+							limit = {
+								country_exists = ADY
+								NOT = {
+									country_exists = GEO
+									country_exists = ARM
+								}
+							}
+							ADY = {
+								add_state_core = 230
+								add_state_core = 1565
+								add_state_core = 1567
+								add_state_core = 1568
+								transfer_state = 230
+								transfer_state = 1565
+								transfer_state = 1567
+							}
+						}
+						else = { #Russia eats everything
+							RUS = {
+								transfer_state = 230
+								transfer_state = 1565
+								transfer_state = 1567
+							}
+						}
+						GRE = {
+							transfer_state = 184
+							transfer_state = 1266
+						}
+						#Peace Deal 3 (Has anybody ever seen this?????)
+						if = {
+							limit = {
+								NOT = {
+									country_exists = SYR
+								}
+							}
+							SYR = {
+								transfer_state = 1242
+								transfer_state = 1241
+								transfer_state = 1240
+								transfer_state = 1371
+								transfer_state = 1370
+								transfer_state = 677
+								transfer_state = 1243
+								transfer_state = 1369
+								transfer_state = 1372
+								transfer_state = 554
+								transfer_state = 680
+								TNO_startup_nation = yes
+							}
+							RUS = { puppet = SYR }
+						}
+						if = {
+							limit = {
+								NOT = {
+									country_exists = KUR
+								}
+							}
+							KUR = {
+								transfer_state = 781
+								transfer_state = 1334
+								TNO_startup_nation = yes
+							}
+							RUS = { puppet = KUR }
+						}
+						RUS = { puppet = TUR }
+					}
+					NOV_Global_Conflict_Helper = yes
+					set_global_flag = skip_default_capitulation
+				}
+
+				#Invasion of Armenia
+				else_if = {
+					limit = {
+						FROM = { is_russian_nation = yes }
+						ROOT = { original_tag = ARM }
+					}
+					FROM = { white_peace = ROOT }
+						if = {
+							limit = {
+								country_exists = ADY
+							}
+							ADY = {
+								annex_country = {
+									target = ROOT
+									transfer_troops = no
+								}
+								every_owned_state = {
+									add_core_of = PREV
+								}
+							}
+						}
+						else = {
+							FROM = {
+								annex_country = {
+									target = ROOT
+									transfer_troops = no
+								}
+								every_owned_state = {
+									add_core_of = PREV
+								}
+							}
+						}
+					set_global_flag = skip_default_capitulation
+				}
+
+				#Liberation of East Turkestan
+				else_if = {
+					limit = {
+						FROM = { is_russian_nation = yes }
+						ROOT = { original_tag = XIN }
+					}
+					FROM = { white_peace = ROOT }
+						ETR = {
+							add_state_core = 617
+							add_state_core = 618
+							add_state_core = 957
+							add_state_core = 958
+							add_state_core = 619
+							transfer_state = 617
+							transfer_state = 618
+							transfer_state = 957
+							transfer_state = 958
+							transfer_state = 619
+						}
+					FROM = { puppet = ETR }
+					set_global_flag = skip_default_capitulation
+				}
+				#Central Asia - normal
+				else_if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = IRN
+								original_tag = KZK
+								original_tag = RUS
+							}
+						}
+						ROOT = {
+							OR = {
+								original_tag = UZB
+								original_tag = KYR
+								original_tag = TAJ
+								original_tag = UTL
+								original_tag = TRK
+								original_tag = KRK
+								original_tag = KLT
+								original_tag = MFP
+							}
+						}
+					}
+					#transferring territory
+					if = {
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = IRN
+									original_tag = KZK
+									original_tag = RUS
+								}
+							}
+							ROOT = {
+								OR = {
+									original_tag = UZB
+									original_tag = KYR
+									original_tag = TAJ
+									original_tag = UTL
+									original_tag = TRK
+									original_tag = KRK
+								}
+							}
+						}
+						FROM = {
+							white_peace = ROOT
+							RUS = {
+								annex_country = {
+									target = ROOT
+									transfer_troops = no
+								}
+							}
+						}
+					}
+					#if you cap afghanistan's puppets you just wp them
+					else_if = {
+						limit = {
+							FROM = {
+								OR = {
+									original_tag = IRN
+									original_tag = KZK
+									original_tag = RUS
+								}
+							}
+							ROOT = {
+								OR = {
+									original_tag = KLT
+									original_tag = MFP
+								}
+							}
+						}
+						if = {
+							limit = { KLT = { has_war_with = RUS } }
+							KLT = { white_peace = RUS }
+						}
+						if = {
+							limit = { KLT = { has_war_with = KZK } }
+							KLT = { white_peace = KZK }
+						}
+						if = {
+							limit = { KLT = { has_war_with = IRN } }
+							KLT = { white_peace = IRN }
+						}
+					}
+					#Afghanistan wp
+					if = {
+						limit = {
+							NOT = {
+								country_exists = KYR
+								country_exists = TAJ
+								country_exists = UTL
+							}
+						}
+						if = {
+							limit = { AFG = { has_war_with = RUS } }
+							AFG = { white_peace = RUS }
+						}
+						if = {
+							limit = { AFG = { has_war_with = KZK } }
+							AFG = { white_peace = KZK }
+						}
+						if = {
+							limit = { AFG = { has_war_with = IRN } }
+							AFG = { white_peace = IRN }
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				#Central Asia - Afghanistan bullshit
+				else_if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = IRN
+								original_tag = KZK
+								original_tag = RUS
+							}
+						}
+						ROOT = { original_tag = AFG }
+					}
+					#Afghanistan wp
+					if = {
+						limit = { AFG = { has_war_with = RUS } }
+						AFG = { white_peace = RUS }
+					}
+					if = {
+						limit = { AFG = { has_war_with = KZK } }
+						AFG = { white_peace = KZK }
+					}
+					if = {
+						limit = { AFG = { has_war_with = IRN } }
+						AFG = { white_peace = IRN }
+					}
+					#transferring territory
+					if = {
+						limit = { country_exists = KYR }
+						FROM = {
+							white_peace = KYR
+							RUS = {
+								annex_country = {
+									target = KYR
+									transfer_troops = no
+								}
+							}
+						}
+					}
+					if = {
+						limit = { country_exists = TAJ }
+						FROM = {
+							white_peace = TAJ
+							RUS = {
+								annex_country = {
+									target = TAJ
+									transfer_troops = no
+								}
+							}
+						}
+					}
+					if = {
+						limit = { country_exists = UTL }
+						FROM = {
+							white_peace = UTL
+							RUS = {
+								annex_country = {
+									target = UTL
+									transfer_troops = no
+								}
+							}
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				#Shuk Romania
+				else_if = {
+					limit = {
+						FROM = {
+							has_country_leader = { character = NOV_Vasily_Shukshin }
+						}
+						ROOT = { original_tag = ROM }
+					}
+					FROM = { white_peace = ROOT }
+
+					ROM = {
+						set_cosmetic_tag = ROM_REPUBLIC
+						add_ideas = CSTO_Member
+						set_variable = { TNO_economy_type = token:Econ_Type_Capitalism }
+						econ_join_sphere_RUS = yes
+						XXX = { ROM_Ion_Iliescu = { set_nationality = ROM } }
+						ROM_Ion_Iliescu = { promote_character = progressivism }
+						set_politics = {
+							ruling_party = progressivism
+						}
+						add_popularity = {
+							ideology = progressivism
+							popularity = 0.3
+						}
+						set_party_name = {
+							ideology = progressivism
+							long_name = ROM_social_democracy_party_long
+							name = ROM_social_democracy_party
+						}
+						remove_ideas = {
+							ROM_King_And_Pawn
+							ROM_Michael_The_Brave
+							ROM_Antonescus_Territorial_Remnant
+							ita_lira_zone
+						}
+						get_current_government_type = yes
+						save_party_popularities = yes
+					}
+					RUS = {
+						set_autonomy = {
+							target = ROM
+							autonomy_state = autonomy_client_state
+						}	 
+					}
+					ROM = {
+						restore_previous_government_type = yes
+						apply_party_popularities = yes
+					}
+					1428 = {
+						owner = {
+							add_state_core = 192
+							add_state_core = 198
+							add_state_core = 1282
+							add_state_core = 1285
+							add_state_core = 1965
+							add_state_core = 1966
+							transfer_state = 192
+							transfer_state = 198
+							transfer_state = 1282
+							transfer_state = 1285
+							transfer_state = 1965
+							transfer_state = 1966
+						}
+					}
+					every_state = {
+						limit = {
+							is_owned_by = TNS
+						}
+						TNS = { remove_state_core = PREV }
+					}
+					every_country = { limit = { is_ai = no } news_event = { id = WORLD.40032 days = 1 } }
+					set_global_flag = skip_default_capitulation
+					clr_globa_flag = RUSSO_ROMANIAN_WAR
+				}
+				#Generic Romania
+				else_if = {
+					limit = {
+						FROM = {
+							is_russian_nation = yes 
+							NOT = {
+								has_country_leader = { character = NOV_Vasily_Shukshin }
+							}
+						}
+						ROOT = { original_tag = ROM }
+					}
+					FROM = { white_peace = ROOT }
+					1428 = {
+						owner = {
+							add_state_core = 192
+							add_state_core = 198
+							add_state_core = 1282
+							add_state_core = 1285
+							add_state_core = 1965
+							add_state_core = 1966
+							transfer_state = 192
+							transfer_state = 198
+							transfer_state = 1282
+							transfer_state = 1285
+							transfer_state = 1965
+							transfer_state = 1966
+						}
+					}
+					every_state = {
+						limit = {
+							is_owned_by = TNS
+						}
+						TNS = { remove_state_core = PREV }
+					}
+				}
+
+				#West China War
+				else_if = {
+					limit = {
+						FROM = { original_tag = QIN }
+						OR = {
+							ROOT = { original_tag = GAN }
+							ROOT = { original_tag = TIB }
+							ROOT = { original_tag = XIN }
+						}
+					}
+					FROM = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								country_exists = GAN
+								country_exists = TIB
+								country_exists = XIN
+							}
+						}
+						every_state = {
+							limit = {
+								is_owned_by = FROM
+							}
+							add_core_of = FROM
+						}
+						QIN = {
+							add_ideas = WCH_national_reconstruction
+							add_ideas =	WCH_diverse_nation
+							econ_join_sphere_RUS = yes
+							if = {
+								limit = {
+									RUS = { is_faction_leader = yes }
+								}
+								add_ideas = CSTO_Member
+							}
+							else = {
+								add_ideas = OFN_Independent_Member
+							}
+						}
+						set_autonomy = {
+							target = QIN
+							autonomy_state = autonomy_client_state
+						}
+						XXX = {
+							QIN_Sun_Tse_Ping = { set_nationality = QIN }
+							QIN_Li_Xiannian = { set_nationality = QIN }
+						}
+						QIN = {
+							set_cosmetic_tag = QIN_WCH
+							set_politics = {
+								ruling_party = paternalism
+							}
+							promote_character = QIN_Sun_Tse_Ping
+							promote_character = QIN_Li_Xiannian
+							set_popularities = {
+								paternalism = 50
+								conservatism = 20
+								liberalism = 20
+								despotism = 10
+							}
+							set_party_name = {
+								ideology = despotism
+								long_name = QIN_WCH_despotism_long
+								name = QIN_WCH_despotism_party
+							}
+							set_party_name = {
+								ideology = paternalism
+								long_name = QIN_WCH_paternalism_long
+								name = QIN_WCH_paternalism_party
+							}
+							set_party_name = {
+								ideology = conservatism
+								long_name = QIN_WCH_conservatism_long
+								name = QIN_WCH_conservatism_party
+							}
+							set_party_name = {
+								ideology = liberalism
+								long_name = QIN_WCH_liberalism_long
+								name = QIN_WCH_liberalism_party
+							}
+							set_party_name = {
+								ideology = communist
+								long_name = QIN_WCH_communist_long
+								name = QIN_WCH_communist_party
+							}
+						}
+						RUS = { add_to_faction = QIN }
+						every_country = { limit = { is_ai = no } news_event = { id = SWRW_Chinanews.1 days = 1 } }
+						NOV_Global_Conflict_Helper = yes
+						set_global_flag = skip_default_capitulation
+					}
+				}
+				#West china war Lose
+				else_if = {
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = XIN
+								original_tag = TIB
+							}
+						}
+						ROOT = { original_tag = QIN }
+					}
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = yes
+						}
+					}
+					NOV_Global_Conflict_Helper = yes
+					set_global_flag = skip_default_capitulation
+				}
+
+				#Mongolia
+				else_if = {
+					limit = {
+						FROM = { original_tag = MON }
+						ROOT = { original_tag = MEN }
+					}
+					FROM = {
+						white_peace = ROOT
+									MON = {
+							transfer_state = 815
+							transfer_state = 2405
+							add_state_core = 815
+							add_state_core = 2405
+							if = {
+								limit = {
+									RUS = { is_faction_leader = yes }
+								}
+								add_ideas = CSTO_Member
+							}
+							else = {
+								add_ideas = OFN_Independent_Member
+							}
+							econ_join_sphere_RUS = yes
+						}
+						RUS = { add_to_faction = MON }
+						white_peace = JAP
+					}
+					NOV_Global_Conflict_Helper = yes
+					set_global_flag = skip_default_capitulation
+				}
+
+				#If you lose mongolia war like a retard
+				else_if = {
+					limit = {
+						FROM = { original_tag = MEN }
+						ROOT = { original_tag = MON }
+					}
+					FROM = {
+						white_peace = ROOT
+						MEN = {
+							transfer_state = 814
+							transfer_state = 330
+		                    transfer_state = 2400
+		                    transfer_state = 2402
+		                    transfer_state = 2403
+		                    transfer_state = 2404
+		                    transfer_state = 2401
+						}
+						MON = {
+							remove_state_core = 814
+							remove_state_core = 330
+						}
+					}
+					NOV_Global_Conflict_Helper = yes
+					set_global_flag = skip_default_capitulation
+				}
+
+				#Krakow Uprising
+				else_if = {
+					limit = {
+						FROM = { original_tag = POL }
+						ROOT = { original_tag = GGN }
+						has_global_flag = RUS_krakow_uprising
+					}
+					FROM = {
+						white_peace = ROOT
+						white_peace = GER
+						transfer_state = 1384
+						transfer_state = 1380
+						transfer_state = 10
+						transfer_state = 1381
+						transfer_state = 1383
+						transfer_state = 90
+						transfer_state = 1382
+						transfer_state = 92
+						set_capital = { state = 10 remember_old_capital = no }
+						remove_ideas = Pakt_Marionettenstaat
+						set_country_flag = POL_p2
+						add_ideas = POL_vistula_german_conflict_idea
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.6 days = 1 } }
+					}
+					NOV_Global_Conflict_Helper = yes
+					set_global_flag = skip_default_capitulation
+				}
+
+				#If you loose Krakow Uprising LMAO
+				else_if = {
+					limit = {
+						FROM = { original_tag = GGN }
+						ROOT = { original_tag = POL }
+						has_global_flag = RUS_krakow_uprising
+					}
+					FROM = {
+						white_peace = ROOT
+						transfer_state = 88
+						transfer_state = 1385
+						transfer_state = 1386
+						transfer_state = 1389
+						transfer_state = 1390
+						transfer_state = 1391
+						transfer_state = 1387
+						transfer_state = 1392
+						transfer_state = 1393
+						transfer_state = 1394
+						transfer_state = 91
+						transfer_state = 94
+						transfer_state = 89
+						transfer_state = 1388
+
+						1391 = {
+							set_victory_points = {
+								province = 11479
+								value = 5
+							}
+							add_manpower = -150000
+							set_temp_variable = { state_value_multiplier_temp = 0.66 }
+							econ_state_value_change_multiply = yes
+						}
+						88 = {
+							set_victory_points = {
+								province = 15816
+								value = 5
+							}
+							add_manpower = -150000
+							set_temp_variable = { state_value_multiplier_temp = 0.66 }
+							econ_state_value_change_multiply = yes
+						}
+						1385 = {
+							set_victory_points = {
+								province = 442
+								value = 0
+							}
+							set_victory_points = {
+								province = 6499
+								value = 0
+							}
+							add_manpower = -150000
+							set_temp_variable = { state_value_multiplier_temp = 0.66 }
+							econ_state_value_change_multiply = yes
+						}
+						1389 = {
+							set_victory_points = {
+								province = 11399
+								value = 0
+							}
+							add_manpower = -150000
+							set_temp_variable = { state_value_multiplier_temp = 0.66 }
+							econ_state_value_change_multiply = yes
+						}
+						1386 = {
+							set_victory_points = {
+								province = 3434
+								value = 0
+							}
+							add_manpower = -150000
+							set_temp_variable = { state_value_multiplier_temp = 0.66 }
+							econ_state_value_change_multiply = yes
+						}
+						get_current_government_type = yes
+						save_party_popularities = yes
+						if = {
+							limit = {
+								GER = { has_country_flag = BOR_Herbst }
+							}
+							GER = {
+								set_autonomy = {
+									target = GGN
+									autonomy_state = autonomy_integrated_reichskommissariat
+								}
+							}
+						}
+						else = {
+							GER = {
+								set_autonomy = {
+									target = GGN
+									autonomy_state = autonomy_collaborator_puppet_state
+								}
+							}
+						}
+						restore_previous_government_type = yes
+						apply_party_popularities = yes
+					}
+					NOV_Global_Conflict_Helper = yes
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.7 days = 1 } }
+					set_global_flag = skip_default_capitulation
+				}
+				#Kazakhstan - Shukshin
+				else_if = {
+					limit = {
+						FROM = { is_russian_nation = yes }
+						OR = {
+							ROOT = { original_tag = KAZ }
+							ROOT = { original_tag = KZR }
+						}
+						has_global_flag = RUS_shukshin_unification
+					}
+					if = {
+						limit = {
+							KAZ = { is_in_faction_with = RUS }
+						}
+						every_state = {
+							limit = { is_owned_by = ROOT }
+							KAZ = { transfer_state = PREV }
+						}
+						KAZ = { country_event = { id = KAZ_skeleton.9 } }
+					}
+					else_if = {
+						limit = {
+							KZR = { is_in_faction_with = RUS }
+						}
+						every_state = {
+							limit = { is_owned_by = ROOT }
+							KZR = { transfer_state = PREV }
+						}
+						KZR = { country_event = { id = KAZ_skeleton.10 } }
+					}
+					else = {
+						every_state = {
+							limit = { is_owned_by = ROOT }
+							set_state_flag = RUS_kazakhstan_peacedeal_shenanigans
+							FROM = { transfer_state = PREV }
+						}
+					}
+				}
+				#Kazakhstan - Generic
+				else_if = {
+					limit = {
+						FROM = {
+							is_russian_nation = yes
+							NOT = { has_country_flag = RUS_generic_fascist_unifier } #for now fash unifiers will just annex everything
+							NOT = {
+								has_country_leader = {
+									character = KOM_Ivan_Serov #yeah uh something something ordosocialism who tf cares
+									ruling_only = yes
+								}
+							}
+							NOT = { original_tag = SBA } #sba doesn't like anyone
+							NOT = {
+								has_country_leader = {
+									character = KOM_Sergey_Taboritsky #duh
+									ruling_only = yes
+								}
+							}
+						}
+						OR = {
+							ROOT = { original_tag = KAZ }
+							ROOT = { original_tag = KZR }
+						}
+						NOT = { has_global_flag = RUS_shukshin_unification }
+					}
+					if = {
+						limit = {
+							FROM = { has_country_flag = SWRW_RUS_invading_both_kazakhstans }
+						}
+						every_state = {
+							limit = { is_owned_by = ROOT }
+							set_state_flag = RUS_kazakhstan_peacedeal_shenanigans
+							FROM = { transfer_state = PREV }
+						}
+						if = {
+							limit = {
+								NOT = {
+									country_exists = KAZ
+									country_exists = KZR
+								}
+							}
+							if = {
+								limit = {
+									FROM = {
+										has_country_flag = RUS_generic_democratic_unifier
+									}
+								}
+								every_state = {
+									limit = { has_state_flag = RUS_kazakhstan_peacedeal_shenanigans }
+									clr_state_flag = RUS_kazakhstan_peacedeal_shenanigans
+									KAZ = { transfer_state = PREV }
+								}
+								KAZ = { TNO_startup_nation = yes }
+								KAZ = {	
+									get_current_government_type = yes
+									save_party_popularities = yes
+								}
+								FROM = {
+									set_autonomy = {
+										target = KAZ
+										autonomy_state = autonomy_client_state
+									}
+								}
+								KAZ = {
+									restore_previous_government_type = yes
+									apply_party_popularities = yes
+								}
+								if = {
+									limit = {
+										KAZ = { has_government = communist }
+									}
+									KAZ = {
+										set_popularities = {
+											communist = 10
+											communist_1 = 3
+											ultranationalism = 0
+											socialist = 0
+											progressivism = 0
+											liberalism = 15
+											conservatism = 0
+											paternalism = 47
+											despotism = 25
+											fascism = 0
+											national_socialism = 0
+										}
+										set_cosmetic_tag = KAZ_Nurmagambetov_2
+										set_politics = { ruling_party = paternalism }
+										KAZ_Sagadat_Nurmagambetov = {
+											remove_country_leader_role = { ideology = despotism_partisan_movement_subtype }
+											add_country_leader_role = {
+												country_leader = {
+													expire = "1982.01.01"
+													ideology = paternalism_transitioning_democracy_subtype
+													traits = {
+													}
+													id = -1
+												}
+												promote_leader = yes
+											}
+										}
+									}
+								}
+							}
+							else = {
+								every_state = {
+									limit = { has_state_flag = RUS_kazakhstan_peacedeal_shenanigans }
+									clr_state_flag = RUS_kazakhstan_peacedeal_shenanigans
+								}
+							}
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								KAZ = { is_in_faction_with = RUS }
+							}
+							every_state = {
+								limit = { is_owned_by = ROOT }
+								KAZ = { transfer_state = PREV }
+							}
+							if = {
+								limit = {
+									KAZ = { has_country_leader = { character = KAZ_Zhumabek_Tashenev ruling_only = yes } }
+								}
+								KAZ = { country_event = { id = KAZ_skeleton.8 } }
+							}
+							else_if = {
+								limit = {
+									KAZ = { has_country_leader = { character = KAZ_Sagadat_Nurmagambetov ruling_only = yes } }
+								}
+								KAZ = { country_event = { id = KAZ_skeleton.9 } }
+							}
+						}
+						else_if = {
+							limit = {
+								KZR = { is_in_faction_with = RUS }
+							}
+							every_state = {
+								limit = { is_owned_by = ROOT }
+								KZR = { transfer_state = PREV }
+							}
+							if = {
+								limit = {
+									KZR = { has_country_leader = { character = KZR_Nikolai_Shchelokov ruling_only = yes } }
+								}
+								KZR = { country_event = { id = KAZ_skeleton.10 } }
+							}
+							else_if = {
+								limit = {
+									KZR = { has_country_leader = { character = KZR_Mikhail_Solomentsev ruling_only = yes } }
+								}
+								KZR = { country_event = { id = KAZ_skeleton.11 } }
+							}
+						}
+						else = {
+							if = {
+								limit = { ROOT = { original_tag = KZR } }
+								every_state = {
+									limit = { is_owned_by = ROOT }
+									KAZ = { transfer_state = PREV }
+								}
+								KAZ = { TNO_startup_nation = yes }
+								KAZ = {	
+									get_current_government_type = yes
+									save_party_popularities = yes
+								}
+								FROM = { puppet = KAZ }
+								KAZ = {
+									restore_previous_government_type = yes
+									apply_party_popularities = yes
+								}
+								if = {
+									limit = {
+										KAZ = {
+											has_country_leader = {
+												character = KAZ_Sagadat_Nurmagambetov
+												ruling_only = yes
+											}
+										}
+										FROM = { has_country_flag = RUS_generic_communist_unifier }
+									}
+									KAZ = {
+										set_popularities = {
+											communist = 70
+											communist_1 = 3
+											ultranationalism = 0
+											socialist = 0
+											progressivism = 0
+											liberalism = 5
+											conservatism = 0
+											paternalism = 22
+											despotism = 0
+											fascism = 0
+											national_socialism = 0
+										}
+										promote_character = KAZ_Zhumabek_Tashenev
+										set_cosmetic_tag = KAZ_Tashenev
+										set_politics = { ruling_party = communist }
+									}
+								}
+								else_if = {
+									limit = {
+										KAZ = {
+											has_country_leader = {
+												character = KAZ_Zhumabek_Tashenev
+												ruling_only = yes
+											}
+										}
+										FROM = { has_country_flag = RUS_generic_communist_unifier }
+									}
+									log = "Nothing ever happens"
+									#nothing happens idk this is the most braindead solution i could find on short notice
+								}
+								else = {
+									KAZ = {
+										set_popularities = {
+											communist = 10
+											communist_1 = 3
+											ultranationalism = 0
+											socialist = 0
+											progressivism = 0
+											liberalism = 15
+											conservatism = 0
+											paternalism = 47
+											despotism = 25
+											fascism = 0
+											national_socialism = 0
+										}
+										set_cosmetic_tag = KAZ_Nurmagambetov_2
+										set_politics = { ruling_party = paternalism }
+										KAZ_Sagadat_Nurmagambetov = {
+											remove_country_leader_role = { ideology = despotism_partisan_movement_subtype }
+											add_country_leader_role = {
+												country_leader = {
+													expire = "1982.01.01"
+													ideology = paternalism_provisional_government_subtype
+													traits = {
+													}
+													id = -1
+												}
+												promote_leader = yes
+											}
+										}
+									}
+								}
+							}
+							else = {
+								every_state = {
+									limit = { is_owned_by = ROOT }
+									KZR = { transfer_state = PREV }
+								}
+								KZR = { TNO_startup_nation = yes }
+								KZR = {	
+									get_current_government_type = yes
+									save_party_popularities = yes
+								}
+								FROM = { puppet = KZR }
+								KZR = {
+									restore_previous_government_type = yes
+									apply_party_popularities = yes
+								}
+								if = {
+									limit = {
+										KZR = {
+											has_country_leader = {
+												character = KZR_Nikolai_Shchelokov
+												ruling_only = yes
+											}
+										}
+										FROM = { has_country_flag = RUS_generic_communist_unifier }
+									}
+									KZR = {
+										set_popularities = {
+											communist = 77
+											ultranationalism = 0
+											socialist = 0
+											progressivism = 0
+											liberalism = 3
+											conservatism = 0
+											paternalism = 20
+											despotism = 0
+											fascism = 0
+											national_socialism = 0
+										}
+										promote_character = KZR_Mikhail_Solomentsev
+										set_cosmetic_tag = KZR_Solomentsev
+										set_politics = { ruling_party = communist }
+									}
+								}
+								else_if = {
+									limit = {
+										KZR = {
+											has_country_leader = {
+												character = KZR_Mikhail_Solomentsev
+												ruling_only = yes
+											}
+										}
+										FROM = { has_country_flag = RUS_generic_communist_unifier }
+									}
+									#nothing happens idk this is the most braindead solution i could find on short notice
+								}
+								else = {
+									KZR = {
+										set_popularities = {
+											communist = 10
+											ultranationalism = 0
+											socialist = 0
+											progressivism = 0
+											liberalism = 3
+											conservatism = 0
+											paternalism = 25
+											despotism = 55
+											fascism = 7
+											national_socialism = 0
+										}
+										set_cosmetic_tag = KZR_Shchelokov_2
+										set_party_name = {
+											ideology = despotism
+											long_name = KZR_despotism_party_shchelokov_long
+											name = KZR_despotism_party_shchelokov
+										}
+										set_politics = { ruling_party = despotism }
+										KZR_Nikolai_Shchelokov = {
+											remove_country_leader_role = { ideology = paternalism_right_wing_populism_subtype }
+											add_country_leader_role = {
+												country_leader = {
+													expire = "1982.01.01"
+													ideology = despotism_interim_government_subtype
+													traits = {
+													}
+													id = -1
+												}
+												promote_leader = yes
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #POL beats OZW
+					limit = {
+						FROM = { original_tag = POL }
+						ROOT = { original_tag = OZW }
+					}
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						set_capital = {
+							state = 10
+							remember_old_capital = no
+						}
+						set_party_name = {
+							ideology = paternalism
+							name = POL_2GCW_despotism_party
+							long_name = POL_2GCW_despotism_party_long
+						}
+						set_party_name = {
+							ideology = despotism
+							name = POL_despotism_party
+							long_name = POL_despotism_party_long
+						}
+						set_politics = {
+							ruling_party = paternalism
+							elections_allowed = no
+						}
+						add_country_leader_role = {
+							character = POL_home_army
+							country_leader = {
+								ideology = paternalism_provisional_government_subtype
+								desc = "POLITICS_POL_HOME_ARMY_DESC"
+								expire = "1999.1.23"
+								id = -1
+							}
+							promote_leader = yes
+						}
+						set_popularities = {
+							paternalism = 40
+							conservatism = 25
+							socialist = 25
+							despotism_1 = 5
+							communist = 5
+						}
+						set_country_flag = POL_p2
+						add_ideas = POL_vistula_german_conflict_idea
+					}
+					if = {
+						limit = {
+							RUS = {
+								OR = {
+									has_country_leader = {
+										character = NOV_Vasily_Shukshin
+										ruling_only = yes
+									}
+									has_country_flag = RUS_generic_democratic_unifier
+								}
+							}
+						}
+						if = {
+							limit = {
+								RUS = {
+									has_country_leader = {
+									character = NOV_Vasily_Shukshin
+										ruling_only = yes
+									}
+								}
+							}
+							RUS = { add_to_faction = FROM }
+							POL = {
+								if = {
+									limit = {
+										RUS = { is_faction_leader = yes }
+									}
+									add_ideas = CSTO_Member
+								}
+								else = {
+									add_ideas = OFN_Independent_Member
+								}
+								econ_join_sphere_RUS = yes
+							}
+							NOV_Global_Conflict_Helper = yes
+						}
+						else = {
+							POL = { econ_join_sphere_RUS = yes }
+							RUS = { add_to_faction = FROM }
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #OZW beats POL (for the shuktards)
+					limit = {
+						FROM = { original_tag = OZW }
+						ROOT = { original_tag = POL }
+					}
+					FROM = {
+						white_peace = ROOT
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+						set_capital = {
+							state = 10
+							remember_old_capital = no
+						}
+					}
+					if = {
+						limit = {
+							RUS = {
+								has_country_leader = {
+								character = NOV_Vasily_Shukshin
+									ruling_only = yes
+								}
+							}
+						}
+						NOV_Global_Conflict_Helper = yes
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #FRA beats GLC
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = FRS
+								original_tag = FRM
+								original_tag = FRD
+								original_tag = FMM
+								original_tag = FRV
+								original_tag = FMM
+								original_tag = FGR
+								original_tag = FIT
+								is_in_faction_with = FRS
+								is_in_faction_with = FRM
+								is_in_faction_with = FRD
+								is_in_faction_with = FMM
+								is_in_faction_with = FRV
+								is_in_faction_with = FGR
+								is_in_faction_with = FIT
+							}
+						}
+						ROOT = { original_tag = GLC }
+					}
+					FROM = { white_peace = ROOT }
+					every_state = {
+						limit = {
+							is_core_of = ROOT
+						}
+						remove_core_of = ROOT
+						add_core_of = FRA
+					}
+					FRA = {
+						annex_country = {
+							target = ROOT
+							transfer_troops = no
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								FRA = { has_idea = BRG_burgundian_legacy }
+							}
+						}
+						FRA = { add_ideas = BRG_burgundian_legacy }
+					}
+					if = {
+						limit = {
+							has_global_flag = paris_divided
+						}
+						set_victory_points = { #goodbye Nord-Paris
+							province = 11506
+							value = 0
+						}
+						clr_global_flag = paris_divided
+						state_control_effect_786 = yes
+					}
+					FRA = { #in case paris isn't already the capital
+						set_capital = {
+							state = 786
+							remember_old_capital = no
+						}
+					}
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.17 days = 1 } }
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #Rotfront losing in 2GCW (avoids basegame peace conference)
+					limit = {
+						FROM = {
+							OR = {
+								original_tag = REG
+								original_tag = GMA
+								original_tag = GER
+								original_tag = SFK
+							}
+						}
+						ROOT = {
+							OR = {
+								original_tag = RPR
+								original_tag = SRH
+								original_tag = HRC
+								AND = {
+									original_tag = SIL
+									SIL = { has_idea = REV_Member }
+								}
+							}
+						}
+					}
+					1810 = {
+						controller = {
+							set_country_flag = annex_rpr
+						}
+					}
+					59 = {
+						controller = {
+							set_country_flag = annex_srh
+						}
+					}
+					775 = {
+						controller = {
+							set_country_flag = annex_hrc
+						}
+					}
+					if = {
+						limit = {
+							SIL = { has_idea = REV_Member }
+						}
+						67 = {
+							controller = {
+								set_country_flag = annex_sil
+							}
+						}
+					}
+					every_country = {
+						limit = { has_war_with = RPR }
+						white_peace = RPR
+					}
+					every_country = {
+						limit = { has_war_with = SRH }
+						white_peace = SRH
+					}
+					every_country = {
+						limit = { has_war_with = HRC }
+						white_peace = HRC
+					}
+					if = {
+						limit = {
+							SIL = { has_idea = REV_Member }
+						}
+						every_country = {
+							limit = { has_war_with = SIL }
+							white_peace = SIL
+						}
+					}
+					every_state = {
+						limit = {
+							is_owned_by = RPR
+						}
+						every_country = {
+							limit = {
+								has_country_flag = annex_rpr
+							}
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_owned_by = SRH
+						}
+						every_country = {
+							limit = {
+								has_country_flag = annex_srh
+							}
+							transfer_state = PREV
+						}
+					}
+					every_state = {
+						limit = {
+							is_owned_by = HRC
+						}
+						every_country = {
+							limit = {
+								has_country_flag = annex_hrc
+							}
+							transfer_state = PREV
+						}
+					}
+					if = {
+						limit = {
+							SIL = { has_idea = REV_Member }
+						}
+						every_state = {
+							limit = {
+								is_owned_by = SIL
+							}
+							every_country = {
+								limit = {
+									has_country_flag = annex_sil
+								}
+								transfer_state = PREV
+							}
+						}
+					}
+					1810 = { owner = { clr_country_flag = annex_rpr } }
+					59 = { owner = { clr_country_flag = annex_srh } }
+					775 = { owner = { clr_country_flag = annex_hrc } }
+					67 = { owner = { clr_country_flag = annex_sil } }
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #RPR retakes Denmark
+					limit = {
+						FROM = { original_tag = RPR }
+						ROOT = { original_tag = DEN }
+					}
+					FROM = {
+						add_to_faction = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_client_state
+						}
+					}
+					DEN = {
+						set_cosmetic_tag = DEN_2GCW_commie
+						transfer_state = 37	
+						transfer_state = 99
+						set_variable = { TNO_economy_type = token:Econ_Type_Planned }
+						set_variable = { TNO_economy_subtype = token:Econ_Subtype_Worker_Directed }
+						set_politics = {
+							ruling_party = communist
+						}
+						set_popularities = {
+							communist = 35
+							socialist = 0
+							progressivism = 24
+							liberalism = 0
+							liberal_conservatism = 23
+
+							conservatism = 5
+							paternalism = 8
+							despotism = 0
+							fascism = 0
+							national_socialism = 5
+							ultranationalism = 0
+						}
+						XXX = {
+							DEN_Arne_Munch_Petersen = { set_nationality = DEN }
+						}
+						promote_character = DEN_Arne_Munch_Petersen
+						econ_leave_sphere = yes
+						econ_join_sphere_RPR = yes
+						add_ideas = VFE_Member
+					}
+					RPR = {
+						transfer_state = 744
+						add_to_faction = DEN
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #REG retakes Denmark
+					limit = {
+						FROM = { original_tag = REG }
+						ROOT = { original_tag = DEN }
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					REG = {
+						transfer_state = 744
+						add_to_faction = DEN
+					}
+					REG = {
+						set_autonomy = {
+							target = DEN
+							autonomy_state = autonomy_client_state
+						}
+					}
+					DEN = {
+						set_cosmetic_tag = DEN_2GCW_dem
+						transfer_state = 37	
+						transfer_state = 99
+						set_variable = { TNO_economy_type = token:Econ_Type_Capitalism }
+						set_popularities = {
+							communist = 25
+							socialist = 10
+							progressivism = 24
+							liberalism = 0
+							liberal_conservatism = 23
+
+							conservatism = 5
+							paternalism = 8
+							despotism = 0
+							fascism = 0
+							national_socialism = 5
+							ultranationalism = 0
+						}
+						set_politics = {
+							ruling_party = paternalism
+							elections_allowed = yes
+						}
+						XXX = {
+							DEN_Freedom_council = { set_nationality = DEN }
+						}
+						promote_character = DEN_Freedom_council
+						econ_leave_sphere = yes
+						econ_join_sphere_REG = yes
+						add_ideas = DPKT_Member
+						country_event = { id = DEN_Spring.4 days = 20 }
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #GER, GMA or SFK retakes Denmark
+					limit = {
+						OR = {
+							AND = {
+								has_global_flag = RUS_SWRW_Victory
+								FROM = { original_tag = GER }
+							}
+							FROM = { original_tag = SFK }
+							FROM = { original_tag = GMA }
+						}
+						ROOT = { original_tag = DEN }
+					}
+					FROM = {
+						white_peace = ROOT
+						transfer_state = 744
+						transfer_state = 37	
+						transfer_state = 99
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #RPR retakes Slovakia
+					limit = {
+						FROM = { original_tag = RPR }
+						ROOT = { original_tag = SLO }
+					}
+					FROM = { white_peace = ROOT }
+					FROM = {
+						add_to_faction = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_assr
+						}
+					}
+					SLO = {
+						set_variable = { TNO_economy_type = token:Econ_Type_Planned }
+						set_variable = { TNO_economy_subtype = token:Econ_Subtype_Worker_Directed }
+						set_politics = {
+							ruling_party = communist
+						}
+						XXX = {
+							SLO_Julius_Duris = { set_nationality = SLO }
+						}
+						promote_character = SLO_Julius_Duris
+						set_popularities = {
+							communist = 40
+							communist_1 = 26
+							communist_2 = 15
+							communist_3 = 6
+							progressivism = 13
+						}
+						set_party_name = {
+							ideology = communist_1
+							name = SLO_communist_party_1
+							long_name = SLO_communist_party_long_1
+						}
+						set_party_name = {
+							ideology = communist_2
+							name = SLO_communist_party_2
+							long_name = SLO_communist_party_long_2
+						}
+						set_party_name = {
+							ideology = communist_3
+							name = SLO_communist_party_3
+							long_name = SLO_communist_party_long_3
+						}
+						remove_ideas = Pakt_Marionettenstaat
+						econ_join_sphere_RPR = yes
+						add_ideas = VFE_Member
+						remove_ideas = {
+							SLO_political_Tensions
+							SLO_Chained_Minds
+							SLO_Uncompetitive_Economy
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #REG retakes Slovakia
+					limit = {
+						FROM = { original_tag = REG }
+						ROOT = { original_tag = SLO }
+					}
+					FROM = { white_peace = ROOT }
+					FROM = {
+						add_to_faction = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_client_state
+						}
+					}
+					XXX = {
+						SLO_Ivan_Pietor = { set_nationality = SLO }
+					}
+					SLO = {
+						set_variable = { TNO_economy_type = token:Econ_Type_Capitalism }
+						set_temp_variable = { TNO_economy_subtype_temp = 0 }
+						econ_subtype_change = yes
+						set_politics = {
+							ruling_party = conservatism
+						}
+						promote_character = SLO_Ivan_Pietor
+						set_popularities = {
+							conservatism = 60
+							conservatism_1 = 27
+							progressivism = 13
+						}
+						set_party_name = {
+							ideology = conservatism_1
+							name = SLO_conservative_party_1_short
+							long_name = SLO_conservative_party_1_long
+						}
+						remove_ideas = Pakt_Marionettenstaat
+						econ_join_sphere_REG = yes
+						add_ideas = DPKT_Member
+						remove_ideas = {
+							SLO_political_Tensions
+							SLO_Chained_Minds
+							SLO_Uncompetitive_Economy
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #GER retakes Slovakia
+					limit = {
+						has_global_flag = RUS_SWRW_Victory
+						FROM = { original_tag = GER }
+						ROOT = { original_tag = SLO }
+					}
+					FROM = { white_peace = ROOT }
+					FROM = {
+						add_to_faction = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_reichsprotektorat
+						}
+					}
+					ROOT = {
+						set_politics = {
+							ruling_party = national_socialism
+						}
+						set_variable = { TNO_economy_type = token:Econ_Type_Corporatism }
+						set_popularities = {
+							national_socialism = 87
+							fascism = 8
+							ultranationalism = 5
+						}
+						econ_join_sphere_GER = yes
+						remove_faction_status = yes
+						add_ideas = PKT_Member
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #GMA retakes Slovakia
+					limit = {
+						has_global_flag = RUS_SWRW_Victory
+						FROM = { original_tag = GMA }
+						ROOT = { original_tag = SLO }
+					}
+					FROM = { white_peace = ROOT }
+					FROM = {
+						add_to_faction = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_reichsprotektorat
+						}
+					}
+					ROOT = {
+						set_politics = {
+							ruling_party = national_socialism
+						}
+						set_variable = { TNO_economy_type = token:Econ_Type_Corporatism }
+						set_popularities = {
+							national_socialism = 87
+							fascism = 8
+							ultranationalism = 5
+						}
+						econ_join_sphere_GMA = yes
+						remove_faction_status = yes
+						add_ideas = PKT_Member
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #SFK retakes Slovakia
+					limit = {
+						FROM = { original_tag = SFK }
+						ROOT = { original_tag = SLO }
+					}
+					FROM = {
+						white_peace = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_reichsprotektorat
+						}
+					}
+					ROOT = {
+						set_politics = {
+							ruling_party = ultranationalism
+						}
+						set_variable = { TNO_economy_type = token:Econ_Type_Corporatism }
+						set_popularities = {
+							ultranationalism = 90
+							national_socialism = 8
+							fascism = 2
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #RPR retakes Poland
+					limit = {
+						FROM = { original_tag = RPR }
+						OR = {
+							ROOT = { original_tag = POL }
+							ROOT = { original_tag = OZW }
+						}
+					}
+					FROM = { white_peace = ROOT }
+					if = {
+						limit = {
+							ROOT = { original_tag = OZW }
+						}
+						POL = {
+							annex_country = {
+								target = OZW
+								transfer_troops = no
+							}
+						}
+					}
+					FROM = {
+						set_autonomy = {
+							target = POL
+							autonomy_state = autonomy_assr
+						}
+					}
+					XXX = {
+						POL_Kazimierz_Puczynski = { set_nationality = POL }
+					}
+					POL = {
+						set_capital = { state = 10 remember_old_capital = no }
+						drop_cosmetic_tag = yes
+						promote_character = POL_Kazimierz_Puczynski
+						set_politics = {
+							ruling_party = socialist
+						}
+						set_popularities = {
+							socialist = 59
+							conservatism = 4
+							liberalism = 7
+							communist = 10
+							national_socialism = 20
+						}
+						set_variable = { TNO_economy_type = token:Econ_Type_Planned }
+						set_variable = { TNO_economy_subtype = token:Econ_Subtype_Worker_Directed }
+						add_ideas = VFE_Member
+						econ_join_sphere_RPR = yes
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #REG retakes Poland
+					limit = {
+						FROM = { original_tag = REG }
+						ROOT = { original_tag = OZW }
+					}
+					FROM = { white_peace = ROOT }
+					POL = {
+						annex_country = {
+							target = OZW
+							transfer_troops = no
+						}
+					}
+					FROM = {
+						set_autonomy = {
+							target = POL
+							autonomy_state = autonomy_client_state
+						}
+					}
+					XXX = {
+						POL_Alfred_Urbanski = { set_nationality = POL }
+					}
+					POL = {
+						set_variable = { TNO_economy_type = token:Econ_Type_Capitalism }
+						set_capital = { state = 10 remember_old_capital = no }
+						drop_cosmetic_tag = yes
+						promote_character = POL_Alfred_Urbanski
+						set_politics = {
+							ruling_party = progressivism
+						}
+						set_popularities = {
+							progressivism = 58
+							conservatism = 10
+							liberal_conservatism = 15
+							national_socialism = 17
+						}
+						econ_join_sphere_REG = yes
+						add_ideas = DPKT_Member
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #GER, GMA or SFK retakes Poland
+					limit = {
+						OR = {
+							AND = {
+								has_global_flag = RUS_SWRW_Victory
+								FROM = { original_tag = GER }
+							}
+							FROM = { original_tag = SFK }
+							FROM = { original_tag = GMA }
+						}
+						ROOT = { original_tag = POL }
+					}
+					FROM = { white_peace = ROOT }
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						FROM = { transfer_state = PREV }
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #RPR retakes GLC
+					limit = {
+						FROM = { original_tag = RPR }
+						ROOT = { original_tag = GLC }
+					}
+					FROM = {
+						add_to_faction = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_assr
+						}
+					}
+					XXX = {
+						GLC_Andre_Lajoinie = { set_nationality = GLC }
+					}
+					GLC = {
+						set_cosmetic_tag = GLC_commie
+						set_politics = {
+							ruling_party = communist
+						}
+						promote_character = GLC_Andre_Lajoinie
+						set_popularities = {
+							communist = 49
+							conservatism = 4
+							liberalism = 7
+							socialist = 20
+							despotism = 20
+						}
+						set_variable = { TNO_economy_type = token:Econ_Type_Planned }
+						set_variable = { TNO_economy_subtype = token:Econ_Subtype_Worker_Directed }
+						add_ideas = VFE_Member
+						econ_join_sphere_RPR = yes
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #REG retakes GLC
+					limit = {
+						FROM = { original_tag = REG }
+						ROOT = { original_tag = GLC }
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					FROM = {
+						add_to_faction = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_client_state
+						}
+					}
+					XXX = {
+						GLC_Jacques_Chirac = { set_nationality = GLC }
+					}
+					GLC = {
+						set_cosmetic_tag = GLC_dem
+						set_politics = {
+							ruling_party = conservatism
+						}
+						promote_character = GLC_Jacques_Chirac
+						set_popularities = {
+							conservatism = 40
+							liberalism = 13
+							liberal_conservatism = 17
+							despotism = 20
+							socialist = 10
+						}
+						set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+						econ_type_change = yes
+						econ_join_sphere_REG = yes
+						add_ideas = DPKT_Member
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #RPR retakes the Netherlands
+					limit = {
+						FROM = { original_tag = RPR }
+						ROOT = { original_tag = HOL }
+					}
+					FROM = {
+						white_peace = ROOT
+						add_to_faction = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_assr
+						}
+					}
+					ROOT = {
+						set_cosmetic_tag = HOL_commie
+						set_politics = {
+							ruling_party = communist
+						}
+						set_popularities = {
+							communist = 59
+							conservatism = 4
+							liberalism = 7
+							socialist = 10
+							national_socialism = 20
+						}
+						set_variable = { TNO_economy_type = token:Econ_Type_Planned }
+						set_variable = { TNO_economy_subtype = token:Econ_Subtype_Worker_Directed }
+						add_ideas = VFE_Member
+						econ_join_sphere_RPR = yes
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #REG retakes the Netherlands
+					limit = {
+						FROM = { original_tag = REG }
+						ROOT = { original_tag = HOL }
+					}
+					FROM = {
+						white_peace = ROOT
+						add_to_faction = ROOT
+						set_autonomy = {
+							target = ROOT
+							autonomy_state = autonomy_client_state
+						}
+					}
+					ROOT = {
+						set_variable = { TNO_economy_type = token:Econ_Type_Capitalism }
+						drop_cosmetic_tag = yes
+						set_politics = {
+							ruling_party = progressivism
+						}
+						set_popularities = {
+							progressivism = 30
+							conservatism = 13
+							liberal_conservatism = 17
+							national_socialism = 30
+							socialist = 10
+						}
+						econ_join_sphere_REG = yes
+						add_ideas = DPKT_Member
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #GER, GMA or SFK retakes the Netherlands
+					limit = {
+						OR = {
+							AND = {
+								has_global_flag = RUS_SWRW_Victory
+								FROM = { original_tag = GER }
+							}
+							FROM = { original_tag = SFK }
+							FROM = { original_tag = GMA }
+						}
+						ROOT = { original_tag = HOL }
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					every_state = {
+						limit = {
+							is_owned_by = ROOT
+						}
+						FROM = { transfer_state = PREV }
+					}
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #RPR invades Hungary
+					limit = {
+						FROM = {
+							original_tag = RPR
+						}
+						ROOT = {
+							OR = {
+								original_tag = HUD
+								original_tag = HUN
+							}
+						}
+					}
+					FROM = { white_peace = ROOT }
+					RPR_Hungary_Peacedeal = yes
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #REG invades Hungary
+					limit = {
+						FROM = {
+							tag = REG
+						}
+						ROOT = {
+							OR = {
+								tag = HUS
+								tag = HUN
+							}
+						}
+					}
+					FROM = { white_peace = ROOT }
+					REG_Hungary_Peacedeal = yes
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #GER invades Hungary
+					limit = {
+						FROM = {
+							original_tag = GER
+						}
+						ROOT = {
+							OR = {
+								original_tag = HUS
+								original_tag = HUD
+							}
+						}
+					}
+					FROM = { white_peace = ROOT }
+					GER_Hungary_Peacedeal = yes
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #GMA invades Hungary
+					limit = {
+						FROM = {
+							original_tag = GMA
+						}
+						ROOT = {
+							OR = {
+								original_tag = HUS
+								original_tag = HUD
+							}
+						}
+					}
+					FROM = { white_peace = ROOT }
+					GMA_Hungary_Peacedeal = yes
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { #SFK invades Hungary
+					limit = {
+						FROM = {
+							original_tag = SFK
+						}
+						ROOT = {
+							OR = {
+								original_tag = HUS
+								original_tag = HUD
+							}
+						}
+					}
+					FROM = { white_peace = ROOT }
+					SFK_Hungary_Peacedeal = yes
+					set_global_flag = skip_default_capitulation
+				}
+				#Capitulation block
+				set_global_flag = war_continuing
+			}
+			clr_global_flag = skip_default_capitulation
+		}
+	}
+	#don't mind me just logging wars
+	on_declare_war = {
+		effect = {
+			log="[GetDateText]: [Root.GetName] declared war on [From.GetName]"
+		}
+	}
+}

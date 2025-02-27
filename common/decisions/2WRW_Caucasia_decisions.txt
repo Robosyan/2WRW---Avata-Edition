@@ -1,0 +1,151 @@
+SWRW_Azerbaijan_category = {
+
+	AZR_withdraw_from_the_war = {
+	
+		icon = GFX_decision_diplo_kaukasien
+		
+		allowed = {
+			#
+		}
+			
+		visible = {
+			has_war_with = CAU
+			original_tag = AZR
+		}
+		
+		available = {
+			1552 = { is_controlled_by = AZR }
+			1554 = { is_controlled_by = AZR }
+			229 = { is_controlled_by = AZR }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: AZR_withdraw_from_the_war"
+			white_peace = CAU
+			AZR = {
+				transfer_state = 1552
+				transfer_state = 1554
+				transfer_state = 229
+			}
+		}
+	}
+}
+
+SWRW_Georgia_category = {
+
+	GEO_withdraw_from_the_war = {
+	
+		icon = GFX_decision_diplo_kaukasien
+		
+		allowed = {
+			#
+		}
+			
+		visible = {
+			has_war_with = CAU
+			original_tag = GEO
+		}
+		
+		available = {
+			1556 = { is_controlled_by = GEO }
+			231 = { is_controlled_by = GEO }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: GEO_withdraw_from_the_war"
+			white_peace = CAU
+			GEO = {
+				transfer_state = 1556
+				transfer_state = 231
+			}
+		}		
+	}
+}
+
+SWRW_Avaria_category = {
+
+	DAG_withdraw_from_the_war = {
+	
+		icon = GFX_decision_diplo_kaukasien
+		
+		allowed = {
+			#
+		}
+			
+		visible = {
+			has_war_with = CAU
+			original_tag = DAG
+		}
+		
+		available = {
+			1564 = { is_controlled_by = DAG }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: DAG_withdraw_from_the_war"
+			white_peace = CAU
+			DAG = {
+				transfer_state = 1564
+			}
+		}		
+	}
+}
+
+SWRW_Adygea_category = {
+
+	ADY_withdraw_from_the_war = {
+	
+		icon = GFX_decision_diplo_kaukasien
+		
+		allowed = {
+			#
+		}
+			
+		visible = {
+			has_war_with = CAU
+			original_tag = ADY
+		}
+		
+		available = {
+			1558 = { is_controlled_by = ADY }
+			1559 = { is_controlled_by = ADY }
+			1560 = { is_controlled_by = ADY }
+			1561 = { is_controlled_by = ADY }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: DAG_withdraw_from_the_war"
+			white_peace = CAU
+			ADY = {
+				transfer_state = 1558
+				transfer_state = 1559
+				transfer_state = 1560
+				transfer_state = 1561
+			}
+		}		
+	}
+}

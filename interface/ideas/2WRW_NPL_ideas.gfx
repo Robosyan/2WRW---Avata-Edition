@@ -1,0 +1,11 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_NPL_not_yet_lost"
+		texturefile = "gfx/interface/ideas/national_spirits/NPL/GFX_idea_NPL_not_yet_lost.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_NPL_winds_of_change"
+		texturefile = "gfx/interface/ideas/national_spirits/NPL/GFX_idea_NPL_winds_of_change.dds"
+	}
+}

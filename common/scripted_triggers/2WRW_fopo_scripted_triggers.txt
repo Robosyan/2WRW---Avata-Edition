@@ -1,0 +1,71 @@
+SWRW_fopo_conflict_selected = {
+	OR = {
+		TNO_fopo_iran_selected = yes
+		SWRW_PLU_conflict_selected = yes
+		SWRW_WG_conflict_selected = yes
+		SWRW_WCW_conflict_selected = yes
+		SWRW_MU_conflict_selected = yes
+		SWRW_HCW_conflict_selected = yes
+		SWRW_2GCW_conflict_selected = yes
+	}
+}
+
+SWRW_PLU_conflict_selected = {
+	OR = {
+		check_variable = { selected_conflict_id = token:SWRW_GC_PLU }
+		AND = {
+			is_in_array = { TNO_active_conflicts = token:SWRW_GC_PLU }
+			is_ai = yes
+		}
+	}
+}
+
+SWRW_WG_conflict_selected = {
+	OR = {
+		check_variable = { selected_conflict_id = token:SWRW_GC_WG }
+		AND = {
+			is_in_array = { TNO_active_conflicts = token:SWRW_GC_WG }
+			is_ai = yes
+		}
+	}
+}
+
+SWRW_WCW_conflict_selected = {
+	OR = {
+		check_variable = { selected_conflict_id = token:SWRW_GC_WCW }
+		AND = {
+			is_in_array = { TNO_active_conflicts = token:SWRW_GC_WCW }
+			is_ai = yes
+		}
+	}
+}
+
+SWRW_MU_conflict_selected = {
+	OR = {
+		check_variable = { selected_conflict_id = token:SWRW_GC_MU }
+		AND = {
+			is_in_array = { TNO_active_conflicts = token:SWRW_GC_MU }
+			is_ai = yes
+		}
+	}
+}
+
+SWRW_HCW_conflict_selected = {
+	OR = {
+		check_variable = { selected_conflict_id = token:SWRW_GC_HCW }
+		AND = {
+			is_in_array = { TNO_active_conflicts = token:SWRW_GC_HCW }
+			is_ai = yes
+		}
+	}
+}
+
+SWRW_2GCW_conflict_selected = {
+	OR = {
+		check_variable = { selected_conflict_id = token:SWRW_GC_2GCW }
+		AND = {
+			is_in_array = { TNO_active_conflicts = token:SWRW_GC_2GCW }
+			is_ai = yes
+		}
+	}
+}

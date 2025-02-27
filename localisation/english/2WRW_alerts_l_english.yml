@@ -1,0 +1,8 @@
+﻿l_english:
+ SWRW_alert_tooltip: "§Y[Get_SWRW_alert_name]§!"
+
+ SWRW_alert_name_missing: "Name Missing"
+ SWRW_alert_desc_missing: ""
+
+ NOV_alert_name_assembly: "A Bill is Under Consideration in the Assembly!"
+ NOV_alert_desc_assembly: "We can ensure it passes with some political intervention in the Federal Assembly GUI."

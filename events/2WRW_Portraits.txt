@@ -1,0 +1,134 @@
+﻿
+
+add_namespace = portrait
+add_namespace = portrait_picker
+add_namespace = portrait_changer
+
+country_event = { #Shuk
+	id = portrait_picker.1
+	title = portrait_picker.1.t 
+	desc = portrait_picker.1.d
+	picture = GFX_report_event_shuk
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = portrait_picker.1.a
+		ai_chance = {
+			factor = 0
+		}
+		if = {	
+			limit = { has_country_leader = { character = NOV_Vasily_Shukshin ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/NOV/Portrait_Novosibirsk_Vasily_Shukshin.png"
+			}
+		}
+	}
+	option = { #
+		name = portrait_picker.1.b
+		ai_chance = {
+			factor = 0
+		}
+		if = {	
+			limit = { has_country_leader = { character = NOV_Vasily_Shukshin ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/NOV/Portrait_Novosibirsk_Vasily_Shukshin1970.dds"
+			}
+		}
+	}
+	option = { #
+		name = portrait_picker.1.c
+		ai_chance = {
+			factor = 0
+		}
+		if = {	
+			limit = { has_country_leader = { character = NOV_Vasily_Shukshin ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/NOV/Portrait_Novosibirsk_Vasily_Shukshin_Post.dds"
+			}
+		}
+	}
+	option = { #
+		name = portrait_picker.1.e
+		ai_chance = {
+			factor = 0
+		}
+		if = {	
+			limit = { has_country_leader = { character = NOV_Vasily_Shukshin ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/NOV/Portrait_Novosibirsk_Vasily_Shukshin2.dds"
+			}
+		}
+	}
+	option = { #
+		name = portrait_picker.1.f
+		ai_chance = {
+			factor = 0
+		}
+		if = {	
+			limit = { has_country_leader = { character = NOV_Vasily_Shukshin ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/NOV/Portrait_Novosibirsk_Vasily_Shukshin3.dds"
+			}
+		}
+	}
+}
+
+country_event = { #Tukh
+	id = portrait_picker.2
+	title = portrait_picker.2.t 
+	desc = portrait_picker.2.d
+	picture = GFX_report_event_tukh
+
+	is_triggered_only = yes
+	
+	option = { #
+		name = portrait_picker.2.a
+		ai_chance = {
+			factor = 0
+		}
+		if = {	
+			limit = { has_country_leader = { character = WRS_Mikhail_Tukhachevsky ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/WRS/Portrait_WRRF_Mikhail_Tukhachevsky.dds"
+			}
+		}
+	}
+	option = { #
+		name = portrait_picker.2.b
+		ai_chance = {
+			factor = 0
+		}
+		if = {	
+			limit = { has_country_leader = { character = WRS_Mikhail_Tukhachevsky ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/WRS/Portrait_WRRF_Mikhail_Tukhachevsky_70s.dds"
+			}
+		}
+	}
+	option = { #
+		name = portrait_picker.2.e
+		ai_chance = {
+			factor = 0
+		}
+		if = {	
+			limit = { has_country_leader = { character = WRS_Mikhail_Tukhachevsky ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/WRS/Portrait_WRRF_Mikhail_Tukhachevsky2.dds"
+			}
+		}
+	}
+	option = { #
+		name = portrait_picker.2.c
+		ai_chance = {
+			factor = 0
+		}
+		if = {	
+			limit = { has_country_leader = { character = WRS_Mikhail_Tukhachevsky ruling_only = yes } }
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/WRS/Portrait_WRRF_Mikhail_Tukhachevsky_70s_OLD.dds"
+			}
+		}
+	}
+}
+

@@ -1,0 +1,3256 @@
+SWRW_2GCW_Regional_Winning_category = {
+	SWRW_2GCW_uneasy_truce = {
+		icon = GFX_decision_clock
+		allowed = {
+			OR = {
+				tag = RPR
+				tag = REG
+			}
+		}
+		visible = { 
+			NOT = { has_global_flag = REG_RPR_War }
+		}
+		activation = {
+			has_global_flag = SGCW_ongoing
+		}
+		cancel_trigger = {
+			NOT = { has_global_flag = SGCW_ongoing }
+		}
+		available = {
+			NOT = { country_exists = GER }
+		}
+		is_good = no
+		fire_only_once = yes
+		days_mission_timeout = 100
+		complete_effect = {
+			custom_effect_tooltip = SGCW_redundant_alliance
+			hidden_effect = {
+				RPR = {
+					country_event = { id = Global_GCW.2 days = 3 }
+				}
+				REG = {
+					country_event = { id = Global_GCW.2 days = 3 }
+				}
+			}
+		}
+		timeout_effect = {
+			custom_effect_tooltip = SGCW_impatience
+			hidden_effect = {
+				RPR = {
+					country_event = { id = Global_GCW.2 days = 3 }
+				}
+				REG = {
+					country_event = { id = Global_GCW.2 days = 3 }
+				}
+			}
+		}
+	}
+	SWRW_2GCW_Dems_invade_Commies = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_global_flag = REG_RPR_War
+		}
+		visible = {	
+			tag = REG
+			NOT = {
+				has_war_with = RPR
+			}
+			country_exists = RPR
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = RPR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SRH
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = HRC
+				type = annex_everything
+			}
+		}
+	}
+	SWRW_2GCW_democrats_winning = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			REG = {
+				controls_state = 1025
+				controls_state = 4
+				controls_state = 59
+				controls_state = 775
+				controls_state = 1810
+				controls_state = 64
+				controls_state = 776
+				controls_state = 85
+			}
+		}
+		visible = {
+			tag = REG
+		}
+		complete_effect = {
+			set_capital = {
+				state = 64
+				remember_old_capital = no
+			}
+			GER = {
+				every_core_state = {
+					remove_core_of = GER
+				}
+			}
+			HRC = {
+				every_core_state = {
+					remove_core_of = HRC
+				}
+			}
+			SRH = {
+				every_core_state = {
+					remove_core_of = SRH
+				}
+			}
+			RPR = {
+				every_core_state = {
+					remove_core_of = RPR
+				}
+			}
+			GMA = {
+				every_core_state = {
+					remove_core_of = GMA
+				}
+			}
+			REG = {
+				add_state_core = 61
+				add_state_core = 776
+				add_state_core = 1813
+				add_state_core = 1814
+				add_state_core = 60
+				add_state_core = 65
+				add_state_core = 64
+				add_state_core = 63
+				add_state_core = 56
+				add_state_core = 1373
+				add_state_core = 1810
+				add_state_core = 1809
+				add_state_core = 51
+				add_state_core = 55
+				add_state_core = 1815
+				add_state_core = 57
+				add_state_core = 188
+				add_state_core = 59
+				add_state_core = 774
+				add_state_core = 58
+				add_state_core = 775
+				add_state_core = 42
+				add_state_core = 8
+				add_state_core = 1812
+				add_state_core = 1811
+				add_state_core = 72
+				add_state_core = 28
+				add_state_core = 50
+				add_state_core = 68
+				add_state_core = 1026
+				add_state_core = 54
+				add_state_core = 53
+				add_state_core = 52
+				add_state_core = 153
+				add_state_core = 86
+				add_state_core = 152
+				add_state_core = 4
+				add_state_core = 1025
+				add_state_core = 1772
+				add_state_core = 62
+				add_state_core = 98
+				add_state_core = 770
+				add_state_core = 87
+				add_state_core = 85
+				add_state_core = 5
+				add_state_core = 97
+				set_global_flag = SGCW_MainRegional_unification
+			}
+			
+		}
+	}
+	SWRW_2GCW_Commies_invade_Dems = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_global_flag = REG_RPR_War
+		}
+		visible = {	
+			tag = RPR
+			NOT = {
+				has_war_with = REG
+			}
+			country_exists = REG
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = REG
+				type = annex_everything
+			}
+			SRH = {
+				declare_war_on = {
+					target = REG
+					type = annex_everything
+				}
+			}
+			HRC = {
+				declare_war_on = {
+					target = REG
+					type = annex_everything
+				}
+			}
+		}
+	}
+	SWRW_2GCW_Commie_winning = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			1025 = {
+				OR = {
+				is_owned_by = SRH
+				is_owned_by = HRC
+				is_owned_by = RPR
+				is_owned_by = SIL	
+				}
+			}
+			4 = {
+				OR = {
+				is_owned_by = SRH
+				is_owned_by = HRC
+				is_owned_by = RPR
+				is_owned_by = SIL	
+				}
+			}
+			59 = {
+				OR = {
+				is_owned_by = SRH
+				is_owned_by = HRC
+				is_owned_by = RPR	
+				is_owned_by = SIL
+				}
+			}
+			775 = {
+				OR = {
+				is_owned_by = SRH
+				is_owned_by = HRC
+				is_owned_by = RPR
+				is_owned_by = SIL	
+				}
+			}
+			1810 = {
+				OR = {
+				is_owned_by = SRH
+				is_owned_by = HRC
+				is_owned_by = RPR
+				is_owned_by = SIL	
+				}
+			}
+			64 = {
+				OR = {
+				is_owned_by = SRH
+				is_owned_by = HRC
+				is_owned_by = RPR
+				is_owned_by = SIL	
+				}
+			}
+			776 = {
+				OR = {
+				is_owned_by = SRH
+				is_owned_by = HRC
+				is_owned_by = RPR	
+				is_owned_by = SIL
+				}
+			}
+			85 = {
+				OR = {
+				is_owned_by = SRH
+				is_owned_by = HRC
+				is_owned_by = RPR	
+				is_owned_by = SIL
+				}
+			}
+			SRH = { has_war = no }
+			HRC = { has_war = no }
+			RPR = { has_war = no }
+		}
+		visible = {
+			tag = RPR
+		}
+		complete_effect = {
+			HRC = {
+				HRC_Ernst_Aust = { set_nationality = RPR }
+			}
+			SRH = {
+				SRH_Rudi_Dutschke = { set_nationality = RPR }
+			}
+			RPR = { annex_country = { target = SRH transfer_troops = yes } }
+			RPR = { annex_country = { target = HRC transfer_troops = yes } }
+			RPR = {
+				set_popularities = {
+					communist = 40
+					communist_1 = 22
+					socialist = 30
+					progressivism = 0
+					liberalism = 0
+					conservatism = 0
+					paternalism = 0
+					despotism = 0
+					ultranationalism = 0
+					fascism = 0
+					national_socialism = 8
+				}
+				set_party_name = {
+					ideology = communist_1
+					name = HRC_communist_party
+					long_name = HRC_communist_party_long
+				}
+				set_party_name = {
+					ideology = socialist
+					name = SRH_socialist_party
+					long_name = SRH_socialist_party_long
+				}
+				HRC_Ernst_Aust = {
+					add_country_leader_role = {
+						country_leader = {
+							desc = "POLITICS_HRC_Ernst_Aust_DESC"
+							expire = "1999.1.23"
+							ideology = communist_1_subtype
+							id = -1
+						}
+					}
+				}
+				promote_character = {
+					character = HRC_Ernst_Aust
+					ideology = communist_1_subtype
+				}
+				SRH_Rudi_Dutschke = {
+					remove_unit_leader_role = yes
+					promote_character = yes
+				}
+			}
+			GER = {
+				every_core_state = {
+					remove_core_of = GER
+				}
+			}
+			SRH = {
+				every_core_state = {
+					remove_core_of = RPR
+				}
+			}
+			HRC = {
+				every_core_state = {
+					remove_core_of = REG
+				}
+			}
+			REG = {
+				every_core_state = {
+					remove_core_of = REG
+				}
+			}
+			GMA = {
+				every_core_state = {
+					remove_core_of = GMA
+				}
+			}
+			RPR = {
+				add_state_core = 61
+				add_state_core = 776
+				add_state_core = 1813
+				add_state_core = 1814
+				add_state_core = 60
+				add_state_core = 65
+				add_state_core = 64
+				add_state_core = 63
+				add_state_core = 56
+				add_state_core = 1373
+				add_state_core = 1810
+				add_state_core = 1809
+				add_state_core = 51
+				add_state_core = 55
+				add_state_core = 1815
+				add_state_core = 57
+				add_state_core = 188
+				add_state_core = 59
+				add_state_core = 774
+				add_state_core = 58
+				add_state_core = 775
+				add_state_core = 42
+				add_state_core = 8
+				add_state_core = 1812
+				add_state_core = 1811
+				add_state_core = 72
+				add_state_core = 28
+				add_state_core = 50
+				add_state_core = 68
+				add_state_core = 1026
+				add_state_core = 54
+				add_state_core = 53
+				add_state_core = 52
+				add_state_core = 153
+				add_state_core = 86
+				add_state_core = 152
+				add_state_core = 4
+				add_state_core = 1025
+				add_state_core = 1772
+				add_state_core = 62
+				add_state_core = 98
+				add_state_core = 770
+				add_state_core = 87
+				add_state_core = 85
+				add_state_core = 5
+				add_state_core = 97
+				set_global_flag = SGCW_MainRegional_unification
+				set_cosmetic_tag = RPR_Transtional_commie
+				GER = { set_cosmetic_tag = RPR_Transtional_commie }
+				set_capital = {
+					state = 64
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+	SWRW_2GCW_Wehrmacht_winning = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			GMA = {
+				controls_state = 1025
+				controls_state = 4
+				controls_state = 59
+				controls_state = 775
+				controls_state = 1810
+				controls_state = 64
+				controls_state = 776
+				controls_state = 85
+			}
+		}
+		visible = {
+			tag = GMA
+		}
+		complete_effect = {
+			GER = {
+				every_core_state = {
+					remove_core_of = GER
+				}
+			}
+			HRC = {
+				every_core_state = {
+					remove_core_of = HRC
+				}
+			}
+			SRH = {
+				every_core_state = {
+					remove_core_of = SRH
+				}
+			}
+			RPR = {
+				every_core_state = {
+					remove_core_of = RPR
+				}
+			}
+			REG = {
+				every_core_state = {
+					remove_core_of = REG
+				}
+			}
+			GMA = {
+				add_state_core = 61
+				add_state_core = 776
+				add_state_core = 1813
+				add_state_core = 1814
+				add_state_core = 60
+				add_state_core = 65
+				add_state_core = 64
+				add_state_core = 63
+				add_state_core = 56
+				add_state_core = 1373
+				add_state_core = 1810
+				add_state_core = 1809
+				add_state_core = 51
+				add_state_core = 55
+				add_state_core = 1815
+				add_state_core = 57
+				add_state_core = 188
+				add_state_core = 59
+				add_state_core = 774
+				add_state_core = 58
+				add_state_core = 775
+				add_state_core = 42
+				add_state_core = 8
+				add_state_core = 1812
+				add_state_core = 1811
+				add_state_core = 72
+				add_state_core = 28
+				add_state_core = 50
+				add_state_core = 68
+				add_state_core = 1026
+				add_state_core = 54
+				add_state_core = 53
+				add_state_core = 52
+				add_state_core = 153
+				add_state_core = 86
+				add_state_core = 152
+				add_state_core = 4
+				add_state_core = 1025
+				add_state_core = 1772
+				add_state_core = 62
+				add_state_core = 98
+				add_state_core = 770
+				add_state_core = 87
+				add_state_core = 85
+				add_state_core = 5
+				add_state_core = 97
+				set_capital = {
+					state = 64
+					remember_old_capital = no
+				}
+				set_global_flag = SGCW_MainRegional_unification
+			}
+		}
+	}
+	SWRW_2GCW_Nazi_winning = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			GER = {
+				controls_state = 1025
+				controls_state = 4
+				controls_state = 59
+				controls_state = 775
+				controls_state = 1810
+				controls_state = 64
+				controls_state = 776
+				controls_state = 85
+			}
+		}
+		visible = {
+			tag = GER
+		}
+		complete_effect = {
+			GMA = {
+				every_core_state = {
+					remove_core_of = GMA
+				}
+			}
+			HRC = {
+				every_core_state = {
+					remove_core_of = HRC
+				}
+			}
+			SRH = {
+				every_core_state = {
+					remove_core_of = SRH
+				}
+			}
+			RPR = {
+				every_core_state = {
+					remove_core_of = RPR
+				}
+			}
+			REG = {
+				every_core_state = {
+					remove_core_of = REG
+				}
+			}
+			GER = {
+				set_global_flag = SGCW_MainRegional_unification
+				set_capital = {
+					state = 64
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+
+SWRW_Silesian_category = {
+	SWRW_Silesian_Freikorps_Winning = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 67
+			controls_state = 66
+			controls_state = 69
+			controls_state = 9
+			controls_state = 75
+		}
+		visible = {
+			tag = SFK
+		}
+		complete_effect = {
+			SIL = {
+				every_core_state = {
+					remove_core_of = SIL
+				}
+			}
+			CZE = {
+				every_core_state = {
+					remove_core_of = CZE
+				}
+			}
+			SFK = {
+				add_state_core = 67
+				add_state_core = 66
+				add_state_core = 69
+				add_state_core = 9
+				add_state_core = 75
+				declare_war_on = {
+					target = GER
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = RPR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = REG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = HRC
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SRH
+					type = annex_everything
+				}
+				load_oob = "2GCW_SFK_AI"
+				add_manpower = 500000
+			}
+			set_global_flag = SGCW_SilesianRegional_unification
+		}
+	}
+	SWRW_Silesian_Commie_Winning = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 67
+			controls_state = 66
+			controls_state = 69
+			controls_state = 9
+			controls_state = 75
+			SIL = { has_war = no }
+		}
+		visible = {
+			tag = SIL
+		}
+		complete_effect = {
+			CZE = {
+				every_core_state = {
+					remove_core_of = CZE
+				}
+			}
+			SFK = {
+				every_core_state = {
+					remove_core_of = SFK
+				}
+			}
+			SIL = {
+				add_state_core = 67
+				add_state_core = 66
+				add_state_core = 69
+				add_state_core = 9
+				add_state_core = 75
+			}
+			if = {
+				limit = {
+					country_exists = RPR 
+				}
+				RPR = {
+					add_to_faction = SIL
+				}
+			}
+			SIL = {
+				add_manpower = 500000
+				load_oob = "2GCW_SIL_AI"
+				load_oob = "2GCW_SIL_AI"
+				declare_war_on = {
+					target = GER
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = GMA
+					type = annex_everything
+				}
+			}
+			set_global_flag = SGCW_SilesianRegional_unification
+			if = {
+				limit = {
+					has_global_flag = REG_RPR_War
+				}
+				RPR = { add_to_faction = SIL }
+				SIL = {
+					declare_war_on = {
+						target = REG
+						type = annex_everything
+					}
+					add_ideas = REV_Member
+					set_major = yes
+				}
+			}
+		}
+	}
+	SWRW_Silesian_Bohemia_Winning = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 67
+			controls_state = 66
+			controls_state = 69
+			controls_state = 9
+			controls_state = 75
+		}
+		visible = {	
+			tag = CZE
+		}
+		complete_effect = {
+			SIL = {
+				every_core_state = {
+					remove_core_of = SIL
+				}
+			}
+			SFK = {
+				every_core_state = {
+					remove_core_of = SFK
+				}
+			}
+			CZE = {
+				add_state_core = 67
+				add_state_core = 66
+				add_state_core = 69
+				add_state_core = 9
+				add_state_core = 75
+				add_manpower = 500000
+			}
+		}
+	}
+}
+
+SWRW_GMA_category = {
+	SWRW_GMA_invade_Silesia = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				country_exists = SFK
+				country_exists = SIL
+			}
+
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = SFK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SIL
+				type = annex_everything
+			}
+			CZE = {
+				give_military_access = GMA
+			}
+		}
+	}
+	SWRW_GMA_Consume_CZE = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			AND = {
+				country_exists = CZE
+				has_war = no
+			}
+			
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+		}
+		complete_effect = {
+			CZE = { GER_albert_schnez = { set_nationality = GMA } }
+			GMA = { annex_country = { target = CZE transfer_troops = yes } }
+		}
+	}
+	SWRW_GMA_Mega_Unify = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 1025
+			controls_state = 4
+			controls_state = 59
+			controls_state = 775
+			controls_state = 1810
+			controls_state = 64
+			controls_state = 776
+			controls_state = 85
+			controls_state = 67
+			controls_state = 66
+			controls_state = 69
+			controls_state = 9
+			controls_state = 75
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SGCW_MainRegional_unification
+		}
+		complete_effect = {
+			GMA = {
+				add_state_core = 66
+				add_state_core = 69
+				add_state_core = 75
+				add_state_core = 67
+				add_state_core = 9
+				create_faction = PKT_faction
+				remove_ideas = {
+					GMA_a_nation_in_flames
+					GMA_the_second_german_civil_war
+				}
+				add_ideas = {
+					PKT_Member
+					GER_Reconstruction_of_Germany
+				}
+				GER_SWRW_establish_econ_sphere_post_war = yes
+			}
+			set_temp_variable = { target = GMA }
+			SWRW_Add_german_target_To_Cold_War_GUI = yes
+			hidden_effect = {
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.21 days = 2 } }
+				GMA = { news_event = { id = Global_GCW.7 days = 15 } }
+			}
+			if = {
+				limit = {
+					OR = {
+						RUS = { has_country_flag = RUS_generic_communist_unifier }
+						RUS = { has_country_flag = RUS_generic_democratic_unifier }
+						has_global_flag = RUS_shukshin_unification
+					}
+				}
+				RUS = { SWRW_fopo_remove_2GCW_tab = yes }
+			}
+			if = {
+				limit = {
+					USA = {
+						OR = {
+							has_government = progressivism
+							has_government = liberalism
+							has_government = conservatism
+							has_government = paternalism
+						}
+					}
+				}
+				USA = { SWRW_fopo_remove_2GCW_tab = yes }
+			}
+			set_global_flag = SWRW_2GCW_GMA_winner
+		}
+	}
+	SWRW_GMA_invade_HOL = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				HOL = {
+					is_guaranteed_by = USA
+				}
+			}
+			NOT = {
+				HOL = {
+					has_government = national_socialism
+				}
+			}
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			country_exists = HOL
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			GMA = {
+				declare_war_on = {
+					target = HOL
+					type = annex_everything
+				}
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.41 days = 3 } }
+				}
+			}
+		}
+	}
+	SWRW_GMA_invite_HOL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			HOL = {
+				has_government = national_socialism
+			}
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			country_exists = HOL
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GMA = { add_to_faction = HOL }
+			HOL = {
+				remove_faction_status = yes
+				add_ideas = PKT_Member
+				econ_join_sphere_GMA = yes
+			}
+		}
+	}
+	SWRW_GMA_invade_DEN = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				DEN = {
+					has_government = despotism
+				}
+				DEN = {
+					has_government = ultranationalism
+				}
+			}
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			GMA = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.45 days = 3 } }
+				}
+			}
+		}
+	}
+	SWRW_GMA_invite_DEN = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				DEN = {
+					has_government = despotism
+				}
+				DEN = {
+					has_government = ultranationalism
+				}
+			}
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GMA = { add_to_faction = DEN }
+			DEN = {
+				remove_faction_status = yes
+				add_ideas = PKT_Member
+				econ_join_sphere_GMA = yes
+			}
+		}
+	}
+	SWRW_GMA_invade_SLO = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				SLO = {
+					has_government = national_socialism
+				}
+			}
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			GMA = {
+				declare_war_on = {
+					target = SLO
+					type = annex_everything
+				}
+			}
+		}
+	}
+	SWRW_GMA_invite_SLO = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			SLO = {
+				has_government = national_socialism
+			}
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GMA = { add_to_faction = SLO }
+			SLO = {
+				remove_faction_status = yes
+				add_ideas = PKT_Member
+				econ_join_sphere_GMA = yes
+			}
+		}
+	}
+	SWRW_GMA_invade_POL = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				POL = {
+					is_in_faction_with = RUS
+				}
+			}
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			country_exists = POL
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			GMA = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.42 days = 3 } }
+				}
+			}
+		}
+	}
+	SWRW_GMA_invite_POL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			country_exists = OZW
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			OZW = {
+				set_cosmetic_tag = GGN
+				remove_faction_status = yes
+				add_ideas = PKT_Member
+				econ_join_sphere_GMA = yes
+				get_current_government_type = yes
+				save_party_popularities = yes
+				set_variable = { TNO_economy_type = token:Econ_Type_Corporatism }
+				set_variable = { TNO_economy_subtype = token:Econ_Subtype_Gelenkte_Wirtschaft }
+			}
+			GMA = {
+				add_to_faction = OZW
+				set_autonomy = {
+					target = OZW
+					autonomy_state = autonomy_autonomous_reichskommissariat
+				}
+			}
+			OZW = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+	SWRW_GMA_invade_Hungary = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				has_global_flag = HUS_winner
+				has_global_flag = HUD_winner
+			}
+			NOT = {
+				HUS = { is_in_faction = yes }
+				HUS = { is_guaranteed_by = RUS }
+				HUD = { is_guaranteed_by = RUS }
+			}
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			GMA = {
+				if = {
+					limit = {
+						has_global_flag = HUS_winner
+					}
+					declare_war_on = {
+						target = HUS
+						type = annex_everything
+					}
+					hidden_effect = {
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.12 } }
+					}
+				}
+				else = {
+					declare_war_on = {
+						target = HUD
+						type = annex_everything
+					}
+					hidden_effect = {
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.13 } }
+					}
+				}
+			}
+		}
+	}
+	SWRW_GMA_invite_HUN = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_global_flag = HUN_winner
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GMA = { add_to_faction = HUN }
+			HUN = {
+				remove_faction_status = yes
+				add_ideas = PKT_Member
+				econ_join_sphere_GMA = yes
+			}
+		}
+	}
+	SWRW_GMA_invite_GLC = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			country_exists = GLC
+			GLC = { has_war = no }
+			GMA = { has_war = no }
+		}
+		visible = {	
+			tag = GMA
+			has_global_flag = SWRW_2GCW_GMA_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GMA = { add_to_faction = GLC }
+			GLC = {
+				GER_adolf_heusinger = { set_nationality = GMA }
+				remove_faction_status = yes
+				add_ideas = PKT_Member
+				econ_join_sphere_GMA = yes
+			}
+			GLC = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}
+			GMA = {
+				set_autonomy = {
+					target = GLC
+					autonomy_state = autonomy_military_government
+				}
+			}
+			GLC = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+}
+
+SWRW_Commie_category = {
+	SWRW_Commie_invade_Silesia = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				country_exists = SFK
+				country_exists = CZE
+			}
+			RPR = { has_war = no }
+		}
+		visible = {	
+			tag = RPR
+			NOT = {
+				has_global_flag = SWRW_2GCW_RPR_winner
+			}
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = SFK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CZE
+				type = annex_everything
+			}
+			if = {
+				limit = {
+					country_exists = SIL
+				}
+				RPR = {
+					add_to_faction = SIL
+				}
+			}
+		}
+	}
+	SWRW_RPR_Consume_SIL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			AND = {
+				country_exists = SIL
+				has_war = no
+			}
+			
+			RPR = { has_war = no }
+			has_global_flag = SGCW_MainRegional_unification
+		}
+		visible = {	
+			tag = RPR
+			NOT = {
+				has_global_flag = SWRW_2GCW_RPR_winner
+			}
+		}
+		complete_effect = {
+			RPR = { annex_country = { target = SIL transfer_troops = yes } }
+		}
+	}
+	SWRW_RPR_Mega_Unify = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 1025
+			controls_state = 4
+			controls_state = 59
+			controls_state = 775
+			controls_state = 1810
+			controls_state = 64
+			controls_state = 776
+			controls_state = 85
+			controls_state = 67
+			controls_state = 66
+			controls_state = 69
+			controls_state = 9
+			controls_state = 75
+		}
+		visible = {	
+			tag = RPR
+			has_global_flag = SGCW_MainRegional_unification
+		}
+		complete_effect = {
+			RPR = {
+				add_state_core = 66
+				add_state_core = 69
+				add_state_core = 75
+				add_state_core = 67
+				add_state_core = 9
+				remove_ideas = {
+					RPR_a_nation_in_flames
+					RPR_the_second_german_civil_war
+					REV_Member
+				}
+				remove_from_faction = RPR
+				create_faction = volksfront_europa
+				add_ideas = {
+					VFE_Member
+					GER_Reconstruction_of_Germany
+				}
+				GER_SWRW_establish_econ_sphere_post_war = yes
+				set_temp_variable = { target = RPR }
+				SWRW_Add_german_target_To_Cold_War_GUI = yes
+			}
+			set_global_flag = SWRW_2GCW_RPR_winner
+			hidden_effect = {
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.20 days = 2 } }
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.24 days = 30 } }
+			}
+			if = {
+				limit = {
+					OR = {
+						RUS = { has_country_flag = RUS_generic_communist_unifier }
+						RUS = { has_country_flag = RUS_generic_democratic_unifier }
+						has_global_flag = RUS_shukshin_unification
+					}
+				}
+				RUS = { SWRW_fopo_remove_2GCW_tab = yes }
+			}
+			if = {
+				limit = {
+					USA = {
+						OR = {
+							has_government = progressivism
+							has_government = liberalism
+							has_government = conservatism
+							has_government = paternalism
+						}
+					}
+				}
+				USA = { SWRW_fopo_remove_2GCW_tab = yes }
+			}
+		}
+	}
+	SWRW_RPR_invade_HOL = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				HOL = {
+					is_guaranteed_by = USA
+				}
+			}
+			RPR = { has_war = no }
+		}
+		visible = {	
+			tag = RPR
+			has_global_flag = SWRW_2GCW_RPR_winner
+			country_exists = HOL
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			RPR = {
+				declare_war_on = {
+					target = HOL
+					type = annex_everything
+				}
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.46 days = 3 } }
+				}
+			}
+		}
+	}
+	SWRW_RPR_invade_DEN = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				DEN = {
+					has_government = communist
+				}
+			}
+			RPR = { has_war = no }
+		}
+		visible = {	
+			tag = RPR
+			has_global_flag = SWRW_2GCW_RPR_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			RPR = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.43 days = 3 } }
+				}
+			}
+		}
+	}
+	SWRW_RPR_invade_SLO = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			RPR = { has_war = no }
+		}
+		visible = {	
+			tag = RPR
+			has_global_flag = SWRW_2GCW_RPR_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			RPR = {
+				declare_war_on = {
+					target = SLO
+					type = annex_everything
+				}
+			}
+		}
+	}
+	SWRW_RPR_invade_POL = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				POL = {
+					is_in_faction_with = RUS
+				}
+			}
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			RPR = { has_war = no }
+		}
+		visible = {	
+			tag = RPR
+			has_global_flag = SWRW_2GCW_RPR_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			if = {
+				limit = { country_exists = POL }
+				RPR = {
+					declare_war_on = {
+						target = POL
+						type = annex_everything
+					}
+				}
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.49 days = 3 } }
+				}
+			}
+			else = {
+				RPR = {
+					declare_war_on = {
+						target = OZW
+						type = annex_everything
+					}
+				}
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.50 days = 3 } }
+				}
+			}
+		}
+	}
+	SWRW_RPR_invade_Hungary = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				has_global_flag = HUD_winner
+				has_global_flag = HUN_winner
+			}
+			NOT = {
+				HUD = { is_guaranteed_by = RUS }
+			}
+			RPR = { has_war = no }
+		}
+		visible = {	
+			tag = RPR
+			has_global_flag = SWRW_2GCW_RPR_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			RPR = {
+				if = {
+					limit = {
+						has_global_flag = HUD_winner
+					}
+					declare_war_on = {
+						target = HUD
+						type = annex_everything
+					}
+					hidden_effect = {
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.13 } }
+					}
+				}
+				else = {
+					declare_war_on = {
+						target = HUN
+						type = annex_everything
+					}
+					hidden_effect = {
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.14 } }
+					}
+				}
+			}
+		}
+	}
+	SWRW_RPR_invite_HUS = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_global_flag = HUS_winner
+			NOT = {
+				HUS = { is_in_faction = yes }
+				HUS = { is_guaranteed_by = RUS }
+			}
+			RPR = { has_war = no }
+		}
+		visible = {	
+			tag = RPR
+			has_global_flag = SWRW_2GCW_RPR_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			RPR = { add_to_faction = HUS }
+			HUS = {
+				add_ideas = VFE_Member
+				econ_join_sphere_RPR = yes
+			}
+		}
+	}
+	SWRW_RPR_invite_FRV = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			country_exists = FRV
+			NOT = {
+				country_exists = GLC
+			}
+			RPR = { has_war = no }
+		}
+		visible = {	
+			tag = RPR
+			has_global_flag = SWRW_2GCW_RPR_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			FRV = {
+				econ_join_sphere_RPR = yes
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.39 days = 3 } }
+				}
+			}
+		}
+	}
+	SWRW_RPR_invade_GLC = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			country_exists = GLC
+			GLC = { has_war = no }
+			RPR = { has_war = no }
+		}
+		visible = {	
+			tag = RPR
+			has_global_flag = SWRW_2GCW_RPR_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			RPR = {
+				declare_war_on = {
+					target = GLC
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+SWRW_REG_category = {
+	SWRW_REG_invade_Silesia = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				country_exists = SFK
+				country_exists = SIL
+				country_exists = CZE
+			}
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			NOT = {
+				has_global_flag = SWRW_2GCW_REG_winner
+			}
+		}
+		remove_effect = {
+			declare_war_on = {
+				target = SFK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SIL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CZE
+				type = annex_everything
+			}
+		}
+	}
+	SWRW_REG_Mega_Unify = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 1025
+			controls_state = 4
+			controls_state = 59
+			controls_state = 775
+			controls_state = 1810
+			controls_state = 64
+			controls_state = 776
+			controls_state = 85
+			controls_state = 67
+			controls_state = 66
+			controls_state = 69
+			controls_state = 9
+			controls_state = 75
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SGCW_MainRegional_unification
+		}
+		complete_effect = {
+			REG = {
+				add_state_core = 66
+				add_state_core = 69
+				add_state_core = 75
+				add_state_core = 67
+				add_state_core = 9
+				create_faction = wierderaufbaupakt
+				add_ideas = {
+					DPKT_Member
+					GER_Reconstruction_of_Germany
+				}
+				remove_ideas = {
+					REG_a_nation_in_flames
+					REG_the_second_german_civil_war
+				}
+				set_cosmetic_tag = REG_win
+				GER = { set_cosmetic_tag = REG_win }
+				set_popularities = {
+					communist = 7
+					socialist = 7
+					progressivism = 21
+					liberalism = 23
+					conservatism = 22
+					paternalism = 10
+					despotism = 0
+					ultranationalism = 0
+					fascism = 0
+					national_socialism = 10
+				}
+				GER_SWRW_establish_econ_sphere_post_war = yes
+				set_temp_variable = { target = REG }
+				SWRW_Add_german_target_To_Cold_War_GUI = yes
+			}
+			hidden_effect = {
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.19 days = 2 } }
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.25 days = 30 } }
+			}
+			if = {
+				limit = {
+					OR = {
+						RUS = { has_country_flag = RUS_generic_communist_unifier }
+						RUS = { has_country_flag = RUS_generic_democratic_unifier }
+						has_global_flag = RUS_shukshin_unification
+					}
+				}
+				RUS = { SWRW_fopo_remove_2GCW_tab = yes }
+			}
+			if = {
+				limit = {
+					USA = {
+						OR = {
+							has_government = progressivism
+							has_government = liberalism
+							has_government = conservatism
+							has_government = paternalism
+						}
+					}
+				}
+				USA = { SWRW_fopo_remove_2GCW_tab = yes }
+			}
+			set_global_flag = SWRW_2GCW_REG_winner
+			if = {
+				limit = {
+						DEN = {
+							OR = {
+								has_government = progressivism
+								has_government = liberal_conservatism 
+								has_government = paternalism
+							}
+						}
+				}
+				USA = {
+					add_to_faction = DEN
+				}
+				DEN = {
+					add_ideas = OFN_Independent_Member 
+					econ_join_sphere_USA = yes
+				}
+			}
+		}
+	}
+	SWRW_REG_invade_HOL = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				HOL = {
+					is_guaranteed_by = USA
+				}
+			}
+			HOL = {
+				has_government = national_socialism
+			}
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SWRW_2GCW_REG_winner
+			country_exists = HOL
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			REG = {
+				declare_war_on = {
+					target = HOL
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.47 days = 3 } }
+			}
+		}
+	}
+	SWRW_REG_invite_HOL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				HOL = {
+					has_government = national_socialism
+				}
+				HOL = { is_guaranteed_by = USA }
+			}
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SWRW_2GCW_REG_winner
+			country_exists = HOL
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			REG = { add_to_faction = HOL }
+			HOL = {
+				add_ideas = DPKT_Member
+				econ_join_sphere_REG = yes
+			}
+		}
+	}
+	SWRW_REG_invade_DEN = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				DEN = {
+					has_government = despotism
+				}
+				DEN = {
+					has_government = ultranationalism
+				}
+				DEN = {
+					has_government = communist
+				}
+			}
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SWRW_2GCW_REG_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			REG = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.44 days = 3 } }
+			}
+		}
+	}
+	SWRW_REG_invade_SLO = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				SLO = {
+					has_government = paternalism
+				}
+			}
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SWRW_2GCW_REG_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			REG = {
+				declare_war_on = {
+					target = SLO
+					type = annex_everything
+				}
+			}
+		}
+	}
+	SWRW_REG_invite_SLO = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			SLO = {
+				has_government = paternalism
+			}
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SWRW_2GCW_REG_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			REG = { add_to_faction = SLO }
+			SLO = {
+				add_ideas = DPKT_Member
+				econ_join_sphere_REG = yes
+				set_variable = { TNO_economy_type = token:Econ_Type_Capitalism }
+				set_temp_variable = { TNO_economy_subtype_temp = 0 }
+				econ_subtype_change = yes
+			}
+		}
+	}
+	SWRW_REG_invade_POL = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			country_exists = OZW
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SWRW_2GCW_REG_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			REG = {
+				declare_war_on = {
+					target = OZW
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.48 days = 3 } }
+			}
+		}
+	}
+	SWRW_REG_invite_POL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			country_exists = POL
+			NOT = {
+				POL = {
+					is_in_faction = yes
+				}
+			}
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SWRW_2GCW_REG_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			REG = { add_to_faction = POL }
+			POL = {
+				add_ideas = DPKT_Member
+				econ_join_sphere_REG = yes
+			}
+		}
+	}
+	SWRW_REG_invade_Hungary = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				has_global_flag = HUS_winner
+				has_global_flag = HUN_winner
+			}
+			NOT = {
+				HUS = { is_in_faction = yes }
+				HUS = { is_guaranteed_by = RUS }
+			}
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SWRW_2GCW_REG_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			REG = {
+				if = {
+					limit = {
+						has_global_flag = HUS_winner
+					}
+					declare_war_on = {
+						target = HUS
+						type = annex_everything
+					}
+					hidden_effect = {
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.12 } }
+					}
+				}
+				else = {
+					declare_war_on = {
+						target = HUN
+						type = annex_everything
+					}
+					hidden_effect = {
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.14 } }
+					}
+				}
+			}
+		}
+	}
+	SWRW_REG_invite_HUD = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_global_flag = HUD_winner
+			NOT = {
+				HUD = { is_guaranteed_by = RUS }
+			}
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SWRW_2GCW_REG_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			REG = { add_to_faction = HUD }
+			HUD = {
+				add_ideas = DPKT_Member
+				econ_join_sphere_REG = yes
+			}
+		}
+	}
+	SWRW_REG_invade_GLC = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			country_exists = GLC
+			GLC = { has_war = no }
+			REG = { has_war = no }
+		}
+		visible = {	
+			tag = REG
+			has_global_flag = SWRW_2GCW_REG_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			REG = {
+				declare_war_on = {
+					target = GLC
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+SWRW_GER_category = {
+	SWRW_GER_invade_Silesia = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				country_exists = SFK
+				country_exists = SIL
+			}
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			NOT = {
+				has_global_flag = SWRW_2GCW_GER_winner
+			}
+		}
+		complete_effect = {
+			declare_war_on = {
+				target = SFK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SIL
+				type = annex_everything
+			}
+			CZE = {
+				give_military_access = GER
+			}
+		}
+	}
+	SWRW_GER_Consume_CZE = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			AND = {
+				country_exists = CZE
+				has_war = no
+			}
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			NOT = {
+				has_global_flag = SWRW_2GCW_GER_winner
+			}
+		}
+		complete_effect = {
+			CZE = { GER_albert_schnez = { set_nationality = GER } }
+			GER = { annex_country = { target = CZE transfer_troops = yes } }
+		}
+	}
+	SWRW_GER_Mega_Unify = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 1025
+			controls_state = 4
+			controls_state = 59
+			controls_state = 775
+			controls_state = 1810
+			controls_state = 64
+			controls_state = 776
+			controls_state = 85
+			controls_state = 67
+			controls_state = 66
+			controls_state = 69
+			controls_state = 9
+			controls_state = 75
+			has_global_flag = SGCW_MainRegional_unification
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SGCW_MainRegional_unification
+		}
+		complete_effect = {
+			GER = {
+				create_faction = PKT_faction
+				add_ideas = {
+					PKT_Member
+					GER_Reconstruction_of_Germany
+				}
+				GER_SWRW_establish_econ_sphere_post_war = yes
+			}
+			hidden_effect = {
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.23 days = 2 } }
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.32 days = 30 } }
+			}
+			if = {
+				limit = {
+					OR = {
+						RUS = { has_country_flag = RUS_generic_communist_unifier }
+						RUS = { has_country_flag = RUS_generic_democratic_unifier }
+						has_global_flag = RUS_shukshin_unification
+					}
+				}
+				RUS = { SWRW_fopo_remove_2GCW_tab = yes }
+			}
+			if = {
+				limit = {
+					USA = {
+						OR = {
+							has_government = progressivism
+							has_government = liberalism
+							has_government = conservatism
+							has_government = paternalism
+						}
+					}
+				}
+				USA = { SWRW_fopo_remove_2GCW_tab = yes }
+			}
+			set_temp_variable = { target = GER }
+			SWRW_Add_german_target_To_Cold_War_GUI = yes
+			set_global_flag = SWRW_2GCW_GER_winner
+			remove_ideas = {
+				GER_a_nation_in_flames
+				GER_the_second_german_civil_war
+			}
+		}
+	}
+	SWRW_GER_invade_HOL = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				HOL = {
+					is_guaranteed_by = USA
+				}
+			}
+			NOT = {
+				HOL = {
+					has_government = national_socialism
+				}
+			}
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			country_exists = HOL
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			GER = {
+				declare_war_on = {
+					target = HOL
+					type = annex_everything
+				}
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.41 days = 3 } }
+				}
+			}
+		}
+	}
+	SWRW_GER_invite_HOL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			HOL = {
+				has_government = national_socialism
+			}
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			country_exists = HOL
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GER = { add_to_faction = HOL }
+			HOL = {
+				add_ideas = PKT_Member
+				econ_join_sphere_GER = yes
+			}
+		}
+	}
+	SWRW_GER_invade_DEN = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				DEN = {
+					has_government = despotism
+				}
+				DEN = {
+					has_government = ultranationalism
+				}
+			}
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			GER = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.45 days = 3 } }
+				}
+			}
+		}
+	}
+	SWRW_GER_invite_DEN = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				DEN = {
+					has_government = despotism
+				}
+				DEN = {
+					has_government = ultranationalism
+				}
+			}
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GER = { add_to_faction = DEN }
+			DEN = {
+				add_ideas = PKT_Member
+				econ_join_sphere_GER = yes
+			}
+		}
+	}
+	SWRW_GER_invade_SLO = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				SLO = {
+					has_government = national_socialism
+				}
+			}
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			GER = {
+				declare_war_on = {
+					target = SLO
+					type = annex_everything
+				}
+			}
+		}
+	}
+	SWRW_GER_invite_SLO = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			SLO = {
+				has_government = national_socialism
+			}
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GER = { add_to_faction = SLO }
+			SLO = {
+				add_ideas = PKT_Member
+				econ_join_sphere_GER = yes
+			}
+		}
+	}
+	SWRW_GER_invade_POL = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				POL = {
+					is_in_faction_with = RUS
+				}
+			}
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			country_exists = POL
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			GER = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+				hidden_effect = {
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.42 days = 3 } }
+				}
+			}
+		}
+	}
+	SWRW_GER_invite_POL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			country_exists = OZW
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			OZW = {
+				set_cosmetic_tag = GGN
+				add_ideas = PKT_Member
+				econ_join_sphere_GER = yes
+				get_current_government_type = yes
+				save_party_popularities = yes
+				set_variable = { TNO_economy_type = token:Econ_Type_Corporatism }
+				set_variable = { TNO_economy_subtype = token:Econ_Subtype_Gelenkte_Wirtschaft }
+			}
+			GER = {
+				add_to_faction = OZW
+				set_autonomy = {
+					target = OZW
+					autonomy_state = autonomy_autonomous_reichskommissariat
+				}
+			}
+			OZW = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+	SWRW_GER_invade_Hungary = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				has_global_flag = HUS_winner
+				has_global_flag = HUD_winner
+			}
+			NOT = {
+				HUS = { is_in_faction = yes }
+				HUS = { is_guaranteed_by = RUS }
+				HUD = { is_guaranteed_by = RUS }
+			}
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			GER = {
+				if = {
+					limit = {
+						has_global_flag = HUS_winner
+					}
+					declare_war_on = {
+						target = HUS
+						type = annex_everything
+					}
+					hidden_effect = {
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.12 } }
+					}
+				}
+				else = {
+					declare_war_on = {
+						target = HUD
+						type = annex_everything
+					}
+					hidden_effect = {
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.13 } }
+					}
+				}
+			}
+		}
+	}
+	SWRW_GER_invite_HUN = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_global_flag = HUN_winner
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GER = { add_to_faction = HUN }
+			HUN = {
+				add_ideas = PKT_Member
+				econ_join_sphere_GER = yes
+			}
+		}
+	}
+	SWRW_GER_invite_GLC = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			country_exists = GLC
+			GLC = { has_war = no }
+			GER = { has_war = no }
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GER = { add_to_faction = GLC }
+			GLC = {
+				GER_adolf_heusinger = { set_nationality = GER }
+				add_ideas = PKT_Member
+				econ_join_sphere_GER = yes
+			}
+			GLC = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}
+			GER = {
+				set_autonomy = {
+					target = GLC
+					autonomy_state = autonomy_military_government
+				}
+			}
+			GLC = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+}
+
+SWRW_SIL_category = {
+	SWRW_SIL_Mega_unify = { # for the unlikely scenario of them winning without the other commies
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 1025
+			controls_state = 4
+			controls_state = 59
+			controls_state = 775
+			controls_state = 1810
+			controls_state = 64
+			controls_state = 776
+			controls_state = 85
+			controls_state = 67
+			controls_state = 66
+			controls_state = 69
+			controls_state = 9
+			controls_state = 75
+		}
+		visible = {	
+			tag = SIL
+			has_global_flag = SGCW_SilesianRegional_unification
+		}
+		complete_effect = {
+			RPR = { annex_country = {target = SIL transfer_troops = yes}}
+			RPR = {
+				load_oob = 2GCW_RPR_AI
+				set_global_flag = SGCW_MainRegional_unification
+				remove_ideas = {
+					RPR_a_nation_in_flames
+					RPR_the_second_german_civil_war
+				}
+			}
+		}
+	}
+}
+
+SWRW_SFK_category = {
+	SWRW_SFK_Mega_Unify = { 
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			controls_state = 1025
+			controls_state = 4
+			controls_state = 59
+			controls_state = 775
+			controls_state = 1810
+			controls_state = 64
+			controls_state = 776
+			controls_state = 85
+			controls_state = 67
+			controls_state = 66
+			controls_state = 69
+			controls_state = 9
+			controls_state = 75
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SGCW_SilesianRegional_unification
+		}
+		complete_effect = {
+			SFK = {
+				add_state_core = 61
+				add_state_core = 776
+				add_state_core = 1813
+				add_state_core = 1814
+				add_state_core = 60
+				add_state_core = 65
+				add_state_core = 64
+				add_state_core = 63
+				add_state_core = 56
+				add_state_core = 1373
+				add_state_core = 1810
+				add_state_core = 1809
+				add_state_core = 51
+				add_state_core = 55
+				add_state_core = 1815
+				add_state_core = 57
+				add_state_core = 188
+				add_state_core = 59
+				add_state_core = 774
+				add_state_core = 58
+				add_state_core = 775
+				add_state_core = 42
+				add_state_core = 8
+				add_state_core = 1812
+				add_state_core = 1811
+				add_state_core = 72
+				add_state_core = 28
+				add_state_core = 50
+				add_state_core = 68
+				add_state_core = 1026
+				add_state_core = 54
+				add_state_core = 53
+				add_state_core = 52
+				add_state_core = 153
+				add_state_core = 86
+				add_state_core = 152
+				add_state_core = 4
+				add_state_core = 1025
+				add_state_core = 1772
+				add_state_core = 62
+				add_state_core = 98
+				add_state_core = 770
+				add_state_core = 87
+				add_state_core = 85
+				add_state_core = 5
+				add_state_core = 97
+				set_cosmetic_tag = SFK_Unify
+				GER = { set_cosmetic_tag = SFK_Unify }
+				set_capital = {
+					state = 64
+					remember_old_capital = no
+				}
+				remove_ideas = {
+					SFK_a_nation_in_flames
+					SFK_the_second_german_civil_war
+				}
+				add_ideas = GER_Reconstruction_of_Germany
+			}
+			set_temp_variable = { target = SFK }
+			SWRW_Add_german_target_To_Cold_War_GUI = yes
+			hidden_effect = {
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.22 days = 2 } }
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.35 days = 30 } }
+			}
+			if = {
+				limit = {
+					OR = {
+						RUS = { has_country_flag = RUS_generic_communist_unifier }
+						RUS = { has_country_flag = RUS_generic_democratic_unifier }
+						has_global_flag = RUS_shukshin_unification
+					}
+				}
+				RUS = { SWRW_fopo_remove_2GCW_tab = yes }
+			}
+			if = {
+				limit = {
+					USA = {
+						OR = {
+							has_government = progressivism
+							has_government = liberalism
+							has_government = conservatism
+							has_government = paternalism
+						}
+					}
+				}
+				USA = { SWRW_fopo_remove_2GCW_tab = yes }
+			}
+			set_global_flag = SWRW_2GCW_SFK_winner
+		}
+	}
+	SWRW_SFK_invade_HOL = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				HOL = {
+					is_guaranteed_by = USA
+				}
+			}
+			NOT = {
+				HOL = {
+					has_government = national_socialism
+				}
+			}
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			country_exists = HOL
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			SFK = {
+				declare_war_on = {
+					target = HOL
+					type = annex_everything
+				}
+			}
+		}
+	}
+	SWRW_SFK_invite_HOL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			HOL = {
+				has_government = national_socialism
+			}
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			country_exists = HOL
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			HOL = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}
+			SFK = {
+				set_autonomy = {
+					target = HOL
+					autonomy_state = autonomy_autonomous_reichskommissariat
+				}
+			}
+			HOL = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+	SWRW_SFK_invade_DEN = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				DEN = {
+					has_government = ultranationalism
+				}
+			}
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			SFK = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
+		}
+	}
+	SWRW_SFK_invite_DEN = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			DEN = {
+				has_government = ultranationalism
+			}
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			DEN = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}
+			SFK = {
+				set_autonomy = {
+					target = DEN
+					autonomy_state = autonomy_autonomous_reichskommissariat
+				}
+			}
+			DEN = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+	SWRW_SFK_invade_SLO = {
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				SLO = {
+					has_government = national_socialism
+				}
+			}
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			SFK = {
+				declare_war_on = {
+					target = SLO
+					type = annex_everything
+				}
+			}
+		}
+	}
+	SWRW_SFK_invite_SLO = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			SLO = {
+				has_government = national_socialism
+			}
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			SLO = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}
+			SFK = {
+				set_autonomy = {
+					target = SLO
+					autonomy_state = autonomy_reichsprotektorat
+				}
+			}
+			SLO = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+	SWRW_SFK_invade_POL = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			NOT = {
+				POL = {
+					is_in_faction_with = RUS
+				}
+			}
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			country_exists = POL
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			SFK = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+			}
+		}
+	}
+	SWRW_SFK_invite_POL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			country_exists = OZW
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			OZW = {
+				set_cosmetic_tag = GGN
+				get_current_government_type = yes
+				save_party_popularities = yes
+				set_variable = { TNO_economy_type = token:Econ_Type_Corporatism }
+				set_variable = { TNO_economy_subtype = token:Econ_Subtype_Gelenkte_Wirtschaft }
+			}
+			SFK = {
+				set_autonomy = {
+					target = OZW
+					autonomy_state = autonomy_autonomous_reichskommissariat
+				}
+			}
+			OZW = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+	SWRW_SFK_invade_Hungary = {
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				has_global_flag = HUS_winner
+				has_global_flag = HUD_winner
+			}
+			NOT = {
+				HUS = { is_in_faction = yes }
+				HUS = { is_guaranteed_by = RUS }
+				HUD = { is_guaranteed_by = RUS }
+			}
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		remove_effect = {
+			SFK = {
+				if = {
+					limit = {
+						has_global_flag = HUS_winner
+					}
+					declare_war_on = {
+						target = HUS
+						type = annex_everything
+					}
+					hidden_effect = {
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.12 } }
+					}
+				}
+				else = {
+					declare_war_on = {
+						target = HUD
+						type = annex_everything
+					}
+					hidden_effect = {
+						every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.13 } }
+					}
+				}
+			}
+		}
+	}
+	SWRW_SFK_invite_HUN = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_global_flag = HUN_winner
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			HUN = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}
+			SFK = {
+				set_autonomy = {
+					target = HUN
+					autonomy_state = autonomy_reichsprotektorat
+				}
+			}
+			HUN = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+	SWRW_SFK_invite_GLC = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			country_exists = GLC
+			GLC = { has_war = no }
+			SFK = { has_war = no }
+		}
+		visible = {	
+			tag = SFK
+			has_global_flag = SWRW_2GCW_SFK_winner
+			has_country_flag = Post_2GCW_Leader_Picked
+		}
+		complete_effect = {
+			GLC = {
+				GER_adolf_heusinger = { set_nationality = SFK }
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}
+			SFK = {
+				set_autonomy = {
+					target = GLC
+					autonomy_state = autonomy_military_government
+				}
+			}
+			GLC = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+}
+
+SWRW_2GCW_Winning_debug_category = {
+	SWRW_GER_win = {
+		fire_only_once = yes
+		available = {
+			
+		}
+		visible = {	
+			is_debug = yes
+		}
+		complete_effect = {
+			GER = { annex_country = { target = REG transfer_troops = yes } }
+			GER = { annex_country = { target = RPR transfer_troops = yes } }
+			GER = { annex_country = { target = HRC transfer_troops = yes } }
+			GER = { annex_country = { target = SRH transfer_troops = yes } }
+			GER = { annex_country = { target = GMA transfer_troops = yes } }
+			GER = { annex_country = { target = SIL transfer_troops = yes } }
+			GER = { annex_country = { target = CZE transfer_troops = yes } }
+			GER = { annex_country = { target = SFK transfer_troops = yes } }
+			set_global_flag = SGCW_ongoing
+			GER = {
+				change_tag_from = PREV
+			}
+		}
+	}
+	SWRW_RPR_win = {
+		fire_only_once = yes
+		available = {
+			
+		}
+		visible = {	
+			is_debug = yes
+		}
+		complete_effect = {
+			RPR = { annex_country = { target = GER transfer_troops = yes } }
+			RPR = { annex_country = { target = REG transfer_troops = yes } }
+			RPR = { annex_country = { target = HRC transfer_troops = yes } }
+			RPR = { annex_country = { target = SRH transfer_troops = yes } }
+			RPR = { annex_country = { target = GMA transfer_troops = yes } }
+			RPR = { annex_country = { target = SIL transfer_troops = yes } }
+			RPR = { annex_country = { target = CZE transfer_troops = yes } }
+			RPR = { annex_country = { target = SFK transfer_troops = yes } }
+			set_global_flag = SGCW_ongoing
+			RPR = {
+				change_tag_from = PREV
+			}
+		}
+	}
+	SWRW_REG_win = {
+		fire_only_once = yes
+		available = {
+			
+		}
+		visible = {	
+			is_debug = yes
+		}
+		complete_effect = {
+			REG = { annex_country = { target = GER transfer_troops = yes } }
+			REG = { annex_country = { target = RPR transfer_troops = yes } }
+			REG = { annex_country = { target = HRC transfer_troops = yes } }
+			REG = { annex_country = { target = SRH transfer_troops = yes } }
+			REG = { annex_country = { target = GMA transfer_troops = yes } }
+			REG = { annex_country = { target = SIL transfer_troops = yes } }
+			REG = { annex_country = { target = CZE transfer_troops = yes } }
+			REG = { annex_country = { target = SFK transfer_troops = yes } }
+			set_global_flag = SGCW_ongoing
+			REG = {
+				change_tag_from = PREV
+			}
+		}
+	}
+	SWRW_GMA_win = {
+		fire_only_once = yes
+		available = {
+			
+		}
+		visible = {	
+			is_debug = yes
+		}
+		complete_effect = {
+			GMA = { annex_country = { target = GER transfer_troops = yes } }
+			GMA = { annex_country = { target = RPR transfer_troops = yes } }
+			GMA = { annex_country = { target = HRC transfer_troops = yes } }
+			GMA = { annex_country = { target = SRH transfer_troops = yes } }
+			GMA = { annex_country = { target = REG transfer_troops = yes } }
+			GMA = { annex_country = { target = SIL transfer_troops = yes } }
+			GMA = { annex_country = { target = CZE transfer_troops = yes } }
+			GMA = { annex_country = { target = SFK transfer_troops = yes } }
+			set_global_flag = SGCW_ongoing
+			GMA = {
+				change_tag_from = PREV
+			}
+		}
+	}
+	SWRW_SFK_win = {
+		fire_only_once = yes
+		
+		available = {
+			
+		}
+		visible = {	
+			is_debug = yes
+		}
+		complete_effect = {
+			SFK = { annex_country = { target = GER transfer_troops = yes } }
+			SFK = { annex_country = { target = RPR transfer_troops = yes } }
+			SFK = { annex_country = { target = HRC transfer_troops = yes } }
+			SFK = { annex_country = { target = SRH transfer_troops = yes } }
+			SFK = { annex_country = { target = REG transfer_troops = yes } }
+			SFK = { annex_country = { target = GMA transfer_troops = yes } }
+			SFK = { annex_country = { target = SIL transfer_troops = yes } }
+			SFK = { annex_country = { target = CZE transfer_troops = yes } }
+			set_global_flag = SGCW_ongoing
+			SFK = {
+				change_tag_from = PREV
+			}
+		}
+	}
+}

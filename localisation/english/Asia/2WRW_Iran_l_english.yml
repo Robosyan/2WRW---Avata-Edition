@@ -1,0 +1,30 @@
+﻿l_english:
+
+ ## Decisions ##
+ 
+ # Common Localisation
+ 
+ SWRW_Iran_category:0 "Iranian Foreign Policy"
+ 
+ PER_begin_national_reconstruction:0 "Begin National Reconstruction"
+ 
+ # Shahdom of Iran
+ 
+ IRC_join_the_russian_alliance:0 "Join the Russian Alliance"
+ 
+ ## Ideas ##
+ 
+ PER_national_reconstruction:0 "National Reconstruction"
+ 
+ ## Tooltips ##
+ 
+ ## Events ##
+ # Shahdom of Iran #
+ 
+ IRC_russia.1.t:0 "A Visitor from Tehran"
+ IRC_russia.1.desc:0 "Shapour Bakhtiar was a wrinkled man, with deep lines etched along his sides, cradling a thick moustache beneath wide, intelligent eyes. While it was uncommon for such a new head of state to travel out of the country, the occasion was important enough that he found himself on a private Russian jet, making his way over to the industrial Novosibirsk in well-attended formality. It wasn't lost on Iran's new Prime Minister that this was Russia's first real ally outside of the lands of the former Soviet Union, the occasion was one that both sides took seriously. Bakhtiar himself knew that while he was respected in Russia, that they were attaching themselves to a small and precarious power, compared to the United States. Still, Bakhtiar was a loyal man, and found his values reflected more in the Russia than in the [USA.GetFactionName].\n\nOnce they landed, the older man made his way down the airplane's steps, down to come face to face with [RUS.GetLeader], President of [RUS.GetNameDef]. The man was young, hardly in his forties, and with the vibrancy to match. Here was a man whose creases on his brow told a story of struggle and hardship, much like Bakhtiar's own under the Shahbanu. Between the flames of radical extremism of all forms and stifling dictatorship, constitutional Iran and Russia were a sign that a different order - one made of respect for democratic rights, dignity for people, and moderation could survive and win.\n\nShukshin held Bakhtiar's hand warmly. "I am honored to meet you, Prime Minister. This is a very special day for both of our nations," he said. Behind him, crews of cameras and journalists produced chittering clicks of cameras, covering them in flickers.\n\n"No, President, the honor is mine. Your assistance throughout our national struggle is something we will not forget. Let us go inside, there is much to be done to join our nations together in friendship." The two walked off to the Presidential Palace, ready to create a new bloc that would fight for liberty."
+ IRC_russia.1.a:0 "The foundations of something greater."
+ # Below was written for an emergency, but might be useful.
+ IRC_russia.2.t:0 "Diplomatic Envoys"
+ IRC_russia.2.desc:0 "To Olga, working at the diplomatic office as a receptionist was a good affair. She wasn't privy to all of the things the Russian government did, nor was she given any special clearance. That was fine with her, to be frank. While Olga was a downright polyglot, capable in a number of local and global languages alike, and politely proficient in many more, she wasn't in subterfuge. So, far away from the trickery of diplomacy - or rather, spying, Olga was happy in her desk to greet the distinguished visitors to her home.\n\nThis wasn't to say she was clueless. When the doors opened to an olive-skinned man in a simple suit, a rather handsome one at that, she smiled and welcomed him in, but knew better than to reveal state secrets, for that matter.\n\n"Dobro pozhalovat, welcome to the Federation's Diplomatic Reception. My name is Olga, how may I assist you?" she asked in her kindest voice. The man took of his hat - bowed in such an adorable way - smiled and responded in perfect Russian.\n\n"Thank you for such a kind salutation. I have a meeting with the Minister of Foreign Affairs, in about an hour? Ah, I am Mr. Ardeshir Zahedi. It is a pleasure to make your acquaintance, Miss Olga." Zahedi... sounded Iranian. What a cutie, and so polite, and he knew Russian? Olga eagerly checked the schedule and saw a meeting for a Mister Zahedi, but in an hour. She hated making people wait, but an hour was simply too early.\n\nOlga spoke now in her fluent Farsi. "Mr. Zahedi, I'm so sorry, but Mr. Sultan isn't scheduled to see you for at least another hour," she regrettably explained. Zahedi smiled warmly and leaned chuckled. "It is I who must apologize. Arriving early is terribly rude, especially when my hostess is so kind to me, to speak in my language. Do you know much of Iran?" he asked. Olga thought about it a bit, she knew a bit, but enough to know that she wasn't as well-versed in its history as she'd like to be. So, seeing Mr. Zahedi was kind, handsome, an expert in the subject, and full of time to kill, she smiled broadly.\n\n"Not enough Mr. Zahedi, why don't you tell me?" she offered. With a bit of a thought, Zahedi began, "Your people have helped us so tremendously in making a republic similar to yours, and I came to say my thanks. Let me tell you of the Qajars, to start.""
+ IRC_russia.2.a:0 "Diplomacy isn't just translation or spying."

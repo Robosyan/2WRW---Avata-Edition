@@ -1,0 +1,67 @@
+﻿l_english:
+ 
+ ### Pre SWRW ###
+ 
+ # Azerbaijan #
+ 
+ SWRW_Azerbaijan_category:0 "Caucasian Anarchy"
+ AZR_withdraw_from_the_war:0 "Withdraw from the War"
+ 
+ SWRW_Georgia_category:0 "Caucasian Anarchy"
+ GEO_withdraw_from_the_war:0 "Withdraw from the War"
+ 
+ SWRW_Avaria_category:0 "Caucasian Anarchy"
+ DAG_withdraw_from_the_war:0 "Withdraw from the War"
+ 
+ SWRW_Adygea_category:0 "Caucasian Anarchy"
+ ADY_withdraw_from_the_war:0 "Withdraw from the War"
+ 
+ 
+ ### Post SWRW ###
+ 
+ # Characters
+
+ CAU_Caucasian_Council: "Caucasian National Assembly"
+
+ # Cosmetic Tags
+
+ CAU_federation: "Caucasian Federation"
+ CAU_federation_ADJ: "Caucasian"
+ CAU_federation_DEF: "the Caucasian Federation"
+
+ # National Spirits
+
+ # Party names
+
+ CAU_RUS_conservatism_party: "AGNCB - Christian Democrats"
+ CAU_RUS_conservatism_party_long: "Armenia/Georgia/North Caucasus Bloc - Christian Democrats"
+
+ CAU_RUS_liberalism_party: "AGNCB - Liberals"
+ CAU_RUS_liberalism_party_long: "Armenia/Georgia/North Caucasus Bloc - Liberals"
+ 
+ CAU_RUS_paternalism_party: "AMC - Moderates"
+ CAU_RUS_paternalism_party_long: "All-Muslim Congress - Moderates"
+
+ CAU_RUS_despotism_party: "AMC - Conservatives"
+ CAU_RUS_despotism_party_long: "All-Muslim Congress - Conservatives"
+
+ CAU_RUS_fascism_party: "AMC - Radicals"
+ CAU_RUS_fascism_party_long: "All-Muslim Congress - Radicals"
+
+ CAU_RUS_socialist_party: "MRC"
+ CAU_RUS_socialist_party_long: "Mountain Republic Congress"
+
+ CAU_waning_stratification: "Waning Stratification"
+ CAU_waning_stratification_desc: "Though the nightmarish rule of Josias has come to an end, the hierarchy he so carefully imprinted into the minds of the Caucasian peoples has not. This false sense of superiority predominantly in the minds of the northern Caucasian peoples and the Azerbaijanis, spurred on by decades of slavery, has lead to widespread discrimination against the 'loathsome pests' as Josias called them in his days; the Georgians, Circassians and Armenians.\n\nIn order to leave the region with a good conscience and to prevent further ethnic conflicts it is imperative that we nip this stratification in the bud, once and for all."
+
+ CAU_echoes_of_kaukasia: "Echoes of Kaukasia"
+ CAU_echoes_of_kaukasia_desc: "The Caucasus might have been freed from the oppressive reign of Josias zu Waldeck und Pyrmont, but it will be a long span of multiple decades before memory of the land and people can be provided the same. To one day forget the instinct to look out for armed guards during conversations or to walk lush meadows unpolluted by massive swaths of industrial waste and skeletons of labor camps is a dream; one which many of the inhabitants fear will not be realized in the span of their lives."
+
+ CAU_the_caucasian_experiment: "The Caucasian Experiment"
+ CAU_the_caucasian_experiment_desc: "The Russian decision to create a single Trans-Caucasian super state has been, to many, rushed and nonsensical; leading to a Frankenstein's monster of a nation. Many ethnicities that either have had or dreamt of having their own sovereign nation, all with vastly different religions, cultural norms and beliefs are all forced together in the same parliament building in Krasnodar to decide on laws that are deemed too important to handle on a state level.\n\nTo many of its constituent states, this method of governance is highly inefficient, which is at least something that they all agree with.Because of this, rapid amendments to the constitution and laws of state autonomy are legislated weekly, in a combined effort to favor the local governments.\n\nBut will doing so improve the unity of the federation, or reinforce its dividedness?"
+
+ CAU_administrative_unknowns: "Administrative Unknowns"
+ CAU_administrative_unknowns_desc: "Because of the nature of our lands, getting up to date information on our more remote areas has proven to be a logistical nightmare, with not only the remoteness of the settlements being a major obstacle, but also the cooperation of the locals. Many see themselves not as Caucasian but rather identify with their local state, village or tribe.\n\nBecause power hates a vacuum, this has led to illegitimate governments popping up in the more remote areas of the country, as the state could not effectively govern it."
+
+ CAU_ethnic_tensions: "Ethnic Tensions"
+ CAU_ethnic_tensions_desc: "The federation is home to many ethnicities, some of which have had centuries long blood feuds, have committed atrocities against them in the past or are simply of a different culture or religion. Putting them all together under the same roof under laws of proportional representation has not eased these tensions, as they have divided the federation into three main blocs: the republics of Georgia, Armenia and north Caucasia, Azerbaijan and Chechnya and the mountain republics such as Abkhazia and Ossetia.\n\nEach faction either tries to bribe the others to pass legislation that favors them or simply sabotages legislation any of the others try to pass in the national assembly.\n\n§RIf this cycle continues, the Caucasian lab rat might not survive for much longer.§!"

@@ -1,0 +1,124 @@
+
+#########################
+### Radio Novosibirsk ###
+#########################
+
+# Generic
+music = {
+	name = "anthem_of_novosibirsk"
+	file = "anthem_of_novosibirsk.ogg"
+	volume = 0.9
+}
+# RAPP
+music = {
+	name = "SOLARIS"
+	file = "SOLARIS.ogg"
+	volume = 0.9
+}
+music = {
+	name = "siberiade"
+	file = "siberiade.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "farewell"
+	file = "farewell.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "na_zare"
+	file = "na_zare.ogg"
+	volume = 0.9
+}
+# VRPP
+music = {
+	name = "stealrussia"
+	file = "stealrussia.ogg"
+	volume = 0.9
+}
+music = {
+	name = "apity"
+	file = "apity.ogg"
+	volume = 0.9
+}
+music = {
+	name = "schweine"
+	file = "schweine.ogg"
+	volume = 0.9
+}
+music = {
+	name = "gruppa_krovi"
+	file = "gruppa_krovi.ogg"
+	volume = 0.9
+}
+music = {
+	name = "flight"
+	file = "flight.ogg"
+	volume = 0.9
+}
+music = {
+	name = "aviamarch"
+	file = "aviamarch.ogg"
+	volume = 0.9
+}
+music = {
+	name = "fire"
+	file = "fire.ogg"
+	volume = 0.9
+}
+# RSLP
+music = {
+	name = "last_electrichka"
+	file = "last_electrichka.ogg"
+	volume = 0.9
+}
+music = {
+	name = "peaceful_sky"
+	file = "peaceful_sky.ogg"
+	volume = 0.9
+}
+music = {
+	name = "marathon"
+	file = "Marathon.ogg"
+	volume = 0.9
+}
+# DSPR
+music = {
+	name = "kzvezdam"
+	file = "kzvezdam.ogg"
+	volume = 0.9
+}
+music = {
+	name = "discoteka"
+	file = "discoteka.ogg"
+	volume = 0.9
+}
+music = {
+	name = "slova"
+	file = "slova.ogg"
+	volume = 0.9
+}
+
+# Generic Intermission
+music = {
+	name = "radio_novosibirsk_intermission_one"
+	file = "radio_novosibirsk_intermission_one.ogg"
+	volume = 0.9
+}
+music = {
+	name = "radio_novosibirsk_intermission_two"
+	file = "radio_novosibirsk_intermission_two.ogg"
+	volume = 0.9
+}
+music = {
+	name = "radio_novosibirsk_intermission_three"
+	file = "radio_novosibirsk_intermission_three.ogg"
+	volume = 0.9
+}
+music = {
+	name = "radio_novosibirsk_intermission_nixon"
+	file = "radio_novosibirsk_intermission_nixon.ogg"
+	volume = 0.9
+}

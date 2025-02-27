@@ -1,0 +1,454 @@
+RUS_lord_of_the_east_category = {
+	
+	# Birobidzhan
+	
+	RUS_issue_of_birobidzhan = {
+		icon = GFX_decision_birobidzhan_icon
+		visible = {
+		}
+		available = {
+			hidden_trigger = {
+				always = no 
+			}
+		}
+		activation = {
+			has_country_flag = RUS_issue_of_birobidzhan_flag
+		}
+		is_good = no
+		days_mission_timeout = 60
+		cancel_if_not_visible = yes
+		priority = 100
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = RUS_lote_issue_of_birobidzhan_tt
+			clr_country_flag = RUS_issue_of_birobidzhan  
+			country_event = { id = RUS_Vladivostok.5 hours = 6 }
+		}
+	}
+	
+	RUS_issue_of_primorsky = { # 33
+		icon = GFX_decision_primorsky_icon
+		visible = {
+			has_country_flag = RUS_issue_of_primorsky
+		}
+		available = {
+			hidden_trigger = {
+				always = no 
+			}
+		}
+		activation = {
+			has_country_flag = RUS_issue_of_primorsky
+		}
+		is_good = no
+		days_mission_timeout = 60
+		cancel_if_not_visible = yes
+		priority = 100
+		fire_only_once = yes
+		timeout_effect = {
+			clr_country_flag = RUS_issue_of_primorsky
+			JAP = {
+				country_event = { id = RUS_Vladivostok.9 hours = 6 }
+			}
+		}
+	}
+	
+	RUS_issue_of_vladivostok = { # 34
+		icon = GFX_decision_vladivostok_icon
+		visible = {
+			has_country_flag = RUS_issue_of_vladivostok
+		}
+		available = {
+			hidden_trigger = {
+				always = no 
+			}
+		}
+		activation = {
+			has_country_flag = RUS_issue_of_vladivostok
+		}
+		is_good = no
+		days_mission_timeout = 60
+		priority = 100
+		fire_only_once = yes
+		timeout_effect = {
+			clr_country_flag = RUS_issue_of_vladivostok
+			JAP = {
+				country_event = { id = RUS_Vladivostok.13 hours = 6 }
+			}
+		}
+		
+	}
+	
+	RUS_lease_the_port_of_magadan = {
+		icon = GFX_decision_lease_magadan_port_icon
+		visible = {
+			#has_country_flag = RUS_lord_of_the_east_flag
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_lease_the_port_of_magadan"
+		}
+		remove_effect = {
+			set_temp_variable = { temp_leverage = 15 }
+			RUS_lote_increase_leverage = yes
+			add_ideas = RUS_magadan_leased
+			custom_effect_tooltip = RUS_lote_one_time_decision_tt
+		}
+		
+	}
+	
+	RUS_seek_american_support = {
+		icon = GFX_decision_great_us_seal_icon
+		visible = {
+			NOT = {
+				has_country_flag = RUS_met_with_USA
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 14
+		remove_effect = {
+			USA = {
+				country_event = { id = RUS_Vladivostok.23 }
+			}
+			custom_effect_tooltip = RUS_lote_one_time_per_round_decision_tt
+			set_country_flag = RUS_met_with_USA
+		}
+	}
+	
+	RUS_meet_with_the_japanese = {
+		icon = GFX_decision_generic_shake_hands
+		visible = {
+			NOT = {
+				has_country_flag = RUS_met_with_JAP
+			}
+		}
+		cost = 75
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 7
+		remove_effect = {
+			set_temp_variable = { temp_leverage = 12 }
+			RUS_lote_increase_leverage = yes
+			custom_effect_tooltip = RUS_lote_one_time_per_round_decision_tt
+			set_country_flag = RUS_met_with_JAP
+		}
+	}
+	
+	RUS_invest_in_the_far_east = {
+		icon = GFX_decision_generic_money_sign
+		visible = {
+			#has_country_flag = RUS_lord_of_the_east_flag
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		custom_cost_trigger = { check_variable = { GDP > 0 } }
+		custom_cost_text = decision_cost_200_million
+		days_re_enable = 14
+		complete_effect = {
+			set_temp_variable = { temp_econ_spending_amount = 0.2 }
+			econ_spend_money_once_effect_raw_money = yes
+			set_temp_variable = { temp_leverage = 4 }
+			RUS_lote_increase_leverage = yes
+		}
+		
+	}
+	
+	RUS_support_russian_partisans = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			#has_country_flag = RUS_lord_of_the_east_flag
+		}
+		custom_cost_text = RUS_lote_guns_cost
+		custom_cost_trigger = { 
+			has_equipment = { infantry_equipment > 799 }
+			command_power > 19.99
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 7
+		days_re_enable = 14
+		complete_effect = {
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -800
+				}
+			}
+			add_command_power = -25
+			custom_effect_tooltip = RUS_lote_infantry_equipment_tt
+		}
+		remove_effect = {
+			random_list = {
+				90 = {
+					set_temp_variable = { temp_leverage = 7 }
+					RUS_lote_increase_leverage = yes
+				}
+				10 = {
+					modifier = {
+						add = rus_lote_jap_suspicion
+					}
+					set_temp_variable = { temp_leverage = -2 }
+					RUS_lote_increase_leverage = yes
+					# add_named_threat = {
+					# 	threat = 1.5
+					# 	name = "Russian Dissident Support"
+					# }
+				}
+			}
+		}
+		
+	}
+	
+	RUS_naval_exercises = {
+		icon = GFX_decision_naval_exercises
+		visible = {
+			#has_country_flag = RUS_lord_of_the_east_flag
+		}
+		custom_cost_text = RUS_lote_naval_exercise_cost
+		custom_cost_trigger = {
+			has_navy_experience > 19.99
+			command_power > 24.99
+		}
+		available = {
+			ships_in_area = { area = 87 size > 39 }
+		}
+		ai_will_do = {
+			factor = 30
+		}
+		days_remove = 14
+		days_re_enable = 28
+		complete_effect = {
+			add_command_power = -25
+			navy_experience = -20
+		}
+		remove_effect = {
+			random_list = {
+				15 = {
+					set_temp_variable = { temp_leverage = 1 }
+					RUS_lote_increase_leverage = yes
+				}
+				65 = {
+					set_temp_variable = { temp_leverage = 6 }
+					RUS_lote_increase_leverage = yes
+				}
+				15 = {
+					set_temp_variable = { temp_leverage = 10 }
+					RUS_lote_increase_leverage = yes
+				}
+				5 = {
+				# 	add_named_threat = {
+				# 		threat = 2.5
+				# 		name = "Russian Naval Exercises"
+				# 	}
+				}
+			}
+		}	
+	}
+	
+	RUS_lote_japan_is_bribing = {
+		icon = GFX_decision_corruption_yen
+		visible = {
+			OR = {
+				has_country_flag = RUS_issue_of_birobidzhan
+				has_country_flag = RUS_issue_of_primorsky
+				has_country_flag = RUS_issue_of_vladivostok
+			}
+		}
+		available = {
+			hidden_trigger = {
+				always = no 
+			}
+		}
+		activation = {
+			OR = {
+				has_country_flag = RUS_issue_of_birobidzhan
+				has_country_flag = RUS_issue_of_primorsky
+				has_country_flag = RUS_issue_of_vladivostok
+			}
+		}
+		is_good = no
+		days_mission_timeout = 7
+		days_re_enable = 17
+		priority = 99
+		cancel_if_not_visible = yes
+		timeout_effect = {
+			set_temp_variable = { temp_leverage = 3 }
+			JAP_lote_increase_leverage = yes
+			custom_effect_tooltip = RUS_lote_japan_completes_action_tt
+			RUS_lote_japan_actions = yes
+		}
+		
+	}
+	RUS_lote_japan_is_exercising = {
+		allowed = {
+			always = no
+		}
+		icon = GFX_decision_generic_military_parade
+		visible = {
+			OR = {
+				has_country_flag = RUS_issue_of_birobidzhan
+				has_country_flag = RUS_issue_of_primorsky
+				has_country_flag = RUS_issue_of_vladivostok
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					RUS = { owns_state = 1364 }
+					divisions_in_border_state = {
+						size > 8
+						state = 1364
+						border_state = 657
+					}
+				}
+				AND = {
+					RUS = { owns_state = 1646 }
+					divisions_in_border_state = {
+						size > 8
+						state = 1646
+						border_state = 1644
+					}
+				}
+				divisions_in_border_state = {
+					size > 8
+					state = 561
+					border_state = 1364
+				}
+			}
+		}
+		activation = {
+			OR = {
+				has_country_flag = RUS_issue_of_birobidzhan
+				has_country_flag = RUS_issue_of_primorsky
+				has_country_flag = RUS_issue_of_vladivostok
+			}
+		}
+		custom_cost_text = RUS_20_cp_cost
+		custom_cost_trigger = {
+			command_power > 19.99
+		}
+		is_good = no
+		days_mission_timeout = 14
+		days_re_enable = 40
+		selectable_mission = yes
+		cancel_if_not_visible = yes
+		priority = 99
+		complete_effect = {
+			random_list = {
+				65 = {
+					set_temp_variable = { temp_leverage = 3 }
+					RUS_lote_increase_leverage = yes
+				}
+				35 = {
+					# add_named_threat = {
+					# 	threat = 1
+					# 	name = "Russian Army Exercises"
+					# }
+					set_temp_variable = { temp_leverage = -2 }
+					RUS_lote_increase_leverage = yes
+				}
+			}
+			RUS_lote_japan_actions = yes
+		}
+		timeout_effect = {
+			set_temp_variable = { temp_leverage = 8 }
+			JAP_lote_increase_leverage = yes
+			custom_effect_tooltip = RUS_lote_japan_completes_action_tt
+			RUS_lote_japan_actions = yes
+		}
+		
+	}
+	RUS_lote_japan_is_hunting_partisans = {
+		allowed = {
+			always = no
+		}
+		icon = GFX_decision_generic_use_force
+		visible = {
+			OR = {
+				has_country_flag = RUS_issue_of_birobidzhan
+				has_country_flag = RUS_issue_of_primorsky
+				has_country_flag = RUS_issue_of_vladivostok
+			}
+		}
+		available = {
+			hidden_trigger = {
+				always = no 
+			}
+		}
+		activation = {
+			OR = {
+				has_country_flag = RUS_issue_of_birobidzhan
+				has_country_flag = RUS_issue_of_primorsky
+				has_country_flag = RUS_issue_of_vladivostok
+			}
+		}
+		is_good = no
+		days_mission_timeout = 14
+		days_re_enable = 24
+		priority = 99
+		cancel_if_not_visible = yes
+		timeout_effect = {
+			set_temp_variable = { temp_leverage = 5 }
+			JAP_lote_increase_leverage = yes
+			custom_effect_tooltip = RUS_lote_japan_completes_action_tt
+			subtract_from_variable = { rus_lote_jap_suspicion = 50 }
+			RUS_lote_japan_actions = yes
+		}
+		
+	}
+	RUS_lote_japan_is_enticing_corps = {
+		allowed = {
+			always = no
+		}
+		icon = GFX_decision_corruption_yen
+		visible = {
+			OR = {
+				has_country_flag = RUS_issue_of_birobidzhan
+				has_country_flag = RUS_issue_of_primorsky
+				has_country_flag = RUS_issue_of_vladivostok
+			}
+		}
+		available = {
+			hidden_trigger = {
+				always = no 
+			}
+		}
+		activation = {
+			OR = {
+				has_country_flag = RUS_issue_of_birobidzhan
+				has_country_flag = RUS_issue_of_primorsky
+				has_country_flag = RUS_issue_of_vladivostok
+			}
+		}
+		is_good = no
+		days_mission_timeout = 7
+		days_re_enable = 29
+		priority = 99
+		cancel_if_not_visible = yes
+		timeout_effect = {
+			set_temp_variable = { temp_leverage = 4 }
+			JAP_lote_increase_leverage = yes
+			JAP = {
+				set_temp_variable = { temp_econ_spending_amount = 0.2 }
+				econ_spend_money_once_effect_raw_money = yes
+			}
+			set_temp_variable = { temp_leverage = -2 }
+			RUS_lote_increase_leverage = yes
+			set_temp_variable = { money_reserves_temp = 0.1 }
+			econ_money_reserves_change_raw_money = yes
+			custom_effect_tooltip = RUS_lote_japan_completes_action_tt
+			RUS_lote_japan_actions = yes
+		}
+		
+	}
+	
+}

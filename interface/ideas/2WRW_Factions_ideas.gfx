@@ -1,0 +1,27 @@
+spriteTypes = {
+	
+	# Factions Temp
+	
+	spriteType = {
+		name = "GFX_CSTO_Member"
+		texturefile = "gfx/interface/factions/status/GFX_CSTO_Member.dds"
+	}
+	spriteType = {
+		name = "GFX_CSTO_Observer"
+		texturefile = "gfx/interface/factions/status/GFX_CSTO_Observer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GER_Volks_Front_Europa"
+		texturefile = "gfx/interface/factions/status/GFX_Volks_Front_Europa.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_dempakt"
+		texturefile = "gfx/interface/factions/status/GFX_dempakt.dds"
+	}
+	#Anarchy
+	spriteType = {
+		name = "GFX_Anarchy_KMC"
+		textureFile = "gfx/interface/anarchy/Anarchy_KMC.dds"
+	}
+}

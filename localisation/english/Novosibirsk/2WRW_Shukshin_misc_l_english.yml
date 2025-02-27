@@ -1,0 +1,216 @@
+﻿l_english:
+
+ ## Misc ##
+ # Party Name Changes
+ NOV_shukshin_VRPP_long:0 "Vserossiyskaya Patrioticheskaya Partiya"
+ NOV_shukshin_VRPP_short:0 "VRPP"
+ 
+ NOV_shukshin_RSLP_long:0 "Rossiyskaya Sotsial-liberal'naya Partiya"
+ NOV_shukshin_RSLP_short:0 "RSLP"
+ 
+ NOV_shukshin_DSPR_long:0 "Demokraticheskaya Sotsialisticheskaya Partiya Rossii"
+ NOV_shukshin_DSPR_short:0 "DSPR" 
+ 
+ NOV_shukshin_RIRM_long:0 "Dvizheniye za Vosstanovleniye Rossiyskoy Imperii"
+ NOV_shukshin_RIRM_short:0 "DVRI" 
+
+ NOV_shukshin_NFM_long:0 "Natsionalnoye Fermerskoye Dvizheniye"
+ NOV_shukshin_NFM_short:0 "NFD" 
+
+ NOV_shukshin_CPRF_long:0 "Kommunisticheskaya Partiya Rossiyskoy Federatsii"
+ NOV_shukshin_CPRF_short:0 "KPRF" 
+
+ NOV_shukshin_SRP_long:0 "Partiya Sotsialistov-Revolyutsionerov"
+ NOV_shukshin_SRP_short:0 "SR"  
+
+ NOV_shukshin_RAPP_Libcon_long:0 "Rossiyskaya Agrarno-Promyshlennaya Partiya"
+ NOV_shukshin_RAPP_Libcon_short:0 "RAPP"  
+
+ ## Federal Assembly ##
+ 
+ NOV_shukshin_rally_the_coalition_tt:0 "§YThe Coalition will become §Gmore unified§!"
+ 
+ TNO_improve_VRPP_popularity_high_tt:0 "§YThis will §Gdramatically increase§Y the popularity of the §gVRPP§W"
+ 
+ TNO_improve_VRPP_popularity_med_tt:0 "§YThis will §Gincrease§Y the popularity of the §gVRPP§W"
+ 
+ TNO_descrease_VRPP_popularity_med_tt:0 "§YThis will §Rdecrease§Y the popularity of the §gVRPP§W"
+ 
+ TNO_improve_DSPR_popularity_low_tt:0"§YThis will §Gslightly increase§Y the popularity of the §PDSPR§W"
+ 
+ TNO_improve_DSPR_popularity_med_tt:0"§YThis will §Gincrease§Y the popularity of the §PDSPR§W"
+ 
+ TNO_improve_RSLP_popularity_med_tt:0"§YThis will §Gincrease§Y the popularity of the §MRSLP§W"
+ 
+ TNO_improve_RSLP_popularity_low_tt:0"§YThis will §Gslightly increase§Y the popularity of the §MRSLP§W"
+ 
+ TNO_improve_RAPP_popularity_low_tt:0"§YThis will §Gslightly increase§Y the popularity of the §BRAPP§W"
+
+ ## Ministers ##
+ #RAPP
+
+ #VRPP 
+ NOV_Oleg_Troyanovsky_hog:0 "Oleg Troyanovsky"
+ NOV_Pyotr_Lomako_eco:0 "Pyotr Lomako"
+ NOV_Sergey_Vikulov_for:0 "Serget Vikulov"
+ 
+ #DSPR
+ 
+ #RSLP
+ 
+ ## Ideas ##
+ 
+ NOV_Moscow_Offensive_idea:0 "Moscow Offensive"
+ NOV_Partisan_Militas_idea:0 "West Russian Partisan Militas"
+ NOV_Pontoon_Bridges_idea:0 "Pontoon Bridges"
+ NOV_Wartime_Conscription_idea:0 "Wartime Conscription"
+ NOV_Feniks_Production_Boost_idea:0 "Feniks Production Boost"
+ 
+ ## Country Flags ##
+ 
+ NOV_work_with_the_new_parties_flag:0 "We have choosen to work with the §MRSLP§! and the §PDSPR§!"
+ NOV_work_with_the_siloviki_flag:0 "We have choosen to work with the §gSiloviki§!"
+ NOV_shukshin_peaceful_kaz_flag:0 "Kazakhstan has agreed to join us"
+ NOV_shukshin_conquered_kaz_flag:0 "We have subjugated Kazakhstan"
+ 
+ ## CSTO Localisation ##
+ # Tooltips #
+ 
+ scripted_gui_open_tt_rus_csto:0 "Open the CSTO GUI"
+ 
+ # The Mega Projects
+ 
+ CSTO_siberian_railway_project_desc_tt:0 "The Trans-Siberian Railway is a vast network of railways that once stretched from Moscow to Vladivostok, serving as the vital artery of Siberia. Following the Soviet Union's defeat, the railway become essential for what remained of Russia.\n\nA proposal has been made by the Russian Federation to renovate the existing railway and extend the line into Kazahkstan in order to expand trade between Russia and Central Asia."
+ 
+ # Members Overview
+ 
+ CSTO_members_GDP:0 "§G$[THIS.Get_GDP_topbar]§!"
+ 
+ ## Focus Tooltips ##
+ 
+ #Unification Tree
+ 
+ NOV_shukshin_introduce_the_concept_tt:0 "§YWe shall decide who we will work with to form the Federal Assembly§!"
+ 
+ NOV_shukshin_a_deal_with_the_new_parties_tt:0 "§YWe will work with the newly formed §MRSLP §Yand§! §PDSPR §Yto create the Federal Assembly"
+ 
+ NOV_shukshin_work_with_the_siloviki_tt:0 "§YWe will work with the moderate §sSiloviki §Yto create the Federal Assembly"
+ 
+ NOV_shukshin_establish_the_party_registry_tt:0 "§YThe §sRusskiye Siloviki §Ywill become the §gVRPP§!\n§YThe §MDPS§! §Ywill become the §MRSLP§!\n§YThe §PRNP§! §Ywill become the §PDSPR§!"
+ 
+ NOV_shukshin_reach_out_to_the_dspr_tt:0 "§YWe will compromise with the §PDSPR §Yto pass the §QVoting Rights Act§!"
+ 
+ NOV_shukshin_a_common_ideal_tt:0 "§YWe will compromise with the §mRSLP §Yto pass the §QVoting Rights Act§!"
+ 
+ NOV_shukshin_the_first_of_many_tt:0 "§YThe Federal Assembly will vote on the §QVoting Rights Act§!"
+ 
+ NOV_shukshin_gather_independent_party_support_tt:0 "§YWe will gather support amongst §Rminor parties§! "
+ 
+ NOV_shukshin_womens_rights_act_tt:0 "§YThe Federal Assembly will vote on extending the §QVoting Rights Act§Y to women§!"
+ 
+ NOV_shukshin_expand_the_central_design_bureau_tt:0 "§YNew research options will become available in Research and Development§!"
+ 
+ NOV_shukshin_the_DSPRs_conscious_tt:0 "§YWe will compromise with the §PDSPR §Yto pass the §RUniversal Coverage Act§!"
+ 
+ NOV_shukshin_a_pragmatic_solution_tt:0 "§YWe will compromise with the §gVRPP §Yto pass the §RUniversal Coverage Act§!"
+ 
+ NOV_shukshin_propose_universal_coverage_tt:0 "§YThe Federal Assembly will vote on the §RUniversal Coverage Act§!"
+ 
+ NOV_shukshin_the_workers_protections_act_tt:0 "§YThe Federal Assembly will vote on the §LWorker's Protection Act§!"
+ 
+ NOV_shukshin_in_line_with_the_rose_tt:0 "§YWe will compromise with the §PDSPR §Yto pass the §KEnvironmental Protection Act§!"
+ 
+ NOV_shukshin_go_with_the_torch_tt:0 "§YWe will compromise with the §MRSLP §Yto pass the §KEnvironmental Protection Act§!"
+ 
+ NOV_shukshin_the_environmental_protection_act_tt:0 "§YThe Federal Assembly will vote on the §KEnvironmental Protection Act§!"
+ 
+ NOV_shukshin_cross_the_aisle_tt:0 "§YWe will compromise with the §PDSPR §Yto pass the §fCorporate Limitation Act§!"
+ 
+ NOV_shukshin_befriend_the_pacifists_tt:0 "§YWe will compromise with the §mRSLP §Yto pass the §fCorporate Limitation Act§!"
+ 
+ NOV_shukshin_limit_corporate_influence_tt:0 "§YThe Federal Assembly will vote on the §fCorporate Limitation Act§!"
+ 
+ NOV_shukshin_rally_the_poles_tt:0 "§YWe will attempt to gain the favour of the Poles of the Oral Province§!"
+ 
+ NOV_shukshin_treaty_of_novosibirsk_tt:0 "§QWe§! will determine the §Rfate§! of §MKazakhstan§!."
+
+ NOV_shukshin_the_wild_steppe_tt:0 "§YWe will expand our influence into Central Asia§!"
+ 
+ ### Foreign Policy Tree ###
+ 
+ # Kazahkstan Tree #
+ 
+ NOV_shukshin_operation_perovsky_tt:0 "§YThe Russian Federation will begin the invasion of Kazahkstan§!"
+ 
+ # Karelia Tree
+ 
+ NOV_shukshin_see_to_the_northern_front_tt:0 "\nThe §BRussian Federation§! will reinstate its claim to §YKarelia§!"
+ 
+ # War Tree #
+ 
+ NOV_shukshin_operation_bagration_tt:0 "§VThe Second West Russian War has Begun§!"
+ 
+ NOV_shukshin_purchase_american_submarines_tt:0 "We will Purchase §Y12 submarines§! from the United States"
+#  NOV_shukshin_purchase_american_submarines_tt:0 "Load Battle Order: §YAmerican Submarine Purchase§!"
+ 
+ ### Sluzhba Bezopasnosti ###
+ TNO_NOV_Sluzhba_Bezopasnosti_decision_category:0 "Sluzhba Bezopasnosti"
+ 
+ NOV_SB_Decisions_GUI_Title:0 "§BThe Sluzhba Bezopasnosti§!"
+ 
+ # Budget Localisation #
+ 
+ NOV_SB_Change_Budget_tt:0 "[NOV_SB_Change_Budget_sl]"
+ 
+ NOV_SB_Change_Budget_Tooltip:0 "Budget: §w[?NOV_SB_Budget_display]§!/§w[?NOV_SB_annual_budget_display] Million§!"
+
+ NOV_eurasias_power_plant_idea:0 "Nuclear Economy"
+
+ # RAPP Loc #
+ NOV_RAPP_space_category:0 "Space Exploration"
+ NOV_RAPP_space_category_desc:0 "The true strength of a nation lies not with its soldiers and tanks, but rather with its historical achievements. Whilst many Russian rocket theorists survived the disastrous 1940s, their dreams cannot be realised until now. President Shukshin has allocated funds for the undertaking, and we as a nation must finish what Kurchatov and Korolev started!\n\n§YCurrently, we are§! §G[?RAPP_Progress]% complete§! towards the goals of the current stage. §YEvery month, we will spend [?RAPP_Space_Monthly_Cost] million USD§! which will see us §Ggetting [?RAPP_Space_Monthly]% more towards completion§! on a §Ymonthly basis§!.\n\n§WRemember you can check what's going on on-site via Country Overview!§!"
+ NOV_RAPP_Stages:0 "[NOVgetRAPPStage]"
+ NOVgetRAPPStage_1:0 "§WSTAGE 1: BAIKONUR§!"
+ NOVgetRAPPStage_2:0 "§WSTAGE 2: ROCKET§!"
+ NOVgetRAPPStage_3:0 "§WSTAGE 3: LAUNCH§!"
+
+ NOV_RAPP_Open_Button_tt:0 "The president shall pay 'Baikonur' a visit."
+ Launch_Progressbar_tt:0 "[NOVgetRAPPProgressbar]"
+ NOVgetRAPPProgressbar_1:0 "§YSTAGE 1 - SITE CONSTRUCTION§!\n\nAfter careful deliberation, we have chosen a site near the banks of §YSyr Darya§! to construct the §BCosmodrome§!, a research-launching complex dedicated to the §WFed§!§Berat§!§Rion§!'s space exploration projects. We will need significant manpower, money and expertise before anything can commence. Whilst our design bureaus wrap up with rocket designs, §Rthe Cosmodrome must be built§!.\n\n§YWe have currently invested [?RAPP_total_investment] Millions of USD and is currently§! §G[?RAPP_Progress]% complete§!."
+ NOVgetRAPPProgressbar_2:0 "§YSTAGE 2 - ROCKET§!\n\nOur design bureaus have come up with viable designs for our manned space flight. However, we have still yet to put the plans into reality. This means assembly, transportation and maintenance of our rocket prior to the launch. In addition, §Yold, Soviet-era infrastructure must be upgraded§! and improved to provide our men with ample amounts of food, water and fuel.\n\n§ROnce we are done, we shall undertake the flight§!.\n\n§YWe have currently invested [?RAPP_total_investment] Millions of USD and is currently§! §G[?RAPP_Progress]% complete§!."
+ NOV_RAPP_Baikonur_1_tt:0 "§YClick to access the Baikonur Cosmodrome. From there, we shall enter stage 2, the assembly and transportation of rockets§!."
+ NOV_RAPP_Baikonur_2_tt:0 "§RBaikonur is not accessible yet§!!"
+
+ NOV_RAPP_build_additional_infrastructure:0 "Build Additional Infrastructure"
+ NOV_RAPP_build_additional_infrastructure_desc:0 "Though Baikonur is an ideal spot for our Cosmodrome, Soviet-era infrastructure, which initially hampered our efforts in unifying the region, is once again proving problematic. Of course, we cannot forcibly divert all the trains and trucks to the site, so in compensation, new railways and roads must be built to enable faster transportation of goods and people."
+ NOV_RAPP_ensure_stream_of_supplies:0 "Ensure Stream of Supplies" 
+ NOV_RAPP_ensure_stream_of_supplies_desc:0 "Many talented individuals are not willing to go to the middle of Kazakhstan due to its weather, and lack of sources of food and amenities. These trivial things must not stop the Cosmodrome! Besides, artificially building up the local economy may prove helpful in the long term, as we won't be going any time soon."
+ NOV_RAPP_invite_american_experts:0 "Invite American Experts"
+ NOV_RAPP_invite_american_experts_desc:0 "The United States has seen many successes in the field of space exploration. Indeed, we must learn from those involved with the construction of American spaceports to understand what it truly takes to raise a bastion of progress from thin air."
+ NOV_RAPP_develop_site_procedures:0 "Develop Site Procedures"
+ NOV_RAPP_develop_site_procedures_desc:0 "As this is the first time we are building anything like this, many of our managers and workers are still somewhat unfamiliar with all the advanced electronics being shipped in. To avoid accidents on-site, we must reserve some hours and invest them into informing classes so they do not mishandle anything of worth. Aside from that, maybe we can slip some patriotic propaganda into these classes..."
+ NOV_RAPP_conscript_military_personnel:0 "Conscript Military Personnel"
+ NOV_RAPP_conscript_military_personnel_desc:0 "The Army possesses many young men perfect for the job. As our Federation secures its place among the powers of this world, we expect the coming decades to be relatively peaceful. If the army has no real enemies to fight, they shall waltz with the hot sun of Kazakhstan!"
+ NOV_RAPP_develop_local_manufactories:0 "Develop Local Manufactories"
+ NOV_RAPP_develop_local_manufactories_desc:0 "Shipping construction materials and electronics from far-off Russian cities are obviously most inefficient. It would be infinitely cheaper if we are able to secure some source of quality materials from Kazakhstan itself. We should seek to use this opportunity to invest in local municipalities, such as Kyzyl-Orda and Zhezqasghan. This may also help with reducing unemployment and promoting urbanisation in these regions!"
+ NOV_RAPP_fuck_you_castamir:0 "Disappear the Zvezdograd"
+ NOV_RAPP_fuck_you_castamir_desc:0 "The City of Star, as many of our workers call it, is already quite deceptive with its current name, Baikonur. However, some in our government are arguing for additional security measures. These officials claim it is better if Baikonur is wiped off the maps to avoid potential sabotaging from hostiles in Europe and make the purpose of this place clear to its citizens. Honestly, the idea doesn't sound so bad..."
+ NOV_RAPP_Monthly_Change_tt_1:0 "We will §Yspend [?temp_display]M USD§! §Rless§! in the space program every month."
+ NOV_RAPP_Monthly_Change_tt_2:0 "We will §Yspend [?temp_monthly]M USD§! §Gmore§! in the space program every month."
+ NOV_RAPP_Monthly_Progress_Change_tt_1:0 "We will §Rregress towards our goal by [?temp_display]%§! every month."
+ NOV_RAPP_Monthly_Progress_Change_tt_2:0 "We will §Gbe closer to our goal by [?temp_monthly_progress]%§! every month."
+ NOV_RAPP_Space_Total_Cost_Change_tt_1:0 "We will §Rspend [?temp_spend]B USD§! towards Roscosmos"
+ NOV_RAPP_Space_Total_Cost_Change_tt_2:0 "We will §Ggain [?temp_display]B USD§! Roscosmos." #Somehow
+ NOV_RAPP_Progress_Change_tt_1:0 "We will §Rregress towards our goal by [?temp_display]%§!."
+ NOV_RAPP_Progress_Change_tt_2:0 "We will §Gbe closer to our goal by [?temp_progress]%§!."
+ NOV_RAPP_Space_Monthly:0 "Our Monthly Progress"
+ NOV_RAPP_take_off:0 "§RThe Eagle Soars§!"
+ rapp_rocket_tt:0 "§RWe are ready.§!"
+ NOV_rapp_debug_proton:0 "Get Proton Rocket"
+ NOV_rapp_debug_soyuz:0 "Get Soyuz (Federatsiya) Rocket"
+ NOV_rapp_debug_stage_3:0 "Stage 3"
+ rapp_rocket_palse_tt:0 "We do not have major space programs ongoing"
+ rapp_space_check_tt:0 "We have done it."
+
+ NOV_codetalker_end_tt:0 "§VAnd thus, a new, swift sun rises§!."
+ NOV_codetalker_vrpp_end_tt:0 "§VAnd thus, a new, swift sun rises...§!?"

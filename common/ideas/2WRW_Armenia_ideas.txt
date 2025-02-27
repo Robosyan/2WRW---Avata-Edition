@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		ARM_the_returning_diaspora = { #
+			picture = generic_german_advisors
+			modifier = {
+				monthly_population = 0.3
+			}
+		}
+        ARM_the_desire_for_revenge = { #
+			picture = generic_german_advisors
+			modifier = {
+				war_support_factor = 0.2
+                conscription = 0.02
+			}
+            targeted_modifier = {
+                tag = TUR
+                attack_bonus_against = 0.2
+            }
+		}
+    }
+}

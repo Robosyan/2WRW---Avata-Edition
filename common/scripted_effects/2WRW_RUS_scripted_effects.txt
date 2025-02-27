@@ -1,0 +1,866 @@
+# Second West Russian War
+RUS_claim_moskowien_cores = {
+	MCW = {
+		every_owned_state = {
+			add_claim_by = RUS
+		}
+	}
+	195 = {add_claim_by = RUS}
+}
+
+RUS_remove_moskowien_cores = {
+	MCW = {
+		every_core_state = {
+			remove_core_of = MCW
+		}
+	}
+}
+
+SWRW_select_generic_focus_tree = {
+	if = {
+		limit = {
+			has_country_leader = {
+				character = KOM_Sergei_Taboritsky
+				ruling_only = yes
+			}
+		}
+		log = "Nothing happens"
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				original_tag = TOM
+				has_country_leader = {
+					character = MAG_Mikhail_Matkovsky
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = KOM_Svetlana_Stalina
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = MAG_Nikolay_Petlin
+					ruling_only = yes
+				}
+			}
+			OR = {
+				has_government = despotism
+				has_government = paternalism
+			}
+		}
+		set_country_flag = RUS_generic_authoritarian_unifier
+		load_focus_tree = RUS_WRW_Generic_Authoritarian_tree
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_government = communist
+				AND = {
+					has_government = socialist
+					NOT = { original_tag = SBA }
+				}
+				has_country_leader = {
+					character = KOM_Ivan_Serov
+					ruling_only = yes
+				}
+			}
+		}
+		set_country_flag = RUS_generic_communist_unifier
+		load_focus_tree = RUS_WRW_Generic_Communist_tree
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_country_leader = {
+					character = NOV_Vasily_Shukshin
+					ruling_only = yes
+				}
+			}
+			OR = {
+				has_government = progressivism
+				has_government = liberalism
+				has_government = liberal_conservatism
+				has_government = conservatism
+				original_tag = TOM
+				AND = {
+					original_tag = SBA
+					has_government = socialist
+				}
+				has_country_leader = {
+					character = MAG_Nikolay_Petlin
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = KOM_Svetlana_Stalina
+					ruling_only = yes
+				}
+			}
+		}
+		set_country_flag = RUS_generic_democratic_unifier
+		load_focus_tree = RUS_WRW_Generic_Democratic_tree
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_country_leader = {
+					character = KOM_Ivan_Serov
+					ruling_only = yes
+				}
+			}
+			OR = {
+				has_government = national_socialism
+				has_government = ultranationalism
+				has_government = fascism
+				has_country_leader = {
+					character = MAG_Mikhail_Matkovsky
+					ruling_only = yes
+				}
+			}
+		}
+		set_country_flag = RUS_generic_fascist_unifier
+		load_focus_tree = RUS_WRW_Generic_Fascist_tree
+	}
+}
+
+SWRW_democratic_partisan_uprising = {
+	# idk why i'm bothering to prevent division exploits but here we are
+	hidden_effect = {
+		delete_unit_template_and_units = {
+			division_template = "Russian Partisan Brigade"
+			disband = yes
+		}
+	}
+	division_template = {
+		name = "Russian Partisan Brigade"
+		priority = 0
+		template_counter = 5
+		regiments = {
+			light_infantry = { x = 0 y = 0 }
+			light_infantry = { x = 0 y = 1 }
+			light_infantry = { x = 0 y = 2 }
+			light_infantry = { x = 1 y = 0 }
+			light_infantry = { x = 1 y = 1 }
+			light_infantry = { x = 1 y = 2 }
+		}
+		is_locked = yes
+	}
+	set_temp_variable = {
+		temp_partisan_units_index = 0
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				temp_partisan_units_index < 2
+			}
+		}
+		random_state = {
+			prioritize = {
+				13 #Reval
+				96 #Wilna
+				1397 #Riga
+				1404 #Minsk-Stadt
+			}
+			limit = {
+				NOT = {
+					has_state_flag = RUS_partisans_flag #ONLY ONE UPRISING PER STATE
+				}
+			}
+			create_unit = {
+				division = "name = \"Partizanskaya\" division_template = \"Russian Partisan Brigade\" start_experience_factor = 0.02 start_equipment_factor = 0.4"
+				owner = ROOT
+				allow_spawning_on_enemy_provs = yes
+				count = 2
+			}
+			set_state_flag = RUS_partisans_flag
+		}
+		random_state = {
+			prioritize = {
+				200 #Saporoshje
+				218 #Rostow
+				221 #Charkow
+				226 #Reichenaustadt
+				227 #Hughesdorf
+				228 #Vossenitz
+				259 #Poltawa
+				1428 #Kiew-Stadt
+				1431 #Brest_Litowsk
+			}
+			limit = {
+				NOT = {
+					has_state_flag = RUS_partisans_flag #ONLY ONE UPRISING PER STATE
+				}
+			}
+			create_unit = {
+				division = "name = \"Partizanskaya\" division_template = \"Russian Partisan Brigade\" start_experience_factor = 0.02 start_equipment_factor = 0.4"
+				owner = ROOT
+				allow_spawning_on_enemy_provs = yes
+				count = 2
+			}
+			set_state_flag = RUS_partisans_flag
+		}
+		random_state = {
+			prioritize = {
+				200 #Saporoshje
+				218 #Rostow
+				221 #Charkow
+				226 #Reichenaustadt
+				227 #Hughesdorf
+				228 #Vossenitz
+				259 #Poltawa
+				1428 #Kiew-Stadt
+				1431 #Brest_Litowsk
+			}
+			limit = {
+				NOT = {
+					has_state_flag = RUS_partisans_flag #ONLY ONE UPRISING PER STATE
+				}
+			}
+			create_unit = {
+				division = "name = \"Partizanskaya\" division_template = \"Russian Partisan Brigade\" start_experience_factor = 0.02 start_equipment_factor = 0.4"
+				owner = ROOT
+				allow_spawning_on_enemy_provs = yes
+				count = 2
+			}
+			add_to_temp_variable = {
+				temp_partisan_units_index = 1
+			}
+			set_state_flag = RUS_partisans_flag
+		}
+	}
+}
+
+SWRW_launch_war_declaration_events = {
+	# West Russia
+	if = {
+		limit = { has_country_leader = { character = WRS_Georgy_Zhukov ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.1 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = WRS_Mikhail_Tukhachevsky ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.2 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = KOM has_government = progressivism }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.3 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = KOM has_government = liberalism }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.4 days = 1 } }
+	}
+	else_if = {
+		limit = {
+			has_government = despotism
+			has_country_leader = { character = KOM_Svetlana_Stalina ruling_only = yes }
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.5 days = 1 } }
+	}
+	else_if = {
+		limit = {
+			has_government = liberal_conservatism
+			has_country_leader = { character = KOM_Svetlana_Stalina ruling_only = yes }
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.6 days = 1 } }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_country_leader = { character = KOM_Vladimir_Chelomai ruling_only = yes }
+				has_country_leader = { character = KOM_Nikolai_Kardashev ruling_only = yes }
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.7 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Svetlana_Bukharina ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.8 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Mikhail_Suslov ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.9 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Lev_Gumilyov ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.10 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character =  KOM_Igor_Shafarevich ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.11 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KOM_Ivan_Serov ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.12 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = VYT has_government = liberalism }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.13 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = VYT has_government = conservatism }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.14 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = VYT has_government = paternalism }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.15 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = PRM_Gutrum_Vagner ruling_only = yes} }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.16 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = PRM_Velimir ruling_only = yes} }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.17 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = SAM_Miletiy_Zykov ruling_only = yes} }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.18 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = SAM_Sergey_Bunyachenko ruling_only = yes} }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.19 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = SAM_Vladimir_Artsezo ruling_only = yes} }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.20 days = 1 } }
+	}
+	
+	# West Siberia
+	
+	else_if = {
+		limit = { has_country_leader = { character = SVR_Pavel_Batov ruling_only = yes} }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.21 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = SVR_Boris_Yeltsin ruling_only = yes} }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.22 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = TYM_Lazar_Kaganovich ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.23 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = TYM_Nikita_Khrushchev ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.24 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = OMS }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.25 days = 1 } }
+	}
+	
+	# Central Siberia
+	
+	else_if = {
+		limit = { has_country_leader = { character = NOV_Alexander_Pokryshkin ruling_only = yes } }
+		#every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.27 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KEM_Rurik_III ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.28 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = KEM_Ronegda_I ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.29 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = SBA }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.30 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = TOM has_government = liberalism }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.32 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = TOM has_government = conservatism }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.33 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = TOM has_government = progressivism }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.34 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = TOM has_government = paternalism }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.35 days = 1 } }
+	}
+	
+	# Far East
+	
+	else_if = {
+		limit = { has_country_leader = { character = IRK_Genrikh_Yagoda ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.36 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = IRK_Sergey_Bessonov ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.45 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_flag = BRY_sablin_bukharinist }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.37 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_flag = BRY_sablin_leninist }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.38 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = CHT_Mikhail_II ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.39 days = 1 } }
+	}
+	else_if = { #oh my god what the fuck
+		limit = { has_country_leader = { character = CHT_Boris_Shepunov ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.46 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = AMR }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.40 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = MAG_Mikhail_Matkovsky ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.41 days = 1 } }
+	}
+	else_if = {
+		limit = { has_country_leader = { character = MAG_Nikolay_Petlin ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.42 days = 1 } }
+	}
+
+	else_if = {
+		limit = { has_country_leader = { character = MAG_Mitchell_Werbell ruling_only = yes } }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.43 days = 1 } }
+	}
+	else_if = {
+		limit = { original_tag = OMO }
+		every_country = { limit = { is_ai = no } news_event = { id = War_Declaration.44 days = 1 } }
+	}
+	else = { every_country = { limit = { is_ai = no } news_event = { id = WORLD.40003 days = 1 } } }
+}
+
+SWRW_Add_RUS_To_Cold_War_GUI = {
+	custom_effect_tooltip = SWRW_Add_Russia_To_Cold_War_GUI_tt
+	hidden_effect = {
+		RUS = {
+			set_superpower = yes 
+
+			add_to_array = { CW_SeaZone_Status = 0 } # 0; East Pacific
+			add_to_array = { CW_SeaZone_Status = 1 } # 1; West Pacific
+			add_to_array = { CW_SeaZone_Status = 0 } # 2; South Atlantic
+			add_to_array = { CW_SeaZone_Status = 0 } # 3; North Atlantic
+			add_to_array = { CW_SeaZone_Status = 0 } # 4; North Sea
+			add_to_array = { CW_SeaZone_Status = 0 } # 5; Mediterranean
+			add_to_array = { CW_SeaZone_Status = 0 } # 6; Indian Ocean
+			Cold_War_GUI_PowerProjection_CalculateBonuses = yes
+			
+			# This only exists because scripted loc is a fuck
+			add_to_array = { global.PowerProjection_Tags = THIS.id }
+			add_to_array = { global.PowerProjection_X = 310 }
+			add_to_array = { global.PowerProjection_Y = 8 }
+		}
+	}
+}
+SWRW_Add_german_target_To_Cold_War_GUI = {
+	# custom_effect_tooltip = SWRW_Add_Russia_To_Cold_War_GUI_tt
+	hidden_effect = {
+		var:target = {
+			set_superpower = yes
+			if = {
+				limit = { NOT = { original_tag = GER } }
+				set_variable = { nuclear_stockpile = GER.nuclear_stockpile }
+				set_variable = { nuclear_stockpile_k = nuclear_stockpile }
+				divide_variable = { nuclear_stockpile_k = 1000 }
+				set_variable = { nuclear_global_coverage = GER.nuclear_global_coverage }
+				calculate_strike_capability = yes
+				#All of them have WMDs researched
+			}
+		}
+		var:target = {
+			add_to_array = { CW_SeaZone_Status = 0 } # 0; East Pacific
+			add_to_array = { CW_SeaZone_Status = 0 } # 1; West Pacific
+			add_to_array = { CW_SeaZone_Status = 0 } # 2; South Atlantic
+			add_to_array = { CW_SeaZone_Status = 0 } # 3; North Atlantic
+			add_to_array = { CW_SeaZone_Status = 1 } # 4; North Sea
+			add_to_array = { CW_SeaZone_Status = 0 } # 5; Mediterranean
+			add_to_array = { CW_SeaZone_Status = 0 } # 6; Indian Ocean
+			Cold_War_GUI_PowerProjection_CalculateBonuses = yes
+			
+			# This only exists because scripted loc is a fuck
+			add_to_array = { global.PowerProjection_Tags = THIS.id } #If someone wants to do a dedcicated one be my guest
+			add_to_array = { global.PowerProjection_X = 277 }
+			add_to_array = { global.PowerProjection_Y = 47 }
+		}
+	}
+}
+
+SWRW_unite_russia_without_firing_unnecessary_bullshit = {
+	if = {
+		limit = {
+			ROOT = { is_central_russian_nation = no }
+		}
+		random_country = {
+			limit = {
+				is_central_russian_nation = yes
+				is_russian_unifier = yes
+			}
+			every_other_country = {
+				limit = {
+					is_central_russian_nation = yes
+					NOT = {
+						tag = ONG
+					}
+				}
+				PREV = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+			set_global_flag = RUS_West_Russian_unification
+			save_global_event_target_as = RUS_western_unifier
+		}
+	}
+	else = {
+		every_other_country = {
+			limit = {
+				is_central_russian_nation = yes
+				NOT = {
+					tag = ONG
+				}
+			}
+			PREV = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		set_global_flag = RUS_West_Russian_unification
+		save_global_event_target_as = RUS_western_unifier
+	}
+	if = {
+		limit = {
+			ROOT = { is_west_siberian_nation = no }
+		}
+		random_country = {
+			limit = {
+				is_west_siberian_nation = yes
+				is_russian_unifier = yes
+			}
+			every_other_country = {
+				limit = {
+					is_west_siberian_nation = yes
+				}
+				PREV = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+			set_global_flag = RUS_West_Siberian_unification
+			save_global_event_target_as = RUS_west_siberia_unifier
+		}
+	}
+	else = {
+		every_other_country = {
+			limit = {
+				is_west_siberian_nation = yes
+			}
+			PREV = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		set_global_flag = RUS_West_Siberian_unification
+		save_global_event_target_as = RUS_west_siberia_unifier
+	}
+	if = {
+		limit = {
+			ROOT = { is_central_siberian_nation = no }
+		}
+		random_country = {
+			limit = {
+				is_central_siberian_nation = yes
+				is_russian_unifier = yes
+			}
+			every_other_country = {
+				limit = {
+					is_central_siberian_nation = yes
+				}
+				PREV = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+			set_global_flag = RUS_Central_Siberian_unification
+			save_global_event_target_as = RUS_central_siberia_unifier
+		}
+	}
+	else = {
+		every_other_country = {
+			limit = {
+				is_central_siberian_nation = yes
+			}
+			PREV = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		set_global_flag = RUS_Central_Siberian_unification
+		save_global_event_target_as = RUS_central_siberia_unifier
+	}
+	if = {
+		limit = {
+			ROOT = { is_far_eastern_nation = no }
+		}
+		random_country = {
+			limit = {
+				is_far_eastern_nation = yes
+				is_russian_unifier = yes
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						is_far_eastern_nation = yes
+						is_wasteland = yes
+					}
+				}
+				PREV = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+			set_global_flag = RUS_Far_East_unification
+			save_global_event_target_as = RUS_far_east_unifier
+		}
+	}
+	else = {
+		every_other_country = {
+			limit = {
+				OR = {
+					is_far_eastern_nation = yes
+					is_wasteland = yes
+				}
+			}
+			PREV = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		set_global_flag = RUS_Far_East_unification
+		save_global_event_target_as = RUS_far_east_unifier
+	}
+	if = {
+		limit = {
+			ROOT = {
+				is_central_russian_nation = no
+				is_west_siberian_nation = no
+			}
+		}
+		random_country = {
+			limit = {
+				OR = {
+					is_central_russian_nation = yes
+					is_west_siberian_nation = yes
+				}
+				is_russian_unifier = yes
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						is_central_russian_nation = yes
+						is_west_siberian_nation = yes
+						is_southern_urals_nation = yes
+					}
+				}
+				PREV = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+			set_global_flag = RUS_Russia_unification
+			set_country_flag = RUS_superregional_stage
+			save_global_event_target_as = RUS_russian_unifier
+			set_country_flag = RUS_RUSSIA_UNIFIED
+		}
+	}
+	else = {
+		every_other_country = {
+			limit = {
+				OR = {
+					is_central_russian_nation = yes
+					is_west_siberian_nation = yes
+					is_southern_urals_nation = yes
+				}
+			}
+			PREV = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		set_global_flag = RUS_Russia_unification
+		set_country_flag = RUS_superregional_stage
+		save_global_event_target_as = RUS_russian_unifier
+		set_country_flag = RUS_RUSSIA_UNIFIED
+	}
+	if = {
+		limit = {
+			ROOT = {
+				is_central_siberian_nation = no
+				is_far_eastern_nation = no
+			}
+		}
+		random_country = {
+			limit = {
+				OR = {
+					is_central_siberian_nation = yes
+					is_far_eastern_nation = yes
+				}
+				is_russian_unifier = yes
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						is_central_siberian_nation = yes
+						is_far_eastern_nation = yes
+						is_wasteland = yes
+					}
+				}
+				PREV = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+			set_global_flag = RUS_Siberia_unification
+			set_country_flag = RUS_superregional_stage
+			save_global_event_target_as = RUS_siberian_unifier
+			set_country_flag = RUS_SIBERIA_UNIFIED
+		}
+	}
+	else = {
+		every_other_country = {
+			limit = {
+				OR = {
+					is_central_siberian_nation = yes
+					is_far_eastern_nation = yes
+					is_wasteland = yes
+				}
+			}
+			PREV = {
+				annex_country = {
+					target = PREV
+					transfer_troops = yes
+				}
+			}
+		}
+		set_global_flag = RUS_Siberia_unification
+		set_country_flag = RUS_superregional_stage
+		save_global_event_target_as = RUS_siberian_unifier
+		set_country_flag = RUS_SIBERIA_UNIFIED
+	}
+	every_other_country = {
+		limit = {
+			is_russian_nation = yes
+			NOT = {
+				is_kazakh_nation = yes
+			}
+		}
+		PREV = {
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+			}
+		}
+	}
+	activate_decision = russian_total_reunification
+}
+
+WRW_RUS_add_forpo_tab_and_army_size_modifier = {
+	RUS = {
+		if = {
+			limit = {
+				NOT = {
+					has_country_leader = {
+						character = KOM_Sergey_Taboritsky
+						ruling_only = yes
+					}
+				}
+			}
+			hidden_effect = {
+				SWRW_add_army_size_modifier = yes	#normal hoi4 army sizes
+				#adding fopo tab
+				set_temp_variable = { TabName = token:BoP_Tab_GlobalConflicts }
+				TNO_BoP_AddTab = yes
+			}
+		}
+	}
+}
+
+WRW_RUS_get_superregional_flavor_events = {
+	if = {
+		limit = {
+			original_tag = NOV
+		}
+		hidden_effect = {
+			country_event = {
+				id = NOV_flavor.1
+				days = 180
+			}
+		}
+	}
+}
+
+RUS_get_real = {
+	if = {
+		limit = {
+			NOT = {
+				has_global_flag = RUS_national_unification
+			}
+		}
+		SWRW_unite_russia_without_firing_unnecessary_bullshit = yes
+		SWRW_Add_RUS_To_Cold_War_GUI = yes
+	}
+	RUS = {
+		RUS_generic_moskowien_occupation = yes
+		RUS_generic_petrograd_occupation = yes
+		RUS_generic_caucasian_occupation = yes
+		RUS_generic_ukraine_occupation = yes
+		RUS_generic_baltic_occupation = yes
+		RUS_generic_belarus_occupation =  yes
+	}
+}
+
+SOV_get_set_party_name = {
+	if = {
+		limit = {
+			country_exists = KOM
+			OR = {
+				KOM = { has_government = communist }
+				KOM = { has_government = socialist }
+			}
+		}
+		set_party_name = {
+			ideology = communist 
+			long_name = RUS_communist_cosmtag_communist_kom_long
+			name = RUS_communist_cosmtag_communist_kom
+		}
+	}
+	else = {
+		set_party_name = {
+			ideology = communist 
+			long_name = RUS_communist_cosmtag_communist_long
+			name = RUS_communist_cosmtag_communist
+		}
+	}
+}

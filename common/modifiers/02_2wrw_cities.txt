@@ -1,0 +1,20 @@
+terrain_moscow_ruined = {
+	army_speed_factor = -0.3
+	army_attack_factor = -0.2
+	army_defence_factor = -0.2
+	local_org_regain = -0.1
+}
+
+terrain_moscow_restored = {
+	army_speed_factor = 0.1
+}
+
+terrain_vladivostok_jap = {
+	#enemy_army_bonus_air_superiority_factor = -0.50
+	army_attack_factor = -0.1
+}
+
+terrain_vladivostok_rus = {
+	#enemy_army_bonus_air_superiority_factor = -0.50
+	army_attack_factor = -0.1
+}

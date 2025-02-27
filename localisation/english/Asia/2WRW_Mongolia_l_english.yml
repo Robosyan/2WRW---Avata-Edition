@@ -1,0 +1,36 @@
+﻿l_english:
+ 
+ #Leader
+
+ MON_Natsagiin_Bagabandi:0 "Natsagiin Bagabandi"
+ POLITICS_NATSAGIIN_BAGABANDI_DESC:0 "Natsagiin Bagabandi is a relatively young leader, only in his late twenties, but his people have called, and so he has answered. Born in April 22nd, 1950 to a poor peasant family under collaborator rule, Natsagin's keen sense of justice led him to enlist in the secret remnants of the Mongolian People's Revolutionary Party from a young age. While he was initially an idealistic socialist, he has moderated drastically in response to the rising Russian eagle.\n\nFor the longest time, Bagabandi bided his time as part of his communist guerilla cell. But time did not sit idly by. While communism languished and died in Russia, the rising force of capitalist democracy united Russia, and even let them defeat the German Reich. Luckily, those capitalists didn't mind if his partisans were full of socialists, they were there to offer freedom, or at least, an attempt at it.\n\nNow, Bagabandi fights for a free Mongolia. Their government and organization will need to be diverse, open to different ideas and away from orthodoxy, but if they can muster their resources and convince the Russians to give them aid, perhaps they might be free once again."
+
+ # Parties
+
+ MON_conservatism_party:0 "MTTN"
+ MON_conservatism_party_long:0 "Mongolyn Tusgaar Togtnolyn Nam"
+ 
+ MON_paternalism_party:0 "MAH"
+ MON_paternalism_party_long:0 "Mongol Ardīn Nam"
+
+ MON_socialist_party:0 "MAXH"
+ MON_socialist_party_long:0 "Mongol Ardīn Khuvsgalt Nam"
+
+ MON_communist_party:0 "MAXH"
+ MON_communist_party_long:0 "Mongol Ardīn Khuvsgalt Nam"
+
+ MON_progressivism_party:0 "MAH"
+ MON_progressivism_party_long:0 "Mongol Ardīn Nam"
+ 
+ # Nation Name
+
+ MON:0 "Republic of Mongolia"
+ MON_DEF:0 "the Republic of Mongolia"
+ MON_ADJ:0 "Mongolian"
+ 
+ ## Decisions ##
+ 
+ SWRW_Mongolia_category:0 "Mongolia Decisions"
+ 
+ MON_demand_japanese_surrender:0 "Demand Japanese Surrender"
+ MON_join_russian_alliance:0 "Join the CSTO"

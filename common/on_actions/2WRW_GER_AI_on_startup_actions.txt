@@ -1,0 +1,51 @@
+on_actions = {
+	#AI Division Buff
+	on_startup = {
+		effect = {
+			GER = {
+				if = {
+					limit = {
+						original_tag = GER
+						is_ai = yes
+					}
+					country_lock_all_division_template = no
+					delete_unit_template_and_units = {
+						division_template = "Infanterie-Division"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Panzer-Division"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Waffen-SS"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Fallschirmjäger"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Seebataillon"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Gebirgsjäger"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+						division_template = "Motorisierte Infanterie-Division"
+						disband = yes
+					}
+					delete_unit_template_and_units = {
+					division_template = "PGD Operationsgruppe"
+						disband = yes
+					}
+					load_oob = SWRW_GER_AI_1962
+					set_technology = { scout_helicopter_1960 = yes }
+					country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+}

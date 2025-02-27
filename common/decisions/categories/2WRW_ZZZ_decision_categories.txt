@@ -1,0 +1,11 @@
+SWRW_Load_World_Events = {
+	icon = GFX_decision_category_debug
+	allowed = {
+		original_tag = ZZZ
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+	priority = 200
+}

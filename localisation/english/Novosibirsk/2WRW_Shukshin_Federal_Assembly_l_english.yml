@@ -1,0 +1,115 @@
+﻿l_english:
+ 
+ NOV_Increased_Presidental_Support_Low_tt:0 "The §WPeoples Support§! for the President will slightly §GIncrease§!"
+ NOV_Increased_Presidental_Support_Med_tt:0 "The §WPeoples Support§! for the President will §GIncrease§!"
+ NOV_Decreased_Presidental_Support_Med_tt:0 "The §WPeoples Support§! for the President will §RDecrease§!"
+
+ NOV_Fund_Research:0 "Research Grants"
+ NOV_Amend_Budget:0 "Amended National Budget"
+ NOV_Poltical_Concessions:0 "Political Concessions"
+ 
+ # New Localisation
+ 
+ ### Occupation Zones ###
+ # Moskowien #
+ TNO_Moskowien_Occupation_Status_tt:0 "[Root.TNO_Moskowien_Occupation_Zone]"
+ TNO_Moskowien_Occupation_Status_Independent_tt:0 "§YMoskowien§! is §YIndependent§!"
+ TNO_Moskowien_Occupation_Status_Occupied_tt:0 "§VGERMAN OCCUPIED RUSSIA§!"
+ TNO_Moskowien_Occupation__Status_RDC_Independent_tt:0 "§!The §mRussian Democratic Republic§! is §YIndependent§!"
+ 
+ # Kaukasia
+ TNO_Kaukasia_Occupation_Status_tt:0 "[Root.TNO_Kaukasia_Occupation_Zone]"
+ TNO_Kaukasia_Occupation_Status_Independent_tt:0 "§YCaucasia§! is §YIndependent§!"
+ TNO_Kaukasia_Occupation_Status_Occupied_tt:0 "§VGERMAN OCCUPIED CAUCASIA§!"
+ 
+ # Rostov
+ TNO_Rostov_Occupation_Status_tt:0 "[Root.TNO_Rostov_Occupation_Zone]"
+ TNO_Rostov_Occupation_Status_Independent_tt:0 "§YRostov§! is §YIndependent§!"
+ TNO_Rostov_Occupation_Status_Occupied_tt:0 "§VGERMAN OCCUPIED ROSTOV§!"
+ 
+ # Crimea
+ TNO_Crimea_Occupation_Status_tt:0 "[Root.TNO_Crimea_Occupation_Zone]"
+ TNO_Crimea_Occupation_Status_Independent_tt:0 "§YCrimea§! is §YIndependent§!"
+ TNO_Crimea_Occupation_Status_Occupied_tt:0 "§VGERMAN OCCUPIED CRIMEA§!"
+ 
+ # Karelia
+ TNO_Karelia_Occupation_Status_Occupied_tt:0 "§VFINNISH OCCUPIED KARELIA§!"
+ 
+ # Far East
+ TNO_Far_East_Occupation_Status_Occupied_tt:0 "§VJAPANESE OCCUPIED FAR EAST§!"
+ 
+ ### Debug Decisions ##
+ 
+ NOV_federal_assembly_debug_category:0 "Federal Assembly Debug"
+ 
+ NOV_federal_assembly_setup:0 "Federal Assembly Setup"
+ 
+ # Party Name Changes
+ 
+ NOV_russian_siloviki_long_name:0 "Vserossiyskaya Patrioticheskaya Partiya"
+ NOV_russian_siloviki_short_name:0 "VRPP"
+ 
+ # Electoral Map - Total Support
+
+ TNO_RAPP_Full_Name_tt:0 "§BRussian Agrarian-Industrial Party§! - §Y[?TNO_RUS_RAPP_Support]%§!"
+ TNO_VRPP_Full_Name_tt:0 "§sAll-Russian Patriotic Party§! - §Y[?TNO_RUS_SIL_Support]%§!"
+ TNO_DSPR_Full_Name_tt:0 "§ESocial Democratic Party of Russia§! - §Y[?TNO_RUS_DSPR_Support]%§!"
+ TNO_RSLP_Full_Name_tt:0 "§mRussian Social Liberal Party§! - §Y[?TNO_RUS_RSLP_Support]%§!"
+ 
+ TNO_Electoral_Map_RAPP_Total_Support_tt:0 "Total §BRAPP§! Support: §Y[?TNO_RUS_RAPP_Support]%§!"
+ TNO_Electoral_Map_SIL_Total_Support_tt:0 "Total §sVRPP§! Support: §Y[?TNO_RUS_SIL_Support]%§!"
+ TNO_Electoral_Map_DSPR_Total_Support_tt:0 "Total §ESDPR§! Support: §Y[?TNO_RUS_DSPR_Support]%§!"
+ TNO_Electoral_Map_RSLP_Total_Support_tt:0 "Total §mRSLP§! Support: §Y[?TNO_RUS_RSLP_Support]%§!"
+ 
+ # Subdivisions of Russia
+ 
+ TNO_Kamchatka_Krai_name_tt:0 "§YKamchatka Krai§!\n\nLocated in the Russian Far East, Kamchatka Krai is situated on the Kamchatka peninsula, the largest peninsula in all of Russia, with an area of about 270,000 km².\n\nThe majority demographic of Kamchatka are the §YChukchi§! peoples which dominate the rural regions of Kamchatka with most Russian speakers primarily living in the city of §YPetropavlovk-Kamchatsky.§!\n\nThe most popular party of Kamchatka Krai is the §BRAPP§!"
+ 
+ TNO_Chukotka_Okrug_name_tt:0 "§YChukotka Okrug§!\n\nFound deep in the north of Pacific Russia, just west of U.S State of Alaska, Chukotka is an §YAutonomous Okrug§! and is the native homeland of the §YChukchi§! peoples that populate much of North-Eastern Siberia.\n\nChukotka is the least populated federal subject of the Federation with the capital being the coastal city of §YAnadyr.§!\n\nThe most popular party of Chukotka Okrug is the §ESDPR§!"
+ 
+ TNO_Amur_Oblast_name_tt:0 "§YAmur Oblast§!\n\nDespite the land still healing from the scars of the rule of Rodzaevsky and the RFP, Amur is one of the most populated subdivisions in the Far East, second only to Irkutsk Oblast to the west. Amur is known for its vast forests and numerous rivers, as well as its large deposits of gold beneath the surface.\n\nAmur is an §YOblast§! of the Russian Federation, having a majority Russian population with a notable Manchu minority in the Oblast's largest city and administrative centre, §YBlagoveshchensk.§!\n\nThe most popular party of Amur Oblast is the §sVRPP§!"
+ 
+ TNO_Magadan_Oblast_name_tt:0 "§YMagadan Oblast§!\n\nDominating much of the Pacific coast of the Far East, Magadan has rapidly grown in importance following the Great Patriotic War, home to the port city of the same name and operating as the gate to Siberia from the icy waters of the Sea of Okhotsk.\n\nMagadan is an §YOblast§! of the Federation with the majority of the population being of Russian descent with notable Yakut and Chukchi minorities. The administrative capital of Magadan Oblast is the port city of §YMagadan.§!\n\nThe most popular party of Magadan Oblast is the §sVRPP§!"
+ 
+ TNO_Zabaykalsky_Krai_name_tt:0 "§YZabaykalsky Krai§!"
+ 
+ TNO_Sakha_Republic_name_tt:0 "§YSakha Republic§!"
+ 
+ ## Subdivision Census Data ##
+ # Pop Temp
+ TNO_Voter_Population_State_Population_tt:0 "Population: §Y[?TNO_voter_population_display_var]K§!"
+ 
+ # Kamchatka Krai
+ TNO_Kamchatka_Krai_State_Population_tt:0 "Population: §Y[?637.state_population_k]K§!"
+ TNO_Kamchatka_Krai_State_GDP_tt:0 "State GDP: §Y$[?637.GetStateValueMorB]§!"
+ 
+ TNO_Kamchatka_Krai_RAPP_Support_tt:0 "§BRAPP§! Support: §Y[?NOV_RAPP_Kamchatka_Support_var]%§!"
+ TNO_Kamchatka_Krai_Siloviki_Support_tt:0 "§sVRPP§! Support: §Y[?NOV_SIL_Kamchatka_Support_var]%§!"
+ TNO_Kamchatka_Krai_SDPR_Support_tt:0 "§ESDPR§! Support: §Y[?NOV_DSPR_Kamchatka_Support_var]%§!"
+ TNO_Kamchatka_Krai_RSLP_Support_tt:0 "§mRSLP§! Support: §Y[?NOV_RSLP_Kamchatka_Support_var]%§!"
+ 
+ # Chukotka Okrug
+ TNO_Chukotka_Okrug_State_Population_tt:0 "Population: §Y[?891.state_population_k]K§!"
+ 
+ TNO_Chukotka_Okrug_RAPP_Support_tt:0 "§BRAPP§! Support: §Y[?NOV_RAPP_Chukotka_Support_var]%§!"
+ TNO_Chukotka_Okrug_Siloviki_Support_tt:0 "§sVRPP§! Support: §Y[?NOV_SIL_Chukotka_Support_var]%§!"
+ TNO_Chukotka_Okrug_SDPR_Support_tt:0 "§ESDPR§! Support: §Y[?NOV_DSPR_Chukotka_Support_var]%§!"
+ TNO_Chukotka_Okrug_RSLP_Support_tt:0 "§mRSLP§! Support: §Y[?NOV_RSLP_Chukotka_Support_var]%§!"
+ 
+ # Magadan Oblast
+ TNO_Magadan_Oblast_State_Population_tt:0 "Population: §Y[?562.state_population_k]K§!"
+ 
+ TNO_Magadan_Oblast_RAPP_Support_tt:0 "§BRAPP§! Support: §Y[?NOV_RAPP_Magadan_Support_var]%§!"
+ TNO_Magadan_Oblast_Siloviki_Support_tt:0 "§sVRPP§! Support: §Y[?NOV_SIL_Magadan_Support_var]%§!"
+ TNO_Magadan_Oblast_SDPR_Support_tt:0 "§ESDPR§! Support: §Y[?NOV_DSPR_Magadan_Support_var]%§!"
+ TNO_Magadan_Oblast_RSLP_Support_tt:0 "§mRSLP§! Support: §Y[?NOV_RSLP_Magadan_Support_var]%§!"
+ 
+ # Amur Oblast
+ TNO_Amur_Oblast_State_Population_tt:0 "Population: §Y[?TNO_Amur_Oblast_Population_var]K§!"
+ 
+ TNO_Amur_Oblast_RAPP_Support_tt:0 "§BRAPP§! Support: §Y[?NOV_RAPP_Amur_Support_var]%§!"
+ TNO_Amur_Oblast_Siloviki_Support_tt:0 "§sVRPP§! Support: §Y[?NOV_SIL_Amur_Support_var]%§!"
+ TNO_Amur_Oblast_SDPR_Support_tt:0 "§ESDPR§! Support: §Y[?NOV_DSPR_Amur_Support_var]%§!"
+ TNO_Amur_Oblast_RSLP_Support_tt:0 "§mRSLP§! Support: §Y[?NOV_RSLP_Amur_Support_var]%§!"
+ 
+ 

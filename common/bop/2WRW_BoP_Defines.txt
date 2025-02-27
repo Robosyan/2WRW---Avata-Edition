@@ -1,0 +1,21 @@
+# (fuck this is stupid why does there have to be one for every tag)
+BoP_Tab_GlobalConflicts_WRS = { decision_category = WRS_foreign_policy_category }
+BoP_Tab_GlobalConflicts_KOM = { decision_category = KOM_foreign_policy_category }
+BoP_Tab_GlobalConflicts_VYT = { decision_category = VYT_foreign_policy_category }
+BoP_Tab_GlobalConflicts_PRM = { decision_category = PRM_foreign_policy_category }
+BoP_Tab_GlobalConflicts_SAM = { decision_category = SAM_foreign_policy_category }
+
+BoP_Tab_GlobalConflicts_TYM = { decision_category = TYM_foreign_policy_category }
+BoP_Tab_GlobalConflicts_SVR = { decision_category = SVR_foreign_policy_category }
+BoP_Tab_GlobalConflicts_OMS = { decision_category = OMS_foreign_policy_category }
+
+BoP_Tab_GlobalConflicts_TOM = { decision_category = TOM_foreign_policy_category }
+BoP_Tab_GlobalConflicts_NOV = { decision_category = NOV_foreign_policy_category }
+BoP_Tab_GlobalConflicts_KEM = { decision_category = KEM_foreign_policy_category }
+BoP_Tab_GlobalConflicts_SBA = { decision_category = SBA_foreign_policy_category }
+
+BoP_Tab_GlobalConflicts_IRK = { decision_category = IRK_foreign_policy_category }
+BoP_Tab_GlobalConflicts_BRY = { decision_category = BRY_foreign_policy_category }
+BoP_Tab_GlobalConflicts_CHT = { decision_category = CHT_foreign_policy_category }
+BoP_Tab_GlobalConflicts_MAG = { decision_category = MAG_foreign_policy_category }
+BoP_Tab_GlobalConflicts_AMR = { decision_category = AMR_foreign_policy_category }

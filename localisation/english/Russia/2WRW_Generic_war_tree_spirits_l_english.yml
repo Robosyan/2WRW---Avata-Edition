@@ -1,0 +1,28 @@
+﻿l_english:
+
+ #Authoritarian tree
+
+ RUS_The_Strength_of_Our_Nation: "The Strength of Our Nation"
+ RUS_The_Strength_of_Our_Nation_desc: "Throughout the generations, the [RUS.GetAdjective] people have always endured invasion after invasion. From the days of Napoleon to World War Two, the [RUS.GetAdjective] people have withstood the pillaging and razing of their nation's lands time and time again. Yet, we as a people have held firm. We have resisted foreign power's attempts to shatter our nation's will and come out stronger for it.\n\nThis war will be no different. [RUSGetUniqueNameTitle] will persevere against our enemies; the strength of the [RUS.GetAdjective] people will bring us victory. We will not rest until we have left the German Reich's dominion over Eastern Europe merely a memory, and the German state confined to rot in its grave."
+ RUS_Death_to_the_Germans: "Death to the Germans!"
+ RUS_Death_to_the_Germans_desc: "This war will not only decide the fate of our very nation, but the fate of our enemy's as well. Whoever emerges victorious will stand as the sole hegemon of the Eurasian continent and leave the other to the dustbin of history.\n\nFor too long has the Aryran race ruled over the Slavic people. Every last German occupier must be purged from our Motherland and our rightful territory must be restored, leaving only the proud [RUS.GetAdjective] in charge of his own lands."
+
+ #Communist tree
+ RUS_The_Peoples_Strength: "The People's Strength"
+ RUS_The_Peoples_Strength_desc: "The success of our propaganda has brought with it a massive workforce, with the production of thousands of guns every day adding to our ever-growing arsenal. No more will we be reliant on the equipment of our forebears. We will depend on the [RUS.GetAdjective] people to protect the country from German hegemony!"
+ RUS_March_of_Memories: "March of Memories"
+ RUS_March_of_Memories_desc: "Every man and woman on the frontlines will be experiencing what their forefathers experienced decades ago, only now the tide has turned in our favor. A red wave has come crashing down on the Reich with no signs of slowing. As the memories of Barbarossa remain fresh in every Russian’s mind, the young soldiers are determined to destroy the Hitlerites in Germania and avenge their fallen comrades and countrymen."
+
+ #Democratic tree
+ RUS_An_Indomitable_Spirit: "An Indomitable Spirit"
+ RUS_An_Indomitable_Spirit_desc: "Our righteous war can only achieve victory if we can maintain a steady stream of supply and materials. While we have gained an ample amount of recruits upon reunification, we need something that’s just as important in wartime: workers.\n\nThe common workers in the factory play just as big a role as the soldiers in the trenches. We must ensure that our factories suffer no vacant positions. With the grit and steeled resolve of our workers, we will produce whatever supplies we require to free our nation from any threat!"
+ RUS_For_Freedom_and_Democracy: "For Freedom, and Democracy!"
+ RUS_For_Freedom_and_Democracy_desc: "We’re not just fighting for our lost territory; we are fighting for our very existence. If we lose, the Germans will make doubly sure that we never again have the chance to re-emerge. We’re putting it all on the line as we fight for the lives of millions across Eastern Europe.\n\nMany lives will be lost in our fight for liberty, but these brothers and sisters will die for something far greater than themselves. We aren’t just fighting for our nation; we are fighting for the name of freedom and the end of tyranny. We will be free, or die trying!"
+ 
+ #Fascist tree
+
+ RUS_The_Triumph_of_Our_Will: "The Triumph of Our Will"
+ RUS_The_Triumph_of_Our_Will_desc: "It's clear that the German has become blinded by the lies of the Fuhrer, for even in the face of our strength breaking the shackles that have set on our people, they continue to espouse the lies of "Aryan supremacy" upon which their Reich is built.\n\nThe Reich grows complacent, assuming that the Slavic race is destined to be enslaved to their German masters. They must know the strength of our people as we seek retribution against their crimes. Through the will of our nation, its industry, its labor, and its blood and sweat, we will emerge from this war victorious."
+ RUS_A_War_of_Nation_and_Glory: "A War of Nation and Glory"
+ RUS_A_War_of_Nation_and_Glory_desc: "The conflict between our state and the Third Reich may prove to be the greatest show of Russian might since the expulsion of Napoleon from our lands during the nineteenth century. We have encircled and annihilated the Wehrmacht and utterly razed their colonial administration.\n\nAs we fight in the pursuit of reclaiming our rightful hegemony over Eastern Europe, we cannot falter against the German. It is through our righteous war that we will win back the glory of Russia. Although much has been lost, it will not be in vain, for we fight for the glory of our nation."
+ 

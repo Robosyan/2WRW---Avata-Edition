@@ -1,0 +1,21 @@
+﻿l_english:
+
+### SWRW ###
+# Icon tooltip
+TNO_ugly_american_icon_tt: "§VThe§! §WBicentennial§! §zBallot§!"
+TNO_ugly_american_icon_tt_delayed: "§VThe§! §WBicentennial§! §zBallot§! is an update to SWRW attempting to accurately depict the §Rrepercussions§! of a big tent party existing in the American political system during the Cold War.\n\nAs time marches forward, the §ONational Progressive Party§! begins to crumble and strain under its own weight.\n\nIn the old camp, the §RRepublicans§! and §BDemocrats§! begin to question the usefulness of their alliance. The future is always uncertain, but to those in the know it seems that the §ehand of fate§! has already been played for the politics of America.\n\n§RUnless...§!"
+
+####=== The tooltips that are shown when hovering over the menu pictures ===####
+###- SWRW v1.3.2 - The Bicentennial Ballot, May 31st 2024
+
+## Soldier in field - SINGLE PLAYER
+TNO_menupic_tooltip_1: "§FI cannot forecast to you the actions of §VRussia§!. It is a riddle wrapped in a mystery inside an enigma.§!"
+
+## Tanks rolling down street - MULTIPLAYER
+TNO_menupic_tooltip_2: "§VIt is us today. It will be you tomorrow.§!"
+
+## Destroyed tanks - QUIT
+TNO_menupic_tooltip_3: "§YWe shall go down in history as the greatest statesmen of all time§!, or as §Rthe greatest criminals.§!§!"
+
+#§ < For easy copy/paste
+### END SWRW ###

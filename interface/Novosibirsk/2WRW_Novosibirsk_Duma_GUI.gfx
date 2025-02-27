@@ -1,0 +1,1014 @@
+spriteTypes = {
+	
+	### General sprites ###
+
+	spriteType = {
+		name = "GFX_NOV_tab_duma_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/NOV_tab_duma_icon.dds"
+	}
+
+	### Federal Assembly ###
+
+	spriteType = {
+		name = "GFX_NOV_assembly_emblem"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/GFX_NOV_assembly_emblem.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_duma_outline"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/GFX_NOV_duma_outline.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_small_info_box"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/GFX_NOV_small_info_box.dds"
+	}
+
+	### DUMA/FEDERATION COUNCIL ###
+
+	spriteType = {
+		name = "GFX_NOV_federal_assembly_seat"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/GFX_NOV_federal_assembly_seat.dds"
+		noOfFrames = 8
+	}
+	spriteType = {
+		name = "GFX_NOV_council_toggle_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/GFX_NOV_council_toggle_button.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_NOV_duma_toggle_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/GFX_NOV_duma_toggle_button.dds"
+		noOfFrames = 2
+	}
+
+	### BILLS ###
+
+	spriteType = {
+		name = "GFX_NOV_bills_progress_bar_frame"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/NOV_bills_progress_bar_frame.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_bills_interaction_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/GFX_NOV_bills_interaction_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_bills_parties_window"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/GFX_NOV_bills_parties_window.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_NOV_bills_progress_bar"
+
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/NOV_bills_progress_bar_full.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/NOV_bills_progress_bar_empty.dds"
+		color = { 0.85 0.05 1 1 }
+		size = { x = 202 y = 20 }
+		steps = 30
+		effectFile = "gfx/FX/progress.shader"
+	}
+
+
+	### GOVERNMENT ###
+
+	spriteType = {
+		name = "GFX_NOV_vice_presidents"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/GFX_NOV_vice_presidents.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_NOV_coalition_box"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/GFX_NOV_coalition_box.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_coalition_unity_progress_bar_frame"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/NOV_coalition_unity_progress_bar_frame.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_NOV_coalition_unity_progress_bar"
+
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/NOV_coalition_unity_progress_bar_full.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/NOV_coalition_unity_progress_bar_empty.dds"
+		color = { 0.85 0.05 1 1 }
+		size = { x = 174 y = 26 }
+		effectFile = "gfx/FX/progress.shader"
+	}
+
+	### PARTIES ###
+
+	spriteType = {
+		name = "GFX_NOV_SRP"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_SRP.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_VRPP"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_VRPP.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_CPRF"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_CPRF.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_DSPR"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_DSPR.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_NFM"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_NFM.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_RAPP"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_RAPP.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_RIRM"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_RIRM.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_RSLP"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_RSLP.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_party_window"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_party_window.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_party_interaction_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_party_interaction_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_timer_blocker"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_timer_blocker.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_NOV_party_interaction_menu_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/parties/GFX_NOV_party_interaction_menu_button.dds"
+	}
+
+	### Presidential Elections ###
+	
+	# Map #
+	
+	spriteType = {
+		name = "GFX_NOV_voting_district_map"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_voting_district_map.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_next_election_space"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_next_election_space.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_election_progress_bar_space"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_election_progress_bar_space.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_presidential_elections_dividers"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_presidential_elections_dividers.dds"
+	}
+	progressbartype = {
+		name = "GFX_NOV_Election_Bar"
+
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_election_progress_bar_green.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_election_progress_bar_red.dds"
+		color = { 0.85 0.05 1 1 }
+		size = { x = 248 y = 7 }
+		effectFile = "gfx/FX/progress.shader"
+	}
+	# region overlays #
+	
+	progressbartype = {
+		name = "GFX_NOV_siberian_voting_district_overlay"
+
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_siberian_voting_district_button.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/party_colors.dds"
+		color = { 0.85 0.05 1 1 }
+		size = { x = 269 y = 275 }
+		effectFile = "gfx/FX/map_fill_palette.shader"
+		alwaystransparent = yes
+		steps = 10000
+	}
+	progressbartype = {
+		name = "GFX_NOV_ural_voting_district_overlay"
+
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_ural_voting_district_button.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/party_colors.dds"
+		color = { 0.85 0.05 1 1 }
+		size = { x = 145 y = 228 }
+		effectFile = "gfx/FX/map_fill_palette.shader"
+		alwaystransparent = yes
+		steps = 10000
+	}
+	progressbartype = {
+		name = "GFX_NOV_far_east_voting_district_overlay"
+
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_far_east_voting_district_button.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/party_colors.dds"
+		color = { 0.85 0.05 1 1 }
+		size = { x = 656 y = 341 }
+		effectFile = "gfx/FX/map_fill_palette.shader"
+		alwaystransparent = yes
+		steps = 10000
+	}
+	progressbartype = {
+		name = "GFX_NOV_volga_voting_district_overlay"
+
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_volga_voting_district_button.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/party_colors.dds"
+		color = { 0.85 0.05 1 1 }
+		size = { x = 151 y = 112 }
+		effectFile = "gfx/FX/map_fill_palette.shader"
+		alwaystransparent = yes
+		steps = 10000
+	}
+	progressbartype = {
+		name = "GFX_NOV_northern_voting_district_overlay"
+
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_northern_voting_district_button.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/party_colors.dds"
+		color = { 0.85 0.05 1 1 }
+		size = { x = 313 y = 209 }
+		effectFile = "gfx/FX/map_fill_palette.shader"
+		alwaystransparent = yes
+		steps = 10000
+	}
+	progressbartype = {
+		name = "GFX_NOV_kuban_voting_district_overlay"
+
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_crimea_voting_district_button.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/party_colors.dds"
+		color = { 0.85 0.05 1 1 }
+		size = { x = 130 y = 114 }
+		effectFile = "gfx/FX/map_fill_palette.shader"
+		alwaystransparent = yes
+		steps = 10000
+	}
+	progressbartype = {
+		name = "GFX_NOV_moscow_voting_district_overlay"
+
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_moscow_voting_district_button.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/party_colors.dds"
+		color = { 0.85 0.05 1 1 }
+		size = { x = 132 y = 93 }
+		effectFile = "gfx/FX/map_fill_palette.shader"
+		alwaystransparent = yes
+		steps = 10000
+	}
+
+	# actual buttons #
+
+	spriteType = {
+		name = "GFX_NOV_far_east_voting_district_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_far_east_voting_district_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_NOV_siberian_voting_district_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_siberian_voting_district_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_NOV_ural_voting_district_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_ural_voting_district_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_NOV_volga_voting_district_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_volga_voting_district_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_NOV_northern_voting_district_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_northern_voting_district_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_NOV_crimea_voting_district_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_crimea_voting_district_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_NOV_moscow_voting_district_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_moscow_voting_district_button.dds"
+		transparencecheck = yes
+	}
+
+	## region outlines ##
+
+	spriteType = {
+		name = "GFX_NOV_Far_Eastern_District_Birobidzhan_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Far_Eastern_District_Birobidzhan_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Far_Eastern_District_Khabarovsk_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Far_Eastern_District_Khabarovsk_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Far_Eastern_District_Minimum_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Far_Eastern_District_Minimum_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Far_Eastern_District_Vladivostok_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Far_Eastern_District_Vladivostok_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Caucasia_District_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Caucasia_District_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Crimea_Caucasia_District_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Crimea_Caucasia_District_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Kuban_District_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Kuban_District_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Muscovy_District_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Muscovy_District_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Northern_District_Karelia_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Northern_District_Karelia_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Northern_District_Minimum_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Northern_District_Minimum_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Northern_District_Maximum_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Northern_District_Maximum_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Northern_District_No_Karelia_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Northern_District_No_Karelia_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Northern_District_No_Vyborg_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Northern_District_No_Vyborg_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Volga_District_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Volga_District_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Ural_District_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Ural_District_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_NOV_Siberia_District_Highlight"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/outlines/GFX_NOV_Siberia_District_Highlight.dds"
+		alwaystransparent = yes
+	}
+
+	# Occupied Russia
+	
+	spriteType = {
+		name = "GFX_NOV_occupied_far_eastern_district"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_occupied_far_eastern_district.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_occupied_khbarovsk_far_eastern_district"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_occupied_khbarovsk_far_eastern_district.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_occupied_vladivostok_far_eastern_district"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_occupied_vladivostok_far_eastern_district.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_occupied_karelia_district"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_occupied_karelia_district.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_occupied_vyborg_district"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_occupied_vyborg_district.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_occupied_moscow_district"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_occupied_moscow_district.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_occupied_petrograd_district"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_occupied_petrograd_district.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_occupied_caucasia_district"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_occupied_caucasia_district.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_occupied_kuban_district"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_occupied_kuban_district.dds"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_occupied_crimea_district"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_buttons/GFX_NOV_occupied_crimea_district.dds"
+		transparencecheck = yes
+	}
+	
+	# Borders
+	
+	spriteType = {
+		name = "GFX_NOV_Karelia_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_Karelia_liberated_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_vyborg_occupied_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_vyborg_occupied_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_birobidzhan_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_birobidzhan_liberated_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_khbarovsk_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_khbarovsk_liberated_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_vladivostok_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_vladivostok_liberated_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_muscovy_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_muscovy_liberated_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_petrograd_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_petrograd_liberated_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_petrograd_vyborg_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_petrograd_vyborg_liberated_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_noKarelia_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_noKarelia_liberated_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_kuban_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_kuban_liberated_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_caucusus_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_caucusus_liberated_borders.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_crimea_liberated_borders"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_crimea_liberated_borders.dds"
+	}
+	
+	# Pictures #
+	
+	spriteType = {
+		name = "GFX_NOV_select_region_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_select_region_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_siberia_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_siberia_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_far_east_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_far_east_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_urals_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_urals_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_volga_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_volga_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_northern_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_northern_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_vladivostok_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_vladivostok_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_murmansk_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_murmansk_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_vyborg_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_vyborg_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_moscow_occupied_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_moscow_occupied_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_petrograd_occupied_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_petrograd_occupied_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_volgograd_occupied_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_volgograd_occupied_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_moscow_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_moscow_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_kuban_occupied_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_kuban_occupied_picture_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_volgograd_picture_icon"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/pictures/GFX_NOV_volgograd_picture_icon.dds"
+	}
+	
+	# Region GUI
+	
+	spriteType = {
+		name = "GFX_NOV_region_interaction_gui"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_region_interaction_gui.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_japanese_occupation_gui"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_japanese_occupation_gui.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_finland_occupation_gui"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_finland_occupation_gui.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_NOV_german_occupation_gui"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_german_occupation_gui.dds"
+	}
+
+	spriteType = {
+		name = "GFX_NOV_russia_not_in_election_gui"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_russia_not_in_election_gui.dds"
+	}
+
+
+	# Region Overlays
+
+	spriteType = {
+		name = "GFX_NOV_RAPP_campaign"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_RAPP_campaign.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_VRPP_campaign"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_VRPP_campaign.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_DSPR_campaign"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_DSPR_campaign.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_RSLP_campaign"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_RSLP_campaign.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_IND_campaign"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_IND_campaign.dds"
+	}
+	
+	# Animated GFX
+	
+	frameAnimatedSpriteType = {
+		name = "GFX_NOV_select_region_animation"
+		texturefile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_select_region_animation.dds"
+		noOfFrames = 2
+		play_on_show = yes
+		animation_rate_fps = 2
+		looping = yes
+		pause_on_loop = 0
+		#effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_NOV_arrow_right_3"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/NOV_arrow_right_3.dds"
+		noOfFrames = 7
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_NOV_arrow_right_2"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/NOV_arrow_right_2.dds"
+		noOfFrames = 5
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_NOV_arrow_right_1"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/NOV_arrow_right_1.dds"
+		noOfFrames = 3
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_NOV_arrow_left_3"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/NOV_arrow_left_3.dds"
+		noOfFrames = 7
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_NOV_arrow_left_2"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/NOV_arrow_left_2.dds"
+		noOfFrames = 5
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_NOV_arrow_left_1"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/NOV_arrow_left_1.dds"
+		noOfFrames = 3
+		animation_rate_fps = 1.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+	spriteType = {
+		name = "GFX_NOV_arrow_empty"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/NOV_arrow_empty.dds"
+	}
+	
+	### Progress Bars ###
+	
+	# Regional Support #
+	
+	progressbartype = {
+		name = "GFX_NOV_RAPP_progress_bar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_RAPP_progress_bar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_region_progress_bar_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 375
+			y = 16
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_NOV_VRPP_progress_bar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_VRPP_progress_bar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_region_progress_bar_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 375
+			y = 16
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_NOV_DSPR_progress_bar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_DSPR_progress_bar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_region_progress_bar_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 375
+			y = 16
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_NOV_RSLP_progress_bar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_RSLP_progress_bar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_region_progress_bar_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 375
+			y = 16
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_NOV_IND_progress_bar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_IND_progress_bar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_region_progress_bar_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 375
+			y = 16
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	
+	# Presidential Race
+	
+	progressbartype = {
+		name = "GFX_NOV_RAPP_presidential_progress_bar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_RAPP_presidential_progress_bar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_region_progress_bar_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 296
+			y = 27
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_NOV_VRPP_presidential_progress_bar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_VRPP_presidential_progress_bar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_region_progress_bar_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 296
+			y = 27
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_NOV_DSPR_presidential_progress_bar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_DSPR_presidential_progress_bar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_region_progress_bar_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 296
+			y = 27
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_NOV_RSLP_presidential_progress_bar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_RSLP_presidential_progress_bar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_region_progress_bar_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 296
+			y = 27
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_NOV_IND_presidential_progress_bar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_IND_presidential_progress_bar.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/progress_bars/GFX_NOV_region_progress_bar_empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 296
+			y = 27
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	
+	# Party Menu Buttons
+	
+	spriteType = {
+		name = "GFX_NOV_RAPP_Menu"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/party_butttons/GFX_NOV_RAPP_Menu.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_VRPP_Menu"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/party_butttons/GFX_NOV_VRPP_Menu.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_DSPR_Menu"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/party_butttons/GFX_NOV_DSPR_Menu.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_RSLP_Menu"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/party_butttons/GFX_NOV_RSLP_Menu.dds"
+	}
+
+	# Interactions
+
+	spriteType = {
+		name = "GFX_NOV_campaign_good_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_campaign_good_button.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_bad_campaign_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_bad_campaign_button.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rally_good_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_rally_good_button.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_bad_rally_button"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/region_gui/GFX_NOV_bad_rally_button.dds"
+	}
+	
+	# Graph
+	
+	spriteType = {
+		name = "GFX_NOV_graph"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/GFX_NOV_graph.dds"
+	}
+	
+	# Candidates
+	
+	spriteType = {
+		name = "GFX_NOV_presidential_candidates"
+		textureFile = "gfx/interface/novosibirsk_gui/duma/electoral_map/presidential_elections/presidential_candidates/GFX_NOV_presidential_candidates.dds"
+		noOfFrames = 4
+	}
+
+	#Texticons
+	spriteType = {
+		name = "GFX_NOV_VRPP_Icon"
+		textureFile = "gfx/texticons/GFX_NOV_VRPP.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_DSPR_Icon"
+		textureFile = "gfx/texticons/GFX_NOV_DSPR.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_Independents_Icon"
+		textureFile = "gfx/texticons/GFX_NOV_Independents.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_RAPP_Icon"
+		textureFile = "gfx/texticons/GFX_NOV_RAPP.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_RSLP_Icon"
+		textureFile = "gfx/texticons/GFX_NOV_RSLP.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_NFM_Icon"
+		textureFile = "gfx/texticons/GFX_NOV_NFM.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_RIRM_Icon"
+		textureFile = "gfx/texticons/GFX_NOV_RIRM.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_CPRF_Icon"
+		textureFile = "gfx/texticons/GFX_NOV_CPRF.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_SRP_Icon"
+		textureFile = "gfx/texticons/GFX_NOV_SRP.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "NOV_vasily_shukshin"
+		textureFile = "gfx/leaders/NOV/Portrait_Novosibirsk_Vasily_Shukshin.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "NOV_yevgeny_primakov"
+		textureFile = "gfx/leaders/NOV/Portrait_Novosibirsk_Yevgeny_Primakov.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "NOV_anatoly_koryagin"
+		textureFile = "gfx/leaders/NOV/Portrait_Novosibirsk_Anatoly_Koryagin.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "NOV_yegor_ligachov"
+		textureFile = "gfx/leaders/NOV/Portrait_Novosibirsk_Yegor_Ligachyov.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "NOV_yegor_ligachov"
+		textureFile = "gfx/leaders/NOV/Portrait_Novosibirsk_Yegor_Ligachyov.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "NOV_mikhail_lapshin"
+		textureFile = "gfx/leaders/NOV/Portrait_Novosibirsk_Mikhail_Lapshin.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "NOV_leonid_kantorovich"
+		textureFile = "gfx/leaders/NOV/Portrait_Novosibirsk_Leonid_Kantorovich.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "NOV_vladimir_osipov"
+		textureFile = "gfx/leaders/NOV/Portrait_Novosibirsk_Vladimir_Osipov.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "NOV_yuri_galanskov"
+		textureFile = "gfx/leaders/NOV/Portrait_Novosibirsk_Yuri_Galanskov.dds"
+		legacy_lazy_load = no
+	}
+}

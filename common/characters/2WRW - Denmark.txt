@@ -1,0 +1,91 @@
+characters = {
+	DEN_German_Garrison = {
+		name = DEN_German_Garrison
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DEN/DEN_German_Garrison.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism_military_junta_subtype
+			desc = "POLITICS_DEN_German_Garrison_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	DEN_Anker_Jørgensen = {
+		name = DEN_Anker_Joergensen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DEN/DEN_Anker_Jørgensen.dds"
+			}
+		}
+		country_leader = {
+			ideology = progressivism_reformist_socialism_subtype
+			desc = "POLITICS_DEN_Anker_Joergensen_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	DEN_Arne_Munch_Petersen = {
+		name = DEN_Arne_Munch_Petersen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DEN/DEN_Arne_Munch_Petersen.dds"
+			}
+		}
+		country_leader = {
+			ideology = communist_marxism_leninism_subtype
+			desc = "POLITICS_DEN_Arne_Munch_Petersen_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	DEN_Poul_Hartling = {
+		name = DEN_Poul_Hartling
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DEN/DEN_Poul_Hartling.dds"
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism_subtype
+			desc = "POLITICS_DEN_Poul_Hartling_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	DEN_Soeren_Kam = {
+		name = DEN_Soeren_Kam
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DEN/DEN_Soeren_Kam.dds"
+			}
+		}
+		country_leader = {
+			ideology = ultranationalism_subtype
+			desc = "POLITICS_DEN_Soeren_Kam_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	
+	DEN_Freedom_council = {
+		name = DEN_Freedom_council
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DEN/DEN_the_Freedom_council.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_transitioning_democracy_subtype
+			desc = "POLITICS_DEN_Freedom_council_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+}

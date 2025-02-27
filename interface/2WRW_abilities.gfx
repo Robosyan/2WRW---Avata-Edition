@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ability_chemical_arsenal"
+		texturefile = "gfx/interface/abilitylist/ability_chemical_arsenal.dds"
+	}
+}

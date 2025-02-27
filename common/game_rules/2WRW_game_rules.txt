@@ -1,0 +1,991 @@
+#|===============| SWRW Game Rules |===============|#
+
+##########################################
+### SWRW - GENERAL ###
+##########################################
+
+# Russia - Fate of Central Asia
+
+RUS_CENTRAL_ASIA_FATE = {
+	name = RUS_CENTRAL_ASIA_FATE
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_RUS_CENTRAL_ASIA_FATE_RANDOM"
+		desc = "RULE_OPTION_RUS_CENTRAL_ASIA_FATE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_CENTRAL_ASIA_FATE_ANNEX
+		text = "RULE_OPTION_RUS_CENTRAL_ASIA_FATE_ANNEX"
+		desc = "RULE_OPTION_RUS_CENTRAL_ASIA_FATE_ANNEX_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_CENTRAL_ASIA_FATE_PUPPET
+		text = "RULE_OPTION_RUS_CENTRAL_ASIA_FATE_PUPPET"
+		desc = "RULE_OPTION_RUS_CENTRAL_ASIA_FATE_PUPPET_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Russia and Japan - Vladivostok Negotiation
+
+RUS_JAP_VLADIVOSTOK = {
+	name = RUS_JAP_VLADIVOSTOK
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_RUS_JAP_VLADIVOSTOK_RANDOM"
+		desc = "RULE_OPTION_RUS_JAP_VLADIVOSTOK_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_JAP_VLADIVOSTOK_FULL_VICTORY
+		text = "RULE_OPTION_RUS_JAP_VLADIVOSTOK_FULL_VICTORY"
+		desc = "RULE_OPTION_RUS_JAP_VLADIVOSTOK_FULL_VICTORY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY
+		text = "RULE_OPTION_RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY"
+		desc = "RULE_OPTION_RUS_JAP_VLADIVOSTOK_PARTIAL_VICTORY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_JAP_VLADIVOSTOK_MINIMUM_VICTORY
+		text = "RULE_OPTION_RUS_JAP_VLADIVOSTOK_MINIMUM_VICTORY"
+		desc = "RULE_OPTION_RUS_JAP_VLADIVOSTOK_MINIMUM_VICTORY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_JAP_VLADIVOSTOK_FAIL
+		text = "RULE_OPTION_RUS_JAP_VLADIVOSTOK_FAIL"
+		desc = "RULE_OPTION_RUS_JAP_VLADIVOSTOK_FAIL_DESC"
+		allow_achievements = yes
+	}
+}
+
+# The Second West Russian War - Peace Deal
+
+RUS_SWRW_PEACEDEAL = {
+	name = RUS_SWRW_PEACEDEAL
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_RUS_SWRW_PEACEDEAL_RANDOM"
+		desc = "RULE_OPTION_RUS_SWRW_PEACEDEAL_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_SWRW_PEACEDEAL_FULL_VICTORY
+		text = "RULE_OPTION_RUS_SWRW_PEACEDEAL_FULL_VICTORY"
+		desc = "RULE_OPTION_RUS_SWRW_PEACEDEAL_FULL_VICTORY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_SWRW_PEACEDEAL_UKRAINE
+		text = "RULE_OPTION_RUS_SWRW_PEACEDEAL_UKRAINE"
+		desc = "RULE_OPTION_RUS_SWRW_PEACEDEAL_UKRAINE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_SWRW_PEACEDEAL_CAUCASUS
+		text = "RULE_OPTION_RUS_SWRW_PEACEDEAL_CAUCASUS"
+		desc = "RULE_OPTION_RUS_SWRW_PEACEDEAL_CAUCASUS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_SWRW_PEACEDEAL_MOSCOW
+		text = "RULE_OPTION_RUS_SWRW_PEACEDEAL_MOSCOW"
+		desc = "RULE_OPTION_RUS_SWRW_PEACEDEAL_MOSCOW_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_SWRW_PEACEDEAL_TOTAL_DEFEAT
+		text = "RULE_OPTION_RUS_SWRW_PEACEDEAL_TOTAL_DEFEAT"
+		desc = "RULE_OPTION_RUS_SWRW_PEACEDEAL_TOTAL_DEFEAT_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Bormann Successor
+
+BOR_SUCCESSOR = {
+	name = BOR_SUCCESSOR
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_BOR_SUCCESSOR_RANDOM"
+		desc = "RULE_OPTION_BOR_SUCCESSOR_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = BOR_SUCCESSOR_KLOPFER
+		text = "RULE_OPTION_BOR_SUCCESSOR_KLOPFER"
+		desc = "RULE_OPTION_BOR_SUCCESSOR_KLOPFER_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = BOR_SUCCESSOR_GEHLEN
+		text = "RULE_OPTION_BOR_SUCCESSOR_GEHLEN"
+		desc = "RULE_OPTION_BOR_SUCCESSOR_GEHLEN_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = BOR_SUCCESSOR_WALDHEIM
+		text = "RULE_OPTION_BOR_SUCCESSOR_WALDHEIM"
+		desc = "RULE_OPTION_BOR_SUCCESSOR_WALDHEIM_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Bormann's Germany - Post-War Coup
+
+GER_POST_WAR_COUP_LOSE = {
+	name = GER_POST_WAR_COUP_LOSE
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_GER_POST_WAR_COUP_LOSE_RANDOM"
+		desc = "RULE_OPTION_GER_POST_WAR_COUP_LOSE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = { # Bormann's Successor Holds
+		name = GER_POST_WAR_COUP_LOSE_SUCCESOR_HOLDS
+		text = "RULE_OPTION_GER_POST_WAR_COUP_LOSE_SUCCESOR_HOLDS"
+		desc = "RULE_OPTION_GER_POST_WAR_COUP_LOSE_SUCCESOR_HOLDS_DESC"
+		allow_achievements = yes
+	}
+	option = { # Heusinger's Coup
+		name = GER_POST_WAR_COUP_LOSE_HEUSINGER_COUP
+		text = "RULE_OPTION_GER_POST_WAR_COUP_LOSE_HEUSINGER_COUP"
+		desc = "RULE_OPTION_GER_POST_WAR_COUP_LOSE_HEUSINGER_COUP_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Speer Endstate
+
+SPEER_ENDSTATE = {
+	name = SPEER_ENDSTATE
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_SPEER_ENDSTATE_RANDOM"
+		desc = "RULE_OPTION_SPEER_ENDSTATE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SPEER_ENDSTATE_PATH
+		text = "RULE_OPTION_SPEER_ENDSTATE_PATH"
+		desc = "RULE_OPTION_SPEER_ENDSTATE_PATH_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SPEER_ENDSTATE_KIESINGER
+		text = "RULE_OPTION_SPEER_ENDSTATE_KIESINGER"
+		desc = "RULE_OPTION_SPEER_ENDSTATE_KIESINGER_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SPEER_ENDSTATE_SPEIDEL
+		text = "RULE_OPTION_SPEER_ENDSTATE_SPEIDEL"
+		desc = "RULE_OPTION_SPEER_ENDSTATE_SPEIDEL_DESC"
+		allow_achievements = yes
+	}
+}
+
+# The Hungarian Civil War
+
+HUNGARIAN_CIVIL_WAR_OUTCOME = {
+	name = HUNGARIAN_CIVIL_WAR_OUTCOME
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_HUNGARIAN_CIVIL_WAR_OUTCOME_RANDOM"
+		desc = "RULE_OPTION_HUNGARIAN_CIVIL_WAR_OUTCOME_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HUNGARIAN_CIVIL_WAR_OUTCOME_HUN
+		text = "RULE_OPTION_HUNGARIAN_CIVIL_WAR_OUTCOME_HUN"
+		desc = "RULE_OPTION_HUNGARIAN_CIVIL_WAR_OUTCOME_HUN_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HUNGARIAN_CIVIL_WAR_OUTCOME_HUD
+		text = "RULE_OPTION_HUNGARIAN_CIVIL_WAR_OUTCOME_HUD"
+		desc = "RULE_OPTION_HUNGARIAN_CIVIL_WAR_OUTCOME_HUD_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HUNGARIAN_CIVIL_WAR_OUTCOME_HUS
+		text = "RULE_OPTION_HUNGARIAN_CIVIL_WAR_OUTCOME_HUS"
+		desc = "RULE_OPTION_HUNGARIAN_CIVIL_WAR_OUTCOME_HUS_DESC"
+		allow_achievements = yes
+	}
+}
+
+# The Second German Civil War
+
+SECOND_GERMAN_CIVIL_WAR = {
+	name = SECOND_GERMAN_CIVIL_WAR
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_RANDOM"
+		desc = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SECOND_GERMAN_CIVIL_WAR_GER
+		text = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_GER"
+		desc = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_GER_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SECOND_GERMAN_CIVIL_WAR_REG
+		text = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_REG"
+		desc = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_REG_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SECOND_GERMAN_CIVIL_WAR_RPR
+		text = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_RPR"
+		desc = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_RPR_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SECOND_GERMAN_CIVIL_WAR_GMA
+		text = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_GMA"
+		desc = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_GMA_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SECOND_GERMAN_CIVIL_WAR_SFK
+		text = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_SFK"
+		desc = "RULE_OPTION_SECOND_GERMAN_CIVIL_WAR_SFK_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Poland's Final Chance
+
+POL_VS_OZW = {
+	name = POL_VS_OZW
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_POL_VS_OZW_RANDOM"
+		desc = "RULE_OPTION_POL_VS_OZW_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = POL_VS_OZW_POL_WINNER
+		text = "RULE_OPTION_POL_VS_OZW_POL_WINNER"
+		desc = "RULE_OPTION_POL_VS_OZW_POL_WINNER_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = POL_VS_OZW_OZW_WINNER
+		text = "RULE_OPTION_POL_VS_OZW_OZW_WINNER"
+		desc = "RULE_OPTION_POL_VS_OZW_OZW_WINNER_DESC"
+		allow_achievements = yes
+	}
+}
+
+# The Invasion of the Paktkommission
+
+FRA_VS_GLC = {
+	name = FRA_VS_GLC
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_FRA_VS_GLC_RANDOM"
+		desc = "RULE_OPTION_FRA_VS_GLC_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FRA_VS_GLC_FRA_WINNER
+		text = "RULE_OPTION_FRA_VS_GLC_FRA_WINNER"
+		desc = "RULE_OPTION_FRA_VS_GLC_FRA_WINNER_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FRA_VS_GLC_GLC_WINNER
+		text = "RULE_OPTION_FRA_VS_GLC_GLC_WINNER"
+		desc = "RULE_OPTION_FRA_VS_GLC_GLC_WINNER_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Post-2GCW leaders
+
+GER_NAZI_GERMANY_PATH = {
+	name = GER_NAZI_GERMANY_PATH
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_GER_NAZI_GERMANY_PATH_RANDOM"
+		desc = "RULE_OPTION_GER_NAZI_GERMANY_PATH_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_NAZI_GERMANY_PATH_KLOPFER
+		text = "RULE_OPTION_GER_NAZI_GERMANY_PATH_KLOPFER"
+		desc = "RULE_OPTION_GER_NAZI_GERMANY_PATH_KLOPFER_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_NAZI_GERMANY_PATH_BRADNER
+		text = "RULE_OPTION_GER_NAZI_GERMANY_PATH_BRADNER"
+		desc = "RULE_OPTION_GER_NAZI_GERMANY_PATH_BRADNER_DESC"
+		allow_achievements = yes
+	}
+}
+
+GER_DEMOCRATIC_GERMANY_PATH = {
+	name = GER_DEMOCRATIC_GERMANY_PATH
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_GER_DEMOCRATIC_GERMANY_PATH_RANDOM"
+		desc = "RULE_OPTION_GER_DEMOCRATIC_GERMANY_PATH_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_DEMOCRATIC_GERMANY_PATH_LIBDEM
+		text = "RULE_OPTION_GER_DEMOCRATIC_GERMANY_PATH_LIBDEM"
+		desc = "RULE_OPTION_GER_DEMOCRATIC_GERMANY_PATH_LIBDEM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_DEMOCRATIC_GERMANY_PATH_CONDEM
+		text = "RULE_OPTION_GER_DEMOCRATIC_GERMANY_PATH_CONDEM"
+		desc = "RULE_OPTION_GER_DEMOCRATIC_GERMANY_PATH_CONDEM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_DEMOCRATIC_GERMANY_PATH_PROGRESSIVISM
+		text = "RULE_OPTION_GER_DEMOCRATIC_GERMANY_PATH_PROGRESSIVISM"
+		desc = "RULE_OPTION_GER_DEMOCRATIC_GERMANY_PATH_PROGRESSIVISM_DESC"
+		allow_achievements = yes
+	}
+}
+
+GER_COMMUNIST_GERMANY_PATH = {
+	name = GER_COMMUNIST_GERMANY_PATH
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_GER_COMMUNIST_GERMANY_PATH_RANDOM"
+		desc = "RULE_OPTION_GER_COMMUNIST_GERMANY_PATH_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_COMMUNIST_GERMANY_PATH_AUST
+		text = "RULE_OPTION_GER_COMMUNIST_GERMANY_PATH_AUST"
+		desc = "RULE_OPTION_GER_COMMUNIST_GERMANY_PATH_AUST_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_COMMUNIST_GERMANY_PATH_RUDI
+		text = "RULE_OPTION_GER_COMMUNIST_GERMANY_PATH_RUDI"
+		desc = "RULE_OPTION_GER_COMMUNIST_GERMANY_PATH_RUDI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_COMMUNIST_GERMANY_PATH_HOFFMANN
+		text = "RULE_OPTION_GER_COMMUNIST_GERMANY_PATH_HOFFMANN"
+		desc = "RULE_OPTION_GER_COMMUNIST_GERMANY_PATH_HOFFMANN_DESC"
+		allow_achievements = yes
+	}
+}
+
+GER_WEHRMACHT_GERMANY_PATH = {
+	name = GER_WEHRMACHT_GERMANY_PATH
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_GER_WEHRMACHT_GERMANY_PATH_RANDOM"
+		desc = "RULE_OPTION_GER_WEHRMACHT_GERMANY_PATH_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_WEHRMACHT_GERMANY_PATH_JENS
+		text = "RULE_OPTION_GER_WEHRMACHT_GERMANY_PATH_JENS"
+		desc = "RULE_OPTION_GER_WEHRMACHT_GERMANY_PATH_JENS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_WEHRMACHT_GERMANY_PATH_SCHIRACH
+		text = "RULE_OPTION_GER_WEHRMACHT_GERMANY_PATH_SCHIRACH"
+		desc = "RULE_OPTION_GER_WEHRMACHT_GERMANY_PATH_SCHIRACH_DESC"
+		allow_achievements = yes
+	}
+}
+
+GER_CURSED_GERMANY_PATH = {
+	name = GER_CURSED_GERMANY_PATH
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_GER_CURSED_GERMANY_PATH_RANDOM"
+		desc = "RULE_OPTION_GER_CURSED_GERMANY_PATH_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_CURSED_GERMANY_PATH_LEMM
+		text = "RULE_OPTION_GER_CURSED_GERMANY_PATH_LEMM"
+		desc = "RULE_OPTION_GER_CURSED_GERMANY_PATH_LEMM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_CURSED_GERMANY_PATH_KALTENBRUNNER
+		text = "RULE_OPTION_GER_CURSED_GERMANY_PATH_KALTENBRUNNER"
+		desc = "RULE_OPTION_GER_CURSED_GERMANY_PATH_KALTENBRUNNER_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GER_CURSED_GERMANY_PATH_BACKE
+		text = "RULE_OPTION_GER_CURSED_GERMANY_PATH_BACKE"
+		desc = "RULE_OPTION_GER_CURSED_GERMANY_PATH_BACKE_DESC"
+		allow_achievements = yes
+	}
+}
+
+# The Netherlands - The Revolution
+
+HOL_POST_WAR_PATH = {
+	name = HOL_POST_WAR_PATH
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_HOL_POST_WAR_PATH_RANDOM"
+		desc = "RULE_OPTION_HOL_POST_WAR_PATH_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HOL_POST_WAR_PATH_KINGDOM
+		text = "RULE_OPTION_HOL_POST_WAR_PATH_KINGDOM"
+		desc = "RULE_OPTION_HOL_POST_WAR_PATH_KINGDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HOL_POST_WAR_PATH_REPUBLIC
+		text = "RULE_OPTION_HOL_POST_WAR_PATH_REPUBLIC"
+		desc = "RULE_OPTION_HOL_POST_WAR_PATH_REPUBLIC_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HOL_POST_WAR_PATH_COUNTER_COUP
+		text = "RULE_OPTION_HOL_POST_WAR_PATH_COUNTER_COUP"
+		desc = "RULE_OPTION_HOL_POST_WAR_PATH_COUNTER_COUP_DESC"
+		allow_achievements = yes
+	}
+}
+
+# The Netherlands - The Elections
+
+HOL_POST_WAR_ELECTION = {
+	name = HOL_POST_WAR_ELECTION
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_HOL_POST_WAR_ELECTION_RANDOM"
+		desc = "RULE_OPTION_HOL_POST_WAR_ELECTION_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HOL_POST_WAR_ELECTION_SOCDEM
+		text = "RULE_OPTION_HOL_POST_WAR_ELECTION_SOCDEM"
+		desc = "RULE_OPTION_HOL_POST_WAR_ELECTION_SOCDEM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HOL_POST_WAR_ELECTION_CHIRSDEM
+		text = "RULE_OPTION_HOL_POST_WAR_ELECTION_CHIRSDEM"
+		desc = "RULE_OPTION_HOL_POST_WAR_ELECTION_CHIRSDEM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = HOL_POST_WAR_ELECTION_POPULIST
+		text = "RULE_OPTION_HOL_POST_WAR_ELECTION_POPULIST"
+		desc = "RULE_OPTION_HOL_POST_WAR_ELECTION_POPULIST_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Denmark - The Danish Spring
+
+DEN_POST_WAR_PATH = {
+	name = DEN_POST_WAR_PATH
+	group = "RULE_GROUP_SWRW_RULES_GENERAL"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEN_POST_WAR_PATH_RANDOM"
+		desc = "RULE_OPTION_DEN_POST_WAR_PATH_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DEN_POST_WAR_PATH_COMMUNISM
+		text = "RULE_OPTION_DEN_POST_WAR_PATH_COMMUNISM"
+		desc = "RULE_OPTION_DEN_POST_WAR_PATH_COMMUNISM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DEN_POST_WAR_PATH_PROGRESSIVISM
+		text = "RULE_OPTION_DEN_POST_WAR_PATH_PROGRESSIVISM"
+		desc = "RULE_OPTION_DEN_POST_WAR_PATH_PROGRESSIVISM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DEN_POST_WAR_PATH_LIBCON
+		text = "RULE_OPTION_DEN_POST_WAR_PATH_LIBCON"
+		desc = "RULE_OPTION_DEN_POST_WAR_PATH_LIBCON_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DEN_POST_WAR_PATH_WEHRMACHT
+		text = "RULE_OPTION_DEN_POST_WAR_PATH_WEHRMACHT"
+		desc = "RULE_OPTION_DEN_POST_WAR_PATH_WEHRMACHT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = DEN_POST_WAR_PATH_ULTRANAT
+		text = "RULE_OPTION_DEN_POST_WAR_PATH_ULTRANAT"
+		desc = "RULE_OPTION_DEN_POST_WAR_PATH_ULTRANAT_DESC"
+		allow_achievements = yes
+	}
+}
+
+##########################################
+### SWRW - WAR CRISES ###
+##########################################
+
+# Norway - SWRW's Crisis (Temporally name. You can choose it more accurate one. Plus it must be in Pakt)
+
+SWRW_NOR_WAR_CRISIS = {
+	name = SWRW_NOR_WAR_CRISIS
+	group = "RULE_GROUP_SWRW_RULES_WAR_CRISES"
+	option = { 
+		name = DEFAULT
+		text = "RULE_OPTION_SWRW_NOR_WAR_CRISIS_RANDOM"
+		desc = "RULE_OPTION_SWRW_NOR_WAR_CRISIS_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = { # It won't join the war
+		name = SWRW_NOR_WAR_CRISIS_SOLVED
+		text = "RULE_OPTION_SWRW_NOR_WAR_CRISIS_SOLVED"
+		desc = "RULE_OPTION_SWRW_NOR_WAR_CRISIS_SOLVED_DESC"
+		allow_achievements = yes
+	}
+	option = { # It'll join the war as a German ally
+		name = SWRW_NOR_WAR_CRISIS_FAIL
+		text = "RULE_OPTION_SWRW_NOR_WAR_CRISIS_FAIL"
+		desc = "RULE_OPTION_SWRW_NOR_WAR_CRISIS_FAIL_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Hungary - SWRW's Crisis (Temporally name. You can choose it more accurate one. Plus it must be in Pakt)
+
+SWRW_HUN_WAR_CRISIS = {
+	name = SWRW_HUN_WAR_CRISIS
+	group = "RULE_GROUP_SWRW_RULES_WAR_CRISES"
+	option = { 
+		name = DEFAULT
+		text = "RULE_OPTION_SWRW_HUN_WAR_CRISIS_RANDOM"
+		desc = "RULE_OPTION_SWRW_HUN_WAR_CRISIS_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = { # It won't join the war
+		name = SWRW_HUN_WAR_CRISIS_SOLVED
+		text = "RULE_OPTION_SWRW_HUN_WAR_CRISIS_SOLVED"
+		desc = "RULE_OPTION_SWRW_HUN_WAR_CRISIS_SOLVED_DESC"
+		allow_achievements = yes
+	}
+	option = { # It'll join the war as a German ally
+		name = SWRW_HUN_WAR_CRISIS_FAIL
+		text = "RULE_OPTION_SWRW_HUN_WAR_CRISIS_FAIL"
+		desc = "RULE_OPTION_SWRW_HUN_WAR_CRISIS_FAIL_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Romania - SWRW's Crisis (Temporally name. You can choose it more accurate one. Plus it must be in Pakt)
+
+SWRW_ROM_WAR_CRISIS = {
+	name = SWRW_ROM_WAR_CRISIS
+	group = "RULE_GROUP_SWRW_RULES_WAR_CRISES"
+	option = { 
+		name = DEFAULT
+		text = "RULE_OPTION_SWRW_ROM_WAR_CRISIS_RANDOM"
+		desc = "RULE_OPTION_SWRW_ROM_WAR_CRISIS_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = { # It won't join the war
+		name = SWRW_ROM_WAR_CRISIS_SOLVED
+		text = "RULE_OPTION_SWRW_ROM_WAR_CRISIS_SOLVED"
+		desc = "RULE_OPTION_SWRW_ROM_WAR_CRISIS_SOLVED_DESC"
+		allow_achievements = yes
+	}
+	option = { # It'll join the war as a German ally
+		name = SWRW_ROM_WAR_CRISIS_FAIL
+		text = "RULE_OPTION_SWRW_ROM_WAR_CRISIS_FAIL"
+		desc = "RULE_OPTION_SWRW_ROM_WAR_CRISIS_FAIL_DESC"
+		allow_achievements = yes
+	}
+}
+
+# England - SWRW's Crisis (Temporally name. You can choose it more accurate one. Plus it must be in Pakt)
+
+SWRW_ENG_WAR_CRISIS = {
+	name = SWRW_ENG_WAR_CRISIS
+	group = "RULE_GROUP_SWRW_RULES_WAR_CRISES"
+	option = { 
+		name = DEFAULT
+		text = "RULE_OPTION_SWRW_ENG_WAR_CRISIS_RANDOM"
+		desc = "RULE_OPTION_SWRW_ENG_WAR_CRISIS_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = { # It won't join the war
+		name = SWRW_ENG_WAR_CRISIS_SOLVED
+		text = "RULE_OPTION_SWRW_ENG_WAR_CRISIS_SOLVED"
+		desc = "RULE_OPTION_SWRW_ENG_WAR_CRISIS_SOLVED_DESC"
+		allow_achievements = yes
+	}
+	option = { # It'll join the war as a German ally
+		name = SWRW_ENG_WAR_CRISIS_FAIL
+		text = "RULE_OPTION_SWRW_ENG_WAR_CRISIS_FAIL"
+		desc = "RULE_OPTION_SWRW_ENG_WAR_CRISIS_FAIL_DESC"
+		allow_achievements = yes
+	}
+}
+
+##########################################
+### SWRW - SHUKSHIN ###
+##########################################
+
+# Shuk Postwar Elections
+
+SHUK_POSTWAR_ELECTIONS = {
+	name = SHUK_POSTWAR_ELECTIONS
+	group = "RULE_GROUP_SWRW_RULES_SHUKSHIN"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_SHUK_POSTWAR_ELECTIONS_RANDOM"
+		desc = "RULE_OPTION_SHUK_POSTWAR_ELECTIONS_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SHUK_POSTWAR_ELECTIONS_SHUK
+		text = "RULE_OPTION_SHUK_POSTWAR_ELECTIONS_SHUK"
+		desc = "RULE_OPTION_SHUK_POSTWAR_ELECTIONS_SHUK_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SHUK_POSTWAR_ELECTIONS_KORY
+		text = "RULE_OPTION_SHUK_POSTWAR_ELECTIONS_KORY"
+		desc = "RULE_OPTION_SHUK_POSTWAR_ELECTIONS_KORY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SHUK_POSTWAR_ELECTIONS_KANT
+		text = "RULE_OPTION_SHUK_POSTWAR_ELECTIONS_KANT"
+		desc = "RULE_OPTION_SHUK_POSTWAR_ELECTIONS_KANT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SHUK_POSTWAR_ELECTIONS_VRPP
+		text = "RULE_OPTION_SHUK_POSTWAR_ELECTIONS_VRPP"
+		desc = "RULE_OPTION_SHUK_POSTWAR_ELECTIONS_VRPP_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Russia - Odessa Ultimatum
+
+RUS_ROM_ODESA = {
+	name = RUS_ROM_ODESA
+	group = "RULE_GROUP_SWRW_RULES_SHUKSHIN"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_RUS_ROM_ODESA_RANDOM"
+		desc = "RULE_OPTION_RUS_ROM_ODESA_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = { # Romania offers Outer Transnistria, Russia says yes
+		name = RUS_ROM_ODESA_RUSSIA_PEACE
+		text = "RULE_OPTION_RUS_ROM_ODESA_RUSSIA_PEACE"
+		desc = "RULE_OPTION_RUS_ROM_ODESA_RUSSIA_PEACE_DESC"
+		allow_achievements = yes
+	}
+	option = { #War for Odessa
+		name = RUS_ROM_ODESA_RUSSIA_WAR
+		text = "RULE_OPTION_RUS_ROM_ODESA_RUSSIA_WAR"
+		desc = "RULE_OPTION_RUS_ROM_ODESA_RUSSIA_WAR_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Shukshin - Fate of Caucasus
+
+RUS_CAU_FATE = {
+	name = RUS_CAU_FATE
+	group = "RULE_GROUP_SWRW_RULES_SHUKSHIN"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_RUS_CAU_FATE_RANDOM"
+		desc = "RULE_OPTION_RUS_CAU_FATE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_CAU_FATE_TRANSCAUCASIA
+		text = "RULE_OPTION_RUS_CAU_FATE_TRANSCAUCASIA"
+		desc = "RULE_OPTION_RUS_CAU_FATE_TRANSCAUCASIA_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_CAU_FATE_FEDERATION
+		text = "RULE_OPTION_RUS_CAU_FATE_FEDERATION"
+		desc = "RULE_OPTION_RUS_CAU_FATE_FEDERATION_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_CAU_FATE_INTEGRATION
+		text = "RULE_OPTION_RUS_CAU_FATE_INTEGRATION"
+		desc = "RULE_OPTION_RUS_CAU_FATE_INTEGRATION_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Shukshin - Fate of Ukraine
+
+RUS_UKR_FATE = {
+	name = RUS_UKR_FATE
+	group = "RULE_GROUP_SWRW_RULES_SHUKSHIN"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_RUS_UKR_FATE_RANDOM"
+		desc = "RULE_OPTION_RUS_UKR_FATE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_UKR_FATE_PUPPET
+		text = "RULE_OPTION_RUS_UKR_FATE_PUPPET"
+		desc = "RULE_OPTION_RUS_UKR_FATE_PUPPET_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_UKR_FATE_INTEGRATION
+		text = "RULE_OPTION_RUS_UKR_FATE_INTEGRATION"
+		desc = "RULE_OPTION_RUS_UKR_FATE_INTEGRATION_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Shukshin - Crimea Issue
+
+RUS_CRIMEA_ISSUE = {
+	name = RUS_CRIMEA_ISSUE
+	group = "RULE_GROUP_SWRW_RULES_SHUKSHIN"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_RUS_CRIMEA_ISSUE_RANDOM"
+		desc = "RULE_OPTION_RUS_CRIMEA_ISSUE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_CRIMEA_ISSUE_RUS
+		text = "RULE_OPTION_RUS_CRIMEA_ISSUE_RUS"
+		desc = "RULE_OPTION_RUS_CRIMEA_ISSUE_RUS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_CRIMEA_ISSUE_UKR
+		text = "RULE_OPTION_RUS_CRIMEA_ISSUE_UKR"
+		desc = "RULE_OPTION_RUS_CRIMEA_ISSUE_UKR_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Shukshin - Fate of Belarus
+
+RUS_BLR_FATE = {
+	name = RUS_BLR_FATE
+	group = "RULE_GROUP_SWRW_RULES_SHUKSHIN"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_RUS_BLR_FATE_RANDOM"
+		desc = "RULE_OPTION_RUS_BLR_FATE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_BLR_FATE_PUPPET
+		text = "RULE_OPTION_RUS_BLR_FATE_PUPPET"
+		desc = "RULE_OPTION_RUS_BLR_FATE_PUPPET_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_BLR_FATE_INTEGRATION
+		text = "RULE_OPTION_RUS_BLR_FATE_INTEGRATION"
+		desc = "RULE_OPTION_RUS_BLR_FATE_INTEGRATION_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Shukshin - Fate of the Baltics
+
+RUS_OST_FATE = {
+	name = RUS_OST_FATE
+	group = "RULE_GROUP_SWRW_RULES_SHUKSHIN"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_RUS_OST_FATE_RANDOM"
+		desc = "RULE_OPTION_RUS_OST_FATE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_OST_FATE_BALTIC_STATES
+		text = "RULE_OPTION_RUS_OST_FATE_BALTIC_STATES"
+		desc = "RULE_OPTION_RUS_OST_FATE_BALTIC_STATES_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_OST_FATE_UNION
+		text = "RULE_OPTION_RUS_OST_FATE_UNION"
+		desc = "RULE_OPTION_RUS_OST_FATE_UNION_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_OST_FATE_INTEGRATION
+		text = "RULE_OPTION_RUS_OST_FATE_INTEGRATION"
+		desc = "RULE_OPTION_RUS_OST_FATE_INTEGRATION_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Shuk - Fate of Armenia
+
+RUS_ARM_FATE = {
+	name = RUS_ARM_FATE
+	group = "RULE_GROUP_SWRW_RULES_SHUKSHIN"
+	option = {
+		name = DEFAULT
+		text = "RULE_OPTION_RUS_ARM_FATE_RANDOM"
+		desc = "RULE_OPTION_RUS_ARM_FATE_RANDOM_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_ARM_FATE_ARMENIA_IS_ARMENIA
+		text = "RULE_OPTION_RUS_ARM_FATE_ARMENIA_IS_ARMENIA"
+		desc = "RULE_OPTION_RUS_ARM_FATE_ARMENIA_IS_ARMENIA_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RUS_ARM_FATE_ARMENIA_IS_CAUCASUS
+		text = "RULE_OPTION_RUS_ARM_FATE_ARMENIA_IS_CAUCASUS"
+		desc = "RULE_OPTION_RUS_ARM_FATE_ARMENIA_IS_CAUCASUS_DESC"
+		allow_achievements = yes
+	}
+	option = { 
+		name = RUS_ARM_FATE_ARMENIA_IS_RUSSIA
+		text = "RULE_OPTION_RUS_ARM_FATE_ARMENIA_IS_RUSSIA"
+		desc = "RULE_OPTION_RUS_ARM_FATE_ARMENIA_IS_RUSSIA_DESC"
+		allow_achievements = yes
+	}
+}
+
+##########################################
+### SWRW - USA ###
+##########################################
+
+# The United States of America (USA) - 1976 Democratic Primaries
+
+#USA_DEM_PRIMARIES_1976 = {
+#	name = "USA_DEM_PRIMARIES_1976"
+#	group = "RULE_GROUP_SWRW_RULES_USA"
+#	option = {
+#		name = DEFAULT
+#		text = "RULE_OPTION_USA_DEM_PRIMARIES_1976_RANDOM"
+#		desc = "RULE_OPTION_USA_DEM_PRIMARIES_1976_RANDOM_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = USA_DEM_PRIMARIES_1976_KENNEDY
+#		text = "RULE_OPTION_USA_DEM_PRIMARIES_1976_KENNEDY"
+#		desc = "RULE_OPTION_USA_DEM_PRIMARIES_1976_KENNEDY_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = USA_DEM_PRIMARIES_1976_BAYH
+#		text = "RULE_OPTION_USA_DEM_PRIMARIES_1976_BAYH"
+#		desc = "RULE_OPTION_USA_DEM_PRIMARIES_1976_BAYH_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = USA_DEM_PRIMARIES_1976_CARTER
+#		text = "RULE_OPTION_USA_DEM_PRIMARIES_1976_CARTER"
+#		desc = "RULE_OPTION_USA_DEM_PRIMARIES_1976_CARTER_DESC"
+#		allow_achievements = yes
+#	}
+#}
+
+# The United States of America (USA) - 1976 Republican Primaries
+
+#USA_REP_PRIMARIES_1976 = {
+#	name = "USA_REP_PRIMARIES_1976"
+#	group = "RULE_GROUP_SWRW_RULES_USA"
+#	option = {
+#		name = DEFAULT
+#		text = "RULE_OPTION_USA_REP_PRIMARIES_1976_RANDOM"
+#		desc = "RULE_OPTION_USA_REP_PRIMARIES_1976_RANDOM_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = USA_REP_PRIMARIES_1976_PERCY
+#		text = "RULE_OPTION_USA_REP_PRIMARIES_1976_PERCY"
+#		desc = "RULE_OPTION_USA_REP_PRIMARIES_1976_PERCY_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = USA_REP_PRIMARIES_1976_BAKER
+#		text = "RULE_OPTION_USA_REP_PRIMARIES_1976_BAKER"
+#		desc = "RULE_OPTION_USA_REP_PRIMARIES_1976_BAKER_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = USA_REP_PRIMARIES_1976_REAGAN
+#		text = "RULE_OPTION_USA_REP_PRIMARIES_1976_REAGAN"
+#		desc = "RULE_OPTION_USA_REP_PRIMARIES_1976_REAGAN_DESC"
+#		allow_achievements = yes
+#	}
+#}
+
+
+# The United States of America (USA) - The 1976 Elections [Ideology]
+
+#USA_leader_route_1976 = {
+#	name = "USA_LEADER_ROUTE_1976"
+#	group = "RULE_GROUP_SWRW_RULES_USA"
+#	option = {
+#		name = "DEFAULT"
+#		text = "RULE_OPTION_USA_LEADER_ROUTE_1976_RANDOM"
+#		desc = "RULE_OPTION_USA_LEADER_ROUTE_1976_RANDOM_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = "USA_LEADER_ROUTE_1976_DEM"
+#		text = "RULE_OPTION_USA_LEADER_ROUTE_1976_DEM"
+#		desc = "RULE_OPTION_USA_LEADER_ROUTE_1976_DEM_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = "USA_LEADER_ROUTE_1976_REP"
+#		text = "RULE_OPTION_USA_LEADER_ROUTE_1976_REP"
+#		desc = "RULE_OPTION_USA_LEADER_ROUTE_1976_REP_DESC"
+#		allow_achievements = yes
+#	}
+#}

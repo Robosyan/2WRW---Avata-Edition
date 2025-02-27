@@ -1,0 +1,24 @@
+defined_text = {
+	name = GetSWRWTitle
+	text = {
+		trigger = {
+			original_tag = OMS
+		}
+		localization_key = the_great_trial
+	}
+	text = {
+		trigger = {
+			original_tag = SBA
+		}
+		localization_key = the_great_war_of_liberation
+	}
+	text = {
+		trigger = {
+			original_tag = WRS
+		}
+		localization_key = the_second_great_patriotic_war
+	}
+	text = {
+		localization_key = the_second_west_russian_war
+	}
+}

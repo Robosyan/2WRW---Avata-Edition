@@ -1,0 +1,84 @@
+ideas = {
+	hidden_ideas = {
+		##CSTO##
+		CSTO_Guardian_of_Eurasia = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CSTO_Guardian_of_Eurasia"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = CSTO_Member
+		}
+		
+		CSTO_Member = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CSTO_Guardian_of_Eurasia"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = CSTO_Member
+			modifier = {
+				annual_gdp_growth_factor = 0.05
+			}
+		}
+		
+		CSTO_Observer = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea CSTO_Observer"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = CSTO_Observer
+			modifier = {
+				annual_gdp_growth_factor = 0.03
+			}
+		}
+
+		## Balkan Internationale 
+		BI_Member = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BI_Member"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = BI_Member
+			modifier = {
+				annual_gdp_growth_factor = 0.05
+			}
+		}
+
+		#2GCW#
+
+		VFE_Member = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea VFE_Member"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = VFE_Member
+			modifier = {
+				annual_gdp_growth_factor = 0.05
+			}
+		}
+
+		PKT_Member = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PKT_Member"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = PKT_Member
+			modifier = {
+				annual_gdp_growth_factor = 0.05
+			}
+		}
+
+		DPKT_Member = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea DPKT_Member"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = DPKT_Member
+			modifier = {
+				annual_gdp_growth_factor = 0.05
+			}
+		}
+
+		REV_Member = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea REV_Member"}
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+			picture = REV_Member
+			modifier = {
+				annual_gdp_growth_factor = 0.05
+			}
+		}
+	}
+}

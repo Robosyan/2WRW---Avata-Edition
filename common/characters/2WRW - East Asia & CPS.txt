@@ -1,0 +1,54 @@
+characters = {
+	QIN_Sun_Tse_Ping = {
+		name = QIN_Sun_Tse_Ping
+		portraits = {
+			civilian = { large = "gfx/leaders/QIN/Portrait_QIN_Sun_Tse_Ping.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_SUN_TSE_PING_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_subtype
+			id = -1
+		}
+	}
+	QIN_Li_Xiannian = {
+		name = QIN_Li_Xiannian
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/QIN/Portrait_QIN_Li_Xiannian.dds"
+			}
+		}
+		country_leader = {
+			ideology = communist_mao_zedong_thought_subtype
+			desc = "POLITICS_LI_XIANNIAN_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	MON_Natsagiin_Bagabandi = {
+		name = MON_Natsagiin_Bagabandi
+		portraits = {
+			civilian = { large = "gfx/leaders/MON/Portrait_Mongolia_Natsagiin_Bagabandi.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_NATSAGIIN_BAGABANDI_DESC"
+			ideology = progressivism_popular_front_subtype
+			expire = "1999.1.1.1"
+		}
+	}
+
+	### Japanese Seizure Leader ###
+	MAD_Keiu_Matsuo = {
+		name = MAD_Keiu_Matsuo
+		portraits = {
+			civilian = { large = "GFX_Portrait_Japan_Keiu_Matsuo" }
+		}
+		country_leader = {
+			desc = "MDG_Keiu_Matsuo_desc"
+			expire = "1992.2.6"
+			ideology = despotism_colonial_government_subtype
+			id = -1
+		}
+	}
+}

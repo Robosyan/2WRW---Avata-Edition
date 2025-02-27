@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_econ_sphere_icon_HUS"
+		textureFile = "gfx/interface/economy_gui/econ_panel/balkan_Internationale_icon.dds"	
+	}
+	spriteType = {
+		name = "GFX_econ_sphere_icon_NOV"
+		textureFile = "gfx/interface/economy_gui/econ_panel/NOV_sphere_icon.dds"	
+	}
+}

@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_LIT_cultural_resurgence"
+		texturefile = "gfx/interface/ideas/national_spirits/LIT/GFX_idea_LIT_cultural_resurgence.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_LIT_cultural_resurgence"
+		texturefile = "gfx/interface/ideas/LIT/GFX_idea_LIT_cultural_resurgence.dds"
+	}
+}

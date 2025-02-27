@@ -1,0 +1,451 @@
+characters = {
+	NOV_Yevgeny_Primakov = {
+		name = NOV_Yevgeny_Primakov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Yevgeny_Primakov.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_YEVGENY_PRIMAKOV_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_right_wing_populism_subtype
+			traits = {
+			}
+			id = -1
+		}
+	}
+	NOV_Yuri_Zubakov = {
+		name = NOV_Yuri_Zubakov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Yuri_Zubakov.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_YURI_ZUBAKOV_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_oligarchy_subtype
+			traits = {
+			}
+			id = -1
+		}
+	}
+	NOV_Leonid_Kantorovich = {
+		name = NOV_Leonid_Kantorovich
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Leonid_Kantorovich.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_LEONID_KANTOROVICH_DESC"
+			expire = "1999.1.1"
+			ideology = progressivism_reformist_socialism_subtype
+			traits = {
+			}
+			id = -1
+		}
+	}
+	NOV_Anatoly_Koryagin = {
+		name = NOV_Anatoly_Koryagin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Anatoly_Koryagin.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_ANATOLY_KORYAGIN_DESC"
+			expire = "1999.1.1"
+			ideology = liberalism_pacifism_subtype
+			traits = {
+			}
+			id = -1
+		}
+	}
+	NOV_Vladimir_Osipov = {
+		name = NOV_Vladimir_Osipov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Vladimir_Osipov.dds"
+			}
+		}
+		country_leader = {
+			# desc = "POLITICS_VLADIMIR_OSIPOV_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_aristocratic_conservatism_subtype
+			traits = {
+			}
+			id = -1
+		}
+	}
+	NOV_Mikhail_Lapshin = {
+		name = NOV_Mikhail_Lapshin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Mikhail_Lapshin.dds"
+			}
+		}
+		country_leader = {
+			ideology = conservatism_1_subtype
+			id = -1
+		}
+	}
+	NOV_Yegor_Ligachyov = {
+		name = NOV_Yegor_Ligachyov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Yegor_Ligachyov.dds"
+			}
+		}
+		country_leader = {
+			# desc = "POLITICS_YEGOR_LIGACHYOV_DESC"
+			expire = "1999.1.1"
+			ideology = communist_bolshevism_subtype
+			traits = {
+			}
+			id = -1
+		}
+	}
+	NOV_Yuri_Galanskov = {
+		name = NOV_Yuri_Galanskov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Yuri_Galanskov.dds"
+			}
+		}
+		country_leader = {
+			# desc = "POLITICS_Yuri_Galanskov_DESC"
+			expire = "1999.1.1"
+			ideology = socialist_social_democracy_subtype
+			traits = {
+			}
+			id = -1
+		}
+	}
+	### END SWRW ###
+	# Ministers #
+	### SWRW ###
+	NOV_Ivan_Silayev = {
+		name = NOV_Ivan_Silayev
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Ivan_Silayev"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = NOV_Ivan_Silayev_hog
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				head_of_government
+				business_minded
+				NOV_Ivan_Silayev_hog_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	NOV_Vladimir_Vinogradov = {
+		name = NOV_Vladimir_Vinogradov
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Vladimir_Vinogradov"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = NOV_Vladimir_Vinogradov_for
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				foreign_minister
+				crony_diplomat
+				NOV_Vladimir_Vinogradov_for_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	NOV_Rem_Viakhirev = {
+		name = NOV_Rem_Viakhirev
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Rem_Viakhirev"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = NOV_Rem_Viakhirev_eco
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				economy_minister
+				nepotistic_technocrat
+				NOV_Rem_Viakhirev_eco_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	NOV_Pyotr_Deynekin = {
+		name = NOV_Pyotr_Deynekin
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Pyotr_Deynekin"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = NOV_Pyotr_Deynekin_sec
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				security_minister
+				apolitical_soldier
+				NOV_Pyotr_Deynekin_sec_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	NOV_Leonid_Plyushch = {
+		name = NOV_Leonid_Plyushch
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Leonid_Plyushch"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = NOV_Leonid_Plyushch_hog
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				head_of_government
+				educated_reformer
+				NOV_Leonid_Plyushch_hog_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	NOV_Alexander_Lavut = {
+		name = NOV_Alexander_Lavut
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Alexander_Lavut"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = NOV_Alexander_Lavut_for
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				foreign_minister
+				dissent_writer
+				NOV_Alexander_Lavut_for_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	#NOTE: ALSO A SHUKSHIN COLLAPSE LEADER
+	NOV_Anatoly_Marchenko = {
+		name = NOV_Anatoly_Marchenko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Anatoly_Marchenko.dds"
+				small = "GFX_NOV_Anatoly_Marchenko"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Anatoly_Marchenko_DESC"
+			expire = "1999.1.1"
+			ideology = progressivism_popular_front_subtype
+			traits = {
+			}
+			id = -1
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = NOV_Anatoly_Marchenko_eco
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				economy_minister
+				grassroot_planner
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	NOV_Petro_Grigorenko = {
+		name = NOV_Petro_Grigorenko
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Petro_Grigorenko"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = NOV_Petro_Grigorenko_sec
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				security_minister
+				guard_of_the_revolution
+				NOV_Petro_Grigorenko_sec_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	NOV_Felix_Serebrov = {
+		name = NOV_Felix_Serebrov
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Felix_Serebrov"
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = NOV_Felix_Serebrov_hog
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				head_of_government
+				samizdat
+				NOV_Felix_Serebrov_hog_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	NOV_Sergei_Kovalev = {
+		name = NOV_Sergei_Kovalev
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Sergei_Kovalev"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = NOV_Sergei_Kovalev_for
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				foreign_minister
+				human_rights_activist
+				NOV_Sergei_Kovalev_for_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	NOV_Naum_Meiman = {
+		name = NOV_Naum_Meiman
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Naum_Meiman"
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = NOV_Naum_Meiman_eco
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				economy_minister
+				educated_economist
+				NOV_Naum_Meiman_eco_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	#Technically not security minister
+	NOV_Vyacheslav_Bakhmin = {
+		name = NOV_Vyacheslav_Bakhmin
+		portraits = {
+			civilian = {
+				small = "GFX_NOV_Vyacheslav_Bakhmin"
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = NOV_Vyacheslav_Bakhmin_sec
+			allowed = {
+				original_tag = NOV
+			}
+			traits = {
+				security_minister
+				human_rights_council
+				NOV_Vyacheslav_Bakhmin_sec_desc
+			}
+			ledger = civilian
+			cost = -1
+			removal_cost = -1
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

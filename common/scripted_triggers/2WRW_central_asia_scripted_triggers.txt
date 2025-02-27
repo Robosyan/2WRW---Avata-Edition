@@ -1,0 +1,34 @@
+KAZ_has_same_government = {
+	OR = {
+		AND = {
+			has_country_flag = RUS_generic_communist_unifier
+			OR = {
+				AND = {
+					country_exists = KAZ
+					KAZ = { has_government = communist }
+				}
+				AND = {
+					country_exists = KZR
+					KZR = { has_government = communist }
+				}
+			}
+		}
+		AND = {
+			NOT = { original_tag = SBA }
+			OR = {
+				has_country_flag = RUS_generic_democratic_unifier
+				has_country_flag = RUS_generic_authoritarian_unifier
+			}
+			OR = {
+				AND = {
+					country_exists = KAZ
+					NOT = { KAZ = { has_government = communist } }
+				}
+				AND = {
+					country_exists = KZR
+					NOT = { KZR = { has_government = communist } }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_WCH_question_of_identity"
+		texturefile = "gfx/interface/ideas/WCH/GFX_idea_WCH_question_of_identity.dds"
+	}
+}

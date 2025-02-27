@@ -1,0 +1,90 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_NOV_propaganda_BG"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_history"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_history.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_history_2"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_history_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_moskva"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_moskva.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_moskva_2"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_moskva_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_nature"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_nature.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_nature_2"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_nature_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_one"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_one.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_one_2"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_one_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_sport"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_sport.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_sport_2"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_sport_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_vremya"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_vremya.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_channel_vremya_2"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_channel_vremya_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_placeholder_bg"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_placeholder_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_buy_button"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_buy_button.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_buy_button_2"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_buy_button_2.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_blackmail_button"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_blackmail_button.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propaganda_blackmail_button_2"
+		textureFile = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_blackmail_button_2.dds"
+	}
+	progressbartype = {
+		name = "GFX_Market_share_Progressbar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_progress_bar_full.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_progress_bar_empty.dds"
+		size = { x = 156 y = 95 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	progressbartype = {
+		name = "GFX_Legal_strength_Progressbar"
+		textureFile1 = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_legal_strength_progress_bar_full.dds"
+		textureFile2 = "gfx/interface/novosibirsk_gui/propaganda_gui/NOV_propaganda_legal_strength_progress_bar_empty.dds"
+		size = { x = 45 y = 116 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+}

@@ -1,0 +1,1015 @@
+add_namespace = Shukshin_unification
+add_namespace = Shukshin_News
+add_namespace = Shukshin_War
+add_namespace = Shukshin_Lidiya
+add_namespace = Shukshin_foreignpolicy
+add_namespace = Shukshin_postwar
+add_namespace = RAPP
+
+country_event = {
+	id = Shukshin_unification.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.1"}
+	title = Shukshin_unification.1.t
+	desc = Shukshin_unification.1.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.1.a
+		hidden_effect = {
+			NOV_Alexander_Pokryshkin = {
+				set_portraits = {
+					civilian = {
+						large = "gfx/leaders/NOV/Portrait_Novosibirsk_Alexander_Pokryshkin_70s.dds"
+						small = "gfx/interface/ideas/ministers/NOV/NOV_Alexander_Pokryshkin_70s.dds"
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.2"}
+	title = Shukshin_unification.2.t
+	desc = Shukshin_unification.2.desc
+	picture = GFX_report_event_russian_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.2.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.3"}
+	title = Shukshin_unification.3.t
+	desc = Shukshin_unification.3.desc
+	picture = GFX_report_event_federal_assembly
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.3.a
+		set_country_flag = NOV_work_with_the_siloviki_flag
+	}
+	option = {
+		name = Shukshin_unification.3.b
+		set_country_flag = NOV_work_with_the_new_parties_flag
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.4"}
+	title = Shukshin_unification.4.t
+	desc = Shukshin_unification.4.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.4.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.5"}
+	title = Shukshin_unification.5.t
+	desc = Shukshin_unification.5.desc
+	picture = GFX_report_event_nov_duma
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.5.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.6"}
+	title = Shukshin_unification.6.t
+	desc = Shukshin_unification.6.desc
+	picture = GFX_report_event_NOV_koryagin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.6.a
+		add_popularity = {
+			ideology = liberalism
+			popularity = 0.025
+		}
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.7"}
+	title = Shukshin_unification.7.t
+	desc = Shukshin_unification.7.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.7.a
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.8"}
+	title = Shukshin_unification.8.t
+	desc = Shukshin_unification.8.desc
+	picture = GFX_report_event_generic_gun_by_phone
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.8.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.9"}
+	title = Shukshin_unification.9.t
+	desc = Shukshin_unification.9.desc
+	picture = GFX_report_event_generic_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.9.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.10"}
+	title = Shukshin_unification.10.t
+	desc = Shukshin_unification.10.desc
+	picture = GFX_report_event_federal_assembly
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.10.a
+	}
+}
+country_event = {
+	id = Shukshin_unification.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.11"}
+	title = Shukshin_unification.11.t
+	desc = Shukshin_unification.11.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.11.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.12"}
+	title = Shukshin_unification.12.t
+	desc = Shukshin_unification.12.desc
+	picture = GFX_report_event_russia_kantorovich_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.12.a
+		add_popularity = {
+			ideology = progressivism
+			popularity = 0.025
+			}
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.13"}
+	title = Shukshin_unification.13.t
+	desc = Shukshin_unification.13.desc
+	picture = GFX_report_event_NOV_primakov_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.13.a
+		add_popularity = {
+			ideology = paternalism
+			popularity = 0.025
+			}
+	}
+}
+country_event = {
+	id = Shukshin_unification.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.14"}
+	title = Shukshin_unification.14.t
+	desc = Shukshin_unification.14.desc
+	picture = GFX_report_event_generic_radio1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.14.a
+	}
+}
+country_event = {
+	id = Shukshin_unification.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.15"}
+	title = Shukshin_unification.15.t
+	desc = Shukshin_unification.15.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.15.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.16"}
+	title = Shukshin_unification.16.t
+	desc = Shukshin_unification.16.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.16.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.17"}
+	title = Shukshin_unification.17.t
+	desc = Shukshin_unification.17.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.17.a
+	}
+}
+country_event = {
+	id = Shukshin_unification.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.18"}
+	title = Shukshin_unification.18.t
+	desc = Shukshin_unification.18.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.18.a
+	}
+}
+country_event = {
+	id = Shukshin_unification.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.19"}
+	title = Shukshin_unification.19.t
+	desc = Shukshin_unification.19.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.19.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.20"}
+	title = Shukshin_unification.20.t
+	desc = Shukshin_unification.20.desc
+	picture = GFX_report_event_russia_music_album
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.20.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.21"}
+	title = Shukshin_unification.21.t
+	desc = Shukshin_unification.21.desc
+	picture = GFX_report_event_IBR_voting_women
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.21.a
+	}
+}
+country_event = {
+	id = Shukshin_unification.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.22"}
+	title = Shukshin_unification.22.t
+	desc = Shukshin_unification.22.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.22.a
+	}
+}
+country_event = {
+	id = Shukshin_unification.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.23"}
+	title = Shukshin_unification.23.t
+	desc = Shukshin_unification.23.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.23.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.24"}
+	title = Shukshin_unification.24.t
+	desc = Shukshin_unification.24.desc
+	picture = GFX_report_event_generic_mountain
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.24.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.25"}
+	title = Shukshin_unification.25.t
+	desc = Shukshin_unification.25.desc
+	picture = GFX_event_pic_russia_celebration
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.25.a
+	}
+}
+
+country_event = {
+	id = Shukshin_unification.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_unification.26"}
+	title = Shukshin_unification.26.t
+	desc = Shukshin_unification.26.desc
+	picture = GFX_report_event_generic_gun_by_phone
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_unification.26.a
+	}
+}
+
+country_event = { #Shukshin epilogue, replaces NOV_superregional.17
+	id = Shukshin_unification.27
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NOV_superregional.17" }
+	title = NOV_superregional.17.t
+	desc = NOV_superregional.17.desc
+	picture = GFX_report_event_AM_epilogue_river_ob
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #
+		name = NOV_superregional.17.a
+		custom_effect_tooltip = NOV_look_to_the_west_tt
+		hidden_effect = { 
+			load_focus_tree = NOV_novosibirsk_unification_shukshin
+		}
+	}
+}
+
+country_event = {
+	id = Shukshin_Lidiya.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_Lidiya.1"}
+	title = Shukshin_Lidiya.1.t
+	desc = Shukshin_Lidiya.1.desc
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_Lidiya.1.a
+	}
+}
+
+country_event = {
+	id = Shukshin_War.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_War.1"}
+	title = Shukshin_War.1.t
+	desc = Shukshin_War.1.desc
+	picture = GFX_report_event_RUS_military
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_War.1.a
+	}
+}
+
+country_event = {
+	id = Shukshin_War.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_War.3"}
+	title = Shukshin_War.3.t
+	desc = Shukshin_War.3.desc
+	picture = GFX_report_event_RUS_crowd
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_War.3.a
+	}
+}
+
+country_event = {
+	id = Shukshin_War.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_War.4"}
+	title = Shukshin_War.4.t
+	desc = Shukshin_War.4.desc
+	picture = GFX_report_event_RUS_forest_battle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_War.4.a
+	}
+}
+
+country_event = {
+	id = Shukshin_War.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_War.5"}
+	title = Shukshin_War.5.t
+	desc = Shukshin_War.5.desc
+	picture = GFX_report_event_RUS_german_pow_russia
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_War.5.a
+	}
+}
+
+country_event = {
+	id = Shukshin_War.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_War.6"}
+	title = Shukshin_War.6.t
+	desc = Shukshin_War.6.desc
+	picture = GFX_report_event_generic_port
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_War.6.a
+	}
+}
+
+country_event = {
+	id = Shukshin_War.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_War.7"}
+	title = Shukshin_War.7.t
+	desc = Shukshin_War.7.desc
+	picture = GFX_event_pic_moscow_destroyed
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_War.7.a
+	}
+}	
+
+### Shukshin Foreign Policy Events ###
+
+country_event = {
+	id = Shukshin_foreignpolicy.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.1"}
+	title = Shukshin_foreignpolicy.1.t
+	desc = Shukshin_foreignpolicy.1.desc
+	picture = GFX_report_event_russia_novosibirsk_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.1.a
+	}
+}
+
+country_event = {
+	id = Shukshin_foreignpolicy.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.2"}
+	title = Shukshin_foreignpolicy.2.t
+	desc = Shukshin_foreignpolicy.2.desc
+	picture = GFX_report_event_RUS_kazakh_crowd
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.2.a
+	}
+}
+
+country_event = {
+	id = Shukshin_foreignpolicy.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.3"}
+	title = Shukshin_foreignpolicy.3.t
+	desc = Shukshin_foreignpolicy.3.desc
+	picture = GFX_report_event_KAZ_kazakh_riders
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.3.a
+	}
+}
+
+country_event = {
+	id = Shukshin_foreignpolicy.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.4"}
+	title = Shukshin_foreignpolicy.4.t
+	desc = Shukshin_foreignpolicy.4.desc
+	picture = GFX_report_event_KAZ_kazakh_riderss_4
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.4.a
+	}
+}
+
+country_event = {
+	id = Shukshin_foreignpolicy.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.5"}
+	title = Shukshin_foreignpolicy.5.t
+	desc = Shukshin_foreignpolicy.5.desc
+	picture = GFX_report_event_islamist_rally
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.5.a
+	}
+}
+
+country_event = {
+	id = Shukshin_foreignpolicy.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.6"}
+	title = Shukshin_foreignpolicy.6.t
+	desc = Shukshin_foreignpolicy.6.desc
+	picture = GFX_report_event_india_factory_colour_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.6.a
+	}
+}
+
+country_event = {
+	id = Shukshin_foreignpolicy.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.7"}
+	title = Shukshin_foreignpolicy.7.t
+	desc = Shukshin_foreignpolicy.7.desc
+	picture = GFX_event_pic_polish_flag_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.7.a
+	}
+}
+
+country_event = {
+	id = Shukshin_foreignpolicy.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.8"}
+	title = Shukshin_foreignpolicy.8.t
+	desc = Shukshin_foreignpolicy.8.desc
+	picture = GFX_report_event_RUS_forest_battle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.8.a
+	}
+}
+
+country_event = {
+	id = Shukshin_foreignpolicy.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.9"}
+	title = Shukshin_foreignpolicy.9.t
+	desc = Shukshin_foreignpolicy.9.desc
+	picture = GFX_event_pic_russia_celebration
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.9.a
+	}
+}
+
+country_event = {
+	id = Shukshin_foreignpolicy.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.10"}
+	title = Shukshin_foreignpolicy.10.t
+	desc = Shukshin_foreignpolicy.10.desc
+	picture = GFX_report_event_RUS_forest_battle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.10.a
+	}
+}
+
+country_event = {
+	id = Shukshin_foreignpolicy.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_foreignpolicy.11"}
+	title = Shukshin_foreignpolicy.11.t
+	desc = Shukshin_foreignpolicy.11.desc
+	picture = GFX_report_event_RUS_forest_battle
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_foreignpolicy.11.a
+	}
+}
+
+country_event = {
+	id = Shukshin_postwar.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_postwar.2"}
+	title = Shukshin_postwar.2.t
+	desc = Shukshin_postwar.2.desc
+	picture = GFX_event_pic_russian_teacher_woman
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = Shukshin_postwar.2.a
+	hidden_effect = {
+			NOV_Vasily_Shukshin = {
+				set_portraits = {
+					civilian = {
+						large = "gfx/leaders/NOV/Portrait_Novosibirsk_Vasily_Shukshin_Post.dds"
+					}
+				}
+			}
+		}
+	}
+}
+
+### Shukshin Annexation Events ###
+
+country_event = {
+	id = RAPP.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.1"}
+	title = RAPP.1.t
+	desc = RAPP.1.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.1.a
+		country_event = { id = RAPP.2 days = 7 }
+	}
+}
+
+country_event = {
+	id = RAPP.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.2"}
+	title = RAPP.2.t
+	desc = RAPP.2.desc
+	picture = GFX_event_pic_russian_sea_town
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.2.a
+		country_event = { id = RAPP.8 days = 5 }
+	}
+}
+
+country_event = {
+	id = RAPP.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.3"}
+	title = RAPP.3.t
+	desc = RAPP.3.desc
+	picture = GFX_report_event_generic_stock_market
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.3.a
+		country_event = { id = RAPP.4 days = 6 }
+	}
+}
+
+country_event = {
+	id = RAPP.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.4"}
+	title = RAPP.4.t
+	desc = RAPP.4.desc
+	picture = GFX_report_event_NOV_alexander_pokryshkin_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.4.a
+	}
+}
+
+country_event = {
+	id = RAPP.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.5"}
+	title = RAPP.5.t
+	desc = RAPP.5.desc
+	picture = GFX_report_event_generic_port
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.5.a
+	}
+}
+
+country_event = {
+	id = RAPP.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.6"}
+	title = RAPP.6.t
+	desc = RAPP.6.desc
+	picture = GFX_report_event_GNG_generic_construction_workers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.6.a
+	}
+}
+
+country_event = {
+	id = RAPP.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.7"}
+	title = RAPP.7.t
+	desc = RAPP.7.desc
+	picture = GFX_report_event_IBR_rain
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.7.a
+	}
+}
+
+country_event = {
+	id = RAPP.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.8"}
+	title = RAPP.8.t
+	desc = RAPP.8.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.8.a
+	}
+}
+
+country_event = {
+	id = RAPP.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.9"}
+	title = RAPP.9.t
+	desc = RAPP.9.desc
+	picture = GFX_report_event_RUS_airborne_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.9.a
+	}
+}
+
+country_event = {
+	id = RAPP.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.10"}
+	title = RAPP.10.t
+	desc = RAPP.10.desc
+	picture = GFX_report_event_PRM_hyperborea_map
+
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.10.a
+	}
+}
+
+country_event = {
+	id = RAPP.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.11"}
+	title = RAPP.11.t
+	desc = RAPP.11.desc
+	picture = GFX_report_event_glass_and_cigar
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.11.a
+		country_event = { id = RAPP.18 days = 5 }
+	}
+}
+
+country_event = {
+	id = RAPP.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.12"}
+	title = RAPP.12.t
+	desc = RAPP.12.desc
+	picture = GFX_report_event_generic_radio1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.12.a
+	}
+}
+
+country_event = {
+	id = RAPP.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.13"}
+	title = RAPP.13.t
+	desc = RAPP.13.desc
+	picture = GFX_event_pic_russia_cosmodrome
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.13.a
+	}
+}
+
+country_event = {
+	id = RAPP.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.14"}
+	title = RAPP.14.t
+	desc = RAPP.14.desc
+	picture = GFX_report_event_USA_supreme_court
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.14.a
+		country_event = { id = RAPP.18 days = 5 }
+	}
+}
+
+country_event = {
+	id = RAPP.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.15"}
+	title = RAPP.15.t
+	desc = RAPP.15.desc
+	picture = GFX_report_event_KOM_soviet_russian_computer_3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.15.a
+		country_event = { id = RAPP.13 days = 7 }
+	}
+}
+
+country_event = {
+	id = RAPP.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.16"}
+	title = RAPP.16.t
+	desc = RAPP.16.desc
+	picture = GFX_report_event_generic_radio1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.16.a
+	}
+}
+
+country_event = {
+	id = RAPP.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.17"}
+	title = RAPP.17.t
+	desc = RAPP.17.desc
+	picture = GFX_event_pic_russia_cosmodrome
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.17.a
+	}
+}
+
+country_event = {
+	id = RAPP.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.18"}
+	title = RAPP.18.t
+	desc = RAPP.18.desc
+	picture = GFX_report_event_generic_gun_by_phone
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.18.a
+		country_event = { id = RAPP.19 days = 13 }
+	}
+}
+
+country_event = {
+	id = RAPP.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.19"}
+	title = RAPP.19.t
+	desc = RAPP.19.desc
+	picture = GFX_report_event_NOV_vasily_shukshin_1
+
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.19.a
+		country_event = { id = RAPP.20 days = 2 }
+	}
+}
+
+country_event = {
+	id = RAPP.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event RAPP.20"}
+	title = RAPP.20.t
+	desc = RAPP.20.desc
+	picture = GFX_report_event_russian_flag
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RAPP.20.a
+	}
+}
+
+news_event = { # Rockets
+	id = Shukshin_News.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Shukshin_News.1"}
+	title = Shukshin_News.1.t
+	desc = Shukshin_News.1.desc
+	picture = GFX_news_russian_rocket
+	
+	is_triggered_only = yes
+
+	option = {
+		name = Shukshin_News.1.a
+		trigger = { tag = RUS }
+	}
+	option = {
+		name = Shukshin_News.1.b
+		trigger = { tag = USA }
+	}
+	option = {
+		name = Shukshin_News.1.b
+		trigger = { tag = GER }
+	}
+	option = {
+		name = Shukshin_News.1.b
+		trigger = { tag = JAP }
+	}
+	option = {
+		name = Shukshin_News.1.b
+		trigger = { 
+			NOT = { 
+				tag = RUS 
+				tag = USA 
+				tag = GER 
+				tag = JAP 
+			}
+		}
+	}
+}

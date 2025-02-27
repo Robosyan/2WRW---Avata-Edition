@@ -1,0 +1,1185 @@
+add_namespace = RUS_totalvictory
+add_namespace = RUS_victory
+#
+# Generic Peace Deals
+#
+country_event = {
+	#Just Moskowien
+	id = RUS_victory.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_victory.1"
+	}
+	title = RUS_victory.1.t
+	desc = RUS_victory.1.desc
+	picture = GFX_report_event_RUS_red_army_poster
+	is_triggered_only = yes
+	option = {
+		name = RUS_victory.1.a
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = OMS_Dmitry_Yazov
+					ruling_only = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_SWRW_PEACEDEAL
+						option = RUS_SWRW_PEACEDEAL_CAUCASUS
+					}
+					has_game_rule = {
+						rule = RUS_SWRW_PEACEDEAL
+						option = RUS_SWRW_PEACEDEAL_UKRAINE
+					}
+					has_game_rule = {
+						rule = RUS_SWRW_PEACEDEAL
+						option = RUS_SWRW_PEACEDEAL_FULL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_SWRW_PEACEDEAL
+						option = RUS_SWRW_PEACEDEAL_TOTAL_DEFEAT
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				original_tag = NOV
+				has_global_flag = RUS_shukshin_unification
+			}
+			RUS_shukshin_moskowien_occupation = yes
+			RUS_shukshin_petrograd_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+					}	
+				}
+				RUS_shukshin_central_asia_occupation = yes
+			}
+			hidden_effect = {
+				add_ideas = RUS_reconstruction_era
+				set_global_flag = RUS_no_caucasus
+				set_country_flag = NOV_peace_deal_1
+				set_global_flag = RUS_SWRW_Victory
+				set_global_flag = RUS_SWRW_End
+				clr_country_flag = RUS_SWRW_ongoing
+				load_focus_tree = {
+					tree = NOV_novosibirsk_victory_shukshin
+					keep_completed = no
+				}
+			}
+		}
+		else = {
+			RUS_generic_moskowien_occupation = yes
+			RUS_generic_petrograd_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+				    }	
+			    }
+			    RUS = {
+			        annex_country = {
+					    target = UTL
+					    transfer_troops = no
+				    }
+			    }	
+		    }
+			transfer_state = 2098
+		    transfer_state = 2099
+			set_global_flag = RUS_SWRW_Victory
+			set_global_flag = RUS_SWRW_End
+		}
+		hidden_effect = {
+			RUS = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 4
+				}
+				set_temp_variable = {
+					Victory_Points = 200
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = RUS_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			GER = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 2
+				}
+				set_temp_variable = {
+					Victory_Points = -200
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = GER_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			RUS = { RUS_remove_wargoals = yes }
+		}
+	}
+	option = {
+		name = RUS_victory.1.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_SWRW_PEACEDEAL
+					option = RUS_SWRW_PEACEDEAL_MOSCOW
+				}
+			}
+		}
+		set_temp_variable = {
+			temp_exhaustion = 1
+		}
+		WRW_add_war_exhaustion = yes
+	}
+}
+
+country_event = {
+	#Moscow and Caucasia
+	id = RUS_victory.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_victory.2"
+	}
+	title = RUS_victory.2.t
+	desc = RUS_victory.2.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	option = {
+		name = RUS_victory.2.a
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = OMS_Dmitry_Yazov
+					ruling_only = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_SWRW_PEACEDEAL
+						option = RUS_SWRW_PEACEDEAL_UKRAINE
+					}
+					has_game_rule = {
+						rule = RUS_SWRW_PEACEDEAL
+						option = RUS_SWRW_PEACEDEAL_FULL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_SWRW_PEACEDEAL
+						option = RUS_SWRW_PEACEDEAL_TOTAL_DEFEAT
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				original_tag = NOV
+				has_global_flag = RUS_shukshin_unification
+			}
+			RUS_shukshin_moskowien_occupation = yes
+			RUS_shukshin_petrograd_occupation = yes
+			RUS_shukshin_caucasian_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+					}	
+				}
+				RUS_shukshin_central_asia_occupation = yes
+			}
+			hidden_effect = {
+				add_ideas = RUS_reconstruction_era
+				set_country_flag = NOV_peace_deal_2
+				set_global_flag = RUS_SWRW_Victory
+				set_global_flag = RUS_SWRW_End
+				load_focus_tree = {
+					tree = NOV_novosibirsk_victory_shukshin
+					keep_completed = no
+				}
+				RUS_remove_wargoals = yes
+			}
+		}
+		else = {
+			RUS_generic_moskowien_occupation = yes
+			RUS_generic_petrograd_occupation = yes
+			RUS_generic_caucasian_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+				    }	
+			    }
+			    RUS = {
+			        annex_country = {
+					    target = UTL
+					    transfer_troops = no
+				    }
+			    }	
+		    }
+			transfer_state = 2098
+		    transfer_state = 2099
+			set_global_flag = RUS_SWRW_Victory
+			set_global_flag = RUS_SWRW_End
+		}
+		hidden_effect = {
+			RUS = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 4
+				}
+				set_temp_variable = {
+					Victory_Points = 250
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = RUS_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			GER = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 2
+				}
+				set_temp_variable = {
+					Victory_Points = -250
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = GER_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			RUS = { RUS_remove_wargoals = yes }
+		}
+	}
+	option = {
+		name = RUS_victory.2.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_SWRW_PEACEDEAL
+					option = RUS_SWRW_PEACEDEAL_CAUCASUS
+				}
+			}
+		}
+		set_temp_variable = {
+			temp_exhaustion = 2.5
+		}
+		WRW_add_war_exhaustion = yes
+	}
+}
+
+country_event = {
+	#Moscow Caucasia Ukraine
+	id = RUS_victory.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_victory.3"
+	}
+	title = RUS_victory.3.t
+	desc = RUS_victory.3.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	option = {
+		name = RUS_victory.3.a
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = OMS_Dmitry_Yazov
+					ruling_only = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = RUS_SWRW_PEACEDEAL
+						option = RUS_SWRW_PEACEDEAL_FULL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_SWRW_PEACEDEAL
+						option = RUS_SWRW_PEACEDEAL_FULL_VICTORY
+					}
+					has_game_rule = {
+						rule = RUS_SWRW_PEACEDEAL
+						option = RUS_SWRW_PEACEDEAL_TOTAL_DEFEAT
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				original_tag = NOV
+				has_global_flag = RUS_shukshin_unification
+			}
+			RUS_shukshin_moskowien_occupation = yes
+			RUS_shukshin_petrograd_occupation = yes
+			RUS_shukshin_caucasian_occupation = yes
+			RUS_shukshin_ukraine_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+					}	
+				}
+				RUS_shukshin_central_asia_occupation = yes
+			}
+			hidden_effect = {
+				add_ideas = RUS_reconstruction_era
+				set_country_flag = NOV_peace_deal_3
+				set_global_flag = RUS_SWRW_Victory
+				set_global_flag = RUS_SWRW_End
+				load_focus_tree = {
+					tree = NOV_novosibirsk_victory_shukshin
+					keep_completed = no
+				}
+				RUS_remove_wargoals = yes
+			}
+		}
+		else = {
+			RUS_generic_moskowien_occupation = yes
+			RUS_generic_petrograd_occupation = yes
+			RUS_generic_caucasian_occupation = yes
+			RUS_generic_ukraine_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+				    }	
+			    }
+			    RUS = {
+			        annex_country = {
+					    target = UTL
+					    transfer_troops = no
+				    }
+			    }	
+		    }
+			transfer_state = 2098
+		    transfer_state = 2099
+			set_global_flag = RUS_SWRW_Victory
+			set_global_flag = RUS_SWRW_End
+		}
+		hidden_effect = {
+			RUS = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 4
+				}
+				set_temp_variable = {
+					Victory_Points = 300
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = RUS_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			GER = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 2
+				}
+				set_temp_variable = {
+					Victory_Points = -300
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = GER_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			RUS = { RUS_remove_wargoals = yes }
+		}
+	}
+	option = {
+		name = RUS_victory.3.b
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_SWRW_PEACEDEAL
+					option = RUS_SWRW_PEACEDEAL_UKRAINE
+				}
+			}
+		}
+		set_temp_variable = {
+			temp_exhaustion = 5
+		}
+		WRW_add_war_exhaustion = yes
+	}
+}
+
+country_event = {
+	#Everything
+	id = RUS_victory.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_victory.4"
+	}
+	title = RUS_victory.4.t
+	desc = RUS_victory.4.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	option = {
+		name = RUS_victory.4.a
+		trigger = {
+			NOT = {
+				has_country_leader = {
+					character = OMS_Dmitry_Yazov
+					ruling_only = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_SWRW_PEACEDEAL
+					option = RUS_SWRW_PEACEDEAL_FULL_VICTORY
+				}
+				has_game_rule = {
+					rule = RUS_SWRW_PEACEDEAL
+					option = RUS_SWRW_PEACEDEAL_FULL_VICTORY
+				}
+				has_game_rule = {
+					rule = RUS_SWRW_PEACEDEAL
+					option = RUS_SWRW_PEACEDEAL_TOTAL_DEFEAT
+				}
+			}
+		}
+		RUS_generic_moskowien_occupation = yes
+		RUS_generic_petrograd_occupation = yes
+		RUS_generic_caucasian_occupation = yes
+		RUS_generic_ukraine_occupation = yes
+		RUS_generic_baltic_occupation = yes
+		RUS_generic_belarus_occupation = yes
+		if = {
+		    limit = {
+		       UTL = { 
+			        is_in_faction_with = GER 
+			    }	
+			}
+		    RUS = {
+			    annex_country = {
+				    target = UTL
+				    transfer_troops = no
+				    
+			    }	
+		    }
+		}	
+		set_global_flag = RUS_SWRW_Victory
+		set_global_flag = RUS_SWRW_End
+		RUS = {
+			set_temp_variable = { SeaZone_ID = 4 }	# 4; North Sea
+			Cold_War_GUI_PowerProjection_AddSeaZone = yes
+			set_temp_variable = {
+				Victory_ID = 97
+			}
+			set_temp_variable = {
+				Victory_Outcome = 5
+			}
+			set_temp_variable = {
+				Victory_Points = 400
+			}
+			transfer_state = 2098
+		    transfer_state = 2099
+			Cold_War_GUI_ManipulateVictory = yes
+			
+		}
+		hidden_effect = {
+			RUS = {
+				remove_dynamic_modifier = {
+					modifier = RUS_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			GER = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 1
+				}
+				set_temp_variable = {
+					Victory_Points = -400
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = GER_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+				set_country_flag = GER_SWRW_total_defeat
+				clr_country_flag = GER_cant_nuke_during_surrender_bozo
+			}
+			RUS = { RUS_remove_wargoals = yes }
+			HUN = { country_event = { id = NOV_postwar.101 days = 20 } }
+		}
+	}
+	option = {
+		name = RUS_victory.4.b
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = RUS_SWRW_PEACEDEAL
+					option = RUS_SWRW_PEACEDEAL_FULL_VICTORY
+				}
+			}
+		}
+		set_temp_variable = {
+			temp_exhaustion = 10
+		}
+		WRW_add_war_exhaustion = yes
+		GER = {
+			clr_country_flag = GER_cant_nuke_during_surrender_bozo
+		}
+	}
+}
+
+country_event = {
+	#L Bozo
+	id = RUS_victory.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_victory.5"
+	}
+	title = RUS_victory.5.t
+	desc = RUS_victory.5.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	option = {
+		name = RUS_victory.5.a
+		hidden_effect = {
+			clr_global_flag = RUS_SWRW_ongoing_global
+			if = {
+				limit = {
+					original_tag = NOV
+					has_global_flag = RUS_shukshin_unification
+				}
+				NOV = {
+					country_event = {
+						id = NOV_failure.6
+						days = 3
+					}
+				}
+			}
+			else = {
+				RUS_lost_war = yes
+				set_global_flag = RUS_SWRW_Fail
+				set_global_flag = RUS_SWRW_End
+			}
+			hidden_effect = {
+				RUS = {
+					set_temp_variable = {
+						Victory_ID = 97
+					}
+					set_temp_variable = {
+						Victory_Outcome = 1
+					}
+					set_temp_variable = {
+						Victory_Points = -500
+					}
+					Cold_War_GUI_ManipulateVictory = yes
+					remove_dynamic_modifier = {
+						modifier = RUS_war_exhaustion
+					}
+					remove_dynamic_modifier = {
+						modifier = WRW_tension
+					}
+					clr_country_flag = RUS_SWRW_ongoing
+					load_focus_tree = ZZZ_blank_focus
+				}
+				GER = {
+					set_temp_variable = {
+						Victory_ID = 97
+					}
+					set_temp_variable = {
+						Victory_Outcome = 4
+					}
+					set_temp_variable = {
+						Victory_Points = 200
+					}
+					Cold_War_GUI_ManipulateVictory = yes
+					remove_dynamic_modifier = {
+						modifier = GER_war_exhaustion
+					}
+					remove_dynamic_modifier = {
+						modifier = WRW_tension
+					}
+					clr_country_flag = RUS_SWRW_ongoing
+					add_to_faction = NOR 
+					add_to_faction = ROM 
+					add_to_faction = HUN
+				}
+				RUS = { RUS_remove_wargoals = yes }
+			}
+		}
+	}
+}
+
+### Acceptance Events ###
+country_event = {
+	#Just Moscow
+	id = RUS_victory.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_victory.6"
+	}
+	title = RUS_victory.6.t
+	desc = RUS_victory.6.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	option = {
+		name = RUS_victory.6.a
+		if = {
+			limit = {
+				original_tag = NOV
+				has_global_flag = RUS_shukshin_unification
+			}
+			RUS_shukshin_moskowien_occupation = yes
+			RUS_shukshin_petrograd_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+					}	
+				}
+				RUS_shukshin_central_asia_occupation = yes
+			}	
+			hidden_effect = {
+				add_ideas = RUS_reconstruction_era
+				set_global_flag = RUS_no_caucasus
+				set_country_flag = NOV_peace_deal_1
+				set_global_flag = RUS_SWRW_Victory
+				set_global_flag = RUS_SWRW_End
+				load_focus_tree = {
+					tree = NOV_novosibirsk_victory_shukshin
+					keep_completed = no
+				}
+				RUS_remove_wargoals = yes
+			}
+		}
+		else = {
+			RUS_generic_moskowien_occupation = yes
+			RUS_generic_petrograd_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+				    }	
+			    }
+			    RUS = {
+			        annex_country = {
+					    target = UTL
+					    transfer_troops = no
+				    }
+			    }	
+		    }
+			set_global_flag = RUS_SWRW_Victory
+			set_global_flag = RUS_SWRW_End
+		}
+		hidden_effect = {
+			RUS = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 4
+				}
+				set_temp_variable = {
+					Victory_Points = 200
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = RUS_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+				transfer_state = 2098
+		        transfer_state = 2099
+			}
+			GER = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 2
+				}
+				set_temp_variable = {
+					Victory_Points = -200
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = GER_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			RUS = { RUS_remove_wargoals = yes }
+		}
+	}
+}
+
+country_event = {
+	#Moscow and Caucasus
+	id = RUS_victory.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_victory.7"
+	}
+	title = RUS_victory.7.t
+	desc = RUS_victory.7.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	option = {
+		name = RUS_victory.7.a
+		if = {
+			limit = {
+				original_tag = NOV
+				has_global_flag = RUS_shukshin_unification
+			}
+			RUS_shukshin_moskowien_occupation = yes
+			RUS_shukshin_petrograd_occupation = yes
+			RUS_shukshin_caucasian_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+					}	
+				}
+				RUS_shukshin_central_asia_occupation = yes
+			}
+			hidden_effect = {
+				add_ideas = RUS_reconstruction_era
+				set_country_flag = NOV_peace_deal_2
+				set_global_flag = RUS_SWRW_Victory
+				set_global_flag = RUS_SWRW_End
+				load_focus_tree = {
+					tree = NOV_novosibirsk_victory_shukshin
+					keep_completed = no
+				}
+				RUS_remove_wargoals = yes
+			}
+		}
+		else = {
+			RUS_generic_moskowien_occupation = yes
+			RUS_generic_petrograd_occupation = yes
+			RUS_generic_caucasian_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+				    }	
+			    }
+			    RUS = {
+			        annex_country = {
+					    target = UTL
+					    transfer_troops = no
+				    }
+			    }	
+		    }
+			set_global_flag = RUS_SWRW_Victory
+			set_global_flag = RUS_SWRW_End
+		}
+		hidden_effect = {
+			RUS = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 4
+				}
+				set_temp_variable = {
+					Victory_Points = 250
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = RUS_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+				transfer_state = 2098
+		        transfer_state = 2099
+			}
+			GER = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 2
+				}
+				set_temp_variable = {
+					Victory_Points = -250
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = GER_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			RUS = { RUS_remove_wargoals = yes }
+		}
+	}
+}
+
+country_event = {
+	#Moscow Caucasus and Ukraine
+	id = RUS_victory.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_victory.8"
+	}
+	title = RUS_victory.8.t
+	desc = RUS_victory.8.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	option = {
+		name = RUS_victory.8.a
+		if = {
+			limit = {
+				original_tag = NOV
+				has_global_flag = RUS_shukshin_unification
+			}
+			RUS_shukshin_moskowien_occupation = yes
+			RUS_shukshin_petrograd_occupation = yes
+			RUS_shukshin_caucasian_occupation = yes
+			RUS_shukshin_ukraine_occupation = yes
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+					}	
+				}
+				RUS_shukshin_central_asia_occupation = yes
+			}
+			hidden_effect = {
+				add_ideas = RUS_reconstruction_era
+				set_country_flag = NOV_peace_deal_3
+				set_global_flag = RUS_SWRW_Victory
+				set_global_flag = RUS_SWRW_End
+				RUS_remove_wargoals = yes
+				load_focus_tree = {
+					tree = NOV_novosibirsk_victory_shukshin
+					keep_completed = no
+				}
+			}
+		}
+		else = {
+			RUS_generic_moskowien_occupation = yes
+			RUS_generic_petrograd_occupation = yes
+			RUS_generic_caucasian_occupation = yes
+			RUS_generic_ukraine_occupation = yes
+			set_global_flag = RUS_SWRW_Victory
+			set_global_flag = RUS_SWRW_End
+			if = {
+			    limit = {
+			        UTL = { 
+				        is_in_faction_with = GER 
+				    }	
+			    }
+			    RUS = {
+			        annex_country = {
+					    target = UTL
+					    transfer_troops = no
+				    }
+			    }	
+		    }
+		}
+		hidden_effect = {
+			RUS = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 4
+				}
+				set_temp_variable = {
+					Victory_Points = 300
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = RUS_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+				transfer_state = 2098
+		        transfer_state = 2099
+			}
+			GER = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 2
+				}
+				set_temp_variable = {
+					Victory_Points = -300
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = GER_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			RUS = { RUS_remove_wargoals = yes }
+		}
+	}
+}
+
+country_event = {
+	#Everything
+	id = RUS_victory.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_victory.9"
+	}
+	title = RUS_victory.9.t
+	desc = RUS_victory.9.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	option = {
+		name = RUS_victory.9.a
+		RUS_generic_moskowien_occupation = yes
+		RUS_generic_petrograd_occupation = yes
+		RUS_generic_caucasian_occupation = yes
+		RUS_generic_ukraine_occupation = yes
+		RUS_generic_baltic_occupation = yes
+		RUS_generic_belarus_occupation = yes
+		if = {
+			limit = {
+			    UTL = { 
+				    is_in_faction_with = GER 
+				}	
+			}
+			RUS = {
+			    annex_country = {
+					target = UTL
+					transfer_troops = no
+				}
+			}	
+		}
+		set_global_flag = RUS_SWRW_Victory
+		set_global_flag = RUS_SWRW_End
+		RUS = {
+			set_temp_variable = { SeaZone_ID = 4 }	# 4; North Sea
+			Cold_War_GUI_PowerProjection_AddSeaZone = yes
+			set_temp_variable = {
+				Victory_ID = 97
+			}
+			set_temp_variable = {
+				Victory_Outcome = 5
+			}
+			set_temp_variable = {
+				Victory_Points = 400
+			}
+			Cold_War_GUI_ManipulateVictory = yes
+			transfer_state = 2098
+		    transfer_state = 2099
+			
+		}
+		hidden_effect = {
+			RUS = {
+				remove_dynamic_modifier = {
+					modifier = RUS_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+			}
+			GER = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 1
+				}
+				set_temp_variable = {
+					Victory_Points = -400
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = GER_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+				set_country_flag = GER_SWRW_total_defeat
+				clr_country_flag = GER_cant_nuke_during_surrender_bozo
+			}
+			RUS = { RUS_remove_wargoals = yes }
+			HUN = { country_event = { id = NOV_postwar.101 days = 20 } }
+		}
+	}
+}
+
+# Total Victory Peace Deal
+country_event = {
+	# Shukshin
+	id = RUS_totalvictory.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event RUS_totalvictory.1"
+	}
+	title = RUS_totalvictory.1.t
+	desc = RUS_totalvictory.1.desc
+	picture = GFX_report_event_generic_peace_deal
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = RUS_totalvictory.1.a
+		RUS_shukshin_moskowien_occupation = yes
+		RUS_shukshin_petrograd_occupation = yes
+		RUS_shukshin_baltic_occupation = yes
+		RUS_shukshin_caucasian_occupation = yes
+		RUS_shukshin_ukraine_occupation = yes
+		RUS_shukshin_belarus_occupation = yes
+		if = {
+		    limit = {
+			    UTL = { 
+				    is_in_faction_with = GER 
+			    }	
+			}
+			RUS_shukshin_central_asia_occupation = yes
+		}
+		hidden_effect = {
+			RUS = {
+				set_temp_variable = { SeaZone_ID = 4 }	# 4; North Sea
+				Cold_War_GUI_PowerProjection_AddSeaZone = yes
+				if = {
+					limit = {
+						has_global_flag = shukshin_victory_iran
+						RUS = {
+							is_in_faction_with = IRC
+						}
+					}
+					set_temp_variable = { SeaZone_ID = 6 }	# 6; Indian Ocean
+					Cold_War_GUI_PowerProjection_AddSeaZone = yes
+				}
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 5
+				}
+				set_temp_variable = {
+					Victory_Points = 1500
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = RUS_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+				set_temp_variable = {
+					SeaZone_ID = 4
+				}				# 4; North Sea
+				Cold_War_GUI_PowerProjection_AddSeaZone = yes
+				econ_raise_max_credit_rating = yes
+				add_ideas = RUS_reconstruction_era
+				set_country_flag = NOV_peace_deal_4
+				set_global_flag = RUS_SWRW_Victory
+				set_global_flag = RUS_SWRW_End
+				transfer_state = 2098
+		        transfer_state = 2099
+				load_focus_tree = {
+					tree = NOV_novosibirsk_victory_shukshin
+					keep_completed = no
+				}
+				RUS_remove_wargoals = yes
+			}
+			GER = {
+				set_temp_variable = {
+					Victory_ID = 97
+				}
+				set_temp_variable = {
+					Victory_Outcome = 1
+				}
+				set_temp_variable = {
+					Victory_Points = -1500
+				}
+				Cold_War_GUI_ManipulateVictory = yes
+				remove_dynamic_modifier = {
+					modifier = GER_war_exhaustion
+				}
+				remove_dynamic_modifier = {
+					modifier = WRW_tension
+				}
+				clr_country_flag = RUS_SWRW_ongoing
+				set_country_flag = GER_SWRW_total_defeat
+				clr_country_flag = GER_cant_nuke_during_surrender_bozo
+			}
+			HUN = { country_event = { id = NOV_postwar.101 days = 20 } }
+		}
+	}
+}

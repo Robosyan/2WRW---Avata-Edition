@@ -1,0 +1,24 @@
+﻿l_english:
+
+  ### Terrains ###
+ 
+ novosibirsk:0 "Novosibirsk"
+ novosibirsk_desc:0 "§g--------------§!\n§LNovosibirsk’s name, “New Siberia”, perfectly encapsulates the rapid transformation of Russia’s eastern flank from a vast wasteland into the heart of Russian industry. In the 20s and 30s Novosibirsk received the lion’s share of funding through the Siberian Plan, enabling it to grow into an economic powerhouse. However, with the fall of the Union, the city’s blessings have twisted into curses. Overpopulation and a refugee crisis have left many impoverished and desperate, with only Barnaul’s grain keeping the city from the brink of anarchy. Drug abuse, radicalization, and expanding wealth inequality contribute to a growing underground of dissidents and criminals.\n\nToday the New Siberia has been consumed by mediocrity, as the last of her lands and natural resources are torn from her bleeding carcass. The citizenry cries louder and louder for change, even as its leadership grows deaf to the shrill screams of the Anarchy. The city of workers needs a hero, or it shall fall forever into the abyss.§!"
+ 
+ samara:0 "Samara"
+ samara_desc:0 "§g--------------§!\n§LThe lady of the twin banks has never fallen so low as she has today. Once, the Metropolitan of Moscow granted the city his blessing, and declared that by God and heaven its walls would never be conquered. Yet the jewel of the Volga has been forever tarnished by German bombs and Germans bullets, and by the mud-slick boots of turncoats. Samara groans under the whip of the traitor legions of KONR, crying out for liberation and freedom. Proud streets have been stained forever by dirt and blood. Palaces of labor, symbols of industry and Russian pride, have been put to the torch by unfeeling beasts. Schools, churches, homes and temples- all have been burnt to ash and cinders. Whatever the cause, every soul mouldering in Samara knows that God has turned away from them.§!"
+ 
+ ulanude:0 "Ulan-Ude" 
+ ulanude_desc:0 "§g--------------§!\n§LVerkhneudinsk, better known to its inhabitants as Ulan-Ude, sits on the shores of Lake Baikal like an infant clinging to its mother. Its crystal waters have nursed a hundred generation of Buryats. Once a crucial step on the trade routes between China and Russia, the collapse of the Union and the enslavement of the Middle Kingdom has left Ulan-Ude fallow and impoverished. But the Buryats, and their Russian neighbors, refuse to rot under the ever dull Sun. The city has ignited into a hotbed of leftist agitation in the Far East. Independent trade unions and Leninist youth councils have seized the dilapidated streets, transforming Ulan-Ude overnight. Only a titanic effort, conducted with the precision of a surgeon, could hope to dislodge the seed of a new October Revolution.§!"
+ 
+ perm:0 "Permhaym"
+ perm_desc:0 "§g--------------§!\n§LThe West Russian War has left many scars on Russia, but no city east of the borders of the Reich has scars deeper than Perm. Renamed Permhaym under the rule of the Arische Bruderschaft, the once beautiful city has been ravaged, bearing no similarity to the Perm that once lay in its stead.\n\nThe buildings are crumbling, infrastructure is almost nonexistent, and any attempts to rebuild it would only service the upper class that brutally rules over its meager population. Perm is almost unrecognizable when compared to the industry city that had once fueled the Soviet war effort for throughout the Great Patriotic War.§!"
+ 
+ vyatka:0 "Vyatka"
+ vyatka_des:0 " "
+ 
+ yekaterinburg:0 "Sverdlovsk"
+ 
+ omsk:0 "Omsk"
+ 
+ irkutsk:0 "Irkutsk"

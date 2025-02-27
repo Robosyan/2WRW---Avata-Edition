@@ -1,0 +1,124 @@
+SWRW_Mongolia_category = {
+	
+	MON_demand_japanese_surrender = {
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		allowed = {
+			original_tag = MON
+		}
+			
+		visible = {
+			country_exists = MON
+			country_exists = RUS
+			has_global_flag = RUS_MONGOLIAN_REBELLION
+		}
+		
+		available = {
+			has_war = yes
+			815 = { is_controlled_by = MON }
+		}
+
+		fire_only_once = yes
+
+		#days_re_enable = 75
+
+		#cost = 35
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: MON_demand_japanese_surrender "
+			
+			hidden_effect = {
+				white_peace = MEN
+				transfer_state = 2405
+				transfer_state = 815
+				econ_join_sphere_RUS = yes
+				
+				815 = {
+					add_core_of = MON
+				}	
+				2405 = {
+					add_core_of = MON
+				}
+				RUS = { 
+					add_to_faction  = MON 
+				}
+				MEN = {
+					get_current_government_type = yes
+					save_party_popularities = yes
+				}
+				CHI = {
+					add_to_faction = MEN
+					set_autonomy = {
+						target = MEN
+						autonomy_state = autonomy_china_warlord_regime
+					}
+				}
+				MEN = {
+					restore_previous_government_type = yes
+					apply_party_popularities = yes
+				}
+				MON = {
+					if = {
+						limit = {
+							MON = { is_in_faction_with = USA }
+						}
+						add_ideas = OFN_Independent_Member
+					}	
+					else = {
+						add_ideas = CSTO_Member
+					}
+				}
+				NOV_Global_Conflict_Helper = yes
+			}
+		}
+	}
+	
+	MON_join_russian_alliance = {
+
+		ai_will_do = {
+			factor = 100
+		}
+		
+		allowed = {
+			original_tag = MON
+		}
+			
+		visible = {
+			country_exists = RUS
+			NOT = { has_global_flag = RUS_MONGOLIAN_REBELLION }
+		}
+		
+		available = {
+			#
+		}
+
+		fire_only_once = yes
+
+		#days_re_enable = 75
+
+		cost = 50
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: MON_join_russian_alliance "
+			
+			RUS = { 
+				add_to_faction = MON 
+			}
+			econ_join_sphere_RUS = yes
+			MON = {
+				if = {
+					limit = {
+						MON = { is_in_faction_with = USA }
+					}
+					add_ideas = OFN_Independent_Member
+				}	
+				else = {
+					add_ideas = CSTO_Member
+				}
+			}
+		}
+	}
+}

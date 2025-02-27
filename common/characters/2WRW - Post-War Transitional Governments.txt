@@ -1,0 +1,125 @@
+characters = {
+	## EASTERN EUROPE
+	
+	# NOVOSIBIRSK
+
+	RDC_Alexander_Novikov = {
+		name = NOV_Alexander_Novikov
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Alexander_Novikov.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	CAU_Mikhail_Baganov = {
+		name = NOV_Mikhail_Baganov
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Mikhail_Baganov.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	UKR_Dmitry_Glinka = {
+		name = NOV_Dmitry_Glinka
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Dmitry_Glinka.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	CRI_Matvei_Batrakov = {
+		name = NOV_Matvei_Batrakov
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Matvei_Batrakov.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	OST_Nikolay_Skomorokhov = {
+		name = NOV_Nikolay_Skomorokhov
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Nikolay_Skomorokhov.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	BLR_Boris_Fulik = {
+		name = NOV_Boris_Fulik
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Boris_Fulik.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	PAU_Nestor_Kozin = {
+		name = NOV_Nestor_Kozin
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Nestor_Kozin.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+
+	OKB_Mikhail_Evseev = {
+		name = NOV_Mikhail_Evseev
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/NOV/Portrait_Novosibirsk_Mikhail_Evseev.png"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+}

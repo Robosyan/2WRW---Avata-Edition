@@ -1,0 +1,163 @@
+### Polska! ###
+
+RUS_shukshin_return_of_the_exiles = {
+	XXX = {
+		POL_Alfred_Urbanski = { set_nationality = POL }
+		POL_Edward_Gierek = { set_nationality = POL }
+		POL_Edward_Raczynski = { set_nationality = POL }
+		POL_Kazimierz_Sabbat = { set_nationality = POL }
+		POL_Swiatlo_Jozef = { set_nationality = POL }
+	}
+	set_variable = { 407.nationality = 180 }
+	POL = {
+		set_cosmetic_tag = POL_Republic
+			
+		remove_ideas = {
+			POL_armia_krajowa
+			POL_nowa_polska_volunteers
+		}
+			
+		add_ideas = {
+			POL_winds_of_change_idea
+			
+			POL_Edward_Gierek_hog
+			POL_Edward_Raczynski_for
+			POL_Kazimierz_Sabbat_eco
+			POL_Swiatlo_Jozef_sec
+		}
+		
+		set_politics = {
+			ruling_party = progressivism
+			elections_allowed = yes
+		}
+			
+		set_party_name = { 
+			ideology = progressivism 
+			long_name = POL_SWRW_progressivism_party_long
+			name = POL_SWRW_progressivism_party
+		}
+		set_party_name = { 
+			ideology = national_socialism 
+			long_name = POL_collab_national_socialism_long
+			name = POL_collab_national_socialism
+		}
+		set_party_name = { 
+			ideology = fascism 
+			long_name = POL_SWRW_fascism_party_long
+			name = POL_SWRW_fascism_party
+		}
+		
+		set_popularities = {
+			conservatism = 22
+			progressivism = 34
+			liberalism = 12
+			communist = 27
+			national_socialism = 3
+			fascism = 2
+		}
+		promote_character = POL_Alfred_Urbanski
+	}
+}
+
+SWRW_Speer_Poland_Helper = {
+	if = {
+		limit = { POL = { has_government = national_socialism } }
+		POL = { 
+			drop_cosmetic_tag = yes
+			leave_zollverein = yes
+			remove_ideas = Pakt_Reichsland
+			set_politics = {
+				ruling_party = paternalism
+				elections_allowed = no
+			}
+		}
+		POL = {
+			POL_Adam_Baworowski = { 
+				set_nationality = GGN 
+			} 
+		}
+		every_state = {
+			limit = { is_owned_by = POL }
+			transfer_state_to = GGN
+		}
+		GGN = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			promote_character = POL_Adam_Baworowski
+			set_popularities = {
+				national_socialism = 60
+				national_socialism_1 = 10
+				paternalism = 30
+			}
+			set_party_name = {
+				ideology = national_socialism
+				long_name = POL_collab_fascism_long
+				name = POL_collab_fascism
+			}
+			set_party_name = {
+				ideology = national_socialism_1
+				long_name = POL_collab_national_socialism_long
+				name = POL_collab_national_socialism
+			}
+			add_ideas = Pakt_Reichsland
+			join_zollverein = yes
+			set_cosmetic_tag = POL_SGR2
+			set_capital = { state = 10 }
+		}
+	}
+	else = {
+		POL = { 
+			drop_cosmetic_tag = yes
+			leave_zollverein = yes
+			remove_ideas = Pakt_Mitstreiter
+			remove_ideas = Pakt_Marionettenstaat
+		}
+		POL = {
+			POL_Stanislaw_Wachowiak = { 
+				set_nationality = GGN 
+			} 
+		}
+		every_state = {
+			limit = { is_owned_by = POL }
+			transfer_state_to = GGN
+		}
+		GGN = {
+			set_politics = {
+				ruling_party = paternalism
+				elections_allowed = no
+			}
+			promote_character = POL_Stanislaw_Wachowiak
+			set_popularities = {
+				paternalism = 40
+				conservatism = 5
+				progressivism = 5
+				fascism = 35
+				national_socialism = 15
+			}
+			set_party_name = {
+				ideology = paternalism
+				long_name = POL_paternalism_party_long
+				name = POL_paternalism_party
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = POL_collab_fascism_long
+				name = POL_collab_fascism
+			}
+			set_party_name = {
+				ideology = national_socialism
+				long_name = POL_collab_national_socialism_long
+				name = POL_collab_national_socialism
+			}
+			add_ideas = Pakt_Mitstreiter
+			add_ideas = Pakt_Marionettenstaat
+			join_zollverein = yes
+			set_cosmetic_tag = POL_SGR
+			set_capital = { state = 10 }
+		}
+	}
+
+	SWRW_start_polish_uprising = yes
+}

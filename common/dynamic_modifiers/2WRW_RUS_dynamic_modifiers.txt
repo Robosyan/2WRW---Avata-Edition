@@ -1,0 +1,32 @@
+RUS_chain_of_command = {
+    icon = GFX_idea_generic_bloated_high_command
+    enable = { always = yes }
+	remove_trigger = { always = no }
+    
+    army_armor_attack_factor = RUS_coc_armor_attack
+    army_armor_speed_factor = RUS_coc_armor_speed
+    army_attack_factor = RUS_coc_attack
+    army_infantry_attack_factor = RUS_coc_infantry_attack
+    army_morale_factor = RUS_coc_recovery
+    army_org = RUS_coc_org
+    breakthrough_factor = RUS_coc_breakthrough
+    encryption_factor = RUS_coc_encryption
+    land_reinforce_rate = RUS_coc_reinforce_rate
+    max_dig_in = RUS_coc_max_entrenchment
+    mechanized_defence_factor = RUS_coc_mech_defence
+    motorized_attack_factor = RUS_coc_mot_attack
+    motorized_defence_factor = RUS_coc_mot_defence
+    recon_factor_while_entrenched = RUS_coc_recon_entrenched
+    supply_consumption_factor = RUS_coc_supply_consumption
+    weekly_manpower = RUS_coc_weekly_manpower
+}
+
+SWRW_nuclear_program_Additional_Cost = {
+    icon = "GFX_idea_generic_robust_safety_net"
+    enable = { always = yes }
+	remove_trigger = { always = no }
+    
+    political_power_cost = Nuclear_PP_Extra_Cost_True
+    research_speed_factor = Nuclear_Research_Extra_Cost_True
+    misc_costs_modifier = Nuclear_Money_Extra_Cost_True
+}

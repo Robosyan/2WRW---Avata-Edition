@@ -1,0 +1,346 @@
+guiTypes = {
+	containerWindowType = {
+		name = "SWRW_nuclear_program"
+		size = { width = 400 height = 50 }
+		position = { x = 0 y = 25 }
+
+		buttonType = {
+			name = "Decision_Program_Access_Button"
+			spriteType = "GFX_Decision_Program_Access_Button"
+			position = { x = 20 y = 10 }
+			buttonFont = "aldrich_32_outline"
+			text = "Decision_Program_Access_Button_TEXT"
+		}
+	}
+}
+
+# Nuclear Program Interface itself
+guiTypes = {
+	containerWindowType = {
+		name = "SWRW_nuclear_program_GUI"
+		size = { width = 821 height = 624 }
+		position = { x = 550 y = 125 }
+		clipping = no
+		moveable = yes
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_1b_no_border"
+		}
+		iconType = {
+			name = "Nuclear_Program_BG"
+			spriteType = "GFX_Nuclear_Program_BG"
+			position = { x = 9 y = 13 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "Nuclear_Program_Right_BG"
+			spriteType = "GFX_Nuclear_Program_Stage_Right_BG"
+			position = { x = 405 y = 71 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "Nuclear_Program_Stage_Images"
+			spriteType = "GFX_Nuclear_Program_Stage_Images"
+			position = { x = 42 y = 144 }
+		}
+		iconType = {
+			name = "Nuclear_Program_Progressbar_Current"
+			spriteType = "GFX_Nuclear_Program_Progressbar_Big"
+			position = { x = 229 y = 316 }
+			pdx_tooltip = "Nuclear_Program_Progressbar_Current_tt"
+		}
+		iconType = {
+			name = "info_button"
+			position = { x = 15 y = 19 }
+			quadTextureSprite = "GFX_Decision_Program_Info_Button"
+			pdx_tooltip = "Nuclear_Program_Info_tt"
+		}
+		instantTextBoxType = {
+			name = "Nuclear_Program_Title"
+			position = { x = 200 y = 26 }
+			font = "aldrich_36_outline"
+			text = "[RUSGetNuclearProgramName]"
+			format = center
+			maxWidth = 400
+		}
+		buttonType = {
+			name = "Nuclear_Program_Stage_Minus"
+			spriteType = "GFX_Nuclear_Program_Stage_Minus"
+			position = { x = 45 y = 81 }
+		}
+		buttonType = {
+			name = "Nuclear_Program_Stage_Add"
+			spriteType = "GFX_Nuclear_Program_Stage_Add"
+			position = { x = 167 y = 81 }
+		}
+		instantTextBoxType = {
+			name = "Nuclear_Stages_Title"
+			position = { x = 11 y = 390 }
+			font = "aldrich_20_outline"
+			text = "Nuclear_Stages_Title"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name = "Nuclear_Current_Stage"
+			position = { x = 12 y = 77 }
+			font = "aldrich_20_outline"
+			text = "[SWRW_GetCurrentStage]"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name = "Nuclear_Current_Stage_long"
+			position = { x = 12 y = 96 }
+			font = "aldrich_24_outline"
+			text = "[SWRW_GetCurrentStagelong]"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name = "Nuclear_Current_Stage_desc"
+			position = { x = 12 y = 300 }
+			font = "aldrich_16_outline"
+			text = "[SWRW_GetCurrentStageDesc]"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name = "Invest_Title"
+			position = { x = 213 y = 85 }
+			font = "aldrich_28_outline"
+			text = "Invest_Title"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name = "Political_Power_Investment_Title"
+			position = { x = 210 y = 133 }
+			font = "aldrich_20_outline"
+			text = "Political_Power_Investment_Title"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name = "Research_Investment_Title"
+			position = { x = 210 y = 183 }
+			font = "aldrich_20_outline"
+			text = "Research_Investment_Title"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name = "Money_Investment_Title"
+			position = { x = 210 y = 233 }
+			font = "aldrich_20_outline"
+			text = "Money_Investment_Title"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name = "Interactions_Title"
+			position = { x = 225 y = 392 }
+			font = "aldrich_28_outline"
+			text = "Interactions_Title"
+			format = center
+			maxWidth = 575
+		}
+		### LAZY FOR ARRAYS ###
+		buttonType = {
+			name = "Nuclear_Program_Invest_Minus_PP"
+			spriteType = "GFX_Nuclear_Program_Invest_Minus"
+			position = { x = 231 y = 127 }
+			pdx_tooltip = "Nuclear_Program_Invest_PP_tt"
+		}
+		buttonType = {
+			name = "Nuclear_Program_Invest_Minus_Research"
+			spriteType = "GFX_Nuclear_Program_Invest_Minus"
+			position = { x = 231 y = 177 }
+			pdx_tooltip = "Nuclear_Program_Invest_Research_tt"
+		}
+		buttonType = {
+			name = "Nuclear_Program_Invest_Minus_Money"
+			spriteType = "GFX_Nuclear_Program_Invest_Minus"
+			position = { x = 231 y = 227 }
+			pdx_tooltip = "Nuclear_Program_Invest_Money_tt"
+		}
+		buttonType = {
+			name = "Nuclear_Program_Invest_Add_PP"
+			spriteType = "GFX_Nuclear_Program_Invest_Add"
+			position = { x = 361 y = 127 }
+			pdx_tooltip = "Nuclear_Program_Invest_PP_tt"
+		}
+		buttonType = {
+			name = "Nuclear_Program_Invest_Add_Research"
+			spriteType = "GFX_Nuclear_Program_Invest_Add"
+			position = { x = 361 y = 177 }
+			pdx_tooltip = "Nuclear_Program_Invest_Research_tt"
+		}
+		buttonType = {
+			name = "Nuclear_Program_Invest_Add_Money"
+			spriteType = "GFX_Nuclear_Program_Invest_Add"
+			position = { x = 361 y = 227 }
+			pdx_tooltip = "Nuclear_Program_Invest_Money_tt"
+		}
+		buttonType = {
+			name = "Nuclear_Program_Interaction_Option_1"
+			spriteType = "GFX_Nuclear_Program_Interaction_Button"
+			position = { x = 243 y = 431 }
+			buttonFont = "aldrich_18_outline"
+			text = "Nuclear_Program_Interaction_Option_1"
+			pdx_tooltip = "Nuclear_Program_Interaction_Option_1_tt"
+		}
+		buttonType = {
+			name = "Nuclear_Program_Interaction_Option_2"
+			spriteType = "GFX_Nuclear_Program_Interaction_Button"
+			position = { x = 522 y = 431 }
+			buttonFont = "aldrich_18_outline"
+			text = "Nuclear_Program_Interaction_Option_2"
+			pdx_tooltip = "Nuclear_Program_Interaction_Option_2_tt"
+		}
+		buttonType = {
+			name = "Nuclear_Program_Interaction_Option_3"
+			spriteType = "GFX_Nuclear_Program_Interaction_Button"
+			position = { x = 243 y = 519 }
+			buttonFont = "aldrich_18_outline"
+			text = "Nuclear_Program_Interaction_Option_3"
+			pdx_tooltip = "Nuclear_Program_Interaction_Option_3_tt"
+		}
+		buttonType = {
+			name = "Nuclear_Program_Interaction_Option_4"
+			spriteType = "GFX_Nuclear_Program_Interaction_Button"
+			position = { x = 522 y = 519 }
+			buttonFont = "aldrich_18_outline"
+			text = "Nuclear_Program_Interaction_Option_4"
+			pdx_tooltip = "Nuclear_Program_Interaction_Option_4_tt"
+		}
+		iconType = {
+			name = "Nuclear_Program_Monthly_Increase_Fast"
+			position = { x = 230 y = 355 }
+			quadTextureSprite = "GFX_NOV_arrow_right_3"
+		}
+		iconType = {
+			name = "Nuclear_Program_Monthly_Increase"
+			position = { x = 230 y = 355 }
+			quadTextureSprite = "GFX_NOV_arrow_right_2"
+		}
+		iconType = {
+			name = "Nuclear_Program_Monthly_Increase_Slow"
+			position = { x = 230 y = 355 }
+			quadTextureSprite = "GFX_NOV_arrow_right_1"
+		}
+		iconType = {
+			name = "Nuclear_Program_Monthly_Decrease_Slow"
+			position = { x = 230 y = 355 }
+			quadTextureSprite = "GFX_NOV_arrow_left_1"
+		}
+		iconType = {
+			name = "Nuclear_Program_Monthly_Decrease"
+			position = { x = 230 y = 355 }
+			quadTextureSprite = "GFX_NOV_arrow_left_2"
+		}
+		iconType = {
+			name = "Nuclear_Program_Monthly_Decrease_Fast"
+			position = { x = 230 y = 355 }
+			quadTextureSprite = "GFX_NOV_arrow_left_3"
+		}
+		containerWindowType = {
+			name = "SWRW_Nuclear_Stage_Window"
+			position = { x = 16 y = 400 }
+	
+			containerWindowType = {
+				name = "SWRW_Nuclear_Stage_list_window"
+				position = { x = 0 y = 0 }
+				size = { width = 154 height = 210 }
+	
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+					#quadTextureSprite = "GFX_tiled_window_thin_border2"
+				}
+
+				containerWindowType = {
+					name = "SWRW_Nuclear_Stages_container"
+					position = { x = 0 y = 30 }
+					iconType = { 
+						name = "Nuclear_Program_Stage_Small_Progressbar_Frame_1"
+						quadTextureSprite = "GFX_Nuclear_Program_Stage_Small_Progressbar_Frame"
+						position = { x = 0 y = 0 }
+					}
+					iconType = { 
+						name = "Nuclear_Program_Progressbar_Small_1"
+						quadTextureSprite = "GFX_Nuclear_Program_Progressbar_Small"
+						position = { x = 2 y = 6 }
+						pdx_tooltip = "Nuclear_Program_Progressbar_Small_1_tt"
+					}
+					iconType = { 
+						name = "Nuclear_Program_Stage_Small_Progressbar_Frame_2"
+						quadTextureSprite = "GFX_Nuclear_Program_Stage_Small_Progressbar_Frame"
+						position = { x = 0 y = 39 }
+					}
+					iconType = { 
+						name = "Nuclear_Program_Progressbar_Small_2"
+						quadTextureSprite = "GFX_Nuclear_Program_Progressbar_Small"
+						position = { x = 2 y = 45 }
+						pdx_tooltip = "Nuclear_Program_Progressbar_Small_2_tt"
+					}
+					iconType = { 
+						name = "Nuclear_Program_Stage_Small_Progressbar_Frame_3"
+						quadTextureSprite = "GFX_Nuclear_Program_Stage_Small_Progressbar_Frame"
+						position = { x = 0 y = 78 }
+					}
+					iconType = { 
+						name = "Nuclear_Program_Progressbar_Small_3"
+						quadTextureSprite = "GFX_Nuclear_Program_Progressbar_Small"
+						position = { x = 2 y = 84 }
+						pdx_tooltip = "Nuclear_Program_Progressbar_Small_3_tt"
+					}
+					iconType = { 
+						name = "Nuclear_Program_Stage_Small_Progressbar_Frame_4"
+						quadTextureSprite = "GFX_Nuclear_Program_Stage_Small_Progressbar_Frame"
+						position = { x = 0 y = 117 }
+					}
+					iconType = { 
+						name = "Nuclear_Program_Progressbar_Small_4"
+						quadTextureSprite = "GFX_Nuclear_Program_Progressbar_Small"
+						position = { x = 2 y = 123 }
+						pdx_tooltip = "Nuclear_Program_Progressbar_Small_4_tt"
+					}
+					iconType = { 
+						name = "Nuclear_Program_Stage_Small_Progressbar_Frame_5"
+						quadTextureSprite = "GFX_Nuclear_Program_Stage_Small_Progressbar_Frame"
+						position = { x = 0 y = 156 }
+					}
+					iconType = { 
+						name = "Nuclear_Program_Progressbar_Small_5"
+						quadTextureSprite = "GFX_Nuclear_Program_Progressbar_Small"
+						position = { x = 2 y = 162 }
+						pdx_tooltip = "Nuclear_Program_Progressbar_Small_5_tt"
+					}
+					instantTextBoxType = {
+						name = "Nuclear_Stages_Small_Title"
+						position = { x = -1 y = -14 }
+						font = "aldrich_20_outline"
+						text = "[SWRW_GetNuclearStage]"
+						format = left
+						maxWidth = 100
+					}
+				}
+			}
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = 758 y = 19 }
+			quadTextureSprite = "GFX_Decision_Program_Exit_Button"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}

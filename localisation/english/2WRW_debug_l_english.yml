@@ -1,0 +1,52 @@
+﻿l_english:
+ leader_streng_geheim: "§xSTRENG GEHEIM§!"
+ leader_streng_geheim_desc: "WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE WHAT HAVE YOU DONE"
+ SWRW_ArcadeMode_Dont_touch: "Do not touch this"
+ SWRW_ArcadeMode_Dont_touch_desc: "Seriously don't"
+
+ SWRW_ArcadeMode_funni: "Achieve funni (fehlinger edition)"
+ SWRW_ArcadeMode_Replace_Klopfer: "Replace Klopfer"
+ SWRW_ArcadeMode_save_britain: "Save Britain"
+ SWRW_ArcadeMode_save_britain_desc: "Britain has fallen into dark times, and there is only §VOne Man§! that can save the country"
+ SWRW_ArcadeMode_save_america: "Restore §VThe Glory Of America§!"
+ SWRW_ArcadeMode_save_america_desc: "'Oh, I don't relish this decision. If there was another way - but there isn't. No price is too high for the survival of the §VAmerican Race§!. If you were §VHuman§!, you'd feel the same way.'"
+
+ SWRW_ArcadeMode_batov: "Batov"
+ SWRW_ArcadeMode_batov_desc: "Batov"
+ leader_dick_desc: "Born in 224- I mean... Er... 1939 (sounds good enough?) Richard "Dick" Richardson was always a man who fought for the good old 'Merica he loved so much. After the failure of the Allied powers in WW2 (atleast we aren't speaking German!!), he knew that the REAL reason Amerika lost was because it lacked The SOVL.... The HART... The TRVTH which the ((((bankers)))) (anybody he doesn't agree with), the liverals and cummies (advocates for basic healthcare) stole from his country and er... More questions you better not ask!(Cuz leftists have no answer), He has moved against the woke NPP and allied with the new faction of the Republican party, the §VEnclave§!, to put a end to the weak system of democracy and restore the real §VAmerica, once and for all.§!\n\nThis is garry, stop fucking with the console zoomer\n\nor play fallout 2, it's a great game :)"
+
+
+ GER_turkish_people: "Gunther Fehlinger"
+ the_garaet_negotshiator: "The Garaet Negotshiator"
+
+ TNO_TURKES_KENES_OVER_OVER_tt: "Turkes Kenes has concluded"
+ CA_Turkes_Kenes_Apathy: "Apathy towards Turkes Kenes" #This one is from TNO
+
+ #decisions
+ 
+ NOV_SWRW_debug_category:0 "SWRW Debug Category"
+ SWRW_Add_Russia_To_Cold_War_GUI:0 "Add Russia to the Cold War Interface"
+ SWRW_poland_test:0 "Speer Poland Test"
+ SWRW_poland_tes2t:0 "Speer Poland Test 2"
+ SWRW_World_Removal_Test:0 "Remove §xEvery§! Victory Point"
+ SWRW_World_Removal_Test_desc:0 "Insert funni end times reference here (I hate the end times)"
+ WRW_Japanse_Invasion_of_Madagascar:0 "Spawn Japanese Madagascar"
+ WRW_Japanse_Invasion_of_Madagascar_desc:0 "Runs JAP_MDG_Rename, JAP_Colonial_Restructuring and JAP_MAR_Seizure"
+ SWRW_poland_uprising_switch:0 "Poland Uprising Switch"
+ SWRW_poland_uprising_switch_desc:0 "Tag switch for the polish uprising"
+ SWRW_nuclear_test:0 "Start SWRW Nuclear Program"
+ NOV_newcredit_test:0 "Roll Credits"
+ SWRW_super_event_test:0 "Test Super Event"
+ SWRW_load_german_tree_test:0 "Load §YSWRW German War Tree§!"
+ SWRW_load_auth_tree_test:0 "Load §YGeneric Authoritarian Unifier War Tree§!"
+ SWRW_load_commie_tree_test:0 "Load §YGeneric Communist Unifier War Tree§!"
+ SWRW_load_dem_tree_test:0 "Load §YGeneric Democratic Unifier War Tree§!"
+ SWRW_load_fash_tree_test:0 "Load §YGeneric Fascist Unifier War Tree§!"
+ SWRW_German_Spring:0 "Begin the §YGerman Spring§!"
+ SWRW_load_2GCW_events:0 "Start the §Y2GCW Event Chain§!"
+ SWRW_hungary_prepare:0 "Start the §YPost-SWRW Hungarian Coup§!"
+ SWRW_hungary_uprising:0 "Start the §YHungarian Civil War§!"
+ SWRW_Balkan_commie:0 "Form the §YBalkan Internationale§!"
+ SWRW_Danish_Spring_start:0 "Start the §YDanish Spring§!"
+ SWRW_Dutch_Revolution_start:0 "Start the §YDutch Revolution§!"
+ NOV_nuke_test:0 "Give §xNuclear Weapons§!"

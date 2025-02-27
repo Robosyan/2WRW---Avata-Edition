@@ -1,0 +1,15 @@
+﻿l_english:
+ 
+ MOS_language_problem_russia:0 "Language Problem"
+ MOS_language_problem_russia_desc:0 "The aftermath of World War II has left west Russia grappling with a challenge - an influx of German settlers who have established a presence in major cities. Hitler's will redrew not only the geopolitical map, but linguistical as well and as a consequence, Moscow's reconstruction government finds itself contending with two very different languages and cultures that have made resettlement far more complex, as the region strives to reconcile its historical roots it will take many years before the new western government fully decolonises Moscow, much less a more effective example of German influence such as Sankt Petersburg."
+ 
+ MOS_war_torn_region: "War Torn Region - Legacy Of The GPO"
+ MOS_war_torn_region_desc:0 "Western Russia was the heart of the conflict between [RUS.GetNameDef] and Germany. The once-majestic seat of the Slavic world, now bears the indelible scars of war. The city that went through hell still stands despite it's trials, but its once-grand infrastructure and vibrant German settler neighborhoods now stand as empty shells, haunting reminders of the conflict that engulfed the region. It will take a long time for the scarred region to heal. Russia may of won the war, but if it can hold a candle to peace remains to be seen."
+ 
+ MOS_rural_state:0 "Rural State"
+ MOS_rural_state_desc: "Reichskommissariat Moskowien, like all German colonies was supposed to be a perfect paradise for the Aryan until reality reared it's ugly head, and as such the scope of such a project became much simpler, and suddenly Moskowien was intended for two things: to put Russian slaves in factories and German farmers to soil. No time or effort was spent to develop the cities beyond the German settlements (or the prison camps) leading to it's total, bloody 'dissolution' after the death of Hitler putting a end to any major roads. As a result Moscow is a poor and miserable place, with some of the lowest GDP per capita in Europe. Like the serf generations of old, Russian Muscovites struggle, barely living in what was once a place of wealth and power."
+ 
+ # Political Parties Name Changes
+ 
+ MOS_Novosibirsk_Administration_long:0 "The West Russian All-Russian Military Administration"
+ MOS_Novosibirsk_Administration_short:0 "ARMA (WR)"

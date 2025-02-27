@@ -1,0 +1,100 @@
+guiTypes = {
+	containerWindowType = {
+		name = "RUS_Far_East_Negotiations_GUI"
+		size = { width = 525 height = 375 }
+		position = { x = 200 y = 150 }
+		
+		# Phases
+		
+		# States
+		
+		iconType = {
+			name = "RUS_birobidzhan_state_highlighted"
+			position = { x = 143 y = 1 }
+			spriteType = "GFX_birobidzhan_lote_state_highlighted"
+			scale = 1
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "RUS_primorsky_state_highlighted"
+			position = { x = 188 y = 45 }
+			spriteType = "GFX_primorsky_lote_state_highlighted"
+			scale = 1
+			alwaystransparent = yes
+		}
+		
+		# Dark
+		iconType = {
+			name = "RUS_primorsky_lote_state_dark"
+			position = { x = 188 y = 45 }
+			spriteType = "GFX_primorsky_lote_state_dark"
+			scale = 1
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "RUS_vladivostok_lote_state_dark"
+			position = { x = 208 y = 234 }
+			spriteType = "GFX_vladivostok_lote_state_dark"
+			scale = 1
+			alwaystransparent = yes
+		}
+
+		# Owned
+		iconType = {
+			name = "RUS_birobidzhan_state_owned"
+			position = { x = 143 y = 1 }
+			spriteType = "GFX_birobidzhan_lote_rus"
+			scale = 1
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "RUS_primorsky_state_owned"
+			position = { x = 188 y = 45 }
+			spriteType = "GFX_primorsky_lote_rus"
+			scale = 1
+			alwaystransparent = yes
+		}
+
+		# Map
+		iconType = {
+			name = "RUS_Far_East_Negotiations_Map"
+			position = { x = 142 y = 0 }
+			spriteType = "GFX_lord_of_the_east_map_outline"
+			scale = 1
+			alwaystransparent = yes
+		}
+		
+		# Text
+		
+		instantTextBoxType = {
+			name = "RUS_negotiation_phase"
+			position = { x = -300 y = 90 }
+			font = "aldrich_32_outline"
+			text = "[GetRUSLoteCurrentIssue]"
+			format = center
+			Orientation = CENTER
+			maxWidth = 600
+		}
+		
+		instantTextBoxType = {
+			name = "RUS_russian_leverage_negotiations"
+			position = { x = -190 y = 320 }
+			font = "aldrich_20_outline"
+			text = "RUS_lote_russian_leverage_tt_Y"
+			format = center
+			Orientation = LEFT
+			maxWidth = 600
+		}
+		instantTextBoxType = {
+			name = "RUS_japanese_leverage_negotiations"
+			position = { x = -190 y = 345 }
+			font = "aldrich_20_outline"
+			text = "RUS_lote_japanese_leverage_tt_Y"
+			format = center
+			Orientation = LEFT
+			maxWidth = 600
+		}
+	}
+}

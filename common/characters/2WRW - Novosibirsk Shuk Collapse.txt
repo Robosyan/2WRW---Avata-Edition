@@ -1,0 +1,182 @@
+characters = {
+	NOV_Koyanto = {
+		name = NOV_Koyanto
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Koyanto.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Koyanto_DESC"
+			expire = "1999.1.1"
+			ideology = fascism_revolutionary_nationalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Rytgev_Rytkheu = {
+		name = NOV_Rytgev_Rytkheu
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Rytgev_Rytkheu.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Rytgev_Rytkheu_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_social_nationalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Matvey_Innokentevich_Amagaev  = {
+		name = NOV_Matvey_Innokentevich_Amagaev
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Matvey_Innokentevich_Amagaev.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Matvey_Innokentevich_Amagaev_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_social_nationalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Ogdo_Aksyonova = {
+		name = NOV_Ogdo_Aksyonova
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Ogdo_Aksyonova.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Ogdo_Aksyonova_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Alitet_Nemtushkin = {
+		name = NOV_Alitet_Nemtushkin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Alitet_Nemtushkin.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Alitet_Nemtushkin_DESC"
+			expire = "1999.1.1"
+			ideology = conservatism_agrarianism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Valery_Chaptynov = {
+		name = NOV_Valery_Chaptynov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Valery_Chaptynov.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Valery_Chaptynov_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_social_nationalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Megacorporation_Troika = {
+		name = NOV_Megacorporation_Troika
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Megacorporation_Troika.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Megacorporation_Troika_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_corporatocracy_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Leonid_Vasilievich_Laptsui = {
+		name = NOV_Leonid_Vasilievich_Laptsui
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Leonid_Vasilievich_Laptsui.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Leonid_Vasilievich_Laptsui_DESC"
+			expire = "1999.1.1"
+			ideology = liberalism_national_liberal_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Alexander_Vasilyevich_Filipenko = {
+		name = NOV_Alexander_Vasilyevich_Filipenko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Alexander_Vasilyevich_Filipenko.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Alexander_Vasilyevich_Filipenko_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_anocracy_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Anatoly_Ivanovich_Saltykov = {
+		name = NOV_Anatoly_Ivanovich_Saltykov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Anatoly_Ivanovich_Saltykov.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Anatoly_Ivanovich_Saltykov_DESC"
+			expire = "1999.1.1"
+			ideology = liberalism_social_liberalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Mongush_Kenin_Lopsan = {
+		name = NOV_Mongush_Kenin_Lopsan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Mongush_Kenin_Lopsan.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Mongush_Kenin_Lopsan_DESC"
+			expire = "1999.1.1"
+			ideology = paternalism_social_nationalism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	NOV_Viktor_Orlov = {
+		name = NOV_Viktor_Orlov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/NOV_fail/NOV_Viktor_Orlov.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_NOV_Viktor_Orlov_DESC"
+			expire = "1999.1.1"
+			ideology = progressivism_left_wing_agrarianism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+}

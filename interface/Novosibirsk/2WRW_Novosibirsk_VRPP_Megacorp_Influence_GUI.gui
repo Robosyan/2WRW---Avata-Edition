@@ -1,0 +1,133 @@
+guiTypes = {
+	containerWindowType = {
+		name = "NOV_VRPP_megacorp_influence_deccat"
+		size = { width = 400 height = 450 }
+		position = { x = 0 y = 0 }
+
+		gridboxtype = {
+			name = "NOV_megacorp_dynamic_list"
+			position = { x = 65 y = 15 }
+			size = { width = 400 height = 413 }
+			slotsize = { width = 400 height = 105 }
+			max_slots_horizontal = 1
+			add_horizontal = no
+		}
+
+		instantTextBoxType = {
+			name = "NOV_megacorp_control_header"
+			position = { x = 60 y = 360 }
+			font = "aldrich_28_outline"
+			text = "ECONOMIC CONTROL"
+			format = center
+			maxWidth = 400
+		}
+
+		iconType = { 
+			name = "NOV_megacorp_control_bar_frame"
+			spriteType = "GFX_NOV_megacorp_influence_bar_frame"
+			position = { x = 65 y = 400 }
+		}
+
+		## progress bars ##
+
+		iconType = { 
+			name = "NOV_megacorp_control_bar_tit"
+			spriteType = "GFX_NOV_megacorp_influence_bar_titan"
+			position = { x = 65 y = 399 }
+		}
+
+		iconType = { 
+			name = "NOV_megacorp_control_bar_sib"
+			spriteType = "GFX_NOV_megacorp_influence_bar_sibir"
+			position = { x = 65 y = 399 }
+		}
+
+		iconType = { 
+			name = "NOV_megacorp_control_bar_fen"
+			spriteType = "GFX_NOV_megacorp_influence_bar_feniks"
+			position = { x = 65 y = 399 }
+		}
+
+		iconType = { 
+			name = "NOV_megacorp_control_bar_ppl"
+			spriteType = "GFX_NOV_megacorp_influence_bar_people"
+			position = { x = 65 y = 399 }
+		}
+
+		iconType = { 
+			name = "NOV_megacorp_control_bar_gov"
+			spriteType = "GFX_NOV_megacorp_influence_gov"
+			position = { x = 65 y = 399 }
+		}
+		#Due to arrays being fucking retarded again, I am forced to not do it in an array, but rather as 3 icontypes, I know it sounds stupid but here we are
+		iconType = { 
+			name = "NOV_megacorp_window_2_1"
+			spriteType = "GFX_NOV_megacorp_window_2"
+			position = { x = 65 y = 15 }
+		}
+		iconType = { 
+			name = "NOV_megacorp_window_2_2"
+			spriteType = "GFX_NOV_megacorp_window_2"
+			position = { x = 65 y = 120 }
+		}
+		iconType = { 
+			name = "NOV_megacorp_window_2_3"
+			spriteType = "GFX_NOV_megacorp_window_2"
+			position = { x = 65 y = 225 }
+		}
+	}
+
+	containerWindowType = {
+		name = "NOV_VRPP_megacorp_list"
+		size = { width = 220 height = 128 }
+		position = { x = 0 y = 0 }
+
+		iconType = { 
+			name = "NOV_megacorp_window"
+			spriteType = "GFX_NOV_megacorp_window"
+			position = { x = 0 y = 0 }
+		}
+
+		instantTextBoxType = {
+			name = "NOV_megacorp_title"
+			position = { x = -156 y = 2 }
+			font = "aldrich_20_outline"
+			text = "[NOVgetMegacorpTitle]"
+			format = center
+			maxWidth = 400
+		}
+
+		instantTextBoxType = {
+			name = "NOV_megacorp_loyalty"
+			position = { x = 84 y = 16 }
+			font = "aldrich_18_outline"
+			text = "[getNOVGUISwitch_1]"
+			format = left
+			maxWidth = 200
+		}
+
+		instantTextBoxType = {
+			name = "NOV_megacorp_influence"
+			position = { x = -74 y = 62 }
+			font = "aldrich_18_outline"
+			text = "NOV_VRPP_megacorp_influence"
+			format = center
+			maxWidth = 400
+		}
+
+		iconType = { 
+			name = "NOV_megacorp_logo"
+			position = { x = 11 y = 25 }
+		}
+
+		iconType = { 
+			name = "NOV_megacorp_loyalty_bar"
+			position = { x = 85 y = 31 }
+		}
+
+		iconType = { 
+			name = "NOV_megacorp_influence_bar"
+			position = { x = 85 y = 77 }
+		}
+	}
+}

@@ -1,0 +1,1030 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_NOV_for_the_liberation_of_all_russians"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_for_the_liberation_of_all_russians.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_remember_whats_at_stake"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_remember_whats_at_stake.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Novosibirsk_Military_March"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Novosibirsk_Military_March.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_focus_west_russian_plan"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_focus_west_russian_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_petrograd_reconstruction"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_petrograd_reconstruction.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_phoenix_rises"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_phoenix_rises.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_fourth_power"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_fourth_power.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuilding_caucasia"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuilding_caucasia.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_time_for_healing"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_time_for_healing.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_a_federation_reborn"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_a_federation_reborn.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Operation_Bagration"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Operation_Bagration.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_slaves_no_more"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_slaves_no_more.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rally_the_people"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rally_the_people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Russias_Final_war"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Russias_Final_war.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Forward_Russia"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Forward_Russia.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_eastern_european_confrence"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_eastern_european_confrence.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_airforce_patrols"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_airforce_patrols.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuilding_moscow"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuilding_moscow.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuilding_monuments"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuilding_monuments.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_modernize_construction_equipment"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_modernize_construction_equipment.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_destroy_his_legacy"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_destroy_his_legacy.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_repair_oil_fields"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_repair_oil_fields.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_escort_germans"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_escort_germans.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuild_ukraine"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuild_ukraine.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_demand_odessa"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_demand_odessa.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_future_of_ukraine"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_future_of_ukraine.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_heart_of_russia"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_heart_of_russia.dds"
+	}
+	spriteType = {
+		name = "GFX_KHA_anarchy_to_vladivostok"
+		texturefile = "gfx/interface/goals/SBA/GFX_SBA_anarchy_to_vladivostok.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuilding_lithuania"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuilding_lithuania.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuilding_baltic_states"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuilding_baltic_states.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuilding_latvia"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuilding_latvia.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Latvian_Culture"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Latvian_Culture.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuild_estonia"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuild_estonia.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_jewel_of_the_baltic"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_jewel_of_the_baltic.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_combat_german_influence"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_combat_german_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_future_of_the_baltic"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_future_of_the_baltic.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_future_of_belarus"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_future_of_belarus.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuilding_belarus"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuilding_belarus.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuild_the_schools"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuild_the_schools.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_heart_of_belarus"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_heart_of_belarus.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_free_east_turkestan"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_free_east_turkestan.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_an_alliance_with_ma"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_an_alliance_with_ma.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_mongolian_subjegation"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_mongolian_subjegation.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_proclaim_west_chinese_republic"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_proclaim_west_chinese_republic.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_our_eyes_to_the_west"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_our_eyes_to_the_west.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_cosmonaut"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_cosmonaut.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_memories_of_poland"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_memories_of_poland.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_russias_monster"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_russias_monster.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_remnants_of_armenia"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_remnants_of_armenia.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_fund_rebels"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_fund_rebels.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rally_the_nomads"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rally_the_nomads.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_armenian_uprising"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_armenian_uprising.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_friends_in_mongolia"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_friends_in_mongolia.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_mongol_gamers"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_mongol_gamers.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_krakow_uprising"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_krakow_uprising.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuild_home_army"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuild_home_army.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_destablise_german_cuck"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_destablise_german_cuck.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_show_their_crimes"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_show_their_crimes.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_promote_russian_culture"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_promote_russian_culture.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuilding_caucasian_cities"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuilding_caucasian_cities.dds"
+	}
+	spriteType = {
+		name = "GFX_Ukraine_Flag_Burning"
+		texturefile = "gfx/interface/goals/NOV/GFX_Ukraine_Flag_Burning.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_sluzhba_bezopasnosti"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_sluzhba_bezopasnosti.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_blitzkrieg_of_our_own"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_blitzkrieg_of_our_own.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_mobilise_the_federation"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_mobilise_the_federation.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_liberation_of_russia"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_liberation_of_russia.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_plan"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_build_russian_airfields"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_build_russian_airfields.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_fortify_the_north"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_fortify_the_north.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_prepare_western_defences"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_prepare_western_defences.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_they_are_broken"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_they_are_broken.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_assure_the_nation"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_assure_the_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_restrict_lobbying"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_restrict_lobbying.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_root_out_corruption"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_root_out_corruption.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_see_to_the_northern_front"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_see_to_the_northern_front.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_develop_the_murmansk_railway"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_develop_the_murmansk_railway.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_develop_the_onega_air_base"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_develop_the_onega_air_base.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_operation_nystad"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_operation_nystad.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_introduce_the_concept"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_introduce_the_concept.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_deal_with_the_new_parties"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_deal_with_the_new_parties.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_work_with_the_siloviki"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_work_with_the_siloviki.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_a_federation_of_hope"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_a_federation_of_hope.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_establish_party_registry"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_establish_party_registry.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_laying_the_groundwork"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_laying_the_groundwork.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_federal_assembly"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_federal_assembly.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_quest_for_peace"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_quest_for_peace.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_koryagin_presidency"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_koryagin_presidency.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_prepare_our_diplomats"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_prepare_our_diplomats.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_no_challenge_too_great"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_no_challenge_too_great.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_scale_back_military_spending"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_scale_back_military_spending.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_no_price_too_high"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_no_price_too_high.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_empower_the_republics"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_empower_the_republics.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_like_minded_people"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_like_minded_people.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_our_old_enemies"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_our_old_enemies.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_peace_is_possible"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_peace_is_possible.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_promote_decentralisation"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_promote_decentralisation.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_rising_sun"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_rising_sun.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_empower_military_governments"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_empower_military_governments.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_final_strike"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_final_strike.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rebuild_the_trans_siberian_railway"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rebuild_the_trans_siberian_railway.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_kantorovich_presidency"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_kantorovich_presidency.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_russian_cultural_rebirth"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_russian_cultural_rebirth.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_pride_and_patriotism"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_pride_and_patriotism.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_expand_the_central_design_bureau"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_expand_the_central_design_bureau.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_encourage_new_thought"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_encourage_new_thought.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_revolutionise_school_equipment"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_revolutionise_school_equipment.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_subsidise_scientific_endeavours"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_subsidise_scientific_endeavours.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_our_nations_health"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_our_nations_health.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_a_pragmatic_solution"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_a_pragmatic_solution.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_DSPRs_conscious"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_DSPRs_conscious.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_peoples_president"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_peoples_president.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_our_southern_neighbour"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_our_southern_neighbour.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_operation_perovsky"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_operation_perovsky.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_drug_pricing_controls"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_drug_pricing_controls.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_expand_healthcare_funding"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_expand_healthcare_funding.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_propose_universal_coverage"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_propose_universal_coverage.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_invest_in_kazakhstan"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_invest_in_kazakhstan.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_looking_beyond"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_looking_beyond.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_treaty_of_novosibirsk"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_treaty_of_novosibirsk.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_extend_an_olive_branch"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_extend_an_olive_branch.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_invest_in_feniks"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_invest_in_feniks.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Purchase_American_Submarines"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Purchase_American_Submarines.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Moscow_in_our_Sights"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Moscow_in_our_Sights.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_wartime_propaganda"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_wartime_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_must_we_fight"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_must_we_fight.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_wild_steppe"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_wild_steppe.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_a_central_foothold"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_a_central_foothold.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_The_Graveyard_of_Empires"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_The_Graveyard_of_Empires.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Develop_Tashkent"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Develop_Tashkent.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Sunshine_in_Central_Asia"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Sunshine_in_Central_Asia.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_issue_of_vladivostok"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_issue_of_vladivostok.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Rally_the_Partisans"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Rally_the_Partisans.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Bane_of_the_Nation"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Bane_of_the_Nation.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Approach_the_Sphere"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Approach_the_Sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_march_in_novosibirsk"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_march_in_novosibirsk.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_environmental_protection_act"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_environmental_protection_act.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_go_with_the_torch"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_go_with_the_torch.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_in_line_with_the_rose"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_in_line_with_the_rose.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_subsidise_family_farms"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_subsidise_family_farms.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_implement_corporate_tax"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_implement_corporate_tax.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_fend_off_corporate_influence"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_fend_off_corporate_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_a_helping_hand"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_a_helping_hand.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_with_hope"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_with_hope.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_with_strength"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_with_strength.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_with_sympathy"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_with_sympathy.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_support_small_business"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_support_small_business.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Workers_Protection_Act"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Workers_Protection_Act.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_provisions_against_famine"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_provisions_against_famine.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_alkhanai_national_park"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_alkhanai_national_park.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_economic_liberation"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_economic_liberation.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_an_equal_federation"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_an_equal_federation.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_reach_out_to_the_dspr"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_reach_out_to_the_dspr.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_a_common_ideal"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_a_common_ideal.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_first_of_many"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_first_of_many.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_establish_electoral_committee"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_establish_electoral_committee.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_expand_the_bill"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_expand_the_bill.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_rally_the_coalition"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_rally_the_coalition.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_gather_independent_support"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_gather_independent_support.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_womens_rights_act"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_womens_rights_act.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_prepare_our_masterpiece"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_prepare_our_masterpiece.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_discredit_vrpp"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_discredit_vrpp.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_cross_the_aisle"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_cross_the_aisle.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_befriend_the_pacifists"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_befriend_the_pacifists.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_concessions_to_trade_unions"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_concessions_to_trade_unions.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_allow_draft_exemptions"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_allow_draft_exemptions.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_limit_corporate_influence"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_limit_corporate_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Russian_Dream"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Russian_Dream.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_primakov_presidency"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_primakov_presidency.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_getting_our_hands_dirty"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_getting_our_hands_dirty.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_our_generous_benefactors"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_our_generous_benefactors.dds"
+	}
+	spriteType = {
+		name = "GFX_nov_tax_breaks"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_tax_breaks.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_lucrative_business_opportunities"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_lucrative_business_opportunities.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_repealing_the_environmental_protection_act"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_repealing_the_environmental_protection_act.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_steal_from_the_states"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_steal_from_the_states.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_pinch_from_the_past"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_pinch_from_the_past.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_cant_protest_the_unknown"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_cant_protest_the_unknown.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_securing_the_courts"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_securing_the_courts.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_securing_our_hold"
+		texturefile = "gfx/interface/goals/NOV/NOV_Securing_Our_Hold.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_bribe_those_who_cooperate"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_bribe_those_who_cooperate.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_blackmail_those_who_do_not"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_blackmail_those_who_do_not.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_cards_are_stacked"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_cards_are_stacked.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_friends_in_the_rapp"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_friends_in_the_rapp.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_convince_them"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_convince_them.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_threaten_them"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_threaten_them.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_if_you_stay_in_line_your_good"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_if_you_stay_in_line_your_good.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_friends_of_the_common_folk"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_friends_of_the_common_folk.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_token_tax_reforms"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_token_tax_reforms.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_cut_unnecessary_social_spending"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_cut_unnecessary_social_spending.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_people_pacified"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_people_pacified.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_a_perfectly_broken_system"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_a_perfectly_broken_system.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_root_of_all_evil"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_root_of_all_evil.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_greed"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_greed.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_plots_upon_plots"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_plots_upon_plots.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_dissuade_the_opposition"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_dissuade_the_opposition.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_poke_the_sleeping_bear"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_poke_the_sleeping_bear.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_carving_the_beast"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_carving_the_beast.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_sloth"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_sloth.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_discredit_the_think_tanks"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_discredit_the_think_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_free_the_universities"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_free_the_universities.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_balance_the_academia"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_balance_the_academia.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_knowledge_unchained"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_knowledge_unchained.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_wrath"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_wrath.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_boil_away_the_fat"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_boil_away_the_fat.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_expose_their_skeletons"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_expose_their_skeletons.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_melt_the_slush"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_melt_the_slush.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_ashes_to_ashes"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_ashes_to_ashes.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_death"
+		texturefile = "gfx/interface/goals/NOV/NOV_Death.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_raise_class_consciousness"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_raise_class_consciousness.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_through_our_labor"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_through_our_labor.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_blood_and_tears"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_blood_and_tears.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_sweat_and_sorrow"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_sweat_and_sorrow.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_shield_of_the_common_man"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_shield_of_the_common_man.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_through_our_teachings"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_through_our_teachings.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_aching_stomachs"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_aching_stomachs.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_empty_bookshelves"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_empty_bookshelves.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_guardians_of_the_next_generation"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_guardians_of_the_next_generation.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_the_next_day"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_the_next_day.dds"
+	}
+	spriteType = {
+		name = "NOV_to_golmud"
+		texturefile = "gfx/interface/goals/NOV/NOV_To_Golmud.dds"
+	}
+	spriteType = {
+		name = "NOV_to_washington"
+		texturefile = "gfx/interface/goals/NOV/NOV_To_Washington.dds"
+	}
+	spriteType = {
+		name = "NOV_to_delhi"
+		texturefile = "gfx/interface/goals/NOV/NOV_To_Delhi.dds"
+	}
+	spriteType = {
+		name = "NOV_brothers_through_suffering"
+		texturefile = "gfx/interface/goals/NOV/NOV_Brothers_Through_Suffering.dds"
+	}
+	spriteType = {
+		name = "NOV_partners_through_circumstance"
+		texturefile = "gfx/interface/goals/NOV/NOV_Partners_Through_Circumstance.dds"
+	}
+	spriteType = {
+		name = "NOV_our_place_in_the_free_world"
+		texturefile = "gfx/interface/goals/NOV/NOV_Our_Place_in_the_Free_World.dds"
+	}
+	spriteType = {
+		name = "NOV_shukshins_heart"
+		texturefile = "gfx/interface/goals/NOV/NOV_Shukshins_Heart.dds"
+	}
+	spriteType = {
+		name = "NOV_kantorovichs_mind"
+		texturefile = "gfx/interface/goals/NOV/NOV_Kantorovichs_Mind.dds"
+	}
+	spriteType = {
+		name = "NOV_expand_the_republics"
+		texturefile = "gfx/interface/goals/NOV/NOV_Expand_The_Republics.dds"
+	}
+	spriteType = {
+		name = "NOV_a_trip_to_barnaul"
+		texturefile = "gfx/interface/goals/NOV/NOV_A_Trip_To_Barnaul.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_amend_our_wrongs"
+		texturefile = "gfx/interface/goals/NOV/NOV_Amend_Our_Wrongs.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_opportunity_for_all"
+		texturefile = "gfx/interface/goals/NOV/NOV_Opportunity_For_All.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_four_more_years"
+		texturefile = "gfx/interface/goals/NOV/NOV_Four_More_Years.dds"
+	}
+	spriteType = {
+		name = "NOV_continue_the_dream"
+		texturefile = "gfx/interface/goals/NOV/NOV_Continue_The_Dream.dds"
+	}
+	spriteType = {
+		name = "NOV_federal_insurance_act"
+		texturefile = "gfx/interface/goals/NOV/NOV_Federal_Insurance_Act.dds"
+	}
+	spriteType = {
+		name = "NOV_university_of_moscow"
+		texturefile = "gfx/interface/goals/NOV/NOV_University_Of_Moscow.dds"
+	}
+	spriteType = {
+		name = "NOV_metropolitan_moscow"
+		texturefile = "gfx/interface/goals/NOV/NOV_Metropolitan_Moscow.dds"
+	}
+	spriteType = {
+		name = "NOV_working_mans_paradise"
+		texturefile = "gfx/interface/goals/NOV/NOV_Working_Mans_Paradise.dds"
+	}
+	spriteType = {
+		name = "NOV_energy_export_prospects"
+		texturefile = "gfx/interface/goals/NOV/NOV_Energy_Export_Prospects.dds"
+	}
+	spriteType = {
+		name = "NOV_develop_the_west"
+		texturefile = "gfx/interface/goals/NOV/NOV_Develop_The_West.dds"
+	}
+	spriteType = {
+		name = "NOV_russian_free_trade_zone"
+		texturefile = "gfx/interface/goals/NOV/NOV_Russian_Free_Trade_Zone.dds"
+	}
+	spriteType = {
+		name = "NOV_center_of_eurasia"
+		texturefile = "gfx/interface/goals/NOV/NOV_Center_Of_Eurasia.dds"
+	}
+	spriteType = {
+		name = "NOV_establish_roscosmos"
+		texturefile = "gfx/interface/goals/NOV/NOV_Establish_Roscosmos.dds"
+	}
+	spriteType = {
+		name = "NOV_titan_scholarship_program"
+		texturefile = "gfx/interface/goals/NOV/NOV_Titan_Scholarship_Program.dds"
+	}
+	spriteType = {
+		name = "NOV_baikonur_cosmodrome"
+		texturefile = "gfx/interface/goals/NOV/NOV_Baikonur_Cosmodrome.dds"
+	}
+	spriteType = {
+		name = "NOV_meet_with_the_ultravisionaries"
+		texturefile = "gfx/interface/goals/NOV/NOV_Meet_With_The_Ultravisionaries.dds"
+	}
+	spriteType = {
+		name = "NOV_keep_the_funds_flowing"
+		texturefile = "gfx/interface/goals/NOV/NOV_Keep_The_Funds_Flowing.dds"
+	}
+	spriteType = {
+		name = "NOV_develop_the_facilities"
+		texturefile = "gfx/interface/goals/NOV/NOV_Develop_The_Facilities.dds"
+	}
+	spriteType = {
+		name = "NOV_the_photon_rocket"
+		texturefile = "gfx/interface/goals/NOV/NOV_The_Photon_Rocket.dds"
+	}
+	spriteType = {
+		name = "NOV_borrow_american_designs"
+		texturefile = "gfx/interface/goals/NOV/NOV_Borrow_American_Designs.dds"
+	}
+	spriteType = {
+		name = "NOV_eclipse_the_usa"
+		texturefile = "gfx/interface/goals/NOV/NOV_Eclipse_The_USA.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_stellaris"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_stellaris.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_second_siberian_plan"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_second_siberian_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_SWRW_declare_martial_law"
+		texturefile = "gfx/interface/goals/NOV/GFX_SWRW_declare_martial_law.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_controlling_the_media"
+		texturefile = "gfx/interface/goals/NOV/NOV_Controlling_The_Media.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_our_eyes_to_the_east"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_our_eyes_to_the_east.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_west_china_industrial_investment"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_west_china_industrial_investment.dds" 
+	}
+	spriteType = {
+		name = "GFX_NOV_send_russian_equipment"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_send_russian_equipment.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_Our_next_challenge"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_Our_next_challenge.dds"
+	}
+	spriteType = {
+		name = "GFX_NOV_challenge"
+		texturefile = "gfx/interface/goals/NOV/GFX_NOV_challenge.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_CAU_venue_tiflis"
+		texturefile = "gfx/interface/goals/NOV/CAU_venue_tiflis.dds"
+	}
+}

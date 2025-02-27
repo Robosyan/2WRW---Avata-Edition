@@ -1,0 +1,331 @@
+spriteTypes = {
+
+	#Second West Russian War Events #
+	
+	spriteType = {
+		name = "GFX_superevent_second_west_russian_war"
+		textureFile = "gfx/superevent_pictures/second_west_russian_war.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_GENERIC_RUSSIAN_VICTORY"
+		textureFile = "gfx/superevent_pictures/total_russian_victory.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_TOTAL_GERMAN_VICTORY"
+		textureFile = "gfx/superevent_pictures/total_german_victory.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_OMSK_WAR"
+		textureFile = "gfx/superevent_pictures/the_great_trial.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_KOMI_LIBDEM_WAR"
+		textureFile = "gfx/superevent_pictures/komi_lib.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_KOMI_SOCDEM_WAR"
+		textureFile = "gfx/superevent_pictures/komi_soc.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_POKRYSHKIN_WAR"
+		textureFile = "gfx/superevent_pictures/novosibirsk2.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_POKRYSHKIN_VICTORY"
+		textureFile = "gfx/superevent_pictures/novosibirsk.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_VELMIR_WAR"
+		textureFile = "gfx/superevent_pictures/hyperborea_war.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_VAGNER_WAR"
+		textureFile = "gfx/superevent_pictures/vagner_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_ZHUKOV_DECLARATION"
+		textureFile = "gfx/superevent_pictures/zhukov.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_TUKH_DECLARATION"
+		textureFile = "gfx/superevent_pictures/tukhachevsky_new.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_ZHDANOV_DECLARATION"
+		textureFile = "gfx/superevent_pictures/zhadanov_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_SUSLOV_WAR"
+		textureFile = "gfx/superevent_pictures/suslov_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_EURASIA_WAR"
+		textureFile = "gfx/superevent_pictures/eurasia_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_SBA_WAR"
+		textureFile = "gfx/superevent_pictures/free_territory_invades.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_ZYKOV_WAR"
+		textureFile = "gfx/superevent_pictures/zykov_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_SEROV_WAR"
+		textureFile = "gfx/superevent_pictures/serov_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_KAGANOVICH_WAR"
+		textureFile = "gfx/superevent_pictures/tyumen_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_CORNMAN_WAR"
+		textureFile = "gfx/superevent_pictures/tyumen_declaration.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SE_WERBELL_WAR"
+		textureFile = "gfx/superevent_pictures/werbell_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_WERBELL_VICTORY"
+		textureFile = "gfx/superevent_pictures/werbell_victory.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_superevent_werbell_victory_despot"
+		textureFile = "gfx/superevent_pictures/werbell_victory_despot.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_WRRF_VICTORY_ZHUKOV"
+		textureFile = "gfx/superevent_pictures/wrrf_victory.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_BUNYACHENKO_WAR"
+		textureFile = "gfx/superevent_pictures/bunyachenko_war_declaration.tga"
+	}
+	spriteType = {
+		name = "GFX_SE_YURIY_WAR"
+		textureFile = "gfx/superevent_pictures/kemerovo_yuri_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_LYDIA_WAR"
+		textureFile = "gfx/superevent_pictures/kemerovo_rogneda_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_SHUKSHIN_VICTORY"
+		textureFile = "gfx/superevent_pictures/shukshinvictory.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_BATOV_WAR"
+		textureFile = "gfx/superevent_pictures/batov_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_VYATKA_CON_WAR"
+		textureFile = "gfx/superevent_pictures/vyatka_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_VYATKA_LIB_WAR"
+		textureFile = "gfx/superevent_pictures/vyatka_lib_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_VYATKA_AUTH_WAR"
+		textureFile = "gfx/superevent_pictures/vyatka_auth_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_SHUKSHIN_WAR"
+		textureFile = "gfx/superevent_pictures/shukshin_war_declation.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_aryan_brotherhood_slave_revolt"
+		textureFile = "gfx/superevent_pictures/aryan_brotherhood_slave_revolt.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_BUKHARINA_WAR"
+		textureFile = "gfx/superevent_pictures/bukharina_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_IRKUTSK_WAR"
+		textureFile = "gfx/superevent_pictures/irkutsk_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_SABLIN_AUTH_WAR"
+		textureFile = "gfx/superevent_pictures/authsoc_sablin_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_SABLIN_LIB_WAR"
+		textureFile = "gfx/superevent_pictures/libsoc_sablin_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_AMUR_WAR"
+		textureFile = "gfx/superevent_pictures/amur_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_MATKOVSKY_WAR"
+		textureFile = "gfx/superevent_pictures/magadan_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_PETLIN_WAR"
+		textureFile = "gfx/superevent_pictures/magadan_petlin_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_corn_man_war_declaration"
+		textureFile = "gfx/superevent_pictures/corn_man_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_HUMANIST_WAR"
+		textureFile = "gfx/superevent_pictures/humanist_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_DECEMBERIST_WAR"
+		textureFile = "gfx/superevent_pictures/decemberist_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_BASTILLARD_WAR"
+		textureFile = "gfx/superevent_pictures/bastillard_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_MODERNIST_WAR"
+		textureFile = "gfx/superevent_pictures/modernist_tomsk.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_MIKHAIL_WAR"
+		textureFile = "gfx/superevent_pictures/chita_war.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_SHEPUNOV_WAR"
+		textureFile = "gfx/superevent_pictures/chita_war.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_chita_victory"
+		textureFile = "gfx/superevent_pictures/chita_victory.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SE_GERMAN_SPRING"
+		textureFile = "gfx/superevent_pictures/german_spring_democracy.tga"
+	}
+
+	spriteType = {
+		name = "GFX_brandt_the_moker"
+		textureFile = "gfx/superevent_pictures/brandt_the_moker.tga"
+	}
+	spriteType = {
+		name = "GFX_SE_STALINA_WAR"
+		textureFile = "gfx/superevent_pictures/stalina_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_YELTSIN_WAR"
+		textureFile = "gfx/superevent_pictures/yeltsin_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_SHAFAREVICH_WAR"
+		textureFile = "gfx/superevent_pictures/shafarevich_war_declaration.tga"
+	}
+		
+	spriteType = {
+		name = "GFX_SE_OKTAN_WAR"
+		textureFile = "gfx/superevent_pictures/oktan_war_declaration.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_tukhachevsky_soviet_japanese_war"
+		textureFile = "gfx/superevent_pictures/tukhachevsky_soviet_japanese_war.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_SE_RED_NAPOLEON_VICTORY"
+		textureFile = "gfx/superevent_pictures/tukhachevsky_victory.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SE_SECOND_GERMAN_CIVIL_WAR"
+		textureFile = "gfx/superevent_pictures/second_german_civil_war.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SE_KLOPFER_VICTORY"
+		textureFile = "gfx/superevent_pictures/GER_GCW_victory.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SE_FREIKORPS_VICTORY"
+		textureFile = "gfx/superevent_pictures/SFK_GCW_victory.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SE_MILITARY_VICTORY"
+		textureFile = "gfx/superevent_pictures/gma_victory.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SE_DEM_GERMAN_VICTORY"
+		textureFile = "gfx/superevent_pictures/REG_GCW_victory.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SE_LEFT_COMMIE_VICTORY"
+		textureFile = "gfx/superevent_pictures/MODERATE_COMMIES.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SE_HARDLINER_COMMIE_VICTORY"
+		textureFile = "gfx/superevent_pictures/hardliner_commie.tga"
+	}
+
+	spriteType = {
+		name = "GFX_SE_DUTCH_EXILES_RETURN"
+		textureFile = "gfx/superevent_pictures/superevent_2.tga"
+	}
+}
+
+	
+
+	

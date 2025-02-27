@@ -1,0 +1,54 @@
+ideas = {
+
+	country = {
+		CAU_waning_stratification = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAU_waning_stratification"}
+			picture = CAU_waning_stratification
+			modifier = {
+				conscription_factor = -0.60
+				political_power_factor = -0.15
+				stability_factor = -0.25
+			}
+		}
+		CAU_echoes_of_kaukasia = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAU_echoes_of_kaukasia"}
+			picture = CAU_echoes_of_kaukasia
+			modifier = {
+				conscription_factor = -0.60
+				political_power_factor = -0.15
+				stability_factor = -0.25
+			}
+		}
+
+		## POST-RECONSTRUCTION ##
+
+		CAU_the_caucasian_experiment = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAU_the_caucasian_experiment"}
+			picture = CAU_the_caucasian_experiment
+			modifier = {
+				political_power_factor = -0.33
+				stability_factor = -0.15
+			}
+		}
+
+		CAU_administrative_unknowns = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAU_the_caucasian_experiment"}
+			picture = CAU_administrative_unknowns
+			modifier = {
+				taxable_population_factor = -0.33
+				admin_efficiency_monthly_rate = -1
+				admin_program_cost_factor = 0.20
+			}
+		}
+
+		CAU_ethnic_tensions = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAU_the_caucasian_experiment"}
+			picture = CAU_ethnic_tensions
+			modifier = {
+				stability_factor = -0.10
+				party_popularity_stability_factor = -0.1
+			}
+		}
+	}
+}
+

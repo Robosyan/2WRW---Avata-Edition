@@ -1,0 +1,134 @@
+capital = 1297
+### TRANSITIONAL GOVERNMENTS ###
+
+## VLADIVOSTOK
+
+# NOVOSIBIRSK
+
+## POST SWRW TRANSITIONAL GOVTS.
+
+# NOVOSIBIRSK
+
+recruit_character = RDC_Alexander_Novikov
+recruit_character = CAU_Mikhail_Baganov
+recruit_character = UKR_Dmitry_Glinka
+recruit_character = CRI_Matvei_Batrakov
+recruit_character = OST_Nikolay_Skomorokhov
+recruit_character = BLR_Boris_Fulik
+recruit_character = PAU_Nestor_Kozin
+recruit_character = OKB_Mikhail_Evseev
+
+### Failstate Leaders ###
+
+recruit_character = NOV_Koyanto
+recruit_character = NOV_Rytgev_Rytkheu
+recruit_character = NOV_Matvey_Innokentevich_Amagaev
+recruit_character = NOV_Ogdo_Aksyonova
+recruit_character = NOV_Alitet_Nemtushkin
+recruit_character = NOV_Valery_Chaptynov
+recruit_character = NOV_Megacorporation_Troika
+recruit_character = NOV_Leonid_Vasilievich_Laptsui
+recruit_character = NOV_Alexander_Vasilyevich_Filipenko
+recruit_character = NOV_Anatoly_Ivanovich_Saltykov
+recruit_character = NOV_Mongush_Kenin_Lopsan
+recruit_character = NOV_Viktor_Orlov
+
+## POST SWRW INDEPENDENT LEADERS
+
+# DEMOCRATIC RUSSIA
+
+recruit_character = CAU_Caucasian_Council
+recruit_character = EST_Vajno_Valjas
+recruit_character = LAT_Valdis_Birkavs
+recruit_character = LAT_Baltic_Council
+recruit_character = BLR_Pyotr_Masherov
+recruit_character = UKR_Leonid_Kravchuk
+recruit_character = AZR_heydar_aliyev
+recruit_character = GEO_Zviad_Gamsakhurdia
+recruit_character = LIT_Vytautas_Landsbergis
+
+### END OF TRANSITIONAL GOVERNMENTS ###
+
+### PROXY WAR GOVERNMENTS ###
+
+# recruit_character = ARM_Gurgen_Zanikjan
+recruit_character = ARM_Gurgen_Arutjunovic_Dalibaltajan
+
+### KAZAKHSTAN###
+
+# recruit_character = PAV_Sultanakhmet_Kozhikov
+# recruit_character = PAV_RUS_Imperial_Government
+# recruit_character = PAV_RUS_Imperial_Government_Alternate
+
+### POLAND ###
+
+recruit_character = POL_Karol_Wojtyla
+recruit_character = POL_Alfred_Urbanski
+recruit_character = POL_Edward_Gierek
+recruit_character = POL_Edward_Raczynski
+recruit_character = POL_Kazimierz_Sabbat
+recruit_character = POL_Swiatlo_Jozef
+recruit_character = POL_home_army
+recruit_character = POL_Kazimierz_Puczynski
+
+### ROMANIA ###
+
+recruit_character = ROM_Ion_Iliescu
+
+### HUNGARY ###
+
+### GERMANY ###
+
+recruit_character = GER_kurt_waldheim
+recruit_character = GER_reichstag_emergency_council_2
+recruit_character = GER_Willi_Brandner
+
+### BOHEMIA ###
+
+### WEST CHINA ###
+
+recruit_character = QIN_Sun_Tse_Ping
+recruit_character = QIN_Li_Xiannian
+recruit_character = GER_turkish_people #the things we do for funni
+
+### CENTRAL ASIA ###
+
+recruit_character = TRK_RUS_Provisional_Government
+recruit_character = TRK_RUS_Imperial_Government
+recruit_character = TRK_SOV_Provisional_Government
+recruit_character = TRK_AFG_Puppet
+recruit_character = KRK_RUS_Provisional_Government
+recruit_character = UZB_RUS_Provisional_Government
+recruit_character = UZB_AFG_Puppet
+recruit_character = TAJ_RUS_Provisional_Government
+recruit_character = TAJ_AFG_Puppet
+recruit_character = KYR_RUS_Provisional_Government
+recruit_character = KYR_AFG_Puppet
+
+### WRF - TUKHACHEVSKY ###
+
+### MADAGASCAR ###
+recruit_character = MAD_Keiu_Matsuo
+
+### Denmark ###
+recruit_character = DEN_Anker_Jørgensen
+recruit_character = DEN_Arne_Munch_Petersen
+recruit_character = DEN_Poul_Hartling
+recruit_character = DEN_German_Garrison
+recruit_character = DEN_Soeren_Kam
+recruit_character = DEN_Freedom_council
+
+### Netherlands ###
+recruit_character = HOL_Nico_Berghuijs
+recruit_character = HOL_Bastiaan_Fortman
+recruit_character = HOL_Frans_Andriseen
+recruit_character = HOL_Hans_Janmaat
+recruit_character = HOL_Joop_Glimmerveen
+
+### Slovakia ###
+recruit_character = SLO_Julius_Duris
+recruit_character = SLO_Ivan_Pietor
+
+### French Puppet ###
+recruit_character = GLC_Andre_Lajoinie
+recruit_character = GLC_Jacques_Chirac

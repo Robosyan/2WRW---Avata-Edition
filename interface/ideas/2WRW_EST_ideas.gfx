@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_EST_oil_shale_industry"
+		texturefile = "gfx/interface/ideas/national_spirits/EST/idea_EST_oil_shale_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EST_oil_shale_industry"
+		texturefile = "gfx/interface/ideas/EST/idea_EST_oil_shale_industry.dds"
+	}
+}

@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_Our_War_of_Strength"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Our_War_of_Strength.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_United_Forever"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_United_Forever.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Strongarm_the_Populace"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Strongarm_the_Populace.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Expand_the_MIC"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Expand_the_MIC.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Forwards_for_Russia"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Forwards_for_Russia.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Ubermensch_No_More"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Ubermensch_No_More.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Rout_the_Bastards"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_Rout_the_Bastards.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_The_Reich_in_Ashes"
+		texturefile = "gfx/interface/goals/RUS/Authoritarian/GFX_RUS_The_Reich_in_Ashes.dds"
+	}
+}

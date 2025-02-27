@@ -1,0 +1,25 @@
+spriteTypes = {
+
+	# Follow the rule GFX_culture_<variable value of the culture> #
+	
+	# Russia
+	
+	spriteType = {
+		name = "GFX_culture_1100"
+		texturefile = "gfx/interface/culture/culture_lithuanian.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_1101"
+		texturefile = "gfx/interface/culture/culture_kongo.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_1102"
+		texturefile = "gfx/interface/culture/culture_russian.dds"
+	}
+	
+	###KAMCHATKA###
+	spriteType = {
+		name = "GFX_culture_800"
+		texturefile = "gfx/interface/culture/culture_naval.dds"
+	}
+}

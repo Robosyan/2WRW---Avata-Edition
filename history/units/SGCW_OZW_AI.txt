@@ -1,0 +1,248 @@
+division_template = {
+	name = "Deutches-Infanterie-Division"
+	division_names_group = GER_infantry
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Military-Police"
+	division_names_group = GER_polizei
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0 
+}
+
+division_template = {
+	name = "SWRW Panzer-Corps Remnants"
+	division_names_group = GER_panzer
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		MBT = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+		MBT = { x = 1 y = 2 }
+		MBT = { x = 2 y = 0 }
+		MBT = { x = 2 y = 1 }
+		MBT = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "PGD Operationsgruppe"					
+	division_names_group = GER_special
+	regiments = {
+		elite_infantry = { x = 0 y = 0 }
+		elite_infantry = { x = 0 y = 1 }
+   		elite_infantry = { x = 0 y = 2 }
+		elite_infantry = { x = 1 y = 0 }
+		elite_infantry = { x = 1 y = 1 }
+		elite_infantry = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "Fallschirmjäger"
+	template_counter = 44
+	division_names_group = GER_paratroopers 
+	regiments = {
+		elite_infantry = { x = 0 y = 0 }
+		elite_infantry = { x = 0 y = 1 }
+		elite_infantry = { x = 0 y = 2 }
+		elite_infantry = { x = 0 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		air_assault = { x = 0 y = 2 }
+		transport_helicopter_company = { x = 0 y = 3 }
+	}
+	priority = 2
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = "3544"
+		division_template = "Deutches-Infanterie-Division"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = "3544"
+		division_template = "SWRW Panzer-Corps Remnants"
+		start_experience_factor = 1
+		start_equipment_factor = 0.9
+	}
+}

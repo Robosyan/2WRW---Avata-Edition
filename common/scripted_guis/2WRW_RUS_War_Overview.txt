@@ -1,0 +1,237 @@
+scripted_gui = {
+	war_overview = {
+		context_type = decision_category
+		parent_window_token = decisions_category
+		window_name = "war_overview"
+		
+		ai_enabled = {
+			has_country_flag = RUS_SWRW_ongoing
+		}
+		
+		visible = {
+			OR = {
+				# is_debug = yes
+				has_country_flag = RUS_SWRW_ongoing
+			}
+		}
+		
+		properties = {
+			tension_main_bar = {
+				frame = WRW_tension_var
+			}
+			exhaustion_main_bar_germany = {
+				frame = GER.WRW_war_exhaustion
+			}
+			exhaustion_main_bar_russia = {
+				frame = RUS.WRW_war_exhaustion
+			}
+			tension_bar_frame = {
+				frame = RUS_tension_bar_frame
+			}
+			nuclear_console = {
+				frame = nuclear_console_frame
+			}
+			select_fire_buttons = {
+				frame = select_fire_buttons_frame
+			}
+		}
+		
+		triggers = {
+			tension_main_bar_visible = {
+				check_variable = { WRW_tension_var > 0.9 }
+			}
+			exhaustion_main_bar_russia_visible = {
+				check_variable = { RUS.WRW_war_exhaustion > 0.9 }
+			}
+			exhaustion_main_bar_germany_visible = {
+				check_variable = { GER.WRW_war_exhaustion > 0.9 }
+			}
+		}
+		
+		effects = {
+			open_nuke_window_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = WRW_nuke_visible
+						}
+					}
+					set_country_flag = WRW_nuke_visible
+				}
+				else = { clr_country_flag = WRW_nuke_visible }
+			}
+			frontlines_button_click = {
+				set_variable = { WRW_deccat = 1 }
+			}
+			homefront_button_click = {
+				set_variable = { WRW_deccat = 2 }
+			}
+			diplomacy_button_click = {
+				set_variable = { WRW_deccat = 3 }
+			}
+		}
+	}
+	
+	war_overview_nuke_window = {
+		context_type = player_context
+		window_name = "war_overview_nuke_window"
+		
+		visible = {
+			has_country_flag = WRW_nuke_visible
+		}
+		
+		### Nuke GUI ###
+			
+		triggers = {	
+			key_insert_visible = {
+				NOT = {
+					OR = {
+						has_country_flag = RUS_key_inserted
+						has_country_flag = RUS_key_turned
+						has_country_flag = RUS_launched_nuke
+						has_country_flag = GER_key_inserted
+						has_country_flag = GER_key_turned
+						has_country_flag = GER_launched_nuke
+					}
+				}
+			}
+			key_inserted_visible = {
+				OR = {
+					NOT = {
+						has_country_flag = RUS_launched_nuke
+						has_country_flag = GER_launched_nuke
+						has_country_flag = RUS_key_turned
+						has_country_flag = GER_key_turned
+					}
+				}
+				OR = { 
+					has_country_flag = GER_key_inserted
+					has_country_flag = RUS_key_inserted
+				}
+			}
+			key_turn_visible = {
+				OR = {
+					has_country_flag = RUS_key_turned
+					has_country_flag = GER_key_turned
+				}
+			}
+			nuclear_button_click_enabled = {
+				OR = {
+					check_variable = { WRW_tension_var > 99 }
+					AND = {
+						original_tag = GER
+						surrender_progress > 0.1
+					}
+				}
+				OR = {
+					has_country_flag = RUS_key_turned
+					has_country_flag = GER_key_turned
+				}
+			}
+			
+		}
+		
+		effects = {
+			close_button_click = {
+				clr_country_flag = WRW_nuke_visible
+			}
+			nuclear_button_click = {
+				country_event = {
+					id = nuclearwar.8
+					hours = 4
+				}
+			}
+			key_insert_click = {
+				if = {
+					limit = {
+						original_tag = GER
+					}
+					set_country_flag = GER_key_inserted
+				}
+				else_if = {
+					limit = {
+						is_russian_nation = yes
+					}
+					set_country_flag = RUS_key_inserted
+				}
+				set_variable = { select_fire_buttons_frame = 2 }
+			}
+			key_inserted_click = {
+				if = {
+					limit = {
+						original_tag = GER
+					}
+					set_country_flag = GER_key_turned
+				}
+				else_if = {
+					limit = {
+						is_russian_nation = yes
+					}
+					set_country_flag = RUS_key_turned
+				}
+				set_variable = { select_fire_buttons_frame = 3 }
+				if = {
+					limit = {
+						OR = {
+							check_variable = { WRW_tension_var > 99 }
+							AND = {
+								original_tag = GER
+								surrender_progress > 0.1
+							}
+						}
+					}
+					set_variable = { nuclear_console_frame = 3 }
+				}
+			}
+			
+		}
+		
+		ai_weights = {
+			key_insert_click = { # insert key
+				ai_will_do = { 
+					base = 0
+					modifier = {
+						OR = {
+							check_variable = { WRW_tension_var > 33 }
+							AND = {
+								original_tag = GER
+								surrender_progress > 0.05
+							}
+						}
+						add = 9000
+					}
+				}
+			} 
+			key_inserted_click = { # turn key
+				ai_will_do = {
+					base = 0
+					modifier = {
+						OR = {
+							check_variable = { WRW_tension_var > 50 }
+							AND = {
+								original_tag = GER
+								surrender_progress > 0.07
+							}
+						}
+						add = 9000
+					}
+				}
+			} 
+			nuclear_button_click = { # boom
+				ai_will_do = {
+					base = 0
+					modifier = {
+						OR = {
+							check_variable = { WRW_tension_var > 99 }
+						AND = {
+								original_tag = GER
+								surrender_progress > 0.1
+							}
+						}
+						add = 9000
+					}
+				}
+			}
+		}
+	}
+}

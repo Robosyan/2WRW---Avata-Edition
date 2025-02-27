@@ -1,0 +1,407 @@
+defined_text = {
+	name = SWRW_GetNuclearStage
+	text = {
+		trigger = {
+			has_country_flag = RUS_nuclear_program_phase_1
+		}
+		localization_key = "NuclearStage1"
+	}
+	text = {
+		trigger = {
+			has_country_flag = RUS_nuclear_program_phase_2
+		}
+		localization_key = "NuclearStage2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = RUS_nuclear_program_phase_3
+		}
+		localization_key = "NuclearStage3"
+	}
+	text = {
+		trigger = {
+			has_country_flag = RUS_nuclear_program_phase_4
+		}
+		localization_key = "NuclearStage4"
+	}
+	text = {
+		trigger = {
+			has_country_flag = RUS_nuclear_program_phase_5
+		}
+		localization_key = "NuclearStage5"
+	}
+}
+
+defined_text = {
+	name = SWRW_GetCurrentStage
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "NuclearStage1"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "NuclearStage2"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "NuclearStage3"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = "NuclearStage4"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "NuclearStage5"
+	}
+}
+
+defined_text = {
+	name = SWRW_GetCurrentStagelong
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "NuclearStage1_long"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "NuclearStage2_long"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "NuclearStage3_long"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = "NuclearStage4_long"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "NuclearStage5_long"
+	}
+}
+
+defined_text = {
+	name = SWRW_GetCurrentStageDesc
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "NuclearStage1_desc"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "NuclearStage2_desc"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "NuclearStage3_desc"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = "NuclearStage4_desc"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "NuclearStage5_desc"
+	}
+}
+
+defined_text = {
+	name = Nuclear_Option1
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "Nuclear_Stage1_Option1"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "Nuclear_Stage2_Option1"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "Nuclear_Stage3_Option1"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = "Nuclear_Stage4_Option1"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "Nuclear_Stage5_Option1"
+	}
+}
+
+defined_text = {
+	name = Nuclear_Option_1_tt
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "RUS_nukes_theory_develop_physics_institutes_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "RUS_nukes_mats_develop_material_extraction_techniques_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "RUS_nukes_infra_accelerate_plant_approval_processes_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = "RUS_nukes_refine_construct_additional_centrifuges_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "RUS_nukes_refine_construct_additional_centrifuges_cost_tt"
+	}
+}
+
+defined_text = {
+	name = Nuclear_Option2
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "Nuclear_Stage1_Option2"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "Nuclear_Stage2_Option2"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "Nuclear_Stage3_Option2"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = "Nuclear_Stage4_Option2"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "Nuclear_Stage5_Option2"
+	}
+}
+
+defined_text = {
+	name = Nuclear_Option_2_tt
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "RUS_nukes_theory_issue_research_grants_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "RUS_nukes_mats_assemble_processing_facilities_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "RUS_nukes_infra_fund_power_station_construction_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = "RUS_nukes_refine_develop_isotope_separation_theory_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "RUS_nukes_refine_develop_isotope_separation_theory_cost_tt"
+	}
+}
+
+defined_text = {
+	name = Nuclear_Option3
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "Nuclear_Stage1_Option3"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "Nuclear_Stage2_Option3"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "Nuclear_Stage3_Option3"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = "Nuclear_Stage4_Option3"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "Nuclear_Stage5_Option3"
+	}
+}
+
+defined_text = {
+	name = Nuclear_Option_3_tt
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "RUS_nukes_theory_approach_emigre_scientists_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "RUS_nukes_mats_expand_uranium_mining_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "RUS_nukes_infra_commission_additional_research_reactors_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = "RUS_nukes_refine_expand_nuclear_reprocessing_infrastructure_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "RUS_nukes_refine_expand_nuclear_reprocessing_infrastructure_cost_tt"
+	}
+}
+
+defined_text = {
+	name = Nuclear_Option4
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "Nuclear_Stage1_Option4"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "Nuclear_Stage2_Option4"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "Nuclear_Stage3_Option4"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = "Nuclear_Stage4_Option4"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "Nuclear_Stage5_Option4"
+	}
+}
+
+defined_text = {
+	name = Nuclear_Option_4_tt
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 1 }
+		}
+		localization_key = "RUS_nukes_theory_study_foreign_developments_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 2 }
+		}
+		localization_key = "RUS_nukes_mats_incentivize_skilled_laborers_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 3 }
+		}
+		localization_key = "RUS_nukes_infra_study_foreign_reactor_designs_cost_tt"
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 4 }
+		}
+		localization_key = ""
+	}
+	text = {
+		trigger = {
+			check_variable = { Selected_Stage = 5 }
+		}
+		localization_key = "RUS_nukes_complete_tt"
+	}
+}

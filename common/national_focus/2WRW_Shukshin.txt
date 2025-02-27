@@ -1,0 +1,82 @@
+# Second West Russian War - Shukshin
+
+focus_tree = {
+	id = NOV_novosibirsk_unification_shukshin
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NOV
+		}
+	}
+	default = no
+	shared_focus = NOV_shukshin_federation_of_hope
+	shared_focus = NOV_shukshin_looking_beyond
+}
+
+focus_tree = {
+	id = NOV_novosibirsk_war_preparation_shukshin
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NOV
+		}
+	}
+	default = no
+	shared_focus = NOV_meet_with_pokryshkin
+}	
+
+focus_tree = {
+	id = NOV_novosibirsk_second_west_russian_war_shukshin
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NOV
+		}
+	}
+	default = no
+	shared_focus = NOV_shukshin_operation_bagration
+}
+
+focus_tree = {
+	id = NOV_novosibirsk_failure_shukshin # Failure
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NOV
+		}
+	}
+	default = no
+	shared_focus = NOV_the_return_of_the_falcon
+}
+
+focus_tree = {
+	id = NOV_novosibirsk_victory_shukshin # Victory Tree, Merged all previous trees
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NOV
+		}
+	}
+	default = no
+	#Reconstruction Trees
+	##Moskowien
+	shared_focus = NOV_a_federation_reborn
+	##Caucasia
+	shared_focus = NOV_rebuilding_caucasia
+	##Total Victory
+	shared_focus = NOV_rebuilding_ukraine
+	shared_focus = NOV_rebuilding_the_baltic_states
+	shared_focus = NOV_rebuilding_belarus
+	shared_focus = NOV_the_german_question
+	##Epilogue, Fopo
+	shared_focus = NOV_four_more_years #NOV_RAPP_Presidency
+	shared_focus = NOV_the_primakov_presidency #NOV_VRPP_Presidency
+	shared_focus = NOV_the_kantorovich_presidency #NOV_DSPR_Presidency
+	shared_focus = NOV_the_koryagin_presidency #NOV_RSLP_Presidency
+	shared_focus = NOV_our_next_challenge
+}

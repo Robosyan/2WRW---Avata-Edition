@@ -1,0 +1,34 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_The_Peoples_Army_Marches_West"
+		texturefile = "gfx/interface/goals/RUS/Communist/GFX_RUS_The_Peoples_Army_Marches_West.dds"
+	}
+		spriteType = {
+		name = "GFX_RUS_One_Once_More"
+		texturefile = "gfx/interface/goals/RUS/Communist/GFX_RUS_One_Once_More.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Mobilize_the_Proletariat"
+		texturefile = "gfx/interface/goals/RUS/Communist/GFX_RUS_Mobilize_the_Proletariat.dds"
+	}
+		spriteType = {
+		name = "GFX_RUS_A_Gun_in_Every_Hand"
+		texturefile = "gfx/interface/goals/RUS/Communist/GFX_RUS_A_Gun_in_Every_Hand.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_A_Tide_of_Iron_and_Steel"
+		texturefile = "gfx/interface/goals/RUS/Communist/GFX_RUS_A_Tide_of_Iron_and_Steel.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_The_Wehrmacht_Defunct"
+		texturefile = "gfx/interface/goals/RUS/Communist/GFX_RUS_The_Wehrmacht_Defunct.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Moscow_Red_Once_More"
+		texturefile = "gfx/interface/goals/RUS/Communist/GFX_RUS_Moscow_Red_Once_More.dds"
+	}
+	spriteType = {
+		name = "GFX_RUS_Barbarossa_Redeemed"
+		texturefile = "gfx/interface/goals/RUS/Communist/GFX_RUS_Barbarossa_Redeemed.dds"
+	}
+}

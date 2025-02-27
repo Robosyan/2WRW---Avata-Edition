@@ -1,0 +1,221 @@
+
+NOV_debug_category = {
+	NOV_load_unification_shukshin_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_load_unification_shukshin_tree"
+			load_focus_tree = {	tree = NOV_novosibirsk_unification_shukshin keep_completed = no }
+		}
+	}
+	NOV_load_shukshin_war_preparation_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_load_shukshin_war_preparation_tree"
+			load_focus_tree = {	tree = NOV_novosibirsk_war_preparation_shukshin keep_completed = no }
+		}
+	}
+	NOV_load_shukshin_war_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_load_shukshin_war_tree"
+			load_focus_tree = {	tree = NOV_novosibirsk_second_west_russian_war_shukshin keep_completed = no }
+		}
+	}
+	NOV_load_shukshin_total_victory_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_load_shukshin_total_victory_tree"
+			load_focus_tree = {	tree = NOV_novosibirsk_victory_shukshin keep_completed = no }
+		}
+	}
+	NOV_load_shukshin_failure_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_load_shukshin_failure_tree"
+			load_focus_tree = {	tree = NOV_novosibirsk_failure_shukshin keep_completed = no }
+		}
+	}
+	NOV_load_vrpp_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_load_VRPP_tree"
+			load_focus_tree = {	tree = NOV_novosibirsk_victory_shukshin keep_completed = yes }
+			set_country_flag = NOV_VRPP_Presidency
+			clr_country_flag = NOV_DSPR_Presidency
+			clr_country_flag = NOV_RSLP_Presidency
+			clr_country_flag = NOV_RAPP_Presidency
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	NOV_load_dspr_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_load_DSPR_tree"
+			load_focus_tree = {	tree = NOV_novosibirsk_victory_shukshin keep_completed = no }
+			clr_country_flag = NOV_VRPP_Presidency
+			set_country_flag = NOV_DSPR_Presidency
+			clr_country_flag = NOV_RSLP_Presidency
+			clr_country_flag = NOV_RAPP_Presidency
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	NOV_load_rslp_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_load_RSLP_tree"
+			load_focus_tree = {	tree = NOV_novosibirsk_victory_shukshin keep_completed = no }
+			clr_country_flag = NOV_VRPP_Presidency
+			clr_country_flag = NOV_DSPR_Presidency
+			set_country_flag = NOV_RSLP_Presidency
+			clr_country_flag = NOV_RAPP_Presidency
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	NOV_load_rapp_tree = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_load_RSLP_tree"
+			load_focus_tree = {	tree = NOV_novosibirsk_victory_shukshin keep_completed = no }
+			clr_country_flag = NOV_VRPP_Presidency
+			clr_country_flag = NOV_DSPR_Presidency
+			clr_country_flag = NOV_RSLP_Presidency
+			set_country_flag = NOV_RAPP_Presidency
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	NOV_WCW_debug = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: NOV_WCW_debug"
+			
+			SWRW_start_west_china_war = yes
+		}
+	}
+	NOV_MU_debug = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_MU_debug"
+			
+			SWRW_start_mongolian_uprising = yes
+		}
+	}
+	NOV_PLU_debug = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_PLU_debug"
+			
+			SWRW_start_polish_uprising = yes
+		}
+	}
+	NOV_WG_debug = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_WG_debug"
+			
+			SWRW_start_west_georgia_conflict = yes
+		}
+	}
+	SWRW_NOV_Die = {
+		icon = GFX_decision_generic_decision
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_NOV_Die"
+			NOV_load_shukshin_failstate = yes
+		}
+	}
+}
+
+#WRS_debug_decisions_category = {
+#	WRS_load_unification_shukshin_tree = {
+#		icon = GFX_decision_generic_decision
+#
+#		allowed = {
+#			original_tag = WRS
+#		}
+#
+#		fire_only_once = no
+#
+#		complete_effect = {
+#			log = "[GetDateText]: [Root.GetName]: Decision WRS_load_unification_shukshin_tree"
+#			load_focus_tree = {	tree = WRS_unification_tree_zhukov keep_completed = no }
+#		}
+#	}
+#}

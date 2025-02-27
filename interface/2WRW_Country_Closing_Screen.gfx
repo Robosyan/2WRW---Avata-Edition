@@ -1,0 +1,66 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_KMC"
+		texturefile = "gfx/interface/country_closing_screen/picture/KMC_specific.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_NOV_RSLP_Ending"
+		texturefile = "gfx/interface/country_closing_screen/picture/NOV_RSLP_Ending.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_NOV_DSPR_Ending"
+		texturefile = "gfx/interface/country_closing_screen/picture/NOV_DSPR_Ending.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_NOV_RAPP_Ending"
+		texturefile = "gfx/interface/country_closing_screen/picture/NOV_RAPP_Ending.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_NOV_VRPP_Ending"
+		texturefile = "gfx/interface/country_closing_screen/picture/NOV_VRPP_Ending.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_NOV_Zubakov_Coup"
+		texturefile = "gfx/interface/country_closing_screen/picture/NOV_Zubakov_Coup.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_NOV_Shukshin_Counter_Coup"
+		texturefile = "gfx/interface/country_closing_screen/picture/NOV_Shukshin_Counter_Coup.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_NOV_Failure"
+		texturefile = "gfx/interface/country_closing_screen/picture/NOV_Failure.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_RUS_Communist_Victory"
+		texturefile = "gfx/interface/country_closing_screen/picture/RUS_Communist_Victory.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_RUS_Communist_Defeat"
+		texturefile = "gfx/interface/country_closing_screen/picture/RUS_Communist_Defeat.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_RUS_Democratic_Victory"
+		texturefile = "gfx/interface/country_closing_screen/picture/RUS_Democratic_Victory.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_RUS_Democratic_Defeat"
+		texturefile = "gfx/interface/country_closing_screen/picture/RUS_Democratic_Defeat.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_RUS_Authoritarian_Victory"
+		texturefile = "gfx/interface/country_closing_screen/picture/RUS_Authoritarian_Victory.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_RUS_Authoritarian_Defeat"
+		texturefile = "gfx/interface/country_closing_screen/picture/RUS_Authoritarian_Defeat.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_RUS_Fascist_Victory"
+		texturefile = "gfx/interface/country_closing_screen/picture/RUS_Fascist_Victory.png"
+	}
+	spriteType = {
+		name = "GFX_TNO_CountryClosing_picture_RUS_Fascist_Defeat"
+		texturefile = "gfx/interface/country_closing_screen/picture/RUS_Fascist_Defeat.png"
+	}
+}

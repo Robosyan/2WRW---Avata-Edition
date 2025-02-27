@@ -1,0 +1,192 @@
+#this is the stupidest shit i've ever seen it was working before with one deccat why doesn't it work now
+
+WRS_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = WRS }
+}
+
+KOM_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = KOM }
+}
+
+VYT_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = VYT }
+}
+
+PRM_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = PRM }
+}
+
+SAM_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = SAM }
+}
+
+TYM_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = TYM }
+}
+
+SVR_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = SVR }
+}
+
+OMS_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = OMS }
+}
+
+TOM_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = TOM }
+}
+
+NOV_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = NOV }
+}
+
+KEM_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = KEM }
+}
+
+SBA_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = SBA }
+}
+
+IRK_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = IRK }
+}
+
+BRY_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = BRY }
+}
+
+CHT_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = CHT }
+}
+
+MAG_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = MAG }
+}
+
+AMR_foreign_policy_category = {
+	icon = GFX_decision_category_RUS_forpol
+	allowed = { tag = AMR }
+}
+
+HUN_unify_category = {
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 200000
+
+	allowed = {
+		OR = {
+			tag = HUN
+			tag = HUD
+			tag = HUS
+		}
+	}
+	visible = {
+	}
+	visible_when_empty = yes
+}
+
+BI_invades = {
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 200000
+
+	allowed = {
+		tag = HUS
+	}
+	visible = {
+	}
+	visible_when_empty = yes
+}
+
+RUS_Hungarian_civil_war_category = {
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	
+	allowed = {
+	}
+	visible = {
+		#OR = {
+		#	AND = {
+		#		is_russian_nation = yes
+		#		NOT = { has_country_leader = { character = NOV_Vasily_Shukshin ruling_only = yes } }
+		#	}
+		#	AND = {
+		#		is_russian_nation = yes
+		#		has_country_leader = { character = NOV_Vasily_Shukshin ruling_only = yes }
+		#		has_country_flag = NOV_Hungary_Intervention
+		#	}
+		#	tag = GER
+		#}
+		#has_global_flag = HUN_civil_war
+		always = no
+	}
+	visible_when_empty = yes
+}
+
+RUS_German_civil_war_category = {
+	icon = GFX_decision_category_border_conflicts
+	picture = GFX_URL_decision_Ural_Guard
+	priority = 99
+	
+	allowed = {
+	}
+	visible = {
+		#is_russian_nation = yes
+		#has_global_flag = 2GCW_happened
+		always = no
+	}
+	visible_when_empty = yes
+}
+
+GER_gc_fopol_category = {
+	icon = GFX_decision_category_generic_nazism
+	available = {
+		original_tag = GER
+	}
+
+	visible = {
+		has_global_flag = german_civil_war_speervic
+		has_country_flag = GER_SWRW_total_defeat
+	}
+	visible_when_empty = no
+	priority = 100010
+}
+
+SWRW_FRA_vs_Paktkommission_category = {
+	icon = GFX_decision_category_generic_political_actions
+	priority = 200000
+	allowed = {
+		OR = {
+			original_tag = FRS
+			original_tag = FRM
+			original_tag = FRD
+			original_tag = FRV
+			original_tag = FMM
+			original_tag = FGR
+			original_tag = FIT
+			original_tag = GLC
+		}
+	}
+	visible = {
+		has_global_flag = FRA_vs_GLC
+	}
+	visible_when_empty = no
+}

@@ -1,0 +1,53 @@
+guiTypes = {
+	containerWindowType = {
+		name = "NOV_RSLP_ofn_relations"
+		size = { width = 400 height = 587 }
+		position = { x = 0 y = 0 }
+
+		iconType = {
+			name = "NOV_RSLP_OFN_BG"
+			spriteType = "GFX_NOV_RSLP_OFN_BG"
+			position = { x = 11 y = 0 }
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "NOV_RSLP_OFN_Progressbar_OFN_title"
+			position = { x = 105 y = 180 }
+			font = "aldrich_18_outline"
+			text = "NOV_RSLP_russia_ofn_title_1"
+			format = center
+			maxWidth = 369
+		}
+		iconType = {
+			name = "NOV_RSLP_OFN_Progressbar_OFN"
+			spriteType = "GFX_NOV_RSLP_OFN_Progressbar_OFN"
+			position = { x = 106 y = 198 }
+		}
+		instantTextBoxType = {
+			name = "NOV_RSLP_OFN_Progressbar_VRPP_title"
+			position = { x = 105 y = 316 }
+			font = "aldrich_18_outline"
+			text = "NOV_RSLP_russia_ofn_title_2"
+			format = center
+			maxWidth = 369
+		}
+		iconType = {
+			name = "NOV_RSLP_OFN_Progressbar_VRPP"
+			spriteType = "GFX_NOV_RSLP_OFN_Progressbar_VRPP"
+			position = { x = 106 y = 334 }
+		}
+		instantTextBoxType = {
+			name = "NOV_RSLP_OFN_Progressbar_DSPR_title"
+			position = { x = 105 y = 452 }
+			font = "aldrich_18_outline"
+			text = "NOV_RSLP_russia_ofn_title_3"
+			format = center
+			maxWidth = 369
+		}
+		iconType = {
+			name = "NOV_RSLP_OFN_Progressbar_DSPR"
+			spriteType = "GFX_NOV_RSLP_OFN_Progressbar_DSPR"
+			position = { x = 106 y = 470 }
+		}
+	}
+}

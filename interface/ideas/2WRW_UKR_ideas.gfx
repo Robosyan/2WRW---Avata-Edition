@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_UKR_breadbasket_of_europe"
+		texturefile = "gfx/interface/ideas/national_spirits/UKR/GFX_idea_UKR_breadbasket_of_europe.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_nezalezhnist"
+		texturefile = "gfx/interface/ideas/national_spirits/UKR/GFX_idea_UKR_nezalezhnist.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_breadbasket_of_europe"
+		texturefile = "gfx/interface/ideas/UKR/GFX_idea_UKR_breadbasket_of_europe.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_legacy_of_the_occupation"
+		texturefile = "gfx/interface/ideas/UKR/GFX_idea_UKR_legacy_of_the_occupation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_UKR_nezalezhnist"
+		texturefile = "gfx/interface/ideas/UKR/GFX_idea_UKR_nezalezhnist.dds"
+	}
+}

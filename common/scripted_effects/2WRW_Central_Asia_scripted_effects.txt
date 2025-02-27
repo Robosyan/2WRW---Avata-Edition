@@ -1,0 +1,694 @@
+### Central Asia Occupations ###
+
+RUS_Central_Asia_Turkmenistan_Occupation = {
+	custom_effect_tooltip = Turkmenistan_Occupation_tt
+	if = {
+		limit = {
+			RUS = {
+				AND = {
+					OR = {
+						has_government = paternalism
+						has_government = conservatism
+						has_government = liberalism
+						has_government = progressivism
+					}
+					NOT = {
+						OR = {
+							original_tag = VYT
+							original_tag = CHT
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			XXX = {
+				TRK_RUS_Provisional_Government = { set_nationality = TRK }
+			}
+			TRK = {
+				set_cosmetic_tag = TRK_Russian_Democracy
+				
+				transfer_state = 2201
+		        transfer_state = 584
+			    transfer_state = 2203
+			    transfer_state = 2202
+			    transfer_state = 2204
+			
+			
+			    add_state_core = 2201
+		        add_state_core = 584
+			    add_state_core = 2203
+			    add_state_core = 2202
+			    add_state_core = 2204
+				
+				set_politics = {
+					ruling_party = paternalism
+				}
+				
+				set_popularities = {
+					conservatism = 15
+					paternalism = 38
+					despotism = 27
+					communist = 20
+				}
+				
+				set_party_name = { 
+					ideology = paternalism 
+					long_name = TRK_RUS_Provisional_Government_long
+					name = TRK_RUS_Provisional_Government_short
+				}
+
+				remove_ideas = {
+					TRK_Fragmented_Tribes
+					TRK_Question_Of_Identity
+				}
+				
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				remove_all_ministers = yes
+				fill_empty_minister = yes
+				TNO_Oil_Crisis_remove_modifier = yes
+				promote_character = TRK_RUS_Provisional_Government
+				econ_join_sphere_RUS = yes
+				if = {
+					limit = {
+						has_idea = OFN_Observer
+					}
+					remove_ideas = OFN_Observer
+				}
+				else_if = {
+					limit = {
+						has_idea = Sphere_Observer
+					}
+					remove_ideas = Sphere_Observer
+					
+				}
+				TRK = {
+					get_current_government_type = yes
+					save_party_popularities = yes
+				}	
+				RUS = {
+					set_autonomy = {
+						target = TRK
+						autonomy_state = autonomy_client_state
+					}	
+				}	
+				TRK = {
+					restore_previous_government_type = yes
+					apply_party_popularities = yes
+				}
+			}
+			RUS = { add_to_faction = KYR }
+		}
+	}
+	if = {
+		limit = {
+			RUS = {
+				AND = {
+					OR = {
+						has_government = despotism
+						has_government = paternalism
+						has_government = conservatism
+						has_government = liberalism
+					}
+					OR = {
+						original_tag = VYT
+						original_tag = CHT
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			XXX = {
+				TRK_RUS_Imperial_Government = { set_nationality = TRK }
+			}
+			TRK = {
+				set_cosmetic_tag = TRK_Russian_Imperial_Protectorate
+				
+				transfer_state = 584
+				add_state_core = 584
+				
+				set_politics = {
+					ruling_party = despotism
+				}
+				
+				set_popularities = {
+					conservatism = 12
+					paternalism = 38
+					despotism = 41
+					communist = 9
+				}
+				
+				set_party_name = { 
+					ideology = despotism 
+					long_name = TRK_RUS_Imperial_Government_long
+					name = TRK_RUS_Imperial_Government_short
+				}
+				
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				remove_all_ministers = yes
+				fill_empty_minister = yes
+				TNO_Oil_Crisis_remove_modifier = yes
+				promote_character = TRK_RUS_Imperial_Government
+				econ_join_sphere_RUS = yes
+				TRK = {
+					get_current_government_type = yes
+					save_party_popularities = yes
+				}	
+				RUS = {
+					set_autonomy = {
+						target = TRK
+						autonomy_state = autonomy_client_state
+					}	
+				}	
+				TRK = {
+					restore_previous_government_type = yes
+					apply_party_popularities = yes
+				}
+				if = {
+					limit = {
+						has_idea = OFN_Observer
+					}
+					remove_ideas = OFN_Observer
+				}
+				else_if = {
+					limit = {
+						has_idea = Sphere_Observer
+					}
+					remove_ideas = Sphere_Observer
+				}	
+			}
+			RUS = { add_to_faction = TRK }
+		}
+	}
+	if = {
+		limit = {
+			RUS = {
+				AND = {
+					has_government = communist
+				}
+			}
+		}
+		hidden_effect = {
+			XXX = {
+				TRK_SOV_Provisional_Government = { set_nationality = TRK }
+			}
+			TRK = {
+				set_cosmetic_tag = TRK_SOV_SSR
+				
+				transfer_state = 584
+				add_state_core = 584
+				
+				set_politics = {
+					ruling_party = communist
+				}
+				
+				set_popularities = {
+					paternalism = 5
+					despotism = 20
+					communist = 75
+				}
+				
+				set_party_name = { 
+					ideology = communist 
+					long_name = TRK_SOV_Provisional_Government_long
+					name = TRK_SOV_Provisional_Government_short
+				}
+				
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				remove_all_ministers = yes
+				fill_empty_minister = yes
+				TNO_Oil_Crisis_remove_modifier = yes
+				promote_character = TRK_SOV_Provisional_Government
+				econ_join_sphere_RUS = yes
+				if = {
+					limit = {
+						has_idea = OFN_Observer
+					}
+					remove_ideas = OFN_Observer
+				}
+				else_if = {
+					limit = {
+						has_idea = Sphere_Observer
+					}
+					remove_ideas = Sphere_Observer
+				}
+				TRK = {
+					get_current_government_type = yes
+					save_party_popularities = yes
+				}	
+				RUS = {
+					set_autonomy = {
+						target = TRK
+						autonomy_state = autonomy_client_state
+					}	
+				}	
+				TRK = {
+					restore_previous_government_type = yes
+					apply_party_popularities = yes
+				}
+			}
+			RUS = { add_to_faction = TRK }
+		}
+	}
+}
+
+RUS_Central_Asia_Karakalpakstan_Occupation = {
+	custom_effect_tooltip = Karakalpakstan_Occupation_tt
+	if = {
+		limit = {
+			RUS = {
+				AND = {
+					OR = {
+						has_government = paternalism
+						has_government = conservatism
+						has_government = liberalism
+						has_government = progressivism
+					}
+					NOT = {
+						OR = {
+							original_tag = VYT
+							original_tag = CHT
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			XXX = {
+				KRK_RUS_Provisional_Government = { set_nationality = KRK }
+			}
+			KRK = {
+				set_cosmetic_tag = KRK_Russian_Democracy
+				
+				transfer_state = 750
+				add_state_core = 750
+				transfer_state = 2194
+				add_state_core = 2194
+				
+				set_politics = {
+					ruling_party = paternalism
+				}
+				
+				set_popularities = {
+					conservatism = 27
+					paternalism = 52
+					communist = 21
+				}
+				
+				set_party_name = { 
+					ideology = paternalism
+					long_name = KRK_RUS_Provisional_Government_long
+					name = KRK_RUS_Provisional_Government_short
+				}
+				
+				remove_ideas = {
+					KRK_wolves_at_the_door
+					KRK_uzbek_political_exiles
+					KRK_young_army
+				}
+				TNO_Oil_Crisis_remove_modifier = yes
+				KRK = {
+					get_current_government_type = yes
+					save_party_popularities = yes
+				}	
+				RUS = {
+					set_autonomy = {
+						target = KRK
+						autonomy_state = autonomy_client_state
+					}	
+				}	
+				KRK = {
+					restore_previous_government_type = yes
+					apply_party_popularities = yes
+				}
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				remove_all_ministers = yes
+				fill_empty_minister = yes
+				econ_join_sphere_RUS = yes
+				if = {
+					limit = {
+						has_idea = OFN_Observer
+					}
+					remove_ideas = OFN_Observer
+				}
+				else_if = {
+					limit = {
+						has_idea = Sphere_Observer
+					}
+					remove_ideas = Sphere_Observer
+				}	
+
+				promote_character = KRK_RUS_Provisional_Government
+			}
+			RUS = { add_to_faction = KRK }
+		}
+	}
+}
+
+RUS_Central_Asia_Uzbekistan_Occupation = {
+	custom_effect_tooltip = Uzbekistan_Occupation_tt
+	if = {
+		limit = {
+			RUS = {
+				OR = {
+					has_government = paternalism
+					has_government = conservatism
+					has_government = liberalism
+					has_government = progressivism
+				}
+				NOT = {
+					original_tag = VYT
+					original_tag = CHT
+				}
+			}
+		}
+		hidden_effect = {
+			XXX = {
+				UZB_RUS_Provisional_Government = { set_nationality = UZB }
+			}
+			UZB = {
+				set_cosmetic_tag = UZB_Russian_Democracy
+				
+				transfer_state = 585
+			    transfer_state = 750
+			    transfer_state = 405
+			    transfer_state = 1468
+			    transfer_state = 1467
+			
+			    transfer_state = 2195
+		        transfer_state = 2194
+			    transfer_state = 2196
+			    transfer_state = 2205
+			
+			    add_state_core = 2195
+		        add_state_core = 2194
+			    add_state_core = 2196
+			    add_state_core = 2205
+			
+			    add_state_core = 585
+			    add_state_core = 750
+			    add_state_core = 405
+			    add_state_core = 1468
+			    add_state_core = 1467
+				
+				set_politics = {
+					ruling_party = paternalism
+				}
+				
+				set_popularities = {
+					conservatism = 15
+					paternalism = 38
+					despotism = 27
+					communist = 20
+				}
+				
+				set_party_name = { 
+					ideology = paternalism
+					long_name = UZB_RUS_Provisional_Government_long
+					name = UZB_RUS_Provisional_Government_short
+				}
+				
+				UZB = { set_capital = {state = 1467} }
+				
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				TNO_Oil_Crisis_remove_modifier = yes
+				remove_all_ministers = yes
+				fill_empty_minister = yes
+				econ_join_sphere_RUS = yes
+				if = {
+					limit = {
+						has_idea = OFN_Observer
+					}
+					remove_ideas = OFN_Observer
+				}
+				else_if = {
+					limit = {
+						has_idea = Sphere_Observer
+					}
+					remove_ideas = Sphere_Observer
+				}	
+				
+				promote_character = UZB_RUS_Provisional_Government
+				if = {
+					limit = {
+						has_idea = OFN_Observer
+					}
+					remove_ideas = OFN_Observer
+				}
+				else_if = {
+					limit = {
+						has_idea = Sphere_Observer
+					}
+					remove_ideas = Sphere_Observer
+				}
+				UZB = {
+					get_current_government_type = yes
+					save_party_popularities = yes
+				}	
+				RUS = {
+					set_autonomy = {
+						target = UZB
+						autonomy_state = autonomy_client_state
+					}	
+				}	
+				UZB = {
+					restore_previous_government_type = yes
+					apply_party_popularities = yes
+				}
+			}
+			RUS = { add_to_faction = UZB }
+		}
+	}
+}
+
+RUS_Central_Asia_Tajikistan_Occupation = {
+	custom_effect_tooltip = Tajikistan_Occupation_tt
+	if = {
+		limit = {
+			RUS = {
+				AND = {
+					OR = {
+						has_government = paternalism
+						has_government = conservatism
+						has_government = liberalism
+						has_government = progressivism
+					}
+					NOT = {
+						OR = {
+							original_tag = VYT
+							original_tag = CHT
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			XXX = {
+				TAJ_RUS_Provisional_Government = { set_nationality = TAJ }
+			}
+			TAJ = {
+				set_cosmetic_tag = TAJ_Russian_Democracy
+				
+				transfer_state = 742
+			    transfer_state = 1466
+			
+		        transfer_state = 2198
+			    transfer_state = 2199
+			    transfer_state = 2200
+			
+			    add_state_core = 742
+			    add_state_core = 1466
+			    add_state_core = 2198
+			    add_state_core = 2199
+			    add_state_core = 2200
+				
+				set_politics = {
+					ruling_party = paternalism
+				}
+				
+				set_popularities = {
+					conservatism = 15
+					paternalism = 38
+					despotism = 27
+					communist = 20
+				}
+				
+				set_party_name = { 
+					ideology = paternalism
+					long_name = TAJ_RUS_Provisional_Government_long
+					name = TAJ_RUS_Provisional_Government_short
+				}
+				
+				remove_ideas = {
+					TAJ_flooded_streets
+					TAJ_fading_economy
+				}
+
+				TNO_Oil_Crisis_remove_modifier = yes
+				
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				remove_all_ministers = yes
+				fill_empty_minister = yes
+				econ_join_sphere_RUS = yes
+				if = {
+					limit = {
+						has_idea = OFN_Observer
+					}
+					remove_ideas = OFN_Observer
+				}
+				else_if = {
+					limit = {
+						has_idea = Sphere_Observer
+					}
+					remove_ideas = Sphere_Observer
+				}	
+				
+				promote_character = TAJ_RUS_Provisional_Government
+				if = {
+					limit = {
+						has_idea = OFN_Observer
+					}
+					remove_ideas = OFN_Observer
+				}
+				else_if = {
+					limit = {
+						has_idea = Sphere_Observer
+					}
+					remove_ideas = Sphere_Observer
+				}
+				TAJ = {
+					get_current_government_type = yes
+					save_party_popularities = yes
+				}	
+				RUS = {
+					set_autonomy = {
+						target = TAJ
+						autonomy_state = autonomy_client_state
+					}	
+				}	
+				TAJ = {
+					restore_previous_government_type = yes
+					apply_party_popularities = yes
+				}
+			}
+			RUS = { add_to_faction = TAJ }
+		}
+	}
+}
+
+RUS_Central_Asia_Kyrgyzstan_Occupation = {
+	custom_effect_tooltip = Kyrgyzstan_Occupation_tt
+	if = {
+		limit = {
+			RUS = {
+				AND = {
+					OR = {
+						has_government = paternalism
+						has_government = conservatism
+						has_government = liberalism
+						has_government = progressivism
+					}
+					NOT = {
+						OR = {
+							original_tag = VYT
+							original_tag = CHT
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			XXX = {
+				KYR_RUS_Provisional_Government = { set_nationality = KYR }
+			}
+			KYR = {
+				set_cosmetic_tag = KYR_Russian_Democracy
+				
+				transfer_state = 2197
+			    transfer_state = 586
+			    transfer_state = 732
+
+			    add_state_core = 586
+			    add_state_core = 732
+			    add_state_core = 2197
+				
+				set_politics = {
+					ruling_party = paternalism
+				}
+				
+				set_popularities = {
+					conservatism = 15
+					paternalism = 38
+					despotism = 27
+					communist = 20
+				}
+				
+				set_party_name = { 
+					ideology = paternalism
+					long_name = KYR_RUS_Provisional_Government_long
+					name = KYR_RUS_Provisional_Government_short
+				}
+				
+				set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+				econ_type_change = yes
+				
+				remove_all_ministers = yes
+				fill_empty_minister = yes
+				econ_join_sphere_RUS = yes
+				TNO_Oil_Crisis_remove_modifier = yes
+				if = {
+					limit = {
+						has_idea = OFN_Observer
+					}
+					remove_ideas = OFN_Observer
+				}
+				else_if = {
+					limit = {
+						has_idea = Sphere_Observer
+					}
+					remove_ideas = Sphere_Observer
+				}	
+
+				promote_character = KYR_RUS_Provisional_Government
+				if = {
+					limit = {
+						has_idea = OFN_Observer
+					}
+					remove_ideas = OFN_Observer
+				}
+				else_if = {
+					limit = {
+						has_idea = Sphere_Observer
+					}
+					remove_ideas = Sphere_Observer
+				}
+				KYR = {
+					get_current_government_type = yes
+					save_party_popularities = yes
+				}	
+				RUS = {
+					set_autonomy = {
+						target = KYR
+						autonomy_state = autonomy_client_state
+					}	
+				}	
+				KYR = {
+					restore_previous_government_type = yes
+					apply_party_popularities = yes
+				}
+			}
+			RUS = { add_to_faction = KYR }
+		}
+	}
+}

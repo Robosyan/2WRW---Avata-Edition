@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		UKR_memories_of_generalplan_ost = { #
+			picture = UKR_shroud_of_generalplan_ost
+			modifier = {
+				stability_factor = -0.15
+				annual_gdp_growth_factor = -0.25
+				taxable_population_factor = -0.15
+				consumer_goods_use_modifier = 0.10
+			}
+		}
+		UKR_legacy_of_the_occupation = { #
+			picture = UKR_legacy_of_the_occupation
+			modifier = {
+				stability_factor = -0.10
+				political_power_factor = -0.33
+				admin_efficiency_monthly_rate = -1.5
+				admin_program_cost_factor = 0.15
+			}
+		}
+		## POST RECONSTRUCTION
+
+		UKR_breadbasket_of_europe = { #
+			picture = UKR_breadbasket_of_europe
+			modifier = {
+				min_export = 0.05
+				trade_opinion_factor = 0.1
+				gdp_growth_modifier = 1.5
+				sales_tax_rate_modifier = 0.1
+				consumer_goods_use_modifier = -0.05
+				agriculture_monthly_rate = 1.25
+			}
+		}
+		UKR_nezalezhnist = { #
+			picture = UKR_nezalezhnist
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.15
+			}
+		}
+	}
+}

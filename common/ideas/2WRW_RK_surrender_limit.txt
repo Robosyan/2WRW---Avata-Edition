@@ -1,0 +1,10 @@
+ideas = {
+	hidden_ideas = {
+		RK_martial_law = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea RK_martial_law"}
+			modifier = {
+				surrender_limit = 1
+			}
+		}
+	}
+}

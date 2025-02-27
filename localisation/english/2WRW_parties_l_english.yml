@@ -1,0 +1,26 @@
+﻿l_english:
+ #Party names
+ 
+ POL_brandt_paternalist_party: "KOP"
+ POL_brandt_paternalist_party_long: "Komitet Odbudowy Polski"
+ 
+ POL_brandt_socialist_party: "PPS"
+ POL_brandt_socialist_party_long: "Polska Partia Socjalistyczna"
+ 
+ POL_brandt_despotism_party: "OWP"
+ POL_brandt_despotism_party_long: "Obóz Wielkiej Polski"
+ 
+ POL_brandt_progressivism_party: "PPN (L)"
+ POL_brandt_progressivism_party_long: "Polska Partia Narodowo -Lewicowa"
+ 
+ GLC_commie_communist_party: "FSR"
+ 
+ GLC_dem_conservatism_party:0 "FCP"
+ 
+ CZE_despotism_party:0 "Heersgruppe Schnez"
+ 
+ CZE_paternalism_party:0 "Reichsbanner Cells"
+ 
+ CZE_socialist_party:0 "Bewegung 2. Juni"
+ 
+ CZE_ultranationalism_party:0 "Schwarze Band"

@@ -1,0 +1,87 @@
+add_namespace = Nuclear_Program
+#These are all hidden events for button cooldowns
+country_event = {
+	id = Nuclear_Program.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Nuclear_Program.1"
+	}
+	title = Nuclear_Program.1.t
+	desc = "If you can see this something is massively wrong"
+	picture = GFX_report_event_generic_peace_deal
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = "Waltuh"
+		clr_country_flag = Nuclear_Program_Option1_Cooldown
+	}
+}
+
+country_event = {
+	id = Nuclear_Program.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Nuclear_Program.2"
+	}
+	title = Nuclear_Program.2.t
+	desc = "If you can see this something is massively wrong"
+	picture = GFX_report_event_generic_peace_deal
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = "Put your dick away waltuh"
+		clr_country_flag = Nuclear_Program_Option2_Cooldown
+	}
+}
+
+country_event = {
+	id = Nuclear_Program.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Nuclear_Program.3"
+	}
+	title = Nuclear_Program.3.t
+	desc = "If you can see this something is massively wrong"
+	picture = GFX_report_event_generic_peace_deal
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = "I'm not having sex with you right now waltuh"
+		clr_country_flag = Nuclear_Program_Option3_Cooldown
+	}
+}
+
+country_event = {
+	id = Nuclear_Program.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Nuclear_Program.4"
+	}
+	title = Nuclear_Program.4.t
+	desc = "If you can see this something is massively wrong"
+	picture = GFX_report_event_generic_peace_deal
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = "This is the exact moment when Vasily Shukshin became the Kid named Finger"
+		clr_country_flag = Nuclear_Program_Option4_Cooldown
+	}
+}
+
+country_event = {
+	id = Nuclear_Program.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Nuclear_Program.5"
+	}
+	title = Nuclear_Program.5.t
+	desc = "If you can see this something is massively wrong"
+	picture = GFX_report_event_generic_peace_deal
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = "if you're seeing this then aura king clears fat slovenian btw"
+		clr_country_flag = Nuclear_Program_Option4_Cooldown
+		SWRWNuclearProgramCompletion = yes
+	}
+}

@@ -1,0 +1,54 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Portrait_Japan_Keiu_Matsuo"
+		textureFile = "gfx/leaders/MAD/Portrait_Japan_Keiu_Matsuo.dds"
+	}
+	spriteType = {
+		name = "GFX_news_collapse_madagaskar_seizure"
+		textureFile = "gfx/event_pictures/GFX_news_collapse_madagaskar_seizure.dds"
+	}
+	spriteType = {
+		name = "GFX_collapse_OFN"
+		textureFile = "gfx/event_pictures/GFX_collapse_OFN.dds"	
+	}
+	spriteType = {
+		name = "GFX_collapse_madagaskar_seizure"
+		textureFile = "gfx/event_pictures/GFX_collapse_madagaskar_seizure.dds"
+	}
+	spriteType = {
+		name = "GFX_news_collapse_MCW"
+		textureFile = "gfx/event_pictures/GFX_news_collapse_MCW.dds"
+	}
+	spriteType = {
+		name = "GFX_news_collapse_NOR_OFN"
+		textureFile = "gfx/event_pictures/GFX_news_collapse_NOR_OFN.dds"
+	}
+	spriteType = {
+		name = "GFX_news_collapse_UKR"
+		textureFile = "gfx/event_pictures/GFX_news_collapse_UKR.dds"
+	}
+	spriteType = {
+		name = "GFX_news_end_of_the_pakt"
+		textureFile = "gfx/event_pictures/GFX_news_end_of_the_pakt.dds"
+	}
+	spriteType = {
+		name = "GFX_news_norway_leaves_pakt"
+		textureFile = "gfx/event_pictures/GFX_news_norway_leaves_pakt.dds"
+	}
+	spriteType = {
+		name = "GFX_news_ireland_leaves_pakt"
+		textureFile = "gfx/event_pictures/GFX_news_ireland_leaves_pakt.dds"
+	}
+	spriteType = {
+		name = "GFX_news_britain_leaves_pakt"
+		textureFile = "gfx/event_pictures/GFX_news_britain_leaves_pakt.dds"
+	}
+	spriteType = {
+		name = "GFX_event_adolf_von_thadden"
+		textureFile = "gfx/event_pictures/GFX_event_adolf_von_thadden.dds"
+	}
+	spriteType = {
+		name = "GFX_event_port_louis"
+		textureFile = "gfx/event_pictures/GFX_event_port_louis.dds"
+	}
+}

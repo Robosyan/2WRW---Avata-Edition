@@ -1,0 +1,44 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_lord_of_the_east_map_outline"
+		textureFile = "gfx/interface/lord_of_the_east_gui/lord_of_the_east_map_outline.dds"
+	}
+	# States
+	spriteType = {
+		name = "GFX_primorsky_lote_state_dark"
+		textureFile = "gfx/interface/lord_of_the_east_gui/primorsky_lote_state_dark.dds"
+	}
+	spriteType = {
+		name = "GFX_vladivostok_lote_state_dark"
+		textureFile = "gfx/interface/lord_of_the_east_gui/vladivostok_lote_state_dark.dds"
+	}
+	spriteType = {
+		name = "GFX_birobidzhan_lote_rus"
+		textureFile = "gfx/interface/lord_of_the_east_gui/birobidzhan_lote_rus.dds"
+	}
+	spriteType = {
+		name = "GFX_primorsky_lote_rus"
+		textureFile = "gfx/interface/lord_of_the_east_gui/primorsky_lote_state_rus.dds"
+	}
+	#Highlighted States
+	frameAnimatedSpriteType = {
+		name = "GFX_birobidzhan_lote_state_highlighted"
+		textureFile = "gfx/interface/lord_of_the_east_gui/birobidzhan_lote_state_highlighted.dds"
+		noOfFrames = 2
+		play_on_show = yes
+		animation_rate_fps = 0.7
+		looping = yes
+		pause_on_loop = 0.0
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_primorsky_lote_state_highlighted"
+		textureFile = "gfx/interface/lord_of_the_east_gui/primorsky_lote_state_highlighted.dds"
+		noOfFrames = 2
+		play_on_show = yes
+		animation_rate_fps = 0.7
+		looping = yes
+		pause_on_loop = 0.0
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+}

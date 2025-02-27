@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		BLR_religous_rebirth = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea BLR_religous_rebirth"}
+			
+			allowed = { always = no }
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = BLR_religous_rebirth
+			
+			modifier = {
+				MONTHLY_POPULATION = 0.15
+				stability_factor = 0.1
+				army_defence_factor = 0.25
+				army_core_attack_factor = 0.1
+			}
+		}
+	}
+}

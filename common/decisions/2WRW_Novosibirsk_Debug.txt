@@ -1,0 +1,452 @@
+NOV_SWRW_debug_category = {
+	SWRW_Add_Russia_To_Cold_War_GUI = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Add_Russia_To_Cold_War_GUI"
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = RUS_national_unification
+						}
+					}
+					SWRW_unite_russia_without_firing_unnecessary_bullshit = yes
+				}
+			}
+			SWRW_Add_RUS_To_Cold_War_GUI = yes
+		}
+	}
+	NOV_nuke_test = {
+		icon = GFX_decision_generic_decision
+
+		allowed = {
+			original_tag = NOV
+		}
+
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Nuke Test"
+			
+			set_variable = {
+				var = RUS_nuclearprogress
+				value = 1
+			}
+			set_variable = {
+				var = RUS_nuclearstockpile
+				value = 1
+			}
+			set_variable = { nuclear_stockpile = 1 }
+			set_variable = { nuclear_stockpile_k = nuclear_stockpile }
+			divide_variable = { nuclear_stockpile_k = 1000 }
+			set_variable = { nuclear_global_coverage = 0.1 }
+			calculate_strike_capability = yes
+			
+			set_technology = { ICBM = 1 }
+			set_technology = { MRBM = 1 }
+			set_technology = { SRBM = 1 }
+			
+			set_technology = { missile_silos = 1 }
+			set_technology = { nuclear_reactors = 1 }
+			set_technology = { nuclear_weapons = 1 }
+			
+		}
+	}
+	SWRW_poland_test = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_poland_test"
+			POL = {
+				every_owned_state = {
+					add_core_of = POL
+				}
+				add_country_leader_role = {
+					character = POL_Adam_Baworowski
+					country_leader = {
+						ideology = national_socialism_reformed_national_socialism_subtype
+						expire = "1999.3.4"
+						id = -1
+					}
+				}
+				promote_character = POL_Adam_Baworowski
+				set_cosmetic_tag = POL_SGR2
+				set_popularities = {
+					national_socialism = 70
+					paternalism = 30
+				}
+				set_politics = {
+					ruling_party = fascism
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = POL_collab_fascism_long
+					name = POL_collab_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = POL_collab_national_socialism_long
+					name = POL_collab_national_socialism
+				}
+				add_ideas = Pakt_Reichsland
+				join_zollverein = yes
+				remove_ideas = POL_home_Defense
+			}
+		}
+	}
+
+	WRW_Japanse_Invasion_of_Madagascar = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision WRW_Japanse_Invasion_of_Madagascar"
+			JAP_MDG_Rename = yes
+			JAP_Colonial_Restructuring = yes
+			JAP_MAR_Seizure = yes
+		}
+	}
+	SWRW_poland_uprising_switch = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_poland_uprising_switch"
+			POL = { 
+				
+				drop_cosmetic_tag = yes
+				leave_zollverein = yes
+				remove_ideas = Pakt_Reichsland
+				set_politics = {
+					ruling_party = paternalism
+					elections_allowed = no
+				}
+			}
+			POL = {
+				POL_Adam_Baworowski = { 
+					set_nationality = GGN 
+				} 
+			}
+			GGN = {
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				promote_character = POL_Adam_Baworowski
+				set_popularities = {
+					fascism = 60
+					national_socialism = 10
+					paternalism = 30
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = POL_collab_fascism_long
+					name = POL_collab_fascism
+				}
+				set_party_name = {
+					ideology = national_socialism
+					long_name = POL_collab_national_socialism_long
+					name = POL_collab_national_socialism
+				}
+				set_cosmetic_tag = POL_SGR2
+				set_capital = { state = 10 }
+			}
+		}
+	}
+	SWRW_nuclear_test = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_nuclear_test"
+			RUS_init_nuke_system = yes
+		}
+	}
+	NOV_newcredit_test = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision NOV_newcredit_test"
+			TNO_Country_Closing_Screen_Show = yes
+		}
+	}
+	SWRW_load_german_tree_test = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_load_german_tree_test"
+			GER = { load_focus_tree = GER_Germany_War_Tree }
+		}
+	}
+
+	SWRW_load_auth_tree_test = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+
+		complete_effect = {
+		log = "[GetDateText]: [Root.GetName]: Decision SWRW_load_auth_tree_test"
+			load_focus_tree = RUS_WRW_Generic_Authoritarian_tree
+		}
+	}
+
+	SWRW_load_commie_tree_test = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_load_commie_tree_test"
+			load_focus_tree = RUS_WRW_Generic_Communist_tree
+		}
+	}
+		
+	SWRW_load_dem_tree_test = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_load_dem_tree_test"
+			load_focus_tree = RUS_WRW_Generic_Democratic_tree
+		}
+	}
+	
+	SWRW_load_fash_tree_test = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_load_fash_tree_test"
+			load_focus_tree = RUS_WRW_Generic_Fascist_tree
+		}
+	}
+	SWRW_load_2GCW_events = {
+		icon = GFX_decision_generic_decision
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_load_2GCW_events"
+			set_global_flag = SGCW_debug_happen
+			if = {
+				limit = {
+					ROOT = { original_tag = NOV }
+				}
+				set_country_flag = NOV_peace_deal_4
+			}
+			GER = {
+				set_country_flag = GER_SWRW_total_defeat
+				set_global_flag = german_civil_war_bormannvic
+				country_event = { id = reich.2004 days = 1 }
+				hidden_effect = {
+					every_character = {
+						limit = { has_character_flag = is_SGR_character }
+						set_nationality = SGR
+					}
+					every_character = {
+						limit = { has_character_flag = is_GGR_character }
+						set_nationality = GGR
+					}
+					every_character = {
+						limit = { has_character_flag = is_HGR_BRG_unit_leader }
+						set_nationality = HGR
+					}
+					retire_character = GER_hans_speidel	
+				}
+			}
+			OST = {
+				hidden_effect = {
+					every_character = {
+						limit = { has_character_flag = is_MST_character }
+						set_nationality = MST
+					}	
+				}
+			}
+			HOL = { country_event = { id = gc_netherlands.1 days = 12 } }
+			set_global_flag = RUS_SWRW_Victory
+			hidden_effect = {
+				HUN = { country_event = {id = NOV_postwar.101 days = 20 } }
+			}
+		}
+	}
+	SWRW_hungary_prepare = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_hungary_prepare"
+			HUN = {
+				country_event = { id = NOV_postwar.101 }
+			}
+		}
+	}
+	SWRW_hungary_uprising = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_hungary_uprising"
+			TNO_start_hungary_uprising = yes
+		}
+	}
+	SWRW_Balkan_commie = {
+		allowed = {
+			is_russian_unifier = yes
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Balkan_commie"
+			GER = {
+				end_puppet = SER
+				remove_from_faction = SER
+			}
+			BUL = {
+				set_politics = {
+					ruling_party = communist
+				}
+				remove_faction_status = yes
+			}
+			HUS = {
+				transfer_state = 45
+				transfer_state = 155
+				transfer_state = 1292
+				transfer_state = 771
+				transfer_state = 154
+				transfer_state = 73
+				transfer_state = 664
+				transfer_state = 1291
+				transfer_state = 1290
+				transfer_state = 43
+				add_state_core = 45
+				add_state_core = 155
+				add_state_core = 1292
+				add_state_core = 771
+				add_state_core = 154
+				add_state_core = 73
+				add_state_core = 664
+				add_state_core = 1291
+				add_state_core = 1290
+				add_state_core = 43
+				set_capital = {
+					state = 1290
+					remember_old_capital = no
+				}
+				load_oob = HUS_civilwar
+			}
+			if = {
+				limit = {
+					has_global_flag = HUD_winner
+				}
+				HUD = {
+					every_core_state = {
+						remove_core_of = HUD
+					}
+				}
+			}
+			else = {
+				HUN = {
+					every_core_state = {
+						remove_core_of = HUN
+					}
+				}
+			}
+			SER = {
+				set_politics = {
+					ruling_party = communist
+				}
+				econ_leave_sphere = yes
+				remove_ideas = Pakt_Marionettenstaat
+			}
+			MAC = {
+				set_politics = {
+					ruling_party = communist
+				}
+				econ_leave_sphere = yes
+				transfer_state = 1271
+				transfer_state = 1985
+			}
+			GRE = {
+				set_politics = {
+					ruling_party = communist
+				}
+				econ_leave_sphere = yes
+			}
+			ITA = {
+				end_puppet = GRE
+				remove_from_faction = GRE
+			}
+			set_global_flag = HUN_civil_war
+		}
+	}
+	SWRW_Danish_Spring_start = {
+		allowed = {
+			original_tag = NOV
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Danish_Spring_start"
+			if = {
+				limit = { NOT = { country_exists = DEN } }
+				DEN = {
+					transfer_state = 37
+					transfer_state = 99
+					transfer_state = 744
+					TNO_startup_nation = yes
+				}
+			}
+			DEN = { country_event = { id = DEN_Spring.1 } }
+		}
+	}
+	SWRW_Dutch_Revolution_start = {
+		allowed = {
+			original_tag = NOV
+		}
+		fire_only_once = no
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision SWRW_Dutch_Revolution_start"
+			if = {
+				limit = { NOT = { country_exists = HOL } }
+				GER = {
+					release = HOL
+					HOL = {
+						get_current_government_type = yes
+						save_party_popularities = yes
+					}
+					set_autonomy = {
+						target = HOL
+						autonomy_state = autonomy_integrated_reichskommissariat
+					}
+					HOL = {
+						restore_previous_government_type = yes
+						apply_party_popularities = yes
+					}
+				}
+			}
+			HOL = { country_event = { id = gc_netherlands.1 } }
+		}
+	}
+}

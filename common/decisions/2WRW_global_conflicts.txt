@@ -1,0 +1,3080 @@
+#this is the stupidest shit i've ever seen it was working before with one deccat why doesn't it work now
+
+WRS_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	WRS_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	WRS_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	WRS_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	WRS_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+KOM_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	KOM_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	KOM_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	KOM_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	KOM_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+VYT_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	VYT_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	VYT_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	VYT_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	VYT_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+PRM_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	PRM_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	PRM_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	PRM_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	PRM_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+SAM_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	SAM_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	SAM_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	SAM_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	SAM_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+TYM_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	TYM_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	TYM_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	TYM_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	TYM_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+SVR_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	SVR_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	SVR_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	SVR_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	SVR_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+OMS_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	OMS_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	OMS_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	OMS_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	OMS_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+TOM_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	TOM_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	TOM_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	TOM_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	TOM_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+NOV_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	NOV_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	NOV_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	NOV_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	NOV_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+KEM_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	KEM_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	KEM_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	KEM_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	KEM_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+SBA_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	SBA_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	SBA_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	SBA_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	SBA_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+IRK_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	IRK_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	IRK_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	IRK_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	IRK_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+BRY_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	BRY_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	BRY_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	BRY_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	BRY_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+CHT_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	CHT_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	CHT_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	CHT_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	CHT_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+MAG_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	MAG_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	MAG_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	MAG_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	MAG_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+AMR_foreign_policy_category = {
+	
+	# Generic Decisions #
+	
+	AMR_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 21
+		complete_effect = {
+			RUS_increase_commitment_effect = yes
+		}
+	}
+	AMR_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	AMR_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	AMR_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			RUS_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+GER_foreign_policy_category = {
+	GER_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			#TNO_US_interventions_not_blocked = yes
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 75
+		days_re_enable = 90
+		complete_effect = {
+			GER_increase_commitment_effect = yes
+		}
+	}
+	GER_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			#TNO_US_interventions_not_blocked = yes
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 90
+		remove_effect = {
+			GER_authorise_bombing_runs_effect = yes
+		}
+	}
+	GER_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			#TNO_US_interventions_not_blocked = yes
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		remove_effect = {
+			GER_send_land_equipment_effect = yes
+		}
+	}
+	GER_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		remove_effect = {
+			GER_send_air_equipment_effect = yes
+		}
+	}
+}
+
+JAP_foreign_policy_category = {
+	# Generic Decisions #
+	
+	JAP_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_re_enable = 30
+		complete_effect = {
+			JAP_increase_commitment_effect = yes
+		}
+	}
+	JAP_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			JAP_authorise_bombing_runs_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	JAP_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			JAP_send_land_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	JAP_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			JAP_send_air_equipment_effect = yes
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	JAP_SWRW_order_hui_intervention = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			GAN = { is_in_faction_with = JAP }
+			check_variable = { SWRW_global_conflicts = 5 }
+		}
+		available = {
+			#TNO_US_interventions_not_blocked = yes
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		#days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = TNO_GER_SWRW_order_hui_intervention_tt
+			hidden_effect = {
+				remove_from_faction = GAN
+				GAN = {
+					declare_war_on = { target = QIN type = puppet_wargoal_focus }
+				}
+			}
+		}
+	}
+}
+
+USA_foreign_policy_category = {
+	# Generic Decisions #
+	
+	USA_SWRW_increase_commitment = {
+		icon = GFX_decision_generic_assault
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		complete_effect = {
+			set_temp_variable = { target = REG }
+			TNO_increase_volunteer_cap_1 = yes
+		}
+	}
+	USA_SWRW_authorise_bombing_runs = {
+		icon = GFX_decision_generic_bombing
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 50
+		days_remove = 14
+		days_re_enable = 20
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			GMA = {
+				add_timed_idea = {
+					idea = USA_Plane_Bombing
+					days = 60
+				}
+			}
+			GER = {
+				add_timed_idea = {
+					idea = USA_Plane_Bombing
+					days = 60
+				}
+			}
+			SFK = {
+				add_timed_idea = {
+					idea = USA_Plane_Bombing
+					days = 60
+				}
+			}
+			CZE = {
+				add_timed_idea = {
+					idea = USA_Plane_Bombing
+					days = 60
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = REG_RPR_War
+				}
+				RPR = {
+					add_timed_idea = {
+						idea = USA_Plane_Bombing
+						days = 60
+					}
+				}
+				SRH = {
+					add_timed_idea = {
+						idea = USA_Plane_Bombing
+						days = 60
+					}
+				}
+				HRC = {
+					add_timed_idea = {
+						idea = USA_Plane_Bombing
+						days = 60
+					}
+				}
+				SIL = {
+					add_timed_idea = {
+						idea = USA_Plane_Bombing
+						days = 60
+					}
+				}
+			}
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	USA_SWRW_send_land_equipment = {
+		icon = GFX_decision_generic_arms_trade_increase
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 5000
+				target = REG
+			}
+			send_equipment = {
+				equipment = anti_tank_equipment
+				amount = 250
+				target = REG
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 100
+				target = REG
+			}
+			send_equipment = {
+				equipment = artillery_equipment
+				amount = 200
+				target = REG
+			}
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+	USA_SWRW_send_air_equipment = {
+		icon = GFX_decision_generic_fighter_plane
+		visible = {
+			SWRW_fopo_conflict_selected = yes
+			NOT = { TNO_fopo_iran_selected = yes }
+		}
+		available = {
+			NOT = { has_country_flag = GC_RUS_decision_in_progress }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		cost = 25
+		days_remove = 7
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = GC_RUS_decision_in_progress
+		}
+		remove_effect = {
+			send_equipment = {
+				equipment = fighter_equipment
+				amount = 100
+				target = REG
+			}
+			send_equipment = {
+				equipment = CAS_equipment
+				amount = 50
+				target = REG
+			}
+			send_equipment = {
+				equipment = tac_bomber_equipment
+				amount = 25
+				target = REG
+			}
+			clr_country_flag = GC_RUS_decision_in_progress
+		}
+	}
+}
+
+HUN_unify_category = {
+	HUN_socialist_revolution = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		visible = {
+			tag = HUS
+		}
+		available = {
+			tag = HUS
+			has_war = no
+			has_global_flag = HUN_civil_war
+		}
+		days_remove = 2
+		complete_effect = {
+			HUS = {
+				set_capital = {
+					state = 1290
+					remember_old_capital = no
+				}
+				add_state_core = 45
+				add_state_core = 155	
+				add_state_core = 1292
+				add_state_core = 1290
+				add_state_core = 1291
+				add_state_core = 664
+				add_state_core = 43
+			}
+			every_state = {
+				limit = { is_owned_by = HUS }
+				HUS = { add_state_core = PREV }
+			}
+			HUD = {
+				every_core_state = {
+					remove_core_of = HUD
+				}
+			}
+			HUN = {
+				every_core_state = {
+					remove_core_of = HUN
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						RUS = { has_country_flag = RUS_generic_communist_unifier }
+						RUS = { has_country_flag = RUS_generic_democratic_unifier }
+						has_global_flag = RUS_shukshin_unification
+					}
+				}
+				RUS = { SWRW_fopo_remove_HCW_tab = yes }
+			}
+			if = {
+				limit = {
+					has_global_flag = german_civil_war_speervic
+				}
+				GER = { SWRW_fopo_remove_HCW_tab = yes }
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { 
+					OR = {
+						SER = {
+							OR = {
+								has_government = communist
+								has_government = socialist
+							}
+						}
+						BUL = {
+							OR = {
+								has_government = communist
+								has_government = socialist
+							}
+						}
+						GRE = {
+							OR = {
+								has_government = communist
+								has_government = socialist
+							}
+						}
+						MAC = {
+							OR = {
+								has_government = communist
+								has_government = socialist
+							}
+						}
+					}
+				}
+				clr_global_flag = HUN_civil_war
+				set_global_flag = HUS_winner
+				every_country = { limit = { is_ai = no } news_event = Global_Conflicts.11 }
+				HUS_internationale = yes
+				every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.55 days = 9 } } #gives enough time for everyone to join
+			}
+			else = {
+				clr_global_flag = HUN_civil_war
+				set_global_flag = HUS_winner
+				if = {
+					limit = {
+						RUS = {
+							has_country_flag = RUS_generic_communist_unifier
+						}
+					}
+					econ_join_sphere_RUS = yes
+					RUS = { give_guarantee = HUS }
+				}
+				every_country = { limit = { is_ai = no } news_event = Global_Conflicts.11 }
+			}
+		}
+	}
+	HUN_Democratic_age = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			tag = HUD
+			has_war = no
+			has_global_flag = HUN_civil_war
+		}
+		visible = {
+			tag = HUD
+		}
+		complete_effect = {
+			HUD = {
+				set_capital = {
+					state = 1290
+					remember_old_capital = no
+				}
+			}
+			every_state = {
+				limit = { is_owned_by = HUD }
+				HUD = { add_state_core = PREV }
+			}
+			HUS = {
+				every_core_state = {
+					remove_core_of = HUS
+				}
+			}
+			HUN = {
+				every_core_state = {
+					remove_core_of = HUN
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						RUS = { has_country_flag = RUS_generic_communist_unifier }
+						RUS = { has_country_flag = RUS_generic_democratic_unifier }
+						has_global_flag = RUS_shukshin_unification
+					}
+				}
+				RUS = { SWRW_fopo_remove_HCW_tab = yes }
+			}
+			if = {
+				limit = {
+					has_global_flag = german_civil_war_speervic
+				}
+				GER = { SWRW_fopo_remove_HCW_tab = yes }
+			}
+			if = {
+				limit = {
+					OR = {
+						RUS = { has_country_flag = RUS_generic_democratic_unifier }
+						has_global_flag = RUS_shukshin_unification
+					}
+				}
+				econ_join_sphere_RUS = yes
+				RUS = { give_guarantee = HUD }
+			}
+			clr_global_flag = HUN_civil_war
+			set_global_flag = HUD_winner
+			every_country = { limit = { is_ai = no } news_event = Global_Conflicts.10 }
+		}
+	}
+	HUN_arrow_cross_forever = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			tag = HUN
+			has_war = no
+			has_global_flag = HUN_civil_war
+		}
+		visible = {
+			tag = HUN
+		}
+		complete_effect = {
+			HUS = {
+				every_core_state = {
+					remove_core_of = HUS
+				}
+			}
+			HUD = {
+				every_core_state = {
+					remove_core_of = HUD
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						RUS = { has_country_flag = RUS_generic_communist_unifier }
+						RUS = { has_country_flag = RUS_generic_democratic_unifier }
+						has_global_flag = RUS_shukshin_unification
+					}
+				}
+				RUS = { SWRW_fopo_remove_HCW_tab = yes }
+			}
+			if = {
+				limit = {
+					has_global_flag = german_civil_war_speervic
+				}
+				GER = { SWRW_fopo_remove_HCW_tab = yes }
+			}
+			clr_global_flag = HUN_civil_war	
+			set_global_flag = HUN_winner
+			every_country = { limit = { is_ai = no } news_event = Global_Conflicts.9 }
+		}
+	}
+}
+
+# under construction
+#BI_invades = {
+#	BI_invade_romania = {
+#		fire_only_once = yes
+#		ai_will_do = {
+#			factor = 10
+#		} 
+#		days_remove = 2
+#		available = {
+#			ROM = {
+#				is_in_faction = no
+#			} 
+#		}
+#		remove_effect = {
+#			BI_invade_romania_effect = yes
+#			add_manpower = 100000
+#			load_oob = HUS_civilwar
+#		}
+#	}
+#}
+
+RUS_Hungarian_civil_war_category = {
+	RUS_send_volunteers_to_Hungary = {
+		priority = 10
+		icon = GFX_decision_generic_phone_call
+		custom_cost_text = RUS_15_cp_cost
+		custom_cost_trigger = {
+			command_power > 14.99
+		}
+		fire_only_once = yes
+		visible = {
+			NOT = {
+				any_country = {
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+				}
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					OR = {
+						has_global_flag = RUS_shukshin_unification
+						has_country_flag = RUS_generic_democratic_unifier
+					}
+				}
+				HUD = { has_war = yes }
+			}
+			else_if = {
+				limit = {
+					RUS = {
+						has_country_flag = RUS_generic_communist_unifier
+					}
+				}
+				HUS = { has_war = yes }
+			}
+			else_if = {
+				limit = {
+					tag = GER
+					has_government = national_socialism
+				}
+				HUN = { has_war = yes }
+			}
+		}
+		visible = {
+			if = {
+				limit = {
+					OR = {
+						has_global_flag = RUS_shukshin_unification
+						RUS = {
+							has_country_flag = RUS_generic_democratic_unifier
+						}
+						RUS = {
+							has_country_flag = RUS_generic_communist_unifier
+						}
+						AND = {
+							tag = GER
+							has_global_flag = german_civil_war_speervic
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 1
+		complete_effect = {
+			hidden_effect = { add_command_power = -15 }
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_global_flag = RUS_shukshin_unification
+						has_country_flag = RUS_generic_democratic_unifier
+					}
+				}
+				set_temp_variable = { target = HUD }
+				set_temp_variable = { number = 2 }
+				TNO_set_num_volunteers = yes
+				custom_effect_tooltip = RUS_can_send_volunteers_to_HUD_tt
+			}
+			else_if = {
+				limit = {
+					RUS = {
+						has_country_flag = RUS_generic_communist_unifier
+					}
+				}
+				set_temp_variable = { target = HUS }
+				set_temp_variable = { number = 2 }
+				TNO_set_num_volunteers = yes
+				custom_effect_tooltip = RUS_can_send_volunteers_to_HUS_tt
+			}
+			else_if = {
+				limit = {
+					tag = GER
+					has_government = national_socialism
+				}
+				set_temp_variable = { target = HUN }
+				set_temp_variable = { number = 2 }
+				TNO_set_num_volunteers = yes
+				custom_effect_tooltip = RUS_can_send_volunteers_to_HUN_tt
+			}
+		}
+	}
+
+	RUS_send_guns_to_Hungary = {
+		priority = 7
+		icon = GFX_decision_generic_prepare_civil_war
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = HUD
+					tag = HUS
+					tag = HUN
+				}
+			}
+		}
+		custom_cost_text = RUS_1000_guns
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 999 }
+		}
+		visible = {
+			FROM = {
+				has_volunteers_amount_from = {
+					tag = ROOT
+					count > 0
+				}
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			base = 30
+			modifier = {
+				has_equipment = { infantry_equipment > 2000 }
+				add = 40
+			}
+		}
+		days_remove = 30
+		days_re_enable = 45
+		modifier = { experience_gain_army = 0.04 }
+		complete_effect = {
+			send_equipment = {
+				type = infantry_equipment
+				amount = 1000
+				target = FROM
+			}
+		}
+	}
+
+	RUS_share_technology_with_Hungary = {
+		priority = 7
+		icon = GFX_decision_research_generic
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = HUS
+					tag = HUD
+					tag = HUN
+				}
+			}
+		}
+		custom_cost_text = RUS_50pp_25cp
+		custom_cost_trigger = {
+			command_power > 24.99
+			has_political_power > 49.99
+		}
+		visible = {
+			FROM = {
+				has_volunteers_amount_from = {
+					tag = ROOT
+					count > 0
+				}
+			}
+		}
+		complete_effect = {
+			FROM = { 
+				add_tech_bonus = {
+					name = infantry_weapons
+					bonus = 0.66
+					uses = 2
+					category = infantry_weapons
+				}
+			}
+			add_political_power = -50
+			add_command_power = -25
+		}
+		modifier = { experience_gain_army = 0.05 }
+		ai_will_do = {
+			base = 45
+		}
+		days_remove = 180
+		remove_effect = {
+			FROM = {
+				add_tech_bonus = {
+					name = land_dcotrine
+					bonus = 0.5
+					uses = 3
+					category = land_doctrine
+				}
+			}
+		}
+	}
+	RUS_send_advisors_to_Hungary = {
+		priority = 7
+		icon = GFX_decision_generic_military_parade
+		fire_only_once = yes
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = HUD
+					tag = HUS
+
+				}
+			}
+		}
+		custom_cost_text = RUS_50pp_25cp
+		custom_cost_trigger = {
+			command_power > 24.99
+			has_political_power > 49.99
+		}
+		visible = {
+			FROM = {
+				has_volunteers_amount_from = {
+					tag = ROOT
+					count > 0
+				}
+			}
+		}
+		complete_effect = {
+			FROM = { add_ideas = KAZ_russian_advisors }
+			add_political_power = -50
+			add_command_power = -25
+		}
+		modifier = { experience_gain_army = 0.08 }
+		ai_will_do = {
+			base = 30
+			modifier = {
+				has_equipment = { infantry_equipment > 2000 }
+				add = 40
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			FROM = { remove_ideas = KAZ_russian_advisors }
+		}
+	}
+}
+
+RUS_German_civil_war_category = {
+	RUS_send_volunteers_to_Germany = {
+		priority = 10
+		icon = GFX_decision_generic_phone_call
+		custom_cost_text = RUS_15_cp_cost
+		custom_cost_trigger = {
+			command_power > 14.99
+		}
+		fire_only_once = yes
+		visible = {
+			NOT = {
+				any_country = {
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+				}
+			}
+		}
+		available = {
+			if = {
+				limit = {
+					OR = {
+						has_global_flag = RUS_shukshin_unification
+						has_country_flag = RUS_generic_democratic_unifier
+					}
+				}
+				REG = { has_war = yes }
+			}
+			else_if = {
+				limit = {
+					RUS = {
+						has_country_flag = RUS_generic_communist_unifier
+					}
+				}
+				RPR = { has_war = yes }
+			}
+		}
+		visible = {
+			if = {
+				limit = {
+					OR = {
+						has_global_flag = RUS_shukshin_unification
+						has_country_flag = RUS_generic_democratic_unifier
+						RUS = {
+							has_country_flag = RUS_generic_communist_unifier
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 1
+		complete_effect = {
+			hidden_effect = { add_command_power = -15 }
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_global_flag = RUS_shukshin_unification
+						has_country_flag = RUS_generic_democratic_unifier
+					}
+				}
+				set_temp_variable = { target = REG }
+				set_temp_variable = { number = 2 }
+				TNO_set_num_volunteers = yes
+				custom_effect_tooltip = RUS_can_send_volunteers_to_RPR_tt
+			}
+			else_if = {
+				limit = {
+					RUS = {
+						has_country_flag = RUS_generic_communist_unifier
+					}
+				}
+				set_temp_variable = { target = RPR }
+				set_temp_variable = { number = 2 }
+				TNO_set_num_volunteers = yes
+				custom_effect_tooltip = RUS_can_send_volunteers_to_RPR_tt
+			}
+		}
+	}
+
+	RUS_send_guns_to_Germany = {
+		priority = 7
+		icon = GFX_decision_generic_prepare_civil_war
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = REG
+					tag = RPR
+					tag = SIL
+				}
+			}
+		}
+		custom_cost_trigger = {
+			has_equipment = { infantry_equipment > 999 }
+		}
+		visible = {
+			FROM = {
+				has_volunteers_amount_from = {
+					tag = ROOT
+					count > 0
+				}
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			base = 30
+			modifier = {
+				has_equipment = { infantry_equipment > 2000 }
+				add = 40
+			}
+		}
+		days_remove = 30
+		days_re_enable = 45
+		modifier = { experience_gain_army = 0.04 }
+		complete_effect = {
+			send_equipment = {
+				type = infantry_equipment
+				amount = 5000
+				target = FROM
+			}
+			send_equipment = {
+				type = artillery_equipment
+				amount = 1000
+				target = FROM
+			}
+			send_equipment = {
+				type = motorized_equipment
+				amount = 500
+				target = FROM
+			}
+		}
+	}
+
+	RUS_share_technology_with_Germany = {
+		priority = 7
+		icon = GFX_decision_research_generic
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = REG
+					tag = RPR
+					tag = SIL
+				}
+			}
+		}
+		custom_cost_text = RUS_50pp_25cp
+		custom_cost_trigger = {
+			command_power > 24.99
+			has_political_power > 49.99
+		}
+		visible = {
+			FROM = {
+				has_volunteers_amount_from = {
+					tag = ROOT
+					count > 0
+				}
+			}
+		}
+		complete_effect = {
+			FROM = { 
+				add_tech_bonus = {
+					name = infantry_weapons
+					bonus = 0.66
+					uses = 2
+					category = infantry_weapons
+				}
+			}
+			add_political_power = -50
+			add_command_power = -25
+		}
+		modifier = { experience_gain_army = 0.05 }
+		ai_will_do = {
+			base = 45
+		}
+		days_remove = 180
+		remove_effect = {
+			FROM = {
+				add_tech_bonus = {
+					name = land_doctrine
+					bonus = 0.5
+					uses = 3
+					category = land_doctrine
+				}
+			}
+		}
+	}
+	RUS_send_advisors_to_Germany = {
+		priority = 7
+		icon = GFX_decision_generic_military_parade
+		fire_only_once = yes
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = REG
+					tag = RPR
+
+				}
+			}
+		}
+		custom_cost_text = RUS_50pp_25cp
+		custom_cost_trigger = {
+			command_power > 24.99
+			has_political_power > 49.99
+		}
+		visible = {
+			FROM = {
+				has_volunteers_amount_from = {
+					tag = ROOT
+					count > 0
+				}
+			}
+		}
+		complete_effect = {
+			FROM = { add_ideas = KAZ_russian_advisors }
+			add_political_power = -50
+			add_command_power = -25
+		}
+		modifier = { experience_gain_army = 0.08 }
+		ai_will_do = {
+			base = 30
+			modifier = {
+				has_equipment = { infantry_equipment > 2000 }
+				add = 40
+			}
+		}
+		days_remove = 180
+		remove_effect = {
+			FROM = { remove_ideas = KAZ_russian_advisors }
+		}
+	}
+	RUS_aid_reconstruction_efforts = {
+		priority = 7
+		icon = GFX_decision_generic
+		fire_only_once = yes
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = REG
+					tag = RPR
+
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				has_volunteers_amount_from = {
+					tag = ROOT
+					count > 0
+				}
+			}
+		}
+		complete_effect = {
+			REG = {
+				TNO_improve_industrial_expertise_low = yes
+				TNO_improve_academic_base_low = yes
+				TNO_improve_poverty_low = yes
+				TNO_improve_admin_efficiency_low = yes
+				set_temp_variable = { gdp_growth_temp = 0.3 }
+				set_temp_variable = { inflation_temp = -0.1 }
+				econ_inflation_change = yes
+			}
+			add_political_power = -25
+			set_temp_variable = { temp_econ_spending_amount = 0.15 }
+			econ_spend_money_once_effect_raw_money = yes
+			set_temp_variable = { gdp_growth_temp = -0.3 }
+			econ_gdp_growth_change = yes
+		}
+		ai_will_do = {
+			base = 100
+		}
+		days_remove = 180
+		remove_effect = {
+			set_temp_variable = { gdp_growth_temp = 0.2 }
+			econ_gdp_growth_change = yes
+		}
+	}
+	RUS_send_aircraft_to_Germany = {
+		priority = 7
+		icon = GFX_decision_generic_prepare_civil_war
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = REG
+					tag = RPR
+					tag = SIL
+				}
+			}
+		}
+		visible = {
+			FROM = {
+				has_volunteers_amount_from = {
+					tag = ROOT
+					count > 0
+				}
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			base = 50
+		}
+		days_remove = 30
+		days_re_enable = 45
+		modifier = { experience_gain_air = 0.04 }
+		complete_effect = {
+			send_equipment = {
+				equipment = fighter_equipment
+				amount = 100
+				target = REG
+			}
+			send_equipment = {
+				equipment = CAS_equipment
+				amount = 50
+				target = REG
+			}
+		}
+	}
+}
+
+GER_gc_fopol_category = {
+	GER_gc_fopol_invade_HOL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 100
+		available = {
+			NOT = {
+				HOL = {
+					is_guaranteed_by = USA
+				}
+			}
+			NOT = {
+				HOL = {
+					has_government = national_socialism
+				}
+			}
+			GER = {
+				has_war = no
+			}
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+		}
+		complete_effect = {
+			GER = {
+				declare_war_on = {
+					target = HOL
+					type = annex_everything
+				}
+			}
+		}
+	}
+	GER_gc_fopol_invite_HOL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		available = {
+			HOL = {
+				has_government = national_socialism
+			}
+			GER = {
+				has_war = no 
+			}
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+		}
+		complete_effect = {
+			GER = { add_to_faction = HOL }
+			HOL = {
+				add_ideas = Pakt_Protektorat
+				econ_join_sphere_GER = yes
+			}
+		}
+	}
+	GER_gc_fopol_invade_DEN = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 100
+		available = {
+			NOT = {
+				DEN = {
+					has_government = despotism
+				}
+				DEN = {
+					has_government = ultranationalism
+				}
+			}
+			GER = {
+				has_war = no
+			}
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+		}
+		complete_effect = {
+			GER = {
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
+		}
+	}
+	GER_gc_fopol_invite_DEN = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		available = {
+			OR = {
+				DEN = {
+					has_government = despotism
+				}
+				DEN = {
+					has_government = ultranationalism
+				}
+			}
+			GER = {
+				has_war = no 
+			}
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+		}
+		complete_effect = {
+			GER = { add_to_faction = DEN }
+			DEN = {
+				add_ideas = Pakt_Protektorat
+				econ_join_sphere_GER = yes
+			}
+		}
+	}
+	GER_gc_fopol_invade_SLO = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 100
+		available = {
+			NOT = {
+				SLO = {
+					has_government = national_socialism
+				}
+			}
+			GER = {
+				has_war = no
+			}
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+		}
+		complete_effect = {
+			GER = {
+				declare_war_on = {
+					target = SLO
+					type = annex_everything
+				}
+			}
+		}
+	}
+	GER_gc_fopol_invite_SLO = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		available = {
+			SLO = {
+				has_government = national_socialism
+			}
+			GER = {
+				has_war = no 
+			}
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+		}
+		complete_effect = {
+			GER = { add_to_faction = SLO }
+			SLO = {
+				add_ideas = Pakt_Bundnispartner
+				econ_join_sphere_GER = yes
+			}
+		}
+	}
+	GER_gc_fopol_invade_POL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 100
+		available = {
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			country_exists = POL
+			GER = {
+				has_war = no 
+			}
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+		}
+		complete_effect = {
+			GER = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+			}
+		}
+	}
+	GER_gc_fopol_invite_POL = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		available = {
+			10 = {
+				owner = {
+					has_war = no
+				}
+			}
+			country_exists = OZW
+			GER = {
+				has_war = no 
+			}
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+		}
+		complete_effect = {
+			GER = { add_to_faction = OZW }
+			OZW = {
+				add_ideas = Pakt_Protektorat
+				econ_join_sphere_REG = yes
+			}
+		}
+	}
+	GER_gc_fopol_invade_Hungary = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 100
+		available = {
+			OR = {
+				has_global_flag = HUS_winner
+				has_global_flag = HUD_winner
+			}
+			NOT = {
+				OR = {
+					HUS = {
+						is_in_faction = yes
+					}
+					HUD = {
+						is_in_faction = yes
+					}
+				}
+			}
+			GER = {
+				has_war = no
+			}
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+		}
+		complete_effect = {
+			GER = {
+				if = {
+					limit = {
+						has_global_flag = HUS_winner
+					}
+					declare_war_on = {
+						target = HUS
+						type = annex_everything
+					}
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.12 } }
+				}
+				else = {
+					declare_war_on = {
+						target = HUD
+						type = annex_everything
+					}
+					every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.13 } }
+				}
+			}
+		}
+	}
+	GER_gc_fopol_invite_HUN = {
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 10
+		available = {
+			has_global_flag = HUN_winner
+			GER = {
+				has_war = no
+			}
+		}
+		visible = {	
+			tag = GER
+			has_global_flag = SWRW_2GCW_GER_winner
+		}
+		complete_effect = {
+			GER = { add_to_faction = HUN }
+			HUN = {
+				add_ideas = Pakt_Bundnispartner
+				econ_join_sphere_GER = yes
+			}
+		}
+	}
+}
+
+SWRW_FRA_vs_Paktkommission_category = {
+	SWRW_FRA_push_them_back = {
+		icon = GFX_decision_clock
+		allowed = {
+			OR = {
+				original_tag = FRS
+				original_tag = FRM
+				original_tag = FRD
+				original_tag = FRV
+				original_tag = FMM
+				original_tag = FGR
+				original_tag = FIT
+				original_tag = GLC
+			}
+		}
+		visible = {
+			FRA = {
+				has_war_with = GLC
+			}
+		}
+		activation = {
+			has_global_flag = FRA_vs_GLC
+		}
+		cancel_trigger = {
+			NOT = { country_exists = GLC }
+		}
+		is_good = no
+		fire_only_once = yes
+		days_mission_timeout = 60
+		timeout_effect = {
+			FRA = { white_peace = GLC }
+			every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.18 days = 1 } }
+		}
+	}
+	SWRW_GLC_demand_ceasefire = {
+		icon = GFX_decision_category_generic_formable_nations
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 20
+		}
+		allowed = {
+			tag = GLC
+		}
+		available = {
+			786 = {
+				is_controlled_by = GLC
+			}
+		}
+		visible = {
+			GLC = {
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			FRA = { white_peace = GLC }
+			every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.18 days = 1 } }
+		}
+	}
+}

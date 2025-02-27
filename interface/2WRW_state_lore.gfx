@@ -1,0 +1,127 @@
+spriteTypes = {
+	spritetype = {
+		name = "GFX_state_lore_img_801"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_801.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_802"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_802.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_803"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_803.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_804"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_804.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_805"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_805.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_806"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_806.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_807"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_807.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_808"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_808.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_809"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_809.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_810"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_810.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_811"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_811.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_812"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_812.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_813"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_813.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_814"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_814.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_815"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_815.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_816"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_816.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_817"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_817.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_818"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_818.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_819"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_819.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_820"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_820.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_821"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_821.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_822"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_822.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_823"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_823.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_824"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_824.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_825"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_825.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_826"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_826.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_827"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_827.dds"
+	}
+
+	spritetype = {
+		name = "GFX_state_lore_img_1001"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_1001.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_1002"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_1002.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_1003"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_1003.dds"
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_1004"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_1004.dds"
+	}
+}

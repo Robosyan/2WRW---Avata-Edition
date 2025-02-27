@@ -1,0 +1,364 @@
+music_station = "tno_superevents"
+#War Declarations
+music = {
+	song = "TNO_SE_ZHUKOV_DECLARATION"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_TUKH_DECLARATION"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_KOMI_SOCDEM_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_KOMI_LIBDEM_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_STALINA_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_ZHDANOV_DECLARATION"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_BUKHARINA_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_SUSLOV_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_EURASIA_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+		song = "TNO_SE_SHAFAREVICH_WAR"
+		chance = {
+			modifier = { factor = 0 }
+		}
+}
+music = {
+	song = "TNO_SE_SEROV_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_VYATKA_LIB_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_VYATKA_CON_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_VYATKA_AUTH_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_VAGNER_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+		song = "TNO_SE_VELMIR_WAR"
+		chance = {
+			modifier = { factor = 0 }
+		}
+}
+music = {
+	song = "TNO_SE_ZYKOV_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_BUNYACHENKO_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_ARTEZO_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_BATOV_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_YELTSIN_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_KAGANOVICH_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_CORNMAN_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_OMSK_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_SHUKSHIN_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_POKRYSHKIN_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_YURIY_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_LYDIA_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_SBA_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_MODERNIST_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_DECEMBERIST_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_HUMANIST_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_BASTILLARD_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_IRKUTSK_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_SABLIN_AUTH_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_SABLIN_LIB_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_MIKHAIL_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_SHEPUNOV_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_AMUR_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_MATKOVSKY_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_PETLIN_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_WERBELL_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+#Victory events
+music = {
+	song = "TNO_SE_GENERIC_RUSSIAN_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_TOTAL_GERMAN_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_SHUKSHIN_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_POKRYSHKIN_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_WERBELL_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "TNO_SE_WRRF_VICTORY_ZHUKOV"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNO_SE_RED_NAPOLEON_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+#Misc events
+
+music = {
+	song = "TNO_SE_SECOND_GERMAN_CIVIL_WAR"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNO_SE_LEFT_COMMIE_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNO_SE_DEM_GERMAN_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNO_SE_HARDLINER_COMMIE_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNO_SE_MILITARY_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNO_SE_FREIKORPS_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNO_SE_KLOPFER_VICTORY"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNO_SE_DUTCH_EXILES_RETURN"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+
+music = {
+	song = "TNO_SE_GERMAN_SPRING"
+	chance = {
+		modifier = { factor = 0 }
+	} 
+}

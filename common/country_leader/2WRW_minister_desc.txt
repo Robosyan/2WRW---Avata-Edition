@@ -1,0 +1,19 @@
+leader_traits = {
+	#VRPP4Life!!!
+	NOV_Ivan_Silayev_hog_desc = {}
+	NOV_Vladimir_Vinogradov_for_desc = {}
+	NOV_Rem_Viakhirev_eco_desc = {}
+	NOV_Pyotr_Deynekin_sec_desc = {}
+
+	#Why are CEOs buried 20 feet below? Because deep down they are still good '''''''''people'''''''''
+	NOV_Leonid_Plyushch_hog_desc = {}
+	NOV_Alexander_Lavut_for_desc = {}
+	NOV_Anatoly_Marchenko_eco_desc = {}
+	NOV_Petro_Grigorenko_sec_desc = {}
+
+	#Kid named United Nations of Earth in 2050
+	NOV_Felix_Serebrov_hog_desc = {}
+	NOV_Sergei_Kovalev_for_desc = {}
+	NOV_Naum_Meiman_eco_desc = {}
+	NOV_Vyacheslav_Bakhmin_sec_desc = {}
+}

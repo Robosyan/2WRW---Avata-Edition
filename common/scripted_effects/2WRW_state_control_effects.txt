@@ -1,0 +1,824 @@
+### 2WRW ###
+### Germany ###
+state_control_effect_64 = {
+	if = {
+		limit = { 
+			OR = {
+				is_controlled_by = HGR # ¯\_(ツ)_/¯
+				is_controlled_by = SFK
+				AND = {
+					is_controlled_by = GER
+					GER = {
+						has_government = national_socialism
+					}
+				}
+			}
+		}
+		reset_state_name = yes
+		set_province_name = { id = 6521 name = VICTORY_POINTS_6521_ger }
+	}
+	else = {
+		set_state_name = VICTORY_POINTS_6521_normal
+		set_province_name = { id = 6521 name = VICTORY_POINTS_6521_normal }
+	}
+}
+### Finland ###
+state_control_effect_1712 = {
+	if = {
+		limit = {
+			controller = { is_russian_nation = yes }
+		}
+		set_state_name = STATE_1712_rus
+		set_province_name = { id = 9206 name = VICTORY_POINTS_9206_rus }
+	}
+	else = {
+		reset_state_name = yes
+		reset_province_name = 9206
+	}
+}
+state_control_effect_146 = {
+	if = {
+		limit = {
+			controller = { is_russian_nation = yes }
+		}
+		set_state_name = STATE_146_rus
+		set_province_name = { id = 9105 name = VICTORY_POINTS_9105_rus }
+		set_province_name = { id = 6153 name = VICTORY_POINTS_6153_rus }
+	}
+	else = {
+		reset_state_name = yes
+		reset_province_name = 9105
+		reset_province_name = 6153
+	}
+}
+### Ostland ###
+#Estonia
+state_control_effect_191 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 11127
+	}
+	else = {
+		set_state_name = STATE_191_est
+		set_province_name = { id = 11127 name = VICTORY_POINTS_11127_est }
+	}
+}
+state_control_effect_13 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 3152
+	}
+	else = {
+		set_state_name = STATE_13_est
+		set_province_name = { id = 3152 name = VICTORY_POINTS_3512_est }
+	}
+}
+
+state_control_effect_1395 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 14602
+	}
+	else = {
+		set_state_name = STATE_1395_est
+		set_province_name = { id = 14602 name = VICTORY_POINTS_14602_est }
+	}
+}
+
+state_control_effect_1440 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 185
+	}
+	else = {
+		set_state_name = STATE_1440_est
+		set_province_name = { id = 185 name = VICTORY_POINTS_185_est }
+	}
+}
+
+state_control_effect_1396 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 9221
+		reset_province_name = 9485
+	}
+	else = {
+		set_state_name = STATE_1396_est
+		set_province_name = { id = 9221 name = VICTORY_POINTS_9221_est }
+		set_province_name = { id = 9485 name = VICTORY_POINTS_9485_est }
+	}
+}
+#Latvia
+state_control_effect_12 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 10493
+	}
+	else = {
+		set_state_name = STATE_12_lat
+		set_province_name = { id = 10493 name = VICTORY_POINTS_10493_lat }
+	}
+}
+state_control_effect_1402 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 3333
+	}
+	else = {
+		set_state_name = STATE_1402_lat
+		set_province_name = { id = 3333 name = VICTORY_POINTS_3333_lat }
+	}
+}
+state_control_effect_943 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 310
+	}
+	else = {
+		set_state_name = STATE_943_lat
+		set_province_name = { id = 310 name = VICTORY_POINTS_310_lat }
+	}
+}
+state_control_effect_1398 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 14591
+	}
+	else = {
+		set_state_name = STATE_1398_lat
+		set_province_name = { id = 14591 name = VICTORY_POINTS_14591_lat }
+	}
+}
+state_control_effect_190 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 9262
+	}
+	else = {
+		set_state_name = STATE_190_lat
+		set_province_name = { id = 9262 name = VICTORY_POINTS_9262_lat }
+	}
+}
+state_control_effect_1399 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 3296
+	}
+	else = {
+		set_state_name = STATE_1399_lat
+		set_province_name = { id = 3296 name = VICTORY_POINTS_3296_lat }
+	}
+}
+#Lithuania
+state_control_effect_1400 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 14585
+	}
+	else = {
+		set_state_name = STATE_1400_lit
+		set_province_name = { id = 14585 name = VICTORY_POINTS_14585_lit }
+	}
+}
+state_control_effect_11 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 6296
+	}
+	else = {
+		set_state_name = STATE_11_lit
+		set_province_name = { id = 6296 name = VICTORY_POINTS_6296_lit }
+	}
+}
+state_control_effect_1401 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 11312
+	}
+	else = {
+		set_state_name = STATE_1401_lit
+		set_province_name = { id = 11312 name = VICTORY_POINTS_11312_lit }
+	}
+}
+state_control_effect_189 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 9483
+	}
+	else = {
+		set_state_name = STATE_189_lit
+		set_province_name = { id = 9483 name = VICTORY_POINTS_9483_lit }
+	}
+}
+state_control_effect_96 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 3320
+	}
+	else = {
+		set_state_name = STATE_96_lit
+		set_province_name = { id = 3320 name = VICTORY_POINTS_3320_lit }
+	}
+}
+#Belarus
+state_control_effect_207 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = BLR
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+				controller = {
+					original_tag = BLR
+					is_in_faction_with = GER
+				}
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 11241
+	}
+	else = {
+		set_state_name = STATE_207_blr
+		set_province_name = { id = 11241 name = VICTORY_POINTS_11241_blr }
+	}
+}
+state_control_effect_1405 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+				controller = {
+					original_tag = BLR
+					is_in_faction_with = GER
+				}
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 11322
+	}
+	else = {
+		set_state_name = STATE_1405_blr
+		set_province_name = { id = 11322 name = VICTORY_POINTS_11322_blr }
+	}
+}
+state_control_effect_1404 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+				controller = {
+					original_tag = BLR
+					is_in_faction_with = GER
+				}
+			}
+		}
+		reset_state_name = yes
+	}
+	else = {
+		set_state_name = STATE_1404_blr
+	}
+}
+state_control_effect_1403 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+				controller = {
+					original_tag = BLR
+					is_in_faction_with = GER
+				}
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 406
+	}
+	else = {
+		set_state_name = STATE_1403_blr
+		set_province_name = { id = 406 name = VICTORY_POINTS_406_blr }
+	}
+}
+state_control_effect_194 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+				controller = {
+					original_tag = BLR
+					is_in_faction_with = GER
+				}
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 11216
+	}
+	else = {
+		set_state_name = STATE_194_blr
+		set_province_name = { id = 11216 name = VICTORY_POINTS_11216_blr }
+	}
+}
+state_control_effect_206 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+				controller = {
+					original_tag = BLR
+					is_in_faction_with = GER
+				}
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 9289
+		reset_province_name = 3350
+	}
+	else = {
+		set_state_name = STATE_206_blr
+		set_province_name = { id = 9289 name = VICTORY_POINTS_9289_blr }
+		set_province_name = { id = 3350 name = VICTORY_POINTS_3350_blr }
+	}
+}
+state_control_effect_204 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+				controller = {
+					original_tag = BLR
+					is_in_faction_with = GER
+				}
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 14552
+	}
+	else = {
+		set_state_name = STATE_204_blr
+		set_province_name = { id = 14552 name = VICTORY_POINTS_14552_blr }
+	}
+}
+state_control_effect_1406 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+				controller = {
+					original_tag = BLR
+					is_in_faction_with = GER
+				}
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 14561
+	}
+	else = {
+		set_state_name = STATE_1406_blr
+		set_province_name = { id = 14561 name = VICTORY_POINTS_14561_blr }
+	}
+}
+state_control_effect_1407 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = OST
+				is_controlled_by = GER
+				is_controlled_by = JST
+				is_controlled_by = DST
+				is_controlled_by = MST
+				controller = {
+					original_tag = BLR
+					is_in_faction_with = GER
+				}
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 3556
+		reset_province_name = 3309
+	}
+	else = {
+		set_state_name = STATE_1407_blr
+		set_province_name = { id = 3309 name = VICTORY_POINTS_3309_blr }
+		set_province_name = { id = 3556 name = VICTORY_POINTS_3356_blr }
+	}
+}
+
+### Caucasus ###
+#Rusian Caucasus
+state_control_effect_234 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_province_name = 3734
+		reset_province_name = 11668
+		reset_province_name = 6783
+	}
+	else = {
+		set_province_name = { id = 3734 name = "Krasnodar" }
+		set_province_name = { id = 11668 name = "Novorosíisk" }
+		set_province_name = { id = 6783 name = "Yeysk" }
+	}
+}
+state_control_effect_235 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 748
+		reset_province_name = 6718
+		reset_province_name = 683
+		reset_province_name = 11690
+	}
+	else = {
+		set_state_name = "Stavropol"
+		set_province_name = { id = 748 name = "Stavropol" }
+		set_province_name = { id = 6718 name = "Pyatigorsk" }
+		set_province_name = { id = 683 name = "Kizlyar" }
+		set_province_name = { id = 11690 name = "Budyonnovsk" }
+	}
+}
+state_control_effect_1559 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 15690
+	}
+	else = {
+		set_state_name = "Karacháyevo"
+		set_province_name = { id = 15690 name = "Cherkessk" }
+	}
+}
+state_control_effect_1560 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 685
+	}
+	else = {
+		set_state_name = "Karachay-Balkar"
+		set_province_name = { id = 685 name = "Nalchik" }
+	}
+}
+state_control_effect_1561 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 9628
+	}
+	else = {
+		set_state_name = "North Ossetia-Alania"
+		set_province_name = { id = 9628 name = "Vladikavkaz" }
+	}
+}
+state_control_effect_232 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 670
+		reset_province_name = 3672
+	}
+	else = {
+		set_state_name = "Chechnya-Ingushetia"
+		set_province_name = { id = 670 name = "Nazran" }
+		set_province_name = { id = 3672 name = "Grozny" }
+	}
+}
+state_control_effect_1564 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_province_name = 3668
+	}
+	else = {
+		set_province_name = { id = 3668 name = "Makhachkala" }
+	}
+}
+#Georgia
+state_control_effect_231 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 1599
+		reset_province_name = 3658
+		reset_province_name = 4534
+		reset_province_name = 11599
+	}
+	else = {
+		set_state_name = "Sakartvelo" 
+		set_province_name = { id = 1599 name = "Tbilisi" }
+		set_province_name = { id = 3658 name = "Kutaisi" }
+		set_province_name = { id = 4534 name = "Rustavi" }
+		set_province_name = { id = 11599 name = "Zugdidi" }
+	}
+}
+state_control_effect_1556 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 15133
+	}
+	else = {
+		set_state_name = "South Ossetia" 
+		set_province_name = { id = 15133 name = "Tskhinvali" }
+	}
+}
+state_control_effect_1558 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 11617
+		reset_province_name = 11647
+	}
+	else = {
+		set_state_name = "Abkhazia" 
+		set_province_name = { id = 11617 name = "Sujumi" }
+		set_province_name = { id = 11647 name = "Likhni" }
+	}
+}
+#Azerbaijan
+state_control_effect_229 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 1536
+		reset_province_name = 4458
+		reset_province_name = 4473
+		reset_province_name = 11645
+	}
+	else = {
+		set_state_name = "Azərbaycan" 
+		set_province_name = { id = 1536 name = "Shirvan" }
+		set_province_name = { id = 4458 name = "Quba" }
+		set_province_name = { id = 4473 name = "Lenkeran" }
+		set_province_name = { id = 11645 name = "Shaki" }
+	}
+}
+state_control_effect_1554 = {
+	if = {
+		limit = {
+			OR = {
+				is_controlled_by = CAU
+				is_controlled_by = GER
+				is_controlled_by = DFK
+			}
+		}
+		reset_state_name = yes
+		reset_province_name = 11617
+	}
+	else = {
+		set_state_name = "Nagorno-Karabakh" 
+		set_province_name = { id = 1467 name = "Xankendi" }
+	}
+}

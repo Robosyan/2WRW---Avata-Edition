@@ -1,0 +1,178 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_GER_Verteidige_das_Vaterland"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_Verteidige_das_Vaterland.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_The_Means_of_War_1"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_The_Means_of_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_The_Means_of_War_2"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_The_Means_of_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_The_Means_of_War_3"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_The_Means_of_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_The_Final_Line_1"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_The_Final_Line.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_The_Final_Line_2"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_The_Final_Line.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_The_Final_Line_3"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_The_Final_Line.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Into_the_Ostfront"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_Into_the_Ostfront.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Wolves_of_the_Fatherland"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_Wolves_of_the_Fatherland.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SWRW_GER_Endsieg"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_SWRW_GER_Endsieg.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_second_german_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/German_Civil_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_a_nation_in_flames"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/A_Nation_In_Flames.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_REG_germanys_last_hope"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/REG_Germanys_Last_Hope.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RPR_red_star_reborn"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/RPR_Red_Star_Reborn.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SRH_red_dawn"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/SRH_Red_Dawn.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SFK_freikorps_voran"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/SFK_Freikorps_Voran.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_POL_one_last_chance"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/POL_One_Last_Chance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GMA_flames_of_their_reckoning"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GMA_Flames_of_Their_Reckoning.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HRC_forty_years_of_rage_unleashed"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/HRC_forty_years_of_rage_unleashed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_our_reich_of_ash"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_Our_Reich_Of_Ash.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_economic_apocalypse"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GER_Economic_Apocalypse.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Reconstruction_of_Germany"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_Reconstruction_of_Germany.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_the_god_of_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/The_God_of_War_Slayed.dds"
+	}
+	# spriteType = {
+	# 	name = "GFX_idea_GER_the_werewolf_threat"
+	# 	texturefile = "gfx/interface/ideas/national_spirits/GER/GER_The_Werwolve_Menace.dds"
+	# }
+	spriteType = {
+		name = "GFX_idea_REG_a_nation_in_flames"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/A_Nation_In_Flames.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIL_a_nation_in_flames"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/A_Nation_In_Flames.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RPR_a_nation_in_flames"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/A_Nation_In_Flames.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Totaler_Krieg"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/GFX_idea_GER_Totaler_Krieg.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SRH_a_nation_in_flames"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/A_Nation_In_Flames.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HRC_a_nation_in_flames"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/A_Nation_In_Flames.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GMA_a_nation_in_flames"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/A_Nation_In_Flames.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SFK_a_nation_in_flames"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/A_Nation_In_Flames.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_OZW_a_nation_in_flames"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/A_Nation_In_Flames.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_a_nation_in_flames"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/A_Nation_In_Flames.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_REG_the_second_german_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/German_Civil_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIL_the_second_german_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/German_Civil_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_RPR_the_second_german_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/German_Civil_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SRH_the_second_german_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/German_Civil_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_HRC_the_second_german_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/German_Civil_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GMA_the_second_german_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/German_Civil_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SFK_the_second_german_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/German_Civil_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_OZW_the_second_german_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/German_Civil_War.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_OZW_one_last_fight"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/OZW_One_Last_Fight.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_the_second_german_civil_war"
+		texturefile = "gfx/interface/ideas/national_spirits/GER/German_Civil_War.dds"
+	}
+}

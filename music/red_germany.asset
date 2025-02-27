@@ -1,0 +1,47 @@
+music = {
+	name = "Auferstanden_aus_Ruinen"
+	file = "Auferstanden_aus_Ruinen.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Einheitsfrontlied"
+	file = "Einheitsfrontlied.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "IFA_Wartburg_Hail_The_Youth"
+	file = "IFA_Wartburg_Hail_The_Youth.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Der_Heilige_Krieg_The_Sacred_War"
+	file = "Der_Heilige_Krieg_The_Sacred_War.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Die_Internationale"
+	file = "Die_Internationale.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Unsere_Panzerdivision_Tank_March"
+	file = "Unsere_Panzerdivision_Tank_March.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Unterwegs_On_the_Road"
+	file = "Unterwegs_On_the_Road.ogg"
+	volume = 0.9
+}
+
+music = {
+	name = "Der_Heimliche_Aufmarsch_The_Secret_Deployment"
+	file = "Der_Heimliche_Aufmarsch_The_Secret_Deployment.ogg"
+	volume = 0.9
+}

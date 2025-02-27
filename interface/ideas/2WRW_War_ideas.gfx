@@ -1,0 +1,16 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_RUS_war_exhaustion"
+		texturefile = "gfx/interface/ideas/GFX_RUS_war_exhaustion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_GER_war_exhaustion"
+		texturefile = "gfx/interface/ideas/GFX_GER_war_exhaustion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SWRW_tension"
+		texturefile = "gfx/interface/ideas/GFX_SWRW_tension.dds"
+	}
+}

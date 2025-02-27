@@ -1,0 +1,9 @@
+spriteTypes = {
+	
+	# Serov
+	
+	spriteType = {
+		name = "GFX_idea_KOM_ordosocialization"
+		texturefile = "gfx/interface/ideas/national_spirits/KOM/KOM_ordosocialization.dds"
+	}
+}

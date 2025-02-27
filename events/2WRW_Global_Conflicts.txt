@@ -1,0 +1,1011 @@
+add_namespace = BAL_international
+
+country_event = { 
+	id = BAL_international.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event BAL_international.1"}
+	title = BAL_international.1.t
+	desc = BAL_international.1.desc
+	
+	is_triggered_only = yes
+
+	option = {
+		name = BAL_international.1.a
+		HUS = {
+			add_to_faction = ROOT
+		}
+		ROOT = {
+			add_ideas = BI_Member
+			econ_join_sphere_HUS = yes
+		}
+	}
+}
+
+
+
+add_namespace = Global_GCW
+
+country_event = { #French invasion of German france
+	id = Global_GCW.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_GCW.1"}
+	title = Global_GCW.1.t
+	desc = Global_GCW.1.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { # france goes for it
+		name = Global_GCW.1.a
+		trigger = {
+			GLC = {
+				owns_state = 17
+			}
+			FRA = {
+				owns_state = 786
+			}
+		}
+		FRA = {
+			declare_war_on = {
+				target = GLC
+				type = annex_everything
+			}
+		}
+		set_global_flag = FRA_vs_GLC
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.16 days = 1 } }
+	}
+	option = { # germany already gave the rest of france back like a loser
+		name = Global_GCW.1.b
+		trigger = {
+			NOT = {
+				GLC = {
+					owns_state = 17
+				}
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = Global_GCW.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event Global_GCW.2"}
+	title = Global_GCW.2.t
+	desc = Global_GCW.2.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	option = {
+		name = Global_GCW.2.a
+		set_global_flag = REG_RPR_War
+	}
+	
+}
+
+country_event = { # commie elections
+	id = Global_GCW.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Global_GCW.3"
+		hidden_effect = {
+			RPR = { set_country_flag = Post_2GCW_Leader_Picked }
+		}
+	}
+	title = Global_GCW.3.t
+	desc = Global_GCW.3.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = Global_GCW.3.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_COMMUNIST_GERMANY_PATH
+						option = GER_COMMUNIST_GERMANY_PATH_RUDI
+					}
+					has_game_rule = {
+						rule = GER_COMMUNIST_GERMANY_PATH
+						option = GER_COMMUNIST_GERMANY_PATH_HOFFMANN
+					}
+				}
+			}
+		}
+		RPR = {
+			add_popularity = {
+				ideology = communist_1
+				popularity = 0.3
+			}
+		}
+		RPR = {
+			hidden_effect = {
+				set_popularities = {
+					communist = communist_1
+					communist_1 = communist
+				}
+			}
+			set_politics = {
+				ruling_party = communist
+			}
+			HRC_Ernst_Aust = {
+				remove_country_leader_role = { ideology = communist_1_subtype }
+				promote_character = yes
+			}
+			RPR_Heinz_Hoffmann = {
+				remove_country_leader_role = { ideology = communist_bolshevism_subtype }
+				add_country_leader_role = {
+					country_leader = {
+						desc = "POLITICS_RPR_Heinz_Hoffmann_DESC"
+						expire = "1999.1.23"
+						ideology = communist_1_subtype
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+			set_cosmetic_tag = RPR_Ernst_ending
+			GER = { set_cosmetic_tag = RPR_Ernst_ending }
+			set_party_name = { 
+				ideology = communist
+				long_name = RPR_ernst_long
+				name = RPR_ernst_short
+			}
+			set_party_name = { 
+				ideology = communist_1
+				long_name = RPR_Hoffman_long
+				name = RPR_Hoffman_short
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.30 days = 1 } }
+	}
+	option = {
+		name = Global_GCW.3.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_COMMUNIST_GERMANY_PATH
+						option = GER_COMMUNIST_GERMANY_PATH_AUST
+					}
+					has_game_rule = {
+						rule = GER_COMMUNIST_GERMANY_PATH
+						option = GER_COMMUNIST_GERMANY_PATH_HOFFMANN
+					}
+				}
+			}
+		}
+		RPR = {
+			set_cosmetic_tag = RPR_Rudi_ending
+			GER = { set_cosmetic_tag = RPR_Rudi_ending }
+			set_politics = {
+				ruling_party = socialist
+			}
+			add_popularity = {
+				ideology = socialist
+				popularity = 0.2
+			}
+			set_party_name = { 
+				ideology = socialist
+				long_name = RPR_rudi_long
+				name = RPR_rudi_short
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.31 days = 1 } }
+	}
+	option = {
+		name = Global_GCW.3.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_COMMUNIST_GERMANY_PATH
+						option = GER_COMMUNIST_GERMANY_PATH_AUST
+					}
+					has_game_rule = {
+						rule = GER_COMMUNIST_GERMANY_PATH
+						option = GER_COMMUNIST_GERMANY_PATH_RUDI
+					}
+				}
+			}
+		}
+		set_cosmetic_tag = RPR_Hoffman_ending
+		set_politics = {
+			ruling_party = communist
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = 0.2
+		}
+		RPR = {
+			set_party_name = { 
+				ideology = communist
+				long_name = RPR_Hoffman_long
+				name = RPR_Hoffman_short
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.29 days = 1 } }
+	}
+
+}
+
+country_event = { # Dem elections
+	id = Global_GCW.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Global_GCW.4"
+		hidden_effect = {
+			REG = { set_country_flag = Post_2GCW_Leader_Picked }
+		}
+	}
+	title = Global_GCW.4.t
+	desc = Global_GCW.4.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Manfred ending
+		name = Global_GCW.4.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_DEMOCRATIC_GERMANY_PATH
+						option = GER_DEMOCRATIC_GERMANY_PATH_CONDEM
+					}
+					has_game_rule = {
+						rule = GER_DEMOCRATIC_GERMANY_PATH
+						option = GER_DEMOCRATIC_GERMANY_PATH_PROGRESSIVISM
+					}
+				}
+			}
+		}
+		REG = {
+			set_politics = {
+				ruling_party = liberalism
+			}
+			add_popularity = {
+				ideology = liberalism
+				popularity = 0.05
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.28 days = 1 } }
+		
+	}
+	option = { #Walter ending
+		name = Global_GCW.4.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_DEMOCRATIC_GERMANY_PATH
+						option = GER_DEMOCRATIC_GERMANY_PATH_LIBDEM
+					}
+					has_game_rule = {
+						rule = GER_DEMOCRATIC_GERMANY_PATH
+						option = GER_DEMOCRATIC_GERMANY_PATH_PROGRESSIVISM
+					}
+				}
+			}
+		}
+		REG = {
+			set_politics = {
+				ruling_party = conservatism
+			}
+			add_popularity = {
+				ideology = conservatism
+				popularity = 0.05
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.27 days = 1 } }
+	}
+	option = {#Hans ending
+		name = Global_GCW.4.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_DEMOCRATIC_GERMANY_PATH
+						option = GER_DEMOCRATIC_GERMANY_PATH_LIBDEM
+					}
+					has_game_rule = {
+						rule = GER_DEMOCRATIC_GERMANY_PATH
+						option = GER_DEMOCRATIC_GERMANY_PATH_CONDEM
+					}
+				}
+			}
+		}
+		REG = {
+			set_politics = {
+				ruling_party = progressivism
+			}
+			add_popularity = {
+				ideology = progressivism
+				popularity = 0.05
+			}
+			REG_Hans_Dietrich_Genscher = {
+				remove_country_leader_role = { ideology = paternalism_transitioning_democracy_subtype }
+				add_country_leader_role = {
+					country_leader = {
+						desc = "POLITICS_REG_Hans_Dietrich_Genscher_DESC"
+						expire = "1999.1.23"
+						ideology = progressivism_reformist_socialism_subtype
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.26 days = 1 } }
+	}
+}
+
+country_event = { # nazi endings
+	id = Global_GCW.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Global_GCW.5"
+		hidden_effect = {
+			GER = { set_country_flag = Post_2GCW_Leader_Picked }
+		}
+	}
+	title = Global_GCW.5.t
+	desc = Global_GCW.5.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #klopfer ending
+		name = Global_GCW.5.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GER_NAZI_GERMANY_PATH
+					option = GER_NAZI_GERMANY_PATH_BRADNER
+				}
+			}
+		}
+		GER = {
+			add_popularity = {
+				ideology = national_socialism
+				popularity = 0.20
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.33 days = 1 } }
+	}
+	option = { #brandner ending
+		name = Global_GCW.5.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = GER_NAZI_GERMANY_PATH
+					option = GER_NAZI_GERMANY_PATH_KLOPFER
+				}
+			}
+		}
+		GER = {
+			add_popularity = {
+				ideology = national_socialism_1
+				popularity = 0.3
+			}
+		}
+		GER = {
+			hidden_effect = {
+				set_popularities = {
+					national_socialism = national_socialism_1
+					national_socialism_1 = national_socialism
+				}
+			}
+			GER_Willi_Brandner = {
+				remove_country_leader_role = { ideology = national_socialism_1_subtype }
+				add_country_leader_role = {
+					country_leader = {
+						desc = "POLITICS_GER_Willi_Brandner"
+						expire = "1999.1.23"
+						ideology = national_socialism_idiosyncratic_nazism_subtype
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+			GER_gerhard_klopfer = {
+				remove_country_leader_role = { ideology = national_socialism_subtype }
+				add_country_leader_role = {
+					country_leader = {
+						desc = "POLITICS_GERHARD_KLOPFER_2_DESC"
+						expire = "1999.1.23"
+						ideology = national_socialism_1_subtype
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+			set_party_name = { 
+				ideology = national_socialism
+				long_name = GER_brandner_long
+				name = GER_brandner_short
+			}
+			set_party_name = { 
+				ideology = national_socialism_1
+				long_name = GER_national_socialism_party_long
+				name = GER_national_socialism_party
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.34 days = 1 } }
+	}
+}
+
+country_event = { # SFK last part
+	id = Global_GCW.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Global_GCW.6"
+		hidden_effect = {
+			SFK = { set_country_flag = Post_2GCW_Leader_Picked }
+		}
+	}
+	title = Global_GCW.6.t
+	desc = Global_GCW.6.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Lemm ending
+		name = Global_GCW.6.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_CURSED_GERMANY_PATH
+						option = GER_CURSED_GERMANY_PATH_KALTENBRUNNER
+					}
+					has_game_rule = {
+						rule = GER_CURSED_GERMANY_PATH
+						option = GER_CURSED_GERMANY_PATH_BACKE
+					}
+				}
+			}
+		}
+		SFK = {
+			set_country_leader_description = { desc = "POLITICS_SFK_Heinz_Georg_Lemm_VICTORY_DESC" }
+			set_politics = {
+				ruling_party = ultranationalism
+			}
+			add_popularity = {
+				ideology = ultranationalism
+				popularity = 0.20
+			}
+			set_party_name = { 
+				ideology = ultranationalism
+				long_name = "Schwarze Partei"
+				name = "Schwarze Partei"
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.36 days = 1 } }
+	}
+	option = { #Kaltenbrunner ending
+		name = Global_GCW.6.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_CURSED_GERMANY_PATH
+						option = GER_CURSED_GERMANY_PATH_LEMM
+					}
+					has_game_rule = {
+						rule = GER_CURSED_GERMANY_PATH
+						option = GER_CURSED_GERMANY_PATH_BACKE
+					}
+				}
+			}
+		}
+		SFK = {
+			promote_character = SFK_Ernst_Kaltenbrunner
+			set_politics = {
+				ruling_party = national_socialism
+			}
+			add_popularity = {
+				ideology = national_socialism
+				popularity = 0.20
+			}
+			set_cosmetic_tag = GER
+			GER = { drop_cosmetic_tag = yes }
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.37 days = 1 } }
+	}
+	option = { #Backe ending
+		name = Global_GCW.6.c
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_CURSED_GERMANY_PATH
+						option = GER_CURSED_GERMANY_PATH_LEMM
+					}
+					has_game_rule = {
+						rule = GER_CURSED_GERMANY_PATH
+						option = GER_CURSED_GERMANY_PATH_KALTENBRUNNER
+					}
+				}
+			}
+		}
+		SFK = {
+			add_popularity = {
+				ideology = national_socialism_1
+				popularity = 0.3
+			}
+		}
+		SFK = {
+			hidden_effect = {
+				set_popularities = {
+					national_socialism = national_socialism_1
+					national_socialism_1 = national_socialism
+				}
+			}
+			SFK_Herbert_Backe = {
+				remove_country_leader_role = { ideology = national_socialism_1_subtype }
+				add_country_leader_role = {
+					country_leader = {
+						desc = "POLITICS_SFK_Herbert_Backe_DESC"
+						expire = "1999.1.23"
+						ideology = national_socialism_subtype
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+			SFK_Ernst_Kaltenbrunner = {
+				remove_country_leader_role = { ideology = national_socialism_spartanism_subtype }
+				add_country_leader_role = {
+					country_leader = {
+						desc = "POLITICS_SFK_Ernst_Kaltenbrunner_DESC"
+						expire = "1999.1.23"
+						ideology = national_socialism_subtype
+						traits = {
+						}
+						id = -1
+					}
+					promote_leader = yes
+				}
+			}
+			set_politics = {
+				ruling_party = national_socialism
+			}
+			set_party_name = { 
+				ideology = national_socialism
+				long_name = SFK_national_socialism_1_party_long
+				name = SFK_national_socialism_1_party
+			}
+			set_party_name = { 
+				ideology = national_socialism_1
+				long_name = SFK_national_socialism_party_long
+				name = SFK_national_socialism_party
+			}
+			set_cosmetic_tag = GER
+			GER = { drop_cosmetic_tag = yes }
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.38 days = 1 } }
+	}
+}
+
+country_event = { #Wehrmacht Führership choice
+	id = Global_GCW.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event Global_GCW.7"
+		hidden_effect = {
+			GMA = { set_country_flag = Post_2GCW_Leader_Picked }
+		}
+	}
+	title = Global_GCW.7.t
+	desc = Global_GCW.7.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Jens ending
+		name = Global_GCW.7.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_WEHRMACHT_GERMANY_PATH
+						option = GER_WEHRMACHT_GERMANY_PATH_SCHIRACH
+					}
+				}
+			}
+		}
+		GMA = {
+			set_cosmetic_tag = GER
+			promote_character = GMA_Walter_Jens
+			set_politics = {
+				ruling_party = national_socialism
+			}
+			add_popularity = {
+				ideology = national_socialism
+				popularity = 0.25
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.57 days = 1 } }
+	}
+	option = { #Shirach ending
+		name = Global_GCW.7.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = GER_WEHRMACHT_GERMANY_PATH
+						option = GER_WEHRMACHT_GERMANY_PATH_JENS
+					}
+				}
+			}
+		}
+		GMA = {
+			set_cosmetic_tag = GER
+			promote_character = GMA_Richard_Von_Shirach
+			set_politics = {
+				ruling_party = national_socialism
+			}
+			add_popularity = {
+				ideology = national_socialism
+				popularity = 0.25
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.58 days = 1 } }
+	}
+}
+add_namespace = DEN_Spring
+
+country_event = { #the start of the Danish spring
+	id = DEN_Spring.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DEN_Spring.1"}
+	title = DEN_Spring.1.t
+	desc = DEN_Spring.1.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DEN_Spring.1.a
+		XXX = {
+			DEN_German_Garrison = { set_nationality = DEN }
+		}
+		DEN = {
+			promote_character = DEN_German_Garrison
+			set_politics = {
+				ruling_party = despotism
+			}
+			add_popularity = {
+				ideology = despotism
+				popularity = 0.20
+			}
+			country_event = { id = DEN_Spring.2 days = 30 }
+			remove_ideas = {
+				DEN_permanent_secretaries
+				DEN_threat_from_silkeborg
+			}
+			set_cosmetic_tag = DEN_2GCW_german
+		}
+	}
+	
+}
+
+
+country_event = { #choose your side
+	id = DEN_Spring.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DEN_Spring.2"}
+	title = DEN_Spring.2.t
+	desc = DEN_Spring.2.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DEN_Spring.2.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = DEN_POST_WAR_PATH
+						option = DEN_POST_WAR_PATH_COMMUNISM
+					}
+					has_game_rule = {
+						rule = DEN_POST_WAR_PATH
+						option = DEN_POST_WAR_PATH_PROGRESSIVISM
+					}
+					has_game_rule = {
+						rule = DEN_POST_WAR_PATH
+						option = DEN_POST_WAR_PATH_LIBCON
+					}
+				}
+			}
+		}
+		DEN = {
+			set_popularities = {
+				communist = 0
+				socialist = 0
+				progressivism = 0
+				liberalism = 0
+				conservatism = 0
+				paternalism = 13
+				despotism = 33
+				fascism = 12
+				national_socialism = 16
+				ultranationalism = 26
+			}
+		}	
+		country_event = { id = DEN_Spring.5 days = 30 }
+	}
+	option = {
+		name = DEN_Spring.2.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = DEN_POST_WAR_PATH
+						option = DEN_POST_WAR_PATH_WEHRMACHT
+					}
+					has_game_rule = {
+						rule = DEN_POST_WAR_PATH
+						option = DEN_POST_WAR_PATH_ULTRANAT
+					}
+				}
+			}
+		}
+		XXX = {
+			DEN_Freedom_council = { set_nationality = DEN }
+		}
+		DEN = {
+			RUS_Idea_Removal_Helper = yes
+			leave_GER_sphere = yes
+			set_popularities = {
+				communist = 25
+				socialist = 10
+				progressivism = 24
+				liberalism = 0
+				liberal_conservatism = 23
+
+				conservatism = 5
+				paternalism = 8
+				despotism = 0
+				fascism = 0
+				national_socialism = 5
+				ultranationalism = 0
+			}
+			set_politics = {
+				ruling_party = paternalism
+			}
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Capitalism }
+			econ_type_change = yes
+			promote_character = DEN_Freedom_council
+			country_event = { id = DEN_Spring.3 days = 30 }
+			set_cosmetic_tag = DEN_2GCW_dem
+		}
+	}
+}
+
+country_event = { #free Danish power strugle 
+	id = DEN_Spring.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DEN_Spring.3"}
+	title = DEN_Spring.3.t
+	desc = DEN_Spring.3.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {# democracy
+		name = DEN_Spring.3.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = DEN_POST_WAR_PATH
+					option = DEN_POST_WAR_PATH_COMMUNISM
+				}
+			}
+		}
+		DEN = {
+			country_event = { id = DEN_Spring.4 days = 20 }
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.52 days = 1 } }
+	}
+	option = {
+		name = DEN_Spring.3.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = DEN_POST_WAR_PATH
+						option = DEN_POST_WAR_PATH_PROGRESSIVISM
+					}
+					has_game_rule = {
+						rule = DEN_POST_WAR_PATH
+						option = DEN_POST_WAR_PATH_LIBCON
+					}
+				}
+			}
+		}
+		XXX = {
+			DEN_Arne_Munch_Petersen = { set_nationality = DEN }
+		}
+		DEN = {
+			set_politics = {
+				ruling_party = communist
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.15
+			}
+			promote_character = DEN_Arne_Munch_Petersen
+			set_cosmetic_tag = DEN_2GCW_commie
+			set_temp_variable = { TNO_economy_type_temp = token:Econ_Type_Planned }
+			econ_type_change = yes
+			set_temp_variable = { TNO_economy_subtype_temp = token:Econ_Subtype_Worker_Directed }
+			econ_subtype_change = yes
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.51 days = 1 } }
+	}
+	
+}
+
+country_event = { #free Danish elections
+	id = DEN_Spring.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DEN_Spring.4"}
+	title = DEN_Spring.4.t
+	desc = DEN_Spring.4.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DEN_Spring.4.a
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = DEN_POST_WAR_PATH
+					option = DEN_POST_WAR_PATH_LIBCON
+				}
+			}
+		}
+		XXX = {
+			DEN_Anker_Jørgensen = { set_nationality = DEN }
+		}
+		DEN = {
+			promote_character = DEN_Anker_Jørgensen
+			set_politics = {
+				ruling_party = progressivism
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = progressivism
+				popularity = 0.15
+			}
+		}
+	}
+	option = {
+		name = DEN_Spring.4.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = DEN_POST_WAR_PATH
+					option = DEN_POST_WAR_PATH_PROGRESSIVISM
+				}
+			}
+		}
+		XXX = {
+			DEN_Poul_Hartling = { set_nationality = DEN }
+		}
+		DEN = {
+			promote_character = DEN_Poul_Hartling
+			set_politics = {
+				ruling_party = liberal_conservatism
+				elections_allowed = yes
+			}
+			add_popularity = {
+				ideology = liberal_conservatism
+				popularity = 0.15
+			}
+		}
+	}
+}
+
+country_event = { #Garrison or Søren
+	id = DEN_Spring.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DEN_Spring.5"}
+	title = DEN_Spring.5.t
+	desc = DEN_Spring.5.desc
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = DEN_Spring.5.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = DEN_POST_WAR_PATH
+					option = DEN_POST_WAR_PATH_WEHRMACHT
+				}
+			}
+		}
+		XXX = {
+			DEN_Soeren_Kam = { set_nationality = DEN }
+		}
+		DEN = {
+			promote_character = DEN_Soeren_Kam
+			set_politics = {
+				ruling_party = ultranationalism
+			}
+			add_popularity = {
+				ideology = ultranationalism
+				popularity = 0.15
+			}
+			set_cosmetic_tag = DEN_2GCW_Kam
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.54 days = 1 } }
+	}
+	option = {
+		name = DEN_Spring.5.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				has_game_rule = {
+					rule = DEN_POST_WAR_PATH
+					option = DEN_POST_WAR_PATH_ULTRANAT
+				}
+			}
+		}
+		DEN = {
+			add_popularity = {
+				ideology = despotism
+				popularity = 0.12
+			}
+		}
+		every_country = { limit = { is_ai = no } news_event = { id = Global_Conflicts.53 days = 1 } }
+	}
+}

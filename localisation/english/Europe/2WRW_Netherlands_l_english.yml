@@ -1,0 +1,90 @@
+﻿l_english:
+ #Characters
+ HOL_Nico_Berghuijs: "Nico Berghuijs"
+ POLITICS_NICO_BERGHUIJS_DESC: ""
+ HOL_Bastiaan_Fortman: "Bastiaan Fortman"
+ POLITICS_BAS_DE_GAAY_DESC: ""
+ HOL_Frans_Andriseen: "Frans Andriseen"
+ POLITICS_FANS_ANDRISEEN_DESC: ""
+ HOL_Hans_Janmaat: "Hans Janmaat"
+ POLITICS_HANS_JANMAAT_DESC: ""
+ HOL_Joop_Glimmerveen: "Joop Glimmerveen"
+ POLITICS_JOOP_GLIMMERVEEN_DESC: ""
+ 
+ #Parties
+ HOL_free_paternalism_party: "VVD"
+ HOL_free_paternalism_party_long: "Veiligheid Voor Democratie"
+ HOL_free_national_socialism_party: "NSB"
+ HOL_free_national_socialism_party_long: "Nationaal-Socialistische Beweging in Nederland"
+ HOL_free_fascism_party: "NVU"
+ HOL_free_fascism_party_long: "Nederlandse Volks-Unie"
+ HOL_free_progresivism_party: "PP"
+ HOL_free_progresivism_party_long: "Progressive Partij"
+ HOL_free_liberal_conservatism_party: "CVP"
+ HOL_free_liberal_conservatism_party_long: "Christelijke Volkspartij"
+ #Events
+ gc_netherlands_news.1.t: "[Get_newspaper_header]The Battle of Rotterdam"
+ gc_netherlands_news.1.desc: "What was once considered the Reich's most calm and stable colonial territory has devolved into chaos as Reichskommissariat Niederlande has been set with a massive uptick in revolutionary activity, which culminated in an open clash between collaborationist authorities and local dissident protestors in Rotterdam. The city has been all but entirely liberated as pro-Reich forces retreat from their holdouts and desperately attempt to regroup.\n\nWith the Wehrmacht's hands tied down in the east, Kommissariat garrisons are struggling to hold any semblance of order. Riots and protests only continue to grow in the colony as Germania's inability to act has emboldened a new wave of agitation. A powder keg has been lit in the Low Countries, with the coming explosion showing no signs of being stopped."
+ gc_netherlands_news.1.a: "The eve of something greater?"
+ gc_netherlands_news.1.b: "Hold the line!"
+
+ gc_netherlands_news.2.t: "[Get_newspaper_header]The Dutch Revolution"
+ gc_netherlands_news.2.desc: "The surge of revolution which has swept through the Netherlands saw its climax today as the Reich's administrative headquarters within the Hague was stormed early this morning by revolutionary forces. Rebel militia groups seized control of the building and drove Wehrmacht garrisons from the surrounding city, routing one of the last remaining German strongholds in the country.\n\nFrom their new seat of power in the capitol, the revolutionaries have proclaimed unilateral Dutch independence from the Reich. Authorities in Germania have sworn swift retaliation, but with the bulk of their forces thousands of miles away and any local troops being steadily beaten back beyond Dutch borders, it looks as though the fire of independence which burns once more in the Netherlands won't soon be stamped out."
+ gc_netherlands_news.2.a: "Je Maintiendrai!"
+ gc_netherlands_news.2.b: "This cannot stand!"
+
+ gc_netherlands_news.3.t: "[Get_newspaper_header]The Exile Referendum"
+ gc_netherlands_news.3.desc: "A rush of enthusiasm has swept the newly independent Netherlands as its provisional government prepares to hold a referendum on the future of the nation and its old monarchy.\n\nThe Dutch government in exile, based in Suriname, has persisted since the conquest of the Low Countries by the Third Reich and has extended gestures of goodwill towards the revolutionary government since its creation, hoping to reclaim their 'birthright,'\n\nReception in the newly liberated nation has been mixed, as some see the reunion with their countrymen as a necessary and foregone conclusion, while others question associating with the colonial regime that has dominated its host region with an iron fist. The future of the Netherlands hangs in the balance, and only its own people can decide its fate."
+ gc_netherlands_news.3.a: "The Dutch do love their referendums."
+
+ gc_netherlands_news.4.t: "[Get_newspaper_header]Exiles Return to the Netherlands"
+ gc_netherlands_news.4.desc: "Following the success of a nation-wide referendum on the future of the Dutch government, the Kingdom of the Netherlands, previously in exile in Suriname, has returned to power in its home country once again. Queen Juliana has been greeted to a royal welcome in Amsterdam as the Dutch exiles return en masse to Europe.\n\nInternational response has been overall congratulatory, particularly by the OFN who propped up the Suriname regime since the end of the Second World War. Reception within the country has been fairly positive with many seeing the result as a return to normalcy, however some question the absolute dominance of the ruling monarchist party. In any case, the Netherlands has returned to the arms of its rightful administration, and it looks as if the fate of the nation has been decided."
+ gc_netherlands_news.4.a: "The Orange-Nassau's endure."
+
+ gc_netherlands_news.5.t: "[Get_newspaper_header]Dutch Referendum Fails, Republic Declared"
+ gc_netherlands_news.5.desc: "In a shocking upset, the referendum within the newly liberated Netherlands to determine the future of its government has resulted in the declaration of a republic, the first of the low countries in nearly two centuries. The Provisional Government has made clear its intentions to step down as preparations are made for snap elections to be held in the near future, marking a clear and firm step into a free and democratic future.\n\nWhile celebration and optimism sweeps the nation, the monarchist regime in exile within Suriname continues on in defeated limbo. Representatives from Queen Juliana's cabinet refused to comment on the result, as the monarchist government remains shut out from its home country and its subjects sit in somber uncertainty as to the future of their state."
+ gc_netherlands_news.5.a: "As the monarchy fades into the pages of history, the republic returns to living memory."
+
+ gc_netherlands_news.6.t: "[Get_newspaper_header]Collaborator Counter-Coup in the Netherlands!"
+ gc_netherlands_news.6.desc: "The Dutch Revolution and the internationally perceived hope and optimism which accompanied it were entirely squashed earlier today, as a resurgent force of local Pro-German military groups and remaining Wehrmacht garrisons, under command of Dutch collaborator Joop Glimmerveen, were able to successfully rally together and retake the nation's capital from Provisional Government forces, with revolutionary leaders being executed or imprisoned.\n\nThe newly restored collaborationist administration has already begun to quash local resistance, with any coordinated opposition rendered impossible in the wake of the massacre of resistance leaders. Onlookers from across the globe watch in terror as Dutch calls for freedom are silenced, and Germania no doubt breathes a sigh of relief."
+ gc_netherlands_news.6.a: "A travesty."
+ gc_netherlands_news.6.b: "Some semblance of order restored."
+
+ gc_netherlands_news.7.t: "[Get_newspaper_header]Germany Invades the Netherlands"
+ gc_netherlands_news.7.desc: "Like other natively Germanic territories, Reichskommissariat Niederlande has had a very unique relationship with Germany. The Dutch were viewed as Germans in all but name by the Nazis, making for a close relationship with Germany and being all but considered as a core piece of the Reich.\n\nThat was emphasized today when German troops crossed the Dutch border. Like the infamous Rotterdam Blitz, the Luftwaffe has begun flying over the country conducting “strategic” bombing campaigns. While the Netherlands have expected and prepared for an invasion, only so much can be done against the Wehrmacht. With no defensive terrain, the Dutch government has been painstakingly attempting to mount a defense, but seldom few international observers expect them to succeed. For many, it is not a question of if the Dutch will surrender, but when."
+ gc_netherlands_news.7.a: "Will the Dutch people remain shackled?"
+ gc_netherlands_news.7.b: "They will see the futility in their resistance."
+
+ gc_netherlands_news.8.t: "[Get_newspaper_header]Christian democrats win the Dutch elections"
+ gc_netherlands_news.8.desc: "The first Dutch election in three decades have ended in a rather predictable way, with the newly formed Christelijke Volkspartij under Frans Andriessen securing a majority in parliament. The CVP being a direct descendant of the old Christian Democratic parties that ruled the Netherlands before the German invasion.\n\nIn his first speech as Prime Minister of the Netherlands, Andriessen vowed to restore the Dutch way of life that the Germans had tried so hard to eradicate. He also stressed the need to join the OFN quickly in order to protect the nation."
+ gc_netherlands_news.8.a: "Same old, same old."
+
+ gc_netherlands_news.9.t: "[Get_newspaper_header]Progressives win the Dutch elections"
+ gc_netherlands_news.9.desc: "The newly proclaimed Dutch Republic has held its first elections, with Bastiaan Fortman's Progressive Partij securing a majority. After years of occupation by the far right, the swing to the moderate left was widely expected by most observers. Speaking to a crowd in Amsterdam, Fortman proclaimed that they could now begin to rebuild a nation that would be equally free and fair, and promised to quickly join the OFN to secure the freedom and independence of the Dutch Republic."
+ gc_netherlands_news.9.a: "Social democracy wins the day"
+
+ gc_netherlands_news.10.t: "[Get_newspaper_header]The populists win the Dutch election"
+ gc_netherlands_news.10.desc: "In a shocking result, the populist Veiligheid Voor Democratie party led by Hans Janmaat has won the Dutch election. Initially predicted to be an outsider, Janmaat's unorthodox policies have apparently proved popular.\n\nPromising that the Netherlands would never again be a victim of occupation, de VVD has proposed to follow the example of Swiss neutrality by heavily fortifying the Dutch borders and building up the military. In his opening speech, Janmaat vowed that the nation would never again serve the Germans, nor would it become an American puppet. With open trade and closed borders, [FROM.GetNameDef] openes a new chapter in its history."
+ gc_netherlands_news.10.a: "Dutch neutrality has returned in force"
+
+ #Misc Loc
+ gc_netherlands.1.t: "Revolutionaries form government"
+ gc_netherlands.1.desc: ">De- Democracy!? At this time of year, at this time of day, in this part of the Pakt, localized entirely within your country!?\n>Yes\n>May I see it?"
+ gc_netherlands.1.a: "Yes"
+ gc_netherlands.1.b: "No"
+
+ gc_netherlands.2.t: "Monarchy referendum"
+ gc_netherlands.2.desc: "Who wins?"
+ gc_netherlands.2.a: "Monarchy"
+ gc_netherlands.2.b: "Republic"
+
+ gc_netherlands.3.t: "Elections"
+ gc_netherlands.3.desc: "Who wins?"
+ gc_netherlands.3.a: "Christian Democrats"
+ gc_netherlands.3.b: "Social Democrats"
+ gc_netherlands.3.c: "Populists"
+
+ gc_netherlands.4.t: "Collab counter-coup"
+ gc_netherlands.4.desc: "It's over"
+ gc_netherlands.4.a: "It's so over"
+ 

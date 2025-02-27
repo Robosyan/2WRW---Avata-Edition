@@ -1,0 +1,621 @@
+add_namespace = unification_war
+add_namespace = unification_diplo
+add_namespace = regionalunification_war
+add_namespace = regionalunification_diplo
+
+###Russian Unification###
+#WAR#
+country_event = { #
+	id = unification_war.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.1"}
+	title = unification_war.1.t
+	desc = unification_war.1.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.1.a
+	}
+}
+country_event = { #
+	id = unification_war.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.2"}
+	title = unification_war.2.t
+	desc = unification_war.2.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.2.a
+	}
+}
+country_event = { #
+	id = unification_war.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.3"}
+	title = unification_war.3.t
+	desc = unification_war.3.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.3.a
+	}
+}
+country_event = { #
+	id = unification_war.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.4"}
+	title = unification_war.4.t
+	desc = unification_war.4.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.4.a
+	}
+}
+country_event = { #
+	id = unification_war.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.5"}
+	title = unification_war.5.t
+	desc = unification_war.5.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.5.a
+	}
+}
+country_event = { #
+	id = unification_war.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.6"}
+	title = unification_war.6.t
+	desc = unification_war.6.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.6.a
+	}
+}
+country_event = { #
+	id = unification_war.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.7"}
+	title = unification_war.7.t
+	desc = unification_war.7.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.7.a
+	}
+}
+country_event = { #
+	id = unification_war.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.8"}
+	title = unification_war.8.t
+	desc = unification_war.8.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.8.a
+	}
+}
+country_event = { #
+	id = unification_war.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.9"}
+	title = unification_war.9.t
+	desc = unification_war.9.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.9.a
+	}
+}
+country_event = { #
+	id = unification_war.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.10"}
+	title = unification_war.10.t
+	desc = unification_war.10.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.10.a
+	}
+}
+country_event = { #
+	id = unification_war.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.11"}
+	title = unification_war.11.t
+	desc = unification_war.11.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.11.a
+	}
+}
+country_event = { #
+	id = unification_war.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.12"}
+	title = unification_war.12.t
+	desc = unification_war.12.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.12.a
+	}
+}
+country_event = { #
+	id = unification_war.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.13"}
+	title = unification_war.13.t
+	desc = unification_war.13.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.13.a
+	}
+}
+country_event = { #
+	id = unification_war.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.14"}
+	title = unification_war.14.t
+	desc = unification_war.14.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.14.a
+	}
+}
+country_event = { #
+	id = unification_war.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.15"}
+	title = unification_war.15.t
+	desc = unification_war.15.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.15.a
+	}
+}
+country_event = { #
+	id = unification_war.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.16"}
+	title = unification_war.16.t
+	desc = unification_war.16.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.16.a
+	}
+}
+country_event = { #
+	id = unification_war.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.17"}
+	title = unification_war.17.t
+	desc = unification_war.17.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.17.a
+	}
+}
+country_event = { #
+	id = unification_war.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.18"}
+	title = unification_war.18.t
+	desc = unification_war.18.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.18.a
+	}
+}
+country_event = { #
+	id = unification_war.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.19"}
+	title = unification_war.19.t
+	desc = unification_war.19.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.19.a
+	}
+}
+country_event = { #
+	id = unification_war.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.20"}
+	title = unification_war.20.t
+	desc = unification_war.20.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.20.a
+	}
+}
+country_event = { #
+	id = unification_war.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.21"}
+	title = unification_war.21.t
+	desc = unification_war.21.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.21.a
+	}
+}
+country_event = { #
+	id = unification_war.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_war.22"}
+	title = unification_war.22.t
+	desc = unification_war.22.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia 
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_war.22.a
+	}
+}
+
+# Russian Diplomatic Unification #
+
+country_event = {
+	id = unification_diplo.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_diplo.1"}
+	title = unification_diplo.1.t
+	desc = unification_diplo.1.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_diplo.1.a
+	}
+}
+country_event = {
+	id = unification_diplo.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_diplo.2"}
+	title = unification_diplo.2.t
+	desc = unification_diplo.2.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_diplo.2.a
+	}
+}
+country_event = {
+	id = unification_diplo.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_diplo.3"}
+	title = unification_diplo.3.t
+	desc = unification_diplo.3.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_diplo.3.a
+	}
+}
+country_event = {
+	id = unification_diplo.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_diplo.4"}
+	title = unification_diplo.4.t
+	desc = unification_diplo.4.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_diplo.4.a
+	}
+}
+country_event = {
+	id = unification_diplo.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_diplo.5"}
+	title = unification_diplo.5.t
+	desc = unification_diplo.5.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_diplo.5.a
+	}
+}
+country_event = {
+	id = unification_diplo.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_diplo.6"}
+	title = unification_diplo.6.t
+	desc = unification_diplo.6.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_diplo.6.a
+	}
+}
+country_event = {
+	id = unification_diplo.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event unification_diplo.7"}
+	title = unification_diplo.7.t
+	desc = unification_diplo.7.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = unification_diplo.7.a
+	}
+}
+
+###Superregional Unification###
+#WAR#
+
+
+#Diplomatic#
+country_event = {
+	id = regionalunification_diplo.1 #Petlin
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_diplo.1"}
+	title = regionalunification_diplo.1.t
+	desc = regionalunification_diplo.1.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_diplo.1.a
+	}
+}
+country_event = {
+	id = regionalunification_diplo.2 #Egg Man
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_diplo.2"}
+	title = regionalunification_diplo.2.t
+	desc = regionalunification_diplo.2.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_diplo.2.a
+	}
+}
+country_event = {
+	id = regionalunification_diplo.3 #Werbell
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_diplo.3"}
+	title = regionalunification_diplo.3.t
+	desc = regionalunification_diplo.3.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_diplo.3.a
+	}
+}
+country_event = {
+	id = regionalunification_diplo.4 #Mikhail Chita
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_diplo.4"}
+	title = regionalunification_diplo.4.t
+	desc = regionalunification_diplo.4.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_diplo.4.a
+	}
+}
+country_event = {
+	id = regionalunification_diplo.5 #White Army Chita
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_diplo.5"}
+	title = regionalunification_diplo.5.t
+	desc = regionalunification_diplo.5.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_diplo.5.a
+	}
+}
+
+##Superregional Cap##
+country_event = {
+	id = regionalunification_war.1 #Petlin
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_war.1"}
+	title = regionalunification_war.1.t
+	desc = regionalunification_war.1.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_war.1.a
+	}
+}
+##Superregional Cap##
+country_event = {
+	id = regionalunification_war.2 #Egg Man
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_war.2"}
+	title = regionalunification_war.2.t
+	desc = regionalunification_war.2.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_war.2.a
+	}
+}
+country_event = {
+	id = regionalunification_war.3 #Werbell
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_war.3"}
+	title = regionalunification_war.3.t
+	desc = regionalunification_war.3.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_war.3.a
+	}
+}
+country_event = {
+	id = regionalunification_war.4 #Mikhail Chita
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_war.4"}
+	title = regionalunification_war.4.t
+	desc = regionalunification_war.4.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_war.4.a
+	}
+}
+country_event = {
+	id = regionalunification_war.5 #White Army Chita
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_war.5"}
+	title = regionalunification_war.5.t
+	desc = regionalunification_war.5.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_war.5.a
+	}
+}
+country_event = {
+	id = regionalunification_war.6 #Rodz
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_war.6"}
+	title = regionalunification_war.6.t
+	desc = regionalunification_war.6.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_war.6.a
+	}
+}
+country_event = {
+	id = regionalunification_war.7 #Yagoda
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_war.7"}
+	title = regionalunification_war.7.t
+	desc = regionalunification_war.7.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_war.7.a
+	}
+}
+country_event = {
+	id = regionalunification_war.8 #Bessonov
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_war.8"}
+	title = regionalunification_war.8.t
+	desc = regionalunification_war.8.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_war.8.a
+	}
+}
+country_event = {
+	id = regionalunification_war.9 #Sablin
+	immediate = {log = "[GetDateText]: [Root.GetName]: event regionalunification_war.9"}
+	title = regionalunification_war.9.t
+	desc = regionalunification_war.9.desc
+	picture = GFX_report_event_RUS_city_ulan_ude_buryatia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = regionalunification_war.9.a
+	}
+}

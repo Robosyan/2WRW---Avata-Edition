@@ -1,0 +1,317 @@
+﻿l_english:
+ 
+ ##Second West Russian War Events##
+ 
+ SE_SECOND_WEST_RUSSIAN_WAR: "THE SECOND WEST RUSSIAN WAR"
+ SE_SECOND_WEST_RUSSIAN_WAR_D: "At war, a Russian man puts on a white shirt. He may live in sin, but he dies like a saint.\n- Vasily Grossman"
+ SE_SECOND_WEST_RUSSIAN_WAR_A: "Europe's Final War"
+ SWRW_SE_SECOND_WEST_RUSSIAN_WAR: "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_GENERIC_RUSSIAN_VICTORY: "RUSSIAN VICTORY"
+ SE_GENERIC_RUSSIAN_VICTORY_D: "To be the greatest, let no enemy nor ally surpass you, always strive for victory and greatness.\n- Dmitry Lovrinenko"
+ SE_GENERIC_RUSSIAN_VICTORY_A: "Russia Reborn"
+ SWRW_SE_GENERIC_RUSSIAN_VICTORY: "RUSSIAN VICTORY"
+ 
+ SE_TOTAL_GERMAN_VICTORY: "GERMAN VICTORY"
+ SE_TOTAL_GERMAN_VICTORY_D: "We have had much to bear already. And still more will we have to bear. Let us thank God for being young.\n- Joseph Goebbels"
+ SE_TOTAL_GERMAN_VICTORY_A: "Lost Forever"
+ SWRW_SE_TOTAL_GERMAN_VICTORY: "GERMAN VICTORY"
+ 
+ SE_OMSK_WAR: "THE GREAT TRIAL"
+ SE_OMSK_WAR_D: "What hath God wrought?\n- Numbers 23:23"
+ SE_OMSK_WAR_A: "The End"
+ SWRW_SE_OMSK_DECLARATION: "THE GREAT TRIAL"
+ 
+ SE_SHUKSHIN_WAR: "THE SECOND WEST RUSSIAN WAR"
+ SE_SHUKSHIN_WAR_D: "The strong in this world will know everything: shame, torment, self-judgement, and the joy of enemies.\n- Vasily Shukshin"
+ SE_SHUKSHIN_WAR_A: "Forward, Russia!"
+ SWRW_SE_SHUKSHIN_DECLARATION: "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_POKRYSHKIN_WAR: "RUSSIA'S REVENGE"
+ SE_POKRYSHKIN_WAR_D: "The greater the comfort, the lesser the courage.\n-Alexander Suvorov"
+ SE_POKRYSHKIN_WAR_A: "March, Russia!"
+ SWRW_POKRYSHKIN_DECLARATION: "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_SHUKSHIN_VICTORY: "THE RUSSIAN FEDERATION VICTORIOUS"
+ SE_SHUKSHIN_VICTORY_D: "They fought for the Motherland. They saved their homeland. They won.\n- Vasily Shukshin"
+ SE_SHUKSHIN_VICTORY_A: "Hope Lives Again"
+ 
+ SE_POKRYSHKIN_VICTORY: "THE RUSSIAN FEDERATION VICTORIOUS"
+ SE_POKRYSHKIN_VICTORY_D: "Win with ability. Not with numbers.\n-Alexander Suvorov"
+ SE_POKRYSHKIN_VICTORY_A: "Strength Succeeds"
+ SWRW_SE_POKRYSHKIN_VICTORY: "THE RUSSIAN FEDERATION VICTORIOUS"
+ 
+ SE_VELMIR_WAR: "TWILIGHT OF THE GODS"
+ SE_VELMIR_WAR_D: "You must be ready to burn yourself in your own flame. How could you rise anew if you have not first become ashes?\n- Friedrich Nietzsche"
+ SE_VELMIR_WAR_A: "Svarog Awakens"
+ SWRW_SE_VELMIR_WAR: "TWILIGHT OF THE GODS"
+ 
+ SE_ZHUKOV_DECLARATION: "OPERATION: RED DAWN"
+ SE_ZHUKOV_DECLARATION_D: "If the Germans attack, we will defend. If they do not attack until winter comes, then we will tear them to shreds!\n- Georgy Zhukov"
+ SE_ZHUKOV_DECLARATION_A: "The Union Marches"
+ SWRW_SE_ZHUKOV_DECLARATION: "OPERATION: §xRED DAWN§!"
+ 
+ SE_TUKH_DECLARATION: "THE SECOND GREAT PATRIOTIC WAR"
+ SE_TUKH_DECLARATION_D: "There can be no doubt that if we had been victorious on the Vistula, the revolutionary fires would have reached the entire continent.\n- Mikhail Tukhachevsky"
+ SE_TUKH_DECLARATION_A: "The Marshal's Return"
+ SWRW_SE_TUKH_DECLARATION: "THE SECOND GREAT PATRIOTIC WAR"
+ 
+ SE_ZHDANOV_DECLARATION: "THE SECOND GREAT PATRIOTIC WAR"
+ SE_ZHDANOV_DECLARATION_D: "The enemy is at the gate. It is a matter of life or death.\n- Andrei Zhdanov"
+ SE_ZHDANOV_DECLARATION_A: "Forwards!"
+ SWRW_SE_ZHDANOV_DECLARATION: "THE SECOND GREAT PATRIOTIC WAR"
+ 
+ SE_SUSLOV_WAR: "THE SECOND GREAT PATRIOTIC WAR"
+ SE_SUSLOV_WAR_D: "Socialists cannot achieve their great aim without fighting against all oppression of nations.\n- Vladimir Lenin"
+ SE_SUSLOV_WAR_A: "The Greatest Game"
+ SWRW_SE_SUSLOV_WAR: "THE SECOND GREAT PATRIOTIC WAR"
+ 
+ SE_SBA_WAR: "MARCH OF THE ANARCHISTS"
+ SE_SBA_WAR_D: "When we have but the will to do it, that very moment will justice be done; that very instant the tyrants of the Earth shall be vanquished.\n- Pytor Kropotkin"
+ SE_SBA_WAR_A: "For Mother Anarchy"
+ SWRW_SE_SBA_WAR: "MARCH OF THE ANARCHISTS"
+ 
+ SE_SEROV_WAR: "THE SECOND GREAT PATRIOTIC WAR"
+ SE_SEROV_WAR_D: "We must take from the right nationalism without capitalism and from the left socialism without internationalism.\n-Gregor Strasser"
+ SE_SEROV_WAR_A: "Clash of the Titans"
+ SWRW_SE_SEROV_WAR: "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_EURASIA_WAR: "THE GREAT EURASIAN WAR"
+ SE_EURASIA_WAR_D: "There is no value in anything until it is finished\n-Genghis Khan"
+ SE_EURASIA_WAR_A: "A Land Reborn"
+ SWRW_SE_EURASIA_WAR: "THE GREAT EURASIAN WAR"
+ 
+ SE_KAGANOVICH_WAR: "THE SECOND GREAT PATRIOTIC WAR"
+ SE_KAGANOVICH_WAR_D: "Every German soldier must be made to feel that he is living under the muzzle of a Russian gun.\n-Vasily Chuikov"
+ SE_KAGANOVICH_WAR_A: "Not One Step Back!"
+ SWRW_SE_KAGANOVICH_WAR: "THE SECOND GREAT PATRIOTIC WAR"
+ 
+ SE_WERBELL_WAR:0 "AMERICAN INVASION OF MOSCOW"
+ SE_WERBELL_WAR_D:0 "I don’t give a damn about being remembered. But if I’ve got to be remembered for something, I’d like to be remembered for being a good military officer and a patriot.\n- Mitchell Werbell III"
+ SE_WERBELL_WAR_A:0 "Ad Bellum"
+ SWRW_SE_WERBELL_WAR:0 "AMERICAN INVASION OF MOSCOW"
+ 
+ SE_WERBELL_VICTORY:0 "THE UNITED STATES OF RUSSIA VICTORIOUS"
+ SE_WERBELL_VICTORY_D:0 "There's a helluva lot I ain't gonna say yet. I've been in so many places, so many countries, so many revolutions, it's beginning to get all mixed up in my mind.\n- Mitchell Werbell III"
+ SE_WERBELL_VICTORY_A:0 "Gloria in Victoria"
+ SWRW_SE_WERBELL_VICTORY:0 "THE UNITED STATES OF RUSSIA VICTORIOUS"
+ 
+ SE_WERBELL_VICTORY_DESPOT:0 "THE UNITED STATES OF RUSSIA VICTORIOUS"
+ SE_WERBELL_VICTORY_DESPOT_D:0 "You've only got two options: heaven or hell.\n- Unknown"
+ SE_WERBELL_VICTORY_DESPOT_A:0 "Gloria in Victoria"
+ SWRW_SE_WERBELL_VICTORY_DESPOT:0 "THE UNITED STATES OF RUSSIA VICTORIOUS"
+ 
+ SE_WRRF_VICTORY_ZHUKOV:0 "THE SOVIET UNION VICTORIOUS"
+ SE_WRRF_VICTORY_ZHUKOV_D:0 "For me, the main thing was to serve the Motherland, my people. And with a clear conscience, I can say: I did everything to fulfil this duty.\n- Georgy Zhukov"
+ SE_WRRF_VICTORY_ZHUKOV_A:0 "The Union Reborn"
+ SWRW_SE_WRRF_VICTORY_ZHUKOV:0 "THE SOVIET UNION VICTORIOUS"
+ 
+ SE_RED_NAPOLEON_VICTORY:0 "THE SOVIET UNION VICTORIOUS"
+ SE_RED_NAPOLEON_VICTORY_D:0 "...I told myself that I shall either be a hero at thirty, or that I shall not be alive by then.\n- Mikhail Tukhachevsky"
+ SE_RED_NAPOLEON_VICTORY_A:0 "Invincible, Legendary"
+ SWRW_SE_RED_NAPOLEON_VICTORY:0 "THE SOVIET UNION VICTORIOUS"
+ 
+ SE_BATOV_WAR:0 "THE GREAT WAR OF RUSSIAN LIBERATION"
+ SE_BATOV_WAR_D:0 "Beat the enemy, without sparing either him or yourself, the one who feels less sorry for himself wins.\n- Alexander Suvorov"
+ SE_BATOV_WAR_A:0 "To Save Russia"
+ SWRW_SE_BATOV_WAR:0 "THE GREAT WAR OF RUSSIAN LIBERATION"
+ 
+ SE_VYATKA_LIB_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ SE_VYATKA_LIB_WAR_D:0 "Better to abolish serfdom from above than to wait till it begins to abolish itself from below.\n- Alexander II"
+ SE_VYATKA_LIB_WAR_A:0 "God Save Russia"
+ SWRW_SE_VYATKA_LIB_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ 
+ SE_VYATKA_AUTH_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ SE_VYATKA_AUTH_WAR_D:0 "There is no justice among men.\n- Nicholas II"
+ SE_VYATKA_AUTH_WAR_A:0 "God Save the Empire"
+ SWRW_SE_VYATKA_AUTH_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ 
+ SE_VYATKA_CON_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ SE_VYATKA_CON_WAR_D:0 "Lord, save Russia and bring her peace.\n- Nicholas II"
+ SE_VYATKA_CON_WAR_A:0 "God Save the Tsar"
+ SWRW_SE_VYATKA_CON_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ 
+ SE_VAGNER_WAR:0 "THE WAR OF ARYAN SUPREMACY"
+ SE_VAGNER_WAR_D:0 "There can't be two smart peoples in the world. We're going to win the war, so only the Aryan race will stand.\n- Josef Mengele"
+ SE_VAGNER_WAR_A:0 "Feyuertaufe"
+ SWRW_SE_VAGNER_WAR:0 "THE WAR OF ARYAN SUPREMACY"
+ 
+ SE_BUNYACHENKO_WAR:0 "THE RUSSIANS STRIKE BACK"
+ SE_BUNYACHENKO_WAR_D:0 "The Fascist bastards who've wreaked havoc upon our peaceful lives and families, are now getting beaten by us left and right.\n- Andrey Vlasov"
+ SE_BUNYACHENKO_WAR_A:0 "Regiments, March!"
+ SWRW_SE_BUNYACHENKO_WAR:0 "THE RUSSIANS STRIKE BACK"
+ 
+ SE_ZYKOV_WAR:0 "THE RUSSIANS STRIKE BACK"
+ SE_ZYKOV_WAR_D:0 "The Russian colossus...has been underestimated by us...\n- Franz Halder"
+ SE_ZYKOV_WAR_A:0 "To Avenge 1946"
+ SWRW_SE_ZYKOV_WAR:0 "THE RUSSIANS STRIKE BACK"
+ 
+ SE_MANDATE_WAR:0 "ORTHODOX RECLAIMATION WAR"
+ SE_MANDATE_WAR_D:0 "A thousand may fall at your side, ten thousand at your right hand, but it will not come near you.\n- Psalm 91:7"
+ SE_MANDATE_WAR_A:0 "In God's Name"
+ SWRW_SE_MANDATE_WAR:0 "ORTHODOX RECLAIMATION WAR"
+ 
+ SE_BUKHARINA_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ SE_BUKHARINA_WAR_D:0 "The victory of socialism will not descend like date from heaven.\n- Rosa Luxemburg"
+ SE_BUKHARINA_WAR_A: "Towards Liberation"
+ SWRW_SE_BUKHARINA_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_KOMI_LIBDEM_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ SE_KOMI_LIBDEM_WAR_D:0 "We don't know when another Hitler may appear and what he may do. The survival of civilization is at stake.\n- Alexei Kosygin"
+ SE_KOMI_LIBDEM_WAR_A: "For the Republic"
+ SWRW_SE_KOMI_LIBDEM_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_KOMI_SOCDEM_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ SE_KOMI_SOCDEM_WAR_D:0 "The urge to kill, like the urge to beget, Is blind and sinister. Its craving is set Today on the flesh of a hare: tomorrow it can howl the same way for the flesh of a man.\n- Andrei Voznesensky"
+ SE_KOMI_SOCDEM_WAR_A: "For the People"
+ SWRW_SE_KOMI_SOCDEM_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_AMUR_WAR:0 "THE GREAT SLAVIC RECLAIMATION WAR"
+ SE_AMUR_WAR_D:0 "We are witnessing the majestic spectable of Europe’s liberation from the descendants of Cain and Lucifer, the true sons of the Devil.\n- Konstantin Rodzaevsky"
+ SE_AMUR_WAR_A:0 "The Vozhd Marches"
+ SWRW_SE_AMUR_WAR:0 "THE GREAT SLAVIC RECLAIMATION WAR"
+ 
+ SE_CORNMAN_WAR:0 "THE SECOND GREAT PATRIOTIC WAR"
+ SE_CORNMAN_WAR_D:0 "There can be no winner or loser in a nuclear war. This is a guaranteed mutual destruction of both belligerents.\n- Nikita Khrushchev"
+ SE_CORNMAN_WAR_A:0 "One Step Forward"
+ SWRW_SE_CORNMAN_WAR:0 "THE SECOND GREAT PATRIOTIC WAR"
+ 
+ SE_YURIY_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ SE_YURIY_WAR_D:0 "Judge, O Lord, those who have offended me and shield me from those who struggle against me, take up arms and shield and stan to my aid.\n- Alexander Nevskiy"
+ SE_YURIY_WAR_A:0 "Forward, Holy Rus!"
+ SWRW_SE_YURIY_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ 
+ SE_LYDIA_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ SE_LYDIA_WAR_D:0 "Winners are not judged.\n- Catherine the Great"
+ SE_LYDIA_WAR_A:0 "Forward, Mighty Rus!"
+ SWRW_SE_LYDIA_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ 
+ SE_MODERNIST_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ SE_MODERNIST_WAR_D:0 "We should not minimize our sacred endeavors in this world, where, like faint glimmers in the dark, we have emerged\n- Andrei Sakharov"
+ SE_MODERNIST_WAR_A:0 "Per Pugna Ad Gloria"
+ SWRW_SE_MODERNIST_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_DECEMBERIST_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ SE_DECEMBERIST_WAR_D:0 "The present has always been perceived in Russia as being in a state of crisis. And this is typical of Russian history.\n- Dmitry Likhachev"
+ SE_DECEMBERIST_WAR_A:0 "Struggle and Duty"
+ SWRW_SE_DECEMBERIST_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_BASTILLARD_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ SE_BASTILLARD_WAR_D:0 "Every Russian is obliged to perform public duties, to obey the laws and the authorities of the Fatherland, and come to the defense of the Motherland when the law so requires.\n- Nikita Muraev"
+ SE_BASTILLARD_WAR_A:0 "Iron and Blood"
+ SWRW_SE_BASTILLARD_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_HUMANIST_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ SE_HUMANIST_WAR_D:0 "When a man is in despair, it means that he still believes in something.\n- Dimitri Shostakovich"
+ SE_HUMANIST_WAR_A:0 "Russia's Crescendo"
+ SWRW_SE_HUMANIST_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_MIKHAIL_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ SE_MIKHAIL_WAR_D:0 "Brave and victorious troops! Finally, you are on the borders of the empire. Each of you is the saviour of the fatherland. Russia welcomes you with this name!\n- Mikhail Kutuzov"
+ SE_MIKHAIL_WAR_A:0 "March!"
+ SWRW_SE_MIKHAIL_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ 
+ SE_SHEPUNOV_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ SE_SHEPUNOV_WAR_D:0 "Brave and victorious troops! Finally, you are on the borders of the empire. Each of you is the saviour of the fatherland. Russia welcomes you with this name!\n- Mikhail Kutuzov"
+ SE_SHEPUNOV_WAR_A:0 "March!"
+ SWRW_SE_SHEPUNOV_WAR:0 "THE WAR OF IMPERIAL RECLAIMATION"
+ 
+ SE_CHITA_VICTORY:0 "THE RUSSIAN EMPIRE VICTORIOUS"
+ SE_CHITA_VICTORY_D:0 "Where the Russian flag was raised once, it should never be taken down.\n- Nicholas I"
+ SE_CHITA_VICTORY_A:0 "The Empire Restored"
+ SWRW_SE_CHITA_VICTORY:0 "THE RUSSIAN EMPIRE VICTORIOUS"
+ 
+ SE_MOKER_BRANDT:0 "WILLY BRANDT LEGALISES WEED"
+ SE_MOKER_BRANDT_D:0 "You ever moked weed, Shukshin?\n-The Moker Brandt"
+ SE_MOKER_BRANDT_A:0 "marijuana"
+ SWRW_SE_MOKER_BRANDT:0 "WILLY BRANDT LEGALISES WEED"
+ 
+ SE_IRKUTSK_WAR:0 "THE SECOND GREAT PATRIOTIC WAR"
+ SE_IRKUTSK_WAR_D:0 "In the blood struggle against capital, the working class cannot refuse capital punishment.\n- Nikolai Bukharin"
+ SE_IRKUTSK_WAR_A:0 "Settling Old Scores"
+ SWRW_SE_IRKUTSK_WAR:0 "THE SECOND GREAT PATRIOTIC WAR"
+ 
+ SE_SABLIN_AUTH_WAR:0 "THE SECOND GREAT PATRIOTIC WAR"
+ SE_SABLIN_AUTH_WAR_D:0 "A Revolution is not a bed of roses. Revolution is a fight to the death between the future and the past.\n- Fidel Castro"
+ SE_SABLIN_AUTH_WAR_A:0 "A Revolutionary Fire"
+ SWRW_SE_SABLIN_AUTH_WAR:0 "THE SECOND GREAT PATRIOTIC WAR"
+ 
+ SE_SABLIN_LIB_WAR:0 "THE SECOND GREAT PATRIOTIC WAR"
+ SE_SABLIN_LIB_WAR_D:0 "Can a nation be free if it oppresses other nations? It cannot.\n- Vladimir Lenin"
+ SE_SABLIN_LIB_WAR_A:0 "The Battle Reignited"
+ SWRW_SE_SABLIN_LIB_WAR:0 "THE SECOND GREAT PATRIOTIC WAR"
+ 
+ SE_MATKOVSKY_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ SE_MATKOVSKY_WAR_D:0 "Russia can do without each of us, but none of us can do without it. Woe to the one who thinks this, doubly woe to the one who really does without it.\n- Ivan Turgenev"
+ SE_MATKOVSKY_WAR_A:0 "For Russia's Glory"
+ SWRW_SE_MATKOVSKY_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_PETLIN_WAR:0 "THE RUSSIAN WAR OF LIBERATION"
+ SE_PETLIN_WAR_D:0 "You are about to embark upon the Great Crusade. The eyes of the world are upon you. The hopes and prayers of liberty-loving people everywhere march with you.\n- General Dwight D. Eisenhower"
+ SE_PETLIN_WAR_A:0 "Freedom Beckons"
+ SWRW_SE_PETLIN_WAR:0 "THE RUSSIAN WAR OF LIBERATION"
+ 
+ SE_STALINA_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ SE_STALINA_WAR_D:0 "It is human nature that rules the world, not governments and regimes.\n- Svetlana Stalina"
+ SE_STALINA_WAR_A:0 "For the Nation"
+ SWRW_SE_STALINA_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_YELTSIN_WAR:0 "THE GREAT WAR OF RUSSIAN LIBERATION"
+ SE_YELTSIN_WAR_D:0 "This means at last one victory is needed, just one for all of us.\n- Bulat Okudzhava"
+ SE_YELTSIN_WAR_A:0 "To Free Russia"
+ SWRW_SE_YELTSIN_WAR:0 "THE GREAT WAR OF RUSSIAN LIBERATION"
+ 
+ SE_SHAFAREVICH_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ SE_SHAFAREVICH_WAR_D:0 "National Socialism of any type and shade leads to a total destruction of the human spirit and to a leveling of mankind into death.\n- Igor Shafarevich"
+ SE_SHAFAREVICH_WAR_A:0 "A National Struggle"
+ SWRW_SE_SHAFAREVICH_WAR:0 "THE SECOND WEST RUSSIAN WAR"
+ 
+ SE_OKTAN_WAR:0 "THE WAR OF THE BASTARDS"
+ SE_OKTAN_WAR_D:0 "The way to make money is to buy when blood is running in the streets.\n- John D. Rockefeller"
+ SE_OKTAN_WAR_A:0 "Fortune and Glory"
+ SWRW_SE_OKTAN_WAR:0 "THE WAR OF THE BASTARDS"
+ 
+ SE_SECOND_GERMAN_CIVIL_WAR:0 "SECOND GERMAN CIVIL WAR"
+ SE_SECOND_GERMAN_CIVIL_WAR_D:0 "There will come a day, when all the lies collapse under their own weight, and truth will again triumph.\n- Joseph Goebbels"
+ SE_SECOND_GERMAN_CIVIL_WAR_A:0 "Wir Sind Verloren..."
+ SWRW_SE_SECOND_GERMAN_CIVIL_WAR:0 "SECOND GERMAN CIVIL WAR"
+ 
+ SE_DEM_GERMAN_VICTORY:0 "DEMOCRATIC VICTORY"
+ SE_DEM_GERMAN_VICTORY_D:0 "Peace, like freedom, is in no original state which existed from the start; we shall have to make it, in the truest sense of the word.\n- Willy Brandt"
+ SE_DEM_GERMAN_VICTORY_A:0 "Freiheit"
+ SWRW_SE_DEM_GERMAN_VICTORY:0 "DEMOCRATIC VICTORY"
+ 
+ SE_HARDLINER_COMMIE_VICTORY:0 "COMMUNISTS TRIUMPHANT"
+ SE_HARDLINER_COMMIE_VICTORY_D:0 "Tomorrow the revolution will 'rise up again, clashing its weapons,' and to your horror it will proclaim with trumpets blazing: I was, I am, I shall be!.\n- Rosa Luxembourg"
+ SE_HARDLINER_COMMIE_VICTORY_A:0 "1919 Avenged"
+ SWRW_SE_HARDLINER_COMMIE_VICTORY:0 "COMMUNISTS TRIUMPHANT"
+ 
+ SE_MILITARY_VICTORY:0 "WEHRMACHT TRIUMPHANT"
+ SE_MILITARY_VICTORY_D:0 "This is the revenge of reality.\n- Heinz Guderian"
+ SE_MILITARY_VICTORY_A:0 "Aus Der Traum!"
+ SWRW_SE_MILITARY_VICTORY:0 "WEHRMACHT TRIUMPHANT"
+ 
+ SE_FREIKORPS_VICTORY:0 "FREIKORPS TRIUMPHANT"
+ SE_FREIKORPS_VICTORY_D:0 "My measures will not be crippled by any bureaucracy. Here I don't have to worry about Justice; my mission is only to destroy and to exterminate; nothing more.\n- Hermann Göring"
+ SE_FREIKORPS_VICTORY_A:0 "Freikorps, Voran!"
+ SWRW_SE_FREIKORPS_VICTORY:0 "FREIKORPS TRIUMPHANT"
+ 
+ SE_KLOPFER_VICTORY:0 "NSDAP TRIUMPHANT"
+ SE_KLOPFER_VICTORY_D:0 "Today a new faith is stirring: the myth of blood, the faith that along with blood we are defending the divine nature of man as a whole.\n- Alfred Rosenberg"
+ SE_KLOPFER_VICTORY_A:0 "To Last Forever?"
+ SWRW_SE_KLOPFER_VICTORY:0 "NSDAP TRIUMPHANT"
+ 
+ SE_GERMAN_SPRING:0 "THE GERMAN SPRING"
+ SE_GERMAN_SPRING_D:0 "History, as bitter as it may be, is a reality which each and every day continues to affect our present and our future.\n- Willy Brandt"
+ SE_GERMAN_SPRING_A:0 "Winds of Change"
+ SWRW_SE_GERMAN_SPRING:0 "THE GERMAN SPRING"
+ 
+ SE_REAL:0 "WHAT IN THE HOLY FUCK"
+ SE_REAL_D:0 "I hate you.\n- Garry"
+ SE_REAL_A:0 "Get Rizzed, Bitch"
+ SWRW_SE_REAL:0 "WHAT IN THE HOLY FUCK"
+ 
+ SE_DUTCH_EXILES_RETURN:0 "THE DUTCH RESTORATION"
+ SE_DUTCH_EXILES_RETURN_D:0 "That I may remain faithful\nYour servant forevermore\nAnd drive away the tyranny\nThat pierces my heart.\n- Dutch Anthem"
+ SE_DUTCH_EXILES_RETURN_A:0 "No Place Like Home"
+ SWRW_SE_DUTCH_EXILES_RETURN:0 "THE DUTCH RESTORATION"

@@ -1,0 +1,394 @@
+GER_SWRW_GC_willy_brandt_german_spring = {
+	every_country = { limit = { is_ai = no } news_event = { id = WORLD.41021 days = 1 } }
+	every_country = {
+		limit = { has_idea = GER_BOR_Econ_RK_idea }
+		remove_ideas = { GER_BOR_Econ_RK_idea }
+	}
+	GER = {
+		set_cosmetic_tag = GER_BrandtFreiheit
+		set_politics = {
+			ruling_party = paternalism
+			elections_allowed = yes
+			last_election = "1932.11.6"
+		}
+
+		set_popularities = {
+			national_socialism = 27
+			fascism = 13
+			conservatism = 3
+			progressivism = 15
+			liberalism = 10
+			paternalism = 32
+		}
+		if = {
+			limit = {
+				country_exists = GLC
+			}
+			GER_adolf_heusinger = { set_nationality = GLC }
+		}
+		GER_willy_brandt = {
+			set_character_name = Deutsch_Willy_Brandt
+			set_portraits = {
+				civilian = { large = "gfx/leaders/GER/Portrait_Germany_Willy_Brandt.dds" }
+			}
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = paternalism_transitioning_democracy_subtype
+					desc = "POLITICS_DEUTSCH_BRANDT_DESC"
+					expire = "1999.1.23"
+					id = -1
+				}
+			}
+		}
+		remove_ideas = {
+			GER_bormann_military_redeployment_smoke
+			GER_bormann_academic_investment
+			GER_bormann_unsere_siemenswelt	
+			GER_BOR_die_strategische_unterstutzungspolizei
+			GER_BOR_Econ_GER_idea
+			GER_BOR_Ausgrenzung_idea
+			GER_BOR_Breitspurbahn_idea
+			GER_BOR_anti_sphere_5
+			BOR_ITA_ever_vigilant_watch
+			GER_BOR_the_peoples_fuhrer
+			GER_BOR_sphere_trade
+			GER_BOR_Herbst
+			BRG_burgundian_legacy_GER
+			GER_naval_maps_2
+		}
+		remove_all_ministers = yes
+		fill_empty_minister = yes	
+		set_variable = { TNO_economy_type = token:Econ_Type_Capitalism}
+		set_temp_variable = { TNO_economy_subtype_temp = 0 }
+		econ_subtype_change = yes
+		
+		set_global_flag = GER_spring_revolution
+		clr_country_flag = BOR_Kartenhaus_Active		
+		clr_country_flag = BOR_DBG_Infl_Mech
+		clr_country_flag = GER_Bormann_MegaOrpo
+		clr_country_flag = HAS_ECON_SPHERE
+		clear_variable = ECON_SPHERE_LEADER
+		set_party_name = { 
+			ideology = paternalism 
+			long_name = GER_national_reconstruction_committe_party_long
+			name = GER_national_reconstruction_committe_party
+		}
+		if = {
+			limit = {
+				NOT = {
+					NOR = {
+						owns_state = 94
+					}
+				}
+			}	
+			94 = {
+				transfer_state_to = NOR
+			}
+		}
+		if = {
+			limit = {
+				GER = {
+					owns_state = 1994	
+				}	
+			}
+			1994 = {  transfer_state_to = ENG }
+		}
+		if = {
+			limit = {
+				GER = {
+					OR = {
+						owns_state = 1375
+						owns_state = 123
+						owns_state = 1296
+					}	
+				}	
+			}
+			1375 = { transfer_state_to = ENG }
+			123 = { transfer_state_to = ENG }
+			1296 = { transfer_state_to = ENG }
+		}
+		every_other_country = {
+			limit = { check_variable = { ECON_SPHERE_LEADER = GER } }
+			RUS_Idea_Removal_Helper = yes
+			econ_leave_sphere = yes
+		}
+		dismantle_faction = yes
+		clear_array = GER.pakt_members
+		set_temp_variable = { Victory_ID = 99 }
+		set_temp_variable = { Victory_Outcome = 6 }
+		set_temp_variable = { Victory_Points = -300 }
+		Cold_War_GUI_ManipulateVictory = yes
+		every_country = {
+			limit = { is_subject_of = GER }
+			GER = { end_puppet = PREV }
+		}	
+		every_country = {
+			limit = { is_subject_of = GER }
+			set_autonomy = {
+				target = PREV
+				autonomy_state = autonomy_free
+			}
+		}	
+	}
+}
+
+HOL_begin_independence = {
+	if = {
+		limit = { NOT = { country_exists = HOL } }
+		GER = {
+			release = HOL
+			HOL = {
+				get_current_government_type = yes
+				save_party_popularities = yes
+			}
+			set_autonomy = {
+				target = HOL
+				autonomy_state = autonomy_integrated_reichskommissariat
+			}
+			HOL = {
+				restore_previous_government_type = yes
+				apply_party_popularities = yes
+			}
+		}
+	}
+	HOL = { country_event = { id = gc_netherlands.1 days = 27 } }
+}
+
+SWRW_2GCW_begin = {
+	set_global_flag = SWRW_2GCW_happened
+	DEN = {
+		transfer_state = 744
+	}
+	#effects from event reich.2020
+	set_global_flag = SGCW_ongoing
+	hidden_effect = {
+		GER = { GER_unit_count_skullfuckery = yes }
+		if = {
+			limit = {
+				945 = {
+					owner = {
+						is_in_faction_with = JAP
+					}
+				}
+			}
+			706 = { set_state_name = STATE_706_ijn }
+			set_province_name = { id = 13017 name = VICTORY_POINTS_13017_ijn }
+			707 = { set_state_name = STATE_707_ijn }
+			set_province_name = { id = 13018 name = VICTORY_POINTS_13018_ijn }
+			JAP = {
+				transfer_state = 706
+				transfer_state = 707
+			}
+			# GER = {
+			# 	set_temp_variable = { SeaZone_ID = 6 } # 6; Indian Ocean
+			# 	Cold_War_GUI_PowerProjection_RemoveSeaZone = yes
+			# }
+		}
+		else = {
+			945 = {
+				owner = {
+					transfer_state = 706
+					transfer_state = 707
+					add_state_core = 706
+					add_state_core = 707
+				}
+			}
+		}
+	}
+	GER = {
+		remove_ideas = { 
+			to_banish_want
+			the_two_principles
+			endsieg
+			gone_over
+		}
+		add_ideas = { 
+			GER_a_nation_in_flames
+			GER_our_reich_of_ash
+			GER_the_second_german_civil_war
+			GER_the_god_of_war
+		}
+	}
+	GER = {
+		declare_war_on = {
+			target = RPR
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SRH
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = HRC
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = REG
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = GMA
+			type = annex_everything
+		}
+		add_ideas = { GER_economic_apocalypse }
+		country_event = { id = Global_GCW.1 days = 14 }
+	}
+	GMA = {
+		declare_war_on = {
+			target = REG
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = RPR
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SRH
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = HRC
+			type = annex_everything
+		}
+		add_ideas = { GER_economic_apocalypse }
+	}
+	REG = {
+		add_ideas = { GER_economic_apocalypse }
+		promote_character = REG_Hans_Dietrich_Genscher
+	}
+	RPR = {
+		add_ideas = { GER_economic_apocalypse }
+	}
+	SRH = {
+		add_ideas = { GER_economic_apocalypse }
+	}
+	HRC = {
+		add_ideas = { GER_economic_apocalypse }
+	}
+	CZE = {
+		declare_war_on = {
+			target = SFK
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SIL
+			type = annex_everything
+		}
+		add_ideas = { GER_economic_apocalypse }
+	}
+	SIL = {
+		declare_war_on = {
+			target = SFK
+			type = annex_everything
+		}
+		add_ideas = { GER_economic_apocalypse }
+	}
+	SFK = {
+		add_ideas = { GER_economic_apocalypse }
+	}
+	GER = {
+		set_country_flag = remove_seazones # fuck em
+		remove_superpower = yes
+	}
+	every_country = { news_event = { id = WORLD.42002 days = 1 } }
+	every_country = { news_event = { id = Global_Conflicts.40 days = 30 } }
+}
+
+GER_unit_count_skullfuckery = {
+	if = {
+		limit = {
+			GER = {
+				num_divisions > 60
+			}
+		}
+		BEL = { #lol why am i doing this
+			transfer_state = 52
+		}
+		set_temp_variable = { temp_ratio_keeping = 60 }
+		divide_temp_variable = { temp_ratio_keeping = num_divisions }
+		set_temp_variable = { temp_ratio_discarding = 1 }
+		subtract_from_temp_variable = { temp_ratio_discarding = temp_ratio_keeping }
+		transfer_units_fraction = {
+			target = BEL
+			size = temp_ratio_discarding
+			stockpile_ratio = temp_ratio_discarding
+			army_ratio = temp_ratio_discarding
+			navy_ratio = temp_ratio_discarding
+			air_ratio = temp_ratio_discarding
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
+		annex_country = {
+			target = BEL
+			transfer_troops = no
+		}
+	}
+	GER_stockpile_chicanery = yes #Lazy idc
+}
+
+GER_stockpile_chicanery = {
+	transfer_units_fraction = {
+		target = REG
+		size = 0
+		stockpile_ratio = 0.25
+		navy_ratio = 0.3
+		air_ratio = 0.25
+		keep_unit_leaders_trigger = {
+			always = yes
+		}
+	}
+	transfer_units_fraction = {
+		target = GMA
+		size = 0
+		stockpile_ratio = 0.25
+		navy_ratio = 0.3
+		air_ratio = 0.25
+		keep_unit_leaders_trigger = {
+			always = yes
+		}
+	}
+	transfer_units_fraction = {
+		target = HRC
+		size = 0
+		stockpile_ratio = 0.1
+		navy_ratio = 0.1
+		air_ratio = 0.25
+		keep_unit_leaders_trigger = {
+			always = yes
+		}
+	}
+	transfer_units_fraction = {
+		target = RPR
+		size = 0
+		stockpile_ratio = 0.1
+		navy_ratio = 0.1
+		air_ratio = 0.25
+		keep_unit_leaders_trigger = {
+			always = yes
+		}
+	}
+	transfer_units_fraction = {
+		target = SRH
+		size = 0
+		stockpile_ratio = 0.1
+		navy_ratio = 0.1
+		air_ratio = 0.25
+		keep_unit_leaders_trigger = {
+			always = yes
+		}
+	}
+}
+
+GER_SWRW_establish_econ_sphere_post_war = {
+	set_country_flag = HAS_ECON_SPHERE
+	set_variable = { ECON_SPHERE_LEADER = THIS }
+	econ_recompile_all_spheres = yes
+	clear_embargo_with_target_sphere = yes
+	recalculate_world_trade_influence = yes
+	force_update_map_mode = {
+		mapmode = tno_econ_sphere_map_mode
+	}
+	first_every_month_script = yes
+}

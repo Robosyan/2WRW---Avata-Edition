@@ -1,0 +1,218 @@
+characters = {
+	# Kazakhstan
+	# Democrat
+	PAV_Sultanakhmet_Kozhikov = {
+		name = PAV_Sultanakhmet_Kozhikov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TMK/Portrait_TMK_Sultanakhmet_Kozhikov.dds"
+			}
+		}
+		country_leader = {
+			# desc = "#"
+			expire = "1999.1.1"
+			ideology = conservatism_paternalistic_conservatism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	# Tsarist
+	PAV_RUS_Imperial_Government = {
+		name = PAV_RUS_Imperial_Government
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Imperial_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			# desc = "#"
+			expire = "1999.1.1"
+			ideology = despotism_aristocratic_conservatism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	PAV_RUS_Imperial_Government_Alternate = {
+		name = PAV_RUS_Imperial_Government_Alternate
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Imperial_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			# desc = "#"
+			expire = "1999.1.1"
+			ideology = despotism_military_junta_subtype
+			traits = { }
+			id = -1
+		}
+	}
+
+	# Turkmenistan
+	TRK_RUS_Provisional_Government = {
+		name = "TRK_RUS_Provisional_Government"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	TRK_RUS_Imperial_Government = {
+		name = "TRK_RUS_Imperial_Government"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Imperial_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism_aristocratic_conservatism_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	TRK_SOV_Provisional_Government = {
+		name = "TRK_SOV_Provisional_Government"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_USSR_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = communist_bolshevism_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	TRK_AFG_Puppet = {
+		name = "TRK_AFG_Puppet"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism_interim_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	
+	# Karakalpakstan
+
+	KRK_RUS_Provisional_Government = {
+		name = "KRK_RUS_Provisional_Government"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	
+	# Uzbekistan
+
+	UZB_RUS_Provisional_Government = {
+		name = "UZB_RUS_Provisional_Government"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	UZB_AFG_Puppet = {
+		name = "UZB_AFG_Puppet"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism_interim_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	
+	# Tajikistan
+
+	TAJ_RUS_Provisional_Government = {
+		name = "TAJ_RUS_Provisional_Government"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	TAJ_AFG_Puppet = {
+		name = "TAJ_AFG_Puppet"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism_interim_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	
+	# Kyrgzstan
+
+	KYR_RUS_Provisional_Government = {
+		name = "KYR_RUS_Provisional_Government"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	KYR_AFG_Puppet = {
+		name = "KYR_AFG_Puppet"
+		portraits = { 
+			civilian = {
+				large = "gfx/leaders/RUS/Portrait_RUS_Democratic_Provisional_Government.dds"
+			}
+		}
+		country_leader = {
+			ideology = despotism_interim_government_subtype
+			desc = ""
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+}

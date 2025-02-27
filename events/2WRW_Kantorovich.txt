@@ -1,0 +1,493 @@
+add_namespace = DSPR
+
+country_event = {
+	id = DSPR.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.1"}
+	title = DSPR.1.t
+	desc = DSPR.1.desc
+	picture = GFX_report_event_russia_kantorovich_1
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.1.a
+	}
+}
+
+country_event = {
+	id = DSPR.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.2"}
+	title = DSPR.2.t
+	desc = DSPR.2.desc
+	picture = GFX_report_event_grigorenko
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.2.a
+	}
+}
+
+country_event = {
+	id = DSPR.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.3"}
+	title = DSPR.3.t
+	desc = DSPR.3.desc
+	picture = GFX_report_event_russia_kantorovich_1
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.3.a
+		set_temp_variable = { temp_influence = -7.5 }
+		set_temp_variable = { target = 1 }
+		NOV_VRPP_increase_specific_megacorp_influence = yes
+		set_temp_variable = { temp_loyalty = -7.5 }
+		set_temp_variable = { target = 1 }
+		NOV_VRPP_increase_specific_megacorp_loyalty = yes
+	}
+	option = {
+		name = DSPR.3.b
+		set_temp_variable = { temp_influence = -7.5 }
+		set_temp_variable = { target = 0 }
+		NOV_VRPP_increase_specific_megacorp_influence = yes
+		set_temp_variable = { temp_loyalty = -7.5 }
+		set_temp_variable = { target = 0 }
+		NOV_VRPP_increase_specific_megacorp_loyalty = yes
+	}
+}
+
+country_event = {
+	id = DSPR.4
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.4"}
+	title = DSPR.4.t
+	desc = DSPR.4.desc
+	picture = GFX_report_event_GNG_Russian_city
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.4.a
+	}
+}
+
+country_event = {
+	id = DSPR.5
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.5"}
+	title = DSPR.5.t
+	desc = DSPR.5.desc
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.5.a
+	}
+}
+
+country_event = {
+	id = DSPR.6
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.6"}
+	title = DSPR.6.t
+	desc = DSPR.6.desc
+	picture = GFX_report_event_RUS_city
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.6.a
+	}
+}
+
+country_event = {
+	id = DSPR.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.7"}
+	title = DSPR.7.t
+	desc = DSPR.7.desc
+	picture = GFX_report_event_generic_gun_by_phone
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.7.a
+	}
+}
+
+country_event = {
+	id = DSPR.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.8"}
+	title = DSPR.8.t
+	desc = DSPR.8.desc
+	picture = GFX_report_event_generic_radio1
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.8.a
+	}
+}
+
+country_event = {
+	id = DSPR.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.9"}
+	title = DSPR.9.t
+	desc = DSPR.9.desc
+	picture = GFX_report_event_generic_gun_by_phone
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.9.a
+	}
+}
+
+country_event = {
+	id = DSPR.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.10"}
+	title = DSPR.10.t
+	desc = DSPR.10.desc
+	picture = GFX_report_event_russia_kantorovich_1
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.10.a
+	}
+}
+
+country_event = {
+	id = DSPR.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.11"}
+	title = DSPR.11.t
+	desc = DSPR.11.desc
+	picture = GFX_report_event_GNG_sony_5_inch_tv
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.11.a
+	}
+}
+
+country_event = {
+	id = DSPR.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.12"}
+	title = DSPR.12.t
+	desc = DSPR.12.desc
+	picture = GFX_report_event_GNG_sony_5_inch_tv
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.12.a
+	}
+}
+
+country_event = {
+	id = DSPR.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.13"}
+	title = DSPR.13.t
+	desc = DSPR.13.desc
+	picture = GFX_report_event_generic_microphone
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.13.a
+	}
+}
+
+country_event = {
+	id = DSPR.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.14"}
+	title = DSPR.14.t
+	desc = DSPR.14.desc
+	picture = GFX_report_event_glass_and_cigar
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.14.a
+	}
+}
+
+country_event = {
+	id = DSPR.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.15"}
+	title = DSPR.15.t
+	desc = DSPR.15.desc
+	picture = GFX_report_event_generic_gun_by_phone
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.15.a
+	}
+}
+
+country_event = {
+	id = DSPR.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.16"}
+	title = DSPR.16.t
+	desc = DSPR.16.desc
+	picture = GFX_report_event_USA_american_police
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.16.a
+	}
+}
+
+country_event = {
+	id = DSPR.17
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.17"}
+	title = DSPR.17.t
+	desc = DSPR.17.desc
+	picture = GFX_report_event_GNG_apartment_door
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.17.a
+	}
+}
+
+country_event = {
+	id = DSPR.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.18"}
+	title = DSPR.18.t
+	desc = DSPR.18.desc
+	picture = GFX_report_event_GNG_generic_construction_workers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.18.a
+	}
+}
+
+country_event = {
+	id = DSPR.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.19"}
+	title = DSPR.19.t
+	desc = DSPR.19.desc
+	picture = GFX_report_event_russian_flag
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.19.a
+	}
+}
+
+country_event = {
+	id = DSPR.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.20"}
+	title = DSPR.20.t
+	desc = DSPR.20.desc
+	picture = GFX_report_event_GNG_generic_construction_workers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.20.a
+	}
+}
+
+country_event = {
+	id = DSPR.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.21"}
+	title = DSPR.21.t
+	desc = DSPR.21.desc
+	picture = GFX_report_event_IBR_iberian_classroom
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.21.a
+	}
+}
+
+country_event = {
+	id = DSPR.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.22"}
+	title = DSPR.22.t
+	desc = DSPR.22.desc
+	picture = GFX_report_event_AZH_kirana_store
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.22.a
+	}
+}
+
+country_event = {
+	id = DSPR.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.23"}
+	title = DSPR.23.t
+	desc = DSPR.23.desc
+	picture = GFX_report_event_russian_flag
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.23.a
+	}
+}
+
+country_event = {
+	id = DSPR.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.24"}
+	title = DSPR.24.t
+	desc = DSPR.24.desc
+	picture = GFX_report_event_federal_assembly
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.24.a
+	}
+}
+
+country_event = {
+	id = DSPR.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.25"}
+	title = DSPR.25.t
+	desc = DSPR.25.desc
+	picture = GFX_report_event_GNG_fountain_pen_generic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.25.a
+	}
+}
+
+country_event = {
+	id = DSPR.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.26"}
+	title = DSPR.26.t
+	desc = DSPR.26.desc
+	picture = GFX_report_event_CHI_university
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.26.a
+	}
+}
+
+country_event = {
+	id = DSPR.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.27"}
+	title = DSPR.27.t
+	desc = DSPR.27.desc
+	picture = GFX_report_event_NOV_alexander_pokryshkin_2
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.27.a
+	}
+}
+
+country_event = {
+	id = DSPR.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.28"}
+	title = DSPR.28.t
+	desc = DSPR.28.desc
+	picture = GFX_report_event_generic_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.28.a
+	}
+}
+
+country_event = {
+	id = DSPR.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.29"}
+	title = DSPR.29.t
+	desc = DSPR.29.desc
+	picture = GFX_report_event_russia_kantorovich_1
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.29.a
+	}
+}
+
+country_event = {
+	id = DSPR.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.30"}
+	title = DSPR.30.t
+	desc = DSPR.30.desc
+	picture = GFX_report_event_KAZ_kazakh_uranium_mine
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.30.a
+	}
+}
+
+country_event = {
+	id = DSPR.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.31"}
+	title = DSPR.31.t
+	desc = DSPR.31.desc
+	picture = GFX_report_event_russia_kantorovich_1
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.31.a
+	}
+}
+
+country_event = {
+	id = DSPR.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.32"}
+	title = DSPR.32.t
+	desc = DSPR.32.desc
+	picture = GFX_report_event_GNG_sony_5_inch_tv
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.32.a
+	}
+}
+
+country_event = {
+	id = DSPR.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.33"}
+	title = DSPR.33.t
+	desc = DSPR.33.desc
+	picture = GFX_report_event_russia_sunset
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.33.a
+		TNO_Country_Closing_Screen_Show = yes
+	}
+}
+
+country_event = {
+	id = DSPR.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event DSPR.34"}
+	title = DSPR.34.t
+	desc = DSPR.34.desc
+	picture = GFX_report_event_russia_kantorovich_1
+
+	is_triggered_only = yes
+	
+	option = {
+		name = DSPR.34.a
+	}
+}

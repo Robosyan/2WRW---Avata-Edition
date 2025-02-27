@@ -1,0 +1,4635 @@
+# The Second West Russian War #
+
+add_namespace = WORLD
+
+news_event = { #Russian Victory - Generic
+	id = WORLD.40001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40001"}
+	title = WORLD.40001.t
+	desc = WORLD.40001.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40001.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	
+	option = {
+		name = WORLD.40001.b
+		trigger = {
+			OR = {
+				original_tag = VYT
+				original_tag = SAM
+				original_tag = KOM
+				original_tag = PRM
+				original_tag = OMS
+				original_tag = TYM
+				original_tag = SVR
+				if = {
+					limit = {
+						NOT = {
+							has_government = liberalism
+						}
+					}
+					original_tag = TOM
+				}
+				original_tag = SBA
+				original_tag = NOV
+				original_tag = PRC
+				original_tag = KEM
+				
+				original_tag = CHT
+				original_tag = AMR
+				original_tag = MAG
+				original_tag = OMO
+				original_tag = BRY
+				original_tag = IRK
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40001.c
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	
+	option = {
+		name = WORLD.40001.d
+		trigger = { original_tag = WRS }
+		if = {
+			limit = { has_country_leader = { character = WRS_Mikhail_Tukhachevsky ruling_only = yes } }
+			set_temp_variable = { TNO_temp_super_event = token:SE_RED_NAPOLEON_VICTORY }
+			TNO_fire_super_event = yes
+		}
+		else = { # Zukhov
+			set_temp_variable = { TNO_temp_super_event = token:SE_WRRF_VICTORY_ZHUKOV }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { #German Victory
+	id = WORLD.40002
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40002"}
+	title = WORLD.40002.t
+	desc = WORLD.40002.desc
+	picture = GFX_news_event_GER_eastern_front_german_troops
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40002.a
+		trigger = {
+			NOT = {
+				tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	
+	option = {
+		name = WORLD.40002.b
+		trigger = { tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	
+	option = {
+		name = WORLD.40002.c
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+news_event = { #Liberation of Moscow - Generic
+	id = WORLD.40004
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40004"}
+	title = WORLD.40004.t
+	desc = WORLD.40004.desc
+	picture = GFX_RUS_news_event_moscow
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = liberation_of_moscow
+	}
+	
+	major = yes
+
+	option = {
+		name = WORLD.40004.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40004.b
+		trigger = { 
+			original_tag = RUS
+		}
+	}
+	
+	option = {
+		name = WORLD.40004.c
+		trigger = { 
+			original_tag = GER
+		}
+	}
+}
+
+news_event = { #Federation Victory! - Shukshin
+	id = WORLD.40006
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40006"}
+	title = WORLD.40006.t
+	desc = WORLD.40006.desc
+	picture = GFX_news_event_russia_novosibirsk_unification
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = WORLD.40006.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHUKSHIN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40006.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHUKSHIN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			original_tag = RUS
+		}
+	}
+	
+	option = {
+		name = WORLD.40006.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SHUKSHIN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			original_tag = GER
+		}
+	}
+}
+
+news_event = { #Federation Victory! - Pokryshkin
+	id = WORLD.40008
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40008"}
+	title = WORLD.40008.t
+	desc = WORLD.40008.desc
+	picture = GFX_news_event_russia_novosibirsk_unification
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = WORLD.40008.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_POKRYSHKIN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			original_tag = RUS
+		}
+	}
+	
+	option = {
+		name = WORLD.40008.b
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_POKRYSHKIN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			original_tag = GER
+		}
+	}
+	
+	option = {
+		name = WORLD.40008.c
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_POKRYSHKIN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+	}
+}
+
+# Vladivostok
+
+news_event = { #The Federation Retakes Vladivostok
+	id = WORLD.40010
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40010"}
+	title = WORLD.40010.t
+	desc = WORLD.40010.desc
+	picture = GFX_news_event_USA_us_japan_talks_end_well_us
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40010.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40010.b
+		trigger = {
+			original_tag = RUS
+		}
+	}
+	
+	option = {
+		name = WORLD.40010.c
+		trigger = {
+			original_tag = JAP
+		}
+	}
+}
+
+news_event = { #The Federation Retakes Birobidzhan
+	id = WORLD.40011
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40011"}
+	title = WORLD.40011.t
+	desc = WORLD.40011.desc
+	picture = GFX_news_event_USA_us_japan_talks_end_well_japan
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40011.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40011.b
+		trigger = {
+			original_tag = RUS
+		}
+	}
+	
+	option = {
+		name = WORLD.40011.c
+		trigger = {
+			original_tag = JAP
+		}
+	}
+}
+
+news_event = { #Bukharin Imprisoned
+	id = WORLD.40012
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40012"}
+	title = WORLD.40012.t
+	desc = WORLD.40012.desc
+	picture = GFX_news_event_russia_bukharin
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40012.a
+	}
+}
+
+news_event = { #Negotiations Begin!
+	id = WORLD.40015
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40015"}
+	title = WORLD.40015.t
+	desc = WORLD.40015.desc
+	picture = GFX_news_event_russia_far_east
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40015.a
+	}
+}
+
+news_event = { #The Federation Retakes Birobidzhan
+	id = WORLD.40016
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40016"}
+	title = WORLD.40016.t
+	desc = WORLD.40016.desc
+	picture = GFX_news_event_USA_us_japan_talks_end_well_japan
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40016.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40016.b
+		trigger = {
+			original_tag = RUS
+		}
+	}
+	
+	option = {
+		name = WORLD.40016.c
+		trigger = {
+			original_tag = JAP
+		}
+	}
+}
+
+news_event = { #Declaration of War - Generic
+	id = WORLD.40003
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40003"}
+	title = WORLD.40003.t
+	desc = WORLD.40003.desc
+	picture = GFX_news_event_russia_wrrf_1
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40003.a
+		set_country_flag = big_event_second_west_russian_war
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40003.b
+		set_country_flag = big_event_second_west_russian_war
+		trigger = { 
+			is_russian_unifier = yes
+		}
+	}
+	
+	option = {
+		name = WORLD.40003.c
+		set_country_flag = big_event_second_west_russian_war
+		trigger = { original_tag = GER }
+	}
+	
+	option = {
+		name = WORLD.40003.d
+		set_country_flag = big_event_the_great_trial
+		trigger = { original_tag = OMS }
+	}
+}
+
+news_event = { #The Federation Retakes Birobidzhan
+	id = WORLD.40017
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40017"}
+	title = WORLD.40017.t
+	desc = WORLD.40017.desc
+	picture = GFX_news_event_RUS_iran_civil_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40017.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40017.b
+		trigger = {
+			original_tag = RUS
+		}
+	}
+}
+
+#Loss Events
+
+#Soc SBA
+news_event = {
+	id = WORLD.40018
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40018"}
+	title = WORLD.40018.t
+	desc = WORLD.40018.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40018.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40018.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40018.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Despot SBA
+news_event = {
+	id = WORLD.40019
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40019"}
+	title = WORLD.40019.t
+	desc = WORLD.40019.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40019.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40019.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40019.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Zukh
+news_event = {
+	id = WORLD.40020
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40020"}
+	title = WORLD.40020.t
+	desc = WORLD.40020.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40020.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40020.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40020.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Tukh
+news_event = {
+	id = WORLD.40021
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40021"}
+	title = WORLD.40021.t
+	desc = WORLD.40021.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40021.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40021.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40021.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Suslov
+news_event = {
+	id = WORLD.40022
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40022"}
+	title = WORLD.40022.t
+	desc = WORLD.40022.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40022.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40022.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40022.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Zhdanov
+news_event = {
+	id = WORLD.40023
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40023"}
+	title = WORLD.40023.t
+	desc = WORLD.40023.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40023.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40023.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40023.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Bukharina
+news_event = {
+	id = WORLD.40024
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40024"}
+	title = WORLD.40024.t
+	desc = WORLD.40024.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40024.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40024.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40024.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Kaganovich
+news_event = {
+	id = WORLD.40025
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40025"}
+	title = WORLD.40025.t
+	desc = WORLD.40025.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40025.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40025.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40025.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Khrushchev
+news_event = {
+	id = WORLD.40026
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40026"}
+	title = WORLD.40026.t
+	desc = WORLD.40026.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40026.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40026.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40026.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Yagoda
+news_event = {
+	id = WORLD.40027
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40027"}
+	title = WORLD.40027.t
+	desc = WORLD.40027.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40027.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40027.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40027.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Bessonov
+news_event = {
+	id = WORLD.40028
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40028"}
+	title = WORLD.40028.t
+	desc = WORLD.40028.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40028.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40028.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40028.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Sablin
+news_event = {
+	id = WORLD.40029
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40029"}
+	title = WORLD.40029.t
+	desc = WORLD.40029.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40029.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40029.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40029.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Despot Stalina
+news_event = {
+	id = WORLD.40049
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40049"}
+	title = WORLD.40049.t
+	desc = WORLD.40049.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40049.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40049.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40049.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Zykov
+news_event = {
+	id = WORLD.40050
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40050"}
+	title = WORLD.40050.t
+	desc = WORLD.40050.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40050.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40050.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40050.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Vladimir
+news_event = {
+	id = WORLD.40051
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40051"}
+	title = WORLD.40051.t
+	desc = WORLD.40051.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40051.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40051.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40051.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Werbell
+news_event = {
+	id = WORLD.40052
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40052"}
+	title = WORLD.40052.t
+	desc = WORLD.40052.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40052.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40052.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40052.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Shafarevich
+news_event = {
+	id = WORLD.40053
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40053"}
+	title = WORLD.40053.t
+	desc = WORLD.40053.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40053.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40053.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40053.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Serov
+news_event = {
+	id = WORLD.40054
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40054"}
+	title = WORLD.40054.t
+	desc = WORLD.40054.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40054.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40054.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40054.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Gumilyov
+news_event = {
+	id = WORLD.40055
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40055"}
+	title = WORLD.40055.t
+	desc = WORLD.40055.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40055.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40055.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40055.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Dem Komi
+news_event = {
+	id = WORLD.40056
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40056"}
+	title = WORLD.40056.t
+	desc = WORLD.40056.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40056.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40056.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40056.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Tomsk
+news_event = {
+	id = WORLD.40057
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40057"}
+	title = WORLD.40057.t
+	desc = WORLD.40057.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40057.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40057.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40057.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Yeltsin
+news_event = {
+	id = WORLD.40058
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40058"}
+	title = WORLD.40058.t
+	desc = WORLD.40058.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40058.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40058.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40058.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Petlin
+news_event = {
+	id = WORLD.40059
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40059"}
+	title = WORLD.40059.t
+	desc = WORLD.40059.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40059.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40059.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40059.c
+		trigger = { original_tag = USA }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40059.d
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+				original_tag = USA
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Mikhail
+news_event = {
+	id = WORLD.40060
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40060"}
+	title = WORLD.40060.t
+	desc = WORLD.40060.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40060.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40060.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40060.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Yuriy
+news_event = {
+	id = WORLD.40061
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40061"}
+	title = WORLD.40061.t
+	desc = WORLD.40061.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40061.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40061.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40061.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Lydia
+news_event = {
+	id = WORLD.40062
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40062"}
+	title = WORLD.40062.t
+	desc = WORLD.40062.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40062.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40062.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40062.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Batov
+news_event = {
+	id = WORLD.40063
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40063"}
+	title = WORLD.40063.t
+	desc = WORLD.40063.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40063.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40063.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40063.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Pokryshkin
+news_event = {
+	id = WORLD.40064
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40064"}
+	title = WORLD.40064.t
+	desc = WORLD.40064.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40064.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40064.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40064.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Shepunov
+news_event = {
+	id = WORLD.40065
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40065"}
+	title = WORLD.40065.t
+	desc = WORLD.40065.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40065.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40065.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40065.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Bunyachenko
+news_event = {
+	id = WORLD.40066
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40066"}
+	title = WORLD.40066.t
+	desc = WORLD.40066.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40066.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40066.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40066.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Rodzaevsky
+news_event = {
+	id = WORLD.40067
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40067"}
+	title = WORLD.40067.t
+	desc = WORLD.40067.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40067.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40067.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40067.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Artsezo
+news_event = {
+	id = WORLD.40068
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40068"}
+	title = WORLD.40068.t
+	desc = WORLD.40068.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40068.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40068.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40068.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Vagner
+news_event = {
+	id = WORLD.40069
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40069"}
+	title = WORLD.40069.t
+	desc = WORLD.40069.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40069.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40069.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40069.c
+		trigger = { original_tag = USA }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40069.d
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+				original_tag = USA
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Velimir
+news_event = {
+	id = WORLD.40070
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40070"}
+	title = WORLD.40070.t
+	desc = WORLD.40070.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40070.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40070.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40070.c
+		trigger = { original_tag = USA }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40070.d
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+				original_tag = USA
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Omsk
+news_event = {
+	id = WORLD.40071
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40071"}
+	title = WORLD.40071.t
+	desc = WORLD.40071.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40071.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40071.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40071.c
+		trigger = { original_tag = USA }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40071.d
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+				original_tag = USA
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Matkovsky
+news_event = {
+	id = WORLD.40072
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40072"}
+	title = WORLD.40072.t
+	desc = WORLD.40072.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40072.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40072.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40072.c
+		trigger = { original_tag = USA }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40072.d
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+				original_tag = USA
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#why the fuck did we never have a shukshin event
+news_event = {
+	id = WORLD.40107
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40107"}
+	title = WORLD.40107.t
+	desc = WORLD.40107.desc
+	picture = GFX_news_event_total_german_victory
+	is_triggered_only = yes
+	option = {
+		name = WORLD.40107.a
+		trigger = { original_tag = RUS }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40107.b
+		trigger = { original_tag = GER }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40107.c
+		trigger = { original_tag = USA }
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40107.d
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = RUS
+				original_tag = USA
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_TOTAL_GERMAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#End Loss Events
+
+#Victory Events
+
+#Tukh
+news_event = { 
+	id = WORLD.40073
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40073"}
+	title = WORLD.40073.t
+	desc = WORLD.40073.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40073.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_RED_NAPOLEON_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40073.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_RED_NAPOLEON_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40073.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_RED_NAPOLEON_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Shafarevich
+news_event = { 
+	id = WORLD.40074
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40074"}
+	title = WORLD.40074.t
+	desc = WORLD.40074.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40074.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40074.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40074.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Zhukov
+news_event = { 
+	id = WORLD.40075
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40075"}
+	title = WORLD.40075.t
+	desc = WORLD.40075.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40075.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_WRRF_VICTORY_ZHUKOV }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40075.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_WRRF_VICTORY_ZHUKOV }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40075.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_WRRF_VICTORY_ZHUKOV }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Batov
+news_event = { 
+	id = WORLD.40076
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40076"}
+	title = WORLD.40076.t
+	desc = WORLD.40076.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40076.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40076.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40076.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Bessonov
+news_event = { 
+	id = WORLD.40077
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40077"}
+	title = WORLD.40077.t
+	desc = WORLD.40077.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40077.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40077.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40077.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Zhdanov
+news_event = { 
+	id = WORLD.40078
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40078"}
+	title = WORLD.40078.t
+	desc = WORLD.40078.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40078.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40078.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40078.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Suslov
+news_event = { 
+	id = WORLD.40079
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40079"}
+	title = WORLD.40079.t
+	desc = WORLD.40079.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40079.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40079.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40079.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Bukharina
+news_event = { 
+	id = WORLD.40080
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40080"}
+	title = WORLD.40080.t
+	desc = WORLD.40080.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40080.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40080.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40080.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Despot SBA
+news_event = { 
+	id = WORLD.40081
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40081"}
+	title = WORLD.40081.t
+	desc = WORLD.40081.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40081.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40081.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40081.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Kaganovich
+news_event = { 
+	id = WORLD.40082
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40082"}
+	title = WORLD.40082.t
+	desc = WORLD.40082.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40082.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40082.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40082.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Soc SBA
+news_event = { 
+	id = WORLD.40083
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40083"}
+	title = WORLD.40083.t
+	desc = WORLD.40083.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40083.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40083.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40083.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Yagoda
+news_event = { 
+	id = WORLD.40084
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40084"}
+	title = WORLD.40084.t
+	desc = WORLD.40084.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40084.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40084.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40084.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Khrushchev
+news_event = { 
+	id = WORLD.40085
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40085"}
+	title = WORLD.40085.t
+	desc = WORLD.40085.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40085.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40085.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40085.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Sablin
+news_event = { 
+	id = WORLD.40086
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40086"}
+	title = WORLD.40086.t
+	desc = WORLD.40086.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40086.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40086.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40086.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Dem Komi
+news_event = { 
+	id = WORLD.40087
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40087"}
+	title = WORLD.40087.t
+	desc = WORLD.40087.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40087.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40087.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40087.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Despot Stalina
+news_event = { 
+	id = WORLD.40088
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40088"}
+	title = WORLD.40088.t
+	desc = WORLD.40088.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40088.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40088.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40088.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Tomsk
+news_event = { 
+	id = WORLD.40089
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40089"}
+	title = WORLD.40089.t
+	desc = WORLD.40089.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40089.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40089.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40089.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Yeltsin
+news_event = { 
+	id = WORLD.40090
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40090"}
+	title = WORLD.40090.t
+	desc = WORLD.40090.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40090.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40090.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40090.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Petlin
+news_event = { 
+	id = WORLD.40091
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40091"}
+	title = WORLD.40091.t
+	desc = WORLD.40091.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40091.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40091.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40091.c
+		trigger = {
+			original_tag = USA
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40091.d
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+				original_tag = USA
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Gumilyov
+news_event = { 
+	id = WORLD.40092
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40092"}
+	title = WORLD.40092.t
+	desc = WORLD.40092.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40092.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40092.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40092.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Zykov
+news_event = { 
+	id = WORLD.40093
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40093"}
+	title = WORLD.40093.t
+	desc = WORLD.40093.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40093.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40093.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40093.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Vladimir
+news_event = { 
+	id = WORLD.40094
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40094"}
+	title = WORLD.40094.t
+	desc = WORLD.40094.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40094.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40094.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40094.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Mikhail
+news_event = { 
+	id = WORLD.40095
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40095"}
+	title = WORLD.40095.t
+	desc = WORLD.40095.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40095.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40095.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40095.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Velimir
+news_event = { 
+	id = WORLD.40096
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40096"}
+	title = WORLD.40096.t
+	desc = WORLD.40096.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40096.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40096.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40096.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Yuriy
+news_event = { 
+	id = WORLD.40097
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40097"}
+	title = WORLD.40097.t
+	desc = WORLD.40097.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40097.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40097.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40097.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Lydia
+news_event = { 
+	id = WORLD.40098
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40098"}
+	title = WORLD.40098.t
+	desc = WORLD.40098.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40098.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40098.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40098.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Shepunov
+news_event = { 
+	id = WORLD.40099
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40099"}
+	title = WORLD.40099.t
+	desc = WORLD.40099.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40099.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40099.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40099.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Bunyachenko
+news_event = { 
+	id = WORLD.40100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40100"}
+	title = WORLD.40100.t
+	desc = WORLD.40100.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40100.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40100.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40100.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Werbell
+news_event = { 
+	id = WORLD.40101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40101"}
+	title = WORLD.40101.t
+	desc = WORLD.40101.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40101.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_WERBELL_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40101.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_WERBELL_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40101.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_WERBELL_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Matkovsky
+news_event = { 
+	id = WORLD.40102
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40102"}
+	title = WORLD.40102.t
+	desc = WORLD.40102.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40102.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40102.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40102.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Rodzaevsky
+news_event = { 
+	id = WORLD.40103
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40103"}
+	title = WORLD.40103.t
+	desc = WORLD.40103.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40103.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40103.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40103.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Serov
+news_event = { 
+	id = WORLD.40104
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40104"}
+	title = WORLD.40104.t
+	desc = WORLD.40104.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40104.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40104.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40104.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Artsezo
+news_event = { 
+	id = WORLD.40105
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40105"}
+	title = WORLD.40105.t
+	desc = WORLD.40105.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40105.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40105.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40105.c
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#Vagner
+news_event = { 
+	id = WORLD.40106
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40106"}
+	title = WORLD.40106.t
+	desc = WORLD.40106.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40106.a
+		trigger = {
+			original_tag = RUS
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40106.b
+		trigger = {
+			original_tag = GER
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40106.c
+		trigger = {
+			original_tag = USA
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+	option = {
+		name = WORLD.40106.d
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+				original_tag = USA
+			}
+		}
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_GENERIC_RUSSIAN_VICTORY }
+			TNO_fire_super_event = yes
+		}
+	}
+}
+
+#End Victory Events
+
+news_event = { #Russian Invasion of Romania
+	id = WORLD.40030
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40030"}
+	title = WORLD.40030.t
+	desc = WORLD.40030.desc
+	picture = GFX_news_event_russian_ruins
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40030.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = ROM
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40030.b
+		trigger = { original_tag = RUS }
+	}
+	
+	option = {
+		name = WORLD.40030.c
+		trigger = { TAG = ROM }
+	}
+}
+
+news_event = { #Russia Triumphs over Romania - Odesa
+	id = WORLD.40031
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40031"}
+	title = WORLD.40031.t
+	desc = WORLD.40031.desc
+	picture = GFX_news_event_russian_crowd
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40031.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = ROM
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40031.b
+		trigger = { original_tag = RUS }
+	}
+	
+	option = {
+		name = WORLD.40031.c
+		trigger = { TAG = ROM }
+	}
+}
+
+news_event = { #Russia Triumphs over Romania - Total Victory
+	id = WORLD.40032
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40032"}
+	title = WORLD.40032.t
+	desc = WORLD.40032.desc
+	picture = GFX_news_event_ZLT_zlatoust_victorious
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40032.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = ROM
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40032.b
+		trigger = { original_tag = RUS }
+	}
+	
+	option = {
+		name = WORLD.40032.c
+		trigger = { TAG = ROM }
+	}
+}
+
+news_event = { #Declaration of War - Modernist
+	id = WORLD.40033
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40033"}
+	title = WORLD.40033.t
+	desc = WORLD.40033.desc
+	picture = GFX_news_event_modernist_declaration
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40033.a
+		set_country_flag = big_event_modernist_war_declaration
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40033.b
+		set_country_flag = big_event_modernist_war_declaration
+		trigger = { original_tag = RUS }
+	}
+	
+	option = {
+		name = WORLD.40033.c
+		set_country_flag = big_event_modernist_war_declaration
+		trigger = { original_tag = GER }
+	}
+}
+
+news_event = { #The Russian Federation Collapses
+	id = WORLD.40034
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40034"}
+	title = WORLD.40034.t
+	desc = WORLD.40034.desc
+	picture = GFX_news_federation_collapses
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40034.a
+		trigger = {
+			NOT = {
+				original_tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40034.b
+		trigger = { original_tag = GER }
+	}
+}
+
+news_event = { #Transnistria negotiations
+	id = WORLD.40035
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40035"}
+	title = WORLD.40035.t
+	desc = WORLD.40035.desc
+	picture = GFX_news_event_romania_crisis_averted
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40035.a
+		trigger = {
+			NOT = {
+				original_tag = RUS
+				original_tag = ROM
+			}
+		}
+	}
+	option = {
+		name = WORLD.40035.b
+		trigger = { original_tag = RUS }
+	}
+	option = {
+		name = WORLD.40035.c
+		trigger = { original_tag = ROM }
+	}
+}
+
+news_event = { #Federation joins the OFN
+	id = WORLD.40036
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40036"}
+	title = WORLD.40036.t
+	desc = WORLD.40036.desc
+	picture = GFX_news_event_russia_american_friendship
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40036.a
+		trigger = {
+			NOT = {
+				original_tag = GER
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40036.b
+		trigger = { original_tag = GER }
+	}
+}
+
+news_event = { #CSTO
+	id = WORLD.40037
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40037"}
+	title = WORLD.40037.t
+	desc = WORLD.40037.desc
+	picture = GFX_news_event_formation_csto
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40037.a
+	}
+}
+
+news_event = { #Krakow Uprising
+	id = WORLD.40038
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40038"}
+	title = WORLD.40038.t
+	desc = WORLD.40038.desc
+	picture = GFX_news_event_krakow_uprising
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40038.a
+	}
+	
+	option = {
+		name = WORLD.40038.b
+		trigger = { original_tag = GER }
+	}
+}
+
+news_event = { #West China War
+	id = WORLD.40039
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40039"}
+	title = WORLD.40039.t
+	desc = WORLD.40039.desc
+	picture = GFX_news_event_west_china_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40039.a
+	}
+}
+
+news_event = { #Mountain War
+	id = WORLD.40040
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40040"}
+	title = WORLD.40040.t
+	desc = WORLD.40040.desc
+	picture = GFX_news_event_the_mountain_war
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40040.a
+	}
+}
+
+news_event = { #Mongolian Rebellion
+	id = WORLD.40041
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40041"}
+	title = WORLD.40041.t
+	desc = WORLD.40041.desc
+	picture = GFX_news_event_mongolian_rebellion
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40041.a
+	}
+}
+
+news_event = { # Russia Declares on Kazakhstan
+	id = WORLD.40042
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40042"}
+	title = WORLD.40042.t
+	desc = WORLD.40042.desc
+	picture = GFX_news_event_russia_novosibirsk_invasion
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40042.a
+		trigger = { tag = NOV }
+	}
+	
+	option = {
+		name = WORLD.40042.b
+		trigger = {
+			NOT = { tag = NOV }
+		}
+	}
+}
+
+news_event = { # Kazakhstan Joins Russia
+	id = WORLD.40043
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.40043"}
+	title = WORLD.40043.t
+	desc = WORLD.40043.desc
+	picture = GFX_news_event_russia_generic
+	
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.40043.a
+		trigger = {
+			OR = { 
+				original_tag = NOV
+				original_tag = KAZ
+			}
+		}
+	}
+	
+	option = {
+		name = WORLD.40043.b
+		trigger = {
+			NOT = { 
+				original_tag = NOV
+				original_tag = KAZ
+			}	
+		}
+	}
+}
+
+#NOTE: WORLD.41000-WORLD.41020 used to be the USA skeleton. This has now been moved to the SWRW_USA_skeleton section and these events are now blank
+
+news_event = { #Brandt - German Spring
+	id = WORLD.41021
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41021"}
+	title = WORLD.41021.t
+	desc = WORLD.41021.desc
+	picture = GFX_news_event_GER_oberlander
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41021.a
+	}
+}
+
+news_event = { #Bormann Dies
+	id = WORLD.41022
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41022"}
+	title = WORLD.41022.t
+	desc = WORLD.41022.desc
+	picture = GFX_news_event_GER_german_funeral
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41022.a
+	}
+}
+
+news_event = { #Klopfer
+	id = WORLD.41023
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41023"}
+	title = WORLD.41023.t
+	desc = WORLD.41023.desc
+	picture = GFX_news_event_GER_germania
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41023.a
+	}
+}
+
+news_event = { #Gehlen
+	id = WORLD.41024
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41024"}
+	title = WORLD.41024.t
+	desc = WORLD.41024.desc
+	picture = GFX_news_event_GER_germania
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41024.a
+	}
+}
+
+news_event = { #Waldheim
+	id = WORLD.41025
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41025"}
+	title = WORLD.41025.t
+	desc = WORLD.41025.desc
+	picture = GFX_news_event_GER_germania
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41025.a
+	}
+}
+
+news_event = { #Klopfer
+	id = WORLD.41026
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41026"}
+	title = WORLD.41026.t
+	desc = WORLD.41026.desc
+	picture = GFX_news_event_GER_GG_victory
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41026.a
+	}
+}
+
+news_event = { #Gehlen
+	id = WORLD.41027
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41027"}
+	title = WORLD.41027.t
+	desc = WORLD.41027.desc
+	picture = GFX_news_event_GER_GG_victory
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41027.a
+	}
+}
+
+news_event = { #Waldheim
+	id = WORLD.41028
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41028"}
+	title = WORLD.41028.t
+	desc = WORLD.41028.desc
+	picture = GFX_news_event_GER_GG_victory
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41028.a
+	}
+}
+
+news_event = { #Heusinger
+	id = WORLD.41029
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41029"}
+	title = WORLD.41029.t
+	desc = WORLD.41029.desc
+	picture = GFX_news_event_GER_german_bohemia
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41029.a
+	}
+}
+
+news_event = { #Schmidt Coup
+	id = WORLD.41030
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41030"}
+	title = WORLD.41030.t
+	desc = WORLD.41030.desc
+	picture = GFX_news_event_ger_schmidt
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41030.a
+	}
+}
+
+news_event = { #Speer W
+	id = WORLD.41031
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41031"}
+	title = WORLD.41031.t
+	desc = WORLD.41031.desc
+	picture = GFX_news_event_GER_GG_victory
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41031.a
+	}
+}
+
+news_event = { #Kiesinger coup
+	id = WORLD.41032
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41032"}
+	title = WORLD.41032.t
+	desc = WORLD.41032.desc
+	picture = GFX_news_event_ger_kiesinger
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41032.a
+	}
+}
+
+news_event = { #Speidel coup
+	id = WORLD.41033
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41033"}
+	title = WORLD.41033.t
+	desc = WORLD.41033.desc
+	picture = GFX_news_event_GER_german_bohemia
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41033.a
+	}
+}
+
+news_event = { #Speer W
+	id = WORLD.41034
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41034"}
+	title = WORLD.41034.t
+	desc = WORLD.41034.desc
+	picture = GFX_news_event_GER_GG_victory
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41034.a
+	}
+}
+
+news_event = { #GO4 W
+	id = WORLD.41035
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41035"}
+	title = WORLD.41035.t
+	desc = WORLD.41035.desc
+	picture = GFX_news_event_ger_schmidt
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41035.a
+	}
+}
+
+news_event = { #Willy L
+	id = WORLD.42001
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.42001"}
+	title = WORLD.42001.t
+	desc = WORLD.42001.desc
+	picture = GFX_news_Willy
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.42001.a
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = USA
+			}
+		}
+	}
+	option = {
+		name = WORLD.42001.b
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = WORLD.42001.c
+		trigger = {
+			original_tag = GER
+		}
+	}
+}
+
+news_event = { #2GCW
+	id = WORLD.42002
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.42002"}
+	title = WORLD.42002.t
+	desc = WORLD.42002.desc
+	picture = GFX_news_2GCW
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.42002.a
+		if = {
+			limit = { is_ai = no }
+			set_temp_variable = { TNO_temp_super_event = token:SE_SECOND_GERMAN_CIVIL_WAR }
+			TNO_fire_super_event = yes
+		}
+		if = {
+			limit = {
+				tag = RUS
+				RUS = {
+					OR = {
+						has_country_flag = RUS_generic_communist_unifier
+						has_country_flag = RUS_generic_democratic_unifier
+						has_global_flag = RUS_shukshin_unification
+					}
+				}
+			}
+			SWRW_fopo_add_2GCW_tab = yes
+		}
+		if = {
+			limit = {
+				tag = USA
+				OR = {
+					has_government = progressivism
+					has_government = liberalism
+					has_government = conservatism
+					has_government = paternalism
+				}
+			}
+			SWRW_fopo_add_2GCW_tab = yes
+		}
+	}
+}
+
+news_event = { #1974 World Cup
+	id = WORLD.41036
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41036"}
+	title = WORLD.41036.t
+	desc = WORLD.41036.desc
+	picture = GFX_news_74_worldcup
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = WORLD.41036.a
+		trigger = {
+			NOT = {
+				original_tag = GER
+			}
+			NOT = {
+				original_tag = ARG
+			}
+		}
+	}
+	option = {
+		name = WORLD.41036.b
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = WORLD.41036.c
+		trigger = {
+			original_tag = ARG
+		}
+	}
+}
+
+
+news_event = { #1976 Tangshan Earthquake
+	id = WORLD.41037
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41037"}
+	title = WORLD.41037.t
+	desc = WORLD.41037.desc
+	picture = GFX_news_tangshan_earthquake
+
+	is_triggered_only = yes
+	
+
+	option = {
+		name = WORLD.41037.a
+		trigger = {
+			NOT = {
+				original_tag = JAP
+			}
+		}
+	}
+	option = { 
+		name = WORLD.41037.b
+		trigger = {
+			original_tag = JAP
+		}
+	}
+}
+
+news_event = { #1978 Ted Bundy Caught
+	id = WORLD.41038
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41038"}
+	title = WORLD.41038.t
+	desc = WORLD.41038.desc
+	picture = GFX_news_bundy_caught
+
+	is_triggered_only = yes
+	
+	
+
+	option ={
+		name = WORLD.41038.a
+		trigger = {
+			NOT = {
+				original_tag = USA
+			}
+		}
+	}
+	option = {
+		name = WORLD.41038.b
+		trigger = {
+			original_tag = USA
+		}
+	}
+}
+
+news_event = { #MRI Invented 
+	id = WORLD.41039
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41039"}
+	title = WORLD.41039.t
+	desc = WORLD.41039.desc
+	picture = GFX_news_mri
+
+	is_triggered_only = yes
+	
+	
+
+	option ={
+		name = WORLD.41039.a
+	}
+}
+
+news_event = { #USA/JAPAN SALT AGREEMENT 
+	id = WORLD.41040
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41040"}
+	title = WORLD.41040.t
+	desc = WORLD.41040.desc
+	picture = GFX_news_salt_agreement
+
+	is_triggered_only = yes
+	
+	
+
+	option = {
+		name = WORLD.41040.a
+		trigger = {
+			original_tag = USA
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = WORLD.41040.b
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = WORLD.41040.c
+		trigger = {
+			NOT = {
+				original_tag = USA
+				original_tag = JAP
+				original_tag = GER
+			}
+		}
+	}
+}
+
+news_event = { #World Trade Center Opened in New York
+	id = WORLD.41041
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41041"}
+	title = WORLD.41041.t
+	desc = WORLD.41041.desc
+	picture = GFX_news_wtc_opening
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = WORLD.41041.a
+		trigger = {
+			NOT = {
+				original_tag = USA
+				original_tag = JAP
+				original_tag = GER
+			}
+		}
+	}
+	option = {
+		name = WORLD.41041.b
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = WORLD.41041.c
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = WORLD.41041.e
+		trigger = {
+			original_tag = GER
+		}
+	}
+}
+
+news_event = { #Sydney Opera House Opening
+	id = WORLD.41042
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41042"}
+	title = WORLD.41042.t
+	desc = WORLD.41042.desc
+	picture = GFX_news_sydney_opera
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41042.a
+	}
+}
+
+news_event = { #Kazakh Civil War
+	id = WORLD.41043
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41043"}
+	title = WORLD.41043.t
+	desc = WORLD.41043.d
+	picture = GFX_news_kazakh_civil_war
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41043.a
+		trigger = {
+			is_russian_unifier = yes
+		}
+	}
+	option = {
+		name = WORLD.41043.b
+		trigger = {
+			is_russian_unifier = no
+		}
+	}
+}
+
+news_event = { #Rocky Releases
+	id = WORLD.41044
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41044"}
+	title = WORLD.41044.t
+	desc = WORLD.41044.desc
+	picture = GFX_news_event_Rocky_Releases
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41044.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = WORLD.41044.b
+		trigger = {
+			NOT = {
+				original_tag = GER
+			}
+		}
+	}
+}
+
+news_event = { #Gray Dusk
+	id = WORLD.41045
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41045"}
+	title = WORLD.41045.t
+	desc = WORLD.41045.desc
+	picture = GFX_news_event_Grey_Dusk
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41045.a
+	}
+}
+news_event = { #Russia gets nukes
+	id = WORLD.41046
+	immediate = {log = "[GetDateText]: [Root.GetName]: event WORLD.41046"}
+	title = WORLD.41046.t
+	desc = WORLD.41046.desc
+	picture = GFX_news_russia_nukes
+
+	is_triggered_only = yes
+
+	option = {
+		name = WORLD.41046.a
+		trigger = {
+			tag = RUS
+		}
+	}
+	option = {
+		name = WORLD.41046.b
+		trigger = {
+			tag = GER
+		}
+	}
+	option = {
+		name = WORLD.41046.c
+		trigger = {
+			NOT = {
+				tag = RUS
+				tag = GER
+			}
+		}
+	}
+}

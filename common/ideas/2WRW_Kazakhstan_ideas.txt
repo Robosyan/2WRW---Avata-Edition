@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		KAZ_russian_advisors = { # 
+			picture = KRS_Military_Guided_Democracy
+			modifier = {
+				army_org_factor = 0.15
+				max_planning_factor = 0.1
+				army_attack_factor =0.05
+			}
+		}
+	}
+	hidden_ideas = {
+		KAZ_hidden_war_modifier = { # Make sure the Kazakh warlords don't have complete pushover militaries
+			#picture = generic_german_advisors
+			modifier = {
+				surrender_limit = 0.1
+				conscription_factor = 0.1
+				army_cost_modifier = -0.33
+			}
+		}
+	}
+}	

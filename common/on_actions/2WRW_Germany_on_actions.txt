@@ -1,0 +1,79 @@
+on_actions = {
+	on_monthly_GER = {
+		effect = {
+			if = {
+				limit = {
+					GER_baldman_can_die_now = yes
+				}
+				GER = {
+					country_event = { id = bormann.3001 days = 10 }
+					set_country_flag = bormann_dead_trigger_met
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = german_civil_war_bormannvic
+				}
+				if = {
+					limit = {
+						has_war = no
+						check_variable = { num_divisions > bgr_wehrmacht_div_limit }
+					}
+					if = {
+						limit = {
+							is_ai = yes
+						}
+						set_country_flag = TNO_DIVISIONS_CAPPED
+						while_loop_effect = {
+							limit = {
+								OR = {
+									check_variable = { num_divisions > bgr_wehrmacht_div_limit }
+									check_variable = { num_divisions = bgr_wehrmacht_div_limit }
+								}
+							}
+							set_temp_variable = { max_disband_div = num_divisions }
+							subtract_from_temp_variable = { max_disband_div = bgr_wehrmacht_div_limit }
+							add_to_temp_variable = { max_disband_div = 3 }
+							random_owned_state = {
+								limit = {
+									GER = {
+										divisions_in_state = {
+											size > 0
+											state = PREV
+										}
+										meta_trigger = {
+											text = {
+												divisions_in_state = {
+													size < [BGR_Maxdiv]
+													state = PREV
+												}
+											}
+											BGR_Maxdiv = "[?max_disband_div]"
+										}
+									}
+								}
+								GER = {
+									delete_unit = {
+										state = PREV
+										disband = yes
+									}
+								}
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_war = no
+						check_variable = {
+							var = num_divisions
+							value = bgr_wehrmacht_div_limit
+							compare = less_than_or_equals
+						}
+					}
+					clr_country_flag = TNO_DIVISIONS_CAPPED
+				}
+			}
+		}
+	}
+}

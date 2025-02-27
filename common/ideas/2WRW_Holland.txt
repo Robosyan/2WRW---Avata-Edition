@@ -1,0 +1,28 @@
+ideas = {
+	country = {
+		HOL_fractured_national_identity = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_fractured_national_identity"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = GFX_idea_HOL_fractured_national_identity
+			modifier = {
+				stability_factor = -0.15
+				drift_defence_factor = -0.30
+				political_power_factor = -0.50
+				national_socialism_acceptance = 15
+			}
+		}
+		
+		HOL_without_a_master = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_without_a_master"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = GFX_idea_HOL_without_a_master
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.10
+				war_support_factor = 0.05
+			}
+		}
+	}
+}

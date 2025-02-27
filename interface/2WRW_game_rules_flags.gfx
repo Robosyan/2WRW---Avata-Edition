@@ -1,0 +1,120 @@
+spriteTypes = {
+
+##########################################
+### Russia ###
+##########################################
+
+	spriteType = {
+		name = "GFX_TNO_game_rule_flag_RUS" #Generic Russian flag
+		texturefile = "gfx/flags/small/NOV_RUS.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TNO_game_rule_flag_OST" #Shuk Baltic Reconstruction
+		texturefile = "gfx/flags/small/OST_Novosibirsk.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TNO_game_rule_flag_UKR" #Ukraine
+		texturefile = "gfx/flags/small/UKR.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = { # Shuk Caucasus
+		name = "GFX_TNO_game_rule_flag_CAU"
+		texturefile = "gfx/flags/small/ADY.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = { # Belarus
+		name = "GFX_TNO_game_rule_flag_BLR"
+		texturefile = "gfx/flags/small/BLR.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = { # Georgia
+		name = "GFX_TNO_game_rule_flag_GEO"
+		texturefile = "gfx/flags/small/GEO.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = { # Azerbaijan
+		name = "GFX_TNO_game_rule_flag_AZR"
+		texturefile = "gfx/flags/small/AZR.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = { # Lithuania
+		name = "GFX_TNO_game_rule_flag_LIT"
+		texturefile = "gfx/flags/small/LIT.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = { # Latvia
+		name = "GFX_TNO_game_rule_flag_LAT"
+		texturefile = "gfx/flags/small/LAT.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = { # Estonia
+		name = "GFX_TNO_game_rule_flag_EST"
+		texturefile = "gfx/flags/small/EST.tga"
+		legacy_lazy_load = no
+	}
+	spriteType = { # Armenia
+		name = "GFX_TNO_game_rule_flag_ARM"
+		texturefile = "gfx/flags/small/ARM.tga"
+		legacy_lazy_load = no
+	}
+
+##########################################
+### Global Conflicts ###
+##########################################
+
+	spriteType = { # RPR
+		name = "GFX_TNO_game_rule_flag_RPR"
+		texturefile = "gfx/flags/small/RPR.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { # REG
+		name = "GFX_TNO_game_rule_flag_REG"
+		texturefile = "gfx/flags/small/REG_win.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { # GMA
+		name = "GFX_TNO_game_rule_flag_GMA"
+		texturefile = "gfx/flags/small/GMA.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { # SFK
+		name = "GFX_TNO_game_rule_flag_SFK"
+		texturefile = "gfx/flags/small/SFK.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { # HUS
+		name = "GFX_TNO_game_rule_flag_HUS"
+		texturefile = "gfx/flags/small/HUS.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { # HUD
+		name = "GFX_TNO_game_rule_flag_HUD"
+		texturefile = "gfx/flags/small/HUD.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { # FRA
+		name = "GFX_TNO_game_rule_flag_FRA"
+		texturefile = "gfx/flags/small/FRA_republic.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { # GLC
+		name = "GFX_TNO_game_rule_flag_GLC"
+		texturefile = "gfx/flags/small/GLC.tga"
+		legacy_lazy_load = no
+	}
+
+	spriteType = { # OZW
+		name = "GFX_TNO_game_rule_flag_OZW"
+		texturefile = "gfx/flags/small/OZW.tga"
+		legacy_lazy_load = no
+	}
+}

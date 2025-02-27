@@ -1,0 +1,37 @@
+spriteTypes = {
+	# Subideologies
+	spriteType = {
+		name = "GFX_ideology_liberalism_pacifism_subtype"
+		texturefile = "gfx/interface/ideologies/liberalism_pacifism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_liberalism_dynastic_liberalism_carter_subtype"
+		texturefile = "gfx/interface/ideologies/liberalism_dynastic_liberalism_carter_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_liberalism_dynastic_liberalism_bayh_subtype"
+		texturefile = "gfx/interface/ideologies/liberalism_dynastic_liberalism_bayh_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_liberalism_dynastic_liberalism_ted_kennedy_subtype"
+		texturefile = "gfx/interface/ideologies/liberalism_dynastic_liberalism_ted_kennedy_subtype.dds"
+	}
+	# spriteType = {
+	# 	name = "GFX_ideology_liberalism_dynastic_liberalism_tip_subtype"
+	# 	texturefile = "gfx/interface/ideologies/liberalism_dynastic_liberalism_tip_subtype.dds"
+	# }
+
+	spriteType = {
+		name = "GFX_ideology_conservatism_fusion_conservatism_subtype"
+		texturefile = "gfx/interface/ideologies/conservatism_fusion_conservatism_subtype.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_conservatism_congress_conservatism_subtype"
+		texturefile = "gfx/interface/ideologies/conservatism_congress_conservatism_subtype.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_paternalism_thalassocracy_subtype"
+		texturefile = "gfx/interface/ideologies/paternalism_thalassocracy_subtype.dds"
+	}
+}

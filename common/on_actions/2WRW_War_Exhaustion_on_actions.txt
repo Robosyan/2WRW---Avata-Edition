@@ -1,0 +1,19 @@
+on_actions = {
+	
+	### monthly war exhaustion tick ###
+	
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					GER = { has_war_with = RUS }
+				}
+				for_each_scope_loop = {
+					array = WRW_majors
+					set_temp_variable = { temp_exhaustion = 5 }
+					WRW_add_war_exhaustion = yes
+				}
+			}
+		}
+	}
+}

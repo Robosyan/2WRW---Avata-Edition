@@ -1,0 +1,238 @@
+RUS_partisans_decisions_category = {
+
+	RUS_partisan_moskowien_decision = {
+	
+		icon = GFX_decision_revolt
+		
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			country_exists = MCW
+		}
+		
+		available = {
+		}
+		
+		#custom_cost_trigger = { command_power > 24.99 }
+		#custom_cost_text = decision_cost_25_cp
+		
+		days_remove = 30
+		
+		days_re_enable = 7
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Moskowien Partisans be Trolling"
+			MCW = {
+				random_list = {
+					33 = { 
+						random_owned_controlled_state = {
+							damage_building = {
+								type = infrastructure
+								damage = 1
+							}
+						}
+					}
+					33 = {
+						random_owned_controlled_state = {
+							damage_building = {
+								type = industrial_complex
+								damage = 1
+							}
+						}
+					}
+					33 = {
+						random_owned_controlled_state = {
+							damage_building = {
+								type = arms_factory
+								damage = 1
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+	
+	RUS_partisan_kaukasia_decision = {
+	
+		icon = GFX_decision_revolt
+	
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			country_exists = CAU
+		}
+		
+		available = {
+		}
+		
+		#custom_cost_trigger = { command_power > 24.99 }
+		#custom_cost_text = decision_cost_25_cp
+		
+		days_remove = 30
+		
+		days_re_enable = 7
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Moskowien Partisans be Trolling"
+			CAU = {
+				random_list = {
+					33 = { 
+						random_owned_controlled_state = {
+							damage_building = {
+								type = infrastructure
+								damage = 1
+							}
+						}
+					}
+					33 = {
+						random_owned_controlled_state = {
+							damage_building = {
+								type = industrial_complex
+								damage = 1
+							}
+						}
+					}
+					33 = {
+						random_owned_controlled_state = {
+							damage_building = {
+								type = arms_factory
+								damage = 1
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+	
+	RUS_partisan_ukraine_decision = {
+	
+		icon = GFX_decision_revolt
+	
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			country_exists = UKR
+		}
+		
+		available = {
+		}
+		
+		#custom_cost_trigger = { command_power > 24.99 }
+		#custom_cost_text = decision_cost_25_cp
+		
+		days_remove = 30
+		
+		days_re_enable = 7
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Moskowien Partisans be Trolling"
+			UKR = {
+				random_list = {
+					33 = { 
+						random_owned_controlled_state = {
+							damage_building = {
+								type = infrastructure
+								damage = 1
+							}
+						}
+					}
+					33 = {
+						random_owned_controlled_state = {
+							damage_building = {
+								type = industrial_complex
+								damage = 1
+							}
+						}
+					}
+					33 = {
+						random_owned_controlled_state = {
+							damage_building = {
+								type = arms_factory
+								damage = 1
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+	
+	RUS_partisan_ostland_decision = {
+	
+		icon = GFX_decision_revolt
+	
+		allowed = {
+			is_russian_unifier = yes
+		}
+			
+		visible = {
+			country_exists = OST
+		}
+		
+		available = {
+		}
+		
+		#custom_cost_trigger = { command_power > 24.99 }
+		#custom_cost_text = decision_cost_25_cp
+		
+		days_remove = 30
+		
+		days_re_enable = 7
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Moskowien Partisans be Trolling"
+			OST = {
+				random_list = {
+					33 = { 
+						random_owned_controlled_state = {
+							damage_building = {
+								type = infrastructure
+								damage = 1
+							}
+						}
+					}
+					33 = {
+						random_owned_controlled_state = {
+							damage_building = {
+								type = industrial_complex
+								damage = 1
+							}
+						}
+					}
+					33 = {
+						random_owned_controlled_state = {
+							damage_building = {
+								type = arms_factory
+								damage = 1
+							}
+						}
+					}
+				}
+			}
+		}	
+	}
+}

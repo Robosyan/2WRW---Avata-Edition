@@ -1,0 +1,79 @@
+characters = {
+	HOL_Nico_Berghuijs = {
+		name = HOL_Nico_Berghuijs
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HOL/Portrait_Netherlands_Nico_Berghuijs.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_provisional_government_subtype
+			desc = "POLITICS_NICO_BERGHUIJS_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	HOL_Bastiaan_Fortman = {
+		name = HOL_Bastiaan_Fortman
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HOL/Portrait_Bas_de_Gaay_Fortman.dds" 
+			}
+		}
+		country_leader = {
+			ideology = progressivism_reformist_socialism_subtype
+			desc = "POLITICS_BAS_DE_GAAY_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	HOL_Frans_Andriseen = {
+		name = HOL_Frans_Andriseen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HOL/Portrait_Frans_Andriseen.dds" 
+			}
+		}
+		country_leader = {
+			ideology = liberal_conservatism_christian_democracy_subtype
+			desc = "POLITICS_FANS_ANDRISEEN_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	HOL_Hans_Janmaat = {
+		name = HOL_Hans_Janmaat
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HOL/Portrait_Hans_Janmaat.dds"
+			}
+		}
+		country_leader = {
+			ideology = paternalism_right_wing_populism_subtype
+			desc = "POLITICS_HANS_JANMAAT_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+	HOL_Joop_Glimmerveen = {
+		name = HOL_Joop_Glimmerveen
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/HOL/Portrait_Joop_Glimmerveen.dds" 
+			}
+		}
+		country_leader = {
+			ideology = national_socialism_subtype
+			desc = "POLITICS_JOOP_GLIMMERVEEN_DESC"
+			expire = "1999.1.23"
+			id = -1
+		}
+	}
+}

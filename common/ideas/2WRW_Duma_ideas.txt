@@ -1,0 +1,54 @@
+ideas = {
+	country = {
+		NOV_Fund_Research = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_Fund_Research"}
+			
+			allowed = { always = no }
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = generic_research_bonus
+			
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		
+		NOV_Amend_Budget = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_Amend_Budget"}
+			
+			allowed = { always = no }
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		NOV_Poltical_Concessions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea NOV_Poltical_Concessions"}
+			
+			allowed = { always = no }
+            cancel = { has_country_flag = RUS_cancel_all_ideas }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			picture = generic_political_support
+			
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+	}
+}

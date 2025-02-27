@@ -1,0 +1,60 @@
+spriteTypes = {
+	#German War Tree
+	
+	spriteType = {
+		name = "GFX_GER_Der_Letzte_Krieg"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Der_Letzte_Krieg.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Die_Grenzwacht_hielt_im_Osten"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Die_Grenzwacht_hielt_im_Osten.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Invigorate_the_Reich"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Invigorate_the_Reich.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Every_Last_Contract"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Every_Last_Contract.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Mobilize_The_Veterans"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Mobilize_The_Veterans.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Die_Ostlegion"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Die_Ostlegion.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Pressure_the_Corporations"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Pressure_the_Corporations.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Die_Wahrheit_ist_der_Feind"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Die_Wahrheit_ist_der_Feind.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Ein_Totaler_Krieg"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Ein_Totaler_Krieg.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Unleash_the_Wolves"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Unleash_the_Wolves.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_More_Hands_in_the_Factories"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_More_Hands_in_the_Factories.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_End_the_Tiresome_Partisan"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_End_the_Tiresome_Partisan.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Declaw_the_Bear"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Declaw_the_Bear.dds"
+	}
+	spriteType = {
+		name = "GFX_GER_Uber_Alles"
+		texturefile = "gfx/interface/goals/GER/GFX_GER_Uber_Alles.dds"
+	}
+}

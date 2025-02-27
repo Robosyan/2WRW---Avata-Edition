@@ -1,0 +1,367 @@
+SWRW_Iran_category = {
+	PER_begin_national_reconstruction = {
+		ai_will_do = {
+			factor = 100
+		}
+		allowed = {
+			original_tag = IRC
+		}
+		visible = {
+			has_global_flag = Iranian_Civil_War
+			owns_state = 266
+			owns_state = 419
+			owns_state = 412
+			owns_state = 421
+			owns_state = 978
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: PER_begin_national_reconstruction "
+			set_capital = {
+				state = 266
+				remember_old_capital = no
+			}
+			add_state_claim = 1360
+			remove_ideas = PER_The_Iranian_Civil_War
+			add_timed_idea = {
+				idea = PER_national_reconstruction
+				days = 720
+			}
+			clr_global_flag = Iranian_Civil_War
+			RUS = {
+				TNO_fopo_remove_iran_civil_war_tab = yes
+			}
+			hidden_effect = {
+				set_temp_variable = {
+					pus_temp = 23
+				}
+				econ_pus_change = yes
+				swap_ideas = {
+					remove_idea = tno_academic_base_mass_illiteracy
+					add_idea = tno_academic_base_primary_schooling
+				}
+				swap_ideas = {
+					remove_idea = tno_conscription_broadened_conscription
+					add_idea = tno_conscription_volunteer_only
+				}
+				swap_ideas = {
+					remove_idea = tno_religious_rights_state_religion
+					add_idea = tno_religious_rights_pluralism
+				}
+				266 = {
+					add_resource = {
+						type = power
+						amount = 5
+					}
+					add_building_construction = {
+						type = barracks
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = hospitals
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = offices
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = schools
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				416 = {
+					add_resource = {
+						type = power
+						amount = 5
+					}
+					add_building_construction = {
+						type = barracks
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = hospitals
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = offices
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = schools
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				421 = {
+					add_resource = {
+						type = power
+						amount = 5
+					}
+					add_building_construction = {
+						type = barracks
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = hospitals
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = offices
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = schools
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				419 = {
+					add_resource = {
+						type = power
+						amount = 5
+					}
+					add_building_construction = {
+						type = barracks
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = hospitals
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = offices
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = schools
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				413 = {
+					add_resource = {
+						type = power
+						amount = 5
+					}
+					add_building_construction = {
+						type = barracks
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = hospitals
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = offices
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = schools
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				every_owned_state = {
+					add_compliance = 50
+					add_resistance = 30
+					add_core_of = IRC
+					add_resource = {
+						type = power
+						amount = 1
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	IRC_join_the_russian_alliance = {
+		ai_will_do = {
+			factor = 100
+		}
+		allowed = {
+			original_tag = IRC
+		}
+		visible = {
+			country_exists = RUS
+			NOT = {
+				has_global_flag = Iranian_Civil_War
+			}
+			has_global_flag = RUS_shukshin_unification
+		}
+		available = {
+			has_war = no
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: IRC_join_the_russian_alliance"
+			RUS = {
+				country_event = {
+					id = IRC_russia.1
+					days = 3
+				}
+			}
+		}
+	}
+	PER_clear_iran_civil_war_flag = {
+		ai_will_do = {
+			factor = 100
+		}
+		allowed = {
+			original_tag = PER
+		}
+		visible = {
+			has_global_flag = Iranian_Civil_War
+		}
+		available = {
+			has_war = no
+			owns_state = 266
+			owns_state = 419
+			owns_state = 412
+			owns_state = 421
+			owns_state = 978
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: PER_clear_iran_civil_war_flag"
+			clr_global_flag = Iranian_Civil_War
+			RUS = {
+				TNO_fopo_remove_iran_civil_war_tab = yes
+			}
+		}
+	}
+	IRA_clear_iran_civil_war_flag = {
+		ai_will_do = {
+			factor = 100
+		}
+		allowed = {
+			original_tag = IRA
+		}
+		visible = {
+			has_global_flag = Iranian_Civil_War
+		}
+		available = {
+			has_war = no
+			owns_state = 266
+			owns_state = 419
+			owns_state = 412
+			owns_state = 421
+			owns_state = 978
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: IRA_clear_iran_civil_war_flag"
+			clr_global_flag = Iranian_Civil_War
+			RUS = {
+				TNO_fopo_remove_iran_civil_war_tab = yes
+			}
+		}
+	}
+	IRI_clear_iran_civil_war_flag = {
+		ai_will_do = {
+			factor = 100
+		}
+		allowed = {
+			original_tag = IRI
+		}
+		visible = {
+			has_global_flag = Iranian_Civil_War
+		}
+		available = {
+			has_war = no
+			owns_state = 266
+			owns_state = 419
+			owns_state = 412
+			owns_state = 421
+			owns_state = 978
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: IRI_clear_iran_civil_war_flag"
+			clr_global_flag = Iranian_Civil_War
+			RUS = {
+				TNO_fopo_remove_iran_civil_war_tab = yes
+			}
+		}
+	}
+	IRL_clear_iran_civil_war_flag = {
+		ai_will_do = {
+			factor = 100
+		}
+		allowed = {
+			original_tag = IRI
+		}
+		visible = {
+			has_global_flag = Iranian_Civil_War
+		}
+		available = {
+			has_war = no
+			owns_state = 266
+			owns_state = 419
+			owns_state = 412
+			owns_state = 421
+			owns_state = 978
+		}
+		fire_only_once = yes
+		cost = 100
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: IRL_clear_iran_civil_war_flag"
+			clr_global_flag = Iranian_Civil_War
+			RUS = {
+				TNO_fopo_remove_iran_civil_war_tab = yes
+			}
+		}
+	}
+}

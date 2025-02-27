@@ -1,0 +1,289 @@
+﻿l_english:
+ KAZ_kazakh_unification_wars_category:0 "Kazakhstan Aflame"
+ KAZ_kazakh_unification_wars_category_desc:0 "In the wake of the collapse of the §eKazakh SSR§!, the fate of Kazakhstan is once again uncertain; we must ensure that our clique goes down in history as the one that reunified this broken nation."
+ 
+ KAZ_invade_kyzylorda:0 "Invade [KAZ.getFlag] §e[KAZ.GetNameDef]§!"
+ 
+ RUS_send_volunteers_to_kazakhstan:0 "Intervene in Kazakhstan"
+ RUS_send_guns_to_kazakhstan:0 "Send Guns to [FROM.GetNameDef]"
+ RUS_send_advisors_to_kazakhstan:0 "Send Military Advisors to [FROM.GetNameDef]"
+ RUS_share_technology_with_kazakhstan:0 "Share Military Technology with [FROM.GetNameDef]"
+ RUS_build_air_base:0 "Build Improvised Airbases in [FROM.GetNameDef]"
+ RUS_build_power_plant:0 "Repair [FROM.GetAdjective] Electric Plants"
+ RUS_revive_the_78th_tank_division:0 "Revive the 78th Tank Division"
+ 
+ ## ideas
+ 
+ KAZ_hidden_war_modifier:0 "Kazakhstan Aflame!"
+ KAZ_russian_advisors:0 "Russian Advisors"
+ 
+ ## tooltips
+ 
+ RUS_increase_involvement_tt:0 "This will §Gincrease§! our §Minvolvement§! in the conflict by [?temp_involvement|O]"
+ 
+ RUS_1000_guns:0 "£weapon_icon  §Y1000§!"
+ RUS_1000_guns_blocked:0 "£weapon_icon  §R1000§!"
+ 
+ RUS_50pp_25cp:0 "£GFX_political_power_texticon §Y50§! £GFX_command_power §Y25§!"
+ RUS_50pp_25cp_blocked:0 "£GFX_political_power_texticon §Y50§! £GFX_command_power §Y25§!"
+ RUS_25pp_25cp:0 "£GFX_political_power_texticon §Y25§! £GFX_command_power §Y25§!"
+ RUS_25pp_25cp_blocked:0 "£GFX_political_power_texticon §Y25§! £GFX_command_power §Y25§!"
+ 
+ RUS_can_send_help_to_KAZ_tt:0 "We can now intervene in the §YKazakh Wars§! to aid §Y[KAZ.getNameDef]§!"
+ RUS_can_send_help_to_PAV_tt:0 "We can now intervene in the §YKazakh Wars§! to aid §Y[PAV.getNameDef]§!"
+ 
+ RUS_can_send_volunteers_to_KAZ_tt:0 "We can now send volunteers to §Y[KAZ.getNameDef]§!"
+ RUS_can_send_volunteers_to_PAV_tt:0 "We can now send volunteers to §Y[PAV.getNameDef]§!"
+ RUS_tank_division_tt:0 "§OCreate a Division with 2 APC battalions and 3 IFV battalions§!"
+
+
+ 
+ ## events
+ 
+ #KAZ.1.t: "" - Loc key collisions
+ #KAZ.1.desc: ""
+ #KAZ.1.a: ""
+
+ KAZ.2.t: ""
+ KAZ.2.desc: ""
+ KAZ.2.a: ""
+
+ KAZ.3.t: ""
+ KAZ.3.desc: ""
+ KAZ.3.a: ""
+
+ KAZ.4.t: ""
+ KAZ.4.desc: ""
+ KAZ.4.a: ""
+
+ KAZ.5.t: ""
+ KAZ.5.desc: ""
+ KAZ.5.a: ""
+
+ KAZ.6.t: ""
+ KAZ.6.desc: ""
+ KAZ.6.a: ""
+
+ KAZ.7.t: ""
+ KAZ.7.desc: ""
+ KAZ.7.a: ""
+
+ KAZ.8.t: ""
+ KAZ.8.desc: ""
+ KAZ.8.a: ""
+
+ KAZ.9.t: ""
+ KAZ.9.desc: ""
+ KAZ.9.a: ""
+
+ KAZ.10.t: ""
+ KAZ.10.desc: ""
+ KAZ.10.a: ""
+
+ KAZ_collapse.1.t: "Unrest Insurmountable!"
+ KAZ_collapse.1.desc: "Try as we might, we cannot contain the unrest in the nation any longer. Already, we hear rumors of rebel leaders raising armies and slogans against our rightful socialist government. While we will not be able to prevent the outlying areas from defecting, we can start preparing for the eventual conflict that will break out."
+ KAZ_collapse.1.a: "Prepare yourselves, the battle for socialism rages on!"
+
+ KAZ_collapse.2.t: "Silence from Kokshetau and Kostanay"
+ KAZ_collapse.2.desc: "As we feared, the level of rebellion in our nation has reached a new, dangerous level. We have not heard anything from the regions of Kokshetau and Kostanay in several days, and our soldiers have been routed, sent fleeing towards more centralized outposts. Rumors abound of Islamists and some sort of modern Khanite movement forming."
+ KAZ_collapse.2.a: "We will weather this as well."
+
+ KAZ_collapse.3.t: "Silence from Aktau and Aktobe"
+ KAZ_collapse.3.desc: "New reports have come in: the provinces of Aktau and Aktobe in the north and west have undergone a rebellion in the streets. A former Colonel, Nikolai Onoprienko, has been seen in the city square, riling up crowds with anti-communist and quasi-fascist messages. We fear that a full blown revolt will soon begin, taking some of the troops loyal to him."
+ KAZ_collapse.3.a: "Right-wing demagogues!"
+
+ KAZ_collapse.4.t: "Silence from Pavlodar"
+ KAZ_collapse.4.desc: "In the east, Plavodar has not returned reports in a few days. Our soldiers have all but fled from the region, lining up near our central locations in Akmolinsk and Kyzylorda.\n\nOur reports also show that some fat poet, a Sabit Mukanov, has been organizing an insurgent liberal-bourgeois party in the region, promising a false 'freedom' and 'democracy'. While we'd normally be eager to crush liberals, there are now serious concerns in our general staff about the amount of rebellions taking place..."
+ KAZ_collapse.4.a: "Bourgeois pigs will be crushed... right?"
+
+ KAZ_collapse.5.t: "Kokshetau and Kostanay Secede!"
+ KAZ_collapse.5.desc: "We have just received letters from the so-called "[KOK.GetName]" and "[DER.GetName]". Clearly, these states are farces. Kokshetau is a bandit warlord state that claims to be a new Khanate, while Kostanay argues they are building a moral Islamic republic.\n\nLuckily, alone these are mere rabble that we can put down, but with other zones in shambles and our army fleeing in terror, we will need to be careful with how we approach these things. These states will fall. But for now, we must bide our time."
+ KAZ_collapse.5.a: "Bandits and fundamentalists!"
+
+ KAZ_collapse.6.t: "Pavlodar Secedes!"
+ KAZ_collapse.6.desc: "Our fears have come to pass, the revolts in Pavlodar have turned into a fully fledged rebellion. We received word from the so-called "[PAV.GetName]" of their declaration of independence, citing 'the rights of democracy' and some other bourgeois trite nonsense.\n\nWe are not afraid of mere liberal scum! However, the Pavlodar government is genuinely popular, and may have allies to the northeast if the [NOV.GetName] can spare the men and gold. Still, we have one advantage over them: an army. Let them send their jumped up boys against our men. The proletariat shall struggle and become the better for having fought so."
+ KAZ_collapse.6.a: "Liberal capitalist pigs!"
+
+ KAZ_collapse.8.t: ""
+ KAZ_collapse.8.desc: ""
+ KAZ_collapse.8.a: ""
+
+ KAZ_collapse.9.t: ""
+ KAZ_collapse.9.desc: ""
+ KAZ_collapse.9.a: ""
+
+ KAZ_collapse.10.t: ""
+ KAZ_collapse.10.desc: ""
+ KAZ_collapse.10.a: ""
+
+ KAZ_intervention.1.t: "A Friend in Need"
+ KAZ_intervention.1.desc: "Under the belly of Russia lie the warring Kazakhs. With the collapse of the Bolshevik stranglehold on our politics, the politics of Kazakhstan followed suit. Today, in areas of the countryside outside of Pavlodar, there fight partisans of similar compulsions to us. As we fight for freedom and peace for the Russian people, their banner could soon wave over all Kazakhstan, in return for military support. With our piece of Russia under stable control, we should look towards Kazakhstan to expand our influence and gain a valuable ally in the future."
+ KAZ_intervention.1.a: "Kazakh freedom is Inevitable!"
+
+ KAZ_intervention.2.t: "A Friend in Need"
+ KAZ_intervention.2.desc: "Kazakhstan, the accursed child of the steppe, is in the midst of a civil war. The atheist Bolsheviks' grip on power has shattered, and with it the feeble 'Kazakh SSR' has followed suit. The Democrats, the Islamists, and even the Poles have attempted to seize power, but none have succeeded since. However, in the West, there lies a state of our own liking, the so-called Pragmatists. Their fight for the reunification and modernization of Kazakhstan, through ample support, economic subsidies, and military control; could easily shift to be a distinctly Russian vision of future."
+ KAZ_intervention.2.a: "We have no time to wait!"
+
+ KAZ_intervention.3.t: "A Friend in Need"
+ KAZ_intervention.3.desc: "At one time, Kazakhstan was in a cultural Renaissance under the careful watch of the Bolshevik party; developing for the first time in their history a truly cohesive nation. However, this time has long since passed, replaced by the jackboot of foreign and national capitalists, fascists, Khans, and even a strange syncretic "Polish" state. Luckily, the Bolshevik remenants remain the strongest of all political forces therein. Militarily, however, the Bolsheviks within Kazakhstan could greatly benefit from assistance, a decision that could not only guarentee an aligned state, but additional sway in their politics in times ahead."
+ KAZ_intervention.3.a: "An obvious choice for international socialism."
+
+ KAZ_intervention.4.t: ""
+ KAZ_intervention.4.desc: ""
+ KAZ_intervention.4.a: ""
+
+ KAZ_intervention.5.t: ""
+ KAZ_intervention.5.desc: ""
+ KAZ_intervention.5.a: ""
+
+ KAZ_intervention.6.t: ""
+ KAZ_intervention.6.desc: ""
+ KAZ_intervention.6.a: ""
+
+ KAZ_intervention.7.t: ""
+ KAZ_intervention.7.desc: ""
+ KAZ_intervention.7.a: ""
+
+ KAZ_intervention.8.t: ""
+ KAZ_intervention.8.desc: ""
+ KAZ_intervention.8.a: ""
+
+ KAZ_intervention.9.t: ""
+ KAZ_intervention.9.desc: ""
+ KAZ_intervention.9.a: ""
+
+ KAZ_intervention.10.t: ""
+ KAZ_intervention.10.desc: ""
+ KAZ_intervention.10.a: ""
+
+ KAZ_unification.1.t: ""
+ KAZ_unification.1.desc: ""
+ KAZ_unification.1.a: ""
+
+ KAZ_unification.2.t: ""
+ KAZ_unification.2.desc: ""
+ KAZ_unification.2.a: ""
+
+ KAZ_unification.3.t: ""
+ KAZ_unification.3.desc: ""
+ KAZ_unification.3.a: ""
+
+ KAZ_unification.4.t: ""
+ KAZ_unification.4.desc: ""
+ KAZ_unification.4.a: ""
+
+ KAZ_unification.5.t: ""
+ KAZ_unification.5.desc: ""
+ KAZ_unification.5.a: ""
+
+ KAZ_unification.6.t: ""
+ KAZ_unification.6.desc: ""
+ KAZ_unification.6.a: ""
+
+ KAZ_unification.7.t: ""
+ KAZ_unification.7.desc: ""
+ KAZ_unification.7.a: ""
+
+ KAZ_unification.8.t: ""
+ KAZ_unification.8.desc: ""
+ KAZ_unification.8.a: ""
+
+ KAZ_unification.9.t: ""
+ KAZ_unification.9.desc: ""
+ KAZ_unification.9.a: ""
+
+ KAZ_unification.10.t: ""
+ KAZ_unification.10.desc: ""
+ KAZ_unification.10.a: ""
+ 
+ #Russia-Kazakhstan Negotiations
+
+ KAZ_negotiation.1.t:0 "The Fate of Kazakhstan"
+ KAZ_negotiation.1.desc:0 "With the violent collapse of the Soviet Union and subsequent end of Russian administration in the region of Central Asia, our influence in the region dissipated as quickly as our own country. Now that Russia is united under our authority and guns fall silent across the bloodied steppes of Kazakhstan, the fate of the former Soviet Republic is now up to us. While we certainly possess the power to occupy the region with force, an invasion will produce needless casualties which proper negotiation could prevent.\n\nSimply subjugating the Kazakhs to our will could prove sufficient. However, maintaining an occupation force in the region could prove costly in the long run and could damage our international relations with the other great powers such as the United States.\n\nAnother potential solution is to extend our hand in brotherhood and invite Kazakhstan into our alliance. We have both suffered enough at the hands of the Germans, and having a proper ally in the region could prove useful in future Central Asian endeavors."
+ KAZ_negotiation.1.a:0 "We have always been brothers in arms. Let us propose an alliance!"
+ KAZ_negotiation.1.b:0 "Demand their subjugation. We cannot let them fall prey to the influence of foreign powers."
+ KAZ_negotiation.1.c:0 "Kazakhstan has and will always be Russian. Demand their surrender!"
+
+ KAZ_negotiation.2.t:0 "The Kazakhs Propose a Counteroffer" 
+ KAZ_negotiation.2.desc:0 "The Kazakh envoy has declined our previous offer, instead proposing a compromise. Instead of being annexed into Russia proper, Kazakhstan will instead subordinate themselves to our whim. While this is not what we originally wanted, a loyal Kazakh administration in Central Asia could help reduce tensions in the region while keeping our influence intact.\n\nWhile this is certainly a tantalizing offer, there is the possibility of the offer being nothing more than a vain bluff designed to keep some shred of independence under our rule. The Kazakh army pales in comparison to our own, and intelligence reports a swift campaign through the steppes is all but guaranteed. That being said, the choice is still ours. How do we proceed from here?"
+ KAZ_negotiation.2.a:0 "Perhaps there is victory in negotiation after all. Tell them we accept"
+ KAZ_negotiation.2.b:0 "We will call their offer as it is, a bluff!"
+
+ KAZ_negotiation.3.t:0 "The Kazakhs Propose a Counter-offer" 
+ KAZ_negotiation.3.desc:0 "The Kazakh envoy has declined our previous offer, instead proposing a compromise. Kazakhstan will swear allegiance to Russia and enter into an alliance between our two nations. While this is not what we originally wanted, an alliance with Kazakhstan could prove useful in keeping the rest of Central Asia in check while also boosting our international relations with other powers in the region.\n\nWhile this is certainly a tantalizing offer, there is the possibility of the offer being nothing more than a vainly-veiled bluff designed to keep their independence in an alliance rather than being integrated into Russia proper. The Kazakh army pales in comparison to our own, and intelligence reports a swift campaign through the steppes is all but guaranteed. That being said, the choice is still ours. How do we proceed from here?"
+ KAZ_negotiation.3.a:0 "We will call their offer as it is, a bluff!" 
+ KAZ_negotiation.3.b:0 "Perhaps we got off on the wrong footing. Tell them we accept"
+ 
+ KAZ_negotiation.4.t:0 "Kazakhstan Refuses!"
+ KAZ_negotiation.4.desc:0 "In an act of bold defiance, the Kazakh envoy has declined our demands, citing them as nothing more but "vain threats against the Kazakh people". All relations with the central Kazakh government have broken down, and it seems now we are left with only two options: invasion, or de-escalation.\n\nThere is no doubt that an invasion of the steppes would be successful. The Kazakh army is in no shape to stand up to our own, and they possess next to no aerial capabilities whatsoever. The main issue is what comes after. Such an occupation would require a large contingent of troops to maintain order in the region, and the costs of such invasion could prove more than expected.\n\nThat being said, a de-escalation of tensions at this point would no doubt harm our international image as a great power, especially in the eyes of the Enheitspakt or Co-Prosperity Sphere. Whatever the consequences may bring, we must choose our path forward. For better, or for worse."
+ KAZ_negotiation.4.a:0 "We will not tolerate such insubordination. Prepare the tanks at once!"
+ KAZ_negotiation.4.b:0 "Perhaps we have gone too far. We must back down at once"
+
+ KAZ_negotiation.5.t:0 "Kazakhstan Submits!"
+ KAZ_negotiation.5.desc:0 "Just as we predicted, the central Kazakh government has accepted our demands of integration into Russia proper. Our troops have begun the long march into Kazakhstan to establish Russian authority and order in the newly-acquired district of Kazakhstan, meeting sporadic resistance from roaming bands of resistance fighters unwilling to let the idea of a free Kazakh state die so easily.\n\nWhile this is certainly an inconvenience, there is no doubt that Kazakhstan is now under our control. The doorway to the rest of Central Asia has swung open, and with it begins a renewed era of Russian dominance in the region."
+ KAZ_negotiation.5.a:0 "As expected."
+
+ KAZ_negotiation.6.t:0 "The Future of Kazakhstan"
+ KAZ_negotiation.6.desc:0 " As the last vestiges of Kazakh resistance finally begin to dissipate into the endless desert, we have been left with two options as to how we proceed with administering the bloodied steppes.\n\nOur first choice is integrating the lands back into Russia proper. While this is certainly the most favorable choice for our own interests, keeping an occupation force for the extended amount of time necessary for total integration may prove troublesome, and expensive, in the long-term.\n\nAlternatively, we may establish a loyal Kazakh regime, completely subordinate to our interests while independent enough to maintain order in the region, freeing up thousands of troops to be deployed elsewhere as well as keeping our international reception somewhat intact.\n\nThe choice is ours. Occupation, or integration?"
+ KAZ_negotiation.6.a:0 "We shall welcome the Kazakh provinces into Russia once more, as they should be"
+ KAZ_negotiation.6.b:0 "We will establish a friendly Kazakh government, loyal to our interests"
+
+ KAZ_negotiation.7.t:0 "The Talks Break Down!"
+ KAZ_negotiation.7.desc:0 "The Kazakh Government has officially shut down all relations between our two governments after we refused whatever bluff or counter-offer they attempted to swindle us with. We are left with only two options now: invasion, or de-escalation.\n\nThere is no doubt that an invasion of the steppes would be successful. The Kazakh army is in no shape to stand up to our own, and they possess next to no aerial capabilities whatsoever. The main issue is what comes after. Such an occupation would require a large contingent of troops to maintain order in the region, and the casualties as a result of such invasion could prove more than expected.\n\nThat said, a de-escalation of tensions at this point would no doubt harm our international image as a great power, especially in the eyes of the Einheitspakt or Co-Prosperity Sphere. Whatever the consequences may bring, we must choose our path forward. For better, or for worse."
+ KAZ_negotiation.7.a:0 "We will not let ourselves be swindled. Prepare the tanks at once!"
+ KAZ_negotiation.7.b:0 "Perhaps we have gone too far. We must back down at once"
+
+ KAZ_negotiation.8.t:0 "Kazakhstan Submits!"
+ KAZ_negotiation.8.desc:0 "Just as we predicted, the Kazakh government has agreed to step down in place of a new, more cooperative central governing body. As such our armed forces have stood down from the border and returned to their bases. While our diplomats celebrate this major victory, reports of major riots and resistance attacks have raised concern as to how long this "independent" Kazakhstan can last without direct intervention on our part.\n\nWhile this is certainly something to be concerned of, there is no doubt now that Kazakhstan is under our control. The doorway to the rest of Central Asia has swung open, and with it begins a renewed era of Russian dominance in the region."
+ KAZ_negotiation.8.a:0 "As Expected."
+
+ KAZ_negotiation.9.t:0 "Kazakhstan Accepts!"
+ KAZ_negotiation.9.desc:0 "We have received word that Kazakhstan has accepted our proposal of their entry into an alliance between our two states. This is a major diplomatic victory, not only for Russia, but for a lasting peace in Central Asia.\n\nCountless joint-defense exercises and economic development plans have already begun to be drafted as both Russian and Kazakh diplomats celebrate our renewed relationship. Not as subjects or masters, but as brothers."
+ KAZ_negotiation.9.a:0 "As it should be"
+
+ KAZ_negotiation.10.t:0 "The Talks Break Down!"
+ KAZ_negotiation.10.desc:0 "The Kazakh Government has officially closed all relations between our two governments after a series of heated debates regarding Kazakhstan's entry into an alliance between our two nations, rejecting the proposal in favor of some weak economic concessions and a "Non-Aggression Pact" instead. Angered by such stubborn behavior our diplomats flatly rejected their pitiful offer, storming out of the conference arms raised as thousands of our troops began to mass on the border. It seems we are now left with two options. Invasion, or De-escalation.\n\nThere is no doubt that an invasion of the steppes would be successful. The Kazakh army is in no shape to stand up to our own, and they possess next to no aerial capabilities whatsoever. The main issue is what comes after. Such an occupation would require a large contingent of troops to maintain order in the region, and the casualties as a result of such invasion could prove more than expected.\n\nThat said, a de-escalation of tensions at this point would no doubt harm our international image as a great power, especially in the eyes of the Einheitspakt or Co-Prosperity Sphere. Whatever the consequences may bring, we must choose our path forward. For better, or for worse."
+ KAZ_negotiation.10.a:0 "We will not let ourselves be swindled. Prepare the tanks at once!"
+ KAZ_negotiation.10.b:0 "Perhaps we have gone too far. We must back down at once"
+
+ KAZ_negotiation.11.t:0 "Russia Offers an Alliance"
+ KAZ_negotiation.11.desc:0 "An interesting offer has come from Russia.\n\nThey propose we align our nation with the [RUS.GetFactionName] in a military alliance, for both offensive and defensive wars. This is an interesting proposal, as we would maintain independence in internal matters, but simply be aligned on foreign policy goals. Depending on our view on the Russian government, this might be a great offer. It might also be an offer we can't refuse.\n\nMilitary reports and estimates show that we would most likely not win any prolonged military conflict with Russia. However, we may be strong enough to frighten them to back down entirely and diffuse the situation. Integration and even subjugation would incite independence movements, not to mention the actual war itself. If we believe this is the case, we can outright refuse their offer and shut down all diplomatic negotiations. This would, of course, leave them with two options: war or retreat.\n\nHowever, if the risks of war are too great to spare, or we find ourselves in agreement, we might consider accepting their request to join their alliance. It might not be exciting to subordinate ourselves to their foreign policy aims, but such things go both ways. Furthermore, it might be better than a war and the consequences of such a conflict.\n\nThe choice is yours, what do we do?"
+ KAZ_negotiation.11.a:0 "Let us accept their offer, our nations will be aligned."
+ KAZ_negotiation.11.b:0 "Let's not be so hasty, have we considered… a Non-Aggression Pact?"
+
+ KAZ_negotiation.12.t:0 "Russia Demands Subjugation"
+ KAZ_negotiation.12.desc:0 "The moment we feared has come. The reorganized Russian state has demanded our subjugation and reorganization into a satellite state. This would mean our governing body would change to whom they see fit, our foreign policy would be dictated by them, but we would keep some internal independence. We would have our own armed forces and our own national structures.\n\nMilitary reports and estimates show that we would most likely not win any prolonged military conflict with Russia. However, we may be strong enough to frighten them to back down entirely and diffuse the situation. Integration and even subjugation would incite independence movements, not to mention the actual war itself. If we believe this is the case, we can outright refuse their threats and shut down all diplomatic negotiations. This would, of course, leave them with two options: war or retreat.\n\nAlternatively, we could send them a counter-offer requesting an alliance and joining their [RUS.GetFactionName]. This would help preserve us as a nation, increase the diplomatic tension upon them, and allow us to join the new power arising in Asia.\n\nHowever, if the risks of war are too great to spare, we might consider accepting their request to officially join them as an aligned satellite state. This would end our nation as an independent power, but it might be necessary to prevent further bloodshed and to prevent being subjugated, if not totally annexed, by force anyhow.\n\nThe choice is yours, what do we do?"
+ KAZ_negotiation.12.a:0 "We aren't in a position to demand anything, let's accept and at least preserve our nation."
+ KAZ_negotiation.12.b:0 "We will not be cowed, let them fight or flee. Shut down the talks."
+ KAZ_negotiation.12.c:0 "An alliance is a reasonable counter-offer."
+
+ KAZ_negotiation.13.t:0 "Russia Demands Annexation"
+ KAZ_negotiation.13.desc:0 "The moment we feared has come. The reorganized Russian state has demanded our total and complete integration into their nation.\n\nMilitary reports and estimates show that we would most likely not win any prolonged military conflict with Russia. However, we may be strong enough to frighten them to back down entirely and diffuse the situation. Integration and even subjugation would incite independence movements, not to mention the actual war itself. If we believe this is the case, we can outright refuse their threats and shut down all diplomatic negotiations. This would, of course, leave them with two options, war or retreat.\n\nAlternatively, we could send them a counter-offer requesting an alliance and joining their [RUS.GetFactionName]. This would help preserve us as a nation, increase the diplomatic tension upon them, and allow us to join the new power arising in Asia.\n\nAnother counter-offer we could consider is an offer to join them as a subjugated state under the general direction of the new Russian state. While this would limit our independence, it would allow us to join the new Russian bloc. Furthermore, it's more likely that they would accept an offer of foreign policy subjugation and political alignment in return for our relative independence in internal matters.\n\nHowever, if the risks of war are too great to spare, we might consider accepting their request to officially join the new Russian state as a constituent part of their nation. This would end our nation as an independent power, even nominally so, but it might be necessary to prevent further bloodshed and to prevent being subjugated by force anyhow.\n\nThe choice is yours, what do we do?"
+ KAZ_negotiation.13.a:0 "We aren't in a position to demand anything, let's accept and unite as one nation."
+ KAZ_negotiation.13.b:0 "We will not be cowed, let them fight or flee."
+ KAZ_negotiation.13.c:0 "Subjugation is the only realistic offer they would accept."
+ KAZ_negotiation.13.d:0 "An alliance is a reasonable counter-offer."
+
+ KAZ_negotiation.14.t:0 "Russia Rejects our Counteroffer"
+ KAZ_negotiation.14.desc:0 "The Russian government has rejected our counteroffer, finding it insulting when compared to their military and economic might. The Russian diplomats left in a storm this evening, swearing a quick "end to this Kazakh farce".\n\nAlready, soldiers prepare for what will undoubtedly be an extremely bloody and brutal war. Our land is vast, and while attrition will take its toll on the Russian soldiers, it will also mean our troops will be in a protracted conflict. We are almost destined to lose, and we aren't really sure what it would even mean to win. Still, what can we do but fight for our freedom?"
+ KAZ_negotiation.14.a:0 "Oh no..."
+
+ TRK_RUS_Provisional_Government: "Turkmenistan Provisional Government"
+ TRK_RUS_Provisional_Government_long:0 "Provisional Russian Administration of Turkmenistan"
+ TRK_RUS_Imperial_Government: "Turkmenistan Imperial Government"
+ TRK_SOV_Provisional_Government: "Turkmenistan Soviet Government"
+ KRK_RUS_Provisional_Government: "Karakalpakstan Provisional Government"
+ KRK_RUS_Provisional_Government_long:0 "Provisional Russian Administration of Karalpakistan"
+ UZB_RUS_Provisional_Government: "Uzbekistan Provisional Government"
+ UZB_RUS_Provisional_Government_long:0 "Provisional Russian Administration of Uzbekistan"
+ TAJ_RUS_Provisional_Government: "Tajikistan Provisional Government"
+ TAJ_RUS_Provisional_Government_long:0 "Provisional Russian Administration of Tajikistan"
+ KYR_RUS_Provisional_Government: "Kyrgyzstan Provisional Government"
+ KYR_RUS_Provisional_Government_long:0 "Provisional Russian Administration of Kyrgyzstan"
+ 
+ TRK_AFG_Puppet:0 "Turkmenistan Interim Government"
+ UZB_AFG_Puppet:0 "Uzbekistan Interim Government"
+ TAJ_AFG_Puppet:0 "Tajikistan Interim Government"
+ KYR_AFG_Puppet:0 "Kyrgyzstan Interim Government"
+ AFG_Central_Asia_Party_long:0 "Afghan Administration"
+ AFG_Central_Asia_Party:0 "Afghan Administration"

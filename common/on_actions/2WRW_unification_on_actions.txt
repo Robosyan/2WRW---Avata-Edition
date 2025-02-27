@@ -1,0 +1,561 @@
+on_actions = { # Abandon all hope, ye who enters here
+
+	# FROM = winner
+	# ROOT = country being capitulated/loser
+    on_capitulation = { #This code is finnicky and weird af, just don't touch anything and it'll hypothetically work just fine
+        effect = {
+            
+            if = { ### Russian Unification ###
+                limit = {
+                    FROM = {
+                         NOV = {
+                            has_country_leader = {
+                            character = NOV_Vasily_Shukshin
+                            ruling_only = yes
+                            }
+                        }
+                    }
+                    
+                }
+                if = {
+                    limit = {
+                        ROOT = {
+                        tag = PRM
+                        has_country_leader = {
+                            character = PRM_Gutrum_Vagner
+                            ruling_only = yes
+                          }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.1 days = 1 } 
+                }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = WRS
+                            has_country_leader = {
+                                character = WRS_Georgy_Zhukov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.2 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = WRS
+                            has_country_leader = {
+                                character = WRS_Mikhail_Tukhachevsky
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.3 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = KOM
+                            has_country_leader = {
+                                character = KOM_Andrei_Zhdanov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.4 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = KOM
+                            has_country_leader = {
+                                character = KOM_Svetlana_Bukharina
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.5 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = KOM
+                            has_country_leader = {
+                                character = KOM_Mikhail_Suslov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.6 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = KOM
+                            OR = {
+                                has_government = paternalism
+						    has_government = liberalism
+						    has_government = progressivism
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.7 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = KOM
+                            has_government = despotism
+                            has_country_leader = {
+                                character = KOM_Svetlana_Stalina
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.8 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = KOM
+                            has_country_leader = {
+                                character = KOM_Ivan_Serov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.9 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = KOM
+                            has_country_leader = {
+                                character = KOM_Igor_Shafarevich
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.10 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = KOM
+                            has_country_leader = {
+                                character = KOM_Sergey_Taboritsky
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.11 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = KOM
+                            has_country_leader = {
+                                character = KOM_Lev_Gumilyov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.12 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = VYT
+                            has_country_leader = {
+                                character = VYT_Vladimir_III
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.13 days = 1 } }
+                }
+				else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = SAM
+                            has_country_leader = {
+                                character = SAM_Vladimir_Artsezo
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.14 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = SAM
+                            has_country_leader = {
+                                character = SAM_Miletiy_Zykov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.15 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = SAM
+                            has_country_leader = {
+                                character = SAM_Sergey_Bunyachenko
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.16 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = PRM
+                            has_country_leader = {
+                                character = PRM_Velimir
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.17 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = TYM
+                            has_country_leader = {
+                                character = TYM_Lazar_Kaganovich
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.18 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = TYM
+                            has_country_leader = {
+                                character = TYM_Nikita_Khrushchev
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.19 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = SVR
+                            has_country_leader = {
+                                character = SVR_Boris_Yeltsin
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.20 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = SVR
+                            has_country_leader = {
+                                character = SVR_Pavel_Batov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.21 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        ROOT = {
+                            tag = OMS
+                            has_country_leader = {
+                                character = OMS_Dmitry_Yazov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_war.22 days = 1 } }
+                }
+            }
+           
+            if = { ### Superregional Unification ###
+                limit = {
+                    FROM = {
+                        tag = NOV
+                        }
+                     }
+                    if = {
+                        limit = {
+                            ROOT = {
+                                tag = MAG
+                                has_country_leader = { 
+                                    character = MAG_Nikolay_Petlin
+                                    ruling_only = yes
+                                }
+                            }
+                        }
+                        NOV = { country_event = { id = regionalunification_war.1 days = 1 } }
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                tag = MAG
+                                has_country_leader = { 
+                                    character = MAG_Mikhail_Matkovsky
+                                    ruling_only = yes
+                                }
+                            }
+                        }
+                        NOV = { country_event = { id = regionalunification_war.2 days = 1 } }
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                tag = MAG
+                                has_country_leader = { 
+                                    character = MAG_Mitchell_Werbell
+                                    ruling_only = yes
+                                }
+                            }
+                        }
+                        NOV = { country_event = { id = regionalunification_war.3 days = 1 } }
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                tag = CHT
+                                has_country_leader = { 
+                                    character = CHT_Mikhail_II
+                                    ruling_only = yes
+                                }
+                            }
+                        }
+                        NOV = { country_event = { id = regionalunification_war.4 days = 1 } }
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                tag = AMR
+                            }
+                        }
+                        NOV = { country_event = { id = regionalunification_war.6 days = 1 } }
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                tag = IRK
+                                has_country_leader = { 
+                                    character = IRK_Genrikh_Yagoda
+                                    ruling_only = yes
+                                }
+                            }
+                        }
+                        NOV = { country_event = { id = regionalunification_war.7 days = 1 } }
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                tag = IRK
+                                has_country_leader = { 
+                                    character = IRK_Sergey_Bessonov
+                                    ruling_only = yes
+                                }
+                            }
+                        }
+                        NOV = { country_event = { id = regionalunification_war.8 days = 1 } }
+                    }
+                    else_if = {
+                        limit = {
+                            ROOT = {
+                                tag = BRY
+                            }
+                        }
+                        NOV = { country_event = { id = regionalunification_war.9 days = 1 } }
+                    }
+
+            }
+                
+        }
+    }
+    on_annex = {
+        effect = {
+            if = {
+                ###Russian Reunification###
+                limit = {
+                    AND = {
+                        has_global_flag = RUS_FINAL_CONFERENCE
+                        ROOT = {
+                            NOV = {
+                                has_country_leader = {
+                                    character = NOV_Vasily_Shukshin
+                                    ruling_only = yes
+                                }
+                            }
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        FROM = {
+                            tag = KOM
+                            OR = {
+                                has_government = progressivism
+		            has_government = liberalism
+		            has_government = paternalism
+                                AND = {
+                                    has_government = despotism
+                                    has_country_leader = {
+                                        character = KOM_Svetlana_Stalina
+                                        ruling_only = yes
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_diplo.1 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        FROM = {
+                            tag = SVR
+                            has_country_leader = { 
+                                character = SVR_Pavel_Batov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_diplo.2 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        FROM = {
+                            tag = SVR
+                            has_country_leader = { 
+                                character = SVR_Boris_Yeltsin
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_diplo.3 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        FROM = {
+                            tag = SAM
+                            has_country_leader = { 
+                                character = SAM_Miletiy_Zykov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_diplo.4 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        FROM = {
+                            tag = SAM
+                            has_country_leader = { 
+                                character = SAM_Sergey_Bunyachenko
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_diplo.5 days = 1 } }
+                }
+                else_if = {
+                    limit = {
+                        FROM = {
+                            tag = KOM
+                            has_country_leader = { 
+                                character = KOM_Igor_Shafarevich
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = unification_diplo.7 days = 1 } }
+                }
+            }
+            if = {
+                ###Superregional Reunification###
+                limit = {
+                    AND = {
+                        has_global_flag = SIB_FINAL_CONFERENCE
+                        ROOT = {
+                            NOV = {
+                            }
+                        }
+                    }
+                }
+                if = {
+                    limit = {
+                        FROM = {
+                            tag = MAG
+                            has_country_leader = { 
+                                character = MAG_Nikolay_Petlin
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = regionalunification_diplo.1 days = 1 } }
+                }
+                if = {
+                    limit = {
+                        FROM = {
+                            tag = MAG
+                            has_country_leader = { 
+                                character = MAG_MAG_Mikhail_Matkovsky
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = regionalunification_diplo.2 days = 1 } }
+                }
+                if = {
+                    limit = {
+                        FROM = {
+                            tag = MAG
+                            has_country_leader = { 
+                                character = MAG_Mitchell_Werbell
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = regionalunification_diplo.3 days = 1 } }
+                }
+                if = {
+                    limit = {
+                        FROM = {
+                            tag = CHT
+                            has_country_leader = { 
+                                character = CHT_Mikhail_II
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = regionalunification_diplo.4 days = 1 } }
+                }
+                if = {
+                    limit = {
+                        FROM = {
+                            tag = CHT
+                            has_country_leader = { 
+                                character = CHT_Boris_Shepunov
+                                ruling_only = yes
+                            }
+                        }
+                    }
+                    NOV = { country_event = { id = regionalunification_diplo.5 days = 1 } }
+                }
+            }
+         }
+    }
+}
+        

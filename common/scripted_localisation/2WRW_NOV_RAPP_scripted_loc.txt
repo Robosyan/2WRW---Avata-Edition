@@ -1,0 +1,49 @@
+defined_text = {
+	name = NOVgetRAPPStage
+	text = {
+		trigger = {
+			AND = {
+				NOT = { has_country_flag = NOV_RAPP_Stage_2 }
+				NOT = { has_country_flag = NOV_RAPP_Stage_3 }
+			}
+		}
+		localization_key = NOVgetRAPPStage_1
+	}
+	text = {
+		trigger = {
+			AND = {
+				NOT = { has_country_flag = NOV_RAPP_Stage_3 }
+			}
+		}
+		localization_key = NOVgetRAPPStage_2
+	}
+	text = {
+		trigger = {
+			AND = {
+				NOT = { has_country_flag = NOV_RAPP_Stage_2 }
+			}
+		}
+		localization_key = NOVgetRAPPStage_3
+	}
+}
+
+defined_text = {
+	name = NOVgetRAPPProgressbar
+	text = {
+		trigger = {
+			AND = {
+				NOT = { has_country_flag = NOV_RAPP_Stage_2 }
+				NOT = { has_country_flag = NOV_RAPP_Stage_3 }
+			}
+		}
+		localization_key = NOVgetRAPPProgressbar_1
+	}
+	text = {
+		trigger = {
+			AND = {
+				NOT = { has_country_flag = NOV_RAPP_Stage_3 }
+			}
+		}
+		localization_key = NOVgetRAPPProgressbar_2
+	}
+}

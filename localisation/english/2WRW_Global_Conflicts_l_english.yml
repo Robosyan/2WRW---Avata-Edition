@@ -1,0 +1,207 @@
+﻿l_english:
+
+ WRS_foreign_policy_category:0 "Global Conflicts"
+ KOM_foreign_policy_category:0 "Global Conflicts"
+ VYT_foreign_policy_category:0 "Global Conflicts"
+ PRM_foreign_policy_category:0 "Global Conflicts"
+ SAM_foreign_policy_category:0 "Global Conflicts"
+ TYM_foreign_policy_category:0 "Global Conflicts"
+ SVR_foreign_policy_category:0 "Global Conflicts"
+ OMS_foreign_policy_category:0 "Global Conflicts"
+ TOM_foreign_policy_category:0 "Global Conflicts"
+ NOV_foreign_policy_category:0 "Global Conflicts"
+ KEM_foreign_policy_category:0 "Global Conflicts"
+ SBA_foreign_policy_category:0 "Global Conflicts"
+ IRK_foreign_policy_category:0 "Global Conflicts"
+ BRY_foreign_policy_category:0 "Global Conflicts"
+ CHT_foreign_policy_category:0 "Global Conflicts"
+ MAG_foreign_policy_category:0 "Global Conflicts"
+ AMR_foreign_policy_category:0 "Global Conflicts"
+
+ # Tokens
+
+ SWRW_GC_PLU: "Kraków Uprising"
+ SWRW_GC_WG: "West Georgia Conflict"
+ SWRW_GC_WCW: "West China War"
+ SWRW_GC_MU: "Mongolian Uprising"
+ SWRW_GC_HCW: "Hungarian Civil War"
+ SWRW_GC_2GCW: "Second German Civil War"
+ SWRW_GC_ICW: "Iranian Civil War"
+ 
+ # Tabs
+ 
+ # Flags
+ 
+ GC_RUS_decision_in_progress:0 "Proxy War Action in Progress"
+ 
+ # War Descriptions
+
+ USA_German_civil_war_category_desc:0 "Following the death of Führer Martin Bormann and the defeat of the German Reich in the Second West Russian War, Germany has collapsed into a devastating civil war that has effectively ended its status as a superpower for good. Such a disaster has opened a golden opportunity for the United States to cleanse Europe's soul from National Socialism once and for all - the so-called “Republic of Germany", an official successor state to Brandt's short-lived administration residing in Berlin.\n\nThough public support for a German government may not be popular with the American populace, covert aid in the form of arms and other military supplies may tip the scales decisively in theirs – and our – favor. All hands must be on deck in this gamble, for if Germany falls into the abyss of fascism once more, their people may never escape its grasp again."
+
+
+ rus_iran_war_desc_tt:0 "The Imperial State of Iran was once an ally of the Einheitspakt, serving as the Reich's main foothold in the Middle East. But with the death of Shah Mohammed Reza Pahlavi, an unpopular figure responsible for the nation's German alignment, the nation collapsed into a bloody civil war. As partisans and defected army units battle in the wind-swept deserts and sun-scorched mountains, many at home and across the globe expect Russia to take a stance on the raging conflict to the South.\n\nThis war has drawn the eyes of many global powers. America, Japan, and the Germans have all supported their respective factions. Our government's hardliners and hawks demand that we do the same. Although our Motherland has only recently reunited beneath our banner, it seems that now is the opportune time to dislodge the Nazis from the Middle East and protect our soft underbelly from the Einheitspakt's pervasive influence."
+ 
+ 
+ rus_poland_war_desc_tt:0 "The History of Russia and Poland has been, for the most part, bloodshed and destruction. But for all the sins we committed in the dim past, none outstrip our betrayal of the Poles thirty years ago. We both share the consequences of that mistake. Poland remains under Nazi rule; our troops stopped right at the gates of the Polish homeland, only the threat of nuclear war pushing us away. While the Motherland rebuilds, the Germans are attempting to reclaim control of their empire's ruins. Poland is within their grasp, and so the Poles suffer at their monstrous hands.\n\nWe failed Poland. We failed ourselves. We share blame for permitting the Nazi invasion so many years ago. Though we were once rivals, we now share a common enemy, and a common history. We must not allow our brothers to be torn into offal.\n\nAs long as one man resists, Poland is not yet lost."
+ 
+ rus_armenia_war_desc_tt:0 "Following the collapse of the old Union, Turkey has gone down a dark path, spreading themselves out across the Middle East like their Ottoman ancestors, occupying and striking down minority groups through their policy of Turkification, all under the guise of promoting a unified and homogeneous Turkish state. Their participation in the Second World War led to the collapse of the Caucasian front and allowed the German's to seize the vast oilfields of Azerbaijan, condeming the people of the Soviet Union to decades of suffering and tyranny.\n\nThe world may have forgotten about Turkey's actions, but Russia hasn't.\n\nThe mountains of the Caucusus are alight once more as the people of Caucasia are united, fighting for their right to be free of Turkish rule. We will help the Caucasian people defeat our mutual Turkish foe and at last, get revenge against another nation that has caused suffering to our people."
+ 
+ rus_mongolia_war_desc_tt:0 "When the old Union collapsed, many states that were formerly under its protection were left vulnerable and it didn't take long for the vultures to tear away at our Motherland's sphere of influence.\n\nOne of those nations who fell victim to the ambitions of outside powers was Mongolia. Swiftly occupied by the Japanese following our humiliating defeat in the Great Patriotic War and its later integration into Mengjiang, the region has been fighting a constant war of resistance against the Japanese Empire and it's vast network of Chinese puppet governments.\n\nWhile resistance peeked in the early 1960s, the people still fight on for the dream of a free Mongolia. With the rebels in Mongolia now reorganised and the battle continuing once again, its time we intervene in this decades long conflict and liberate our former ally."
+ 
+ rus_west_china_war_desc_tt:0 "China lies as broken as the Soviet Union during Bukharin's downfall. Yet even our Motherland's agony pales in comparison to the Middle Kingdom's century and a half of humiliation. Since before the ascension of Tsar Nicholas the Second, the Japanese have chipped away at China until it was naught but a shadow of its former self, ready for slaughter. The few Chinese who have not bent the knee to the Nanjing Clique now hide in the west. Of the Kuomintang Cliques still remaining, Ma Jiyuan's shows the most initiative, relentlessly raiding Masanobu Tsuji's lands. Most powers have abandoned this part of the world. Yet Russia watches, plotting and scheming, as we plan our next move in the Great Game.\n\nJiyuan himself stands at a crossroads. On one hand, he saw the failure of Chang Kai-shek to defend China, to truly implement the Three Principles and bring China into the modern age. On the other hand, surrender would mean a shameful death for  himself and the rest of KMT. Perhaps all he needs to make things right is some time.\n\n§BAnd a few friends.§!"
+ 
+ GER_krakow_uprising_tt:0 "Since the triumph of 1945, Polen has become an increasingly integral part of the Reich. As the Polish savages are pushed further east by Aryan settlers, it was believed that the Polish state would never rise again.\n\nHow wrong we were.\n\nWhen it seemed that the Poles had atlast been pacified, the remnants of the Polish resistance have risen up once again in a final hail mary for the liberation of Poland. While our most fanatical are demanding we throw the full weight of the Wehrmacht upon the rebels, many in our government fear that the Russian Federation will directly intervene, dooming Eastern Europe to another horrendous war.\n\nAlthough the reconquest of Poland back into the Reich will be more complicated than in 1939, the Poles will crumble before the might of the German army once again and begin the reclamation of Europe in the name of the Aryan peoples."
+ 
+ GER_mountain_war_desc_tt:0 "When Turkey joined the Axis, their involvement proved crucial in overwhelming the Soviet armies in the Caucasian mountains. After realising their Neo-Ottoman ambitions in the Middle East, the nation was for a time apart of the old Italian lead 'Triumvirate' before entering neutrality following the collapse of the alliance.\n\nThe Turks had assisted us in out struggle against the Allied Powers during the Second World War, therefore, it is only natural that we aid them against the Russian backed Armenia and Georgia.\n\nWe may have endured defeat at the hands of the Russians in the Second West Russian War but like we have before, Germany will rebuild itself and face off against the rats, no matter where they dare show themselves."
+ 
+ jap_west_china_war_desc_tt:0 "Ever since Japan's victory all those years ago, wealth and prosperity have flowed from the continent to their betters. Now, however, the Empire is under threat once again. The unruly Ma Clique, little more than a personal fiefdom of the bastard remnants of the Kuomingtong threaten all the Empire has gained through hard struggle, and the hard-steel of battle. They threaten to tear all of Japan's dominions away from her, and reduce the Empire to the status it held during inter-war humiliations!\n\nAnd so Japan now rallies for war, the banners of the Rising Sun fluttering in the wind. It shall not allow mere warlords defeat their betters. Japan shall not surrender, shall not fail, shall not bend the knee to their subjects.\n\n§VThe Rising Sun shall never set.§!"
+ 
+ jap_mongolian_uprising_desc_tt:0 "Ever since the fall of the old Soviet Union in the mid 1940s, when the last of the European colonisers had been annihilated, our grip over free East Asia has been absolute. With Europe returning its attention to domestic affairs, the United States ejected from the Pacific and the threat of Russia shattered, we believed that an age of prosperity was swiftly approaching East Asia. For a while, Asia prospered but in recent years, things have begun to turn against us.\n\nAgainst all odds, the mysterious Federation in Novosibirsk managed to not only reunite what remained of Russia but has also defeated the Germans in Eastern Europe. The resurgent Russia has begun spreading its tenticles across Asia once more, intervening in various conflicts and disputes, such as the recent rebellion in Mongolia, in order to rebuild its lost sphere of influence.\n\nWith Germany being unable to stop the Russian colossus, it is up to the Greater Co-Prosperity Sphere to take a stand against Russian expansionism and secure the continued independence of East Asia from all foreign influence.\n\n§VLong live Asia. Long live the Rising Sun.§!"
+
+ RUS_German_civil_war_category:0 "The Second German Civil War"
+ RUS_German_civil_war_category_commie_desc:0 "Following the death of Führer Martin Bormann and the defeat of the German Reich in the Second West Russian War, Germany has collapsed into a devastating civil war that has effectively ended its status as a superpower for good. Such a disaster has opened many opportunities for Russia's sphere of influence. One such opportunity is the revolutionary coalition residing in the northwest who have formed an uneasy alliance colloquially known as the "Rotfront".\n\nThough public support for a German government may not be popular with our people, covert aid in the form of arms and other military supplies may tip the scales decisively in theirs – and our – favor. All hands must be on deck in this gamble, for if Germany falls into the abyss of Nazism once more, their people may never escape its grasp again."
+ RUS_German_civil_war_category_dem_desc:0 "Following the death of Führer Martin Bormann and the defeat of the German Reich in the Second West Russian War, Germany has collapsed into a devastating civil war that has effectively ended its status as a superpower for good. Such a disaster has opened many opportunities for Russia's sphere of influence. One such opportunity is the so-called “Republic of Germany", an official successor state to Brandt's short-lived administration that is attempting to uphold the nature of democracy and freedom within the borders of the Reich itself.\n\nThough public support for a German government may not be popular with our people, covert aid in the form of arms and other military supplies may tip the scales decisively in theirs – and our – favor. All hands must be on deck in this gamble, for if Germany falls into the abyss of Nazism once more, their people may never escape its grasp again."
+ RUS_send_volunteers_to_Germany:0 "Send Volunteers Into Germany!"
+ RUS_send_guns_to_Germany:0 "Deliver Equipment To The Germans"
+ RUS_share_technology_with_Germany:0 "Offer Technological Expertise"
+ RUS_send_advisors_to_Germany:0 "Send Russian Advisors"
+ RUS_aid_reconstruction_efforts:0 "Aid In German Reconstruction Efforts"
+ RUS_send_aircraft_to_Germany:0 "Lend Russian Aircraft"
+ 
+ RUS_Hungarian_civil_war_category:0 "The Hungarian Civil War"
+ RUS_Hungarian_civil_war_category_commie_desc:0 "Hungary has been a vital pawn in the diplomatic war between the Italian and German spheres for many years. With the violent collapse of the National Socialist regime, it was an inevitability that the German-aligned Magyars would soon follow a similar path.\n\nImre Nagy, a man with ambitious goals of promoting closer co-operation with the nascent socialist governments in the Balkans, has requested our help in eliminating the rival regimes threatening his outpost in the southwest. While some within our administration argue for a total intervention in the name of cementing revolutionary ideals in Hungary, Russia's position as a war-weary nation prevents such an intervention. Thus, we are forced to support Nagy's government in a more secretive manner. Although we aren't able to fully support our regional ally, one thing is for certain: If we stand side-by-side with Imre, Hungary will forever be indebted to us."
+ RUS_Hungarian_civil_war_category_dem_desc:0 "Hungary has been a vital pawn in the diplomatic war between the Italian and German spheres for many years. With the violent collapse of the National Socialist regime, it was an inevitability that the German-aligned Magyars would soon follow a similar path.\n\nFerenc Nagy, a man with righteous morals and a will to establish a permanent democratic government in Hungary, has requested our help in eliminating the rival regimes threatening his outpost in the rural countryside. While some within our administration argue for a total intervention in the name of cementing democratic values in Hungary, Russia's position as a war-weary nation prevents such an intervention. Thus, we are forced to support Nagy's government in a more secretive manner. Although we aren't able to fully support our regional ally, one thing is for certain: If we stand side-by-side with Ferenc, Hungary will forever be indebted to us."
+ GER_Hungarian_civil_war_category_desc:0 "As one of the first nations to sign the Tripartite Pact in the glory years of the 1940s, Hungary has been a valuable ally to the German order in Europe for decades. When the Italians failed to pry the country from our claws several years ago, we assumed that Budapest would remain an unwavering outpost of German ideals in the Balkans for many decades to come.\n\nThis reality has not come to pass.\n\nIn the wake of our embarrassing defeat to the Slavic menace in the Second West Russian War and the complete loss of our eastern holdings, Béla Imrédy has disappeared, with Ferenc Szálasi taking his place as dictator in Hungary. It seems that the local populace is unhappy with this development, and the country has fractured into a three-way civil war. A direct intervention is out of the question until it is certain that no Russian interference in Hungarian affairs is present; if we are able to take back the Danube with covert assistance to Szálasi, however, then we could ensure that Hungary remains in our grasp for generations to come."
+ RUS_send_advisors_to_Hungary:0 "Send Advisors to Hungary"
+ RUS_send_guns_to_Hungary:0 "Send Guns to the Hungarians"
+ RUS_share_technology_with_Hungary:0 "Share Technology with Hungary"
+ RUS_send_volunteers_to_Hungary:0 "Send Volunteers To Hungary"
+ 
+ # Decisions
+ 
+ TNO_SWRW_rejoin_the_motherland:0 "§WRejoin§! §Bthe§! §RMotherland§!"
+ NOV_intervention_in_iranian_civil_war:0 "Intervene in the §GIranian§! §WCivil§! §VWar§!"
+ 
+ WRS_SWRW_increase_commitment:0 "Increase Commitment"
+ WRS_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ WRS_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ WRS_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ KOM_SWRW_increase_commitment:0 "Increase Commitment"
+ KOM_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ KOM_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ KOM_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ VYT_SWRW_increase_commitment:0 "Increase Commitment"
+ VYT_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ VYT_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ VYT_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ PRM_SWRW_increase_commitment:0 "Increase Commitment"
+ PRM_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ PRM_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ PRM_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ SAM_SWRW_increase_commitment:0 "Increase Commitment"
+ SAM_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ SAM_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ SAM_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ TYM_SWRW_increase_commitment:0 "Increase Commitment"
+ TYM_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ TYM_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ TYM_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ SVR_SWRW_increase_commitment:0 "Increase Commitment"
+ SVR_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ SVR_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ SVR_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ OMS_SWRW_increase_commitment:0 "Increase Commitment"
+ OMS_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ OMS_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ OMS_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ TOM_SWRW_increase_commitment:0 "Increase Commitment"
+ TOM_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ TOM_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ TOM_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ NOV_SWRW_increase_commitment:0 "Increase Commitment"
+ NOV_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ NOV_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ NOV_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ KEM_SWRW_increase_commitment:0 "Increase Commitment"
+ KEM_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ KEM_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ KEM_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ SBA_SWRW_increase_commitment:0 "Increase Commitment"
+ SBA_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ SBA_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ SBA_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+
+ IRK_SWRW_increase_commitment:0 "Increase Commitment"
+ IRK_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ IRK_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ IRK_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ BRY_SWRW_increase_commitment:0 "Increase Commitment"
+ BRY_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ BRY_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ BRY_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ CHT_SWRW_increase_commitment:0 "Increase Commitment"
+ CHT_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ CHT_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ CHT_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ MAG_SWRW_increase_commitment:0 "Increase Commitment"
+ MAG_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ MAG_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ MAG_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ AMR_SWRW_increase_commitment:0 "Increase Commitment"
+ AMR_SWRW_authorise_bombing_runs:0 "Authorise §xBombing Runs§!"
+ AMR_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ AMR_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ JAP_SWRW_foreign_policy_category:0 "Global Conflicts"
+ JAP_SWRW_increase_commitment:0 "Increase Commitment"
+ JAP_SWRW_authorise_bombing_runs:0 "Authorise §xTactical Bombing Operations§!"
+ JAP_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ JAP_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ JAP_SWRW_order_hui_intervention:0 "Order §VHui Intervention§!"
+ 
+ GER_SWRW_foreign_policy_category:0 "Global Conflicts"
+ GER_SWRW_increase_commitment:0 "Increase Commitment"
+ GER_SWRW_authorise_bombing_runs:0 "Authorise §xTactical Bombing Operations§!"
+ GER_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ GER_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ GER_SWRW_order_hui_intervention:0 "Order §VHui Intervention§!"
+
+ USA_SWRW_increase_commitment:0 "Increase Commitment"
+ USA_SWRW_authorise_bombing_runs:0 "Authorise §xTactical Bombing Operations§!"
+ USA_SWRW_send_land_equipment:0 "Send §KLand Equipment§!"
+ USA_SWRW_send_air_equipment:0 "Send §mAir Equipment§!"
+ 
+ # Custom Tooltips
+
+ TNO_GER_SWRW_order_hui_intervention_tt:0 "§V[GAN.GetName]§! will intervene in the West China War"
+ 
+ # Proxy War Ideas
+ 
+ RUS_russian_bombing:0 "Russian Tactical Bombing"
+ 
+ GER_tactical_bombing:0 "German Tactical Bombing"
+ 
+ JAP_tactical_bombing:0 "Japanese Tactical Bombing"
+ 
+ ## Second Great Northern War
+ RUS_winter_gear:0 "Winter Equipment"
+ RUS_winter_gear_desc:0 "Wars fought deep in the frozen tundra of Northern Europe are often hazardous for the average soldier, the freezing temperatures can prove much more leathal than any man with a rifle.\n\nWith our armies properly equipped to survive the harsh temperatures, winter warfare will become a far less deadly endeavour for the Russian nation.\n"
+ 
+ GER_operation_teutoburg:0 "Operation: Teutoburg"
+ WCH_national_reconstruction:0 "Western Reconstruction Plan"
+ WCH_diverse_nation:0 "Diverse Nation"

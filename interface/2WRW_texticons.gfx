@@ -1,0 +1,37 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_warexhaustion_texticon"
+		texturefile = "gfx/texticons/warexhaustion.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_warexhaustion_modifier_texticon"
+		texturefile = "gfx/texticons/warexhaustion_modifier.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_tension_texticon"
+		texturefile = "gfx/texticons/tension.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_rally_bad"
+		texturefile = "gfx/texticons/NOV_rally_bad.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_rally_good"
+		texturefile = "gfx/texticons/NOV_rally_good.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_campaign_bad"
+		texturefile = "gfx/texticons/NOV_campaign_bad.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_NOV_campaign_good"
+		texturefile = "gfx/texticons/NOV_campaign_good.dds"
+		legacy_lazy_load = no
+	}
+}

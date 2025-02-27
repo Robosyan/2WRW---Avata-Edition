@@ -1,0 +1,640 @@
+
+# Federal Assembly Events #
+
+add_namespace = NOV_federalassembly
+
+country_event = { #Presidential Election Starting 
+	id = NOV_federalassembly.100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_federalassembly.100"}
+	title = NOV_federalassembly.100.t
+	desc = NOV_federalassembly.100.desc
+	picture = GFX_event_pic_presidential_election
+	hidden = no
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event NOV_federalassembly.100"
+	}
+	is_triggered_only = yes
+	option = {
+		name = NOV_federalassembly.100.a #Shuk
+		custom_effect_tooltip = NOV_federalassembly.100.a_tt
+		set_country_flag = NOV_player_RAPP
+		hidden_effect = {
+			NOV_initialize_election_mechanics = yes
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_KANT
+					}
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_KORY
+					}
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_VRPP
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = NOV_federalassembly.100.b #Primakov
+		custom_effect_tooltip = NOV_federalassembly.100.b_tt
+		set_country_flag = NOV_player_VRPP
+		hidden_effect = {
+			NOV_initialize_election_mechanics = yes
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_KANT
+					}
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_KORY
+					}
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_SHUK
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = NOV_federalassembly.100.c #Kant
+		custom_effect_tooltip = NOV_federalassembly.100.c_tt
+		set_country_flag = NOV_player_DSPR
+		hidden_effect = {
+			NOV_initialize_election_mechanics = yes
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_SHUK
+					}
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_KORY
+					}
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_VRPP
+					}
+				}
+			}
+		}
+	}
+	option = {
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_KANT
+					}
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_KANT
+					}
+					has_game_rule = {
+						rule = SHUK_POSTWAR_ELECTIONS
+						option = SHUK_POSTWAR_ELECTIONS_VRPP
+					}
+				}
+			}
+		}
+		name = NOV_federalassembly.100.d #Kory
+		custom_effect_tooltip = NOV_federalassembly.100.d_tt
+		set_country_flag = NOV_player_RSLP
+		hidden_effect = {
+			NOV_initialize_election_mechanics = yes
+		}
+	}
+}
+
+country_event = { #Presidential Election Finishing
+	id = NOV_federalassembly.101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_federalassembly.101"}
+	title = NOV_federalassembly.101.t
+	desc = NOV_federalassembly.101.desc
+	picture = GFX_event_pic_presidential_election
+	hidden = no
+	is_triggered_only = yes
+	immediate = {
+		add_to_variable = { NOV_Election_Num = 1 }
+		log = "[GetDateText]: [Root.GetName]: event NOV_federalassembly.101"
+	}
+	option = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_election_support_RAPP_pop > NOV_election_support_VRPP_pop }
+				check_variable = { NOV_election_support_RAPP_pop > NOV_election_support_DSPR_pop }
+				check_variable = { NOV_election_support_RAPP_pop > NOV_election_support_RSLP_pop }
+			}
+		}
+		name = NOV_federalassembly.101.a
+		hidden_effect = {
+			NOV_end_elections = yes
+			load_focus_tree = {	tree = NOV_novosibirsk_victory_shukshin keep_completed = yes }
+			clr_country_flag = NOV_VRPP_Presidency
+			clr_country_flag = NOV_DSPR_Presidency
+			clr_country_flag = NOV_RSLP_Presidency
+			set_country_flag = NOV_RAPP_Presidency
+			mark_focus_tree_layout_dirty = yes
+			remove_all_ministers = yes
+			add_ideas = {
+				NOV_Alexander_Pokryshkin_hog
+				NOV_Vladimir_Sobolev_for
+				NOV_Mikhail_Kerchenko_eco
+				NOV_Amet_khan_Sultan_sec
+			}
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_election_support_VRPP_pop > NOV_election_support_RAPP_pop }
+				check_variable = { NOV_election_support_VRPP_pop > NOV_election_support_DSPR_pop }
+				check_variable = { NOV_election_support_VRPP_pop > NOV_election_support_RSLP_pop }
+			}			
+		}
+		name = NOV_federalassembly.101.b
+		hidden_effect = {
+			NOV_end_elections = yes
+			load_focus_tree = {	tree = NOV_novosibirsk_victory_shukshin keep_completed = yes }
+			set_country_flag = NOV_VRPP_Presidency
+			clr_country_flag = NOV_DSPR_Presidency
+			clr_country_flag = NOV_RSLP_Presidency
+			clr_country_flag = NOV_RAPP_Presidency
+			mark_focus_tree_layout_dirty = yes
+			add_ideas = {
+				NOV_Ivan_Silayev_hog
+				NOV_Vladimir_Vinogradov_for
+				NOV_Rem_Viakhirev_eco
+				NOV_Pyotr_Deynekin_sec
+			}
+			set_variable = { TNO_economy_type = 1 }
+			set_variable = { TNO_economy_subtype = 9 }
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_election_support_DSPR_pop > NOV_election_support_VRPP_pop }
+				check_variable = { NOV_election_support_DSPR_pop > NOV_election_support_RAPP_pop }
+				check_variable = { NOV_election_support_DSPR_pop > NOV_election_support_RSLP_pop }
+			}			
+		}
+		name = NOV_federalassembly.101.c
+		hidden_effect = {
+			NOV_end_elections = yes
+			load_focus_tree = {	tree = NOV_novosibirsk_victory_shukshin keep_completed = yes }
+			NOV = { country_event = { id = DSPR.34 days = 7 } }
+			clr_country_flag = NOV_VRPP_Presidency
+			set_country_flag = NOV_DSPR_Presidency
+			clr_country_flag = NOV_RSLP_Presidency
+			clr_country_flag = NOV_RAPP_Presidency
+			mark_focus_tree_layout_dirty = yes
+			remove_all_ministers = yes
+			add_ideas = {
+				NOV_Leonid_Plyushch_hog
+				NOV_Alexander_Lavut_for
+				NOV_Anatoly_Marchenko_eco
+				NOV_Petro_Grigorenko_sec
+			}
+			set_variable = { TNO_economy_type = 3 }
+			set_variable = { TNO_economy_subtype = 2 }
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				check_variable = { NOV_election_support_RSLP_pop > NOV_election_support_VRPP_pop }
+				check_variable = { NOV_election_support_RSLP_pop > NOV_election_support_DSPR_pop }
+				check_variable = { NOV_election_support_RSLP_pop > NOV_election_support_RAPP_pop }
+			}			
+		}
+		name = NOV_federalassembly.101.d
+		hidden_effect = {
+			NOV_end_elections = yes
+			load_focus_tree = {	tree = NOV_novosibirsk_victory_shukshin keep_completed = yes }
+			clr_country_flag = NOV_VRPP_Presidency
+			clr_country_flag = NOV_DSPR_Presidency
+			set_country_flag = NOV_RSLP_Presidency
+			clr_country_flag = NOV_RAPP_Presidency
+			mark_focus_tree_layout_dirty = yes
+			remove_all_ministers = yes
+			add_ideas = {
+				NOV_Felix_Serebrov_hog
+				NOV_Sergei_Kovalev_for
+				NOV_Naum_Meiman_eco
+				NOV_Vyacheslav_Bakhmin_sec
+			}
+			set_variable = { TNO_economy_type = 1 }
+			set_variable = { TNO_economy_subtype = 0 }
+		}
+	}
+}
+
+country_event = { #Asks for Coalition
+	id = NOV_federalassembly.102
+	immediate = {log = "[GetDateText]: [Root.GetName]: event NOV_federalassembly.102"}
+	title = NOV_federalassembly.102.t
+	desc = NOV_federalassembly.102.desc
+	picture = GFX_event_pic_presidential_election
+	hidden = no
+	is_triggered_only = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event NOV_federalassembly.102"
+	}
+	option = {
+		trigger = {
+			AND = {
+				always = yes
+			}
+		}
+		name = NOV_federalassembly.102.a
+		add_stability = -0.1
+		add_political_power = -100
+		custom_effect_tooltip = NOV_federalassembly.102.a_tt
+		NOV_bills_generate_party_votes = yes
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = { 
+					has_government = conservatism
+					is_in_array = { NOV_coalition = 0 }
+					AND = {
+						has_government = progressivism
+						check_variable = { coalition_round < 2 }
+					}
+					AND = {
+						has_government = liberalism
+						check_variable = { coalition_round < 1 }
+					}
+					AND = {
+						has_government = paternalism
+						check_variable = { coalition_round < 3 }
+					}
+				}
+			}			
+		}
+		name = NOV_federalassembly.102.b
+		custom_effect_tooltip = NOV_federalassembly.102.b_tt
+		add_to_array = { NOV_coalition = 0 }
+		add_to_variable = { NOV_coalition_seats_duma = NOV_rapp_duma_seats }
+		NOV_Coalition_Unity = yes
+		set_variable = { NOV_party_opinions^var:0 = 15 }
+		clamp_variable = {
+			var = NOV_party_opinions^0
+			min = -100
+			max = 100
+		}
+		NOV_bills_generate_party_votes = yes
+		add_political_power = -100
+		TNO_improve_academic_base_low = yes
+		if = {
+			limit = {
+				check_variable = { NOV_coalition_seats_duma < 225 }
+			}
+			hidden_effect = {
+				country_event = {
+					id = NOV_federalassembly.102
+					hours = 1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = { 
+					has_government = paternalism
+					is_in_array = { NOV_coalition = 1 }
+					AND = {
+						has_government = progressivism
+						check_variable = { coalition_round < 5 }
+					}
+					AND = {
+						has_government = liberalism
+						check_variable = { coalition_round < 2 }
+					}
+					AND = {
+						has_government = conservatism
+						check_variable = { coalition_round < 3 }
+					}
+				}
+			}		
+		}
+		name = NOV_federalassembly.102.c
+		custom_effect_tooltip = NOV_federalassembly.102.c_tt
+		add_to_array = { NOV_coalition = 1 }
+		add_to_variable = { NOV_coalition_seats_duma = NOV_vrpp_duma_seats }
+		NOV_Coalition_Unity = yes
+		set_variable = { NOV_party_opinions^var:1 = 15 }
+		clamp_variable = {
+			var = NOV_party_opinions^1
+			min = -100
+			max = 100
+		}
+		NOV_bills_generate_party_votes = yes
+		TNO_worsen_income_taxation_policy_effectiveness_low = yes
+		TNO_worsen_minimum_wage_policy_effectiveness_low = yes
+		TNO_worsen_max_workhours_policy_effectiveness_low = yes
+		TNO_worsen_pensions_policy_effectiveness_low = yes
+		if = {
+			limit = {
+				check_variable = { NOV_coalition_seats_duma < 225 }
+			}
+			hidden_effect = {
+				country_event = {
+					id = NOV_federalassembly.102
+					hours = 1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = { 
+					has_government = progressivism
+					is_in_array = { NOV_coalition = 2 }
+					AND = {
+						has_government = paternalism
+						check_variable = { coalition_round < 5 }
+					}
+					AND = {
+						has_government = liberalism
+						check_variable = { coalition_round < 1 }
+					}
+					AND = {
+						has_government = conservatism
+						check_variable = { coalition_round < 2 }
+					}
+				}
+			}			
+		}
+		name = NOV_federalassembly.102.d
+		custom_effect_tooltip = NOV_federalassembly.102.d_tt
+		add_to_array = { NOV_coalition = 2 }
+		add_to_variable = { NOV_coalition_seats_duma = NOV_dspr_duma_seats }
+		NOV_Coalition_Unity = yes
+		set_variable = { NOV_party_opinions^var:2 = 15 }
+		clamp_variable = {
+			var = NOV_party_opinions^2
+			min = -100
+			max = 100
+		}
+		NOV_bills_generate_party_votes = yes
+		TNO_improve_trade_laws_policy_effectiveness_low = yes
+		TNO_improve_income_taxation_policy_effectiveness_low = yes
+		TNO_improve_minimum_wage_policy_effectiveness_med = yes
+		TNO_improve_max_workhours_policy_effectiveness_low = yes
+		add_political_power = -25
+		if = {
+			limit = {
+				check_variable = { NOV_coalition_seats_duma < 225 }
+			}
+			hidden_effect = {
+				country_event = {
+					id = NOV_federalassembly.102
+					hours = 1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = { 
+					has_government = liberalism
+					is_in_array = { NOV_coalition = 3 }
+					AND = {
+						has_government = paternalism
+						check_variable = { coalition_round < 5 }
+					}
+					AND = {
+						has_government = progressivism
+						check_variable = { coalition_round < 1 }
+					}
+					AND = {
+						has_government = conservatism
+						check_variable = { coalition_round < 2 }
+					}
+				}
+			}			
+		}
+		name = NOV_federalassembly.102.e
+		custom_effect_tooltip = NOV_federalassembly.102.e_tt
+		add_to_array = { NOV_coalition = 3 }
+		add_to_variable = { NOV_coalition_seats_duma = NOV_rslp_duma_seats }
+		NOV_Coalition_Unity = yes
+		set_variable = { NOV_party_opinions^var:3 = 15 }
+		clamp_variable = {
+			var = NOV_party_opinions^3
+			min = -100
+			max = 100
+		}
+		NOV_bills_generate_party_votes = yes
+		army_funding_maximal_decrease_med = yes
+		naval_funding_maximal_decrease_low = yes
+		nuclear_funding_maximal_decrease_low = yes
+		add_war_support = -0.05
+		if = {
+			limit = {
+				check_variable = { NOV_coalition_seats_duma < 225 }
+			}
+			hidden_effect = {
+				country_event = {
+					id = NOV_federalassembly.102
+					hours = 1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = { 
+					is_in_array = { NOV_coalition = 4 }
+				}
+			}			
+		}
+		name = NOV_federalassembly.102.f
+		custom_effect_tooltip = NOV_federalassembly.102.f_tt
+		add_to_array = { NOV_coalition = 4 }
+		add_to_variable = { NOV_coalition_seats_duma = NOV_nfm_duma_seats }
+		NOV_Coalition_Unity = yes
+		set_variable = { NOV_party_opinions^var:4 = 45 }
+		clamp_variable = {
+			var = NOV_party_opinions^4
+			min = -100
+			max = 100
+		}
+		NOV_bills_generate_party_votes = yes
+		TNO_worsen_regulations_policy_effectiveness_low = yes
+		TNO_worsen_gender_rights_policy_effectiveness_low = yes
+		TNO_improve_pensions_policy_effectiveness_low = yes
+		if = {
+			limit = {
+				check_variable = { NOV_coalition_seats_duma < 225 }
+			}
+			hidden_effect = {
+				country_event = {
+					id = NOV_federalassembly.102
+					hours = 1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = { 
+					is_in_array = { NOV_coalition = 5 }
+					is_in_array = { NOV_coalition = 6 }
+					is_in_array = { NOV_coalition = 7 }
+				}
+			}			
+		}
+		name = NOV_federalassembly.102.g
+		custom_effect_tooltip = NOV_federalassembly.102.g_tt
+		add_to_array = { NOV_coalition = 5 }
+		add_to_variable = { NOV_coalition_seats_duma = NOV_rirm_duma_seats }
+		NOV_Coalition_Unity = yes
+		set_variable = { NOV_party_opinions^var:5 = 45 }
+		clamp_variable = {
+			var = NOV_party_opinions^5
+			min = -100
+			max = 100
+		}
+		NOV_bills_generate_party_votes = yes
+		TNO_worsen_religious_rights_policy_effectiveness_med = yes
+		TNO_worsen_press_rights_policy_effectiveness_low = yes
+		TNO_worsen_gender_rights_policy_effectiveness_low = yes
+		if = {
+			limit = {
+				check_variable = { NOV_coalition_seats_duma < 225 }
+			}
+			hidden_effect = {
+				country_event = {
+					id = NOV_federalassembly.102
+					hours = 1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = { 
+					is_in_array = { NOV_coalition = 1 }
+					is_in_array = { NOV_coalition = 5 }
+					is_in_array = { NOV_coalition = 6 }
+				}
+			}			
+		}
+		name = NOV_federalassembly.102.h
+		custom_effect_tooltip = NOV_federalassembly.102.h_tt
+		add_to_array = { NOV_coalition = 6 }
+		add_to_variable = { NOV_coalition_seats_duma = NOV_cprf_duma_seats }
+		NOV_Coalition_Unity = yes
+		set_variable = { NOV_party_opinions^var:6 = 45 }
+		clamp_variable = {
+			var = NOV_party_opinions^6
+			min = -100
+			max = 100
+		}
+		NOV_bills_generate_party_votes = yes
+		TNO_worsen_trade_laws_policy_effectiveness_monthly_low = yes
+		TNO_improve_health_care_policy_effectiveness_low = yes
+		TNO_improve_security_policy_effectiveness_low = yes
+		if = {
+			limit = {
+				check_variable = { NOV_coalition_seats_duma < 225 }
+			}
+			hidden_effect = {
+				country_event = {
+					id = NOV_federalassembly.102
+					hours = 1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			NOT = {
+				OR = { 
+					is_in_array = { NOV_coalition = 1 }
+					is_in_array = { NOV_coalition = 5 }
+					is_in_array = { NOV_coalition = 7 }
+				}
+			}			
+		}
+		name = NOV_federalassembly.102.i
+		custom_effect_tooltip = NOV_federalassembly.102.i_tt
+		add_to_array = { NOV_coalition = 7 }
+		add_to_variable = { NOV_coalition_seats_duma = NOV_srp_duma_seats }
+		NOV_Coalition_Unity = yes
+		set_variable = { NOV_party_opinions^var:7 = 45 }
+		clamp_variable = {
+			var = NOV_party_opinions^7
+			min = -100
+			max = 100
+		}
+		NOV_bills_generate_party_votes = yes
+		TNO_worsen_trade_laws_policy_effectiveness_monthly_low = yes
+		add_popularity = { ideology = paternalism popularity = -0.025 }
+		add_popularity = { ideology = conservatism popularity = -0.025 }
+		add_popularity = { ideology = despotism popularity = -0.01 }
+		add_popularity = { ideology = socialist popularity = 0.06 }
+		if = {
+			limit = {
+				check_variable = { NOV_coalition_seats_duma < 225 }
+			}
+			hidden_effect = {
+				country_event = {
+					id = NOV_federalassembly.102
+					hours = 1
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			AND = {
+				always = yes
+			}			
+		}
+		name = NOV_federalassembly.102.j
+		custom_effect_tooltip = NOV_federalassembly.102.j_tt
+		add_political_power = -20
+		add_stability = -0.01
+		add_to_variable = { coalition_round = 1 }
+		NOV_bills_generate_party_votes = yes
+		hidden_effect = {
+			country_event = {
+				id = NOV_federalassembly.102
+				hours = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+defined_text = {
+	name = JAP_MAR_Seizure_tt
+	text = {
+		trigger = {
+			GER = {
+				has_country_flag = mar_nukes
+			}
+		}
+		localization_key = "JAP_MAR_Seizure_tt1"
+	}
+	text = {
+		trigger = {
+			GER = {
+				NOT = {
+					has_country_flag = mar_nukes
+				}
+			}
+		}
+		localization_key = "JAP_MAR_Seizure_tt2"
+	}
+}
+
