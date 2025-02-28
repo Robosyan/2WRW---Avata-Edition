@@ -5356,13 +5356,17 @@ RUS_shukshin_moskowien_occupation = {
 			transfer_state = 1421
 			
 			every_owned_state = {
-				add_core_of = OKB
+				add_core_of = MCW
 			}
 			
 			TNO_startup_nation = yes
 
 			remove_state_core = 195
-
+			
+			BLR = {
+			    remove_state_core = 2452
+				remove_state_core = 241
+			}
 			set_capital = { state = 1442 }
 			
 			set_politics = {
@@ -5936,7 +5940,7 @@ RUS_shukshin_ukraine_occupation = {
 			}
 			remove_all_ministers = yes
 			fill_empty_minister = yes
-			SWRW_FUK_remove_all_ideas = yes
+			SWRW_UKS_remove_all_ideas = yes
 			add_ideas = {
 				UKR_memories_of_generalplan_ost
 				UKR_legacy_of_the_occupation
@@ -6050,7 +6054,7 @@ RUS_shukshin_ukraine_occupation = {
 			}
 			remove_all_ministers = yes
 			fill_empty_minister = yes
-			SWRW_UKS_remove_all_ideas = yes
+			SWRW_FUK_remove_all_ideas = yes
 			add_ideas = {
 				### Political ###
 				tno_political_parties_controlled_opposition
