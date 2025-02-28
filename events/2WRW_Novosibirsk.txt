@@ -2398,9 +2398,10 @@ country_event = {
 			}
 			UKS = {
 				transfer_state = 196
+				add_state_core = 196
 			}
 		}
-		annex_country = { target = UKS transfer_troops = no }
+		annex_country = { target = FUK transfer_troops = no }
 		196 = {
 			add_dynamic_modifier = { modifier = NOV_german_autonomous_zone }
 		}
@@ -2418,7 +2419,7 @@ country_event = {
 				transfer_state = 196
 			}
 		}
-		annex_country = { target = UKS transfer_troops = no }
+		annex_country = { target = FUK transfer_troops = no }
 	}
 }
 
