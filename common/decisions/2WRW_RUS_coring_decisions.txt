@@ -32,14 +32,12 @@ RUS_coring_category = {
 		available = {
 			controls_state = 409
 			controls_state = 408
-			controls_state = 1645
 			controls_state = 1644
 		}
 
 		visible = {
 			owns_state = 408
 			owns_state = 409
-			owns_state = 1645
 			owns_state = 1644
 		}
 
@@ -70,7 +68,6 @@ RUS_coring_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_khabarovsk remove"
 			add_state_core = 408
 			add_state_core = 409
-			add_state_core = 1645
 			add_state_core = 1644
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
@@ -283,17 +280,15 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 238
-			controls_state = 253
 		}
 
 		visible = {
 			owns_state = 238
-			owns_state = 253
 		}
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 253
+				state = 238
 			}
 		}
 
@@ -317,7 +312,6 @@ RUS_coring_category = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_vladimir remove"
 			add_state_core = 238
-			add_state_core = 253
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -382,12 +376,10 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 246
-			controls_state = 1475
 		}
 
 		visible = {
 			owns_state = 246
-			owns_state = 1475
 		}
 
 		highlight_states = {
@@ -416,7 +408,6 @@ RUS_coring_category = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_yaroslavl remove"
 			add_state_core = 246
-			add_state_core = 1475
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -475,16 +466,10 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 247
-			controls_state = 1434
-			controls_state = 264
-			controls_state = 246
 		}
 
 		visible = {
 			owns_state = 247
-			owns_state = 1434
-			owns_state = 264
-			owns_state = 246
 		}
 
 		highlight_states = {
@@ -513,9 +498,6 @@ RUS_coring_category = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_tver remove"
 			add_state_core = 247
-			add_state_core = 1434
-			add_state_core = 264
-			add_state_core = 246
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -528,18 +510,16 @@ RUS_coring_category = {
 		icon = GFX_decision_generic_form_nation
 
 		available = {
-			controls_state = 1434
-			controls_state = 1477
+			controls_state = 1421
 		}
 
 		visible = {
-			owns_state = 1434
-			owns_state = 1477
+			owns_state = 1421
 		}
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 1434
+				state = 1421
 			}
 		}
 
@@ -562,8 +542,7 @@ RUS_coring_category = {
 
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_novgorod remove"
-			add_state_core = 1434
-			add_state_core = 1477
+			add_state_core = 1421
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -577,14 +556,12 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 209
-			controls_state = 257
-			controls_state = 1421
+			controls_state = 1402
 		}
 
 		visible = {
 			owns_state = 209
-			owns_state = 257
-			owns_state = 1421
+			owns_state = 1402
 		}
 
 		highlight_states = {
@@ -613,8 +590,7 @@ RUS_coring_category = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_pskov remove"
 			add_state_core = 209
-			add_state_core = 257
-			add_state_core = 1421
+			add_state_core = 1402
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -627,16 +603,16 @@ RUS_coring_category = {
 		icon = GFX_decision_generic_form_nation
 
 		available = {
-			controls_state = 242
+			controls_state = 2452
 		}
 
 		visible = {
-			owns_state = 242
+			owns_state = 2452
 		}
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 242
+				state = 2452
 			}
 		}
 
@@ -659,7 +635,7 @@ RUS_coring_category = {
 
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_smolensk remove"
-			add_state_core = 242
+			add_state_core = 2452
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -672,106 +648,12 @@ RUS_coring_category = {
 		icon = GFX_decision_generic_form_nation
 
 		available = {
-			controls_state = 223
-			controls_state = 1444
-		}
-
-		visible = {
-			owns_state = 223
-			owns_state = 1444
-		}
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 1444
-			}
-		}
-
-		# on_map_mode = map_only
-
-		modifier = {
-			stability_weekly = -0.0025
-			political_power_gain = -0.15
-			gdp_growth_modifier = -0.5
-		}
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		days_remove = RUS_integration_cost_days?0
-		fire_only_once = yes
-
-		remove_effect  = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_bryansk remove"
-			add_state_core = 223
-			add_state_core = 1444
-			add_stability = 0.025
-			set_temp_variable = { gdp_growth_temp = 0.01 }
-			econ_gdp_growth_change = yes
-			TNO_improve_admin_efficiency_really_low = yes
-		}
-	}
-	
-	RUS_coring_integrate_gomel = {
-
-		icon = GFX_decision_generic_form_nation
-
-		available = {
-			controls_state = 241
-		}
-
-		visible = {
-			owns_state = 241
-		}
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 241
-			}
-		}
-
-		# on_map_mode = map_only
-
-		modifier = {
-			stability_weekly = -0.0025
-			political_power_gain = -0.15
-			gdp_growth_modifier = -0.5
-		}
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		days_remove = RUS_integration_cost_days?0
-		fire_only_once = yes
-
-		remove_effect  = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_gomel remove"
-			add_state_core = 241
-			add_stability = 0.025
-			set_temp_variable = { gdp_growth_temp = 0.01 }
-			econ_gdp_growth_change = yes
-			TNO_improve_admin_efficiency_really_low = yes
-		}
-	}
-	
-	RUS_coring_integrate_oryol = {
-
-		icon = GFX_decision_generic_form_nation
-
-		available = {
 			controls_state = 222
-			controls_state = 401
 		}
 
 		visible = {
 			owns_state = 222
-			owns_state = 401
+			owns_state = 222
 		}
 
 		highlight_states = {
@@ -798,9 +680,8 @@ RUS_coring_category = {
 		fire_only_once = yes
 
 		remove_effect  = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_oryol remove"
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_bryansk remove"
 			add_state_core = 222
-			add_state_core = 401
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -859,12 +740,10 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 210
-			controls_state = 224
 		}
 
 		visible = {
 			owns_state = 210
-			owns_state = 224
 		}
 
 		highlight_states = {
@@ -893,7 +772,6 @@ RUS_coring_category = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_voronezh remove"
 			add_state_core = 210
-			add_state_core = 224
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -907,12 +785,10 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 1443
-			controls_state = 238
 		}
 
 		visible = {
 			owns_state = 1443
-			owns_state = 238
 		}
 
 		highlight_states = {
@@ -941,7 +817,6 @@ RUS_coring_category = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_ryazan remove"
 			add_state_core = 1443
-			add_state_core = 238
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -955,12 +830,10 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 1441
-			controls_state = 260
 		}
 
 		visible = {
 			owns_state = 1441
-			owns_state = 260
 		}
 
 		highlight_states = {
@@ -989,7 +862,6 @@ RUS_coring_category = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_tambov remove"
 			add_state_core = 1441
-			add_state_core = 260
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -1003,12 +875,10 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 1436
-			controls_state = 263
 		}
 
 		visible = {
 			owns_state = 1436
-			owns_state = 263
 		}
 
 		highlight_states = {
@@ -1037,7 +907,6 @@ RUS_coring_category = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_penza remove"
 			add_state_core = 1436
-			add_state_core = 263
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -1050,20 +919,18 @@ RUS_coring_category = {
 		icon = GFX_decision_generic_form_nation
 
 		available = {
-			controls_state = 245
+			controls_state = 260
 			controls_state = 239
-			controls_state = 217
 		}
 
 		visible = {
-			owns_state = 245
+			owns_state = 260
 			owns_state = 239
-			owns_state = 217
 		}
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 245
+				state = 239
 			}
 		}
 
@@ -1086,9 +953,8 @@ RUS_coring_category = {
 
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_saratov remove"
-			add_state_core = 245
+			add_state_core = 260
 			add_state_core = 239
-			add_state_core = 217
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -1101,11 +967,13 @@ RUS_coring_category = {
 		icon = GFX_decision_generic_form_nation
 
 		available = {
+			controls_state = 217
 			controls_state = 243
 		}
 
 		visible = {
 			owns_state = 243
+			owns_state = 217
 		}
 
 		highlight_states = {
@@ -1134,6 +1002,7 @@ RUS_coring_category = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_volgograd remove"
 			add_state_core = 243
+			add_state_core = 217
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -1142,50 +1011,6 @@ RUS_coring_category = {
 	}
 	
 	RUS_coring_integrate_astrakhan = {
-
-		icon = GFX_decision_generic_form_nation
-
-		available = {
-			controls_state = 244
-		}
-
-		visible = {
-			owns_state = 244
-		}
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 244
-			}
-		}
-
-		# on_map_mode = map_only
-
-		modifier = {
-			stability_weekly = -0.0025
-			political_power_gain = -0.15
-			gdp_growth_modifier = -0.5
-		}
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		days_remove = RUS_integration_cost_days?0
-		fire_only_once = yes
-
-		remove_effect  = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_astrakhan remove"
-			add_state_core = 244
-			add_stability = 0.025
-			set_temp_variable = { gdp_growth_temp = 0.01 }
-			econ_gdp_growth_change = yes
-			TNO_improve_admin_efficiency_really_low = yes
-		}
-	}
-	RUS_coring_integrate_elista = {
 
 		icon = GFX_decision_generic_form_nation
 
@@ -1221,7 +1046,7 @@ RUS_coring_category = {
 		fire_only_once = yes
 
 		remove_effect  = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_elista remove"
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_astrakhan remove"
 			add_state_core = 237
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
@@ -1279,16 +1104,10 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 221
-			controls_state = 225
-			controls_state = 259
-			controls_state = 1426
 		}
 
 		visible = {
 			owns_state = 221
-			owns_state = 225
-			owns_state = 259
-			owns_state = 1426
 		}
 
 		highlight_states = {
@@ -1317,9 +1136,6 @@ RUS_coring_category = {
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_kharkiv remove"
 			add_state_core = 221
-			add_state_core = 225
-			add_state_core = 259
-			add_state_core = 1426
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
@@ -1332,17 +1148,15 @@ RUS_coring_category = {
 
 		available = {
 			controls_state = 228
-			controls_state = 227
 		}
 
 		visible = {
-			owns_state = 227
 			owns_state = 228
 		}
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 227
+				state = 228
 			}
 		}
 
@@ -1365,7 +1179,6 @@ RUS_coring_category = {
 
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_donetsk remove"
-			add_state_core = 227
 			add_state_core = 228
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
@@ -1425,12 +1238,10 @@ RUS_coring_category = {
 		icon = GFX_decision_generic_form_nation
 
 		available = {
-			controls_state = 197
 			controls_state = 226
 		}
 
 		visible = {
-			owns_state = 197
 			owns_state = 226
 		}
 
@@ -1459,7 +1270,6 @@ RUS_coring_category = {
 
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_kryvyi_rih remove"
-			add_state_core = 197
 			add_state_core = 226
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
@@ -1472,13 +1282,11 @@ RUS_coring_category = {
 		icon = GFX_decision_generic_form_nation
 
 		available = {
-			controls_state = 1427
 			controls_state = 1428
 			controls_state = 202
 		}
 
 		visible = {
-			owns_state = 1427
 			owns_state = 1428
 			owns_state = 202
 		}
@@ -1508,7 +1316,6 @@ RUS_coring_category = {
 
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_kiev remove"
-			add_state_core = 1427
 			add_state_core = 1428
 			add_state_core = 202
 			add_stability = 0.025
@@ -1522,18 +1329,10 @@ RUS_coring_category = {
 		icon = GFX_decision_generic_form_nation
 
 		available = {
-			controls_state = 1430
-			controls_state = 773
-			controls_state = 199
-			controls_state = 201
 			controls_state = 93
 		}
 
 		visible = {
-			owns_state = 1430
-			owns_state = 773
-			owns_state = 199
-			owns_state = 201
 			owns_state = 93
 		}
 
@@ -1562,10 +1361,6 @@ RUS_coring_category = {
 
 		remove_effect  = {
 			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_volyn remove"
-			add_state_core = 1430
-			add_state_core = 773
-			add_state_core = 199
-			add_state_core = 201
 			add_state_core = 93
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
@@ -1928,12 +1723,16 @@ RUS_coring_category = {
 			controls_state = 229
 			controls_state = 1552
 			controls_state = 1554
+			controls_state = 244
+			controls_state = 2131
 		}
 
 		visible = {
 			owns_state = 229
 			owns_state = 1552
 			owns_state = 1554
+			owns_state = 244
+			owns_state = 2131
 		}
 
 		highlight_states = {
@@ -1964,6 +1763,8 @@ RUS_coring_category = {
 			add_state_core = 229
 			add_state_core = 1552
 			add_state_core = 1554
+			add_state_core = 244
+			add_state_core = 2131
 			add_stability = 0.025
 			set_temp_variable = { gdp_growth_temp = 0.01 }
 			econ_gdp_growth_change = yes
