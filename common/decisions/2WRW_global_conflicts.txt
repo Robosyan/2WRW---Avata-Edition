@@ -2054,6 +2054,18 @@ HUN_unify_category = {
 				econ_join_sphere_RUS = yes
 				RUS = { give_guarantee = HUD }
 			}
+			if = {
+			    limit = {
+				    has_global_flag = RUS_shukshin_unification
+				}
+				RUS = {
+				    set_temp_variable = { target = IRI }
+		            TNO_clear_num_volunteers = yes
+				}
+                add_ideas = {
+                    CSTO_Observer
+				}	
+			}	
 			clr_global_flag = HUN_civil_war
 			set_global_flag = HUD_winner
 			every_country = { limit = { is_ai = no } news_event = Global_Conflicts.10 }

@@ -8328,6 +8328,11 @@ shared_focus = {
 			add_ideas = OFN_Independent_Member
 			USA = { add_to_faction = PREV }
 		}
+		HUD = {
+		    limit = { has_idea = CSTO_Observer }
+			remove_ideas = CSTO_Observer
+			add_ideas = OFN_Observer
+		}	
 		USA = {
 			add_to_faction = NOV
 		}
