@@ -1,0 +1,33 @@
+﻿l_russian:
+ 
+ #Cosmetic Tag
+
+ QIN_WCH:0 "Национальная Китайская Республика"
+ QIN_WCH_DEF:0 "Второе национальное правительство Китайской Республики"
+ QIN_WCH_ADJ:0 "Китайск"
+
+ # Party Name Changes
+
+ QIN_provisional_government_long:0 "Временное правительство Гоминьдана"
+ QIN_provisional_government_short:0 "Гоминьдан - Временное правительство"
+
+ QIN_WCH_despotism_long:0 "Гоминьдан - Сторонники жесткой линии"
+ QIN_WCH_despotism_party:0 "Гоминьдан - Сторонники жесткой линии"
+ 
+ QIN_WCH_paternalism_party:0 "Гоминьдан - Ортодоксы"
+ QIN_WCH_paternalism_long:0 "Гоминьдан - Ортодоксальная фракция"
+ 
+ QIN_WCH_conservatism_party:0 "Гоминьдан - Умеренные"
+ QIN_WCH_conservatism_long:0 "Гоминьдан - Умеренная фракция"
+
+ QIN_WCH_liberalism_party:0 "Гоминьдан - Реформисты"
+ QIN_WCH_liberalism_long:0 "Гоминьдан - Реформистская фракция"
+
+ QIN_WCH_communist_party:0 "КПК"
+ QIN_WCH_communist_long:0 "Коммунистическая партия Китая"
+
+ #Character
+ QIN_Sun_Tse_Ping: "Сунь Чжипин"
+ POLITICS_SUN_TSE_PING_DESC: ""
+ QIN_Li_Xiannian: "Ли Сяньнянь"
+ POLITICS_LI_XIANNIAN_DESC: ""

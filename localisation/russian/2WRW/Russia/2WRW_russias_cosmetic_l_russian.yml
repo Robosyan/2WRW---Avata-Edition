@@ -1,0 +1,109 @@
+﻿l_russian:
+
+ #Novosibirsk 
+ PAV_RUS_social_conservative:0 "Российская Федерация"
+ PAV_RUS_social_conservative_DEF:0 "Российская Федерация"
+ PAV_RUS_social_conservative_ADJ:0 "Российск"
+ PAV_RUS_authoritarian_democrat:0 "Российская Федерация"
+ PAV_RUS_authoritarian_democrat_DEF:0 "Российская Федерация"
+ PAV_RUS_authoritarian_democrat_ADJ:0 "Российск"
+ NOV_VRPP:0 "Российская Федерация" 
+ NOV_VRPP_DEF:0 "Российская Федерация" 
+ NOV_VRPP_ADJ:0 "Российск" 
+
+ ### Moskowien ### 
+ RDC_Novosibirsk:0 "Западнорусское управление восстановления"
+ RDC_Novosibirsk_DEF:0 "Западнорусское управление восстановления"
+ RDC_Novosibirsk_ADJ:0 "ЗападноРусск"
+
+ OKB_Novosibirsk:0 "Петроградский военный округ"
+ OKB_Novosibirsk_DEF:0 "Петроградский военный округ"
+ OKB_Novosibirsk_ADJ:0 "Петроградск"
+
+ OST_Novosibirsk:0 "Балтийское управление восстановления"
+ OST_Novosibirsk_DEF:0 "Балтийское управление восстановления"
+ OST_Novosibirsk_ADJ:0 "Балтийск"
+
+ CAU_Novosibirsk:0 "Кавказское управление восстановления"
+ CAU_Novosibirsk_DEF:0 "Кавказское управление восстановления"
+ CAU_Novosibirsk_ADJ:0 "Кавказск"
+
+ CRI_Novosibirsk:0 "Черноморское управление восстановления"
+ CRI_Novosibirsk_DEF:0 "Черноморское управление восстановления"
+ CRI_Novosibirsk_ADJ:0 "Крымск"
+
+ UKR_Novosibirsk:0 "Украинское управление восстановления"
+ UKR_Novosibirsk_DEF:0 "Украинское управление восстановления"
+ UKR_Novosibirsk_ADJ:0 "Украинск"
+
+ BLR_Novosibirsk:0 "Белорусское управление восстановления"
+ BLR_Novosibirsk_DEF:0 "Белорусское управление восстановления"
+ BLR_Novosibirsk_ADJ:0 "Белорусск"
+
+ PAU_Novosibirsk:0 "Поволжская Автономная Республика"
+ PAU_Novosibirsk_DEF:0 "Поволжская Автономная Республика"
+ PAU_Novosibirsk_ADJ:0 "Поволжск"
+
+ ### Kazakhstan ### 
+ PAV_Novosibirsk:0 "Республика Казахстан"
+ PAV_Novosibirsk_DEF:0 "Федеральная Республика Казахстан"
+ PAV_Novosibirsk_ADJ:0 "Казахск"
+
+ NPL_Novosibirsk:0 "Республика Новая Польша"
+ NPL_Novosibirsk_DEF:0 "Федеральная Республика Новая Польша"
+ NPL_Novosibirsk_ADJ:0 "Польск"
+
+ ### Central Asia ### 
+ UZB_Novosibirsk:0 "Федерация Узбекистана"
+ UZB_Novosibirsk_DEF:0 "Федерация Узбекистана"
+ UZB_Novosibirsk_ADJ:0 "Узбекск"
+
+ TRK_Novosibirsk:0 "Республика Туркменистан"
+ TRK_Novosibirsk_DEF:0 "Республика Туркменистан"
+ TRK_Novosibirsk_ADJ:0 "Туркменск"
+
+ TAJ_Novosibirsk:0 "Республика Таджикистан"
+ TAJ_Novosibirsk_DEF:0 "Республика Таджикистан"
+ TAJ_Novosibirsk_ADJ:0 "Таджикск"
+
+ KYR_Novosibirsk:0 "Республика Киргизия"
+ KYR_Novosibirsk_DEF:0 "Республика Киргизия"
+ KYR_Novosibirsk_ADJ:0 "Киргизск"
+
+ TRK_Russian_Democracy:0 "Республика Туркменистан"
+ TRK_Russian_Democracy_DEF:0 "Республика Туркменистан"
+ TRK_Russian_Democracy_ADJ:0 "Туркменск"
+
+ TRK_Russian_Imperial_Protectorate:0 "Протекторат Туркменистан"
+ TRK_Russian_Imperial_Protectorate_DEF:0 "Республика Туркменистан"
+ TRK_Russian_Imperial_Protectorate_ADJ:0 "Туркменск"
+
+ TRK_SOV_SSR:0 "Социалистическая Республика Туркменистан"
+ TRK_SOV_SSR_DEF:0 "Социалистическая Республика Туркменистан"
+ TRK_SOV_SSR_ADJ:0 "Туркменск"
+
+ KRK_Russian_Democracy:0 "Республика Каракалпакия"
+ KRK_Russian_Democracy_DEF:0 "Республика Каракалпакия"
+ KRK_Russian_Democracy_ADJ:0 "Каралпакск"
+
+ UZB_Russian_Democracy:0 "Федерация Узбекистана"
+ UZB_Russian_Democracy_DEF:0 "Федерация Узбекистана"
+ UZB_Russian_Democracy_ADJ:0 "Узбекск"
+
+ TAJ_Russian_Democracy:0 "Республика Таджикистан"
+ TAJ_Russian_Democracy_DEF:0 "Республика Таджикистан"
+ TAJ_Russian_Democracy_ADJ:0 "Таджикск"
+
+ KYR_Russian_Democracy:0 "Республика Киргизия"
+ KYR_Russian_Democracy_DEF:0 "Республика Киргизия"
+ KYR_Russian_Democracy_ADJ:0 "Киргизск"
+
+ # Fixed cosmetic tags # 
+ RUS_FIXED:0 "Российская Федерация" 
+ RUS_FIXED_DEF:0 "Российская Федерация" 
+ RUS_FIXED_ADJ:0 "Русск" 
+
+ # Shuk Onega Failstate 
+ ONG_unity:0 "Западнороссийская Республика" 
+ ONG_unity_DEF:0 "Западнороссийская Республика" 
+ ONG_unity_ADJ:0 "Западнороссийск" 

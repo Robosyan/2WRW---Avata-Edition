@@ -1,0 +1,635 @@
+﻿l_russian:
+
+ # Second West Russian War
+ OST_RUS:0 "Балтийская Федерация"
+ OST_RUS_DEF:0 "Балтийская Федерация"
+ OST_RUS_ADJ:0 "Балтийск"
+
+ UKR_RUS:0 "Республика Украина"
+ UKR_RUS_DEF:0 "Республика Украина"
+ UKR_RUS_ADJ:0 "Украинск"
+
+ ERS_FED:0 "Томская Федерация"
+ ERS_FED_DEF:0 "Томская Федерация"
+ ERS_FED_ADJ:0 "Российск"
+
+ SAH_NEU:0 "Нейтральная зона Красноярска"
+ SAH_NEU_DEF:0 "Нейтральная зона Красноярска"
+ SAH_NEW_ADJ:0 "Российск"
+
+ TOB_uralrepublic:0 "Западно-Сибирская Республика"
+ TOB_uralrepublic_DEF:0 "Западно-Сибирская Федеративная Республика"
+ TOB_uralrepublic_ADF:0 "Российск"
+
+ ARC_FED:0 "Всероссийское армейское восстание"
+ ARC_FED_DEF:0 "Всероссийское временное военное правительство"
+ ARC_FED_ADJ:0 "Российск"
+
+ VTY_REP:0 "Западно-Российская Республика"
+ VTY_REP_DEF:0 "Западно-Российская Республика"
+ VTY_REP_ADJ:0 "Российск"
+
+ IRK_SAB:0 "Восточно-Сибирская Советская Республика"
+ IRK_SAB_DEF:0 "Восточно-Сибирская Советская Республика"
+ IRK_SAB_ADJ:0 "Советск"
+
+ IRK_die:0 "Иркутская область"
+ IRK_die_DEF:0 "Иркутская область"
+ IRK_die_ADJ:0 "Бурятск"
+
+ TOM_die:0 "Новая Томская Республика"
+ TOM_die_DEF:0 "Новая Томская Республика"
+ TOM_die_ADJ:0 "Российск"
+
+ NOV_dead:0 "Сибирский корпоративный округ"
+ NOV_dead_DEF:0 "Сибирский корпоративный округ"
+ NOV_dead_ADJ:0 "Российск"
+
+ ALT_die:0 "Алтайское Государство"
+ ALT_die_DEF:0 "Алтайское Государство"
+ ALT_die_ADJ:0 "Алтайск"
+
+ SVR_dead:0 "Уральское военное правительство"
+ SVR_dead_DEF:0 "Уральское военное правительство"
+ SVR_dead_ADJ:0 "Российск"
+
+ FAV_dead:0 "Ямало-Ненецкая Федерация"
+ FAV_dead_DEF:0 "Ямало-Ненецкая Федерация"
+ FAV_dead_ADJ:0 "Ненецк"
+
+ URL_die:0 "Идель-Уральская Конфедерация"
+ URL_die_DEF:0 "Идель-Уральская Конфедерация"
+ URL_die_ADJ:0 "Татарск"
+
+ YGR_dead:0 "Диархия Ханты-Мансийска"
+ YGR_dead_DEF:0 "Диархия Ханты-Мансийска"
+ YGR_dead_ADJ:0 "Обско-угорск"
+
+ KRS_dead:0 "Содружество Хакасии"
+ KRS_dead_DEF:0 "Содружество Хакасии"
+ KRS_dead_ADJ:0 "Хакасийск"
+
+ AMR_die:0 "Свободное Государство Чукотка"
+ AMR_die_DEF:0 "Свободное Государство Чукотка"
+ AMR_die_ADJ:0 "Чукотск"
+
+ KMC_die:0 "Корякская Национальная Республика"
+ KMC_die_DEF:0 "Корякская Национальная Республика"
+ KMC_die_ADJ:0 "Корякск"
+
+ BRY_die:0 "Союз Бурятии"
+ BRY_die_DEF:0 "Союз Бурятии"
+ BRY_die_ADJ:0 "Бурятск"
+
+ MAG_die:0 "Забайкальские национальные синдикаты"
+ MAG_die_DEF:0 "Забайкальские национальные синдикаты"
+ MAG_die_ADJ:0 "Забайкальск"
+ 
+ YAK_die:0 "Корпоративное Государство Саха"
+ YAK_die_DEF:0 "Корпоративное Государство Саха"
+ YAK_die_ADJ:0 "Сахасск"
+
+ PRC_die:0 "Республика Тыва"
+ PRC_die_DEF:0 "Республика Тыва"
+ PRC_die_ADJ:0 "Тувинск"
+
+ CHT_die:0 "Государство Эвенкия"
+ CHT_die_DEF:0 "Государство Эвенкия"
+ CHT_die_ADJ:0 "Эвенск"
+ 
+ SBA_die:0 "Долганское Государство Таймырия"
+ SBA_die_DEF:0 "Долганское Государство Таймырия"
+ SBA_die_ADJ:0 "Долганск"
+ 
+ KYR_AFG:0 "Кыргызская администрация"
+ KYR_AFG_DEF:0 "Временная афганская администрация Кыргызстана"
+ TAJ_AFG:0 "Таджикская администрация"
+ TAJ_AFG_DEF:0 "Временная афганская администрация Таджикистана"
+ UZB_AFG:0 "Узбекская администрация"
+ UZB_AFG_DEF:0 "Временная афганская администрация Узбекистана"
+ TRK_AFG:0 "Туркменская администрация"
+ TRK_AFG_DEF:0 "Временная афганская администрация Туркменистана"
+
+ # Peace Deals - Novosibirsk
+ MOS_Novosibirsk:0 "Западно-Российская зона восстановления"
+ MOS_Novosibirsk_DEF:0 "Западно-Российская зона восстановления"
+ MOS_Novosibirsk_ADJ:0 "Западно-российск"
+
+ VLG_Novosibirsk:0 "Администрация восстановления Поволжья"
+ VLG_Novosibirsk_DEF:0 "Администрация восстановления Поволжья"
+ VLG_Novosibirsk_ADJ:0 "Поволжско-немецк"
+
+ PET_Novosibirsk:0 "Администрация восстановления Петрограда"
+ PET_Novosibirsk_DEF:0 "Администрация восстановления Петрограда"
+ PET_Novosibirsk_ADJ:0 "Балтийско-немецк"
+
+ #CZE_Novosibirsk:0 "Чешская зона восстановления"
+ #CZE_Novosibirsk_DEF:0 "Чешская зона восстановления"
+ #CZE_Novosibirsk_ADJ:0 "Чешск"
+
+ #SLO_Novosibirsk:0 "Словацкая оккупационная зона"
+ #SLO_Novosibirsk_DEF:0 "Российский Военный Округ Словакия"
+ #SLO_Novosibirsk_ADJ:0 "Словацк"
+
+ #HOL_Novosibirsk:0 "Голландская оккупационная зона"
+ #HOL_Novosibirsk_DEF:0 "Российский Военный Округ Нидерланды"
+ #HOL_Novosibirsk_ADJ:0 "Голландск"
+
+ #DEN_Novosibirsk:0 "Датская оккупационная зона"
+ #DEN_Novosibirsk_DEF:0 "Российский военный округ Дания"
+ #DEN_Novosibirsk_ADJ:0 "Датск"
+
+ #GER_Novosibirsk:0 "Всероссийская Военная Администрация Германии"
+ #GER_Novosibirsk_DEF:0 "Всероссийская Военная Администрация Германии"
+ #GER_Novosibirsk_ADJ:0 "Немецк"
+
+ #AUS_Novosibirsk:0 "Австрийская оккупационная зона"
+ #AUS_Novosibirsk_DEF:0 "Российский Военный Округ Австрия"
+ #AUS_Novosibirsk_ADJ:0 "Австрийск"
+
+ BLR_free:0 "Республика Беларусь"
+ BLR_free_DEF:0 "Республика Беларусь"
+ BLR_free_ADJ:0 "Белорусск"
+
+ #OKB_NOVcollab:0 "Свободный город Санкт-Петербург"
+ #OKB_NOVcollab_DEF:0 "Свободный немецкий город Санкт-Петербург"
+ #OKB_NOVcollab_ADJ:0 "Санкт-Петербургск"
+
+ #VLG_PAVcollab:0 "Республика Поволжье"
+ #VLG_PAVcollab_DEF:0 "Федеративная Республика Поволжье"
+ #VLG_PAVcollab_ADJ:0 "Поволжско-немецк"
+
+ #GOT_PAVcollab:0 "Конфедерация Готенланд"
+ #GOT_PAVcollab_DEF:0 "Конфедерация Готенланд"
+ #GOT_PAVcollab_ADJ:0 "Готск"
+
+ KOL_VLD:0 "Зона реинтеграции Дальнего Востока"
+ KOL_VLD_DEF:0 "Зона реинтеграции Дальнего Востока"
+ KOL_VLD_ADJ:0 "Дальневосточн"
+
+ #SR_Manchuria:0 "Русско-китайская Маньчжурия"
+ #SR_Manchuria_DEF:0 "Русско-китайское переходное правительство Маньчжурии и Приморья"
+ #SR_Manchuria_ADJ:0 "Дальневосточн"
+
+ #RUS_Manchuria:0 "Харбин и Дальний"
+ #RUS_Manchuria_DEF:0 "Русско-китайское переходное правительство Маньчжурии и Приморья"
+ #RUS_Manchuria_ADJ:0 "Русско-китайск."
+
+ #RUS_Manchuria_communist:0 "Харбин и Дальний"
+ #RUS_Manchuria_communist_DEF:0 "Советско-китайское переходное правительство Маньчжурии и Приморья"
+ #RUS_Manchuria_communist_ADJ:0 "Советско-китайск."
+
+ #CHI_Vladivostok:0 "Владивосток"
+ #CHI_Vladivostok_DEF:0 "Город Владивосток"
+ #CHI_Vladivostok_ADJ:0 "Дальневосточн."
+
+ #CHI_Vladivostok_communist:0 "Владивосток"
+ #CHI_Vladivostok_communist_DEF:0 "Автономный город Владивосток"
+ #CHI_Vladivostok_communist_ADJ:0 "Дальневосточн."
+
+ #CHI_Primorye:0 "Чжэндун"
+ #CHI_Primorye_DEF:0 "Чжэндунско-российский автономный округ"
+ #CHI_Primorye_ADJ:0 "Русско-китайск."
+
+ #CHI_Primorye_communist:0 "Дунхай"
+ #CHI_Primorye_communist_DEF:0 "Дунхайско-советский автономный округ"
+ #CHI_Primorye_communist_ADJ:0 "Русско-китайск."
+
+ #SR_Manchuria_paternalism_short:0 "Региональное правительство"
+ #SR_Manchuria_paternalism_long:0 "Региональное правительство"
+
+ #SR_Manchuria_communist_short:0 "ВКП/КПК"
+ #SR_Manchuria_communist_long:0 "Всесоюзная коммунистическая партия/Коммунистическая партия Китая"
+
+ #SR_Manchuria_SinoRussian_long:0 "Мобильные казармы Верховного командования Дунбэй/Переходное правительство Дальнего Востока"
+ #SR_Manchuria_SinoRussian_short:0 "МКВКД/ППДВ"
+
+ #XSM_CHI:0 "Западный Китай"
+ #XSM_CHI_DEF:0 "Свободная Республика Западный Китай"
+ #XSM_CHI_ADJ:0 "Китайск"
+
+ CAU_NOVcollaboarator:0 "Кавказская Федерация"
+ CAU_NOVcollaboarator_DEF:0 "Кавказская Федерация"
+ CAU_NOVcollaboarator_ADJ:0 "Кавказск"
+
+ # Willy Brandt Returns
+ GER_BrandtFreiheit:0 "Федеративная Республика Германия"
+ GER_BrandtFreiheit_DEF:0 "Федеративная Республика Германия"
+ GER_BrandtFreiheit_ADJ:0 "Немецк"
+
+ CZE_Frehiet:0 "Чешская Республика"
+ CZE_Frehiet_DEF:0 "Чешская Республика"
+ CZE_Frehiet_ADJ:0 "Чешск"
+
+ # Kazakhstan Collapse
+
+ KAZ_collapse:0 "Советский Казахстан"
+ KAZ_collapse_DEF:0 "Казахская Советская Социалистическая Республика"
+ KAZ_collapse_ADJ:0 "Казахск"
+
+ # Poland
+ #NPL_Russian_Democracy:0 "Республика Новая Польша"
+ #NPL_Russian_Democracy_DEF:0 "Республика Новая Польша"
+ #NPL_Russian_Democracy_ADJ:0 "Польск."
+ 
+ POL_Uprising:0 "Армия Крайова"
+ POL_Uprising_DEF:0 "Армия Крайова"
+ POL_Uprising_ADJ:0 "Польск"
+
+ POL_Republic:0 "Республика Польша"
+ POL_Republic_DEF:0 "Третья Польская Республика"
+ POL_Republic_ADJ:0 "Польск"
+
+ POL_Brandt:0 "Польский комитет реконструкции"
+ POL_Brandt_DEF:0 "Польский комитет реконструкции"
+ POL_Brandt_ADJ:0 "Польск"
+
+ ### USA 76 ###
+ #USA_Hall:0 "Союз Социалистических Штатов Америки"
+ #USA_Hall_DEF:0 "Союз Социалистических Штатов Америки"
+ #USA_Hall_ADJ:0 "Американск"
+
+ #USA_Yockey:0 "Американская империя"
+ #USA_Yockey_DEF:0 "Американская империя"
+ #USA_Yockey_ADJ:0 "Амеркианск"
+
+ #USA_Pierce:0 "Американское государство"
+ #USA_Pierce_DEF:0 "Американское государство"
+ #USA_Pierce_ADJ:0 "Американск"
+
+ #USA_Weathermen:0 "Союз Американских Советов"
+ #USA_Weathermen_DEF:0 "Союз Американских Советов"
+ #USA_Weathermen_ADJ:0 "Американск"
+
+ ### GER ###
+ GER_Waldheim:0 "Великогерманский Рейх"
+ GER_Waldheim_DEF:0 "Великогерманский Рейх германской нации"
+ GER_Waldheim_ADJ:0 "Немецк"
+
+ #GER_normal:0 "Великогерманский Рейх"
+ #GER_normal_DEF:0 "Великогерманский Рейх германской нации"
+ #GER_normal_ADJ:0 "Немецк"
+
+ GER_GO4:0 "Германский Рейх"
+ GER_GO4_DEF:0 "Германский Рейх"
+ GER_GO4_ADJ:0 "Немецк"
+
+ MCW_bormann:0 "Военный округ Руссланд"
+ MCW_bormann_DEF:0 "Военный округ Руссланд"
+
+ MCW_speer:0 "Бундесреспублика Руссланд"
+ MCW_speer_DEF:0 "Бундесреспублика Руссланд"
+
+ ROM_REPUBLIC:0 "Республика Румыния"
+ ROM_REPUBLIC_DEF:0 "Республика Румыния"
+ ROM_REPUBLIC_ADJ:0 "Румынск"
+ 
+ HUN_ARROW:0 "Венгерское государство"
+ HUN_ARROW_DEF:0 "Венгерское государство"
+
+ HUN_SFK:0 "Венгерское государство"
+ HUN_SFK_DEF:0 "Венгерское государство"
+
+ QIN_GER_Funny:0 "Империя Гюнтера-Фелингера"
+ QIN_GER_Funny_DEF:0 "Империя Гюнтера-Фелингера"
+ 
+ USA_you_really_fucked_up_again:0 "Национальное Государство Анклав"
+ USA_you_really_fucked_up_again_DEF:0 "Национальное Государство Анклав"
+
+ RPR_Transtional_commie:0 "Объединенный Ротфронт"
+ RPR_Transtional_commie_DEF:0 "Объединенный Ротфронт"
+ RPR_Transtional_commie_ADJ:0 "Немецк"
+
+ RPR_Rudi_ending:0 "Германская Социалистическая Республика"
+ RPR_Rudi_ending_DEF:0 "Германская Социалистическая Республика"
+ RPR_Rudi_ending_ADJ:0 "Немецк"
+
+ RPR_Hoffman_ending:0 "Немецкая рабочая республика"
+ RPR_Hoffman_ending_DEF:0 "Немецкая рабочая республика"
+ RPR_Hoffman_ending_ADJ:0 "Немецк"
+
+ RPR_Ernst_ending:0 "Народная Республика Германия"
+ RPR_Ernst_ending_DEF:0 "Народная Республика Германия"
+ RPR_Ernst_ending_ADJ:0 "Немецк"
+
+ SFK_Unify:0 "Немецкий Добровольческий корпус"
+ SFK_Unify_DEF:0 "Немецкий Добровольческий корпус"
+ SFK_Unify_ADJ:0 "Немецк"
+
+ ### DEN ###
+ DEN_2GCW_dem:0 "Королевство Дания"
+ DEN_2GCW_dem_DEF:0 "Королевство Дания"
+
+ DEN_2GCW_commie:0 "Датская Народная Республика"
+ DEN_2GCW_commie_DEF:0 "Народная Республика Дания"
+
+ ### HOL ###
+ HOL_commie:0 "Нидерланды"
+ HOL_commie_DEF:0 "Народная Республика Нидерланды"
+
+ HOL_Republic:0 "Нидерланды"
+ HOL_Republic_DEF:0 "Республика Нидерланды"
+ 
+ HOL_Kingdom_real:0 "Нидерланды"
+ HOL_Kingdom_real_DEF:0 "Королевство Нидерландов"
+
+ HOL_State_natsoc:0 "Голландское Государство"
+ HOL_State_natsoc_DEF:0 "Голландское Государство"
+
+ ### GLC ###
+
+ GLC_commie:0 "Французская Народная Республика"
+ GLC_commie_DEF:0 "Французская Народная Республика"
+
+ GLC_dem:0 "Французская Республика"
+ GLC_dem_DEF:0 "Французская Республика"
+ 
+ ### Reconstruction Generics ### made by me the fabulous Danish Gamer* :temer:
+ ### * And Hek, Voyteck, Emmy, Kappy and Leoj
+
+ ### Communists ###
+ OKB_generic_commie:0 "Ленинградская область"
+ UPO_generic_commie:0 "Прибалтийская СФСР"
+ CAU_generic_commie:0 "Закавказская СФСР"
+ CRI_generic_commie:0 "Крымская АССР"
+ UKR_generic_commie:0 "Украинская ССР"
+ BLR_generic_commie:0 "Белорусская ССР"
+
+ OKB_generic_commie_DEF:0 "Ленинградская область"
+ UPO_generic_commie_DEF:0 "Прибалтийская Советская Федеративная Социалистическая Республика"
+ CAU_generic_commie_DEF:0 "Закавказская Федеративная Советская Социалистическая Республика"
+ CRI_generic_commie_DEF:0 "Крымская Автономная Советская Социалистическая Республика"
+ UKR_generic_commie_DEF:0 "Украинская Советская Социалистическая Республика"
+ BLR_generic_commie_DEF:0 "Белорусская Советская Социалистическая Республика"
+
+ OKB_generic_commie_ADJ:0 "Советск"
+ UPO_generic_commie_ADJ:0 "Советск"
+ CAU_generic_commie_ADJ:0 "Советск"
+ CRI_generic_commie_ADJ:0 "Советск"
+ UKR_generic_commie_ADJ:0 "Советск"
+ BLR_generic_commie_ADJ:0 "Советск"
+
+ ### Democrats ###
+ OKB_generic_democratic:0 "Петроградская область"
+ UPO_generic_democratic:0 "Балтийская Федеративная Республика"
+ CAU_generic_democratic:0 "Закавказская федерация"
+ CRI_generic_democratic:0 "Республика Крым"
+ UKR_generic_democratic:0 "Республика Украина"
+ BLR_generic_democratic:0 "Республика Беларусь"
+
+ OKB_generic_democratic_DEF:0 "Петроградская область"
+ UPO_generic_democratic_DEF:0 "Балтийская Федеративная Республика"
+ CAU_generic_democratic_DEF:0 "Закавказская федерация"
+ CRI_generic_democratic_DEF:0 "Республика Крым"
+ UKR_generic_democratic_DEF:0 "Республика Украина"
+ BLR_generic_democratic_DEF:0 "Республика Беларусь"
+
+ OKB_generic_democratic_ADJ:0 "Российск"
+ UPO_generic_democratic_ADJ:0 "Балтийск"
+ CAU_generic_democratic_ADJ:0 "Закавказск"
+ CRI_generic_democratic_ADJ:0 "Крымск"
+ UKR_generic_democratic_ADJ:0 "Украинск"
+ BLR_generic_democratic_ADJ:0 "Белорусск"
+
+ ### authoritarian ### 
+ OKB_generic_auth:0 "Временное правительство Петрограда"
+ UPO_generic_auth:0 "Временное правительство Прибалтики"
+ CAU_generic_auth:0 "Временное правительство Кавказа"
+ CRI_generic_auth:0 "Временное правительство Крыма"
+ UKR_generic_auth:0 "Временное правительство Украины"
+ BLR_generic_auth:0 "Временное правительство Белоруссии"
+
+ OKB_generic_auth_DEF:0 "Временное правительство Петрограда"
+ UPO_generic_auth_DEF:0 "Временное правительство Прибалтики"
+ CAU_generic_auth_DEF:0 "Временное правительство Кавказа"
+ CRI_generic_auth_DEF:0 "Временное правительство Крыма"
+ UKR_generic_auth_DEF:0 "Временное правительство Украины"
+ BLR_generic_auth_DEF:0 "Временное правительство Белоруссии"
+
+ OKB_generic_auth_ADJ:0 "Российск"
+ UPO_generic_auth_ADJ:0 "Балтийск"
+ CAU_generic_auth_ADJ:0 "Кавказск"
+ CRI_generic_auth_ADJ:0 "Крымск"
+ UKR_generic_auth_ADJ:0 "Украинск"
+ BLR_generic_auth_ADJ:0 "Белорусск"
+
+ ### fascist ###
+ OKB_generic_fascism:0 "Петроградское губернаторство"
+ UPO_generic_fascism:0 "Прибалтийское губернаторство"
+ CAU_generic_fascism:0 "Кавказское губернаторство"
+ CRI_generic_fascism:0 "Крымское губернаторство"
+ UKR_generic_fascism:0 "Украинское губернаторство"
+ BLR_generic_fascism:0 "Белорусское губернаторство"
+
+ OKB_generic_fascism_DEF:0 "Всероссийское правительство Петрограда"
+ UPO_generic_fascism_DEF:0 "Всероссийское правительство Прибалтики"
+ CAU_generic_fascism_DEF:0 "Всероссийское правительство Кавказа"
+ CRI_generic_fascism_DEF:0 "Всероссийское правительство Крыма"
+ UKR_generic_fascism_DEF:0 "Всероссийское правительство Украины"
+ BLR_generic_fascism_DEF:0 "Всероссийское правительство Белоруссии"
+
+ OKB_generic_fascism_ADJ:0 "Российск"
+ UPO_generic_fascism_ADJ:0 "Балтийск"
+ CAU_generic_fascism_ADJ:0 "Кавказск"
+ CRI_generic_fascism_ADJ:0 "Крымск"
+ UKR_generic_fascism_ADJ:0 "Украинск"
+ BLR_generic_fascism_ADJ:0 "Белорусск"
+
+ ### Aryan Brotherhood ###
+ OKB_aryan:0 "Милитаярсберсерк Сайнт Пейтерсберг"
+ UPO_aryan:0 "Рейкхскомишариат Балтиш"
+ CAU_aryan:0 "Рейкхспротектор Каукасус"
+ CRI_aryan:0 "Рейкхскомишариат Крим"
+ UKR_aryan:0 "Рейкхскомишариат Украйн"
+ BLR_aryan:0 "Рейкхскомишариат Вейсрусланд"
+
+ OKB_aryan_DEF:0 "Милитаярсберсерк Сайнт Пейтерсберг"
+ UPO_aryan_DEF:0 "Рейкхскомишариат Балтиш"
+ CAU_aryan_DEF:0 "Рейкхспротектор Каукасус"
+ CRI_aryan_DEF:0 "Рейкхскомишариат Крим"
+ UKR_aryan_DEF:0 "Рейкхскомишариат Украйн"
+ BLR_aryan_DEF:0 "Рейкхскомишариат Вейсрусланд"
+ 
+ OKB_aryan_ADJ:0 "Дейтчск"
+ UPO_aryan_ADJ:0 "Балтишск"
+ CAU_aryan_ADJ:0 "Каукасуск"
+ CRI_aryan_ADJ:0 "Кримск"
+ UKR_aryan_ADJ:0 "Украйнишск"
+ BLR_aryan_ADJ:0 "Вейсрусск"
+ 
+ ### hyperborea ### 
+ OKB_hyperborean:0 "Владение Перуна"
+ UPO_hyperborean:0 "Владение Перкунаса"
+ CAU_hyperborean:0 "Владение Хора"
+ CRI_hyperborean:0 "Владение Сварога"
+ UKR_hyperborean:0 "Владение Матери-Земли"
+ BLR_hyperborean:0 "Владение Даждьбога"
+
+ OKB_hyperborean_DEF:0 "Владение Перуна над Петроградом"
+ UPO_hyperborean_DEF:0 "Владение Перкунаса над Прибалтикой"
+ CAU_hyperborean_DEF:0 "Владение Хора над Кавказом"
+ CRI_hyperborean_DEF:0 "Владение Сварога над Крымом"
+ UKR_hyperborean_DEF:0 "Владение Матери-Земли над Украиной"
+ BLR_hyperborean_DEF:0 "Владение Даждьбога над Беларусью"
+
+ OKB_hyperborean_ADJ:0 "Гиперборейск"
+ UPO_hyperborean_ADJ:0 "Балтийск"
+ CAU_hyperborean_ADJ:0 "Кавказск"
+ CRI_hyperborean_ADJ:0 "Крымск"
+ UKR_hyperborean_ADJ:0 "Украинск"
+ BLR_hyperborean_ADJ:0 "Белорусск"
+
+ ### Monarchist ###
+ OKB_generic_monarchist:0 "Градоначальство Санкт-Петербурга"
+ UPO_generic_monarchist:0 "Великое балтийское герцогство"
+ CAU_generic_monarchist:0 "Реинтеграционная губерния Кавказа"
+ CRI_generic_monarchist:0 "Генерал-губернаторство Крыма"
+ UKR_generic_monarchist:0 "Реинтеграционная губерния Украины"
+ BLR_generic_monarchist:0 "Реинтеграционная губерния Белороссии"
+
+ OKB_generic_monarchist_DEF:0 "Градоначальство Санкт-Петербурга"
+ UPO_generic_monarchist_DEF:0 "Великое балтийское герцогство"
+ CAU_generic_monarchist_DEF:0 "Реинтеграционная губерния Кавказа"
+ CRI_generic_monarchist_DEF:0 "Генерал-губернаторство Крыма"
+ UKR_generic_monarchist_DEF:0 "Реинтеграционная губерния Украины"
+ BLR_generic_monarchist_DEF:0 "Реинтеграционная губерния Белороссии"
+
+ OKB_generic_monarchist_ADJ:0 "Русск"
+ UPO_generic_monarchist_ADJ:0 "Балтийск"
+ CAU_generic_monarchist_ADJ:0 "Кавказск"
+ CRI_generic_monarchist_ADJ:0 "Крымск"
+ UKR_generic_monarchist_ADJ:0 "Украинск"
+ BLR_generic_monarchist_ADJ:0 "Белорусск"
+ 
+ ### Kemerovo ###
+ OKB_kemerovo:0 "Наследная земля Рюриковичей"
+ UPO_kemerovo:0 "Балтийские княжества"
+ CAU_kemerovo:0 "Объединенные княжества Кавказа"
+ CRI_kemerovo:0 "Крымский удел"
+ UKR_kemerovo:0 "Великое княжество Киевское"
+ BLR_kemerovo:0 "Королевство Белая Рутения"
+
+ OKB_kemerovo_DEF:0 "Наследная земля Рюриковичей"
+ UPO_kemerovo_DEF:0 "Балтийские княжества"
+ CAU_kemerovo_DEF:0 "Объединенные княжества Кавказа"
+ CRI_kemerovo_DEF:0 "Крымский удел"
+ UKR_kemerovo_DEF:0 "Великое княжество Киевское"
+ BLR_kemerovo_DEF:0 "Королевство Белая Рутения"
+
+ OKB_kemerovo_ADJ:0 "Российск"
+ UPO_kemerovo_ADJ:0 "Балтийск"
+ CAU_kemerovo_ADJ:0 "Кавказск"
+ CRI_kemerovo_ADJ:0 "Крымск"
+ UKR_kemerovo_ADJ:0 "Украинск"
+ BLR_kemerovo_ADJ:0 "Рутенск"
+
+ ### Serov Komi ###
+ OKB_ordosocialist:0 "Ордосоциалистическая республика Серовоград"
+ UPO_ordosocialist:0 "Балтийская Ордосоциалистическая Республика"
+ CAU_ordosocialist:0 "Ордосоциалистическая Республика Закавказья"
+ CRI_ordosocialist:0 "Ордосоциалистическая Республика Крым"
+ UKR_ordosocialist:0 "Ордосоциалистическая Республика Малороссия"
+ BLR_ordosocialist:0 "Ордосоциалистическая Республика Белороссия"
+ 
+ OKB_ordosocialist_DEF:0 "Ордосоциалистическая республика Серовоград"
+ UPO_ordosocialist_DEF:0 "Балтийская Ордосоциалистическая Республика"
+ CAU_ordosocialist_DEF:0 "Ордосоциалистическая Республика Закавказья"
+ CRI_ordosocialist_DEF:0 "Ордосоциалистическая Республика Крым"
+ UKR_ordosocialist_DEF:0 "Ордосоциалистическая Республика Малороссия"
+ BLR_ordosocialist_DEF:0 "Ордосоциалистическая Республика Белороссия"
+
+ OKB_ordosocialist_ADJ:0 "Русск"
+ UPO_ordosocialist_ADJ:0 "Балтийск"
+ CAU_ordosocialist_ADJ:0 "Закавказск"
+ CRI_ordosocialist_ADJ:0 "Русск"
+ UKR_ordosocialist_ADJ:0 "Малоросск"
+ BLR_ordosocialist_ADJ:0 "Белоросск"
+
+ ### Eurasia ###
+ OKB_eurasian:0 "Интеграционный комитет Петрограда"
+ UPO_eurasian:0 "Балтийский интеграционный комитет"
+ CAU_eurasian:0 "Закавказский интеграционный комитет"
+ CRI_eurasian:0 "Интеграционный комитет Крыма"
+ UKR_eurasian:0 "Украинский интеграционный комитет"
+ BLR_eurasian:0 "Белорусский интеграционный комитет"
+ 
+ OKB_eurasian_DEF:0 "Интеграционный комитет Петрограда"
+ UPO_eurasian_DEF:0 "Балтийский интеграционный комитет"
+ CAU_eurasian_DEF:0 "Закавказский интеграционный комитет"
+ CRI_eurasian_DEF:0 "Интеграционный комитет Крыма"
+ UKR_eurasian_DEF:0 "Украинский интеграционный комитет"
+ BLR_eurasian_DEF:0 "Белорусский интеграционный комитет"
+
+ OKB_eurasian_ADJ:0 "Русск"
+ UPO_eurasian_ADJ:0 "Балтийск"
+ CAU_eurasian_ADJ:0 "Закавказск"
+ CRI_eurasian_ADJ:0 "Крымск"
+ UKR_eurasian_ADJ:0 "Украинск"
+ BLR_eurasian_ADJ:0 "Белорусск"
+ 
+ ### SBA Despotism ###
+ OKB_anarcho_despotism:0 "Комитет освобождения Петрограда"
+ UPO_anarcho_despotism:0 "Комитет освобождения Прибалтики"
+ CAU_anarcho_despotism:0 "Комитет освобождения Закавказья"
+ CRI_anarcho_despotism:0 "Комитет освобождения Крыма"
+ UKR_anarcho_despotism:0 "Комитет освобождения Украины"
+ BLR_anarcho_despotism:0 "Комитет освобождения Белоруссии"
+
+ OKB_anarcho_despotism_DEF:0 "Комитет освобождения Петрограда"
+ UPO_anarcho_despotism_DEF:0 "Комитет освобождения Прибалтики"
+ CAU_anarcho_despotism_DEF:0 "Комитет освобождения Закавказья"
+ CRI_anarcho_despotism_DEF:0 "Комитет освобождения Крыма"
+ UKR_anarcho_despotism_DEF:0 "Комитет освобождения Украины"
+ BLR_anarcho_despotism_DEF:0 "Комитет освобождения Белоруссии"
+
+ OKB_anarcho_despotism_ADJ:0 "Русск"
+ UPO_anarcho_despotism_ADJ:0 "Балтийск"
+ CAU_anarcho_despotism_ADJ:0 "Закавказск"
+ CRI_anarcho_despotism_ADJ:0 "Крымск"
+ UKR_anarcho_despotism_ADJ:0 "Украинск"
+ BLR_anarcho_despotism_ADJ:0 "Белорусск"
+
+ ### SBA Socialism ###
+ OKB_anarcho_socialism:0 "Освобожденная территория Петрограда"
+ UPO_anarcho_socialism:0 "Освобожденная территория Прибалтики"
+ CAU_anarcho_socialism:0 "Освобожденная территория Кавказа"
+ CRI_anarcho_socialism:0 "Освобожденная территория Крыма"
+ UKR_anarcho_socialism:0 "Освобожденная территория Украины"
+ BLR_anarcho_socialism:0 "Освобожденная территория Беларуси"
+
+ OKB_anarcho_socialism_DEF:0 "Освобожденная территория Петрограда"
+ UPO_anarcho_socialism_DEF:0 "Освобожденная территория Прибалтики"
+ CAU_anarcho_socialism_DEF:0 "Освобожденная территория Кавказа"
+ CRI_anarcho_socialism_DEF:0 "Освобожденная территория Крыма"
+ UKR_anarcho_socialism_DEF:0 "Освобожденная территория Украины"
+ BLR_anarcho_socialism_DEF:0 "Освобожденная территория Беларуси"
+
+ OKB_anarcho_socialism_ADJ:0 "Русск"
+ UPO_anarcho_socialism_ADJ:0 "Балтийск"
+ CAU_anarcho_socialism_ADJ:0 "Кавказск"
+ CRI_anarcho_socialism_ADJ:0 "Крымск"
+ UKR_anarcho_socialism_ADJ:0 "Украинск"
+ BLR_anarcho_socialism_ADJ:0 "Белорусск"
+
+ # WERBALLS #
+
+ OKB_werbell:0 "Военное управление Санкт-Петербурга"
+ UPO_werbell:0 "Военное управление Прибалтики"
+ CAU_werbell:0 "Военное управление Кавказа"
+ CRI_werbell:0 "Военное управление Крыма"
+ UKR_werbell:0 "Военное управление Украины"
+ BLR_werbell:0 "Военное управление Белоруссии"
+
+ OKB_werbell_DEF:0 "Военное управление Санкт-Петербурга"
+ UPO_werbell_DEF:0 "Военное управление Прибалтики"
+ CAU_werbell_DEF:0 "Военное управление Кавказа"
+ CRI_werbell_DEF:0 "Военное управление Крыма"
+ UKR_werbell_DEF:0 "Военное управление Украины"
+ BLR_werbell_DEF:0 "Военное управление Белоруссии"
+
+ OKB_werbell_ADJ:0 "Русск"
+ UPO_werbell_ADJ:0 "Балтийск"
+ CAU_werbell_ADJ:0 "Кавказск"
+ CRI_werbell_ADJ:0 "Крымск"
+ UKR_werbell_ADJ:0 "Украинск"
+ BLR_werbell_ADJ:0 "Белорусск"

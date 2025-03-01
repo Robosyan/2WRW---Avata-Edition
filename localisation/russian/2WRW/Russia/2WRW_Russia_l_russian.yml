@@ -1,0 +1,287 @@
+﻿l_russian:
+
+ # Second West Russian War #
+ RUS_W_tt:0 "§YПобеда!§!"
+ RUS_nukes_complete_the_weapon:0 "Завершить оружие"
+ RUS_nukes_complete_the_weapon_tt:0 "§Y[RUS.GetNameDefCap] станет ядерной державой и займёт достойное место в качестве Глобальной сверхдержавы.§!"
+
+ #Coring
+ RUS_coring_integrate_moscow:0 "Интеграция §YМосквы§!"
+ RUS_coring_integrate_klin:0 "Интеграция §YКлина§!"
+ RUS_coring_integrate_vladimir:0 "Интеграция §YВладимира§!"
+ RUS_coring_integrate_volkhov:0 "Интеграция §YВолхова§!"
+ RUS_coring_integrate_petrograd:0 "Интеграция §Y[195.GetName]§!"
+ RUS_coring_integrate_tver:0 "Интеграция §YТвери§!"
+ RUS_coring_integrate_novgorod:0 "Интеграция §YНовгорода§!"
+ RUS_coring_integrate_pskov:0 "Интеграция §YПскова§!"
+ RUS_coring_integrate_rzhev:0 "Интеграция §YРжева§!"
+ RUS_coring_integrate_yaroslavl:0 "Интеграция §YЯрославля§!"
+ RUS_coring_integrate_smolensk:0 "Интеграция §YСмоленска§!"
+ RUS_coring_integrate_roslavl:0 "Интеграция §YБрянска§!"
+ RUS_coring_integrate_tula:0 "Интеграция §YТулы§!"
+ RUS_coring_integrate_kursk:0 "Интеграция §YКурска§!"
+ RUS_coring_integrate_ryazan:0 "Интеграция §YРязани§!"
+ RUS_coring_integrate_saratov:0 "Интеграция §YСаратова§!"
+ RUS_coring_integrate_voronezh:0 "Интеграция §YВоронежа§!"
+ RUS_coring_integrate_millerovo:0 "Интеграция §YМиллерово§!"
+ RUS_coring_integrate_volgograd:0 "Интеграция §Y[243.GetName]а§!"
+ RUS_coring_integrate_gomel:0 "Интеграция §YГомеля§!"
+ RUS_coring_integrate_oryol:0 "Интеграция §YОрла§!"
+ RUS_coring_integrate_bryansk:0 "Интеграция §YБрянска§!"
+ RUS_coring_integrate_astrakhan:0 "Интеграция §YАстрахани§!"
+ RUS_coring_integrate_elista:0 "Интеграция §YЭлисты§!"
+ RUS_coring_integrate_penza:0 "Интеграция §YПензы§!"
+ RUS_coring_integrate_tambov:0 "Интеграция §YТамбова§!"
+
+ #Central Asia#
+ RUS_coring_integrate_kyrgyzstan:0 "Интеграция §YКиргизии§!"
+ RUS_coring_integrate_tajikistan:0 "Интеграция §YТаджикистана§!"
+ RUS_coring_integrate_uzbekistan:0 "Интеграция §YУзбекистана§!"
+ RUS_coring_integrate_turkmenistan:0 "Интеграция §YТуркменистана§!"
+
+ #Outer Manchuria#
+ RUS_coring_integrate_birobidzhan:0 "Интеграция §YБиробиджана§!"
+ RUS_coring_integrate_khabarovsk:0 "Интеграция §YХабаровска§!"
+ RUS_coring_integrate_vladivostok:0 "Интеграция §YВладивостока§!"
+
+ #Ostland#
+ RUS_coring_integrate_estonia:0 "Интеграция §YЭстонии§!"
+ RUS_coring_integrate_latvia:0 "Интеграция §YЛатвии§!"
+ RUS_coring_integrate_courland:0 "Интеграция §YКурляндии§!"
+ RUS_coring_integrate_lithuania:0 "Интеграция §YЛитвы§!"
+ RUS_coring_integrate_minsk:0 "Интеграция §YМинска§!"
+ RUS_coring_integrate_vitebsk:0 "Интеграция §YВитебска§!"
+ RUS_coring_integrate_mogilev:0 "Интеграция §YМогилёва§!"
+ RUS_coring_integrate_grodno:0 "Интеграция §YГродно§!"
+ RUS_coring_integrate_brest:0 "Интеграция §YБреста§!"
+
+ #Caucusus#
+ RUS_coring_integrate_krasnodar:0 "Интеграция §YКраснодара§!"
+ RUS_coring_integrate_adygea:0 "Интеграция §YАдыгеи§!"
+ RUS_coring_integrate_avaria:0 "Интеграция §YАварии§!"
+ RUS_coring_integrate_azerbaijan:0 "Интеграция §YАзербайджана§!"
+ RUS_coring_integrate_georgia:0 "Интеграция §YГрузии§!"
+ RUS_coring_integrate_armenia:0 "Интеграция §YАрмении§!"
+ RUS_coring_integrate_batumi:0 "Интеграция §YБатуми§!"
+
+ #Misc#
+ RUS_coring_integrate_crimea:0 "Интеграция §YКрыма§!"
+ RUS_coring_integrate_west_mongolia:0 "Интеграция §YЗападной Монголии§!"
+
+ #Ukraine#
+ RUS_coring_integrate_rostov:0 "Интеграция §YРостова§!"
+ RUS_coring_integrate_kharkiv:0 "Интеграция §YХарькова§!"
+ RUS_coring_integrate_donetsk:0 "Интеграция §YДонецка§!"
+ RUS_coring_integrate_mykolaiv:0 "Интеграция §YНиколаева§!"
+ RUS_coring_integrate_gotenland:0 "Интеграция §YХерсона§!"
+ RUS_coring_integrate_kryvyi_rih:0 "Интеграция §YКривого Рога§!"
+ RUS_coring_integrate_kiev:0 "Интеграция §YКиева§!"
+ RUS_coring_integrate_volyn:0 "Интеграция §YВолыни§!"
+ RUS_coring_integrate_odesa:0 "Интеграция §YОдессы§!"
+
+ RUS_SWRW_category:0 "Вторая Западнорусская война"
+ RUS_intervention_category:0 "Международные действия России"
+ SWRW_novosibirsk_misc_category:0 "Российское глобальное вмешательство"
+
+ RUS_invade_reich:0 "Напасть на §RРейх§!"
+ RUS_invade_finland:0 "Напасть на §RФинляндию§!"
+ RUS_invade_armenia:0 "Вторгнуться в §RАрмению§!"
+ RUS_shukshin_invade_reich:0 "Федерация нападёт на §RПакт Единства§!"
+ RUS_pokryshkin_invade_reich:0 "Федерация нападёт на §RПакт Единства§!"
+ RUS_commence_great_trial:0 "Свершить §RВеликий Суд§!"
+ RUS_werbell_invade_reich:0 "СШР нападёт на §RПакт Единства§!"
+ RUS_intervention_in_central_asia:0 "Вторгнуться в §YЦентральную Азию§!"
+
+ RUS_reorganise_turkmenistan:0 "Реорганизовать §YТуркменистан§!"
+ RUS_reorganise_karakalpakstan:0 "Реорганизовать §YКаракалпакию§!"
+ RUS_reorganise_uzbekistan:0 "Реорганизовать §YУзбекистан§!"
+ RUS_reorganise_tajikistan:0 "Реорганизовать §YТаджикистан§!"
+ RUS_reorganise_kyrgyzstan:0 "Реорганизовать §YКиргизию§!"
+ RUS_shukshin_reorganise_central_asia:0 "Реорганизовать §YЦентральную Азию§!" 
+ RUS_national_unification:0 "§WРо§!§Bсс§!§Rия§! воссоединена!"
+ RUS_negotiate_for_vladivostok:0 "Переговоры по §YВладивостоку§!"
+ RUS_invade_kazakhstan:0 "Вторгнуться в §YКазахстан§!"
+ RUS_ally_kazakhstan:0 "Пригласить §YКазахстан§! в альянс"
+ RUS_integrate_kazakhstan_desc:0 "Мы будем работать с российскими лидерами на территории Казахстана, чтобы постепенно интегрировать этот регион в нашу страну. Этот процесс будет медленным, но не таким болезненным, каким он был бы без какой-либо местной помощи."
+ RUS_SWRW_End: "Вторая Западнорусская война закончилась"
+
+ NOV_novosibirsk_unification_shukshin:0 "Древо объединения Шукшина"
+
+ NOV_novosibirsk_war_preparation_shukshin:0 "Древо подготовки к войне"
+ NOV_novosibirsk_second_west_russian_war_shukshin:0 "Военное древо Шукшина"
+ NOV_novosibirsk_failure_shukshin:0 "Древо поражения Шукшина"
+ NOV_novosibirsk_victory_shukshin:0 "Древо победы Шукшина"
+
+ # National Reformation
+
+ NOV_the_national_reformation:0 "Национальная реформация"
+
+ # Custom Tooltips 
+
+ russian_culture_conversion_tt:0 "Эта земля вновь станет §Rрусской§!"
+
+ # Russian Category 
+
+ # Partisans 
+ RUS_partisans_decisions_category:0 "Поддержка партизанских формирований"
+ RUS_partisan_moskowien_decision:0 "Поддержать §Rпартизан Московии§!"
+ RUS_partisan_kaukasia_decision:0 "Поддержать §Rпартизан Кавказии§!"
+ RUS_partisan_ukraine_decision:0 "Поддержать §Rпартизан Украины§!"
+ RUS_partisan_ostland_decision:0 "Поддержать §Rпартизан Остланда§!"
+
+ RUS_recruit_stolbovo_decision:0 "Завербовать §Yстолбовских партизан§!"
+ RUS_recruit_volkhov_decision:0 "Завербовать §Yволховских партизан§!"
+ RUS_recruit_petrograd_decision:0 "Завербовать §Yпетроградских партизан§!"
+ RUS_recruit_luga_decision:0 "Завербовать §Yлужских партизан§!"
+ RUS_recruit_novgorod_decision:0 "Завербовать §Yновгородских партизан§!"
+ RUS_recruit_pskov_decision:0 "Завербовать §Yпсковских партизан§!"
+ RUS_recruit_ostrov_decision:0 "Завербовать §Yостровских партизан§!"
+ RUS_recruit_yaroslavl_decision:0 "Завербовать §Yярославских партизан§!"
+ RUS_recruit_tver_decision:0 "Завербовать §Yтверских партизан§!"
+ RUS_recruit_rzhev_decision:0 "Завербовать §Yржевских партизан§!"
+ RUS_recruit_ivanovo_decision:0 "Завербовать §Yивановских партизан§!"
+ RUS_recruit_north_moscow_decision:0 "Завербовать §Yсеверомосковских партизан§!"
+ RUS_recruit_moscow_decision:0 "Завербовать §Yмосковских партизан§!"
+ RUS_recruit_smolensk_decision:0 "Завербовать §Yсмоленских партизан§!"
+ RUS_recruit_penza_decision:0 "Завербовать §Yпензенских партизан§!"
+ RUS_recruit_ryazan_decision:0 "Завербовать §Yрязанских партизан§!"
+ RUS_recruit_tula_decision:0 "Завербовать §Yтульских партизан§!"
+ RUS_recruit_kaluga_decision:0 "Завербовать §Yкалужских партизан§!"
+ RUS_recruit_roslavl_decision:0 "Завербовать §Yрославских партизан§!"
+ RUS_recruit_homiel_decision:0 "Завербовать §Yгомельских партизан§!"
+ RUS_recruit_bryansk_decision:0 "Завербовать §Yбрянских партизан§!"
+ RUS_recruit_oryol_decision:0 "Завербовать §Yорловских партизан§!"
+ RUS_recruit_kursk_decision:0 "Завербовать §Yкурских партизан§!"
+ RUS_recruit_lipetsk_decision:0 "Завербовать §Yлипецких партизан§!"
+ RUS_recruit_tambov_decision:0 "Завербовать §Yтамбовских партизан§!"
+ RUS_recruit_saratov_decision:0 "Завербовать §Yсаратовских партизан§!"
+ RUS_recruit_pokrovsk_decision:0 "Завербовать §Yпокровских партизан§!"
+ RUS_recruit_belgorod_decision:0 "Завербовать §Yбелгородскох партизан§!"
+ RUS_recruit_voronezh_decision:0 "Завербовать §Yворонежских партизан§!"
+ RUS_recruit_mikhaylovka_decision:0 "Завербовать §Yмихайловских партизан§!"
+ RUS_recruit_millerovo_decision:0 "Завербовать §Yмиллеровских партизан§!"
+ RUS_recruit_volgograd_decision:0 "Завербовать §Yволгоградских партизан§!"
+ RUS_recruit_volgodonsk_decision:0 "Завербовать §Yволгодонских партизан§!"
+ RUS_recruit_elista_decision:0 "Завербовать §Yэлистенских партизан§!"
+ RUS_recruit_astrakhan_decision:0 "Завербовать §Yастраханских партизан§!"
+
+ RUS_partisans_decisions_category_desc:0 "\n\n\n\n"
+
+ RUS_intervention_in_iranian_civil_war:0 "Вмешательство в §Yгражданскую войну в Иране§!"
+
+ # Iran Ideas 
+
+ PER_russian_military_advisers:0 "Российские военные советники"
+
+ # The Mountain War 
+
+ #RUS_fourthpower.1.t:0 "Турция предлагает кавказские территории"
+ #RUS_fourthpower.1.desc:0 ""
+ #RUS_fourthpower.1.a:0 "Ладно"
+ #RUS_fourthpower.1.b:0 "Продолжаем"
+
+ # Ideas 
+
+ RUS_reconstruction_era:0 "Эпоха восстановления"
+ RUS_reconstruction_help:0 "Помощь в восстановлении"
+
+ # Events 
+
+ RUS.6000.t:0 "Рижский договор"
+ RUS.6000.desc:0 "Наше стремительное продвижение по землям Рейха ошеломило весь мир, особенно немцев. Они обратились к нашему правительству с одним предложением. Чтобы избежать ядерной войны, немцы готовы принять наши претензии на Восточную Европу при условии, что сама Германия останется незатронутой договором."
+ RUS.6000.a:0 "Скажите Германии, что мы согласны."
+ RUS.6000.b:0 "Временно откажемся, пока договор не вступит в силу."
+ # Russia unique names w/out colored text
+
+ RUS_name_plain_soviet: "Советский Союз"
+ #RUS_name_plain_bukh: "Советская республика"
+ RUS_name_plain_ultravis: "Советская Федерация"
+ RUS_name_plain_empire: "Российская империя"
+ RUS_name_plain_tabby: "Священная Российская империя"
+ RUS_name_plain_ordsoc: "Российская Национальная Советская Республика"
+ RUS_name_plain_ab: "Русский Рейкх"
+ RUS_name_plain_eurasia: "Евразия"
+ RUS_name_plain_hyperborea: "Гиперборея"
+ RUS_name_plain_SBA: "Свободная территория"
+ RUS_name_plain_generic: "Россия"
+
+ # Russia unique names for titles
+
+ RUS_name_title_soviet: "Союз"
+ #RUS_name_title_bukh: "Союз"
+ RUS_name_title_ultravis: "Федерация"
+ RUS_name_title_empire: "Империя"
+ RUS_name_title_tabby: "Империя"
+ RUS_name_title_ordsoc: "Россия"
+ RUS_name_title_ab: "Рейх"
+ RUS_name_title_eurasia: "Евразия"
+ RUS_name_title_hyperborea: "Гиперборея"
+ RUS_name_title_SBA: "Свободная территория"
+ RUS_name_title_generic: "Россия"
+ 
+ #Russian democratic generic tree partisan tooltip
+
+ RUS_Eastern_Europe_Speer_Collab: "§MБалтийскую§! §WФедерацию§!, §WРеспу§!§Vблику§! §WБеларусь§! и §YУкраинскую национ§1§Mальную Республику§!"
+ RUS_Eastern_Europe_Speer_Reichslander: "§WРейхс§!§qланд Балт§!§Wикум§!, §WРейхсланд§! §VВайсру§!§Wтения§! и §YРейхсланд§! §MУкраину§!"
+ RUS_Eastern_Europe_Generic: "§jРейхскомиссариат Остланд§! и §YРейхскомиссариат§! §MУкраину§!"
+
+ RUS_Westernmost_Baltic: "Каунас"
+ RUS_Westernmost_Ukraine: "Киев"
+ RUS_Westernmost_Default: "Курск"
+
+ #country flags
+ RUS_generic_communist_unifier: "Россия под §eкоммунистическим§! правительством"
+ RUS_generic_democratic_unifier: "Россия под §mдемократическом§! правительством"
+ RUS_generic_authoritarian_unifier: "Россия под §sавторитарным§! правительством"
+ RUS_generic_fascist_unifier: "Россия под §jфашистским§! правительством"
+ RUS_SWRW_ongoing: "Вторая Западнорусская война продолжается"
+ 
+ #generic leaders
+ HYP_Slavyanskyy_Sobor: "Славянский собор"
+ EUR_Eurasian_Council: "Евразийский совет"
+ RUS_Council_of_State: "Государственный совет"
+ RUS_All_Russian_National_Council: "Всероссийский национальный совет"
+ RUS_Monarchist_Petrograd: "Управление по реинтеграции Санкт-Петербурга"
+ RUS_Monarchist_Baltic: "Управление по реинтеграции Балтии"
+ RUS_Monarchist_Caucasus: "Управление по реинтеграции Кавказа"
+ RUS_Monarchist_Crimea: "Управление по реинтеграции Крыма"
+ RUS_Monarchist_Ukraine: "Управление по реинтеграции Украины"
+ RUS_Monarchist_Belarus: "Управление по реинтеграции Белой Руси"
+ RUS_Anarchist_Petrograd: "Петроградский совет"
+ RUS_Anarchist_Baltic: "Балтийский совет"
+ RUS_Anarchist_Caucasus: "Кавказский совет"
+ RUS_Anarchist_Crimea: "Крымский совет"
+ RUS_Anarchist_Ukraine: "Украинский совет"
+ RUS_Anarchist_Belarus: "Белорусский совет"
+ RUS_Zemsky_Sobor: "Земский собор"
+ RUS_Black_Army_Administration_Leningrad: "Совет обороны Петрограда"
+ RUS_Black_Army_Administration_Baltic: "Балтийский совет безопасности"
+ RUS_Black_Army_Administration_Caucasus: "Совет освобождения Кавказа"
+ RUS_Black_Army_Administration_Crimea: "Совет освобождения Крыма"
+ RUS_Black_Army_Administration_Ukraine: "Совет обороны Украины"
+ RUS_Black_Army_Administration_Belarus: "Белорусский комитет освобождения"
+ RUS_Aryan_Petrograd: "Милитаярфервалтунг Сайнт Пейтерсберг"
+ RUS_Aryan_Baltic: "Милитаярфервалтунг Балтикум"
+ RUS_Aryan_Caucasus: "Милитаярфервалтунг Каукасус"
+ RUS_Aryan_Crimea: "Милитаярфервалтунг Крим"
+ RUS_Aryan_Ukraine: "Милитаярфервалтунг Украйн"
+ RUS_Aryan_Belarus: "Милитаярфервалтунг Вейсрусланд"
+ RUS_Congress_Of_Soviets_Leningrad: "Ленинградский совет рабочих и солдатских депутатов"
+ RUS_Congress_Of_Soviets_Baltic: "Всебалтийский съезд Советов"
+ RUS_Congress_Of_Soviets_Caucasus: "Всекавказский съезд Советов"
+ RUS_Congress_Of_Soviets_Crimea: "Крымский совет народных комиссаров"
+ RUS_Congress_Of_Soviets_Ukraine: "Всеукраинский съезд Советов"
+ RUS_Congress_Of_Soviets_Belarus: "Всебелорусский съезд Советов"
+ RUS_Petersburg_Democratic_Government: "Временное правительство Петрограда"
+ RUS_Baltic_Democratic_Government: "Прибалтийское временное правительство"
+ RUS_Caucasus_Democratic_Government: "Кавказское временное правительство"
+ RUS_Crimea_Democratic_Government: "Крымское временное правительство"
+ RUS_Ukraine_Democratic_Government: "Украинское временное правительство"
+ RUS_Belarus_Democratic_Government: "Белорусское временное правительство"
+ RUS_Ordosocialist_Council: "Совет ордосоциализма"
+ RUS_St_Petesburg_Command: "Петербургское командование"
+ RUS_Baltic_Command: "Балтийское командование"
+ RUS_Caucasian_Command: "Кавказское командование"
+ RUS_Belarus_Command: "Белорусское командование"
+ RUS_Ukranian_Command: "Украинское командование"
+ RUS_Crimean_Command: "Крымское командование"

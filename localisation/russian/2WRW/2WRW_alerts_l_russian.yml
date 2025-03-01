@@ -1,0 +1,11 @@
+﻿l_russian:
+ SWRW_alert_tooltip: "§Y[Get_SWRW_alert_name]§!"
+
+
+ SWRW_alert_name_missing: "Имя отсутствует"
+
+ SWRW_alert_desc_missing: ""
+
+
+ NOV_alert_name_assembly: "В Собрании рассматривается законопроект!"
+ NOV_alert_desc_assembly: "Мы можем обеспечить его принятие с помощью некоторого политического вмешательства в интерфейсе Федерального Собрания."

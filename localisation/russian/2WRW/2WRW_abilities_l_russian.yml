@@ -1,0 +1,10 @@
+﻿l_russian:
+
+ ## GAS GAS GAS!
+
+ ABILITY_CHEMICAL_ARSENAL:0 "Химическая война"
+ ABILITY_CHEMICAL_ARSENAL_DESC:0 "Мы воспользуемся нашим химическим арсеналом, чтобы получить преимущество в бою, хотя это не обойдётся без потерь..."
+ ABILITY_CHEMICAL_ARSENAL_TOOLTIP:0 "Да, газ"
+
+ ABILITY_UNRESTRICTED_CHEMICAL_ARSENAL:0 ""
+ ABILITY_UNRESTRICTED_CHEMICAL_ARSENAL_DESC:0 ""

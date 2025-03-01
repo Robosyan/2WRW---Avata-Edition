@@ -1,0 +1,347 @@
+﻿l_russian:
+ # New Localisation
+
+ ### Presidential Map ###
+
+ # Parties
+
+ NOV_RAPP_Title_tt:0 "§BРоссийская аграрно-промышленная партия§!"
+ NOV_VRPP_Title_tt:0 "§sВсероссийская патриотическая партия§!"
+ NOV_DSPR_Title_tt:0 "§EДемократическая социалистическая партия России§!"
+ NOV_RSLP_Title_tt:0 "§mРоссийская социал-либеральная партия§!"
+
+ # Candidates
+ NOV_shukshin_in_lead: "§BВАСИЛИЙ ШУКШИН§!"
+ NOV_primakov_in_lead: "§gЕВГЕНИЙ ПРИМАКОВ§!"
+ NOV_kantorovich_in_lead: "§PЛЕОНИД КАНТОРОВИЧ§!"
+ NOV_koryagin_in_lead: "§MАНАТОЛИЙ КОРЯГИН§!"
+
+ # Election Localisation
+
+ NOV_1976_election: "След. выборы: §Y20 сентября, 1976 ГОДА§!"
+ NOV_regional_population: "§YПРОГНОЗЫ: [?NOV_election_population_display|2][NOVgetPopulationThousandOrMillion]§!"
+ NOV_election_statistics: "СТАТИСТИКА"
+ NOV_election_interactions: "ВЗАИМОДЕЙСТВИЯ"
+
+ # Federal Districts #
+
+ NOV_Northern_voting_district_tt: "§YСеверный округ§!"
+ NOV_Northern_voting_district_delayed_tt: "Прогнозируемые голоса: §Y[?857.NOV_election_population_display|2] мил.§!\n\n£NOV_RAPP_Icon Популярность §BРАПП§!: §Y[?857.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon Популярность §gВРПП§!: §Y[?857.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon Популярность §PДСПР§!: §Y[?857.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon Популярность §MРСЛП§!: §Y[?857.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon Популярность §eсамовыдвиженцев§!: §Y[?857.NOV_election_support_independents|2]%§!"
+ NOV_Volga_voting_district_tt: "§YПоволжский округ§!"
+ NOV_Volga_voting_district_delayed_tt: "Прогнозируемые голоса: §Y[?850.NOV_election_population_display|2] мил.§!\n\n£NOV_RAPP_Icon Популярность §BРАПП§!: §Y[?850.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon Популярность §gВРПП§!: §Y[?850.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon Популярность §PДСПР§!: §Y[?850.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon Популярность §MРСЛП§!: §Y[?850.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon Популярность §eсамовыдвиженцев§!: §Y[?850.NOV_election_support_independents|2]%§!"
+ NOV_Ural_voting_district_tt: "§YУральский округ§!"
+ NOV_Ural_voting_district_delayed_tt: "Прогнозируемые голоса: §Y[?754.NOV_election_population_display|2] мил.§!\n\n£NOV_RAPP_Icon Популярность §BРАПП§!: §Y[?754.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon Популярность §gВРПП§!: §Y[?754.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon Популярность §PДСПР§!: §Y[?754.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon Популярность §MРСЛП§!: §Y[?754.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon Популярность §eсамовыдвиженцев§!: §Y[?754.NOV_election_support_independents|2]%§!"
+ NOV_Siberian_voting_district_tt: "§YСибирский округ§!"
+ NOV_Siberian_voting_district_delayed_tt: "Прогнозируемые голоса: §Y[?570.NOV_election_population_display|2] мил.§!\n\n£NOV_RAPP_Icon Популярность §BРАПП§!: §Y[?570.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon Популярность §gВРПП§!: §Y[?570.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon Популярность §PДСПР§!: §Y[?570.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon Популярность §MРСЛП§!: §Y[?570.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon Популярность §eсамовыдвиженцев§!: §Y[?570.NOV_election_support_independents|2]%§!"
+ NOV_Far_East_voting_district_tt: "§YДальневосточный округ§!"
+ NOV_Far_East_voting_district_delayed_tt: "Прогнозируемые голоса: §Y[?562.NOV_election_population_display|2] мил.§!\n\n£NOV_RAPP_Icon Популярность §BРАПП§!: §Y[?562.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon Популярность §gВРПП§!: §Y[?562.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon Популярность §PДСПР§!: §Y[?562.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon Популярность §MРСЛП§!: §Y[?562.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon Популярность §eсамовыдвиженцев§!: §Y[?562.NOV_election_support_independents|2]%§!"
+ NOV_Moscow_voting_district_tt: "§YМосковский округ§!"
+ NOV_Moscow_voting_district_delayed_tt: "Прогнозируемые голоса: §Y[?1442.NOV_election_population_display|2] мил.§!\n\n£NOV_RAPP_Icon Популярность §BРАПП§!: §Y[?1442.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon Популярность §gВРПП§!: §Y[?1442.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon Популярность §PДСПР§!: §Y[?1442.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon Популярность §MРСЛП§!: §Y[?1442.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon Популярность §eсамовыдвиженцев§!: §Y[?1442.NOV_election_support_independents|2]%§!"
+ NOV_Kuban_voting_district_tt: "§YКубанский округ§!"
+ NOV_Kuban_voting_district_delayed_tt: "Прогнозируемые голоса: §Y[?243.NOV_election_population_display|2] мил.§!\n\n£NOV_RAPP_Icon Популярность §BРАПП§!: §Y[?243.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon Популярность §gВРПП§!: §Y[?243.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon Популярность §PДСПР§!: §Y[?243.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon Популярность §MРСЛП§!: §Y[?243.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon Популярность §eсамовыдвиженцев§!: §Y[?243.NOV_election_support_independents|2]%§!"
+ NOV_Caucasia_voting_district_tt: "§YКавказский округ§!"
+ NOV_Caucasia_voting_district_delayed_tt: "Прогнозируемые голоса: §Y[?243.NOV_election_population_display|2] мил.§!\n\n£NOV_RAPP_Icon Популярность §BРАПП§!: §Y[?243.NOV_election_support_RAPP|2]%§!\n£GFX_NOV_VRPP_Icon Популярность §gВРПП§!: §Y[?243.NOV_election_support_VRPP|2]%§!\n£GFX_NOV_DSPR_Icon Популярность §PДСПР§!: §Y[?243.NOV_election_support_DSPR|2]%§!\n£NOV_RSLP_Icon Популярность §MРСЛП§!: §Y[?243.NOV_election_support_RSLP|2]%§!\n£NOV_Independents_Icon Популярность §eсамовыдвиженцев§!: §Y[?243.NOV_election_support_independents|2]%§!"
+
+ # Occupied Districts #
+
+ NOV_Far_East_Occupation_Status_Occupied_tt:0 "§VОШИБКА!\n\nРЕГИОН ПОД КОНТРОЛЕМ ГОС-ВА: ЯПОНСКАЯ ИМПЕРИЯ\n\nНЕ УДАЕТСЯ ПОЛУЧИТЬ ДОСТУП К ДАННЫМ!§!"
+ NOV_Karelia_Occupation_Status_Occupied_tt:0 "§VОШИБКА!\n\nРЕГИОН ПОД КОНТРОЛЕМ ГОС-ВА: РЕСПУБЛИКА ФИНЛЯНДИЯ\n\nНЕ УДАЕТСЯ ПОЛУЧИТЬ ДОСТУП К ДАННЫМ!§!"
+ NOV_German_Occupation_Status_Occupied_tt:0 "§VОШИБКА!\n\nРЕГИОН ПОД КОНТРОЛЕМ ГОС-ВА: ВЕЛИКОГЕРМАНСКИЙ РЕЙХ\n\nНЕ УДАЕТСЯ ПОЛУЧИТЬ ДОСТУП К ДАННЫМ!§!"
+
+ # Scripted Localisation #
+
+ NOV_PE_select_a_state_tt:0 "ВЫБРАТЬ РЕГИОН"
+ NOV_PE_occupied_region_tt:0 "ДОСТУП ОГРАНИЧЕН"
+ NOV_PE_far_east_district_title_tt:0 "ДАЛЬНЕВОСТОЧНЫЙ ОКРУГ"
+ NOV_PE_siberian_district_title_tt:0 "СИБИРСКИЙ ОКРУГ"
+ NOV_PE_ural_district_title_tt:0 "УРАЛЬСКИЙ ОКРУГ"
+ NOV_PE_volga_district_title_tt:0 "ПОВОЛЖСКИЙ ОКРУГ"
+ NOV_PE_northern_district_title_tt:0 "СЕВЕРНЫЙ ОКРУГ"
+ NOV_PE_muscovy_district_title_tt:0 "МОСКОВСКИЙ ОКРУГ"
+ NOV_PE_kuban_district_title_tt:0 "КУБАНСКИЙ ОКРУГ"
+ NOV_PE_caucasia_district_title_tt:0 "КАВКАЗСКИЙ ОКРУГ"
+
+ # tooltips #
+ NOV_RAPP_tt: "£NOV_RAPP_Icon §BРАПП§!"
+ NOV_VRPP_tt: "£GFX_NOV_VRPP_Icon §gВРПП§!"
+ NOV_DSPR_tt: "£GFX_NOV_DSPR_Icon §PДСПР§!"
+ NOV_RSLP_tt: "£NOV_RSLP_Icon §MРСЛП§!"
+ NOV_independents_tt: "nov_independents §eСамовыдвиженцы§!"
+
+ NOV_far_east_campaign_tt: "[562.NOVcampaignGetPartyName] сейчас проводит избирательную кампанию в этом регионе."
+ NOV_cen_sib_campaign_tt: "[570.NOVcampaignGetPartyName] сейчас проводит избирательную кампанию в этом регионе."
+ NOV_ural_campaign_tt: "[754.NOVcampaignGetPartyName] сейчас проводит избирательную кампанию в этом регионе."
+ NOV_volga_campaign_tt: "[850.NOVcampaignGetPartyName] сейчас проводит избирательную кампанию в этом регионе."
+ NOV_north_campaign_tt: "[857.NOVcampaignGetPartyName] сейчас проводит избирательную кампанию в этом регионе."
+ NOV_moscow_campaign_tt: "[1442.NOVcampaignGetPartyName] сейчас проводит избирательную кампанию в этом регионе."
+ NOV_kuban_campaign_tt: "[243.NOVcampaignGetPartyName] сейчас проводит избирательную кампанию в этом регионе."
+
+ NOV_presidential_RAPP_support_tt: "Согласно предварительным опросам, £NOV_RAPP_Icon §BРАПП§! может набрать §Y[?NOV_election_support_RAPP_pop|2] мил.§! голосов в предстоящих выборах, что является §Y[?NOV_election_presidential_support_RAPP_display|2]%§! из всех прогнозируемых голосов."
+ NOV_presidential_VRPP_support_tt: "Согласно предварительным опросам, £NOV_VRPP_Icon §gВРПП§! может набрать §Y[?NOV_election_support_VRPP_pop|2] мил.§! голосов в предстоящих выборах, что является §Y[?NOV_election_presidential_support_VRPP_display|2]%§! из всех прогнозируемых голосов."
+ NOV_presidential_DSPR_support_tt: "Согласно предварительным опросам, £GFX_NOV_DSPR_Icon §PДСПР§! может набрать §Y[?NOV_election_support_DSPR_pop|2] мил.§! голосов в предстоящих выборах, что является §Y[?NOV_election_presidential_support_DSPR_display|2]%§! из всех прогнозируемых голосов."
+ NOV_presidential_RSLP_support_tt: "Согласно предварительным опросам, £NOV_RSLP_Icon §MРСЛП§! может набрать §Y[?NOV_election_support_RSLP_pop|2] мил.§! голосов в предстоящих выборах, что является §Y[?NOV_election_presidential_support_RSLP_display|2]%§! из всех прогнозируемых голосов."
+ NOV_presidential_independents_support_tt: "Согласно предварительным опросам, £NOV_Independents_Icon §eсамовыдвиженцы§! могут набрать §Y[?NOV_election_support_independents_pop|2] мил.§! голосов в предстоящих выборах, что является §Y[?NOV_election_presidential_support_independents_display|2]%§! из всех прогнозируемых голосов."
+
+ NOV_regional_RAPP_support_tt: "Согласно местным предварительным опросам, §Y[?NOV_RAPP_support_pop_display|2] мил.§! человек из этого региона намерены голосовать за £NOV_RAPP_Icon §BРАПП§! в предстоящих выборах, что составляет §Y[?NOV_RAPP_support_display|2]%§! из всех прогнозируемых голосов."
+ NOV_regional_VRPP_support_tt: "Согласно местным предварительным опросам, §Y[?NOV_VRPP_support_pop_display|2] мил.§! человек из этого региона намерены голосовать за £GFX_NOV_VRPP_Icon §gВРПП§! в предстоящих выборах, что составляет §Y[?NOV_VRPP_support_display|2]%§! из всех прогнозируемых голосов."
+ NOV_regional_DSPR_support_tt: "Согласно местным предварительным опросам, §Y[?NOV_DSPR_support_pop_display|2] мил.§! человек из этого региона намерены голосовать за £GFX_NOV_DSPR_Icon §PДСПР§! в предстоящих выборах, что составляет §Y[?NOV_DSPR_support_display|2]%§! из всех прогнозируемых голосов."
+ NOV_regional_RSLP_support_tt: "Согласно местным предварительным опросам, §Y[?NOV_RSLP_support_pop_display|2] мил.§! человек из этого региона намерены голосовать за £NOV_RSLP_Icon §MРСЛП§! в предстоящих выборах, что составляет §Y[?NOV_RSLP_support_display|2]%§! из всех прогнозируемых голосов."
+ NOV_regional_independents_support_tt: "Согласно местным предварительным опросам, §Y[?NOV_support_independents_pop_display|2] мил.§! человек из этого региона намерены голосовать за £NOV_Independents_Icon §eсамовыдвиженцев§! в предстоящих выборах, что составляет §Y[?NOV_independents_support_display|2]%§! из всех прогнозируемых голосов."
+
+ NOV_hold_rally_tt: "Это §Gувеличит§! §Yпопулярность§! [ROOT.NOVelectionsGetPlayerPartyName] на §G6%§!"
+ NOV_discredit_opposition_tt: "Это §Rуменьшит§! §Yпопулярность§! самой влиятельной партии в этом регионе на §R6%§!"
+ NOV_campaign_tt: "Это §Gувеличит§! §Yдинамику популярности§! [ROOT.NOVelectionsGetPlayerPartyName] на §G1.5%§!"
+ NOV_slander_tt: "Это §Rуменьшит§! §Yдинамику популярности§! всех других партий на §R1%§!"
+
+ ## FEDERAL ASSEMBLY ##
+
+ NOV_assembly_info_tt: "Федеральное собрание\n\n\nФедеральное собрание Российской Федерации - это двухпалатная система, где Совет Федерации имеет право решать, какие законы должны быть созданы, после чего эстафета передается в Государственную Думу, где депутаты обсуждают, должен ли закон быть введен в действие."
+ NOV_parties_info_tt:0 "Так как мы ослабили ограничения на создание партий, появилось значительное количество политических фракций, перетянувших базу поддержки £NOV_RAPP_Icon §BРАПП§! и £GFX_NOV_VRPP_Icon §gсиловиков§!. Однако из этих новых организаций лишь немногие имеют реальное влияние и потенциал для прихода к власти."
+ NOV_government_info_tt:0 "В большинстве случаев правительство состоит из нескольких партий. Это способствует укреплению общей стабильности и доверия в стране, но вместе с этим возникает и неизбежная необходимость разделения власти. Хотя выборы в значительной степени открыты, прозрачны и мирны, все партии не включают других в своё правительство, если в этом нет необходимости.\n\nКоалиция влияет на мнение тех, кто входит в коалицию, по отношению к правительству."
+ NOV_bills_info_tt:0 "Здесь, в Думе, принимаются и обсуждаются важнейшие законодательные акты."
+ NOV_parties_interaction_tt:0 "Нажмите, чтобы взаимодействовать с партией [NOVgetPartyName]"
+ NOV_party_interaction_bribe_officials_tt:0 "Как бы нас ни презирали, иногда прогресс, к которому мы стремимся, просто недостижим обычными средствами. Чтобы выиграть невозможную битву, мы должны быть гибкими.\n\n§GПолучает 5 единиц мнения§! §Rценой§! §Y7 миллионов долларов§! щедрыми взятками."
+ NOV_party_interaction_token_concessions_tt:0 "Хотя между партиями могут быть большие или малые расхождения в экономической, внешней или культурной политике, есть некоторые основополагающие принципы, разделяемые партиями, особенно некоторыми, которые могут быть более благосклонны к нашему делу. Давайте возьмем на вооружение некоторые из их полезных доводов, чтобы показать нашу готовность к дальнейшему сотрудничеству.\n\nПолит. власть: §R-50§!.\n\n§GПолучает 15 единиц мнения§!.\n\n§GЭтот ход более эффективен против членов вашей коалиции§!.\n\n§RДругие члены коалиции предпочли бы, чтобы мы придерживались того, во что верим, а не имели ложное чувство единства§!."
+ NOV_party_interaction_sit_down_tt:0 "Иногда прямая встреча между сторонами, официальная или неофициальная, имеет решающее значение для сохранения наших союзников и поиска новых. Ведь мы стремимся объединить наш народ, а не разделить его!\n\nПолит. власть: §R-75§!.\n\n§GПолучает 7,5 единиц мнения§!."
+ NOV_party_interaction_accuse_tt:0 "Хотя мы одобряем общественные движения, в последние годы некоторые политики все чаще называют себя "избранниками народа". Некоторые выступают с зажигательными речами по всей стране, делая нелепые заявления о некоем государственном заговоре против народа, против которого они борются. Из-за низкого уровня грамотности и политического образования многие граждане поддаются на эти дешёвые уловки. Мы должны их остановить, пока буйный популизм не навредил репутации нашей страны!\n\n§RПотеряет 10 единиц мнения§!.\n\n§GНашей коалиции понравится этот ход§!."
+
+ NOV_bill_voting: "ГОЛОСОВАНИЕ"
+
+ NOV_gov_header: "ПРАВИТЕЛЬСТВО"
+
+ NOV_gov_shukshin: "§BВасилий Шукшин§!"
+ NOV_gov_kantorovich:0 "§PЛеонид Канторович§!"
+ NOV_gov_koryagin:0 "§MАнатолий Корягин§!"
+ NOV_gov_primakov:0 "§gЕвгений Примаков§!"
+ NOV_gov_shukshin_vice:0 "§BАлександр Покрышкин§!"
+ NOV_gov_kantorovich_vice:0 "§PЛеонид Плющ§!"
+ NOV_gov_koryagin_vice:0 "§MФеликс Серебров§!"
+ NOV_gov_primakov_vice:0 "§gИван Силаев§!"
+
+ NOV_bills_time_1: "Оставшееся время: §W[?NOV_bill_timer] дней§!"
+ NOV_bills_time_2:0 "§WНет законов на обсуждении§!."
+
+ NOV_bills_total_votes_good: "[?NOV_bill_total_votes|G0]/450 ГОЛОСОВ"
+ NOV_bills_total_votes_bad: "[?NOV_bill_total_votes|R0]/450 ГОЛОСОВ"
+
+ NOV_bills_RAPP_contribution_good: "[?NOV_rapp_bill_votes|G0]/[?NOV_rapp_duma_seats] депутатов"
+ NOV_bills_RAPP_contribution_middle: "[?NOV_rapp_bill_votes|Y0]/[?NOV_rapp_duma_seats] депутатов"
+ NOV_bills_RAPP_contribution_bad: "[?NOV_rapp_bill_votes|R0]/[?NOV_rapp_duma_seats] депутатов"
+
+ NOV_bills_VRPP_contribution_good: "[?NOV_vrpp_bill_votes|G0]/[?NOV_vrpp_duma_seats] депутатов"
+ NOV_bills_VRPP_contribution_middle: "[?NOV_vrpp_bill_votes|Y0]/[?NOV_vrpp_duma_seats] депутатов"
+ NOV_bills_VRPP_contribution_bad: "[?NOV_vrpp_bill_votes|R0]/[?NOV_vrpp_duma_seats] депутатов"
+
+ NOV_bills_DSPR_contribution_good: "[?NOV_dspr_bill_votes|G0]/[?NOV_dspr_duma_seats] депутатов"
+ NOV_bills_DSPR_contribution_middle: "[?NOV_dspr_bill_votes|Y0]/[?NOV_dspr_duma_seats] депутатов"
+ NOV_bills_DSPR_contribution_bad: "[?NOV_dspr_bill_votes|R0]/[?NOV_dspr_duma_seats] депутатов"
+
+ NOV_bills_RSLP_contribution_good: "[?NOV_rslp_bill_votes|G0]/[?NOV_rslp_duma_seats] депутатов"
+ NOV_bills_RSLP_contribution_middle: "[?NOV_rslp_bill_votes|Y0]/[?NOV_rslp_duma_seats] депутатов"
+ NOV_bills_RSLP_contribution_bad: "[?NOV_rslp_bill_votes|R0]/[?NOV_rslp_duma_seats] депутатов"
+
+ NOV_bills_NFM_contribution_good: "[?NOV_nfm_bill_votes|G0]/[?NOV_nfm_duma_seats] депутатов"
+ NOV_bills_NFM_contribution_middle: "[?NOV_nfm_bill_votes|Y0]/[?NOV_nfm_duma_seats] депутатов"
+ NOV_bills_NFM_contribution_bad: "[?NOV_nfm_bill_votes|R0]/[?NOV_nfm_duma_seats] депутатов"
+
+ NOV_bills_RIRM_contribution_good: "[?NOV_rirm_bill_votes|G0]/[?NOV_rirm_duma_seats] депутатов"
+ NOV_bills_RIRM_contribution_middle: "[?NOV_rirm_bill_votes|Y0]/[?NOV_rirm_duma_seats] депутатов"
+ NOV_bills_RIRM_contribution_bad: "[?NOV_rirm_bill_votes|R0]/[?NOV_rirm_duma_seats] депутатов"
+
+ NOV_bills_CPRF_contribution_good: "[?NOV_cprf_bill_votes|G0]/[?NOV_cprf_duma_seats] депутатов"
+ NOV_bills_CPRF_contribution_middle: "[?NOV_cprf_bill_votes|Y0]/[?NOV_cprf_duma_seats] депутатов"
+ NOV_bills_CPRF_contribution_bad: "[?NOV_cprf_bill_votes|R0]/[?NOV_cprf_duma_seats] депутатов"
+
+ NOV_bills_SRP_contribution_good: "[?NOV_srp_bill_votes|G0]/[?NOV_srp_duma_seats] депутатов"
+ NOV_bills_SRP_contribution_middle: "[?NOV_srp_bill_votes|Y0]/[?NOV_srp_duma_seats] депутатов"
+ NOV_bills_SRP_contribution_bad: "[?NOV_srp_bill_votes|R0]/[?NOV_srp_duma_seats] депутатов"
+
+ NOV_coalition_duma_seats: "[?NOV_coalition_seats_duma] депутатов"
+ NOV_coalition_council_seats: "[?NOV_coalition_seats_council] сенаторов"
+
+ #Bills
+
+ RUS_add_uncategorised_law_tt: "§F[GetAssortedLawsRUS] будет добавлен к нашим различным законам.§!"
+ RUS_remove_uncategorised_law_tt: "§F[GetAssortedLawsRUS] будет удалён из наших различных законов.§!"
+ RUS_get_law_tooltip: "[GetAssortedLawsDescRUS]"
+ NOV_bill_representation_act: "§BЗакон о представительстве§!"
+ NOV_bill_representation_act_desc: "При создании Российской Федерации в конституции было прямо указано, что места в Совете Федерации назначаются правительством, а не избираются народом. Этот закон был принят в основном по указанию силовиков и их влияния в нашей политике.\n\nПосле обширного лоббирования и покушения на президента Шукшина настало то время, чтобы мы лишили силовиков их влияния, гарантировав, что в случае их прихода к власти их господство в Совете Федерации не будет абсолютным."
+ NOV_bill_voting_rights_act:0 "§QЗакон об избирательных правах§!"
+ NOV_bill_voting_rights_act_desc:0 "Хотя на бумаге наша Федерация является маяком российской демократии, право народа на голосование не закреплено в законе. Когда-то это была введённая Покрышкиным временная мера для успокоения тех, кто призывает к большей демократии, теперь мы должны полностью включить её в наши фундаментальные институты управления.\n\nВ этом законе предусмотрены меры по ограничению внешнего влияния на выборы, а также совершенствование процесса сбора и подсчёта голосов наших граждан."
+ NOV_bill_women_rights_act:0 "§BПоправка к Гражданскому кодексу РФ§!"
+ NOV_bill_women_rights_act_desc:0 "Теперь, когда мы добились того, чтобы основные составляющие нашей демократии были введены в действие, мы можем обратить наше внимание на великую несправедливость, которая долгое время была допущена по отношению к нашей стране. Женщины России долгое время были лишены права политически влиять на будущее своей страны, и теперь мы, наконец, можем предоставить им эту возможность.\n\nСкоро равенство под знаменем Федерации станет реальностью, и мы будем всё ближе и ближе подходить к "Русской мечте"..."
+ NOV_bill_environmental_protection_act:0 "§BЗакон о защите окружающей среды§!"
+ NOV_bill_environmental_protection_act_desc:0 "Бескрайние территории нашей Родины хранят самые захватывающие пейзажи на планете - от лесов сибирской тайги до бескрайних степей, по которым свободно бродят местные дикие животные. Но гниль корпораций поразила нашу прекрасную Родину.\n\nЦелые леса были вырублены на пиломатериалы, огромные шахты глубоко врезались в наши некогда живописные горы, а нефтяные вышки превратили некогда плодородные равнины в бесплодные пустоши. Если мы хотим защитить нашу землю, мы должны обуздать коварные щупальца жадности силовиков, пока не стало слишком поздно."
+ NOV_bill_environmental_protection_act_repeal:0 "§gОтмена Закона о защите окружающей среды§!"
+ NOV_bill_environmental_protection_act_repeal_desc:0 "К большому сожалению, сыны нашей Родины разрушают землю, которая сотни лет питала нашу страну и наш народ, но продолжать наше дальнейшее развитие просто необходимо. При слишком большом количестве ограничений наше государство может не догнать западных и восточных конкурентов!\n\nСтарый мир сгорит в огне промышленности, и только благодаря этому Россия сможет обогатиться!"
+ NOV_bill_corporation_limitation_act:0 "§BЗакон об ограничении корпораций§!"
+ NOV_bill_corporation_limitation_act_desc:0 "£GFX_NOV_VRPP_Icon §gСиловики§! и так уже слишком долго душили рабочий класс из-за своей жадности и амбиций. Однако теперь, после наших недавних реформ, направленных на создание действительно справедливого государства, они слабы как никогда. Нам пора нанести метафорический удар кувалдой по ослабленным конгломератам и заставим их отойти на второй план практически во всех фронтах работы президента Шукшина.\n\nНаша мечта наконец-то будет избавлена от несправедливости, а наш народ наконец-то познает процветание, которое так долго от него ускользало."
+ NOV_bill_workers_protection_act:0 "§BЗакон о защите прав рабочих§!"
+ NOV_bill_workers_protection_act_desc:0 "Сколько себя помнит любой из нас, рабочий человек трудился в ущерб себе, в то время как те, кто выше него, пожинали все плоды его труда. Ему дают самый минимум, а иногда и меньше, и обращаются с ним скорее как со скотом. Хватит это терпеть.\n\nПри нашем правительстве мы обеспечим, чтобы простой человек получал именно то, что ему причитается, и он больше не будет находиться во власти расточительных бизнесменов, которые не заботятся ни о чем, кроме вечно разлагающего яда, которым является богатство."
+ NOV_bill_healthcare_act_vrpp:0 "§gСтатья 41 Конституции РФ§!"
+ NOV_bill_healthcare_act_vrpp_desc:0 "Да, жители Федерации должны получать надлежащее медицинское обслуживание, но мы не должны напрягать бюджет и впадать в непосильный дефицит, поскольку у нас есть и другие приоритеты.\n\nВ целях обеспечения финансовой стабильности мы пришли к компромиссу с £GFX_NOV_VRPP_Icon §gВРПП§!, дабы сократить первоначальную сумму, которую государство будет тратить на здравоохранение, и приватизировать некоторые сектора, чтобы позволить корпорациям получить долю пирога в обмен на поддержку £GFX_NOV_VRPP_Icon §gВРПП§!."
+ NOV_bill_healthcare_act_dspr:0 "§PСтатья 41 Конституции РФ§!"
+ NOV_bill_healthcare_act_dspr_desc:0 "Мы - Федерация народа, а не корпораций. Если раньше наше государство сильно зависело от поддержки корпораций, то теперь это не так, и корпорации имеют гораздо меньше контроля над нашими делами, чем когда-то в эпоху Смуты.\n\nВ связи с этим мы намерены национализировать нашу систему здравоохранения, чтобы обеспечить равный доступ к качественному медицинскому обслуживанию для всех жителей Федерации. Хотя это, несомненно, дорогостоящее начинание, Федерация стремится улучшить жизнь своих народов, ибо что такое страна, как не её народ?"
+ NOV_bill_none:0 "§YЗаконопроекты не обсуждаются§!"
+ NOV_bill_none_desc:0 "Дума не обязательно бездействует, и в целом все россияне и иностранцы доверяют развитию российской демократии в Федерации. Однако иногда постепенных изменений недостаточно. Благодаря определённым решениям, существенные изменения в нашем кодифицированном законодательстве могут определить 20-й век и последующий период."
+ NOV_bill_federal_insurance_act:0 "§BЗакон о государственном страховании [?global.year] года§!"
+ NOV_bill_federal_insurance_act_desc:0 "На сегодняшний день, несмотря на предыдущие усилия, в России по-прежнему отсутствует всеобщее здравоохранение. Россияне по-прежнему всё больше боятся заболеть в любой форме, и в обществе существует глубокая стигма в отношении незначительных проблем со здоровьем. На Западе оптометрия, стоматология оплачиваются государством. Президент Шукшин понимает, что дальнейшее развитие здравоохранения сделает народ счастливым, ибо ему будет предоставлено та же забота о здоровье, как и у богатых. Кроме того, щедрая оплата труда врачей может побудить большее число людей давать клятву Гиппократа, что увеличит наши возможности по уходу за больными." 
+ NOV_start_bill_voting_tt:0 "§YГосударственная Дума§! будет голосовать насчёт принятия закона под названием §Y[NOVgetBillNamett]§!."
+ NOV_bills_progress_bar_tt:0 "Эффекты от закона §Y[NOVgetBillName]§! следующие:\n[NOVgetBillEffects]"
+ NOV_bill_effect_fail_bozo:0 "Политическая власть: §R-75§!.\nСтабильность: §R-5.00%§!.\n§RНемного уменьшается§! эффективность законов о §Yполитических партиях§!.\n\n§RЭто связано с тем, что у вас нет большинства в Думе.§!."
+ NOV_bill_representation_act_effect:0 "Политическая власть: §G+100§!.\nСтабильность: §G+5.00%§!.\nИзменение популярности патернализма: §R-7.50%§!."
+ NOV_bill_voting_rights_act_effect:0 "§GЗначительно увеличится§! эффективность законов о §Yполитических партиях§!\nНаша §Yадминистративная эффективность§! §Gулучшится§!.\nСтабильность: §G+2.50%§!.\n§GУлучшит§! законы о §Yправе голоса§!\nПолитическая власть: §G+25§!."
+ NOV_bill_women_rights_act_effect:0 "Политическая власть: §G+50§!.\nСтабильность: §R-5.00%§!.\nЭффективность §Yизбирательных правах§! §Gзначительно повысится§!.\nЭффективность §Yгендерных прав§! §Gповысится§!."
+ NOV_bill_environmental_protection_act_effect:0 "Стабильность: §G+5.00%§!\n§GУлучшит§! законы о §Yрегуляции§!\n§KРост ВВП§! §Rуменьшится§! на §Y0,20%§!."
+ NOV_bill_environmental_protection_act_repeal_effect:0 "Стабильность: §R-5.00%§!.\n§RУхудшит§! законы о §Yрегуляции§!\n§KРост ВВП§! §Gувеличится§! на §Y0,20%§!."
+ NOV_bill_corporation_limitation_act_effect:0 "Политическая власть: §R-50§!.\nСтабильности: §R-5.00%§!.\n§KРост ВВП§! §Gувеличится§! на §Y1,20%§!.\n§RУменьшит§! наш §fВВП§! на §Y$0,500 млрд§!.\nЭто §Gувеличит§! наши §Mликвидные резервы§! на §Y$1,85 млрд§!.\nНаши §Kналоги на бизнес§! §Gувеличатся§! на §Y5,00%§!."
+ NOV_bill_workers_protection_act_effect:0 "§GУлучшит§! эффективность законов о §Yпрофсоюзах§!.\n§GУлучшит§! эффективность законов о §YМРОТе§!.\n§GУлучшит законы о §Yрабочем дне§!.\n§YПромышленный опыт§! начнёт §Gбыстро улучшаться§!.\n§sУровень бедности§! начнёт §Gпадать§!."
+ NOV_bill_healthcare_act_vrpp_effect:0 "Политическая власть: §G+25§!.\nЭто §Gувеличит§! наши §Mликвидные резервы§! на §Y$0,5 млрд§!.\n§KРост ВВП§! §Gувеличится§! на §Y0,50%§!.\n§VИнфляция§! §Rвырастет§! на §Y0,30%§!.\n§GУлучшит§! эффективность законов о §Yздравоохранении§!."
+ NOV_bill_healthcare_act_dspr_effect:0 "Политическая власть: §R-35§!.\n§GЗначительно повысит§! эффективность законов о §Yздравоохранении§!\nНаша §Vинфляция§! §Rвырастет§! на §Y0,60%§!."
+ NOV_bill_federal_insurance_act_effect:0 "Политическая власть: §R-50§!.\n§GЗначительно повысит§! эффективность законов о §Yздравоохранении§!.\n§YУровень минимальных инвестиций§! в §Yсоциальное финансировании§! §Gзначительно вырастет§!.\n§YУровень максимальных инвестиций§! в §Yсоциальное финансировании§! §Gзначительно вырастет§!.\n§KРост ВВП§! §Gвырастет§! на §Y0,10%§!.\nМы потратим §Y$5.000 млрд§!."
+
+ NOV_RAPP_name: "§BРАПП§!"
+ NOV_VRPP_name: "§gВРПП§!"
+ NOV_DSPR_name: "§PДСПР§!"
+ NOV_RSLP_name: "§MРСЛП§!"
+ NOV_NFM_name: "§KВЗД§!"
+ NOV_RIRM_name: "§wДВРИ§!"
+ NOV_CPRF_name: "§xКПРФ§!"
+ NOV_SRP_name: "§eПСР§!"
+
+ NOV_party_tt: "[NOVgetPartyTooltips]"
+
+ NOV_RAPP_party_tt: "£NOV_RAPP_Icon §BРоссийская аграрно-промышленная партия§!\n\n                        §YПредседатель§!\n\n\n\n\n\n\n             £NOV_vasily_shukshin\n\n\n\n\n\n\n\n                  §YВасилий Шукшин§!"
+ NOV_VRPP_party_tt: "£NOV_VRPP_Icon §gВсероссийская патриотическая партия§!\n\n                  §YПредседатель§!\n\n\n\n\n\n\n       £NOV_yevgeny_primakov\n\n\n\n\n\n\n\n          §YЕвгений Примаков§!"
+ NOV_DSPR_party_tt: "£NOV_DSPR_Icon §PДемократическая социалистическая партия России§!\n\n                         §YПредседатель§!\n\n\n\n\n\n\n              £NOV_leonid_kantorovich\n\n\n\n\n\n\n\n                 §YЛеонид Канторович§!"
+ NOV_RSLP_party_tt: "£NOV_RSLP_Icon §MРоссийская социал-либеральная партия§!\n\n                  §YПредседатель§!\n\n\n\n\n\n\n       £NOV_anatoly_koryagin\n\n\n\n\n\n\n\n             §YАнатолий Корягин§!"
+ NOV_NFM_party_tt: "£NOV_NFM_Icon §KВсенародное земледельческое движение§!\n\n                  §YПредседатель§!\n\n\n\n\n\n\n       £NOV_mikhail_lapshin\n\n\n\n\n\n\n\n             §YМихаил Лапшин§!"
+ NOV_RIRM_party_tt: "£NOV_RIRM_Icon §wДвижение восстановления Российской Империи§!\n\n                             §YПредседатель§!\n\n\n\n\n\n\n                 £NOV_vladimir_osipov\n\n\n\n\n\n\n\n                       §YВладимир Осипов§!"
+ NOV_CPRF_party_tt: "£NOV_CPRF_Icon §xКоммунистическая партия Российской Федерации§!\n\n                                §YПредседатель§!\n\n\n\n\n\n\n                     £NOV_yegor_ligachov\n\n\n\n\n\n\n\n                           §YЕгор Лигачёв§!"
+ NOV_SRP_party_tt: "£NOV_SRP_Icon §eПартия социалистов-революционеров§!\n\n               §YПредседатель§!\n\n\n\n\n\n\n     £NOV_yuri_galanskov\n\n\n\n\n\n\n\n            §YЮрий Галансков§!"
+
+ NOV_RAPP_duma_seats: "[?NOV_rapp_duma_seats] депутатов"
+ NOV_VRPP_duma_seats: "[?NOV_vrpp_duma_seats] депутатов"
+ NOV_DSPR_duma_seats: "[?NOV_dspr_duma_seats] депутатов"
+ NOV_RSLP_duma_seats: "[?NOV_rslp_duma_seats] депутатов"
+ NOV_NFM_duma_seats: "[?NOV_nfm_duma_seats] депутатов"
+ NOV_RIRM_duma_seats: "[?NOV_rirm_duma_seats] депутатов"
+ NOV_CPRF_duma_seats: "[?NOV_cprf_duma_seats] депутатов"
+ NOV_SRP_duma_seats: "[?NOV_srp_duma_seats] депутатов"
+
+ NOV_RAPP_council_seats: "[?NOV_rapp_council_seats] сенаторов"
+ NOV_VRPP_council_seats: "[?NOV_vrpp_council_seats] сенаторов"
+ NOV_DSPR_council_seats: "[?NOV_dspr_council_seats] сенаторов"
+ NOV_RSLP_council_seats: "[?NOV_rslp_council_seats] сенаторов"
+ NOV_NFM_council_seats: "[?NOV_nfm_council_seats] сенаторов"
+ NOV_RIRM_council_seats: "[?NOV_rirm_council_seats] сенаторов"
+ NOV_CPRF_council_seats: "[?NOV_cprf_council_seats] сенаторов"
+ NOV_SRP_council_seats: "[?NOV_srp_council_seats] сенаторов"
+
+ NOV_opinion_RAPP_good: "[?NOV_party_opinions^0|G0] §G(ДРУЖЕСТВЕННЫ)§!"
+ NOV_opinion_RAPP_middle: "[?NOV_party_opinions^0|Y0] §Y(НЕЙТРАЛЬНЫ)§!"
+ NOV_opinion_RAPP_bad: "[?NOV_party_opinions^0|R0] §R(ВРАЖДЕБНО НАСТРОЕНЫ)§!"
+
+ NOV_opinion_VRPP_good: "[?NOV_party_opinions^1|G0] §G(ДРУЖЕСТВЕННЫ)§!"
+ NOV_opinion_VRPP_middle: "[?NOV_party_opinions^1|Y0] §Y(НЕЙТРАЛЬНЫ)§!"
+ NOV_opinion_VRPP_bad: "[?NOV_party_opinions^1|R0] §R(ВРАЖДЕБНО НАСТРОЕНЫ)§!"
+
+ NOV_opinion_DSPR_good: "[?NOV_party_opinions^2|G0] §G(ДРУЖЕСТВЕННЫ)§!"
+ NOV_opinion_DSPR_middle: "[?NOV_party_opinions^2|Y0] §Y(НЕЙТРАЛЬНЫ)§!"
+ NOV_opinion_DSPR_bad: "[?NOV_party_opinions^2|R0] §R(ВРАЖДЕБНО НАСТРОЕНЫ)§!"
+
+ NOV_opinion_RSLP_good: "[?NOV_party_opinions^3|G0] §G(ДРУЖЕСТВЕННЫ)§!"
+ NOV_opinion_RSLP_middle: "[?NOV_party_opinions^3|Y0] §Y(НЕЙТРАЛЬНЫ)§!"
+ NOV_opinion_RSLP_bad: "[?NOV_party_opinions^3|R0] §R(ВРАЖДЕБНО НАСТРОЕНЫ)§!"
+
+ NOV_opinion_NFM_good: "[?NOV_party_opinions^4|G0] §G(ДРУЖЕСТВЕННЫ)§!"
+ NOV_opinion_NFM_middle: "[?NOV_party_opinions^4|Y0] §Y(НЕЙТРАЛЬНЫ)§!"
+ NOV_opinion_NFM_bad: "[?NOV_party_opinions^4|R0] §R(ВРАЖДЕБНО НАСТРОЕНЫ)§!"
+
+ NOV_opinion_RIRM_good: "[?NOV_party_opinions^5|G0] §G(ДРУЖЕСТВЕННЫ)§!"
+ NOV_opinion_RIRM_middle: "[?NOV_party_opinions^5|Y0] §Y(НЕЙТРАЛЬНЫ)§!"
+ NOV_opinion_RIRM_bad: "[?NOV_party_opinions^5|R0] §R(ВРАЖДЕБНО НАСТРОЕНЫ)§!"
+
+ NOV_opinion_CPRF_good: "[?NOV_party_opinions^6|G0] §G(ДРУЖЕСТВЕННЫ)§!"
+ NOV_opinion_CPRF_middle: "[?NOV_party_opinions^6|Y0] §Y(НЕЙТРАЛЬНЫ)§!"
+ NOV_opinion_CPRF_bad: "[?NOV_party_opinions^6|R0] §R(ВРАЖДЕБНО НАСТРОЕНЫ)§!"
+
+ NOV_opinion_SRP_good: "[?NOV_party_opinions^7|G0] §G(ДРУЖЕСТВЕННЫ)§!"
+ NOV_opinion_SRP_middle: "[?NOV_party_opinions^7|Y0] §Y(НЕЙТРАЛЬНЫ)§!"
+ NOV_opinion_SRP_bad: "[?NOV_party_opinions^7|R0] §R(ВРАЖДЕБНО НАСТРОЕНЫ)§!"
+
+ NOV_parties_interaction_header: "ВЗАИМОД. С [NOVgetInteractionsMenuPartyName]"
+
+ NOV_Election_support_somewhat_improves_tt:0 "Поддержка [getNOVElectoralTarget] в [Root.NOV_District_Select_lockey] §Gнемного улучшается§!"
+ NOV_Election_support_improves_tt:0 "Поддержка [getNOVElectoralTarget] в [Root.NOV_District_Select_lockey] §Gулучшается§!"
+ NOV_Election_support_significantly_improves_tt:0 "Поддержка [getNOVElectoralTarget] в [Root.NOV_District_Select_lockey] §Gзначительно улучшается§!"
+ NOV_Election_support_somewhat_worsens_tt:0 "Поддержка [getNOVElectoralTarget] в [Root.NOV_District_Select_lockey] §Rнемного ухудшается§!"
+ NOV_Election_support_worsens_tt:0 "Поддержка [getNOVElectoralTarget] в [Root.NOV_District_Select_lockey] §Rухудшается§!"
+ NOV_Election_support_significantly_worsens_tt:0 "Поддержка [getNOVElectoralTarget] в [Root.NOV_District_Select_lockey] §Rзначительно decreases§!"
+
+ #Presidential Events
+
+ NOV_federalassembly.100.t:0 "Президентские выборы [?global.year] года"
+ NOV_federalassembly.100.desc:0 "Иван Куратов когда-то был измученным человеком. Многочасовой изнурительный труд, запредельно жестокие условия и ледяной холод Воркутинского исправительно-трудового лагеря сделали своё дело с каждым, будь то заключённый или охранник, имевший глупость там оказаться. До сих пор он носит шрамы и огрубевшие ладони тех дней. Когда-то ему казалось, что жизнь в этом непрерывном круговороте мелких вотчин никогда не закончится. Даже после падения НКВД он попадал под власть другого правительства, которое не заботилось о его благополучии. Но теперь времена меняются.\n\nКогда Куратов переехал в город Барнаул и впервые увидел президента Шукшина, его сердце забилось так, как он не испытывал с детства. Ликование. Надежда. Искренний прилив идеализма. Заразительная мечта о вечном оптимизме и настоящем безудержном счастье в будущем. Солнце, казалось, ярче светило на его лицо, покрытое теперь глупой широкой ухмылкой.\n\nТеперь, когда войны закончились, реформы были проведены, а его жизнь действительно преобразилась, он думал, что увидел конец чудесам. Он ошибался. В то утро он проснулся от ошеломляющего сообщения. Выборы. Президент Шукшин пошел на поводу у демократии и назначил выборы. Теперь его жизнь была наполнена транспарантами, плакатами, лозунгами, политическими кампаниями, дебатами и новостями по только что купленному телевизору. Он действительно видел ещё одно русское чудо. Большее, чем чудо на Волге или на Дону. Большее, чем чудо 2-й Западнорусской войны.\n\nПо дороге домой его перехватила "Новая газета" для опроса. Широко улыбаясь, с продуктами в руках, он уверенно сказал:"
+ NOV_federalassembly.100.a:0 "Я отдаю свой голос за Василия Макаровича."
+ NOV_federalassembly.100.b:0 "Евгений Примаков сделает Россию сильной."
+ NOV_federalassembly.100.c:0 "Леонид Канторович сражается за вас и меня."
+ NOV_federalassembly.100.d:0 "Анатолий Корягин принесёт России благоденствие." 
+ NOV_federalassembly.100.a_tt:0 "§YМы начнём кампанию за§! £GFX_NOV_RAPP_Icon §BРоссийскую аграрно-промышленную партию§!"
+ NOV_federalassembly.100.b_tt:0 "§YМы начнём кампанию за§! £GFX_NOV_VRPP_Icon §sВсероссийскую патриотическую партию!"
+ NOV_federalassembly.100.c_tt:0 "§YМы начнём кампанию за§! £GFX_NOV_DSPR_Icon §EДемократическую социалистическую партию России§!"
+ NOV_federalassembly.100.d_tt:0 "§YМы начнём кампанию за§! £GFX_NOV_RSLP_Icon §mРоссийскую социал-либеральную партию§!"
+
+ NOV_federalassembly.101.t:0 "День голосования"
+ NOV_federalassembly.101.desc:0 "Толпы людей по всей России собираются у радиоприёмников и телевизоров, где бы они ни находились. Одни пристально смотрят на экран в уютной обстановке собственного дома. Другие толпятся вокруг старого пыльного радиоприемника в общественных салонах или барах. Тем не менее, все их внимание приковано к одной-единственной передаче. Новостные станции по всей России выходят в прямой эфир. Все зрители и слушатели слышат слова:\n- Граждане Российской Федерации. Сегодня, в этот знаменательный день [global.date], мы готовы объявить результаты голосования. Победителем нынешних президентских выборов был избран..."
+ NOV_federalassembly.101.a:0 "Президент Василий Шукшин, глава РАПП!"
+ NOV_federalassembly.101.b:0 "Евгений Примаков, глава ВРПП!"
+ NOV_federalassembly.101.c:0 "Леонид Канторович, глава ДСПР!"
+ NOV_federalassembly.101.d:0 "Анатолий Корягин, глава РСЛП!" 
+
+ NOV_federalassembly.102.t:0 "Формирование правительства"
+ NOV_federalassembly.102.desc:0 "В настоящее время наше правительство имеет менее половины всех мест в Думе. Несмотря на то, что правительство меньшинства возможно, некоторые призывают нас пригласить другие партии, чтобы наши соперники не ставили нас в неловкие ситуации. Стоит ли нам продолжать?"
+ NOV_federalassembly.102.a:0 "Они нам не нужны."
+ NOV_federalassembly.102.a_tt:0 "§RМы создадим потенциально нестабильное правительство меньшинства!§!"
+ NOV_federalassembly.102.b:0 "Может, Василий Макарович озвучит своё мнение...?"
+ NOV_federalassembly.102.b_tt:0 "Мы попытаемся сформировать коалиционное правительство с консервативной £GFX_NOV_RAPP_Icon §BРАПП§!"
+ NOV_federalassembly.102.c:0 "Привлечение на свою сторону силовиков решит многое."
+ NOV_federalassembly.102.c_tt:0 "Мы попытаемся сформировать коалиционное правительство с корпоративистами из £GFX_NOV_VRPP_Icon §gВРПП§!"
+ NOV_federalassembly.102.d:0 "Заигрывание с рабочими всегда работает."
+ NOV_federalassembly.102.d_tt:0 "Мы попытаемся сформировать коалиционное правительство с социалистической £GFX_NOV_DSPR_Icon §PДСПР§!"
+ NOV_federalassembly.102.e:0 "Доктрина за мир ещё может оказаться полезной"
+ NOV_federalassembly.102.e_tt:0 "Мы попытаемся сформировать коалиционное правительство с либеральной £GFX_NOV_RSLP_Icon §MРСЛП§!"
+ NOV_federalassembly.102.f:0 "Аграрии также выступят перед Думой!"
+ NOV_federalassembly.102.f_tt:0 "Мы попытаемся сформировать коалиционное правительство с умеренными из £NOV_NFM_Icon §KВЗД§!"
+ NOV_federalassembly.102.g:0 "Может быть, нам стоит разрешить некоторым монархистам вернуться..."
+ NOV_federalassembly.102.g_tt:0 "Мы попытаемся сформировать коалиционное правительство с деспотичной £NOV_RIRM_Icon §wДВРИ§!"
+ NOV_federalassembly.102.h:0 "Участие КПРФ может предотвратить дальнейшую радикализацию."
+ NOV_federalassembly.102.h_tt:0 "Мы попытаемся сформировать коалиционное правительство с коммунистической £NOV_CPRF_Icon §eКПРФ§!"
+ NOV_federalassembly.102.i:0 "ПСР могут быть под контролем только в том случае, если они имеют доли в системе."
+ NOV_federalassembly.102.i_tt:0 "Мы попытаемся сформировать коалиционное правительство с синдикалистами из £NOV_SRP_Icon §xПСР§!"
+ NOV_federalassembly.102.j:0 "Нам нужно найти другие решения!"
+ NOV_federalassembly.102.j_tt:0 "Мы будем искать другие решения ценой политической целесообразности. Это предоставит нам новые опции."
+
+ NOV_Election_Time_Bar_tt:0 "§YОсталось [?NOV_Election_Time_Left] дней до подведения итогов нынешних выборов§!."
+ NOV_coalition_unity_bar_tt:0 "Единство коалиции - это средний показатель того, насколько партии поддерживают друг друга в коалиции. При голосовании участники коалиции будут использовать не своё мнение, а единство коалиции плюс ещё один бонус.\n\nЕдинство коалиции - §Y[?NOV_coalition_unity]§!%"
+ duma_not_voting_tt:0 "Дума не голосует ни по каким важным вопросам."
+
+ NOV_Yegor_Ligachyov:0 "Егор Лигачёв"
+ NOV_Yuri_Galanskov:0 "Юрий Галансков"
+ NOV_Mikhail_Lapshin:0 "Михаил Лапшин"
+ NOV_Vladimir_Osipov:0 "Владимиро Осипов"
+ ################################################################################
+
+
+ #### VRPP GUIS ####
+
+
+
+
+ #### DSPR GUIS ####
+
+
+
+
+ #### RAPP GUIS ####
+

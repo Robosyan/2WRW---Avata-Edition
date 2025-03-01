@@ -1,0 +1,20 @@
+﻿l_russian:
+
+# Icon tooltip 
+#TNO_ugly_american_icon_tt: "§VThe§! §WBicentennial§! §zBallot§!"
+#TNO_ugly_american_icon_tt_delayed: "§VThe§! §WBicentennial§! §zBallot§! is a update to SWRW attempting to accurately depict the §Rrepercussions§! of a big tent party existing in the American politcal system during the cold war.\n\nAs time marches forwards, the §ONational Progressive Party§! begins to crumble and strain under its own weight.\n\nIn the old camp, the §RRepublicans§! and §TDemocrats§! begin to question the usefulness of their alliance. The future is always uncertain, but to those in the know it seems that the §ehand of fate§! has already been played for the politics of America.\n\n§RUnless...§!"
+
+####=== The tooltips that are shown when hovering over the menu pictures ===#### 
+###- SWRW v1.3.2 - The Bicentennial Ballot, May 31st 2024
+
+## Soldier in field - SINGLE PLAYER 
+#TNO_menupic_tooltip_1: "§F§DВперед! За нашу славную Федерацию и за §Wосвобождение§! §Мвсех§! §RРоссиян§!!§!"
+
+## Tanks rolling down street - MULTIPLAYER
+#TNO_menupic_tooltip_2: "§FЧто-то остаётся в нас от §DРодины§!, что живет в нас всю жизнь, то радуя, то §Rмучая§!, и всегда кажется, что когда-нибудь мы увидим ее, нашу §DРодину§!.§!"
+
+## Destroyed tanks - QUIT
+#TNO_menupic_tooltip_3: "§FПосреди §Rпепла Барбароссы§! слишком легко §Rпотерять надежду на лучшее завтра.§!§!"
+
+#§ < For easy copy/paste 
+### END SWRW ###    
