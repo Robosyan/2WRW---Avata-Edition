@@ -10,7 +10,6 @@ RUS_start_vladivostok_conference = {
 			RUS = {
 				owns_state = 1364
 				owns_state = 1646
-				owns_state = 1647
 			}
 		}
 		activate_mission = RUS_issue_of_primorsky
