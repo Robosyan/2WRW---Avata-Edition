@@ -284,6 +284,7 @@ RUS_generic_moskowien_occupation = {
 		transfer_state = 1443
 		transfer_state = 1435
 		transfer_state = 1436
+		transfer_state = 257
 		transfer_state = 245
 		transfer_state = 239
 		transfer_state = 224
