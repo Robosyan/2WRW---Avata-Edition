@@ -49,6 +49,9 @@ country_event = { #Victory
 		ai_chance = { factor = 1 }
 		transfer_state = 216
 		add_state_core = 216
+		transfer_state = 213
+		add_state_core = 213
+		add_war_support	= 0.05
 		
 	}
 }
@@ -66,9 +69,7 @@ country_event = { #Victory
 	option = { #
 		name = vyborg_border_conflict.3.a
 		ai_chance = { factor = 1 }
-		195 = {
-			set_demilitarized_zone = yes
-		}
+		add_war_support	= -0.1
 	}
 }
 

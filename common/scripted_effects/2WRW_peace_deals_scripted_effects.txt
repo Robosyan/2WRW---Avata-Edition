@@ -5290,6 +5290,9 @@ RUS_take_finnish_land_post_SWRW = { # i dont like repeating 8 lines for this shi
 		}
 		RUS = {
 			transfer_state = 216
+			transfer_state = 213
+			add_state_core = 213
+			add_state_core = 216
 		}
 	}
 }

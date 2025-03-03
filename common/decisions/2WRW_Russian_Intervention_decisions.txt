@@ -963,6 +963,7 @@ RUS_intervention_category = {
 	
 		allowed = {
 			is_russian_unifier = yes
+			owns_state = 1442    
 		}
 		visible = {
 			OR = { 
@@ -972,13 +973,11 @@ RUS_intervention_category = {
 
 			216 = {
 				OR = {
-					is_controlled_by = FIN 
-					is_controlled_by = RFI
+					is_owned_by	= FIN 
+					is_owned_by	= RFI
 				}
 			}
-			ROOT = {
-				owns_state = 216
-			}
+			owns_state = 1442
 		}
 		
 		available = {
