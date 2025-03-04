@@ -1,30 +1,5 @@
 RUS_coring_category = {
 
-    RUS_coring_everyting = { #Use these decisions to integrate until fucking submod devs will update regions here.
-
-		icon = GFX_decision_generic_form_nation
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 1
-			}
-		}
-
-		# on_map_mode = map_only
-
-		cost = 25
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		remove_effect  = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_latvia remove"
-			every_owned_state = {
-				add_core_of = RUS
-			}
-		}
-	}	
 	RUS_coring_integrate_khabarovsk = {
 
 		icon = GFX_decision_khabarovsk_icon
