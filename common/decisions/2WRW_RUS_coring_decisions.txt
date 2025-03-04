@@ -196,6 +196,58 @@ RUS_coring_category = {
 		}
 	}
 	
+	RUS_coring_integrate_novaya_zemlya = {
+
+		icon = GFX_decision_generic_form_nation
+
+		available = {
+			controls_state = 2099
+			controls_state = 2098
+		}
+
+		visible = {
+			owns_state = 2099
+			owns_state = 2098
+			2099 = { NOT = {is_core_of = RUS } }
+			2098 = { NOT = {is_core_of = RUS } }
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 2099
+			}
+		}
+
+		# on_map_mode = map_only
+
+		modifier = {
+			stability_weekly = -0.0025
+			political_power_gain = -0.15
+			gdp_growth_modifier = -0.5
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		days_remove = RUS_integration_cost_days?0
+		fire_only_once = yes
+
+		remove_effect  = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_coring_integrate_novaya_zemlya remove"
+			add_state_core = 2099
+			add_state_core = 2098
+			set_variable = { 151.nationality = 2099 }
+			set_variable = { 151.nationality = 2098 }
+			add_stability = 0.025
+			set_temp_variable = { gdp_growth_temp = 0.01 }
+			econ_gdp_growth_change = yes
+			TNO_improve_admin_efficiency_really_low = yes
+		}
+	}
+	
 	RUS_coring_integrate_klin = {
 
 		icon = GFX_decision_generic_form_nation
