@@ -325,7 +325,7 @@ country_event = { # the will of willy wills the nazis out of power
 		ai_chance = { factor = 50 }
 		hidden_effect = {
 			GER = {
-				#country_event = { id = reich.2008 days = 5 }
+				country_event = { id = reich.2008 days = 5 }
 			}
 			GER_SWRW_GC_willy_brandt_german_spring = yes
 		}
@@ -466,7 +466,6 @@ country_event = { # will the willy die? yes... yes he will
 			transfer_state = 59
 			transfer_state = 58
 			transfer_state = 775
-			transfer_state = 774
 			transfer_state = 66
 			transfer_state = 67
 			transfer_state = 85
@@ -554,7 +553,6 @@ country_event = { # will the willy die? yes... yes he will
 				transfer_state = 88
 				transfer_state = 1385
 				transfer_state = 1386
-				transfer_state = 1390
 				transfer_state = 1392
 				transfer_state = 1391
 				transfer_state = 1387
@@ -765,9 +763,6 @@ country_event = { # commies start complaining
 		744 = {
 			set_demilitarized_zone = yes
 		}
-		774 = {
-			set_demilitarized_zone = yes
-		}
 		if = {
 			limit = { 
 				GER = {
@@ -881,9 +876,6 @@ country_event = { # for Stalin i think?
 		744 = {
 			set_demilitarized_zone = no
 		}
-		774 = {
-			set_demilitarized_zone = no
-		}
 		6 = {
 			set_demilitarized_zone = no
 		}
@@ -895,10 +887,8 @@ country_event = { # for Stalin i think?
 			inherit_technology = GER
 			add_state_core = 58
 			add_state_core = 775
-			add_state_core = 774
 			transfer_state = 58
 			transfer_state = 775
-			transfer_state = 774
 			load_oob = "2GCW_HRC_AI"
 			add_ideas = REV_Member
 			set_major = yes
@@ -1266,6 +1256,7 @@ country_event = { # poland fucks off
 			inherit_technology = GGN
 			TNO_startup_nation = yes
 			add_state_core = 90
+			add_state_core = 2261
 			add_state_core = 1384
 			add_state_core = 1389
 			add_state_core = 92

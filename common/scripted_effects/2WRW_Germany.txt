@@ -11,6 +11,12 @@ GER_SWRW_GC_willy_brandt_german_spring = {
 			elections_allowed = yes
 			last_election = "1932.11.6"
 		}
+		
+		869 = {
+			set_state_name = "Berlin"
+		}
+		
+		set_province_name = { id = 6521 name = "Berlin" }
 
 		set_popularities = {
 			national_socialism = 27
