@@ -2597,6 +2597,11 @@ shared_focus = {
 	prerequisite = {
 		focus = NOV_shukshin_the_wild_steppe
 	}
+	bypass = {
+	    UTL = {
+		    is_in_faction_with = GER
+		}
+	}
 	available = {
 		has_war = no
 	}
@@ -2651,6 +2656,11 @@ shared_focus = {
 	ai_will_do = { factor = 1 }
 	prerequisite = {
 		focus = NOV_shukshin_a_central_foothold
+	}
+	bypass = {
+	    UTL = {
+		    is_in_faction_with = GER
+		}
 	}
 	x = 1
 	y = 1
@@ -2714,6 +2724,11 @@ shared_focus = {
 	available = {
 		has_war = no
 	}
+	bypass = {
+	    UTL = {
+		    is_in_faction_with = GER
+		}
+	}
 	x = 2
 	y = 1
 	relative_position_id = NOV_shukshin_the_wild_steppe
@@ -2732,6 +2747,11 @@ shared_focus = {
 	ai_will_do = { factor = 1 }
 	prerequisite = {
 		focus = NOV_shukshin_the_graveyard_of_empires
+	}
+	bypass = {
+	    UTL = {
+		    is_in_faction_with = GER
+		}
 	}
 	x = -1
 	y = 1
@@ -2786,6 +2806,11 @@ shared_focus = {
 	}
 	prerequisite = {
 		focus = NOV_shukshin_must_we_fight
+	}
+	bypass = {
+	    UTL = {
+		    is_in_faction_with = GER
+		}
 	}
 	x = -1
 	y = 1
