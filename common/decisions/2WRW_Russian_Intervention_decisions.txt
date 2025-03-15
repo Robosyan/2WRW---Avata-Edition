@@ -320,6 +320,11 @@ RUS_intervention_category = {
 			}
 			NOT = { has_global_flag = RUS_shukshin_unification }
 			NOT = { has_country_flag = RUS_Invade_Central_Asia }
+			UTL = {
+			    NOT = {
+				    is_in_faction_with = GER
+				}
+			}	
 		}
 		
 		available = {

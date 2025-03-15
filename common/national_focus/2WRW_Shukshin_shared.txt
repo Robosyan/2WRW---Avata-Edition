@@ -2379,6 +2379,11 @@ shared_focus = {
 	cost = 1
 	available_if_capitulated = no
 	ai_will_do = { factor = 1 }
+	bypass = {
+	    UTL = {
+		    is_in_faction_with = GER
+		}
+	}
 	prerequisite = {
 		focus = NOV_shukshin_treaty_of_novosibirsk
 	}
